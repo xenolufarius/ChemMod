@@ -1,0 +1,9 @@
+{
+  "variants": {
+    "lit=true": { "model": "chemmod:block/lava_lamp_on"},
+    "lit=false": { "model": "chemmod:block/lava_lamp_off"}
+
+  }
+
+
+}

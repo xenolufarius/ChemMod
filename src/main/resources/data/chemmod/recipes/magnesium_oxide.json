@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shapeless",
+
+  "ingredients": [
+    {
+      "item": "chemmod:magnesium"
+    },
+    {
+      "item": "chemmod:magnesium"
+    },
+    {
+      "item": "chemmod:oxygen"
+    }
+  ],
+  "result": {
+    "item": "chemmod:magnesium_oxide",
+    "count": 2
+  }
+
+}

@@ -1,0 +1,14 @@
+{
+  "type": "chemmod:deconstructor",
+
+  "ingredients": [
+    {
+      "item": "chemmod:ammonia"
+    }
+  ],
+  "result": {
+    "item": "chemmod:nitrogen",
+    "count": 1
+  }
+
+}

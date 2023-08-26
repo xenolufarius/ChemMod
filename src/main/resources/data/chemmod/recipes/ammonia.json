@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shapeless",
+
+  "ingredients": [
+    {
+      "item": "chemmod:hydrogen"
+    },
+    {
+      "item": "chemmod:hydrogen"
+    },
+    {
+      "item": "chemmod:hydrogen"
+    },
+    {
+      "item": "chemmod:nitrogen"
+    }
+  ],
+  "result": {
+    "item": "chemmod:ammonia",
+    "count": 2
+  }
+
+}

@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+
+  "ingredients": [
+    {
+      "item": "chemmod:chemical2"
+    }
+  ],
+  "result": {
+    "item": "chemmod:chemical",
+    "count": 1
+  }
+
+}
