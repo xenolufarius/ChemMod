@@ -3,11 +3,11 @@
 
   "ingredients": [
     {
-      "item": "chemmod:ammonia"
+      "item": "chemmod:carbon_dioxide"
     }
   ],
   "output": {
-    "item": "chemmod:nitrogen",
+    "item": "chemmod:carbon",
     "count": 1
   }
 

@@ -1,0 +1,14 @@
+{
+  "type": "chemmod:deconstructor",
+
+  "ingredients": [
+    {
+      "item": "chemmod:chemical2"
+    }
+  ],
+  "output": {
+    "item": "chemmod:chemical",
+    "count": 1
+  }
+
+}
