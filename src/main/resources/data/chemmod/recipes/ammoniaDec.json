@@ -6,7 +6,7 @@
       "item": "chemmod:ammonia"
     }
   ],
-  "result": {
+  "output": {
     "item": "chemmod:nitrogen",
     "count": 1
   }

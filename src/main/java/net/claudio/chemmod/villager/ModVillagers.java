@@ -23,20 +23,20 @@ public class ModVillagers {
     public static final DeferredRegister<VillagerProfession>   VILLAGER_PROFESSIONS =
             DeferredRegister.create(ForgeRegistries.VILLAGER_PROFESSIONS, ChemMod.MOD_ID);
 
-    public static final RegistryObject<PoiType> JUMPY_BLOCK_POI = POI_TYPES.register("jumpy_block_poi",
-            () -> new PoiType(ImmutableSet.copyOf(ModBlocks.JUMPY_BlOCK.get().getStateDefinition().getPossibleStates()),
+    public static final RegistryObject<PoiType> DECONSTRUCTOR_BLOCK_POI = POI_TYPES.register("deconstructor_block_poi",
+            () -> new PoiType(ImmutableSet.copyOf(ModBlocks.DECONSTRUCTOR_BLOCK.get().getStateDefinition().getPossibleStates()),
                     1, 1));
 
     public static final RegistryObject<VillagerProfession> CHEMIST = VILLAGER_PROFESSIONS.register("chemist",
-            () -> new VillagerProfession("chemist", x -> x.get() == JUMPY_BLOCK_POI.get(),
-                    x -> x.get() == JUMPY_BLOCK_POI.get(), ImmutableSet.of(), ImmutableSet.of(),
+            () -> new VillagerProfession("chemist", x -> x.get() == DECONSTRUCTOR_BLOCK_POI.get(),
+                    x -> x.get() == DECONSTRUCTOR_BLOCK_POI.get(), ImmutableSet.of(), ImmutableSet.of(),
                     SoundEvents.VILLAGER_WORK_CLERIC));
 
     public static void registerPOIs()
     {
         try{
             ObfuscationReflectionHelper.findMethod(PoiType.class,
-            "registerBlockStates", PoiType.class).invoke(null, JUMPY_BLOCK_POI.get());
+            "registerBlockStates", PoiType.class).invoke(null, DECONSTRUCTOR_BLOCK_POI.get());
         }
         catch (InvocationTargetException | IllegalAccessException exception)
         {

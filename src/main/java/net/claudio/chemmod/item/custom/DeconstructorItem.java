@@ -49,12 +49,8 @@ public class DeconstructorItem extends Item implements MenuProvider {
     public InteractionResultHolder<ItemStack> use(Level level, Player player, InteractionHand hand) {
         if(!level.isClientSide() && hand == InteractionHand.MAIN_HAND)
         {
-            //Output = rand
-            //set = cooldown
-            //JPopupMenu(player);
-            player.getCooldowns().addCooldown(this, 5);
-
-
+            //MenuProvider containerProvider = new DeconstructorScreenHandlerFactory();
+            //player.openMenu(containerProvider);
         }
 
         return super.use(level, player, hand);

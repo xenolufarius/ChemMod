@@ -14,14 +14,14 @@ import net.minecraft.world.level.Level;
 
 import javax.annotation.Nullable;
 
-public class DeconstructorRecipe implements Recipe<SimpleContainer> {
+public class DeconstructorBlockRecipe implements Recipe<SimpleContainer> {
 
     private final ResourceLocation id;
     private final ItemStack output;
     private final NonNullList<Ingredient> recipeItems;
 
-    public DeconstructorRecipe(ResourceLocation id, ItemStack output,
-                               NonNullList<Ingredient> recipeItems)
+    public DeconstructorBlockRecipe(ResourceLocation id, ItemStack output,
+                                    NonNullList<Ingredient> recipeItems)
     {
         this.id = id;
         this.output = output;
@@ -73,21 +73,21 @@ public class DeconstructorRecipe implements Recipe<SimpleContainer> {
         return Type.INSTANCE;
     }
 
-    public static class Type implements RecipeType<DeconstructorRecipe>
+    public static class Type implements RecipeType<DeconstructorBlockRecipe>
     {
         private Type() { }
         public static final Type INSTANCE = new Type();
         public static final String ID = "deconstructor";
     }
 
-    public static class Serializer implements RecipeSerializer<DeconstructorRecipe>
+    public static class Serializer implements RecipeSerializer<DeconstructorBlockRecipe>
     {
         public static final Serializer INSTANCE = new Serializer();
         public static final ResourceLocation ID =
                 new ResourceLocation(ChemMod.MOD_ID, "deconstructor");
 
         @Override
-        public DeconstructorRecipe fromJson(ResourceLocation pRecipeId, JsonObject pSerializedRecipe) {
+        public DeconstructorBlockRecipe fromJson(ResourceLocation pRecipeId, JsonObject pSerializedRecipe) {
             ItemStack output = ShapedRecipe.itemStackFromJson(GsonHelper.getAsJsonObject(pSerializedRecipe, "output"));
 
             JsonArray ingredients = GsonHelper.getAsJsonArray(pSerializedRecipe, "ingredients");
@@ -97,11 +97,11 @@ public class DeconstructorRecipe implements Recipe<SimpleContainer> {
                 inputs.set(i, Ingredient.fromJson(ingredients.get(i)));
             }
 
-            return new DeconstructorRecipe(pRecipeId, output, inputs);
+            return new DeconstructorBlockRecipe(pRecipeId, output, inputs);
         }
 
         @Override
-        public @Nullable DeconstructorRecipe fromNetwork(ResourceLocation id, FriendlyByteBuf buf) {
+        public @Nullable DeconstructorBlockRecipe fromNetwork(ResourceLocation id, FriendlyByteBuf buf) {
             NonNullList<Ingredient> inputs = NonNullList.withSize(buf.readInt(), Ingredient.EMPTY);
 
             for (int i = 0; i < inputs.size(); i++) {
@@ -109,11 +109,11 @@ public class DeconstructorRecipe implements Recipe<SimpleContainer> {
             }
 
             ItemStack output = buf.readItem();
-            return new DeconstructorRecipe(id, output, inputs);
+            return new DeconstructorBlockRecipe(id, output, inputs);
         }
         //Episode 23 ~10 min in
         @Override
-        public void toNetwork(FriendlyByteBuf buf, DeconstructorRecipe recipe) {
+        public void toNetwork(FriendlyByteBuf buf, DeconstructorBlockRecipe recipe) {
             buf.writeInt(recipe.getIngredients().size());
 
             for (Ingredient ing : recipe.getIngredients()) {

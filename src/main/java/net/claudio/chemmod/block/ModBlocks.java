@@ -1,6 +1,7 @@
 package net.claudio.chemmod.block;
 
 import net.claudio.chemmod.ChemMod;
+import net.claudio.chemmod.block.custom.DeconstructorBlock;
 import net.claudio.chemmod.block.custom.JumpyBlock;
 import net.claudio.chemmod.block.custom.LavaLampBlock;
 import net.claudio.chemmod.item.ModCreativeModeTab;
@@ -25,13 +26,21 @@ public class ModBlocks {
     public static final RegistryObject<Block> LAB_BLOCK = registerBlock("lab_block",
             () -> new Block(BlockBehaviour.Properties.of(Material.STONE).strength(6f).requiresCorrectToolForDrops()), ModCreativeModeTab.CHEM_TAB);
 
+
+
     public static final RegistryObject<Block> JUMPY_BlOCK = registerBlock("jumpy_block",
-            () -> new JumpyBlock(BlockBehaviour.Properties.of(Material.STONE).strength(6f).requiresCorrectToolForDrops()), ModCreativeModeTab.CHEM_TAB);
- public static final RegistryObject<Block> LAVA_LAMP = registerBlock("lava_lamp",
+            () -> new Block(BlockBehaviour.Properties.of(Material.STONE).strength(6f).requiresCorrectToolForDrops()), ModCreativeModeTab.CHEM_TAB);
+
+
+
+    public static final RegistryObject<Block> LAVA_LAMP = registerBlock("lava_lamp",
             () -> new LavaLampBlock(BlockBehaviour.Properties.of(Material.STONE).strength(6f).requiresCorrectToolForDrops().lightLevel(state -> state.getValue(LavaLampBlock.LIT) ? 15 : 0)), ModCreativeModeTab.CHEM_TAB);
 
     public static final RegistryObject<Block> LAB2_BLOCK = registerBlock("lab2_block",
             () -> new Block(BlockBehaviour.Properties.of(Material.STONE).strength(6f).requiresCorrectToolForDrops()), ModCreativeModeTab.CHEM_TAB);
+
+    public static final RegistryObject<Block> DECONSTRUCTOR_BLOCK = registerBlock("deconstructor_block",
+            () -> new DeconstructorBlock(BlockBehaviour.Properties.of(Material.METAL).strength(6f).requiresCorrectToolForDrops().noOcclusion()), ModCreativeModeTab.CHEM_TAB);
 
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block, CreativeModeTab tab) {

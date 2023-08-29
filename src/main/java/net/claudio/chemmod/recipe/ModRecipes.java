@@ -11,8 +11,8 @@ public class ModRecipes {
     public static final DeferredRegister<RecipeSerializer<?>> SERIALIZERS =
             DeferredRegister.create(ForgeRegistries.RECIPE_SERIALIZERS, ChemMod.MOD_ID);
 
-    public static final RegistryObject<RecipeSerializer<DeconstructorRecipe>> DECONSTRUCTOR_SERIALIZER =
-            SERIALIZERS.register("deconstructor", () -> DeconstructorRecipe.Serializer.INSTANCE);
+    public static final RegistryObject<RecipeSerializer<DeconstructorBlockRecipe>> DECONSTRUCTOR_SERIALIZER =
+            SERIALIZERS.register("deconstructor", () -> DeconstructorBlockRecipe.Serializer.INSTANCE);
 
 
     public static void register(IEventBus eventBus)
