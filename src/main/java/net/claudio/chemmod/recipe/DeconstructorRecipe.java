@@ -13,7 +13,7 @@ import net.minecraft.world.item.crafting.*;
 import net.minecraft.world.level.Level;
 
 import javax.annotation.Nullable;
-
+/* NOT NEEDED RIGHT NOW. NEEDS TO CHANGE ID TOO
 public class DeconstructorRecipe implements Recipe<SimpleContainer> {
 
     private final ResourceLocation id;
@@ -127,3 +127,5 @@ public class DeconstructorRecipe implements Recipe<SimpleContainer> {
 
 
 }
+
+ */
