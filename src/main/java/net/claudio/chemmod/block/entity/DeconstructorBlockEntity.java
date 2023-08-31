@@ -30,7 +30,7 @@ import java.util.Optional;
 
 public class DeconstructorBlockEntity  extends BlockEntity implements MenuProvider {
 
-    private final ItemStackHandler itemHandler = new ItemStackHandler(4) {
+    private final ItemStackHandler itemHandler = new ItemStackHandler(3) {
         @Override
         protected void onContentsChanged(int slot) {
             setChanged();
@@ -162,11 +162,9 @@ public class DeconstructorBlockEntity  extends BlockEntity implements MenuProvid
 
 
         if(hasRecipe(pEntity)) {
-            //takes from slot 0 as input ingredient
-            pEntity.itemHandler.extractItem(0, 1, false);
-            //outputs into slot 1. Need to figure out how to do multiple outputs
-            pEntity.itemHandler.setStackInSlot(1, new ItemStack(recipe.get().getResultItem().getItem(),
-                    pEntity.itemHandler.getStackInSlot(1).getCount() + recipe.get().getResultItem().getCount()));
+            pEntity.itemHandler.extractItem(1, 1, false);
+            pEntity.itemHandler.setStackInSlot(2, new ItemStack(recipe.get().getResultItem().getItem(),
+                    pEntity.itemHandler.getStackInSlot(2).getCount() + recipe.get().getResultItem().getCount()));
 
             pEntity.resetProgress();
         }
@@ -187,12 +185,11 @@ public class DeconstructorBlockEntity  extends BlockEntity implements MenuProvid
                 canInsertItemIntoOutputSlot(inventory, recipe.get().getResultItem());
     }
 
-    //Adjust for multiple outputs. Maybe keep as is. No. What if player
     private static boolean canInsertItemIntoOutputSlot(SimpleContainer inventory, ItemStack stack) {
-        return inventory.getItem(1).getItem() == stack.getItem() || inventory.getItem(1).isEmpty();
+        return inventory.getItem(2).getItem() == stack.getItem() || inventory.getItem(2).isEmpty();
     }
 
     private static boolean canInsertAmountIntoOutputSlot(SimpleContainer inventory) {
-        return inventory.getItem(1).getMaxStackSize() > inventory.getItem(1).getCount();
+        return inventory.getItem(2).getMaxStackSize() > inventory.getItem(2).getCount();
     }
 }
