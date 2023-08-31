@@ -91,6 +91,8 @@ public class DeconstructorBlockRecipe implements Recipe<SimpleContainer> {
         public static final ResourceLocation ID =
                 new ResourceLocation(ChemMod.MOD_ID, "deconstructor");
 
+
+        //might be where I get the multiple outputs
         @Override
         public DeconstructorBlockRecipe fromJson(ResourceLocation pRecipeId, JsonObject pSerializedRecipe) {
             ItemStack output = ShapedRecipe.itemStackFromJson(GsonHelper.getAsJsonObject(pSerializedRecipe, "output"));
