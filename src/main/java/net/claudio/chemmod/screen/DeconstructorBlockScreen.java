@@ -11,7 +11,7 @@ import net.minecraft.world.entity.player.Inventory;
 
 public class DeconstructorBlockScreen extends AbstractContainerScreen<DeconstructorBlockMenu> {
     private static final ResourceLocation TEXTURE =
-            new ResourceLocation(ChemMod.MOD_ID,"textures/gui/gem_infusing_station_gui.png");
+            new ResourceLocation(ChemMod.MOD_ID,"textures/gui/deconstructor_prototype2_gui.png");
 
     public DeconstructorBlockScreen(DeconstructorBlockMenu menu, Inventory inventory, Component component) {
         super(menu, inventory, component);
@@ -28,16 +28,17 @@ public class DeconstructorBlockScreen extends AbstractContainerScreen<Deconstruc
         RenderSystem.setShaderColor(1.0F, 1.0F, 1.0F, 1.0F);
         RenderSystem.setShaderTexture(0, TEXTURE);
         int x = (width - imageWidth) / 2;
-        int y = (height - imageHeight) / 2;
+        int y = (height - imageHeight)/ 2;
 
         this.blit(pPoseStack, x, y, 0, 0, imageWidth, imageHeight);
 
         renderProgressArrow(pPoseStack, x, y);
     }
 
+    //
     private void renderProgressArrow(PoseStack pPoseStack, int x, int y) {
         if(menu.isCrafting()) {
-            blit(pPoseStack, x + 105, y + 33, 176, 0, 8, menu.getScaledProgress());
+            blit(pPoseStack, x + 99, y + 33, 176, 0, 8, menu.getScaledProgress());
         }
     }
 

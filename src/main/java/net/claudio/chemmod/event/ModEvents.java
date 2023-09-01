@@ -118,10 +118,16 @@ public class ModEvents {
         {
             event.player.getCapability(PlayerRadiationProvider.PLAYER_RADS).ifPresent(radiation ->
             {
-                if(radiation.getRads() > 0 && event.player.getRandom().nextFloat() < 0.005f)
+                //event.player.getRandom().nextFloat() < 0.005f
+                if(radiation.getRads() > 0 && event.player.tickCount % 400 == 0)
                 { // Once Every 20 Seconds on Avg
                     radiation.subRads(1);
                     ModMessages.sendToPlayer(new RadiationS2CPacket(radiation.getRads()), ((ServerPlayer) event.player));
+                }
+                if (event.player.tickCount % 2 == 0)
+                {
+                    ModMessages.sendToPlayer(new RadiationS2CPacket(radiation.getRads()), ((ServerPlayer) event.player));
+
                 }
             });
         }
@@ -135,20 +141,30 @@ public class ModEvents {
         {
             event.player.getCapability(PlayerRadiationProvider.PLAYER_RADS).ifPresent(radiation ->
             {
-                if(radiation.getRads() < 10 && radioactiveItemDetectedInInventory(event.player) > 0 && event.player.getRandom().nextFloat() < 0.005f)
+                //event.player.getRandom().nextFloat() < 0.005f
+                if(radiation.getRads() <= 10 && radioactiveItemDetectedInInventory(event.player) > 0 && event.player.tickCount % 50 == 0)
                 {
-                    radiation.addRads((radioactiveItemDetectedInInventory(event.player)*3)-1);
+                    if(radioactiveItemDetectedInInventory(event.player) == 4)
+                    {
+                        radiation.addRads((radioactiveItemDetectedInInventory(event.player)*5));
+                    }
+                    radiation.addRads((radioactiveItemDetectedInInventory(event.player)));
                 }
-                if(radiation.getRads() < 10 && radioactiveItemDetectedOnGround(event.player) > 0 && event.player.getRandom().nextFloat() < 0.005f)
+                if(radiation.getRads() < 10 && radioactiveItemDetectedOnGround(event.player) > 0 && event.player.tickCount % 50 == 0)
                 {
                     //Plan on using this for on ground items. But for now it will be empty
                 }
-                if(radiation.getRads() == 10 && event.player.getRandom().nextFloat() < 0.01f)
-                {
-                    //poison
-                    event.player.hurt(DamageSource.WITHER, 6*radioactiveItemDetectedInInventory(event.player));
-                }
+                if(radiation.getRads() == 10 && event.player.tickCount % 10 == 0) {
+                    if (radioactiveItemDetectedInInventory(event.player) != 4) {
+                        //poison
+                        event.player.hurt(DamageSource.WITHER, (float) (radioactiveItemDetectedInInventory(event.player) * radioactiveItemDetectedInInventory(event.player)) / 2 + 1);
 
+                    }
+                    else
+                    {
+                        event.player.hurt(DamageSource.WITHER, 30);
+                    }
+                }
             });
         }
     }

@@ -30,7 +30,7 @@ import java.util.Optional;
 
 public class DeconstructorBlockEntity  extends BlockEntity implements MenuProvider {
 
-    private final ItemStackHandler itemHandler = new ItemStackHandler(3) {
+    private final ItemStackHandler itemHandler = new ItemStackHandler(4) {
         @Override
         protected void onContentsChanged(int slot) {
             setChanged();
@@ -162,7 +162,9 @@ public class DeconstructorBlockEntity  extends BlockEntity implements MenuProvid
 
 
         if(hasRecipe(pEntity)) {
+            //gets from first slot. Doesn't work with slot 0 for some reason OR
             pEntity.itemHandler.extractItem(1, 1, false);
+            //puts output into second slot. Doesn't work with slot 1 for some reason
             pEntity.itemHandler.setStackInSlot(2, new ItemStack(recipe.get().getResultItem().getItem(),
                     pEntity.itemHandler.getStackInSlot(2).getCount() + recipe.get().getResultItem().getCount()));
 
@@ -185,8 +187,12 @@ public class DeconstructorBlockEntity  extends BlockEntity implements MenuProvid
                 canInsertItemIntoOutputSlot(inventory, recipe.get().getResultItem());
     }
 
+    //Adjusted values for second slot for output.
     private static boolean canInsertItemIntoOutputSlot(SimpleContainer inventory, ItemStack stack) {
         return inventory.getItem(2).getItem() == stack.getItem() || inventory.getItem(2).isEmpty();
+        //Practice
+        //Need to figure out how to do multiple outputs
+        // return (inventory.getItem(2).getItem() == stack.getItem() || inventory.getItem(2).isEmpty()) && (inventory.getItem(3).getItem() == stack.getItem() || inventory.getItem(3).isEmpty()) ;
     }
 
     private static boolean canInsertAmountIntoOutputSlot(SimpleContainer inventory) {

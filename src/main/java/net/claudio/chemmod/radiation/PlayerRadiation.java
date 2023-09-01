@@ -16,13 +16,13 @@ public class PlayerRadiation {
     //wont go over 10
     public void addRads(int add)
     {
-        this.rads = Math.min(rads + add, MAX_RADS);
+        this.rads = Math.min((rads + add), 10);
     }
 
     //wont go below 0
     public void subRads(int sub)
     {
-        this.rads = Math.max(rads - sub, MIN_RADS);
+        this.rads = Math.max((rads - sub), MIN_RADS);
     }
 
     public void copyfrom(PlayerRadiation source)
