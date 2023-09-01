@@ -90,12 +90,13 @@ public class ChemicalItem  extends Item {
     //AMU,CF,RAD,STAB
     //Anything else?
     //Maybe short Description
-    private int cAMU;
+    //private int cAMU;
+    private double cAMU;
     private String cCF;
     private int cRAD;
     private int cSTAB;
     private String cDESC;
-    public ChemicalItem(Properties properties, int AMU, String CF, int RAD, int STAB, String DESC) {
+    public ChemicalItem(Properties properties, double AMU, String CF, int RAD, int STAB, String DESC) {
         super(properties);
 
         this.cAMU = AMU;
@@ -114,7 +115,7 @@ public class ChemicalItem  extends Item {
 
 
     //AMU = Molar Mass essentially. Not really useful to the player
-    public int getcAMU() {
+    public double getcAMU() {
         return cAMU;
     }
     //CF = Chemical Formula. Useful to know

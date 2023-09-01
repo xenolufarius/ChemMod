@@ -27,47 +27,47 @@ public class ModItems {
     //TODO: Change AMU to be Double or Float. I want to have to 2 decimal places, when rounding is not feasible.
 
     public static final RegistryObject<Item> HYDROGEN = Items.register( "hydrogen",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB), 2, "H2", 0, 4, "\nDesc: Hydrogen is most commonly found as a diatomic gas as H2 (g). It is commonly referred to as Hydrogen Gas."));
+            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB), 2.02, "H2", 0, 4, "\nDesc: Hydrogen is most commonly found as a diatomic gas as H2 (g). It is commonly referred to as Hydrogen Gas."));
     public static final RegistryObject<Item> HELIUM = Items.register( "helium",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB), 4, "He", 0, 4, "\nDesc: Helium is the first of the noble gases, and is commonly found involved in the fusion reactions in the Sun."));
+            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB), 4.00, "He", 0, 4, "\nDesc: Helium is the first of the noble gases, and is commonly found involved in the fusion reactions in the Sun."));
     public static final RegistryObject<Item> LITHIUM = Items.register( "lithium",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB), 7, "Li", 0, 1, "\nDesc: Lithium is a highly reactive metal and the lightest solid element. It's often used in batteries."));
+            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB), 6.94, "Li", 0, 1, "\nDesc: Lithium is a highly reactive metal and the lightest solid element. It's often used in batteries."));
     public static final RegistryObject<Item> BERYLLIUM = Items.register( "beryllium",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB), 9, "Be", 0, 2, "\nDesc: Beryllium is a relatively stable metal known for its high melting point and use in various applications, including aerospace components."));
+            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB), 9.01, "Be", 0, 2, "\nDesc: Beryllium is a relatively stable metal known for its high melting point and use in various applications, including aerospace components."));
     public static final RegistryObject<Item> BORON = Items.register( "boron",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB), 10, "B", 0, 4, "\nDesc: Boron is a nonmetallic element used in various industrial applications, including the production of ceramics and high-strength materials."));
+            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB), 10.81, "B", 0, 4, "\nDesc: Boron is a nonmetallic element used in various industrial applications, including the production of ceramics and high-strength materials."));
     public static final RegistryObject<Item> CARBON = Items.register( "carbon",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB),0,"",0,0,"\n"));
+            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB), 12.01, "C", 0, 4, "\nDesc: Carbon is a versatile element that forms the basis of organic chemistry. It exists in various forms, including diamond and graphite."));
     public static final RegistryObject<Item> NITROGEN = Items.register( "nitrogen",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB),0,"",0,0,"\n"));
+            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB), 28.02, "N2", 0, 4, "\nDesc: Nitrogen is a diatomic gas (N2) and an essential element for life. It makes up a significant portion of Earth's atmosphere."));
     public static final RegistryObject<Item> OXYGEN = Items.register( "oxygen",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB),0,"",0,0,"\n"));
+            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB), 32.00, "O2", 0, 4, "\nDesc: Oxygen is a diatomic gas (O2) essential for respiration and combustion. It's the most abundant element in the Earth's crust."));
     public static final RegistryObject<Item> FLUORINE = Items.register( "fluorine",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB),0,"",0,0,"\n"));
+            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB), 38.00, "F2", 0, 1, "\nDesc: Fluorine is a highly reactive diatomic gas (F2) known for its strong oxidizing properties. It's used in various industrial applications."));
     public static final RegistryObject<Item> NEON = Items.register( "neon",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB),0,"",0,0,"\n"));
+            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB), 20.18, "Ne", 0, 4, "\nDesc: Neon is a noble gas known for its bright and colorful light emission in neon signs. It's chemically inert and non-reactive."));
     public static final RegistryObject<Item> SODIUM = Items.register( "sodium",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB),0,"",0,0,"\n"));
+            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB), 22.99, "Na", 0, 1, "\nDesc: Sodium is a highly reactive metal known for its vigorous reaction with water. It's commonly used in various chemical and industrial processes."));
     public static final RegistryObject<Item> MAGNESIUM = Items.register( "magnesium",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB),0,"",0,0,"\n"));
+            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB), 24.31, "Mg", 0, 2, "\nDesc: Magnesium is a lightweight and strong metal used in various applications, including alloys and as a reducing agent in the production of metals."));
     public static final RegistryObject<Item> ALUMINUM = Items.register( "aluminum",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB),0,"",0,0,"\n"));
+            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB), 26.98, "Al", 0, 2, "\nDesc: Aluminum is a versatile metal used extensively in construction, transportation, and various industrial applications. It's known for its low density and corrosion resistance."));
     public static final RegistryObject<Item> SILICON = Items.register( "silicon",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB),0,"",0,0,"\n"));
+            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB), 28.09, "Si", 0, 4, "\nDesc: Silicon is a fundamental element in semiconductors and electronics. It's also a major component of Earth's crust and is used in various materials."));
     public static final RegistryObject<Item> PHOSPHOROUS = Items.register( "phosphorous",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB),0,"",0,0,"\n"));
+            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB), 30.97, "P", 0, 3, "\nDesc: Phosphorus is an essential element for life, found in DNA, RNA, and ATP. It's used in various industries, including fertilizers and detergents."));
     public static final RegistryObject<Item> SULFUR = Items.register( "sulfur",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB),0,"",0,0,"\n"));
+            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB), 32.07, "S", 0, 3, "\nDesc: Sulfur is a non-metal essential for life and used in various industrial processes, including the production of sulfuric acid."));
     public static final RegistryObject<Item> CHLORINE = Items.register( "chlorine",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB),0,"",0,0,"\n"));
+            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB), 70.91, "Cl2", 0, 4, "\nDesc: Chlorine is a highly reactive diatomic element used in disinfectants, plastics, and as a component of table salt (sodium chloride)."));
     public static final RegistryObject<Item> ARGON = Items.register( "argon",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB),0,"",0,0,"\n"));
+            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB), 39.95, "Ar", 0, 4, "\nDesc: Argon is a noble gas known for its inertness. It's used in various applications, including welding and lighting."));
     public static final RegistryObject<Item> POTASSIUM = Items.register( "potassium",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB),0,"",0,0,"\n"));
+            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB), 39.10, "K", 0, 1, "\nDesc: Potassium is an essential mineral for plant and animal nutrition. It's highly reactive with water."));
     public static final RegistryObject<Item> CALCIUM = Items.register( "calcium",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB),0,"",0,0,"\n"));
+            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB), 40.08, "Ca", 0, 4, "\nDesc: Calcium is vital for the formation of bones and teeth. It's not highly reactive under normal conditions."));
     public static final RegistryObject<Item> SCANDIUM = Items.register( "scandium",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB),0,"",0,0,"\n"));
+            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB), 44.96, "Sc", 0, 4, "\nDesc: Scandium is a rare and moderately stable transition metal. It's used in aerospace and lighting applications."));
     public static final RegistryObject<Item> TITANIUM = Items.register( "titanium",
             () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB),0,"",0,0,"\n"));
     public static final RegistryObject<Item> VANADIUM = Items.register( "vanadium",
