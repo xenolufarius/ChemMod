@@ -24,6 +24,7 @@ public class ModItems {
 
     //Actual Items STart
     //TODO: convert to ChemicalItem
+    //TODO: Change AMU to be Double or Float. I want to have to 2 decimal places, when rounding is not feasible.
 
     public static final RegistryObject<Item> HYDROGEN = Items.register( "hydrogen",
             () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB), 2, "H2", 0, 4, "\nDesc: Hydrogen is most commonly found as a diatomic gas as H2 (g). It is commonly referred to as Hydrogen Gas."));
@@ -32,9 +33,9 @@ public class ModItems {
     public static final RegistryObject<Item> LITHIUM = Items.register( "lithium",
             () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB), 7, "Li", 0, 1, "\nDesc: Lithium is a highly reactive metal and the lightest solid element. It's often used in batteries."));
     public static final RegistryObject<Item> BERYLLIUM = Items.register( "beryllium",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB), 9, "Be", 0, 3, "\nDesc: Beryllium is a relatively stable metal known for its high melting point and use in various applications, including aerospace components."));
+            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB), 9, "Be", 0, 2, "\nDesc: Beryllium is a relatively stable metal known for its high melting point and use in various applications, including aerospace components."));
     public static final RegistryObject<Item> BORON = Items.register( "boron",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB),0,"",0,0,"\n"));
+            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB), 10, "B", 0, 4, "\nDesc: Boron is a nonmetallic element used in various industrial applications, including the production of ceramics and high-strength materials."));
     public static final RegistryObject<Item> CARBON = Items.register( "carbon",
             () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB),0,"",0,0,"\n"));
     public static final RegistryObject<Item> NITROGEN = Items.register( "nitrogen",
