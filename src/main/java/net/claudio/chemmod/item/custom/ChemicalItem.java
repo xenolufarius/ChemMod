@@ -154,6 +154,15 @@ public class ChemicalItem  extends Item {
         super.appendHoverText(stack, level, components, flag);
     }
 
+    //Need to handle how this works in game
+    //Crashes when trying to eat. Need to override food properties
+    @Override
+    public boolean isEdible()
+    {
+        //for now false, until I sort this out.
+        return false;
+    }
+
 
 
 }
