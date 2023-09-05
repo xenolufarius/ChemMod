@@ -99,43 +99,45 @@ public class ModItems {
     public static final RegistryObject<Item> KRYPTON = Items.register( "krypton",
             () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB), 83.80, "Kr", 0, 4, "\nDesc: Krypton is a noble gas used in lighting and lasers."));
     public static final RegistryObject<Item> RUBIDIUM = Items.register( "rubidium",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB),0,"",0,0,"\n"));
+            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB), 85.47, "Rb", 0, 2, "\nDesc: Rubidium is an alkali metal used in research and electronics."));
     public static final RegistryObject<Item> STRONTIUM = Items.register( "strontium",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB),0,"",0,0,"\n"));
+            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB), 87.62, "Sr", 0, 4, "\nDesc: Strontium is used in fireworks and flares to produce red colors."));
     public static final RegistryObject<Item> YTTRIUM = Items.register( "yttrium",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB),0,"",0,0,"\n"));
+            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB), 88.91, "Y", 0, 4, "\nDesc: Yttrium is used in alloys and phosphors for color television tubes."));
     public static final RegistryObject<Item> ZIRCONIUM = Items.register( "zirconium",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB),0,"",0,0,"\n"));
+            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB), 91.22, "Zr", 0, 4, "\nDesc: Zirconium is used in nuclear reactors and as an alloying agent."));
     public static final RegistryObject<Item> NIOBIUM = Items.register( "niobium",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB),0,"",0,0,"\n"));
+            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB), 92.91, "Nb", 0, 4, "\nDesc: Niobium is used in superconductors and alloys for jet engines."));
     public static final RegistryObject<Item> MOLYBDENUM = Items.register( "molybdenum",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB),0,"",0,0,"\n"));
+            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB), 95.94, "Mo", 0, 4, "\nDesc: Molybdenum is used in steel alloys and as a catalyst in chemical reactions."));
     public static final RegistryObject<Item> TECHNETIUM = Items.register( "technetium",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB),0,"",0,0,"\n"));
+            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB), 98.00, "Tc", 0, 4, "\nDesc: Technetium is a synthetic element used in medical imaging and research."));
     public static final RegistryObject<Item> RUTHENIUM = Items.register( "ruthenium",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB),0,"",0,0,"\n"));
+            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB), 101.07, "Ru", 0, 4, "\nDesc: Ruthenium is used in electronics, catalysts, and jewelry for its durability."));
+    public static final RegistryObject<Item> RHODIUM = Items.register( "rhodium",
+            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB), 102.91, "Rh", 0, 4, "\nDesc: Rhodium is used in catalytic converters, jewelry, and electrical contacts."));
     public static final RegistryObject<Item> PALLADIUM = Items.register( "palladium",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB),0,"",0,0,"\n"));
+            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB), 106.42, "Pd", 0, 4, "\nDesc: Palladium is used in catalytic converters, electronics, and jewelry."));
     public static final RegistryObject<Item> SILVER = Items.register( "silver",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB),0,"",0,0,"\n"));
+            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB), 107.87, "Ag", 0, 4, "\nDesc: Silver is valued for its use in currency, jewelry, and electronics."));
     public static final RegistryObject<Item> CADMIUM = Items.register( "cadmium",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB),0,"",0,0,"\n"));
+            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB), 112.41, "Cd", 0, 4, "\nDesc: Cadmium is used in batteries, pigments, and nuclear reactors."));
     public static final RegistryObject<Item> INDIUM = Items.register( "indium",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB),0,"",0,0,"\n"));
+            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB), 114.82, "In", 0, 4, "\nDesc: Indium is used in semiconductors, solar panels, and as a solder."));
     public static final RegistryObject<Item> TIN = Items.register( "tin",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB),0,"",0,0,"\n"));
+            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB), 118.71, "Sn", 0, 4, "\nDesc: Tin is used in solder, coatings, and alloys."));
     public static final RegistryObject<Item> ANTIMONY = Items.register( "antimony",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB),0,"",0,0,"\n"));
+            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB), 121.76, "Sb", 0, 4, "\nDesc: Antimony is used in flame retardants and alloys."));
     public static final RegistryObject<Item> TELLURIUM = Items.register( "tellurium",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB),0,"",0,0,"\n"));
+            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB), 127.60, "Te", 0, 4, "\nDesc: Tellurium is used in solar panels and alloys."));
     public static final RegistryObject<Item> IODINE = Items.register( "iodine",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB),0,"",0,0,"\n"));
+            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB), 253.81, "I2", 0, 4, "\nDesc: Iodine is commonly used in medicine, particularly in the form of iodine solutions for disinfection."));
     public static final RegistryObject<Item> XENON = Items.register( "xenon",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB),0,"",0,0,"\n"));
+            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB), 131.29, "Xe", 0, 4, "\nDesc: Xenon is employed in various applications, including lighting and anesthesia."));
     public static final RegistryObject<Item> CESIUM = Items.register( "cesium",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB),0,"",0,0,"\n"));
+            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB), 132.91, "Cs", 0, 1, "\nDesc: Cesium has uses in atomic clocks and drilling fluids, but it requires careful handling due to its reactivity with air and water."));
     public static final RegistryObject<Item> BARIUM = Items.register( "barium",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB),0,"",0,0,"\n"));
+            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB), 137.33, "Ba", 0, 4, "\nDesc: Barium is employed in various industries, including the production of drilling fluids and glass."));
     public static final RegistryObject<Item> LANTHANUM = Items.register( "lanthanum",
             () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB),0,"",0,0,"\n"));
     public static final RegistryObject<Item> CERIUM = Items.register( "cerium",
