@@ -7,6 +7,7 @@ import net.minecraft.network.chat.Component;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Items;
+import net.minecraft.world.food.Foods;
 import net.minecraft.world.item.TooltipFlag;
 import net.minecraft.world.level.Level;
 import org.jetbrains.annotations.Nullable;
@@ -135,6 +136,8 @@ public class ChemicalItem  extends Item {
     //DESC = Description. Optional description for adding in facts about item
     public String getcDESC(){return cDESC;}
 
+
+    //Maybe make custom registry for food properties? Apply properties to items.
     @Override
     public void appendHoverText(ItemStack stack, @Nullable Level level, List<Component> components, TooltipFlag flag) {
         if(Screen.hasShiftDown())
@@ -154,14 +157,7 @@ public class ChemicalItem  extends Item {
         super.appendHoverText(stack, level, components, flag);
     }
 
-    //Need to handle how this works in game
-    //Crashes when trying to eat. Need to override food properties
-    @Override
-    public boolean isEdible()
-    {
-        //for now false, until I sort this out.
-        return false;
-    }
+
 
 
 
