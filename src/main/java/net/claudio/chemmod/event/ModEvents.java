@@ -9,6 +9,7 @@ import net.claudio.chemmod.networking.packet.RadiationS2CPacket;
 import net.claudio.chemmod.radiation.PlayerRadiation;
 import net.claudio.chemmod.radiation.PlayerRadiationProvider;
 import net.claudio.chemmod.villager.ModVillagers;
+import net.minecraft.ChatFormatting;
 import net.minecraft.client.renderer.entity.ItemEntityRenderer;
 import net.minecraft.network.chat.Component;
 import net.minecraft.resources.ResourceLocation;
@@ -204,8 +205,10 @@ public class ModEvents {
         return 0;
     }
 
+    @SubscribeEvent
     public static void onLivingEntityFinishUseItem(LivingEntityUseItemEvent.Finish event)
     {
+        int count = 0;
         if(event.getEntity() instanceof Player player)
         {
             if(event.getItem().getItem().getClass() == ChemicalItem.class)
@@ -213,7 +216,11 @@ public class ModEvents {
                 ChemicalItem chemicalItem = (ChemicalItem) event.getItem().getItem();
                 if(chemicalItem.getcFOOD().equals("DEATH"))
                 {
-                    player.sendSystemMessage(Component.literal("You will die if you eat this again!!"));
+                    player.sendSystemMessage(Component.literal("You will die if you eat this again!!").withStyle(ChatFormatting.YELLOW));
+                    event.setCanceled(true); // Cancel the event to prevent further processing.
+                    System.out.println(count);
+                    count++;
+
                 }
             }
         }
