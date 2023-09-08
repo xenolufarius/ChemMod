@@ -1,6 +1,8 @@
 package net.claudio.chemmod.item;
 
 import net.claudio.chemmod.ChemMod;
+import net.claudio.chemmod.effect.ModEffects;
+
 import net.claudio.chemmod.item.custom.ChemicalItem;
 import net.claudio.chemmod.item.custom.DeconstructorItem;
 import net.minecraft.server.commands.KillCommand;
@@ -17,6 +19,8 @@ import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
+
+import java.util.function.Supplier;
 
 public class ModItems {
     public static final DeferredRegister<Item> Items =
@@ -35,8 +39,9 @@ public class ModItems {
     //TODO: Change AMU to be Double or Float. I want to have to 2 decimal places, when rounding is not feasible.
 
     //TODO: Solve mob effects for food consumption
+    //.food(new FoodProperties.Builder().nutrition(1).effect(new MobEffectInstance(MobEffects.WITHER,600,7),1f).build())
     public static final RegistryObject<Item> HYDROGEN = Items.register( "hydrogen",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(1).effect(new MobEffectInstance(MobEffects.WITHER,600,7),1f).build()), 2.02, "H2", 0, 4, "\nDesc: Hydrogen is most commonly found as a diatomic gas as H2 (g). It is commonly referred to as Hydrogen Gas."));
+            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(1).effect(new MobEffectInstance(ModEffects.CHEMICAL3,600,7),1f).build()), 2.02, "H2", 0, 4, "\nDesc: Hydrogen is most commonly found as a diatomic gas as H2 (g). It is commonly referred to as Hydrogen Gas."));
     public static final RegistryObject<Item> HELIUM = Items.register( "helium",
             () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB), 4.00, "He", 0, 4, "\nDesc: Helium is the first of the noble gases, and is commonly found involved in the fusion reactions in the Sun."));
     public static final RegistryObject<Item> LITHIUM = Items.register( "lithium",

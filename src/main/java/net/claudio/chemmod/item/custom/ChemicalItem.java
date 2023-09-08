@@ -1,13 +1,13 @@
 package net.claudio.chemmod.item.custom;
 
 
+
 import net.minecraft.ChatFormatting;
 import net.minecraft.client.gui.screens.Screen;
 import net.minecraft.network.chat.Component;
+import net.minecraft.world.food.FoodProperties;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
-import net.minecraft.world.item.Items;
-import net.minecraft.world.food.Foods;
 import net.minecraft.world.item.TooltipFlag;
 import net.minecraft.world.level.Level;
 import org.jetbrains.annotations.Nullable;
@@ -156,6 +156,8 @@ public class ChemicalItem  extends Item {
 
         super.appendHoverText(stack, level, components, flag);
     }
+
+    //Need to fix food. Maybe either through effect() or customFoodProperties
 
 
 
