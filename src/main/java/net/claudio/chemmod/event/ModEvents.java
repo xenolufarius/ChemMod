@@ -30,6 +30,7 @@ import net.minecraftforge.common.extensions.IForgeItemStack;
 import net.minecraftforge.event.AttachCapabilitiesEvent;
 import net.minecraftforge.event.TickEvent;
 import net.minecraftforge.event.entity.EntityJoinLevelEvent;
+import net.minecraftforge.event.entity.living.LivingEntityUseItemEvent;
 import net.minecraftforge.event.entity.player.PlayerEvent;
 import net.minecraftforge.event.level.NoteBlockEvent;
 import net.minecraftforge.event.village.VillagerTradesEvent;
@@ -202,6 +203,22 @@ public class ModEvents {
 
         return 0;
     }
+
+    public static void onLivingEntityFinishUseItem(LivingEntityUseItemEvent.Finish event)
+    {
+        if(event.getEntity() instanceof Player player)
+        {
+            if(event.getItem().getItem().getClass() == ChemicalItem.class)
+            {
+                ChemicalItem chemicalItem = (ChemicalItem) event.getItem().getItem();
+                if(chemicalItem.getcFOOD().equals("DEATH"))
+                {
+                    player.sendSystemMessage(Component.literal("You will die if you eat this again!!"));
+                }
+            }
+        }
+    }
+
 
     //ItemSupplier
 

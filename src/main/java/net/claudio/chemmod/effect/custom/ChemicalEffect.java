@@ -36,13 +36,10 @@ public class ChemicalEffect extends MobEffect {
             if (this == MobEffects.HARM && !pLivingEntity.isInvertedHealAndHarm() || this == MobEffects.HEAL && pLivingEntity.isInvertedHealAndHarm()) {
                 pLivingEntity.hurt(DamageSource.MAGIC, (float) (6 << pAmplifier));
             }
-        } else if (this == ModEffects.CHEMICAL3) {
-            if (pLivingEntity.getHealth() > 1.0F) {
-                pLivingEntity.hurt(DamageSource.MAGIC, 3.0F);
-            } else {
+        } else {
                 pLivingEntity.heal((float) Math.max(4 << pAmplifier, 0));
             }
 
         }
     }
-}
+

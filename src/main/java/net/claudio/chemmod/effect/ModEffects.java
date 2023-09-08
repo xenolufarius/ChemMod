@@ -16,14 +16,10 @@ public class ModEffects {
     public static final DeferredRegister<MobEffect> MobEffects =
             DeferredRegister.create(ForgeRegistries.MOB_EFFECTS, ChemMod.MOD_ID);
 
+    //Not seen as MobEffect.
     public static final RegistryObject<MobEffect> CHEMICAL = MobEffects.register( "chemical",
             () -> new ChemicalEffect(MobEffectCategory.HARMFUL, 16773073));
 
-    public static final MobEffect CHEMICAL3 = register(32, "chemical3", new ChemicalEffect(MobEffectCategory.HARMFUL, 2293580));
-
-    private static MobEffect register(int pId, String pKey, MobEffect pEffect) {
-        return Registry.registerMapping(Registry.MOB_EFFECT, pId, pKey, pEffect);
-    }
     public static void register(IEventBus eventBus) {
         MobEffects.register(eventBus);
     }
