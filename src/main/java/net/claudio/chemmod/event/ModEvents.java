@@ -14,6 +14,7 @@ import net.minecraft.client.renderer.entity.ItemEntityRenderer;
 import net.minecraft.network.chat.Component;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.server.level.ServerPlayer;
+import net.minecraft.world.damagesource.BadRespawnPointDamage;
 import net.minecraft.world.damagesource.DamageSource;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.entity.item.ItemEntity;
@@ -24,6 +25,7 @@ import net.minecraft.world.entity.projectile.ItemSupplier;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.trading.MerchantOffer;
+import net.minecraft.world.level.ExplosionDamageCalculator;
 import net.minecraft.world.phys.AABB;
 import net.minecraftforge.common.capabilities.RegisterCapabilitiesEvent;
 import net.minecraftforge.common.crafting.conditions.ItemExistsCondition;
@@ -33,12 +35,14 @@ import net.minecraftforge.event.TickEvent;
 import net.minecraftforge.event.entity.EntityJoinLevelEvent;
 import net.minecraftforge.event.entity.living.LivingEntityUseItemEvent;
 import net.minecraftforge.event.entity.player.PlayerEvent;
+import net.minecraftforge.event.level.ExplosionEvent;
 import net.minecraftforge.event.level.NoteBlockEvent;
 import net.minecraftforge.event.village.VillagerTradesEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.LogicalSide;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.registries.ForgeRegistries;
+import net.minecraft.world.level.Explosion;
 
 import java.util.List;
 
@@ -196,6 +200,37 @@ public class ModEvents {
         return largestRAD;
     }
 
+    //detecting stability of items in player inventory.
+    //Just copied over rad code. Need to adjust.
+    public static int itemStabilityDetectedInInventory(Player player)
+    {
+        int smallestSTAB = 4;
+        int tempSTAB = 0;
+        for(ItemStack stack : player.inventoryMenu.getItems())
+        {
+
+            //If needed
+            //ForgeRegistries.ITEMS.getKey(stack.getItem()).getNamespace().equals("chemmod")
+            if(!stack.isEmpty() && stack.getItem().getClass() == ChemicalItem.class)
+            {
+                ChemicalItem chemicalItem = (ChemicalItem) stack.getItem();
+                tempSTAB = chemicalItem.getcSTAB();
+                if(smallestSTAB > tempSTAB)
+                {
+                    smallestSTAB = chemicalItem.getcSTAB();
+                }
+                //potential if statement:
+                if(chemicalItem.getcSTAB()<3)
+                {
+                    //do something
+                    //maybe nested if for each , 1,2,0.
+                }
+            }
+
+        }
+        return smallestSTAB;
+    }
+
     //Okay now I need a method to detect if a radioactive item is on the ground nearby the player
     //Maybe can't do a range just yet.
 
@@ -205,22 +240,33 @@ public class ModEvents {
         return 0;
     }
 
+
+
+    //TODO: Fix double activation. Static is necessary, and having int count hasn't worked so far.
     @SubscribeEvent
     public static void onLivingEntityFinishUseItem(LivingEntityUseItemEvent.Finish event)
     {
-        int count = 0;
         if(event.getEntity() instanceof Player player)
         {
             if(event.getItem().getItem().getClass() == ChemicalItem.class)
             {
-                ChemicalItem chemicalItem = (ChemicalItem) event.getItem().getItem();
-                if(chemicalItem.getcFOOD().equals("DEATH"))
-                {
-                    player.sendSystemMessage(Component.literal("You will die if you eat this again!!").withStyle(ChatFormatting.YELLOW));
-                    event.setCanceled(true); // Cancel the event to prevent further processing.
-                    System.out.println(count);
-                    count++;
 
+                ChemicalItem chemicalItem = (ChemicalItem) event.getItem().getItem();
+                //Leftover if statement from int count
+                if(true)
+                {
+                    //Kills player
+                    if (chemicalItem.getcFOOD().equals("TOXIC")) {
+                        player.hurt(DamageSource.GENERIC, 30);
+                    }
+                    //Blows up player
+                    if (chemicalItem.getcFOOD().equals("EXP")) {
+
+                        player.level.explode(player, DamageSource.badRespawnPointExplosion(), (ExplosionDamageCalculator)null, player.getX(), player.getY(), player.getZ(), 3.0f,false, Explosion.BlockInteraction.DESTROY);
+                        player.hurt(DamageSource.explosion(new Explosion(player.level, player, player.getX(), player.getY(), player.getZ(),3.0f)), 20);
+
+                    }
+                    //Can add others
                 }
             }
         }

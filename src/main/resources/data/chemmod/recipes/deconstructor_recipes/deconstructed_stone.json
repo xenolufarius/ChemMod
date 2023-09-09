@@ -1,0 +1,14 @@
+{
+  "type": "chemmod:deconstructor",
+
+  "ingredients": [
+    {
+      "item": "minecraft:stone"
+    }
+  ],
+  "output": {
+    "item": "chemmod:nitrogen",
+    "count": 1
+  }
+
+}
