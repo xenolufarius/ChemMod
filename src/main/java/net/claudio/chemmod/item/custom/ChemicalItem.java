@@ -20,7 +20,7 @@ TO DO LIST*************************************
 1: ADD FUNCTIONALITY TO DECONSTRUCTOR
     1a. Add basic ability to turn item into elements (Maybe do molecules once those are added)
         1aa. How to resolve when deconstruction leads to unbalanced equation: H2O -> H2 and O, but needs to be O2?
-
+            1aaa. Potentially need to input 2 H20 for correct output.
         1ab. Would it be a right click function? like right click on object in world, and it breaks into molecules?
             1aba. Maybe it is like a pickaxe that accesses a different loot table. Is possible? Maybe.
 
@@ -36,7 +36,10 @@ TO DO LIST*************************************
             1baa. If it can be crafted, could it be deconstructed?
                 1baaa. Maybe it is made of radioactive elements lmao. It kills the player if done. I like this.
 ********************1baaaa. Which elements? Also would need radiation to be functional. Maybe do rad first.
+                        1baaaaa. Lot of heavy elements decompose quickly, so maybe that.
 ********1bb. Trading? The chemist villager could have it for sale as its lowest level. Maybe.
+            1bba. This is most likely solution.
+                1bbaa. Also maybe not use emerald for trade currency.
         1bc. Chests? Wouldn't make sense.
         1bd. Players start with it? Too easy.
 
@@ -48,6 +51,7 @@ TO DO LIST*************************************
         2ba. Strength most likely. Range should be fixed.
 ????????2bb. How will exposure work? Will inflict if in inventory or just in world? How to resolve that?
             2bba. I want from inventory. To even hold uranium should mess you up.
+            COMPLETE
                 2bbaa. Safe handling? Baubles? Maybe potion for immunity? OH!
 ********************2bbaaa. Enchantment. Or hazmat suit with built-in enchantment for protection.
     2c. Rad bar above health to indicate exposure. Reverse of air bubbles underwater.
@@ -57,6 +61,7 @@ TO DO LIST*************************************
                 2caab. RAD 2 = poi lvl 2 (stronger, maybe kills)
                 2caac. RAD 3 = poi lvl 3 (stronger, hurts more / faster?)
                 2caad. RAD 4 = poi lvl 4 (Probably instantly kills) (Max RAD value)
+                POISON EFFECT OUT OF REACH RN
         2cb. How to cure/lessen?
             2cba. Maybe no cure lmao.
             2cbb. Milk might be fine for now, but only for poison.
@@ -67,7 +72,7 @@ TO DO LIST*************************************
 3: CHANGE CHEMICALS TO CHEMICALITEMS
     3a. Tedious lmao. Maybe AI can help?
     3b. Should do before adding in too many molecules. Too overwhelming then.
-
+    3c. COMPLETE
 
 ------------
 4: ADD MORE MOLECULES
@@ -76,6 +81,24 @@ TO DO LIST*************************************
         4ba. Build up?
         4bb. Or focus on deconstruction outputs?
 
+------------
+5: FOOD PROPERTIES
+    5a. All items are edible now.
+    5b. New parameter, SDS, handles custom events
+        5ba. Includes when finished eating, so harmful things harm you now, and K explodes when ingested.
+        COMPLETE
+
+------------
+6. STABILITY
+    6a. Work in progress rn
+    6b. Need to figure out how to update player inventory.
+    6c. Need to figure out how to craft items in player inventory.
+        6ca. Possible with if statements, but maybe want to use recipe files?
+
+------------
+7. DECONSTRUCTOR RECIPES
+    7a. Tedious. Very Tedious.
+    7b. Over 1000 items in vanilla
 
 ------------
 999: NUCLEAR WAR
@@ -152,8 +175,10 @@ public class ChemicalItem  extends Item {
                     "\nStability: " + getcSTAB() +
                     getcDESC()).withStyle(ChatFormatting.AQUA));
 
-        }
-        else
+        } else if (Screen.hasControlDown()) {
+            //\n is freaking out for some reason
+            components.add(Component.literal("Hazards: \n" + "\n   " + getcSDS()).withStyle(ChatFormatting.YELLOW));
+        } else
         {
             components.add(Component.literal("Press SHIFT for more info").withStyle(ChatFormatting.DARK_GREEN));
         }

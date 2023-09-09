@@ -259,16 +259,104 @@ public class ModEvents {
                     String[] SDSfragments = chemicalItem.getcSDS().split(" & ");
 
                     //Might change to switch
+                    //Might not. Don't know if this will handle multiple possible at once
+
+                    /*
                     switch (chemicalItem.getcSDS())
                     {
                         //This will check for SDS pictogram tag.
                         //I wanna make it a single string that can be broken up into smaller fragments.
+                        //Heirarchy. Explosive, before toxic
                         case "TOXIC":
                             break;
 
                         default:
                             break;
                      }
+
+                     */
+
+
+                    //Maybe for loop? For entire array?
+                    //Let's list them out:
+                    /*
+                    H - Health Hazard. Maybe hurt player 10 on eat, but not in splash potion
+                    F - Flammable. 1 - Regular, ignites easily. 2 - Self-Igniting
+                    I - Exclamation Mark - Hurt player 2 on eat
+                    G - Gas Cylinder - Explode if on fire
+                    C - Corrosion - Death on eat, Harmful in splash potion?
+                    E - Exploding Bomb - Explode on fire?
+                    O - Flame Over Circle - Maybe Spreads fire if thrown in.
+                    A - Environment - Pollutes water?
+                    T - Skull & Crossbones - Death on eat
+
+                    S - Special - Like Potassium explosion when contact w/ water/on eat
+                        -- Maybe for tiered we do like S1, S2, etc...
+
+                    Check for first Char, so that we can categorise by letter
+                    Hierarchy: S,T,C,H,I,G,E,F,O,A
+                    Handles Eating behaviors first, then explosions, then fire. A is gonna be non-functional for a while.
+
+
+
+                     */
+                    //This works :)
+                    for(String sds : SDSfragments)
+                    {
+                        //SPECIAL CASE
+                        //Blows up player
+                        if (sds.equals("S1")) {
+
+                            player.level.explode(player, DamageSource.badRespawnPointExplosion(), (ExplosionDamageCalculator)null, player.getX(), player.getY(), player.getZ(), 3.0f,false, Explosion.BlockInteraction.DESTROY);
+                            player.hurt(DamageSource.explosion(new Explosion(player.level, player, player.getX(), player.getY(), player.getZ(),3.0f)), 20);
+
+                        }
+                        //TOXIC
+                        //Kills player
+                        if (sds.equals("T")) {
+                            player.hurt(DamageSource.GENERIC, 30);
+                        }
+                        //CORROSIVE
+                        //Kills Player
+                        if (sds.equals("C")) {
+                            player.hurt(DamageSource.GENERIC, 30);
+                        }
+                        //HEALTH HAZARD
+                        //Hurts player 5 hearts
+                        if (sds.equals("H")) {
+                            player.hurt(DamageSource.GENERIC, 10);
+                        }
+                        //EXCLAMATION MARK
+                        //Hurts player 1 heart
+                        if (sds.equals("I")) {
+                            player.hurt(DamageSource.GENERIC, 2);
+                        }
+                        //What would these do on eat?
+                        //Probably nothing for now
+                        //GAS CYLINDER
+                        if (sds.equals("G")) {
+
+                        }
+                        //EXPLODING BOMB
+                        if (sds.equals("E")) {
+
+                        }
+                        //FLAMMABLE
+                        if (sds.equals("F")) {
+
+                        }
+                        //OXIDIZER
+                        if (sds.equals("O")) {
+
+                        }
+                        //HARMFUL TO ENVIRONMENT
+                        if (sds.equals("A")) {
+
+                        }
+                    }
+                    //I think that I will keep this for loop for future uses, such as when an item is thrown into fire or something to handle flammability, and explosives
+
+                    /*
                     //Kills player
                     if (chemicalItem.getcSDS().equals("TOXIC")) {
                         player.hurt(DamageSource.GENERIC, 30);
@@ -281,6 +369,8 @@ public class ModEvents {
 
                     }
                     //Can add others
+
+                     */
                 }
             }
         }
