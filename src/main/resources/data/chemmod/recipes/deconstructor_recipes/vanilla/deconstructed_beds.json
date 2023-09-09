@@ -3,11 +3,11 @@
 
   "ingredients": [
     {
-      "item": "minecraft:stone"
+      "tag": "minecraft:beds"
     }
   ],
   "output": {
-    "item": "chemmod:nitrogen",
+    "item": "chemmod:oxygen",
     "count": 1
   }
 
