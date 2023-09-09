@@ -14,6 +14,7 @@ import net.minecraft.client.renderer.entity.ItemEntityRenderer;
 import net.minecraft.network.chat.Component;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.server.level.ServerPlayer;
+import net.minecraft.server.packs.resources.ResourceManager;
 import net.minecraft.world.damagesource.BadRespawnPointDamage;
 import net.minecraft.world.damagesource.DamageSource;
 import net.minecraft.world.entity.Entity;
@@ -202,33 +203,32 @@ public class ModEvents {
 
     //detecting stability of items in player inventory.
     //Just copied over rad code. Need to adjust.
-    public static int itemStabilityDetectedInInventory(Player player)
+    public static void itemStabilityDetectedInInventory(TickEvent.PlayerTickEvent event)
     {
-        int smallestSTAB = 4;
-        int tempSTAB = 0;
-        for(ItemStack stack : player.inventoryMenu.getItems())
+        for(ItemStack stack : event.player.inventoryMenu.getItems())
         {
-
-            //If needed
-            //ForgeRegistries.ITEMS.getKey(stack.getItem()).getNamespace().equals("chemmod")
             if(!stack.isEmpty() && stack.getItem().getClass() == ChemicalItem.class)
             {
                 ChemicalItem chemicalItem = (ChemicalItem) stack.getItem();
-                tempSTAB = chemicalItem.getcSTAB();
-                if(smallestSTAB > tempSTAB)
-                {
-                    smallestSTAB = chemicalItem.getcSTAB();
-                }
                 //potential if statement:
                 if(chemicalItem.getcSTAB()<3)
                 {
                     //do something
                     //maybe nested if for each , 1,2,0.
+                    if(chemicalItem.getcSTAB() == 0)
+                    {
+                        stack = new ItemStack((Item)null);
+                        //Need to send this back to Player inventory
+                    }
+                    if(chemicalItem.getcSTAB() == 1 || chemicalItem.getcSTAB() == 2)
+                    {
+                        //Craft the item into oxidized version
+                        //Need to send this back to Player
+                    }
                 }
             }
 
         }
-        return smallestSTAB;
     }
 
     //Okay now I need a method to detect if a radioactive item is on the ground nearby the player
@@ -255,12 +255,26 @@ public class ModEvents {
                 //Leftover if statement from int count
                 if(true)
                 {
+                    //Splits SDS into fragments and puts them into an array.
+                    String[] SDSfragments = chemicalItem.getcSDS().split(" & ");
+
+                    //Might change to switch
+                    switch (chemicalItem.getcSDS())
+                    {
+                        //This will check for SDS pictogram tag.
+                        //I wanna make it a single string that can be broken up into smaller fragments.
+                        case "TOXIC":
+                            break;
+
+                        default:
+                            break;
+                     }
                     //Kills player
-                    if (chemicalItem.getcFOOD().equals("TOXIC")) {
+                    if (chemicalItem.getcSDS().equals("TOXIC")) {
                         player.hurt(DamageSource.GENERIC, 30);
                     }
                     //Blows up player
-                    if (chemicalItem.getcFOOD().equals("EXP")) {
+                    if (chemicalItem.getcSDS().equals("EXP")) {
 
                         player.level.explode(player, DamageSource.badRespawnPointExplosion(), (ExplosionDamageCalculator)null, player.getX(), player.getY(), player.getZ(), 3.0f,false, Explosion.BlockInteraction.DESTROY);
                         player.hurt(DamageSource.explosion(new Explosion(player.level, player, player.getX(), player.getY(), player.getZ(),3.0f)), 20);

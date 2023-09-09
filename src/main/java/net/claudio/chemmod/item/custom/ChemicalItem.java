@@ -97,8 +97,8 @@ public class ChemicalItem  extends Item {
     private int cRAD;
     private int cSTAB;
     private String cDESC;
-    private String cFOOD;
-    public ChemicalItem(Properties properties, double AMU, String CF, int RAD, int STAB, String DESC, String FOOD) {
+    private String cSDS;
+    public ChemicalItem(Properties properties, double AMU, String CF, int RAD, int STAB, String DESC, String SDS) {
         super(properties);
 
         this.cAMU = AMU;
@@ -106,7 +106,7 @@ public class ChemicalItem  extends Item {
         this.cRAD = RAD;
         this.cSTAB = STAB;
         this.cDESC = DESC;
-        this.cFOOD = FOOD;
+        this.cSDS = SDS;
     }
     //I have to fix the set methods
     //Make the rest of the elements into this type
@@ -138,7 +138,7 @@ public class ChemicalItem  extends Item {
     //DESC = Description. Optional description for adding in facts about item
     public String getcDESC(){return cDESC;}
     //FOOD = String that will be put through an even to handle custom eating properties
-    public String getcFOOD(){return cFOOD;}
+    public String getcSDS(){return cSDS;}
 
 
     //Maybe make custom registry for food properties? Apply properties to items.
