@@ -5,10 +5,13 @@ package net.claudio.chemmod.item.custom;
 import net.minecraft.ChatFormatting;
 import net.minecraft.client.gui.screens.Screen;
 import net.minecraft.network.chat.Component;
+import net.minecraft.world.damagesource.DamageSource;
 import net.minecraft.world.food.FoodProperties;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.TooltipFlag;
+import net.minecraft.world.level.Explosion;
+import net.minecraft.world.level.ExplosionDamageCalculator;
 import net.minecraft.world.level.Level;
 import org.jetbrains.annotations.Nullable;
 
@@ -163,10 +166,55 @@ public class ChemicalItem  extends Item {
     //FOOD = String that will be put through an even to handle custom eating properties
     public String getcSDS(){return cSDS;}
 
+    String SDSInfo = "";
 
     //Maybe make custom registry for food properties? Apply properties to items.
     @Override
     public void appendHoverText(ItemStack stack, @Nullable Level level, List<Component> components, TooltipFlag flag) {
+
+        SDSInfo = "";
+        String[] SDSfragments = getcSDS().split(" & ");
+        for(String sds : SDSfragments)
+        {
+            //TOXIC
+            if (sds.equals("T")) {
+                SDSInfo = SDSInfo + ", " + "Toxic";
+            }
+            //CORROSIVE
+            if (sds.equals("C")) {
+                SDSInfo = SDSInfo + ", " + "Corrosive";
+            }
+            //HEALTH HAZARD
+            if (sds.equals("H")) {
+                SDSInfo = SDSInfo + ", " + "Health Hazard";
+            }
+            //EXCLAMATION MARK
+            if (sds.equals("I")) {
+                SDSInfo = SDSInfo + ", " + "Irritant";
+            }
+            //GAS CYLINDER
+            if (sds.equals("G")) {
+                SDSInfo = SDSInfo + ", " + "Gas Under Pressure";
+            }
+            //EXPLODING BOMB
+            if (sds.equals("E")) {
+                SDSInfo = SDSInfo + ", " + "Explosive";
+            }
+            //FLAMMABLE
+            if (sds.equals("F")) {
+                SDSInfo = SDSInfo + ", " + "Flammable";
+            }
+            //OXIDIZER
+            if (sds.equals("O")) {
+                SDSInfo = SDSInfo + ", " + "Oxidizer";
+            }
+            //HARMFUL TO ENVIRONMENT
+            if (sds.equals("A")) {
+                SDSInfo = SDSInfo + ", " + "Harmful To Environment";
+            }
+        }
+
+
         if(Screen.hasShiftDown())
         {
             components.add(Component.literal("AMU: " + getcAMU() +
@@ -177,7 +225,8 @@ public class ChemicalItem  extends Item {
 
         } else if (Screen.hasControlDown()) {
             //\n is freaking out for some reason
-            components.add(Component.literal("Hazards: \n" + "\n   " + getcSDS()).withStyle(ChatFormatting.YELLOW));
+            //Good enough for now
+            components.add(Component.literal("Hazards: Handle With Caution" + SDSInfo).withStyle(ChatFormatting.YELLOW));
         } else
         {
             components.add(Component.literal("Press SHIFT for more info").withStyle(ChatFormatting.DARK_GREEN));
