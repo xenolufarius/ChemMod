@@ -1,7 +1,10 @@
 package net.claudio.chemmod.event;
 
+import com.google.common.collect.ImmutableMap;
+import com.google.common.collect.Maps;
 import it.unimi.dsi.fastutil.ints.Int2ObjectMap;
 import net.claudio.chemmod.ChemMod;
+import net.claudio.chemmod.block.ModBlocks;
 import net.claudio.chemmod.item.ModItems;
 import net.claudio.chemmod.item.custom.ChemicalItem;
 import net.claudio.chemmod.networking.ModMessages;
@@ -10,6 +13,7 @@ import net.claudio.chemmod.radiation.PlayerRadiation;
 import net.claudio.chemmod.radiation.PlayerRadiationProvider;
 import net.claudio.chemmod.villager.ModVillagers;
 import net.minecraft.ChatFormatting;
+import net.minecraft.Util;
 import net.minecraft.client.renderer.entity.ItemEntityRenderer;
 import net.minecraft.network.chat.Component;
 import net.minecraft.resources.ResourceLocation;
@@ -17,6 +21,7 @@ import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.server.packs.resources.ResourceManager;
 import net.minecraft.world.damagesource.BadRespawnPointDamage;
 import net.minecraft.world.damagesource.DamageSource;
+import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.entity.item.ItemEntity;
 import net.minecraft.world.entity.npc.VillagerProfession;
@@ -25,8 +30,10 @@ import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.projectile.ItemSupplier;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.Items;
 import net.minecraft.world.item.trading.MerchantOffer;
 import net.minecraft.world.level.ExplosionDamageCalculator;
+import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.phys.AABB;
 import net.minecraftforge.common.capabilities.RegisterCapabilitiesEvent;
 import net.minecraftforge.common.crafting.conditions.ItemExistsCondition;
@@ -46,6 +53,7 @@ import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraft.world.level.Explosion;
 
 import java.util.List;
+import java.util.Map;
 
 @Mod.EventBusSubscriber(modid = ChemMod.MOD_ID)
 
@@ -53,6 +61,7 @@ public class ModEvents {
     @SubscribeEvent
     public static void addCustomTrades(VillagerTradesEvent event)
     {
+        /*
         if(event.getType() == VillagerProfession.CLERIC)
         {
             Int2ObjectMap<List<VillagerTrades.ItemListing>> trades = event.getTrades();
@@ -64,16 +73,63 @@ public class ModEvents {
                     stack, 10, 8, 0.02F));
         }
 
+         */
+
         if(event.getType() == ModVillagers.CHEMIST.get())
         {
             Int2ObjectMap<List<VillagerTrades.ItemListing>> trades = event.getTrades();
-            ItemStack stack = new ItemStack(ModItems.DECONSTRUCTOR.get(), 1);
+
+            /*
+            public static final Map<VillagerProfession, Int2ObjectMap<VillagerTrades.ItemListing[]>> TRADES = Util.make(Maps.newHashMap(), (p_35633_) -> {
+                        p_35633_.put(VillagerProfession.FARMER,
+                                toIntMap(ImmutableMap.of(1, new VillagerTrades.ItemListing[]{new VillagerTrades.EmeraldForItems(Items.WHEAT, 20, 16, 2),
+                                                new VillagerTrades.EmeraldForItems(Items.POTATO, 26, 16, 2),
+                                                new VillagerTrades.EmeraldForItems(Items.CARROT, 22, 16, 2),
+                                                new VillagerTrades.EmeraldForItems(Items.BEETROOT, 15, 16, 2),
+                                                new VillagerTrades.ItemsForEmeralds(Items.BREAD, 1, 6, 16, 1)},
+                                        2, new VillagerTrades.ItemListing[]{new VillagerTrades.EmeraldForItems(Blocks.PUMPKIN, 6, 12, 10), new VillagerTrades.ItemsForEmeralds(Items.PUMPKIN_PIE, 1, 4, 5), new VillagerTrades.ItemsForEmeralds(Items.APPLE, 1, 4, 16, 5)}, 3, new VillagerTrades.ItemListing[]{new VillagerTrades.ItemsForEmeralds(Items.COOKIE, 3, 18, 10), new VillagerTrades.EmeraldForItems(Blocks.MELON, 4, 12, 20)}, 4, new VillagerTrades.ItemListing[]{new VillagerTrades.ItemsForEmeralds(Blocks.CAKE, 1, 1, 12, 15), new VillagerTrades.SuspiciousStewForEmerald(MobEffects.NIGHT_VISION, 100, 15), new VillagerTrades.SuspiciousStewForEmerald(MobEffects.JUMP, 160, 15), new VillagerTrades.SuspiciousStewForEmerald(MobEffects.WEAKNESS, 140, 15), new VillagerTrades.SuspiciousStewForEmerald(MobEffects.BLINDNESS, 120, 15), new VillagerTrades.SuspiciousStewForEmerald(MobEffects.POISON, 280, 15), new VillagerTrades.SuspiciousStewForEmerald(MobEffects.SATURATION, 7, 15)}, 5, new VillagerTrades.ItemListing[]{new VillagerTrades.ItemsForEmeralds(Items.GOLDEN_CARROT, 3, 3, 30), new VillagerTrades.ItemsForEmeralds(Items.GLISTERING_MELON_SLICE, 4, 3, 30)})));
+                    }
+             */
+                //For Result Items
+            ItemStack deconstructor_block = new ItemStack(ModBlocks.DECONSTRUCTOR_BLOCK.get(), 1);
+            ItemStack hydrogen_gas = new ItemStack(ModItems.HYDROGEN.get(), 2);
+            ItemStack oxygen_gas = new ItemStack(ModItems.OXYGEN.get(), 1);
+            ItemStack uranium = new ItemStack(ModItems.URANIUM.get(), 1);
             int villagerlevel = 1;
 
+            //TODO: Refine this trading list.
+            //Novice
+            //I guess can only have 2 trades at this level at a given time? Can I adjust this?
+            //Don't know but adding numbers = higher level of villager
             trades.get(villagerlevel).add((trader, rand) -> new MerchantOffer(
-                    new ItemStack(ModItems.CHEMICAL.get(), 3),
-                    stack, 10, 8, 0.02F));
-                        //Max Uses,EXP for Villager,Multiplier for Price
+                    new ItemStack(Items.EMERALD, 1),
+                    hydrogen_gas, 3, 2, 0.02F));
+
+            trades.get(villagerlevel).add((trader, rand) -> new MerchantOffer(
+                    new ItemStack(Items.EMERALD, 2),
+                    oxygen_gas, 3, 2, 0.02F));
+
+            //Apprentice
+            trades.get(villagerlevel+1).add((trader, rand) -> new MerchantOffer(
+                    //Currency, Cost, stack = Result
+                    new ItemStack(ModItems.WATER.get(), 6),
+                    deconstructor_block, 2, 20, 0.02F));
+                                    //Max Uses,EXP for Villager,Multiplier for Price
+            trades.get(villagerlevel+1).add((trader, rand) -> new MerchantOffer(
+                    new ItemStack(ModItems.CARBON_DIOXIDE.get(), 2),
+                    oxygen_gas, 8, 8, 0.02F));
+            //Journeyman
+            trades.get(villagerlevel+2).add((trader, rand) -> new MerchantOffer(
+                    new ItemStack(ModItems.CARBON_DIOXIDE.get(), 4),
+                    uranium, 16, 30, 0.02F));
+            //Expert
+            trades.get(villagerlevel+3).add((trader, rand) -> new MerchantOffer(
+                    new ItemStack(ModItems.CARBON_DIOXIDE.get(), 4),
+                    uranium, 20, 40, 0.02F));
+            //Master
+            trades.get(villagerlevel+3).add((trader, rand) -> new MerchantOffer(
+                    new ItemStack(ModItems.CARBON_DIOXIDE.get(), 4),
+                    uranium, 20, 40, 0.02F));
         }
 
     }
@@ -243,6 +299,7 @@ public class ModEvents {
 
 
     //TODO: Fix double activation. Static is necessary, and having int count hasn't worked so far.
+    //TODO: Doesn't happen for hurt(), but for message?
     @SubscribeEvent
     public static void onLivingEntityFinishUseItem(LivingEntityUseItemEvent.Finish event)
     {

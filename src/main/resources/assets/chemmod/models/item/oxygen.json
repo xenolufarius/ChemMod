@@ -1,7 +1,7 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "chemmod:item/chemical2"
+    "layer0": "chemmod:item/oxygen"
   }
 
 
