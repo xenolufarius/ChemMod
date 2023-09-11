@@ -1,0 +1,14 @@
+{
+  "type": "chemmod:deconstructor",
+
+  "ingredients": [
+    {
+      "tag": "minecraft:wooden_pressure_plates"
+    }
+  ],
+  "output": {
+    "item": "chemmod:oxygen",
+    "count": 1
+  }
+
+}

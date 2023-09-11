@@ -1,0 +1,14 @@
+{
+  "type": "chemmod:deconstructor",
+
+  "ingredients": [
+    {
+      "tag": "minecraft:soul_fire_base_blocks"
+    }
+  ],
+  "output": {
+    "item": "chemmod:oxygen",
+    "count": 1
+  }
+
+}

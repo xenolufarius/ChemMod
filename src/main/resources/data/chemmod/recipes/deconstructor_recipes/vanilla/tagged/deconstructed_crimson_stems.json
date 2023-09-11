@@ -1,0 +1,14 @@
+{
+  "type": "chemmod:deconstructor",
+
+  "ingredients": [
+    {
+      "tag": "minecraft:crimson_stems"
+    }
+  ],
+  "output": {
+    "item": "chemmod:oxygen",
+    "count": 1
+  }
+
+}
