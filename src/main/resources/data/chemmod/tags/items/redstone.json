@@ -1,0 +1,14 @@
+{
+  "values": [
+    "#minecraft:redstone_ores",
+    "minecraft:redstone",
+    "minecraft:redstone_torch",
+    "minecraft:redstone_block",
+    "minecraft:repeater",
+    "minecraft:comparator",
+    "minecraft:redstone_lamp"
+  ]
+
+
+}
+

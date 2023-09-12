@@ -1,7 +1,8 @@
 {
   "values": [
     "minecraft:beacon",
-    "minecraft:structure_void"
+    "minecraft:structure_void",
+    "minecraft:conduit"
   ]
 
 

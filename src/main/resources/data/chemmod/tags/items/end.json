@@ -9,7 +9,9 @@
     "minecraft:end_stone",
     "minecraft:end_stone_bricks",
     "minecraft:ender_chest",
-    "minecraft:end_stone_wall"
+    "minecraft:end_stone_wall",
+    "minecraft:end_stone_brick_stairs",
+    "minecraft:end_stone_brick_slab"
   ]
 
 

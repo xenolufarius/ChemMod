@@ -22,7 +22,21 @@
     "minecraft:chain",
     "minecraft:anvil",
     "minecraft:chipped_anvil",
-    "minecraft:damaged_anvil"
+    "minecraft:damaged_anvil",
+    "minecraft:heavy_weighted_pressure_plate",
+    "minecraft:detector_rail",
+    "minecraft:rail",
+    "minecraft:activator_rail",
+    "minecraft:minecart",
+    "minecraft:chest_minecart",
+    "minecraft:furnace_minecart",
+    "minecraft:hopper_minecart",
+    "minecraft:flint_and_steel",
+    "minecraft:chainmail_helmet",
+    "minecraft:chainmail_chestplate",
+    "minecraft:chainmail_leggings",
+    "minecraft:chainmail_boots",
+    "minecraft:bucket"
   ]
 
 

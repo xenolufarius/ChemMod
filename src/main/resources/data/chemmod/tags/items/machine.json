@@ -1,0 +1,15 @@
+{
+  "values": [
+    "minecraft:piston",
+    "minecraft:sticky_piston",
+    "minecraft:observer",
+    "minecraft:hopper",
+    "minecraft:dispenser",
+    "minecraft:dropper",
+    "minecraft:lever",
+    "minecraft:daylight_detector"
+  ]
+
+
+}
+
