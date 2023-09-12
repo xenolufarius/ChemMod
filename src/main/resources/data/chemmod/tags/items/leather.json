@@ -3,7 +3,9 @@
     "#minecraft:freeze_immune_wearables",
     "minecraft:leather",
     "minecraft:leather_horse_armor",
-    "minecraft:saddle"
+    "minecraft:saddle",
+    "minecraft:bundle",
+    "minecraft:rabbit_hide"
   ]
 
 

@@ -1,6 +1,15 @@
 {
   "values": [
-    "minecraft:stick"
+    "minecraft:stick",
+    "minecraft:paper",
+    "minecraft:book",
+    "minecraft:filled_map",
+    "minecraft:writable_book",
+    "minecraft:written_book",
+    "minecraft:knowledge_book",
+    "minecraft:map",
+    "minecraft:enchanted_book",
+    "minecraft:name_tag"
   ]
 
 

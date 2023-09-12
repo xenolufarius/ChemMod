@@ -137,7 +137,16 @@
     "minecraft:stone_axe",
     "minecraft:stone_hoe",
     "minecraft:flint",
-    "minecraft:lava_bucket"
+    "minecraft:lava_bucket",
+    "minecraft:brick",
+    "minecraft:clay_ball",
+    "minecraft:glowstone_dust",
+    "minecraft:brewing_stand",
+    "minecraft:cauldron",
+    "minecraft:flower_pot",
+    "minecraft:nether_brick",
+    "minecraft:prismarine_shard",
+    "minecraft:prismarine_crystals"
   ]
 
 

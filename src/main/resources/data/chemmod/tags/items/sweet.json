@@ -1,7 +1,10 @@
 {
   "values": [
     "minecraft:sugar_cane",
-    "minecraft:honey_block"
+    "minecraft:honey_block",
+    "minecraft:sugar",
+    "minecraft:cake",
+    "minecraft:cookie"
     ]
 
 

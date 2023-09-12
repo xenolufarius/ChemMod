@@ -15,7 +15,10 @@
     "minecraft:hay_block",
     "minecraft:dirt_path",
     "minecraft:tall_grass",
-    "minecraft:large_fern"
+    "minecraft:large_fern",
+    "minecraft:dried_kelp_block",
+    "minecraft:dried_kelp",
+    "minecraft:lead"
   ]
 
 

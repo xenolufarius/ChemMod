@@ -36,7 +36,12 @@
     "minecraft:chainmail_chestplate",
     "minecraft:chainmail_leggings",
     "minecraft:chainmail_boots",
-    "minecraft:bucket"
+    "minecraft:bucket",
+    "minecraft:compass",
+    "minecraft:recovery_compass",
+    "minecraft:shears",
+    "minecraft:shield",
+    "minecraft:trident"
   ]
 
 

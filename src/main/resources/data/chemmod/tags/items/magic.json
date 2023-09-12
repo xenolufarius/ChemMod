@@ -2,7 +2,19 @@
   "values": [
     "minecraft:beacon",
     "minecraft:structure_void",
-    "minecraft:conduit"
+    "minecraft:conduit",
+    "minecraft:ender_pearl",
+    "minecraft:ender_eye",
+    "minecraft:blaze_rod",
+    "minecraft:ghast_tear",
+    "minecraft:potion",
+    "minecraft:splash_potion",
+    "minecraft:lingering_potion",
+    "minecraft:blaze_powder",
+    "minecraft:magma_cream",
+    "minecraft:end_crystal",
+    "minecraft:dragon_breath",
+    "minecraft:totem_of_undying"
   ]
 
 

@@ -2,7 +2,10 @@
   "values": [
     "minecraft:tnt",
     "minecraft:tnt_minecart",
-    "minecraft:gunpowder"
+    "minecraft:gunpowder",
+    "minecraft:fire_charge",
+    "minecraft:firework_rocket",
+    "minecraft:firework_star"
   ]
 
 
