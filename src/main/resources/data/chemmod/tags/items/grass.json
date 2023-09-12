@@ -10,7 +10,12 @@
     "minecraft:farmland",
     "minecraft:bamboo",
     "minecraft:vine",
-    "minecraft:glow_lichen"
+    "minecraft:glow_lichen",
+    "minecraft:lily_pad",
+    "minecraft:hay_block",
+    "minecraft:dirt_path",
+    "minecraft:tall_grass",
+    "minecraft:large_fern"
   ]
 
 

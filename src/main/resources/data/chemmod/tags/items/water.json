@@ -2,7 +2,8 @@
   "values": [
     "minecraft:snow",
     "minecraft:ice",
-    "minecraft:snow_block"
+    "minecraft:snow_block",
+    "minecraft:packed_ice"
   ]
 
 

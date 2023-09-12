@@ -4,7 +4,10 @@
     "minecraft:chest",
     "minecraft:crafting_table",
     "minecraft:ladder",
-    "minecraft:jukebox"
+    "minecraft:jukebox",
+    "minecraft:enchanting_table",
+    "minecraft:command_block",
+    "minecraft:chain_command_block"
   ]
 
 

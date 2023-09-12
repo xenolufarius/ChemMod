@@ -19,7 +19,10 @@
     "minecraft:iron_boots",
     "minecraft:iron_horse_armor",
     "minecraft:iron_nugget",
-    "minecraft:chain"
+    "minecraft:chain",
+    "minecraft:anvil",
+    "minecraft:chipped_anvil",
+    "minecraft:damaged_anvil"
   ]
 
 
