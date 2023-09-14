@@ -1,0 +1,14 @@
+{
+  "type": "chemmod:deconstructor",
+
+  "ingredients": [
+    {
+      "tag": "chemmod:bee"
+    }
+  ],
+  "output": {
+    "item": "chemmod:oxygen",
+    "count": 1
+  }
+
+}

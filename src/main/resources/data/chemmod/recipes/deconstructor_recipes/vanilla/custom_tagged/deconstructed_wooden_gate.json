@@ -1,0 +1,14 @@
+{
+  "type": "chemmod:deconstructor",
+
+  "ingredients": [
+    {
+      "tag": "chemmod:wooden_gate"
+    }
+  ],
+  "output": {
+    "item": "chemmod:oxygen",
+    "count": 1
+  }
+
+}

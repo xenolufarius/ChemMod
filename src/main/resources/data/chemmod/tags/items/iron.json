@@ -20,13 +20,7 @@
     "minecraft:iron_horse_armor",
     "minecraft:iron_nugget",
     "minecraft:chain",
-    "minecraft:anvil",
-    "minecraft:chipped_anvil",
-    "minecraft:damaged_anvil",
     "minecraft:heavy_weighted_pressure_plate",
-    "minecraft:detector_rail",
-    "minecraft:rail",
-    "minecraft:activator_rail",
     "minecraft:minecart",
     "minecraft:chest_minecart",
     "minecraft:furnace_minecart",
@@ -41,7 +35,9 @@
     "minecraft:recovery_compass",
     "minecraft:shears",
     "minecraft:shield",
-    "minecraft:trident"
+    "minecraft:trident",
+    "minecraft:smithing_table",
+    "minecraft:stonecutter"
   ]
 
 

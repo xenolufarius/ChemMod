@@ -4,7 +4,10 @@
     "minecraft:honey_block",
     "minecraft:sugar",
     "minecraft:cake",
-    "minecraft:cookie"
+    "minecraft:cookie",
+    "minecraft:honeycomb",
+    "minecraft:honeycomb_block",
+    "minecraft:honey_bottle"
     ]
 
 
