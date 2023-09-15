@@ -41,7 +41,7 @@ public class ModItems {
     //TODO: Solve mob effects for food consumption. Solved kinda. Need to give all food properties now. Done
     //TODO: Maybe Change FOOD param to be more flexible and include SDS pictograms. Done
     //TODO: Update SDS to reflect new system Done
-    //TODO: Recipes, STAB, Villagers (Mostly done. Need to refine later), PNG files
+    //TODO: Recipes, STAB, Villagers (Mostly done. Need to refine later), PNG files (DONE)
     //.food(new FoodProperties.Builder().nutrition(1).effect(new MobEffectInstance(MobEffects.WITHER,600,7),1f).build())
     public static final RegistryObject<Item> HYDROGEN = Items.register( "hydrogen",
             () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()), 2.02, "H2", 0, 4, "\nDesc: Hydrogen is most commonly found as a diatomic gas as H2 (g). It is commonly referred to as Hydrogen Gas.","T"));
@@ -292,6 +292,12 @@ public class ModItems {
     public static final RegistryObject<Item> POTASSIUM_OXIDE = Items.register( "potassium_oxide",
             () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
     public static final RegistryObject<Item> MAGNESIUM_OXIDE = Items.register( "magnesium_oxide",
+            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
+    public static final RegistryObject<Item> SILICON_DIOXIDE = Items.register( "silicon_dioxide",
+            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
+    public static final RegistryObject<Item> POLYVINYL_CHLORIDE = Items.register( "polyvinyl_chloride",
+            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
+    public static final RegistryObject<Item> VINYL_CHLORIDE_MONOMER = Items.register( "vinyl_chloride_monomer",
             () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
 
 
