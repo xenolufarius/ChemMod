@@ -7,8 +7,8 @@
     }
   ],
   "output": {
-    "item": "chemmod:oxygen",
-    "count": 1
+    "item": "chemmod:carbon",
+    "count": 64
   }
 
 }
