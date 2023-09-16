@@ -309,21 +309,58 @@ public class ModItems {
             () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
     public static final RegistryObject<Item> COLLAGEN = Items.register( "collagen",
             () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
+    //Spider Silk vvvv
     public static final RegistryObject<Item> GLYCINE = Items.register( "glycine",
             () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
     public static final RegistryObject<Item> ALANINE = Items.register( "alanine",
             () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
+    //^^^^
+    public static final RegistryObject<Item> MELANIN = Items.register( "melanin",
+            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
+
+    //Concrete vvv
     public static final RegistryObject<Item> ALITE = Items.register( "alite",
             () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
     public static final RegistryObject<Item> BELITE = Items.register( "belite",
             () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
+    //^^^
     public static final RegistryObject<Item> CALCIUM_CARBONATE = Items.register( "calcium_carbonate",
             () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
     public static final RegistryObject<Item> CELLULOSE = Items.register( "cellulose",
             () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
+    //Standin for keratin  vvvv
     public static final RegistryObject<Item> CYSTEINE = Items.register( "cysteine",
             () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
-
+    public static final RegistryObject<Item> BERYLLIUM_ALUMINUM_SILICATE = Items.register( "beryllium_aluminum_silicate",
+            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
+    public static final RegistryObject<Item> SILICATE_TETRAHEDRON = Items.register( "silicate_tetrahedron",
+            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
+    public static final RegistryObject<Item> POTASSIUM_NITRATE = Items.register( "potassium_nitrate",
+            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
+    public static final RegistryObject<Item> NITROGLYCERIN = Items.register( "nitroglycerin",
+            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
+    //Fish Proteins vvv
+    public static final RegistryObject<Item> MYOSIN = Items.register( "myosin",
+            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
+    public static final RegistryObject<Item> ACTIN = Items.register( "actin",
+            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
+    // ^^^^
+    //Frog Secretions vvv
+    public static final RegistryObject<Item> DERMORPHIN = Items.register( "dermorphin",
+            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
+    public static final RegistryObject<Item> DELTORPHIN = Items.register( "deltorphin",
+            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
+    //^^^
+    //Mushrooms vvv
+    public static final RegistryObject<Item> CHITIN = Items.register( "chitin",
+            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
+    public static final RegistryObject<Item> GLYCOGEN = Items.register( "glycogen",
+            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
+    //^^^
+    public static final RegistryObject<Item> LAZURITE = Items.register( "lazurite",
+            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
+    public static final RegistryObject<Item> LACTOSE = Items.register( "lactose",
+            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
 
     public static void register(IEventBus eventBus) {
         Items.register(eventBus);
