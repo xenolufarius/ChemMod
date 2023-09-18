@@ -1,0 +1,14 @@
+{
+  "type": "chemmod:deconstructor",
+
+  "ingredients": [
+    {
+      "tag": "chemmod:stellar"
+    }
+  ],
+  "output": {
+    "item": "chemmod:neon",
+    "count": 64
+  }
+
+}
