@@ -6,9 +6,9 @@
       "tag": "chemmod:lapis"
     }
   ],
-  "output": {
+  "output": [{
     "item": "chemmod:lazurite",
     "count": 1
   }
-
+]
 }

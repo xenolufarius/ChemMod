@@ -6,9 +6,9 @@
       "tag": "chemmod:gold"
     }
   ],
-  "output": {
+  "output": [{
     "item": "chemmod:gold",
     "count": 1
   }
-
+]
 }

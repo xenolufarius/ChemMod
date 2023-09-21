@@ -6,9 +6,9 @@
       "tag": "chemmod:bone"
     }
   ],
-  "output": {
+  "output": [{
     "item": "chemmod:hydroxyapatite",
     "count": 1
   }
-
+]
 }

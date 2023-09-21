@@ -6,9 +6,9 @@
       "tag": "chemmod:sand"
     }
   ],
-  "output": {
+  "output": [{
     "item": "chemmod:silicon_dioxide",
     "count": 1
   }
-
+]
 }

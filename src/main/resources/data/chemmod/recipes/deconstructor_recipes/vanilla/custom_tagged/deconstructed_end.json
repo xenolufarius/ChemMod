@@ -6,9 +6,9 @@
       "tag": "chemmod:end"
     }
   ],
-  "output": {
+  "output": [{
     "item": "chemmod:silicate_tetrahedron",
     "count": 1
   }
-
+]
 }

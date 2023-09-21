@@ -6,9 +6,9 @@
       "tag": "minecraft:wool"
     }
   ],
-  "output": {
+  "output": [{
     "item": "chemmod:cysteine",
     "count": 1
   }
-
+]
 }

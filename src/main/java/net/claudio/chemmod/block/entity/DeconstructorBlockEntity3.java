@@ -1,10 +1,9 @@
 package net.claudio.chemmod.block.entity;
-
+/*
 import net.claudio.chemmod.recipe.DeconstructorBlockRecipe;
 import net.claudio.chemmod.screen.DeconstructorBlockMenu;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
-import net.minecraft.core.NonNullList;
 import net.minecraft.nbt.CompoundTag;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.Containers;
@@ -28,7 +27,7 @@ import org.jetbrains.annotations.Nullable;
 
 import java.util.Optional;
 
-public class DeconstructorBlockEntity extends BlockEntity implements MenuProvider {
+public class DeconstructorBlockEntity3 extends BlockEntity implements MenuProvider {
 
     private final ItemStackHandler itemHandler = new ItemStackHandler(4) {
         @Override
@@ -43,14 +42,14 @@ public class DeconstructorBlockEntity extends BlockEntity implements MenuProvide
     private int progress = 0;
     private int maxProgress = 78;
 
-    public DeconstructorBlockEntity(BlockPos pos, BlockState state) {
+    public DeconstructorBlockEntity3(BlockPos pos, BlockState state) {
         super(ModBlockEntities.DECONSTRUCTOR_BLOCK.get(), pos, state);
         this.data = new ContainerData() {
             @Override
             public int get(int index) {
                 return switch (index) {
-                    case 0 -> DeconstructorBlockEntity.this.progress;
-                    case 1 -> DeconstructorBlockEntity.this.maxProgress;
+                    case 0 -> DeconstructorBlockEntity3.this.progress;
+                    case 1 -> DeconstructorBlockEntity3.this.maxProgress;
                     default -> 0;
                 };
             }
@@ -58,8 +57,8 @@ public class DeconstructorBlockEntity extends BlockEntity implements MenuProvide
             @Override
             public void set(int index, int value) {
                 switch (index) {
-                    case 0 -> DeconstructorBlockEntity.this.progress = value;
-                    case 1 -> DeconstructorBlockEntity.this.maxProgress = value;
+                    case 0 -> DeconstructorBlockEntity3.this.progress = value;
+                    case 1 -> DeconstructorBlockEntity3.this.maxProgress = value;
                 }
             }
 
@@ -126,7 +125,7 @@ public class DeconstructorBlockEntity extends BlockEntity implements MenuProvide
         Containers.dropContents(this.level, this.worldPosition, inventory);
     }
 
-    public static void tick(Level level, BlockPos pos, BlockState state, DeconstructorBlockEntity pEntity) {
+    public static void tick(Level level, BlockPos pos, BlockState state, DeconstructorBlockEntity3 pEntity) {
         if(level.isClientSide()) {
             return;
         }
@@ -148,51 +147,31 @@ public class DeconstructorBlockEntity extends BlockEntity implements MenuProvide
         this.progress = 0;
     }
 
-    private static void craftItem(DeconstructorBlockEntity pEntity) {
+    private static void craftItem(DeconstructorBlockEntity3 pEntity) {
+
         Level level = pEntity.level;
         SimpleContainer inventory = new SimpleContainer(pEntity.itemHandler.getSlots());
         for (int i = 0; i < pEntity.itemHandler.getSlots(); i++) {
             inventory.setItem(i, pEntity.itemHandler.getStackInSlot(i));
         }
 
+        //recipe
         Optional<DeconstructorBlockRecipe> recipe = level.getRecipeManager()
                 .getRecipeFor(DeconstructorBlockRecipe.Type.INSTANCE, inventory, level);
 
-        if (hasRecipe(pEntity)) {
-            recipe.ifPresent(deconstructorBlockRecipe -> {
-                NonNullList<ItemStack> outputs = deconstructorBlockRecipe.getOutput();
-                if(pEntity.itemHandler.getStackInSlot(2).getMaxStackSize() > pEntity.itemHandler.getStackInSlot(2).getCount() + outputs.get(0).getCount() || pEntity.itemHandler.getStackInSlot(3).getMaxStackSize() > pEntity.itemHandler.getStackInSlot(3).getCount() + outputs.get(1).getCount()) {
-                    pEntity.itemHandler.extractItem(1, 1, false);
-                    for (ItemStack output : outputs) {
-                            if (output.getItem() == outputs.get(0).getItem()) {
-                                if (pEntity.itemHandler.getStackInSlot(2).getItem() == output.getItem() || pEntity.itemHandler.getStackInSlot(2).isEmpty()) {
-                                    if (pEntity.itemHandler.getStackInSlot(2).isEmpty()) {
-                                        pEntity.itemHandler.setStackInSlot(2, output.copy());
-                                        //vvv Need to make sure it doesn't go past max stack size
-                                    } else if (pEntity.itemHandler.getStackInSlot(2).getItem() == output.getItem() && pEntity.itemHandler.getStackInSlot(2).getMaxStackSize() > pEntity.itemHandler.getStackInSlot(2).getCount() + output.getCount()) {
-                                        pEntity.itemHandler.getStackInSlot(2).grow(output.getCount());
-                                    }
-                                }
-                            } else if (output.getItem() == outputs.get(1).getItem() && outputs.size() == 2) {
-                                if (pEntity.itemHandler.getStackInSlot(3).getItem() == output.getItem() || pEntity.itemHandler.getStackInSlot(3).isEmpty()) {
-                                    if (pEntity.itemHandler.getStackInSlot(3).isEmpty()) {
-                                        pEntity.itemHandler.setStackInSlot(3, output.copy());
-                                        //vvv Need to make sure it doesn't go past max stack size
-                                    } else if (pEntity.itemHandler.getStackInSlot(3).getItem() == output.getItem() && pEntity.itemHandler.getStackInSlot(3).getMaxStackSize() > pEntity.itemHandler.getStackInSlot(3).getCount() + output.getCount()) {
-                                        pEntity.itemHandler.getStackInSlot(3).grow(output.getCount());
-                                    }
-                                }
-                            }
-                    }
-                } else pEntity.resetProgress();
-            });
+
+        if(hasRecipe(pEntity)) {
+            //gets from first slot. Doesn't work with slot 0 for some reason OR
+            pEntity.itemHandler.extractItem(1, 1, false);
+            //puts output into second slot. Doesn't work with slot 1 for some reason
+            pEntity.itemHandler.setStackInSlot(2, new ItemStack(recipe.get().getResultItem().getItem(),
+                    pEntity.itemHandler.getStackInSlot(2).getCount() + recipe.get().getResultItem().getCount()));
 
             pEntity.resetProgress();
         }
     }
 
-
-    private static boolean hasRecipe(DeconstructorBlockEntity entity) {
+    private static boolean hasRecipe(DeconstructorBlockEntity3 entity) {
         Level level = entity.level;
         SimpleContainer inventory = new SimpleContainer(entity.itemHandler.getSlots());
         for (int i = 0; i < entity.itemHandler.getSlots(); i++) {
@@ -203,31 +182,21 @@ public class DeconstructorBlockEntity extends BlockEntity implements MenuProvide
         Optional<DeconstructorBlockRecipe> recipe = level.getRecipeManager()
                 .getRecipeFor(DeconstructorBlockRecipe.Type.INSTANCE, inventory, level);
 
-        return recipe.isPresent() &&
-                //canInsertAmountIntoOutputSlot(inventory) &&
-                canInsertItemIntoOutputSlot(inventory, recipe.get().getOutput());
+        return recipe.isPresent() && canInsertAmountIntoOutputSlot(inventory) &&
+                canInsertItemIntoOutputSlot(inventory, recipe.get().getResultItem());
     }
 
-    private static boolean canInsertItemIntoOutputSlot(SimpleContainer inventory, NonNullList<ItemStack> stack) {
-        return inventory.getItem(2).getItem() == stack.get(0).getItem() || inventory.getItem(2).isEmpty();
+    //Adjusted values for second slot for output.
+    private static boolean canInsertItemIntoOutputSlot(SimpleContainer inventory, ItemStack stack) {
+        return inventory.getItem(2).getItem() == stack.getItem() || inventory.getItem(2).isEmpty();
         //Practice
         //Need to figure out how to do multiple outputs
         // return (inventory.getItem(2).getItem() == stack.getItem() || inventory.getItem(2).isEmpty()) && (inventory.getItem(3).getItem() == stack.getItem() || inventory.getItem(3).isEmpty()) ;
     }
 
-    private static int getFreeOutputSlot(ItemStackHandler itemHandler) {
-        int freeslots = 0;
-        for (int i = 2; i < itemHandler.getSlots(); i++) {
-            ItemStack itemStack = itemHandler.getStackInSlot(i);
-            if (itemStack.isEmpty() || itemStack.getCount() < itemStack.getMaxStackSize()) {
-                return i;
-            }
-        }
-        return 1;
-    }
-
-
     private static boolean canInsertAmountIntoOutputSlot(SimpleContainer inventory) {
         return inventory.getItem(2).getMaxStackSize() > inventory.getItem(2).getCount();
     }
 }
+
+ */

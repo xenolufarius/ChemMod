@@ -6,9 +6,9 @@
       "tag": "minecraft:piglin_repellents"
     }
   ],
-  "output": {
+  "output": [{
     "item": "chemmod:butane",
     "count": 1
   }
-
+]
 }

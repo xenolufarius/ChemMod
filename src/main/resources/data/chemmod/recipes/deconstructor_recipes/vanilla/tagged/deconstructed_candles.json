@@ -6,9 +6,9 @@
       "tag": "minecraft:candles"
     }
   ],
-  "output": {
+  "output": [{
     "item": "chemmod:docosane",
     "count": 1
   }
-
+]
 }

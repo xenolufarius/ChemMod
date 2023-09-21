@@ -6,9 +6,9 @@
       "tag": "minecraft:music_discs"
     }
   ],
-  "output": {
+  "output": [{
     "item": "chemmod:polyvinyl_chloride",
     "count": 1
   }
-
+]
 }

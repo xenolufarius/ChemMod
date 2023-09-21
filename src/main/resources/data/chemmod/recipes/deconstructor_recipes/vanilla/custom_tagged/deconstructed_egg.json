@@ -6,9 +6,9 @@
       "tag": "chemmod:egg"
     }
   ],
-  "output": {
+  "output": [{
     "item": "chemmod:calcium_carbonate",
     "count": 1
   }
-
+]
 }

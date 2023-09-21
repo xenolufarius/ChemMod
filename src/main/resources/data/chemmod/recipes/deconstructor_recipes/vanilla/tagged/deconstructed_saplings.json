@@ -6,9 +6,9 @@
       "tag": "minecraft:saplings"
     }
   ],
-  "output": {
+  "output": [{
     "item": "chemmod:cellulose",
     "count": 1
   }
-
+]
 }

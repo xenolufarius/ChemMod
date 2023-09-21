@@ -6,9 +6,9 @@
       "tag": "chemmod:wooden_gate"
     }
   ],
-  "output": {
+  "output": [{
     "item": "chemmod:cellulose",
     "count": 1
   }
-
+]
 }

@@ -6,9 +6,9 @@
       "tag": "chemmod:color"
     }
   ],
-  "output": {
+  "output": [{
     "item": "chemmod:glycine",
     "count": 1
   }
-
+]
 }

@@ -6,9 +6,9 @@
       "tag": "chemmod:explosive"
     }
   ],
-  "output": {
+  "output": [{
     "item": "chemmod:potassium_nitrate",
     "count": 1
   }
-
+]
 }

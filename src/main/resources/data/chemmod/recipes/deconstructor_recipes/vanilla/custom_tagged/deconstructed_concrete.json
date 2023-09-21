@@ -6,9 +6,9 @@
       "tag": "chemmod:concrete"
     }
   ],
-  "output": {
+  "output": [{
     "item": "chemmod:alite",
     "count": 1
   }
-
+]
 }

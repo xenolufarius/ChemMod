@@ -6,9 +6,9 @@
       "tag": "minecraft:wooden_trapdoors"
     }
   ],
-  "output": {
+  "output": [{
     "item": "chemmod:cellulose",
     "count": 1
   }
-
+]
 }

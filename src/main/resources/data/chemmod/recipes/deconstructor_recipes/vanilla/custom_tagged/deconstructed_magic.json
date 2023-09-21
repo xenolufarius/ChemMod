@@ -6,9 +6,9 @@
       "tag": "chemmod:magic"
     }
   ],
-  "output": {
+  "output": [{
     "item": "chemmod:oganesson",
     "count": 1
   }
-
+]
 }

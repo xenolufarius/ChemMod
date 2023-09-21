@@ -6,9 +6,9 @@
       "tag": "minecraft:rails"
     }
   ],
-  "output": {
+  "output": [{
     "item": "chemmod:iron",
     "count": 1
   }
-
+]
 }

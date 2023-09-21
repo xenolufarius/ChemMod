@@ -6,9 +6,9 @@
       "item": "chemmod:carbon_dioxide"
     }
   ],
-  "output": {
+  "output":[ {
     "item": "chemmod:carbon",
     "count": 1
   }
-
+  ]
 }

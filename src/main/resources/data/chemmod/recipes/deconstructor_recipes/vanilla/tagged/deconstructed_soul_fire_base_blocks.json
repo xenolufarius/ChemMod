@@ -6,9 +6,9 @@
       "tag": "minecraft:soul_fire_base_blocks"
     }
   ],
-  "output": {
+  "output": [{
     "item": "chemmod:copper_i_chloride",
     "count": 1
   }
-
+]
 }

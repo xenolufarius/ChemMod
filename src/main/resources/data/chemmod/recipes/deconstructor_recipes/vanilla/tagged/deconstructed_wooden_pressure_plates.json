@@ -6,9 +6,9 @@
       "tag": "minecraft:wooden_pressure_plates"
     }
   ],
-  "output": {
+  "output": [{
     "item": "chemmod:cellulose",
     "count": 1
   }
-
+]
 }

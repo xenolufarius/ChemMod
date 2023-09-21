@@ -6,9 +6,9 @@
       "tag": "chemmod:sweet"
     }
   ],
-  "output": {
+  "output": [{
     "item": "chemmod:sucrose",
     "count": 1
   }
-
+]
 }

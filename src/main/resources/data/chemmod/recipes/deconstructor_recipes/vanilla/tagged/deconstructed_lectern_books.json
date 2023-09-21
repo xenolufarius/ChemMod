@@ -6,9 +6,9 @@
       "tag": "minecraft:lectern_books"
     }
   ],
-  "output": {
+  "output": [{
     "item": "chemmod:cellulose",
     "count": 1
   }
-
+]
 }

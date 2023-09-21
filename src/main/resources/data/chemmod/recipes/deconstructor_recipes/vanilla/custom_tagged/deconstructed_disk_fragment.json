@@ -6,9 +6,9 @@
       "tag": "chemmod:disk_fragment"
     }
   ],
-  "output": {
+  "output": [{
     "item": "chemmod:polyvinyl_chloride",
     "count": 1
   }
-
+]
 }

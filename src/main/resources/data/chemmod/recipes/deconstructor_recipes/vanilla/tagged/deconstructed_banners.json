@@ -6,9 +6,9 @@
       "tag": "minecraft:banners"
     }
   ],
-  "output": {
+  "output": [{
     "item": "chemmod:polyvinyl_chloride",
     "count": 1
   }
-
+]
 }

@@ -6,9 +6,9 @@
       "tag": "chemmod:sculk"
     }
   ],
-  "output": {
+  "output": [{
     "item": "chemmod:chitin",
     "count": 1
   }
-
+]
 }

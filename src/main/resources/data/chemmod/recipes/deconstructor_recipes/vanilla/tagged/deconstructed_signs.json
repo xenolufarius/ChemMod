@@ -6,7 +6,7 @@
       "tag": "minecraft:signs"
     }
   ],
-  "output": {
+  "output": [{
     "item": "chemmod:cellulose",
     "count": 1
   }

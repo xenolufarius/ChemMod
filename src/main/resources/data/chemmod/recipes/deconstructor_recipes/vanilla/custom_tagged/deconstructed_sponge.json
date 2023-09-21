@@ -6,9 +6,9 @@
       "tag": "chemmod:sponge"
     }
   ],
-  "output": {
+  "output": [{
     "item": "chemmod:polyethylene_terephthalate",
     "count": 1
   }
-
+]
 }

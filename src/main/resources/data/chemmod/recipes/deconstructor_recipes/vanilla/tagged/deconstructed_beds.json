@@ -6,9 +6,9 @@
       "tag": "minecraft:beds"
     }
   ],
-  "output": {
+  "output": [{
     "item": "chemmod:cysteine",
     "count": 1
   }
-
+]
 }

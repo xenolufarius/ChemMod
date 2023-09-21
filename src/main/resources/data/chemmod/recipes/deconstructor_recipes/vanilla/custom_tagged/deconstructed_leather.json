@@ -6,9 +6,9 @@
       "tag": "chemmod:leather"
     }
   ],
-  "output": {
+  "output": [{
     "item": "chemmod:collagen",
     "count": 1
   }
-
+]
 }

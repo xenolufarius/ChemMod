@@ -6,9 +6,9 @@
       "tag": "chemmod:frog"
     }
   ],
-  "output": {
+  "output": [{
     "item": "chemmod:dermorphin",
     "count": 1
   }
-
+]
 }

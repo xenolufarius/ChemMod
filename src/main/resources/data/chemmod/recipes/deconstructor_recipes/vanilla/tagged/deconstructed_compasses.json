@@ -6,9 +6,9 @@
       "tag": "minecraft:compasses"
     }
   ],
-  "output": {
+  "output": [{
     "item": "chemmod:iron",
     "count": 1
   }
-
+]
 }

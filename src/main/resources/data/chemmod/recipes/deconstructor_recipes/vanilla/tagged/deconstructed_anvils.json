@@ -6,9 +6,9 @@
       "tag": "minecraft:anvil"
     }
   ],
-  "output": {
+  "output": [{
     "item": "chemmod:iron",
     "count": 1
   }
-
+]
 }

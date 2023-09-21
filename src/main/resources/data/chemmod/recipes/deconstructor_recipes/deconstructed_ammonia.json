@@ -6,9 +6,14 @@
       "item": "chemmod:ammonia"
     }
   ],
-  "output": {
+  "output":[ {
     "item": "chemmod:nitrogen",
     "count": 1
-  }
+  },
+    {
+      "item": "chemmod:hydrogen",
+      "count": 3
+    }
+  ]
 
 }

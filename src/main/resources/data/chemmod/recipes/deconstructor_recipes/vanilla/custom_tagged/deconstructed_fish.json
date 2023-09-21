@@ -6,9 +6,9 @@
       "tag": "chemmod:fish"
     }
   ],
-  "output": {
+  "output": [{
     "item": "chemmod:myosin",
     "count": 1
   }
-
+]
 }

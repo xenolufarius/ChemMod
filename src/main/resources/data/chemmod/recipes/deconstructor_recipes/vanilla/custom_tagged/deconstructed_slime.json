@@ -6,9 +6,9 @@
       "tag": "chemmod:slime"
     }
   ],
-  "output": {
+  "output": [{
     "item": "chemmod:polyvinyl_alcohol",
     "count": 1
   }
-
+]
 }

@@ -6,9 +6,9 @@
       "tag": "chemmod:grain"
     }
   ],
-  "output": {
+  "output": [{
     "item": "chemmod:cellulose",
     "count": 1
   }
-
+]
 }

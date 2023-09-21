@@ -26,7 +26,7 @@ public class DeconstructorBlockMenu extends AbstractContainerMenu {
     public DeconstructorBlockMenu(int id, Inventory inv, BlockEntity entity, ContainerData data) {
         super(ModMenuTypes.DECONSTRUCTOR_BLOCK_MENU.get(), id);
         //?? Maybe need to adjust? 3
-        checkContainerSize(inv, 3);
+        checkContainerSize(inv, 4);
         blockEntity = (DeconstructorBlockEntity) entity;
         this.level = inv.player.level;
         this.data = data;
@@ -38,7 +38,7 @@ public class DeconstructorBlockMenu extends AbstractContainerMenu {
             //this.addSlot(new SlotItemHandler(handler, 0, 12, 15));
             this.addSlot(new SlotItemHandler(handler, 1, 80, 15));
             this.addSlot(new SlotItemHandler(handler, 2, 80, 60));
-            //this.addSlot(new SlotItemHandler(handler, 3, 69, 60));
+            this.addSlot(new SlotItemHandler(handler, 3, 60, 60));
         });
 
         addDataSlots(data);

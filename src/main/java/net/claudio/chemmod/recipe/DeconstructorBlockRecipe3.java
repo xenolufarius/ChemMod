@@ -1,5 +1,5 @@
 package net.claudio.chemmod.recipe;
-
+/*
 import com.google.gson.JsonArray;
 import com.google.gson.JsonObject;
 import net.claudio.chemmod.ChemMod;
@@ -14,14 +14,14 @@ import net.minecraft.world.level.Level;
 
 import javax.annotation.Nullable;
 
-public class DeconstructorBlockRecipe implements Recipe<SimpleContainer> {
+public class DeconstructorBlockRecipe3 implements Recipe<SimpleContainer> {
 
     private final ResourceLocation id;
-    private final NonNullList<ItemStack> output;
+    private final ItemStack output;
     private final NonNullList<Ingredient> recipeItems;
 
-    public DeconstructorBlockRecipe(ResourceLocation id, NonNullList<ItemStack> output,
-                                    NonNullList<Ingredient> recipeItems)
+    public DeconstructorBlockRecipe3(ResourceLocation id, ItemStack output,
+                                     NonNullList<Ingredient> recipeItems)
     {
         this.id = id;
         this.output = output;
@@ -50,7 +50,7 @@ public class DeconstructorBlockRecipe implements Recipe<SimpleContainer> {
 
     @Override
     public ItemStack assemble(SimpleContainer pContainer) {
-        return output.get(0).copy();
+        return output;
     }
 
     @Override
@@ -60,9 +60,8 @@ public class DeconstructorBlockRecipe implements Recipe<SimpleContainer> {
 
     @Override
     public ItemStack getResultItem() {
-        return output.get(0).copy();
+        return output.copy();
     }
-    public NonNullList<ItemStack> getOutput() { return output;}
 
     @Override
     public ResourceLocation getId() {
@@ -79,14 +78,14 @@ public class DeconstructorBlockRecipe implements Recipe<SimpleContainer> {
         return Type.INSTANCE;
     }
 
-    public static class Type implements RecipeType<DeconstructorBlockRecipe>
+    public static class Type implements RecipeType<DeconstructorBlockRecipe3>
     {
         private Type() { }
         public static final Type INSTANCE = new Type();
         public static final String ID = "deconstructor";
     }
 
-    public static class Serializer implements RecipeSerializer<DeconstructorBlockRecipe>
+    public static class Serializer implements RecipeSerializer<DeconstructorBlockRecipe3>
     {
         public static final Serializer INSTANCE = new Serializer();
         public static final ResourceLocation ID =
@@ -95,62 +94,45 @@ public class DeconstructorBlockRecipe implements Recipe<SimpleContainer> {
 
         //might be where I get the multiple outputs
         @Override
-        public DeconstructorBlockRecipe fromJson(ResourceLocation pRecipeId, JsonObject pSerializedRecipe) {
-            // Deserialize the outputs from JSON
-            NonNullList<ItemStack> outputs = NonNullList.create();
-            JsonArray outputsArray = GsonHelper.getAsJsonArray(pSerializedRecipe, "output");
+        public DeconstructorBlockRecipe3 fromJson(ResourceLocation pRecipeId, JsonObject pSerializedRecipe) {
+            ItemStack output = ShapedRecipe.itemStackFromJson(GsonHelper.getAsJsonObject(pSerializedRecipe, "output"));
 
-            for (int i = 0; i < outputsArray.size(); i++) {
-                outputs.add(ShapedRecipe.itemStackFromJson(outputsArray.get(i).getAsJsonObject()));
-            }
-
-            // Deserialize the inputs from JSON
             JsonArray ingredients = GsonHelper.getAsJsonArray(pSerializedRecipe, "ingredients");
-            NonNullList<Ingredient> inputs = NonNullList.withSize(ingredients.size(), Ingredient.EMPTY);
+            NonNullList<Ingredient> inputs = NonNullList.withSize(1, Ingredient.EMPTY);
 
             for (int i = 0; i < inputs.size(); i++) {
                 inputs.set(i, Ingredient.fromJson(ingredients.get(i)));
             }
 
-            return new DeconstructorBlockRecipe(pRecipeId, outputs, inputs);
+            return new DeconstructorBlockRecipe3(pRecipeId, output, inputs);
         }
 
         @Override
-        public @Nullable DeconstructorBlockRecipe fromNetwork(ResourceLocation id, FriendlyByteBuf buf) {
+        public @Nullable DeconstructorBlockRecipe3 fromNetwork(ResourceLocation id, FriendlyByteBuf buf) {
             NonNullList<Ingredient> inputs = NonNullList.withSize(buf.readInt(), Ingredient.EMPTY);
 
             for (int i = 0; i < inputs.size(); i++) {
                 inputs.set(i, Ingredient.fromNetwork(buf));
             }
 
-            NonNullList<ItemStack> outputs = NonNullList.create();
-            int numOutputs = buf.readInt();
-
-            for (int i = 0; i < numOutputs; i++) {
-                outputs.add(buf.readItem());
-            }
-
-            return new DeconstructorBlockRecipe(id, outputs, inputs);
+            ItemStack output = buf.readItem();
+            return new DeconstructorBlockRecipe3(id, output, inputs);
         }
-
+        //Episode 23 ~10 min in
         @Override
-        public void toNetwork(FriendlyByteBuf buf, DeconstructorBlockRecipe recipe) {
+        public void toNetwork(FriendlyByteBuf buf, DeconstructorBlockRecipe3 recipe) {
             buf.writeInt(recipe.getIngredients().size());
 
             for (Ingredient ing : recipe.getIngredients()) {
                 ing.toNetwork(buf);
             }
-
-            buf.writeInt(recipe.getOutput().size());
-
-            for (ItemStack output : recipe.getOutput()) {
-                buf.writeItem(output);
-            }
+            buf.writeItemStack(recipe.getResultItem(), false);
         }
 
 
     }
 
 
-
 }
+
+ */

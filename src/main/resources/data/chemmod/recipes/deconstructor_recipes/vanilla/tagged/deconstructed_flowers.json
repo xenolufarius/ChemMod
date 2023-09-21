@@ -6,9 +6,9 @@
       "tag": "minecraft:flowers"
     }
   ],
-  "output": {
+  "output": [{
     "item": "chemmod:cellulose",
     "count": 1
   }
-
+]
 }

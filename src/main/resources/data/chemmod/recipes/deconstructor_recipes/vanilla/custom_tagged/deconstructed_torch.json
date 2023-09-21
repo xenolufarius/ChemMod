@@ -6,9 +6,9 @@
       "tag": "chemmod:torch"
     }
   ],
-  "output": {
+  "output": [{
     "item": "chemmod:carbon",
     "count": 1
   }
-
+]
 }

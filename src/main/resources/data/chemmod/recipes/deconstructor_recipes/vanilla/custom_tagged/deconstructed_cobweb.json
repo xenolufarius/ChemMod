@@ -6,9 +6,9 @@
       "tag": "chemmod:cobweb"
     }
   ],
-  "output": {
+  "output": [{
     "item": "chemmod:glycine",
     "count": 1
   }
-
+]
 }

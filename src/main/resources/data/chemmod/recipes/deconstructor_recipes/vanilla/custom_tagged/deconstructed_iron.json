@@ -6,9 +6,9 @@
       "tag": "chemmod:iron"
     }
   ],
-  "output": {
+  "output": [{
     "item": "chemmod:iron",
     "count": 1
   }
-
+]
 }

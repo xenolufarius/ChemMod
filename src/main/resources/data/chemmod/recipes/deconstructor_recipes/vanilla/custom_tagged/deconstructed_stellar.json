@@ -6,9 +6,9 @@
       "tag": "chemmod:stellar"
     }
   ],
-  "output": {
+  "output": [{
     "item": "chemmod:neon",
     "count": 64
   }
-
+]
 }

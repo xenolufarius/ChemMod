@@ -6,9 +6,9 @@
       "tag": "chemmod:water"
     }
   ],
-  "output": {
+  "output": [{
     "item": "chemmod:water",
     "count": 1
   }
-
+]
 }

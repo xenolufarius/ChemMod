@@ -6,9 +6,9 @@
       "tag": "chemmod:diamond"
     }
   ],
-  "output": {
+  "output": [{
     "item": "chemmod:carbon",
     "count": 64
   }
-
+]
 }

@@ -6,9 +6,9 @@
       "tag": "chemmod:banner_pattern"
     }
   ],
-  "output": {
+  "output": [{
     "item": "chemmod:polyvinyl_chloride",
     "count": 4
   }
-
+]
 }

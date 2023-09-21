@@ -6,9 +6,9 @@
       "tag": "chemmod:shulker"
     }
   ],
-  "output": {
+  "output": [{
     "item": "chemmod:collagen",
     "count": 1
   }
-
+]
 }

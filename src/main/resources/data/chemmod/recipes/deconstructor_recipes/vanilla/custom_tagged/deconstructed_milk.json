@@ -6,9 +6,9 @@
       "tag": "chemmod:milk"
     }
   ],
-  "output": {
+  "output": [{
     "item": "chemmod:lactose",
     "count": 1
   }
-
+]
 }

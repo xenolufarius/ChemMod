@@ -6,9 +6,9 @@
       "tag": "chemmod:spawner"
     }
   ],
-  "output": {
+  "output": [{
     "item": "chemmod:iron",
     "count": 1
   }
-
+]
 }

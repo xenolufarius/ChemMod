@@ -6,9 +6,9 @@
       "tag": "minecraft:coal_ores"
     }
   ],
-  "output": {
+  "output": [{
     "item": "chemmod:carbon",
     "count": 1
   }
-
+]
 }
