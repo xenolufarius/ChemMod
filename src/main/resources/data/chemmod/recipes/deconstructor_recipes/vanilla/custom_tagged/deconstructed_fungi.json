@@ -8,7 +8,11 @@
   ],
   "output": [{
     "item": "chemmod:chitin",
-    "count": 1
-  }
+    "count": 3
+  },
+    {
+      "item": "chemmod:glycogen",
+      "count": 2
+    }
 ]
 }

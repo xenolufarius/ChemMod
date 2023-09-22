@@ -9,6 +9,10 @@
   "output": [{
     "item": "chemmod:neon",
     "count": 64
-  }
+  },
+    {
+      "item": "chemmod:helium",
+      "count": 64
+    }
 ]
 }

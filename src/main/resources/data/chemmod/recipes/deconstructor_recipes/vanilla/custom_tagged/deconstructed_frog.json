@@ -8,7 +8,11 @@
   ],
   "output": [{
     "item": "chemmod:dermorphin",
-    "count": 1
-  }
+    "count": 3
+  },
+    {
+      "item": "chemmod:deltorphin",
+      "count": 3
+    }
 ]
 }

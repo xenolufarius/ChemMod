@@ -8,7 +8,11 @@
   ],
   "output": [{
     "item": "chemmod:hydroxyapatite",
-    "count": 1
-  }
+    "count": 8
+  },
+    {
+      "item": "chemmod:collagen_type_I",
+      "count": 6
+    }
 ]
 }

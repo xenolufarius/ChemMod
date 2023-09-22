@@ -8,7 +8,11 @@
   ],
   "output": [{
     "item": "chemmod:alite",
-    "count": 1
-  }
+    "count": 3
+  },
+    {
+      "item": "chemmod:belite",
+      "count": 3
+    }
 ]
 }

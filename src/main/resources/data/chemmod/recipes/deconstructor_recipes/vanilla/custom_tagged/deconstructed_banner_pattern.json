@@ -7,8 +7,9 @@
     }
   ],
   "output": [{
-    "item": "chemmod:polyvinyl_chloride",
-    "count": 4
+    "item": "chemmod:vinyl_chloride_monomer",
+    "count": 4,
+    "other": "Maybe convert to monomer; give like 64 or something"
   }
 ]
 }

@@ -9,6 +9,10 @@
   "output": [{
     "item": "chemmod:polyvinyl_alcohol",
     "count": 1
-  }
+  },
+    {
+      "item": "chemmod:sodium_tetraborate",
+      "count": 2
+    }
 ]
 }

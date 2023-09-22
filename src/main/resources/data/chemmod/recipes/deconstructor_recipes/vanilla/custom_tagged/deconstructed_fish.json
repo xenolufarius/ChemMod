@@ -8,7 +8,11 @@
   ],
   "output": [{
     "item": "chemmod:myosin",
-    "count": 1
-  }
+    "count": 3
+  },
+    {
+      "item": "chemmod:actin",
+      "count": 3
+    }
 ]
 }

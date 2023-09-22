@@ -7,8 +7,8 @@
     }
   ],
   "output": [{
-    "item": "chemmod:collagen",
-    "count": 1
+    "item": "chemmod:collagen_type_I",
+    "count": 2
   }
 ]
 }

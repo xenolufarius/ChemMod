@@ -8,7 +8,11 @@
   ],
   "output": [{
     "item": "chemmod:cysteine",
-    "count": 1
-  }
+    "count": 4
+  },
+    {
+      "item": "chemmod:alanine",
+      "count": 4
+    }
 ]
 }

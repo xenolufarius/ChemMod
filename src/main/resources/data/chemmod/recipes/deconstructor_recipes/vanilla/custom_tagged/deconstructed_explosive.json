@@ -8,7 +8,11 @@
   ],
   "output": [{
     "item": "chemmod:potassium_nitrate",
-    "count": 1
-  }
+    "count": 4
+  },
+    {
+      "item": "chemmod:nitroglycerin",
+      "count": 3
+    }
 ]
 }

@@ -8,7 +8,11 @@
   ],
   "output": [{
     "item": "chemmod:silicon_dioxide",
-    "count": 1
-  }
+    "count": 3
+  },
+    {
+      "item": "chemmod:hematite",
+      "count": 1
+    }
 ]
 }

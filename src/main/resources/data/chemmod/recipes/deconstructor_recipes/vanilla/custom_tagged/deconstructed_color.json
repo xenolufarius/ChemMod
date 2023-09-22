@@ -8,7 +8,11 @@
   ],
   "output": [{
     "item": "chemmod:glycine",
-    "count": 1
-  }
+    "count": 4
+  },
+    {
+      "item": "chemmod:melanin",
+      "count": 2
+    }
 ]
 }
