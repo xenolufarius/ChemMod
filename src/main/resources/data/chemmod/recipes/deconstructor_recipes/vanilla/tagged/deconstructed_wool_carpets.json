@@ -9,6 +9,10 @@
   "output": [{
     "item": "chemmod:cysteine",
     "count": 1
-  }
+  },
+    {
+      "item": "chemmod:alanine",
+      "count": 2
+    }
 ]
 }

@@ -9,6 +9,10 @@
   "output": [{
     "item": "chemmod:docosane",
     "count": 1
-  }
+  },
+    {
+      "item": "chemmod:octadecane",
+      "count": 1
+    }
 ]
 }

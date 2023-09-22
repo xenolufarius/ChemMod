@@ -9,6 +9,10 @@
   "output": [{
     "item": "chemmod:silicate_tetrahedron",
     "count": 1
-  }
+  },
+    {
+      "item": "chemmod:cellulose",
+      "count": 1
+    }
 ]
 }

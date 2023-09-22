@@ -9,6 +9,10 @@
   "output": [{
     "item": "chemmod:iron",
     "count": 1
-  }
+  },
+    {
+      "item": "chemmod:cellulose",
+      "count": 6
+    }
 ]
 }

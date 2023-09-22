@@ -9,6 +9,10 @@
   "output":[ {
     "item": "chemmod:carbon",
     "count": 1
-  }
+  },
+    {
+      "item": "chemmod:oxygen",
+      "count": 2
+    }
   ]
 }

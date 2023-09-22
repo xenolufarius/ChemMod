@@ -311,7 +311,7 @@ public class ModItems {
     //^^^
     public static final RegistryObject<Item> HYDROXYAPATITE = Items.register( "hydroxyapatite",
             () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
-    public static final RegistryObject<Item> COLLAGEN_TYPE_I = Items.register( "collagen_type_I",
+    public static final RegistryObject<Item> COLLAGEN_TYPE_1 = Items.register( "collagen_type_1",
             () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
     //Spider Silk vvvv
     public static final RegistryObject<Item> GLYCINE = Items.register( "glycine",
