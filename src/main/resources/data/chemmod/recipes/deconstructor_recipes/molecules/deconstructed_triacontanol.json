@@ -1,0 +1,19 @@
+{
+  "type": "chemmod:deconstructor",
+
+  "ingredients": [
+    {
+      "item": "chemmod:triacontanol"
+    }
+  ],
+  "output":[ {
+    "item": "chemmod:carbon",
+    "count": 30
+  },
+    {
+      "item": "chemmod:oxygen",
+      "count": 1
+    }
+  ]
+
+}

@@ -3,15 +3,15 @@
 
   "ingredients": [
     {
-      "item": "chemmod:vinyl_chloride"
+      "item": "chemmod:triacontanyl_palmitate"
     }
   ],
   "output":[ {
-    "item": "chemmod:chloride",
-    "count": 1
+    "item": "chemmod:carbon",
+    "count": 16
   },
     {
-      "item": "chemmod:carbon",
+      "item": "chemmod:oxygen",
       "count": 2
     }
   ]

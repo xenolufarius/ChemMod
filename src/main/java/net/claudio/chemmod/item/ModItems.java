@@ -306,6 +306,11 @@ public class ModItems {
     //Main beeswax constituents vvv
     public static final RegistryObject<Item> TRIACONTANYL_PALMITATE = Items.register( "triacontanyl_palmitate",
             () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
+    public static final RegistryObject<Item> TRIACONTANOL = Items.register( "triacontanol",
+            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
+    public static final RegistryObject<Item> PALMITIC_ACID = Items.register( "palmitic_acid",
+            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
+
     public static final RegistryObject<Item> CEROTIC_ACID = Items.register( "cerotic_acid",
             () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
     //^^^

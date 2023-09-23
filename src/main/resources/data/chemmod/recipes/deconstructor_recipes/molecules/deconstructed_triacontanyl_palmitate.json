@@ -1,0 +1,19 @@
+{
+  "type": "chemmod:deconstructor",
+
+  "ingredients": [
+    {
+      "item": "chemmod:triacontanyl_palmitate"
+    }
+  ],
+  "output":[ {
+    "item": "chemmod:triacontanol",
+    "count": 1
+  },
+    {
+      "item": "chemmod:palmitic_acid",
+      "count": 1
+    }
+  ]
+
+}

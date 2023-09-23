@@ -1,0 +1,19 @@
+{
+  "type": "chemmod:deconstructor",
+
+  "ingredients": [
+    {
+      "item": "chemmod:beeswax"
+    }
+  ],
+  "output":[ {
+    "item": "chemmod:triacontanyl_palmitate",
+    "count": 1
+  },
+    {
+      "item": "chemmod:cerotic_acid",
+      "count": 1
+    }
+  ]
+
+}
