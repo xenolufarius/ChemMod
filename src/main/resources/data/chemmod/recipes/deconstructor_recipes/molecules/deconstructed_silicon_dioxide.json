@@ -1,0 +1,19 @@
+{
+  "type": "chemmod:deconstructor",
+
+  "ingredients": [
+    {
+      "item": "chemmod:silicon_dioxide"
+    }
+  ],
+  "output":[ {
+    "item": "chemmod:silicon",
+    "count": 1
+  },
+    {
+      "item": "chemmod:oxygen",
+      "count": 2
+    }
+  ]
+
+}

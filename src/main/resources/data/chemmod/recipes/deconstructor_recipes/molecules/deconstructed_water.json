@@ -1,0 +1,19 @@
+{
+  "type": "chemmod:deconstructor",
+
+  "ingredients": [
+    {
+      "item": "chemmod:water"
+    }
+  ],
+  "output":[ {
+    "item": "chemmod:oxygen",
+    "count": 1
+  },
+    {
+      "item": "chemmod:hydrogen",
+      "count": 2
+    }
+  ]
+
+}

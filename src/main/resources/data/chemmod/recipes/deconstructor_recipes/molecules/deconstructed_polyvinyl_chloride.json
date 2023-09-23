@@ -3,12 +3,13 @@
 
   "ingredients": [
     {
-      "tag": "minecraft:banners"
+      "item": "chemmod:polyvinyl_chloride"
     }
   ],
-  "output": [{
+  "output":[ {
     "item": "chemmod:vinyl_chloride",
-    "count": 4
+    "count": 16
   }
-]
+  ]
+
 }

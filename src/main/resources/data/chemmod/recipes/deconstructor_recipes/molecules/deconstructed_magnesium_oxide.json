@@ -1,0 +1,19 @@
+{
+  "type": "chemmod:deconstructor",
+
+  "ingredients": [
+    {
+      "item": "chemmod:magnesium_oxide"
+    }
+  ],
+  "output":[ {
+    "item": "chemmod:magnesium",
+    "count": 1
+  },
+    {
+      "item": "chemmod:oxygen",
+      "count": 1
+    }
+  ]
+
+}

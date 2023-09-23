@@ -1,0 +1,19 @@
+{
+  "type": "chemmod:deconstructor",
+
+  "ingredients": [
+    {
+      "item": "chemmod:potassium_oxide"
+    }
+  ],
+  "output":[ {
+    "item": "chemmod:potassium",
+    "count": 2
+  },
+    {
+      "item": "chemmod:oxygen",
+      "count": 1
+    }
+  ]
+
+}

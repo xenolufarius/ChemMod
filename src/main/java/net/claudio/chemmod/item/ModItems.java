@@ -299,7 +299,7 @@ public class ModItems {
     //Oxides^^^^^
     public static final RegistryObject<Item> POLYVINYL_CHLORIDE = Items.register( "polyvinyl_chloride",
             () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
-    public static final RegistryObject<Item> VINYL_CHLORIDE_MONOMER = Items.register( "vinyl_chloride_monomer",
+    public static final RegistryObject<Item> VINYL_CHLORIDE = Items.register( "vinyl_chloride",
             () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
     public static final RegistryObject<Item> BEESWAX = Items.register( "beeswax",
             () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
@@ -385,7 +385,7 @@ public class ModItems {
             () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
 
     //Sugars^^^^^
-    //Paraffin Wax vvv
+    //candle Wax vvv
     public static final RegistryObject<Item> DOCOSANE = Items.register( "docosane",
             () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
     public static final RegistryObject<Item> OCTADECANE = Items.register( "octadecane",
