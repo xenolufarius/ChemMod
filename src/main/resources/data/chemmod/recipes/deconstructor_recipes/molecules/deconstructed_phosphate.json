@@ -1,0 +1,19 @@
+{
+  "type": "chemmod:deconstructor",
+
+  "ingredients": [
+    {
+      "item": "chemmod:phosphate"
+    }
+  ],
+  "output":[ {
+    "item": "chemmod:phosphorus",
+    "count": 1
+  },
+    {
+      "item": "chemmod:oxygen",
+      "count": 4
+    }
+  ]
+
+}

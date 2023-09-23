@@ -1,0 +1,19 @@
+{
+  "type": "chemmod:deconstructor",
+
+  "ingredients": [
+    {
+      "item": "chemmod:hydroxyapatite"
+    }
+  ],
+  "output":[ {
+    "item": "chemmod:calcium",
+    "count": 10
+  },
+    {
+      "item": "chemmod:phosphate",
+      "count": 6
+    }
+  ]
+
+}
