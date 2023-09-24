@@ -1,0 +1,19 @@
+{
+  "type": "chemmod:deconstructor",
+
+  "ingredients": [
+    {
+      "item": "chemmod:nitrogen_dioxide"
+    }
+  ],
+  "output":[ {
+    "item": "chemmod:oxygen",
+    "count": 2
+  },
+    {
+      "item": "chemmod:nitrogen",
+      "count": 1
+    }
+  ]
+
+}

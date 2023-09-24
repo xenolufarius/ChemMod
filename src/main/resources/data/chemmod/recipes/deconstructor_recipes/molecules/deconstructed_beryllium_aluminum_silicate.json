@@ -1,0 +1,19 @@
+{
+  "type": "chemmod:deconstructor",
+
+  "ingredients": [
+    {
+      "item": "chemmod:beryllium_aluminum_silicate"
+    }
+  ],
+  "output":[ {
+    "item": "chemmod:beryllium",
+    "count": 3
+  },
+    {
+      "item": "chemmod:aluminum",
+      "count": 2
+    }
+  ]
+
+}

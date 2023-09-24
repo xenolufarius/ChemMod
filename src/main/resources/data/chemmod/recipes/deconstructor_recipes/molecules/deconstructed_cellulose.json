@@ -1,0 +1,15 @@
+{
+  "type": "chemmod:deconstructor",
+
+  "ingredients": [
+    {
+      "item": "chemmod:cellulose"
+    }
+  ],
+  "output":[ {
+    "item": "chemmod:glucose",
+    "count": 32
+  }
+  ]
+
+}

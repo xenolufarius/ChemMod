@@ -1,0 +1,19 @@
+{
+  "type": "chemmod:deconstructor",
+
+  "ingredients": [
+    {
+      "item": "chemmod:alanine"
+    }
+  ],
+  "output":[ {
+    "item": "chemmod:carbon",
+    "count": 3
+  },
+    {
+      "item": "chemmod:nitrogen_dioxide",
+      "count": 1
+    }
+  ]
+
+}

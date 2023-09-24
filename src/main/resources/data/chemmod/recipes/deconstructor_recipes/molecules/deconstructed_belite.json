@@ -1,0 +1,19 @@
+{
+  "type": "chemmod:deconstructor",
+
+  "ingredients": [
+    {
+      "item": "chemmod:belite"
+    }
+  ],
+  "output":[ {
+    "item": "chemmod:dicalcium_silicate",
+    "count": 5
+  },
+    {
+      "item": "chemmod:aluminum_oxide",
+      "count": 1
+    }
+  ]
+
+}

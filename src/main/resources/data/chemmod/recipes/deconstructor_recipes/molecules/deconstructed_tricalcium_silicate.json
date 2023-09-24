@@ -3,16 +3,16 @@
 
   "ingredients": [
     {
-      "item": "chemmod:hydroxyapatite"
+      "item": "chemmod:tricalcium_silicate"
     }
   ],
   "output":[ {
     "item": "chemmod:calcium",
-    "count": 10
+    "count": 3
   },
     {
-      "item": "chemmod:phosphorus",
-      "count": 6
+      "item": "chemmod:silicon",
+      "count": 1
     }
   ]
 

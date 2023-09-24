@@ -1,0 +1,19 @@
+{
+  "type": "chemmod:deconstructor",
+
+  "ingredients": [
+    {
+      "item": "chemmod:melanin"
+    }
+  ],
+  "output":[ {
+    "item": "chemmod:carbon",
+    "count": 18
+  },
+    {
+      "item": "chemmod:oxygen",
+      "count": 4
+    }
+  ]
+
+}

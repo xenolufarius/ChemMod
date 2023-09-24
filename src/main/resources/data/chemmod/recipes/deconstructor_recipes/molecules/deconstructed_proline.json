@@ -1,0 +1,19 @@
+{
+  "type": "chemmod:deconstructor",
+
+  "ingredients": [
+    {
+      "item": "chemmod:proline"
+    }
+  ],
+  "output":[ {
+    "item": "chemmod:carbon",
+    "count": 5
+  },
+    {
+      "item": "chemmod:nitrogen_dioxide",
+      "count": 1
+    }
+  ]
+
+}

@@ -1,0 +1,19 @@
+{
+  "type": "chemmod:deconstructor",
+
+  "ingredients": [
+    {
+      "item": "chemmod:glycine"
+    }
+  ],
+  "output":[ {
+    "item": "chemmod:carbon",
+    "count": 2
+  },
+    {
+      "item": "chemmod:nitrogen_dioxide",
+      "count": 1
+    }
+  ]
+
+}

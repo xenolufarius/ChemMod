@@ -1,0 +1,19 @@
+{
+  "type": "chemmod:deconstructor",
+
+  "ingredients": [
+    {
+      "item": "chemmod:collagen_type_1"
+    }
+  ],
+  "output":[ {
+    "item": "chemmod:glycine",
+    "count": 5
+  },
+    {
+      "item": "chemmod:proline",
+      "count": 3
+    }
+  ]
+
+}

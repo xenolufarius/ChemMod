@@ -1,0 +1,19 @@
+{
+  "type": "chemmod:deconstructor",
+
+  "ingredients": [
+    {
+      "item": "chemmod:alite"
+    }
+  ],
+  "output":[ {
+    "item": "chemmod:tricalcium_silicate",
+    "count": 5
+  },
+    {
+      "item": "chemmod:magnesium_oxide",
+      "count": 1
+    }
+  ]
+
+}

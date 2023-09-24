@@ -1,0 +1,19 @@
+{
+  "type": "chemmod:deconstructor",
+
+  "ingredients": [
+    {
+      "item": "chemmod:nitroglycerin"
+    }
+  ],
+  "output":[ {
+    "item": "chemmod:carbon",
+    "count": 3
+  },
+    {
+      "item": "chemmod:nitrogen",
+      "count": 3
+    }
+  ]
+
+}
