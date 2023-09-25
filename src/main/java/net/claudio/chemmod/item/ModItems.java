@@ -359,7 +359,7 @@ public class ModItems {
             () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
     public static final RegistryObject<Item> NITROGLYCERIN = Items.register( "nitroglycerin",
             () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
-    //TODO: START HERE
+    //TODO: START HERE, probably can't do myosin, or maybe even actin. tooo big
     //Fish Proteins vvv
     public static final RegistryObject<Item> MYOSIN = Items.register( "myosin",
             () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
