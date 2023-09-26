@@ -1,0 +1,19 @@
+{
+  "type": "chemmod:deconstructor",
+
+  "ingredients": [
+    {
+      "item": "chemmod:dermorphin"
+    }
+  ],
+  "output":[ {
+    "item": "chemmod:nitrogen",
+    "count": 8
+  },
+    {
+      "item": "chemmod:oxygen",
+      "count": 10
+    }
+  ]
+
+}

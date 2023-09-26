@@ -1,0 +1,19 @@
+{
+  "type": "chemmod:deconstructor",
+
+  "ingredients": [
+    {
+      "item": "chemmod:lazurite"
+    }
+  ],
+  "output":[ {
+    "item": "chemmod:aluminum",
+    "count": 6
+  },
+    {
+      "item": "chemmod:silicon",
+      "count": 6
+    }
+  ]
+
+}

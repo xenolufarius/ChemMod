@@ -1,0 +1,19 @@
+{
+  "type": "chemmod:deconstructor",
+
+  "ingredients": [
+    {
+      "item": "chemmod:hematite"
+    }
+  ],
+  "output":[ {
+    "item": "chemmod:iron",
+    "count": 2
+  },
+    {
+      "item": "chemmod:oxygen",
+      "count": 3
+    }
+  ]
+
+}

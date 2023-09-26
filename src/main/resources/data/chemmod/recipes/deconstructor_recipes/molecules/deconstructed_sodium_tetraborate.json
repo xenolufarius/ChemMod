@@ -1,0 +1,19 @@
+{
+  "type": "chemmod:deconstructor",
+
+  "ingredients": [
+    {
+      "item": "chemmod:sodium_tetraborate"
+    }
+  ],
+  "output":[ {
+    "item": "chemmod:sodium",
+    "count": 2
+  },
+    {
+      "item": "chemmod:boron",
+      "count": 4
+    }
+  ]
+
+}

@@ -1,0 +1,15 @@
+{
+  "type": "chemmod:deconstructor",
+
+  "ingredients": [
+    {
+      "item": "chemmod:glycogen"
+    }
+  ],
+  "output":[ {
+    "item": "chemmod:glucose",
+    "count": 32
+  }
+  ]
+
+}

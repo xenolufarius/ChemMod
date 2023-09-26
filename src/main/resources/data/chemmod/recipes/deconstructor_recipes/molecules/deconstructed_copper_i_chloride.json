@@ -1,0 +1,19 @@
+{
+  "type": "chemmod:deconstructor",
+
+  "ingredients": [
+    {
+      "item": "chemmod:copper_i_chloride"
+    }
+  ],
+  "output":[ {
+    "item": "chemmod:copper",
+    "count": 1
+  },
+    {
+      "item": "chemmod:chloride",
+      "count": 1
+    }
+  ]
+
+}

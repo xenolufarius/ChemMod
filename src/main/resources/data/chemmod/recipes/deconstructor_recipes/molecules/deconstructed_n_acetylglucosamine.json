@@ -1,0 +1,19 @@
+{
+  "type": "chemmod:deconstructor",
+
+  "ingredients": [
+    {
+      "item": "chemmod:n_acetylglucosamine"
+    }
+  ],
+  "output":[ {
+    "item": "chemmod:glucose",
+    "count": 1
+  },
+    {
+      "item": "chemmod:nitrogen",
+      "count": 1
+    }
+  ]
+
+}

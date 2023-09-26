@@ -7,12 +7,8 @@
     }
   ],
   "output": [{
-    "item": "chemmod:myosin",
-    "count": 3
-  },
-    {
-      "item": "chemmod:actin",
-      "count": 3
-    }
+    "item": "chemmod:fish_oil",
+    "count": 2
+  }
 ]
 }

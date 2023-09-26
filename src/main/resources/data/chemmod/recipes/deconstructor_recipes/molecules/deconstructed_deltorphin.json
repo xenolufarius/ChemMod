@@ -1,0 +1,19 @@
+{
+  "type": "chemmod:deconstructor",
+
+  "ingredients": [
+    {
+      "item": "chemmod:deltorphin"
+    }
+  ],
+  "output":[ {
+    "item": "chemmod:nitrogen",
+    "count": 10
+  },
+    {
+      "item": "chemmod:oxygen",
+      "count": 10
+    }
+  ]
+
+}

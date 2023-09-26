@@ -1,0 +1,19 @@
+{
+  "type": "chemmod:deconstructor",
+
+  "ingredients": [
+    {
+      "item": "chemmod:polyethylene_terephthalate"
+    }
+  ],
+  "output":[ {
+    "item": "chemmod:terephthalic_acid",
+    "count": 1
+  },
+    {
+      "item": "chemmod:ethylene_glycol",
+      "count": 1
+    }
+  ]
+
+}

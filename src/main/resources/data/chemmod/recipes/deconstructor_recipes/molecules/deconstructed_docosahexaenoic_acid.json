@@ -1,0 +1,19 @@
+{
+  "type": "chemmod:deconstructor",
+
+  "ingredients": [
+    {
+      "item": "chemmod:docosahexaenoic_acid"
+    }
+  ],
+  "output":[ {
+    "item": "chemmod:carbon",
+    "count": 22
+  },
+    {
+      "item": "chemmod:hydrogen",
+      "count": 32
+    }
+  ]
+
+}

@@ -1,0 +1,19 @@
+{
+  "type": "chemmod:deconstructor",
+
+  "ingredients": [
+    {
+      "item": "chemmod:butane"
+    }
+  ],
+  "output":[ {
+    "item": "chemmod:carbon",
+    "count": 4
+  },
+    {
+      "item": "chemmod:hydrogen",
+      "count": 10
+    }
+  ]
+
+}

@@ -1,0 +1,15 @@
+{
+  "type": "chemmod:deconstructor",
+
+  "ingredients": [
+    {
+      "item": "chemmod:polyvinyl_alcohol"
+    }
+  ],
+  "output":[ {
+    "item": "chemmod:ethenol",
+    "count": 32
+  }
+  ]
+
+}

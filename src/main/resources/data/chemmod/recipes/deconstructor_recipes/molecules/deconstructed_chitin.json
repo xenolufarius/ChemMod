@@ -1,0 +1,15 @@
+{
+  "type": "chemmod:deconstructor",
+
+  "ingredients": [
+    {
+      "item": "chemmod:chitin"
+    }
+  ],
+  "output":[ {
+    "item": "chemmod:n_acetylglucosamine",
+    "count": 32
+  }
+  ]
+
+}

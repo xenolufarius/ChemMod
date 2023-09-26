@@ -1,0 +1,19 @@
+{
+  "type": "chemmod:deconstructor",
+
+  "ingredients": [
+    {
+      "item": "chemmod:eicosapentaenoic_acid"
+    }
+  ],
+  "output":[ {
+    "item": "chemmod:carbon",
+    "count": 20
+  },
+    {
+      "item": "chemmod:hydrogen",
+      "count": 30
+    }
+  ]
+
+}

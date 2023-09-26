@@ -1,0 +1,19 @@
+{
+  "type": "chemmod:deconstructor",
+
+  "ingredients": [
+    {
+      "item": "chemmod:fish_oil"
+    }
+  ],
+  "output":[ {
+    "item": "chemmod:eicosapentaenoic_acid",
+    "count": 1
+  },
+    {
+      "item": "chemmod:docosahexaenoic_acid",
+      "count": 1
+    }
+  ]
+
+}

@@ -1,0 +1,19 @@
+{
+  "type": "chemmod:deconstructor",
+
+  "ingredients": [
+    {
+      "item": "chemmod:docosane"
+    }
+  ],
+  "output":[ {
+    "item": "chemmod:carbon",
+    "count": 22
+  },
+    {
+      "item": "chemmod:hydrogen",
+      "count": 46
+    }
+  ]
+
+}

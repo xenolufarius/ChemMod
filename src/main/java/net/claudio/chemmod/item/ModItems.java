@@ -360,13 +360,16 @@ public class ModItems {
     public static final RegistryObject<Item> NITROGLYCERIN = Items.register( "nitroglycerin",
             () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
     //TODO: START HERE, probably can't do myosin, or maybe even actin. tooo big
-    //Fish Proteins vvv
-    public static final RegistryObject<Item> MYOSIN = Items.register( "myosin",
+    //Fish output vvv
+    public static final RegistryObject<Item> FISH_OIL = Items.register( "fish_oil",
             () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
-    public static final RegistryObject<Item> ACTIN = Items.register( "actin",
+    public static final RegistryObject<Item> EICOSAPENTAENOIC_ACID = Items.register( "eicosapentaenoic_acid",
+            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
+    public static final RegistryObject<Item> DOCOSAHEXAENOIC_ACID = Items.register( "docosahexaenoic_acid",
             () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
     // ^^^^
     //Frog Secretions vvv
+    //Dermorphin is stronger than morphine. Drug tag needed
     public static final RegistryObject<Item> DERMORPHIN = Items.register( "dermorphin",
             () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
     public static final RegistryObject<Item> DELTORPHIN = Items.register( "deltorphin",
@@ -374,6 +377,8 @@ public class ModItems {
     //^^^
     //Mushrooms vvv
     public static final RegistryObject<Item> CHITIN = Items.register( "chitin",
+            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
+    public static final RegistryObject<Item> N_ACETYLGLUCOSAMINE = Items.register( "n_acetylglucosamine",
             () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
     public static final RegistryObject<Item> GLYCOGEN = Items.register( "glycogen",
             () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
@@ -386,10 +391,16 @@ public class ModItems {
     //Slime vvv
     public static final RegistryObject<Item> POLYVINYL_ALCOHOL = Items.register( "polyvinyl_alcohol",
             () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
+    public static final RegistryObject<Item> ETHENOL = Items.register( "ethenol",
+            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
     public static final RegistryObject<Item> SODIUM_TETRABORATE = Items.register( "sodium_tetraborate",
             () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
     //^^^
     public static final RegistryObject<Item> POLYETHYLENE_TEREPHTHALATE = Items.register( "polyethylene_terephthalate",
+            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
+    public static final RegistryObject<Item> TEREPHTHALIC_ACID = Items.register( "terephthalic_acid",
+            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
+    public static final RegistryObject<Item> ETHYLENE_GLYCOL = Items.register( "ethylene_glycol",
             () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
     //Sugars:
     public static final RegistryObject<Item> SUCROSE = Items.register( "sucrose",

@@ -1,0 +1,19 @@
+{
+  "type": "chemmod:deconstructor",
+
+  "ingredients": [
+    {
+      "item": "chemmod:terephthalic_acid"
+    }
+  ],
+  "output":[ {
+    "item": "chemmod:carbon",
+    "count": 8
+  },
+    {
+      "item": "chemmod:oxygen",
+      "count": 4
+    }
+  ]
+
+}
