@@ -7,12 +7,12 @@
     }
   ],
   "output":[ {
-    "item": "chemmod:chloride",
-    "count": 1
+    "item": "chemmod:carbon",
+    "count": 2
   },
     {
-      "item": "chemmod:carbon",
-      "count": 2
+      "item": "chemmod:chloride",
+      "count": 1
     }
   ]
 
