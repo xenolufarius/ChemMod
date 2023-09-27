@@ -290,8 +290,8 @@ public class ModItems {
     //Salts:
     public static final RegistryObject<Item> SODIUM_CHLORIDE = Items.register( "sodium_chloride",
             () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
-    //list out anions:
-    //list out cations: Li, Be, Na, Mg, K, Ca, Rb, Sr, Cs, Ba, Fr, Ra
+    //list out anions: Cl, C03, SO4, HCO3, OH, NO3, Cr2O7, CN, ClO3, PO4,
+    //list out cations: Li, Be, Na, Mg, K, Ca, Rb, Sr, Cs, Ba, Fr, Ra, NH4
     //Oxides:
     public static final RegistryObject<Item> POTASSIUM_OXIDE = Items.register( "potassium_oxide",
             () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
