@@ -1,0 +1,19 @@
+{
+  "type": "chemmod:deconstructor",
+
+  "ingredients": [
+    {
+      "item": "chemmod:sodium_phosphate"
+    }
+  ],
+  "output":[ {
+    "item": "chemmod:sodium",
+    "count": 3
+  },
+    {
+      "item": "chemmod:phosphorus",
+      "count": 1
+    }
+  ]
+
+}

@@ -1,0 +1,19 @@
+{
+  "type": "chemmod:deconstructor",
+
+  "ingredients": [
+    {
+      "item": "chemmod:lithium_arsenite"
+    }
+  ],
+  "output":[ {
+    "item": "chemmod:lithium",
+    "count": 3
+  },
+    {
+      "item": "chemmod:arsenic",
+      "count": 1
+    }
+  ]
+
+}

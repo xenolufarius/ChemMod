@@ -1,0 +1,19 @@
+{
+  "type": "chemmod:deconstructor",
+
+  "ingredients": [
+    {
+      "item": "chemmod:sodium_thiosulfate"
+    }
+  ],
+  "output":[ {
+    "item": "chemmod:sodium",
+    "count": 2
+  },
+    {
+      "item": "chemmod:sulfur",
+      "count": 2
+    }
+  ]
+
+}

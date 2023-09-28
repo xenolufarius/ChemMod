@@ -1,0 +1,19 @@
+{
+  "type": "chemmod:deconstructor",
+
+  "ingredients": [
+    {
+      "item": "chemmod:lithium_chlorite"
+    }
+  ],
+  "output":[ {
+    "item": "chemmod:lithium",
+    "count": 1
+  },
+    {
+      "item": "chemmod:chlorine",
+      "count": 1
+    }
+  ]
+
+}

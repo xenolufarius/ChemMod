@@ -1,0 +1,19 @@
+{
+  "type": "chemmod:deconstructor",
+
+  "ingredients": [
+    {
+      "item": "chemmod:lithium_iodate"
+    }
+  ],
+  "output":[ {
+    "item": "chemmod:lithium",
+    "count": 1
+  },
+    {
+      "item": "chemmod:iodine",
+      "count": 1
+    }
+  ]
+
+}

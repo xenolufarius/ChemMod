@@ -1,0 +1,19 @@
+{
+  "type": "chemmod:deconstructor",
+
+  "ingredients": [
+    {
+      "item": "chemmod:lithium_formate"
+    }
+  ],
+  "output":[ {
+    "item": "chemmod:lithium",
+    "count": 1
+  },
+    {
+      "item": "chemmod:carbon",
+      "count": 1
+    }
+  ]
+
+}

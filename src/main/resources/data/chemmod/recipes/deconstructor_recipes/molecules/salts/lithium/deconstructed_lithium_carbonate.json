@@ -1,0 +1,19 @@
+{
+  "type": "chemmod:deconstructor",
+
+  "ingredients": [
+    {
+      "item": "chemmod:lithium_carbonate"
+    }
+  ],
+  "output":[ {
+    "item": "chemmod:lithium",
+    "count": 2
+  },
+    {
+      "item": "chemmod:carbon",
+      "count": 1
+    }
+  ]
+
+}

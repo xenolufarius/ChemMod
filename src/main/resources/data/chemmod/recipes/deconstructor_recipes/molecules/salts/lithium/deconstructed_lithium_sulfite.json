@@ -1,0 +1,19 @@
+{
+  "type": "chemmod:deconstructor",
+
+  "ingredients": [
+    {
+      "item": "chemmod:lithium_sulfite"
+    }
+  ],
+  "output":[ {
+    "item": "chemmod:lithium",
+    "count": 2
+  },
+    {
+      "item": "chemmod:sulfur",
+      "count": 1
+    }
+  ]
+
+}

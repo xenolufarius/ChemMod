@@ -1,0 +1,19 @@
+{
+  "type": "chemmod:deconstructor",
+
+  "ingredients": [
+    {
+      "item": "chemmod:lithium_fluoride"
+    }
+  ],
+  "output":[ {
+    "item": "chemmod:lithium",
+    "count": 1
+  },
+    {
+      "item": "chemmod:fluoride",
+      "count": 1
+    }
+  ]
+
+}

@@ -1,0 +1,19 @@
+{
+  "type": "chemmod:deconstructor",
+
+  "ingredients": [
+    {
+      "item": "chemmod:lithium_phosphate"
+    }
+  ],
+  "output":[ {
+    "item": "chemmod:lithium",
+    "count": 3
+  },
+    {
+      "item": "chemmod:phosphorus",
+      "count": 1
+    }
+  ]
+
+}

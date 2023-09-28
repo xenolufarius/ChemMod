@@ -1,0 +1,19 @@
+{
+  "type": "chemmod:deconstructor",
+
+  "ingredients": [
+    {
+      "item": "chemmod:lithium_nitrate"
+    }
+  ],
+  "output":[ {
+    "item": "chemmod:lithium",
+    "count": 1
+  },
+    {
+      "item": "chemmod:nitrogen",
+      "count": 1
+    }
+  ]
+
+}

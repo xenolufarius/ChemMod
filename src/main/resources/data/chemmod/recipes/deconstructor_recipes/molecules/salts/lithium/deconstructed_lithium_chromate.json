@@ -1,0 +1,19 @@
+{
+  "type": "chemmod:deconstructor",
+
+  "ingredients": [
+    {
+      "item": "chemmod:lithium_chromate"
+    }
+  ],
+  "output":[ {
+    "item": "chemmod:lithium",
+    "count": 2
+  },
+    {
+      "item": "chemmod:chromium",
+      "count": 1
+    }
+  ]
+
+}

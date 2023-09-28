@@ -1,0 +1,19 @@
+{
+  "type": "chemmod:deconstructor",
+
+  "ingredients": [
+    {
+      "item": "chemmod:sodium_peroxide"
+    }
+  ],
+  "output":[ {
+    "item": "chemmod:sodium",
+    "count": 2
+  },
+    {
+      "item": "chemmod:oxygen",
+      "count": 2
+    }
+  ]
+
+}
