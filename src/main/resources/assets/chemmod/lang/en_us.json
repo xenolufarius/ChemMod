@@ -29,6 +29,12 @@
 
 
 
+  "block.chemmod.lithium_block": "Lithium Block",
+
+
+
+
+
   "item.chemmod.hydrogen": "Hydrogen",
   "item.chemmod.helium": "Helium",
   "item.chemmod.lithium": "Lithium",
@@ -150,6 +156,11 @@
 
 
 
+  "item.chemmod.sodium_oxide": "Sodium Oxide",
+
+
+
+
   "item.chemmod.water": "Water",
   "item.chemmod.carbon_dioxide": "Carbon Dioxide",
   "item.chemmod.ammonia": "Ammonia",
@@ -157,7 +168,15 @@
   "item.chemmod.potassium_oxide": "Potassium Oxide",
   "item.chemmod.sodium_chloride": "Sodium Chloride",
 
+
+
+
+
+
   "itemGroup.chemtab": "Chemical Tab",
+  "itemGroup.salttab": "Salts Tab",
+  "itemGroup.blockstab": "Blocks Tab",
+
 
   "entity.minecraft.villager.chemmod.chemist": "Chemist"
 

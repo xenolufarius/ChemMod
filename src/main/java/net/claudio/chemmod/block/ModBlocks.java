@@ -24,23 +24,29 @@ public class ModBlocks {
             DeferredRegister.create(ForgeRegistries.BLOCKS, ChemMod.MOD_ID);
 
     public static final RegistryObject<Block> LAB_BLOCK = registerBlock("lab_block",
-            () -> new Block(BlockBehaviour.Properties.of(Material.STONE).strength(6f).requiresCorrectToolForDrops()), ModCreativeModeTab.CHEM_TAB);
+            () -> new Block(BlockBehaviour.Properties.of(Material.STONE).strength(6f).requiresCorrectToolForDrops()), ModCreativeModeTab.BLOCKS_TAB);
 
 
 
     public static final RegistryObject<Block> JUMPY_BlOCK = registerBlock("jumpy_block",
-            () -> new Block(BlockBehaviour.Properties.of(Material.STONE).strength(6f).requiresCorrectToolForDrops()), ModCreativeModeTab.CHEM_TAB);
+            () -> new Block(BlockBehaviour.Properties.of(Material.STONE).strength(6f).requiresCorrectToolForDrops()), ModCreativeModeTab.BLOCKS_TAB);
 
 
 
     public static final RegistryObject<Block> LAVA_LAMP = registerBlock("lava_lamp",
-            () -> new LavaLampBlock(BlockBehaviour.Properties.of(Material.STONE).strength(6f).requiresCorrectToolForDrops().lightLevel(state -> state.getValue(LavaLampBlock.LIT) ? 15 : 0)), ModCreativeModeTab.CHEM_TAB);
+            () -> new LavaLampBlock(BlockBehaviour.Properties.of(Material.STONE).strength(6f).requiresCorrectToolForDrops().lightLevel(state -> state.getValue(LavaLampBlock.LIT) ? 15 : 0)), ModCreativeModeTab.BLOCKS_TAB);
 
     public static final RegistryObject<Block> LAB2_BLOCK = registerBlock("lab2_block",
-            () -> new Block(BlockBehaviour.Properties.of(Material.STONE).strength(6f).requiresCorrectToolForDrops()), ModCreativeModeTab.CHEM_TAB);
+            () -> new Block(BlockBehaviour.Properties.of(Material.STONE).strength(6f).requiresCorrectToolForDrops()), ModCreativeModeTab.BLOCKS_TAB);
 
     public static final RegistryObject<Block> DECONSTRUCTOR_BLOCK = registerBlock("deconstructor_block",
-            () -> new DeconstructorBlock(BlockBehaviour.Properties.of(Material.METAL).strength(6f).requiresCorrectToolForDrops().noOcclusion()), ModCreativeModeTab.CHEM_TAB);
+            () -> new DeconstructorBlock(BlockBehaviour.Properties.of(Material.METAL).strength(6f).requiresCorrectToolForDrops().noOcclusion()), ModCreativeModeTab.BLOCKS_TAB);
+
+    //elemental blocks
+    public static final RegistryObject<Block> LITHIUM_BLOCK = registerBlock("lithium_block",
+            () -> new DeconstructorBlock(BlockBehaviour.Properties.of(Material.METAL).strength(3f).requiresCorrectToolForDrops()), ModCreativeModeTab.BLOCKS_TAB);
+
+
 
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block, CreativeModeTab tab) {
