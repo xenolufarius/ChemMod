@@ -1,0 +1,9 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "chemmod:block/element_block/chlorine_block"
+
+  }
+
+
+}

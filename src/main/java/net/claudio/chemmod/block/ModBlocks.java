@@ -209,7 +209,7 @@ public class ModBlocks {
             () -> new DeconstructorBlock(BlockBehaviour.Properties.of(Material.METAL).strength(6f).requiresCorrectToolForDrops()), ModCreativeModeTab.BLOCKS_TAB);
     public static final RegistryObject<Block> EINSTEINIUM_BLOCK = registerBlock("einsteinium_block",
             () -> new DeconstructorBlock(BlockBehaviour.Properties.of(Material.METAL).strength(6f).requiresCorrectToolForDrops()), ModCreativeModeTab.BLOCKS_TAB);
-    public static final RegistryObject<Block> FERMIUM_BLOCK = registerBlock("FERMIUM_block",
+    public static final RegistryObject<Block> FERMIUM_BLOCK = registerBlock("fermium_block",
             () -> new DeconstructorBlock(BlockBehaviour.Properties.of(Material.METAL).strength(6f).requiresCorrectToolForDrops()), ModCreativeModeTab.BLOCKS_TAB);
     public static final RegistryObject<Block> MENDELEVIUM_BLOCK = registerBlock("mendelevium_block",
             () -> new DeconstructorBlock(BlockBehaviour.Properties.of(Material.METAL).strength(6f).requiresCorrectToolForDrops()), ModCreativeModeTab.BLOCKS_TAB);
