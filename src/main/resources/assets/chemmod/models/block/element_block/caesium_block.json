@@ -1,0 +1,10 @@
+
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "chemmod:block/element_block/caesium_block"
+
+  }
+
+
+}
