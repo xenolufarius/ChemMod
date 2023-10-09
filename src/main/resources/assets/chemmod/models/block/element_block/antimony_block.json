@@ -1,7 +1,7 @@
 {
   "parent": "block/cube_all",
   "textures": {
-    "all": "chemmod:block/element_block/tellurium_block"
+    "all": "chemmod:block/element_block/antimony_block"
 
   }
 
