@@ -1,0 +1,29 @@
+{
+  "type": "minecraft:crafting_shapeless",
+
+  "ingredients": [
+    {
+      "item": "chemmod:tricalcium_silicate"
+    },
+    {
+      "item": "chemmod:tricalcium_silicate"
+    },
+    {
+      "item": "chemmod:tricalcium_silicate"
+    },
+    {
+      "item": "chemmod:tricalcium_silicate"
+    },
+    {
+      "item": "chemmod:tricalcium_silicate"
+    },
+    {
+      "item": "chemmod:magnesium_oxide"
+    }
+  ],
+  "result": {
+    "item": "chemmod:alite",
+    "count": 1
+  }
+
+}

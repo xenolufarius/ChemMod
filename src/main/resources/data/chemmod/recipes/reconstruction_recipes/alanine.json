@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shapeless",
+
+  "ingredients": [
+    {
+      "item": "chemmod:propanol"
+    },
+    {
+      "item": "chemmod:oxygen"
+    },
+    {
+      "item": "chemmod:oxygen"
+    },
+    {
+      "item": "chemmod:nitrogen"
+    }
+  ],
+  "result": {
+    "item": "chemmod:alanine",
+    "count": 1
+  }
+
+}

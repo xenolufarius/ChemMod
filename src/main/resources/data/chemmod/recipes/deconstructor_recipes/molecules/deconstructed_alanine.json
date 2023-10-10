@@ -7,11 +7,11 @@
     }
   ],
   "output":[ {
-    "item": "chemmod:carbon",
-    "count": 3
+    "item": "chemmod:propanol",
+    "count": 1
   },
     {
-      "item": "chemmod:nitrogen_dioxide",
+      "item": "chemmod:nitrogen",
       "count": 1
     }
   ]

@@ -2373,9 +2373,13 @@ public class ModItems {
             () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
     public static final RegistryObject<Item> ETHENOL = Items.register( "ethenol",
             () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
+
     public static final RegistryObject<Item> SODIUM_TETRABORATE = Items.register( "sodium_tetraborate",
             () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
     //^^^
+    public static final RegistryObject<Item> PROPANOL = Items.register( "propanol",
+            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
+
     public static final RegistryObject<Item> POLYETHYLENE_TEREPHTHALATE = Items.register( "polyethylene_terephthalate",
             () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
     public static final RegistryObject<Item> TEREPHTHALIC_ACID = Items.register( "terephthalic_acid",
@@ -2401,6 +2405,7 @@ public class ModItems {
     //^^^
     public static final RegistryObject<Item> BUTANE = Items.register( "butane",
             () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
+
 
     public static void register(IEventBus eventBus) {
         Items.register(eventBus);
