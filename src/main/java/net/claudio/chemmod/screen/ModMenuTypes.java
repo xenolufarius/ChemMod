@@ -17,6 +17,8 @@ public class ModMenuTypes {
     public static final RegistryObject<MenuType<DeconstructorBlockMenu>> DECONSTRUCTOR_BLOCK_MENU =
             registerMenuType(DeconstructorBlockMenu::new, "deconstructor_block_menu");
 
+    public static final RegistryObject<MenuType<ReconstructorBlockMenu>> RECONSTRUCTOR_BLOCK_MENU =
+            registerMenuType(ReconstructorBlockMenu::new, "reconstructor_block_menu");
 
     private static <T extends AbstractContainerMenu> RegistryObject<MenuType<T>> registerMenuType(IContainerFactory<T> factory,
                                                                                                   String name) {

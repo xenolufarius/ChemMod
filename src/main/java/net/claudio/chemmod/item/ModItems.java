@@ -2405,6 +2405,8 @@ public class ModItems {
     //^^^
     public static final RegistryObject<Item> BUTANE = Items.register( "butane",
             () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
+    public static final RegistryObject<Item> ETHANE = Items.register( "ethane",
+            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
 
 
     public static void register(IEventBus eventBus) {

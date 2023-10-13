@@ -3,7 +3,13 @@
 
   "ingredients": [
     {
-      "item": "chemmod:hydrogen"
+      "item": "chemmod:ethane"
+    },
+    {
+      "item": "chemmod:carbon"
+    },
+    {
+      "item": "chemmod:carbon"
     },
     {
       "item": "chemmod:hydrogen"
@@ -12,11 +18,14 @@
       "item": "chemmod:hydrogen"
     },
     {
-      "item": "chemmod:nitrogen"
+      "item": "chemmod:hydrogen"
+    },
+    {
+      "item": "chemmod:hydrogen"
     }
   ],
   "result": {
-    "item": "chemmod:ammonia",
+    "item": "chemmod:butane",
     "count": 1
   }
 

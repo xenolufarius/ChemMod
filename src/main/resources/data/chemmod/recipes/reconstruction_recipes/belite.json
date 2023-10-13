@@ -1,0 +1,29 @@
+{
+  "type": "minecraft:crafting_shapeless",
+
+  "ingredients": [
+    {
+      "item": "chemmod:dicalcium_silicate"
+    },
+    {
+      "item": "chemmod:dicalcium_silicate"
+    },
+    {
+      "item": "chemmod:dicalcium_silicate"
+    },
+    {
+      "item": "chemmod:dicalcium_silicate"
+    },
+    {
+      "item": "chemmod:dicalcium_silicate"
+    },
+    {
+      "item": "chemmod:aluminum_oxide"
+    }
+  ],
+  "result": {
+    "item": "chemmod:belite",
+    "count": 1
+  }
+
+}

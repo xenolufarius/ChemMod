@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shapeless",
+
+  "ingredients": [
+    {
+      "item": "chemmod:triacontanyl_palmitate"
+    },
+    {
+      "item": "chemmod:cerotic_acid"
+    }
+  ],
+  "result": {
+    "item": "chemmod:beeswax",
+    "count": 1
+  }
+
+}

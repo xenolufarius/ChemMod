@@ -17,6 +17,11 @@ public class ModBlockEntities {
                     BlockEntityType.Builder.of(DeconstructorBlockEntity::new,
                             ModBlocks.DECONSTRUCTOR_BLOCK.get()).build(null));
 
+    public static final RegistryObject<BlockEntityType<ReconstructorBlockEntity>> RECONSTRUCTOR_BLOCK =
+            BLOCK_ENTITIES.register("reconstructor_block", () ->
+                    BlockEntityType.Builder.of(ReconstructorBlockEntity::new,
+                            ModBlocks.RECONSTRUCTOR_BLOCK.get()).build(null));
+
 
     public static void register(IEventBus eventBus) {
         BLOCK_ENTITIES.register(eventBus);
