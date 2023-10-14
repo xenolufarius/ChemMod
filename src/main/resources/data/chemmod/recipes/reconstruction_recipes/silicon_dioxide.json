@@ -3,14 +3,17 @@
 
   "ingredients": [
     {
-      "item": "chemmod:magnesium"
+      "item": "chemmod:silicon"
+    },
+    {
+      "item": "chemmod:oxygen"
     },
     {
       "item": "chemmod:oxygen"
     }
   ],
   "result": {
-    "item": "chemmod:magnesium_oxide",
+    "item": "chemmod:silicon_dioxide",
     "count": 1
   }
 

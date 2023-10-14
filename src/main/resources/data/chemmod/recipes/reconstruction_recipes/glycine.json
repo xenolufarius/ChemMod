@@ -3,17 +3,29 @@
 
   "ingredients": [
     {
+      "item": "chemmod:methane"
+    },
+    {
+      "item": "chemmod:carbon"
+    },
+    {
       "item": "chemmod:hydrogen"
     },
     {
       "item": "chemmod:hydrogen"
+    },
+    {
+      "item": "chemmod:nitrogen"
+    },
+    {
+      "item": "chemmod:oxygen"
     },
     {
       "item": "chemmod:oxygen"
     }
   ],
   "result": {
-    "item": "chemmod:water",
+    "item": "chemmod:glycine",
     "count": 1
   }
 

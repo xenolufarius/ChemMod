@@ -161,7 +161,7 @@ public class DeconstructorBlockEntity extends BlockEntity implements MenuProvide
         if (hasRecipe(pEntity)) {
             recipe.ifPresent(deconstructorBlockRecipe -> {
                 NonNullList<ItemStack> outputs = deconstructorBlockRecipe.getOutput();
-                if(pEntity.itemHandler.getStackInSlot(2).getMaxStackSize() > pEntity.itemHandler.getStackInSlot(2).getCount() + outputs.get(0).getCount() || pEntity.itemHandler.getStackInSlot(3).getMaxStackSize() > pEntity.itemHandler.getStackInSlot(3).getCount() + outputs.get(1).getCount()) {
+                if(pEntity.itemHandler.getStackInSlot(2).getMaxStackSize()+1 > pEntity.itemHandler.getStackInSlot(2).getCount() + outputs.get(0).getCount() || (outputs.size()>1 && pEntity.itemHandler.getStackInSlot(3).getMaxStackSize() > pEntity.itemHandler.getStackInSlot(3).getCount() + outputs.get(1).getCount())) {
                     pEntity.itemHandler.extractItem(1, 1, false);
                     for (ItemStack output : outputs) {
                             if (output.getItem() == outputs.get(0).getItem()) {
@@ -169,7 +169,7 @@ public class DeconstructorBlockEntity extends BlockEntity implements MenuProvide
                                     if (pEntity.itemHandler.getStackInSlot(2).isEmpty()) {
                                         pEntity.itemHandler.setStackInSlot(2, output.copy());
                                         //vvv Need to make sure it doesn't go past max stack size
-                                    } else if (pEntity.itemHandler.getStackInSlot(2).getItem() == output.getItem() && pEntity.itemHandler.getStackInSlot(2).getMaxStackSize() > pEntity.itemHandler.getStackInSlot(2).getCount() + output.getCount()) {
+                                    } else if (pEntity.itemHandler.getStackInSlot(2).getItem() == output.getItem() && pEntity.itemHandler.getStackInSlot(2).getMaxStackSize()+1 > pEntity.itemHandler.getStackInSlot(2).getCount() + output.getCount()) {
                                         pEntity.itemHandler.getStackInSlot(2).grow(output.getCount());
                                     }
                                 }
@@ -178,7 +178,7 @@ public class DeconstructorBlockEntity extends BlockEntity implements MenuProvide
                                     if (pEntity.itemHandler.getStackInSlot(3).isEmpty()) {
                                         pEntity.itemHandler.setStackInSlot(3, output.copy());
                                         //vvv Need to make sure it doesn't go past max stack size
-                                    } else if (pEntity.itemHandler.getStackInSlot(3).getItem() == output.getItem() && pEntity.itemHandler.getStackInSlot(3).getMaxStackSize() > pEntity.itemHandler.getStackInSlot(3).getCount() + output.getCount()) {
+                                    } else if (pEntity.itemHandler.getStackInSlot(3).getItem() == output.getItem() && pEntity.itemHandler.getStackInSlot(3).getMaxStackSize()+1 > pEntity.itemHandler.getStackInSlot(3).getCount() + output.getCount()) {
                                         pEntity.itemHandler.getStackInSlot(3).grow(output.getCount());
                                     }
                                 }
@@ -208,8 +208,11 @@ public class DeconstructorBlockEntity extends BlockEntity implements MenuProvide
                 canInsertItemIntoOutputSlot(inventory, recipe.get().getOutput());
     }
 
+    //TODO: This may be where I can put if statements to hinder the deconstruction process.
+    //Has recipe method uses this as part of its output, so it must be.
     private static boolean canInsertItemIntoOutputSlot(SimpleContainer inventory, NonNullList<ItemStack> stack) {
-        return inventory.getItem(2).getItem() == stack.get(0).getItem() || inventory.getItem(2).isEmpty();
+        return inventory.getItem(2).getItem() == stack.get(0).getItem() || inventory.getItem(2).isEmpty() && inventory.getItem(2).getMaxStackSize() > inventory.getItem(2).getCount() + stack.get(0).getCount();
+        //else if (pEntity.itemHandler.getStackInSlot(2).getItem() == output.getItem() && pEntity.itemHandler.getStackInSlot(2).getMaxStackSize()+1 > pEntity.itemHandler.getStackInSlot(2).getCount() + output.getCount()) {
         //Practice
         //Need to figure out how to do multiple outputs
         // return (inventory.getItem(2).getItem() == stack.getItem() || inventory.getItem(2).isEmpty()) && (inventory.getItem(3).getItem() == stack.getItem() || inventory.getItem(3).isEmpty()) ;

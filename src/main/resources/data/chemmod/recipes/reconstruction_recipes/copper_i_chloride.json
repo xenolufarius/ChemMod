@@ -3,14 +3,14 @@
 
   "ingredients": [
     {
-      "item": "chemmod:magnesium"
+      "item": "chemmod:copper"
     },
     {
-      "item": "chemmod:oxygen"
+      "item": "chemmod:chlorine"
     }
   ],
   "result": {
-    "item": "chemmod:magnesium_oxide",
+    "item": "chemmod:copper_i_chlorine",
     "count": 1
   }
 

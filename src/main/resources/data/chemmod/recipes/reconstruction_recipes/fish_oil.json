@@ -3,14 +3,14 @@
 
   "ingredients": [
     {
-      "item": "chemmod:magnesium"
+      "item": "chemmod:eicosapentaenoic_acid"
     },
     {
-      "item": "chemmod:oxygen"
+      "item": "chemmod:docosahexaenoic_acid"
     }
   ],
   "result": {
-    "item": "chemmod:magnesium_oxide",
+    "item": "chemmod:fish_oil",
     "count": 1
   }
 

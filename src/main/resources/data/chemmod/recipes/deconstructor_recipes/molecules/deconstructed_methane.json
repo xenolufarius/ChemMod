@@ -3,16 +3,16 @@
 
   "ingredients": [
     {
-      "item": "chemmod:copper_i_chloride"
+      "item": "chemmod:methane"
     }
   ],
   "output":[ {
-    "item": "chemmod:copper",
+    "item": "chemmod:carbon",
     "count": 1
   },
     {
-      "item": "chemmod:chlorine",
-      "count": 1
+      "item": "chemmod:hydrogen",
+      "count": 4
     }
   ]
 

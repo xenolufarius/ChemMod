@@ -3,14 +3,11 @@
 
   "ingredients": [
     {
-      "item": "chemmod:sodium"
-    },
-    {
-      "item": "chemmod:chlorine"
+      "item": "chemmod:iron_iii_oxide"
     }
   ],
   "result": {
-    "item": "chemmod:sodium_chloride",
+    "item": "chemmod:hematite",
     "count": 1
   }
 

@@ -1,0 +1,35 @@
+{
+  "type": "minecraft:crafting_shapeless",
+
+  "ingredients": [
+    {
+      "item": "chemmod:pentane"
+    },
+    {
+      "item": "chemmod:carbon"
+    },
+    {
+      "item": "chemmod:oxygen"
+    },
+    {
+      "item": "chemmod:oxygen"
+    },
+    {
+      "item": "chemmod:oxygen"
+    },
+    {
+      "item": "chemmod:oxygen"
+    },
+    {
+      "item": "chemmod:oxygen"
+    },
+    {
+      "item": "chemmod:oxygen"
+    }
+  ],
+  "result": {
+    "item": "chemmod:glucose",
+    "count": 1
+  }
+
+}

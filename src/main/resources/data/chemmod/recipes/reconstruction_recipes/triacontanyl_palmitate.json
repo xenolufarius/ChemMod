@@ -3,14 +3,14 @@
 
   "ingredients": [
     {
-      "item": "chemmod:magnesium"
+      "item": "chemmod:triacontanol"
     },
     {
-      "item": "chemmod:oxygen"
+      "item": "chemmod:palmitic_acid"
     }
   ],
   "result": {
-    "item": "chemmod:magnesium_oxide",
+    "item": "chemmod:triacontanyl_palmitate",
     "count": 1
   }
 

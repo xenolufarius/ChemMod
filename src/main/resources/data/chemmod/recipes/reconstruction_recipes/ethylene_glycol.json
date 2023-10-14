@@ -3,14 +3,17 @@
 
   "ingredients": [
     {
-      "item": "chemmod:magnesium"
+      "item": "chemmod:ethane"
+    },
+    {
+      "item": "chemmod:oxygen"
     },
     {
       "item": "chemmod:oxygen"
     }
   ],
   "result": {
-    "item": "chemmod:magnesium_oxide",
+    "item": "chemmod:ethylene_glycol",
     "count": 1
   }
 

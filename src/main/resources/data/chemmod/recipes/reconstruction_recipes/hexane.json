@@ -3,17 +3,17 @@
 
   "ingredients": [
     {
-      "item": "chemmod:potassium"
+      "item": "chemmod:butane"
     },
     {
-      "item": "chemmod:potassium"
+      "item": "chemmod:methane"
     },
     {
-      "item": "chemmod:oxygen"
+      "item": "chemmod:carbon"
     }
   ],
   "result": {
-    "item": "chemmod:potassium_oxide",
+    "item": "chemmod:hexane",
     "count": 1
   }
 

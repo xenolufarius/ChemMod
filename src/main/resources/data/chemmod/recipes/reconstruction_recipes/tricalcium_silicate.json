@@ -1,0 +1,38 @@
+{
+  "type": "minecraft:crafting_shapeless",
+
+  "ingredients": [
+    {
+      "item": "chemmod:calcium"
+    },
+    {
+      "item": "chemmod:calcium"
+    },
+    {
+      "item": "chemmod:calcium"
+    },
+    {
+      "item": "chemmod:silicon"
+    },
+    {
+      "item": "chemmod:oxygen"
+    },
+    {
+      "item": "chemmod:oxygen"
+    },
+    {
+      "item": "chemmod:oxygen"
+    },
+    {
+      "item": "chemmod:oxygen"
+    },
+    {
+      "item": "chemmod:oxygen"
+    }
+  ],
+  "result": {
+    "item": "chemmod:tricalcium_silicate",
+    "count": 1
+  }
+
+}

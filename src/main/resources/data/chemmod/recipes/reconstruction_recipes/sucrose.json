@@ -3,14 +3,14 @@
 
   "ingredients": [
     {
-      "item": "chemmod:magnesium"
+      "item": "chemmod:glucose"
     },
     {
-      "item": "chemmod:oxygen"
+      "item": "chemmod:fructose"
     }
   ],
   "result": {
-    "item": "chemmod:magnesium_oxide",
+    "item": "chemmod:sucrose",
     "count": 1
   }
 

@@ -3,7 +3,13 @@
 
   "ingredients": [
     {
+      "item": "chemmod:calcium"
+    },
+    {
       "item": "chemmod:carbon"
+    },
+    {
+      "item": "chemmod:oxygen"
     },
     {
       "item": "chemmod:oxygen"
@@ -13,7 +19,7 @@
     }
   ],
   "result": {
-    "item": "chemmod:carbon_dioxide",
+    "item": "chemmod:calcium_carbonate",
     "count": 1
   }
 

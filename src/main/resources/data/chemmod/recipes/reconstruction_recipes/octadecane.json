@@ -1,0 +1,32 @@
+{
+  "type": "minecraft:crafting_shapeless",
+
+  "ingredients": [
+    {
+      "item": "chemmod:butane"
+    },
+    {
+      "item": "chemmod:butane"
+    },
+    {
+      "item": "chemmod:butane"
+    },
+    {
+      "item": "chemmod:propane"
+    },
+    {
+      "item": "chemmod:carbon"
+    },
+    {
+      "item": "chemmod:carbon"
+    },
+    {
+      "item": "chemmod:carbon"
+    }
+  ],
+  "result": {
+    "item": "chemmod:octadecane",
+    "count": 1
+  }
+
+}

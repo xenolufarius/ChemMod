@@ -1,0 +1,35 @@
+{
+  "type": "minecraft:crafting_shapeless",
+
+  "ingredients": [
+    {
+      "item": "chemmod:carbon"
+    },
+    {
+      "item": "chemmod:carbon"
+    },
+    {
+      "item": "chemmod:hydrogen"
+    },
+    {
+      "item": "chemmod:hydrogen"
+    },
+    {
+      "item": "chemmod:hydrogen"
+    },
+    {
+      "item": "chemmod:hydrogen"
+    },
+    {
+      "item": "chemmod:hydrogen"
+    },
+    {
+      "item": "chemmod:hydrogen"
+    }
+  ],
+  "result": {
+    "item": "chemmod:ethane",
+    "count": 1
+  }
+
+}

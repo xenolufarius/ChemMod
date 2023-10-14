@@ -1,0 +1,29 @@
+{
+  "type": "minecraft:crafting_shapeless",
+
+  "ingredients": [
+    {
+      "item": "chemmod:butane"
+    },
+    {
+      "item": "chemmod:butane"
+    },
+    {
+      "item": "chemmod:butane"
+    },
+    {
+      "item": "chemmod:butane"
+    },
+    {
+      "item": "chemmod:butane"
+    },
+    {
+      "item": "chemmod:ethane"
+    }
+  ],
+  "result": {
+    "item": "chemmod:docosane",
+    "count": 1
+  }
+
+}

@@ -3,7 +3,7 @@
 
   "ingredients": [
     {
-      "item": "chemmod:chloroethene"
+      "item": "chemmod:ethane"
     }
   ],
   "output":[ {
@@ -11,8 +11,8 @@
     "count": 2
   },
     {
-      "item": "chemmod:chlorine",
-      "count": 1
+      "item": "chemmod:hydrogen",
+      "count": 6
     }
   ]
 

@@ -3,17 +3,29 @@
 
   "ingredients": [
     {
+      "item": "chemmod:ethane"
+    },
+    {
       "item": "chemmod:carbon"
     },
     {
+      "item": "chemmod:hydrogen"
+    },
+    {
+      "item": "chemmod:nitrogen"
+    },
+    {
       "item": "chemmod:oxygen"
     },
     {
       "item": "chemmod:oxygen"
+    },
+    {
+      "item": "chemmod:sulfur"
     }
   ],
   "result": {
-    "item": "chemmod:carbon_dioxide",
+    "item": "chemmod:cysteine",
     "count": 1
   }
 

@@ -3,16 +3,16 @@
 
   "ingredients": [
     {
-      "item": "chemmod:chloroethene"
+      "item": "chemmod:pentane"
     }
   ],
   "output":[ {
     "item": "chemmod:carbon",
-    "count": 2
+    "count": 5
   },
     {
-      "item": "chemmod:chlorine",
-      "count": 1
+      "item": "chemmod:hydrogen",
+      "count": 12
     }
   ]
 

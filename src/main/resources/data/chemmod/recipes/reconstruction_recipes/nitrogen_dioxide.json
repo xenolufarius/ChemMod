@@ -3,14 +3,17 @@
 
   "ingredients": [
     {
-      "item": "chemmod:magnesium"
+      "item": "chemmod:nitrogen"
+    },
+    {
+      "item": "chemmod:oxygen"
     },
     {
       "item": "chemmod:oxygen"
     }
   ],
   "result": {
-    "item": "chemmod:magnesium_oxide",
+    "item": "chemmod:nitrogen_dioxide",
     "count": 1
   }
 

@@ -1,0 +1,32 @@
+{
+  "type": "minecraft:crafting_shapeless",
+
+  "ingredients": [
+    {
+      "item": "chemmod:methane"
+    },
+    {
+      "item": "chemmod:carbon"
+    },
+    {
+      "item": "chemmod:carbon"
+    },
+    {
+      "item": "chemmod:hydrogen"
+    },
+    {
+      "item": "chemmod:hydrogen"
+    },
+    {
+      "item": "chemmod:hydrogen"
+    },
+    {
+      "item": "chemmod:hydrogen"
+    }
+  ],
+  "result": {
+    "item": "chemmod:propane",
+    "count": 1
+  }
+
+}

@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shapeless",
+
+  "ingredients": [
+    {
+      "item": "chemmod:terephthalic_acid"
+    },
+    {
+      "item": "chemmod:ethylene_glycol"
+    }
+  ],
+  "result": {
+    "item": "chemmod:polyethylene_terephthalate",
+    "count": 1
+  }
+
+}

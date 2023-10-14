@@ -6,14 +6,20 @@
       "item": "chemmod:potassium"
     },
     {
-      "item": "chemmod:potassium"
+      "item": "chemmod:nitrogen"
+    },
+    {
+      "item": "chemmod:oxygen"
+    },
+    {
+      "item": "chemmod:oxygen"
     },
     {
       "item": "chemmod:oxygen"
     }
   ],
   "result": {
-    "item": "chemmod:potassium_oxide",
+    "item": "chemmod:potassium_nitrate",
     "count": 1
   }
 

@@ -3,17 +3,26 @@
 
   "ingredients": [
     {
-      "item": "chemmod:hydrogen"
+      "item": "chemmod:chlorine"
+    },
+    {
+      "item": "chemmod:carbon"
+    },
+    {
+      "item": "chemmod:carbon"
     },
     {
       "item": "chemmod:hydrogen"
     },
     {
-      "item": "chemmod:oxygen"
+      "item": "chemmod:hydrogen"
+    },
+    {
+      "item": "chemmod:hydrogen"
     }
   ],
   "result": {
-    "item": "chemmod:water",
+    "item": "chemmod:chloroethene",
     "count": 1
   }
 
