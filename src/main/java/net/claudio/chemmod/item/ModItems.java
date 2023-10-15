@@ -323,6 +323,8 @@ public class ModItems {
             () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
     public static final RegistryObject<Item> SODIUM_NITRATE = Items.register( "sodium_nitrate",
             () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
+    public static final RegistryObject<Item> SODIUM_NITRITE = Items.register( "sodium_nitrite",
+            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
     public static final RegistryObject<Item> SODIUM_PERCHLORATE = Items.register( "sodium_perchlorate",
             () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
     public static final RegistryObject<Item> SODIUM_CHLORATE = Items.register( "sodium_chlorate",
@@ -389,6 +391,8 @@ public class ModItems {
     public static final RegistryObject<Item> LITHIUM_SULFITE = Items.register( "lithium_sulfite",
             () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
     public static final RegistryObject<Item> LITHIUM_NITRATE = Items.register( "lithium_nitrate",
+            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
+    public static final RegistryObject<Item> LITHIUM_NITRITE = Items.register( "lithium_nitrite",
             () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
     public static final RegistryObject<Item> LITHIUM_PERCHLORATE = Items.register( "lithium_perchlorate",
             () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
@@ -488,6 +492,8 @@ public class ModItems {
             () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
     public static final RegistryObject<Item> CALCIUM_NITRATE = Items.register( "calcium_nitrate",
             () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
+    public static final RegistryObject<Item> CALCIUM_NITRITE = Items.register( "calcium_nitrite",
+            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
     public static final RegistryObject<Item> CALCIUM_PERCHLORATE = Items.register( "calcium_perchlorate",
             () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
     public static final RegistryObject<Item> CALCIUM_CHLORATE = Items.register( "calcium_chlorate",
@@ -558,6 +564,8 @@ public class ModItems {
     public static final RegistryObject<Item> POTASSIUM_SULFITE = Items.register( "potassium_sulfite",
             () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
     public static final RegistryObject<Item> POTASSIUM_NITRATE = Items.register( "potassium_nitrate",
+            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
+    public static final RegistryObject<Item> POTASSIUM_NITRITE = Items.register( "potassium_nitrite",
             () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
     public static final RegistryObject<Item> POTASSIUM_PERCHLORATE = Items.register( "potassium_perchlorate",
             () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
@@ -673,6 +681,8 @@ public class ModItems {
             () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
     public static final RegistryObject<Item> AMMONIUM_NITRATE = Items.register( "ammonium_nitrate",
             () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
+    public static final RegistryObject<Item> AMMONIUM_NITRITE = Items.register( "ammonium_nitrite",
+            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
     public static final RegistryObject<Item> AMMONIUM_PERCHLORATE = Items.register( "ammonium_perchlorate",
             () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
     public static final RegistryObject<Item> AMMONIUM_CHLORATE = Items.register( "ammonium_chlorate",
@@ -718,27 +728,21 @@ public class ModItems {
             () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
     public static final RegistryObject<Item> BARIUM_ARSENATE = Items.register( "barium_arsenate",
             () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
-    public static final RegistryObject<Item> BARIUM_ARSENITE = Items.register( "barium_arsenite",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
     public static final RegistryObject<Item> BARIUM_PHOSPHATE = Items.register( "barium_phosphate",
             () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
     public static final RegistryObject<Item> BARIUM_DIHYDROGEN_PHOSPHATE = Items.register( "barium_dihydrogen_phosphate",
             () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
     public static final RegistryObject<Item> BARIUM_SULFATE = Items.register( "barium_sulfate",
             () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
-    public static final RegistryObject<Item> BARIUM_HYDROGEN_SULFATE = Items.register( "barium_hydrogen_sulfate",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
-    public static final RegistryObject<Item> BARIUM_THIOSULFATE = Items.register( "barium_thiosulfate",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
     public static final RegistryObject<Item> BARIUM_SULFITE = Items.register( "barium_sulfite",
             () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
     public static final RegistryObject<Item> BARIUM_NITRATE = Items.register( "barium_nitrate",
             () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
+    public static final RegistryObject<Item> BARIUM_NITRITE = Items.register( "barium_nitrite",
+            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
     public static final RegistryObject<Item> BARIUM_PERCHLORATE = Items.register( "barium_perchlorate",
             () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
     public static final RegistryObject<Item> BARIUM_CHLORATE = Items.register( "barium_chlorate",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
-    public static final RegistryObject<Item> BARIUM_CHLORITE = Items.register( "barium_chlorite",
             () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
     public static final RegistryObject<Item> BARIUM_HYPOCHLORITE = Items.register( "barium_hypochlorite",
             () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
@@ -748,19 +752,11 @@ public class ModItems {
             () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
     public static final RegistryObject<Item> BARIUM_CARBONATE = Items.register( "barium_carbonate",
             () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
-    public static final RegistryObject<Item> BARIUM_BICARBONATE = Items.register( "barium_bicarbonate",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
     public static final RegistryObject<Item> BARIUM_CHROMATE = Items.register( "barium_chromate",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
-    public static final RegistryObject<Item> BARIUM_DICHROMATE = Items.register( "barium_dichromate",
             () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
     public static final RegistryObject<Item> BARIUM_ACETATE = Items.register( "barium_acetate",
             () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
-    public static final RegistryObject<Item> BARIUM_FORMATE = Items.register( "barium_formate",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
     public static final RegistryObject<Item> BARIUM_CYANIDE = Items.register( "barium_cyanide",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
-    public static final RegistryObject<Item> BARIUM_CYANATE = Items.register( "barium_cyanate",
             () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
     public static final RegistryObject<Item> BARIUM_THIOCYANATE = Items.register( "barium_thiocyanate",
             () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
@@ -781,67 +777,15 @@ public class ModItems {
             () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
     public static final RegistryObject<Item> CHROMIUM_II_CHLORIDE = Items.register( "chromium_ii_chloride",
             () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
-    public static final RegistryObject<Item> CHROMIUM_II_NITRIDE = Items.register( "chromium_ii_nitride",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
     public static final RegistryObject<Item> CHROMIUM_II_BROMIDE = Items.register( "chromium_ii_bromide",
             () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
     public static final RegistryObject<Item> CHROMIUM_II_IODIDE = Items.register( "chromium_ii_iodide",
             () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
-    public static final RegistryObject<Item> CHROMIUM_II_ARSENATE = Items.register( "chromium_ii_arsenate",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
-    public static final RegistryObject<Item> CHROMIUM_II_ARSENITE = Items.register( "chromium_ii_arsenite",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
-    public static final RegistryObject<Item> CHROMIUM_II_PHOSPHATE = Items.register( "chromium_ii_phosphate",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
-    public static final RegistryObject<Item> CHROMIUM_II_DIHYDROGEN_PHOSPHATE = Items.register( "chromium_ii_dihydrogen_phosphate",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
-    public static final RegistryObject<Item> CHROMIUM_II_SULFATE = Items.register( "chromium_ii_sulfate",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
-    public static final RegistryObject<Item> CHROMIUM_II_HYDROGEN_SULFATE = Items.register( "chromium_ii_hydrogen_sulfate",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
-    public static final RegistryObject<Item> CHROMIUM_II_THIOSULFATE = Items.register( "chromium_ii_thiosulfate",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
-    public static final RegistryObject<Item> CHROMIUM_II_SULFITE = Items.register( "chromium_ii_sulfite",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
-    public static final RegistryObject<Item> CHROMIUM_II_NITRATE = Items.register( "chromium_ii_nitrate",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
-    public static final RegistryObject<Item> CHROMIUM_II_PERCHLORATE = Items.register( "chromium_ii_perchlorate",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
-    public static final RegistryObject<Item> CHROMIUM_II_CHLORATE = Items.register( "chromium_ii_chlorate",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
-    public static final RegistryObject<Item> CHROMIUM_II_CHLORITE = Items.register( "chromium_ii_chlorite",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
-    public static final RegistryObject<Item> CHROMIUM_II_HYPOCHLORITE = Items.register( "chromium_ii_hypochlorite",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
-    public static final RegistryObject<Item> CHROMIUM_II_IODATE = Items.register( "chromium_ii_iodate",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
-    public static final RegistryObject<Item> CHROMIUM_II_BROMATE = Items.register( "chromium_ii_bromate",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
-    public static final RegistryObject<Item> CHROMIUM_II_CARBONATE = Items.register( "chromium_ii_carbonate",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
-    public static final RegistryObject<Item> CHROMIUM_II_BICARBONATE = Items.register( "chromium_ii_bicarbonate",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
     public static final RegistryObject<Item> CHROMIUM_II_CHROMATE = Items.register( "chromium_ii_chromate",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
-    public static final RegistryObject<Item> CHROMIUM_II_DICHROMATE = Items.register( "chromium_ii_dichromate",
             () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
     public static final RegistryObject<Item> CHROMIUM_II_ACETATE = Items.register( "chromium_ii_acetate",
             () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
-    public static final RegistryObject<Item> CHROMIUM_II_FORMATE = Items.register( "chromium_ii_formate",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
-    public static final RegistryObject<Item> CHROMIUM_II_CYANIDE = Items.register( "chromium_ii_cyanide",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
-    public static final RegistryObject<Item> CHROMIUM_II_CYANATE = Items.register( "chromium_ii_cyanate",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
-    public static final RegistryObject<Item> CHROMIUM_II_THIOCYANATE = Items.register( "chromium_ii_thiocyanate",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
-    public static final RegistryObject<Item> CHROMIUM_II_PEROXIDE = Items.register( "chromium_ii_peroxide",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
     public static final RegistryObject<Item> CHROMIUM_II_OXALATE = Items.register( "chromium_ii_oxalate",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
-    public static final RegistryObject<Item> CHROMIUM_II_HYDROXIDE = Items.register( "chromium_ii_hydroxide",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
-    public static final RegistryObject<Item> CHROMIUM_II_PERMANGANATE = Items.register( "chromium_ii_permanganate",
             () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
     //chromium_iii
     public static final RegistryObject<Item> CHROMIUM_III_OXIDE = Items.register( "chromium_iii_oxide",
@@ -858,61 +802,19 @@ public class ModItems {
             () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
     public static final RegistryObject<Item> CHROMIUM_III_IODIDE = Items.register( "chromium_iii_iodide",
             () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
-    public static final RegistryObject<Item> CHROMIUM_III_ARSENATE = Items.register( "chromium_iii_arsenate",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
-    public static final RegistryObject<Item> CHROMIUM_III_ARSENITE = Items.register( "chromium_iii_arsenite",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
     public static final RegistryObject<Item> CHROMIUM_III_PHOSPHATE = Items.register( "chromium_iii_phosphate",
             () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
-    public static final RegistryObject<Item> CHROMIUM_III_DIHYDROGEN_PHOSPHATE = Items.register( "chromium_iii_dihydrogen_phosphate",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
     public static final RegistryObject<Item> CHROMIUM_III_SULFATE = Items.register( "chromium_iii_sulfate",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
-    public static final RegistryObject<Item> CHROMIUM_III_HYDROGEN_SULFATE = Items.register( "chromium_iii_hydrogen_sulfate",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
-    public static final RegistryObject<Item> CHROMIUM_III_THIOSULFATE = Items.register( "chromium_iii_thiosulfate",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
-    public static final RegistryObject<Item> CHROMIUM_III_SULFITE = Items.register( "chromium_iii_sulfite",
             () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
     public static final RegistryObject<Item> CHROMIUM_III_NITRATE = Items.register( "chromium_iii_nitrate",
             () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
     public static final RegistryObject<Item> CHROMIUM_III_PERCHLORATE = Items.register( "chromium_iii_perchlorate",
             () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
-    public static final RegistryObject<Item> CHROMIUM_III_CHLORATE = Items.register( "chromium_iii_chlorate",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
-    public static final RegistryObject<Item> CHROMIUM_III_CHLORITE = Items.register( "chromium_iii_chlorite",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
-    public static final RegistryObject<Item> CHROMIUM_III_HYPOCHLORITE = Items.register( "chromium_iii_hypochlorite",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
-    public static final RegistryObject<Item> CHROMIUM_III_IODATE = Items.register( "chromium_iii_iodate",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
-    public static final RegistryObject<Item> CHROMIUM_III_BROMATE = Items.register( "chromium_iii_bromate",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
-    public static final RegistryObject<Item> CHROMIUM_III_CARBONATE = Items.register( "chromium_iii_carbonate",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
-    public static final RegistryObject<Item> CHROMIUM_III_BICARBONATE = Items.register( "chromium_iii_bicarbonate",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
     public static final RegistryObject<Item> CHROMIUM_III_CHROMATE = Items.register( "chromium_iii_chromate",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
-    public static final RegistryObject<Item> CHROMIUM_III_DICHROMATE = Items.register( "chromium_iii_dichromate",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
-    public static final RegistryObject<Item> CHROMIUM_III_ACETATE = Items.register( "chromium_iii_acetate",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
-    public static final RegistryObject<Item> CHROMIUM_III_FORMATE = Items.register( "chromium_iii_formate",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
-    public static final RegistryObject<Item> CHROMIUM_III_CYANIDE = Items.register( "chromium_iii_cyanide",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
-    public static final RegistryObject<Item> CHROMIUM_III_CYANATE = Items.register( "chromium_iii_cyanate",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
-    public static final RegistryObject<Item> CHROMIUM_III_THIOCYANATE = Items.register( "chromium_iii_thiocyanate",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
-    public static final RegistryObject<Item> CHROMIUM_III_PEROXIDE = Items.register( "chromium_iii_peroxide",
             () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
     public static final RegistryObject<Item> CHROMIUM_III_OXALATE = Items.register( "chromium_iii_oxalate",
             () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
     public static final RegistryObject<Item> CHROMIUM_III_HYDROXIDE = Items.register( "chromium_iii_hydroxide",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
-    public static final RegistryObject<Item> CHROMIUM_III_PERMANGANATE = Items.register( "chromium_iii_permanganate",
             () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
     //COPPER I SALTS
     public static final RegistryObject<Item> COPPER_I_OXIDE = Items.register( "copper_i_oxide",
@@ -923,69 +825,18 @@ public class ModItems {
             () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
     public static final RegistryObject<Item> COPPER_I_CHLORIDE = Items.register( "copper_i_chloride",
             () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
-    public static final RegistryObject<Item> COPPER_I_NITRIDE = Items.register( "copper_i_nitride",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
     public static final RegistryObject<Item> COPPER_I_BROMIDE = Items.register( "copper_i_bromide",
             () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
     public static final RegistryObject<Item> COPPER_I_IODIDE = Items.register( "copper_i_iodide",
             () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
-    public static final RegistryObject<Item> COPPER_I_ARSENATE = Items.register( "copper_i_arsenate",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
-    public static final RegistryObject<Item> COPPER_I_ARSENITE = Items.register( "copper_i_arsenite",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
-    public static final RegistryObject<Item> COPPER_I_PHOSPHATE = Items.register( "copper_i_phosphate",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
-    public static final RegistryObject<Item> COPPER_I_DIHYDROGEN_PHOSPHATE = Items.register( "copper_i_dihydrogen_phosphate",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
     public static final RegistryObject<Item> COPPER_I_SULFATE = Items.register( "copper_i_sulfate",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
-    public static final RegistryObject<Item> COPPER_I_HYDROGEN_SULFATE = Items.register( "copper_i_hydrogen_sulfate",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
-    public static final RegistryObject<Item> COPPER_I_THIOSULFATE = Items.register( "copper_i_thiosulfate",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
-    public static final RegistryObject<Item> COPPER_I_SULFITE = Items.register( "copper_i_sulfite",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
-    public static final RegistryObject<Item> COPPER_I_NITRATE = Items.register( "copper_i_nitrate",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
-    public static final RegistryObject<Item> COPPER_I_PERCHLORATE = Items.register( "copper_i_perchlorate",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
-    public static final RegistryObject<Item> COPPER_I_CHLORATE = Items.register( "copper_i_chlorate",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
-    public static final RegistryObject<Item> COPPER_I_CHLORITE = Items.register( "copper_i_chlorite",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
-    public static final RegistryObject<Item> COPPER_I_HYPOCHLORITE = Items.register( "copper_i_hypochlorite",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
-    public static final RegistryObject<Item> COPPER_I_IODATE = Items.register( "copper_i_iodate",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
-    public static final RegistryObject<Item> COPPER_I_BROMATE = Items.register( "copper_i_bromate",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
-    public static final RegistryObject<Item> COPPER_I_CARBONATE = Items.register( "copper_i_carbonate",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
-    public static final RegistryObject<Item> COPPER_I_BICARBONATE = Items.register( "copper_i_bicarbonate",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
-    public static final RegistryObject<Item> COPPER_I_CHROMATE = Items.register( "copper_i_chromate",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
-    public static final RegistryObject<Item> COPPER_I_DICHROMATE = Items.register( "copper_i_dichromate",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
-    public static final RegistryObject<Item> COPPER_I_ACETATE = Items.register( "copper_i_acetate",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
-    public static final RegistryObject<Item> COPPER_I_FORMATE = Items.register( "copper_i_formate",
             () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
     public static final RegistryObject<Item> COPPER_I_CYANIDE = Items.register( "copper_i_cyanide",
             () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
-    public static final RegistryObject<Item> COPPER_I_CYANATE = Items.register( "copper_i_cyanate",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
     public static final RegistryObject<Item> COPPER_I_THIOCYANATE = Items.register( "copper_i_thiocyanate",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
-    public static final RegistryObject<Item> COPPER_I_PEROXIDE = Items.register( "copper_i_peroxide",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
-    public static final RegistryObject<Item> COPPER_I_OXALATE = Items.register( "copper_i_oxalate",
             () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
     public static final RegistryObject<Item> COPPER_I_HYDROXIDE = Items.register( "copper_i_hydroxide",
             () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
-    public static final RegistryObject<Item> COPPER_I_PERMANGANATE = Items.register( "copper_i_permanganate",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
-
     //copper ii salts
     public static final RegistryObject<Item> COPPER_II_OXIDE = Items.register( "copper_ii_oxide",
             () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
@@ -995,27 +846,13 @@ public class ModItems {
             () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
     public static final RegistryObject<Item> COPPER_II_CHLORIDE = Items.register( "copper_ii_chloride",
             () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
-    public static final RegistryObject<Item> COPPER_II_NITRIDE = Items.register( "copper_ii_nitride",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
     public static final RegistryObject<Item> COPPER_II_BROMIDE = Items.register( "copper_ii_bromide",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
-    public static final RegistryObject<Item> COPPER_II_IODIDE = Items.register( "copper_ii_iodide",
             () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
     public static final RegistryObject<Item> COPPER_II_ARSENATE = Items.register( "copper_ii_arsenate",
             () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
-    public static final RegistryObject<Item> COPPER_II_ARSENITE = Items.register( "copper_ii_arsenite",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
     public static final RegistryObject<Item> COPPER_II_PHOSPHATE = Items.register( "copper_ii_phosphate",
             () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
-    public static final RegistryObject<Item> COPPER_II_DIHYDROGEN_PHOSPHATE = Items.register( "copper_ii_dihydrogen_phosphate",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
     public static final RegistryObject<Item> COPPER_II_SULFATE = Items.register( "copper_ii_sulfate",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
-    public static final RegistryObject<Item> COPPER_II_HYDROGEN_SULFATE = Items.register( "copper_ii_hydrogen_sulfate",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
-    public static final RegistryObject<Item> COPPER_II_THIOSULFATE = Items.register( "copper_ii_thiosulfate",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
-    public static final RegistryObject<Item> COPPER_II_SULFITE = Items.register( "copper_ii_sulfite",
             () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
     public static final RegistryObject<Item> COPPER_II_NITRATE = Items.register( "copper_ii_nitrate",
             () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
@@ -1023,29 +860,13 @@ public class ModItems {
             () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
     public static final RegistryObject<Item> COPPER_II_CHLORATE = Items.register( "copper_ii_chlorate",
             () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
-    public static final RegistryObject<Item> COPPER_II_CHLORITE = Items.register( "copper_ii_chlorite",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
-    public static final RegistryObject<Item> COPPER_II_HYPOCHLORITE = Items.register( "copper_ii_hypochlorite",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
-    public static final RegistryObject<Item> COPPER_II_IODATE = Items.register( "copper_ii_iodate",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
-    public static final RegistryObject<Item> COPPER_II_BROMATE = Items.register( "copper_ii_bromate",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
     public static final RegistryObject<Item> COPPER_II_CARBONATE = Items.register( "copper_ii_carbonate",
             () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
-    public static final RegistryObject<Item> COPPER_II_BICARBONATE = Items.register( "copper_ii_bicarbonate",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
     public static final RegistryObject<Item> COPPER_II_CHROMATE = Items.register( "copper_ii_chromate",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
-    public static final RegistryObject<Item> COPPER_II_DICHROMATE = Items.register( "copper_ii_dichromate",
             () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
     public static final RegistryObject<Item> COPPER_II_ACETATE = Items.register( "copper_ii_acetate",
             () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
     public static final RegistryObject<Item> COPPER_II_FORMATE = Items.register( "copper_ii_formate",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
-    public static final RegistryObject<Item> COPPER_II_CYANIDE = Items.register( "copper_ii_cyanide",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
-    public static final RegistryObject<Item> COPPER_II_CYANATE = Items.register( "copper_ii_cyanate",
             () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
     public static final RegistryObject<Item> COPPER_II_THIOCYANATE = Items.register( "copper_ii_thiocyanate",
             () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
@@ -1054,8 +875,6 @@ public class ModItems {
     public static final RegistryObject<Item> COPPER_II_OXALATE = Items.register( "copper_ii_oxalate",
             () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
     public static final RegistryObject<Item> COPPER_II_HYDROXIDE = Items.register( "copper_ii_hydroxide",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
-    public static final RegistryObject<Item> COPPER_II_PERMANGANATE = Items.register( "copper_ii_permanganate",
             () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
     //IRON II SALTS
     public static final RegistryObject<Item> IRON_II_OXIDE = Items.register( "iron_ii_oxide",
@@ -1066,78 +885,36 @@ public class ModItems {
             () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
     public static final RegistryObject<Item> IRON_II_CHLORIDE = Items.register( "iron_ii_chloride",
             () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
-    public static final RegistryObject<Item> IRON_II_NITRIDE = Items.register( "iron_ii_nitride",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
     public static final RegistryObject<Item> IRON_II_BROMIDE = Items.register( "iron_ii_bromide",
             () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
     public static final RegistryObject<Item> IRON_II_IODIDE = Items.register( "iron_ii_iodide",
             () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
     public static final RegistryObject<Item> IRON_II_ARSENATE = Items.register( "iron_ii_arsenate",
             () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
-    public static final RegistryObject<Item> IRON_II_ARSENITE = Items.register( "iron_ii_arsenite",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
     public static final RegistryObject<Item> IRON_II_PHOSPHATE = Items.register( "iron_ii_phosphate",
             () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
-    public static final RegistryObject<Item> IRON_II_DIHYDROGEN_PHOSPHATE = Items.register( "iron_ii_dihydrogen_phosphate",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
     public static final RegistryObject<Item> IRON_II_SULFATE = Items.register( "iron_ii_sulfate",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
-    public static final RegistryObject<Item> IRON_II_HYDROGEN_SULFATE = Items.register( "iron_ii_hydrogen_sulfate",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
-    public static final RegistryObject<Item> IRON_II_THIOSULFATE = Items.register( "iron_ii_thiosulfate",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
-    public static final RegistryObject<Item> IRON_II_SULFITE = Items.register( "iron_ii_sulfite",
             () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
     public static final RegistryObject<Item> IRON_II_NITRATE = Items.register( "iron_ii_nitrate",
             () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
     public static final RegistryObject<Item> IRON_II_PERCHLORATE = Items.register( "iron_ii_perchlorate",
             () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
-    public static final RegistryObject<Item> IRON_II_CHLORATE = Items.register( "iron_ii_chlorate",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
-    public static final RegistryObject<Item> IRON_II_CHLORITE = Items.register( "iron_ii_chlorite",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
-    public static final RegistryObject<Item> IRON_II_HYPOCHLORITE = Items.register( "iron_ii_hypochlorite",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
-    public static final RegistryObject<Item> IRON_II_IODATE = Items.register( "iron_ii_iodate",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
-    public static final RegistryObject<Item> IRON_II_BROMATE = Items.register( "iron_ii_bromate",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
     public static final RegistryObject<Item> IRON_II_CARBONATE = Items.register( "iron_ii_carbonate",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
-    public static final RegistryObject<Item> IRON_II_BICARBONATE = Items.register( "iron_ii_bicarbonate",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
-    public static final RegistryObject<Item> IRON_II_CHROMATE = Items.register( "iron_ii_chromate",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
-    public static final RegistryObject<Item> IRON_II_DICHROMATE = Items.register( "iron_ii_dichromate",
             () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
     public static final RegistryObject<Item> IRON_II_ACETATE = Items.register( "iron_ii_acetate",
             () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
-    public static final RegistryObject<Item> IRON_II_FORMATE = Items.register( "iron_ii_formate",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
-    public static final RegistryObject<Item> IRON_II_CYANIDE = Items.register( "iron_ii_cyanide",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
-    public static final RegistryObject<Item> IRON_II_CYANATE = Items.register( "iron_ii_cyanate",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
     public static final RegistryObject<Item> IRON_II_THIOCYANATE = Items.register( "iron_ii_thiocyanate",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
-    public static final RegistryObject<Item> IRON_II_PEROXIDE = Items.register( "iron_ii_peroxide",
             () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
     public static final RegistryObject<Item> IRON_II_OXALATE = Items.register( "iron_ii_oxalate",
             () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
     public static final RegistryObject<Item> IRON_II_HYDROXIDE = Items.register( "iron_ii_hydroxide",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
-    public static final RegistryObject<Item> IRON_II_PERMANGANATE = Items.register( "iron_ii_permanganate",
             () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
     //iron iii salts
     public static final RegistryObject<Item> IRON_III_OXIDE = Items.register( "iron_iii_oxide",
             () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
     public static final RegistryObject<Item> IRON_III_FLUORIDE = Items.register( "iron_iii_fluoride",
             () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
-    public static final RegistryObject<Item> IRON_III_SULFIDE = Items.register( "iron_iii_sulfide",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
     public static final RegistryObject<Item> IRON_III_CHLORIDE = Items.register( "iron_iii_chloride",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
-    public static final RegistryObject<Item> IRON_III_NITRIDE = Items.register( "iron_iii_nitride",
             () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
     public static final RegistryObject<Item> IRON_III_BROMIDE = Items.register( "iron_iii_bromide",
             () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
@@ -1145,59 +922,13 @@ public class ModItems {
             () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
     public static final RegistryObject<Item> IRON_III_ARSENATE = Items.register( "iron_iii_arsenate",
             () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
-    public static final RegistryObject<Item> IRON_III_ARSENITE = Items.register( "iron_iii_arsenite",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
     public static final RegistryObject<Item> IRON_III_PHOSPHATE = Items.register( "iron_iii_phosphate",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
-    public static final RegistryObject<Item> IRON_III_DIHYDROGEN_PHOSPHATE = Items.register( "iron_iii_dihydrogen_phosphate",
             () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
     public static final RegistryObject<Item> IRON_III_SULFATE = Items.register( "iron_iii_sulfate",
             () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
-    public static final RegistryObject<Item> IRON_III_HYDROGEN_SULFATE = Items.register( "iron_iii_hydrogen_sulfate",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
-    public static final RegistryObject<Item> IRON_III_THIOSULFATE = Items.register( "iron_iii_thiosulfate",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
-    public static final RegistryObject<Item> IRON_III_SULFITE = Items.register( "iron_iii_sulfite",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
     public static final RegistryObject<Item> IRON_III_NITRATE = Items.register( "iron_iii_nitrate",
             () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
-    public static final RegistryObject<Item> IRON_III_PERCHLORATE = Items.register( "iron_iii_perchlorate",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
-    public static final RegistryObject<Item> IRON_III_CHLORATE = Items.register( "iron_iii_chlorate",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
-    public static final RegistryObject<Item> IRON_III_CHLORITE = Items.register( "iron_iii_chlorite",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
-    public static final RegistryObject<Item> IRON_III_HYPOCHLORITE = Items.register( "iron_iii_hypochlorite",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
-    public static final RegistryObject<Item> IRON_III_IODATE = Items.register( "iron_iii_iodate",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
-    public static final RegistryObject<Item> IRON_III_BROMATE = Items.register( "iron_iii_bromate",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
-    public static final RegistryObject<Item> IRON_III_CARBONATE = Items.register( "iron_iii_carbonate",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
-    public static final RegistryObject<Item> IRON_III_BICARBONATE = Items.register( "iron_iii_bicarbonate",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
-    public static final RegistryObject<Item> IRON_III_CHROMATE = Items.register( "iron_iii_chromate",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
-    public static final RegistryObject<Item> IRON_III_DICHROMATE = Items.register( "iron_iii_dichromate",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
-    public static final RegistryObject<Item> IRON_III_ACETATE = Items.register( "iron_iii_acetate",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
-    public static final RegistryObject<Item> IRON_III_FORMATE = Items.register( "iron_iii_formate",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
-    public static final RegistryObject<Item> IRON_III_CYANIDE = Items.register( "iron_iii_cyanide",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
-    public static final RegistryObject<Item> IRON_III_CYANATE = Items.register( "iron_iii_cyanate",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
-    public static final RegistryObject<Item> IRON_III_THIOCYANATE = Items.register( "iron_iii_thiocyanate",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
-    public static final RegistryObject<Item> IRON_III_PEROXIDE = Items.register( "iron_iii_peroxide",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
     public static final RegistryObject<Item> IRON_III_OXALATE = Items.register( "iron_iii_oxalate",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
-    public static final RegistryObject<Item> IRON_III_HYDROXIDE = Items.register( "iron_iii_hydroxide",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
-    public static final RegistryObject<Item> IRON_III_PERMANGANATE = Items.register( "iron_iii_permanganate",
             () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
     //LEAD II
     public static final RegistryObject<Item> LEAD_II_OXIDE = Items.register( "lead_ii_oxide",
@@ -1208,67 +939,35 @@ public class ModItems {
             () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
     public static final RegistryObject<Item> LEAD_II_CHLORIDE = Items.register( "lead_ii_chloride",
             () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
-    public static final RegistryObject<Item> LEAD_II_NITRIDE = Items.register( "lead_ii_nitride",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
     public static final RegistryObject<Item> LEAD_II_BROMIDE = Items.register( "lead_ii_bromide",
             () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
     public static final RegistryObject<Item> LEAD_II_IODIDE = Items.register( "lead_ii_iodide",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
-    public static final RegistryObject<Item> LEAD_II_ARSENATE = Items.register( "lead_ii_arsenate",
             () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
     public static final RegistryObject<Item> LEAD_II_ARSENITE = Items.register( "lead_ii_arsenite",
             () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
     public static final RegistryObject<Item> LEAD_II_PHOSPHATE = Items.register( "lead_ii_phosphate",
             () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
-    public static final RegistryObject<Item> LEAD_II_DIHYDROGEN_PHOSPHATE = Items.register( "lead_ii_dihydrogen_phosphate",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
     public static final RegistryObject<Item> LEAD_II_SULFATE = Items.register( "lead_ii_sulfate",
             () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
-    public static final RegistryObject<Item> LEAD_II_HYDROGEN_SULFATE = Items.register( "lead_ii_hydrogen_sulfate",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
     public static final RegistryObject<Item> LEAD_II_THIOSULFATE = Items.register( "lead_ii_thiosulfate",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
-    public static final RegistryObject<Item> LEAD_II_SULFITE = Items.register( "lead_ii_sulfite",
             () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
     public static final RegistryObject<Item> LEAD_II_NITRATE = Items.register( "lead_ii_nitrate",
             () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
     public static final RegistryObject<Item> LEAD_II_PERCHLORATE = Items.register( "lead_ii_perchlorate",
             () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
-    public static final RegistryObject<Item> LEAD_II_CHLORATE = Items.register( "lead_ii_chlorate",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
-    public static final RegistryObject<Item> LEAD_II_CHLORITE = Items.register( "lead_ii_chlorite",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
-    public static final RegistryObject<Item> LEAD_II_HYPOCHLORITE = Items.register( "lead_ii_hypochlorite",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
     public static final RegistryObject<Item> LEAD_II_IODATE = Items.register( "lead_ii_iodate",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
-    public static final RegistryObject<Item> LEAD_II_BROMATE = Items.register( "lead_ii_bromate",
             () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
     public static final RegistryObject<Item> LEAD_II_CARBONATE = Items.register( "lead_ii_carbonate",
             () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
-    public static final RegistryObject<Item> LEAD_II_BICARBONATE = Items.register( "lead_ii_bicarbonate",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
     public static final RegistryObject<Item> LEAD_II_CHROMATE = Items.register( "lead_ii_chromate",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
-    public static final RegistryObject<Item> LEAD_II_DICHROMATE = Items.register( "lead_ii_dichromate",
             () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
     public static final RegistryObject<Item> LEAD_II_ACETATE = Items.register( "lead_ii_acetate",
             () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
-    public static final RegistryObject<Item> LEAD_II_FORMATE = Items.register( "lead_ii_formate",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
     public static final RegistryObject<Item> LEAD_II_CYANIDE = Items.register( "lead_ii_cyanide",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
-    public static final RegistryObject<Item> LEAD_II_CYANATE = Items.register( "lead_ii_cyanate",
             () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
     public static final RegistryObject<Item> LEAD_II_THIOCYANATE = Items.register( "lead_ii_thiocyanate",
             () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
-    public static final RegistryObject<Item> LEAD_II_PEROXIDE = Items.register( "lead_ii_peroxide",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
-    public static final RegistryObject<Item> LEAD_II_OXALATE = Items.register( "lead_ii_oxalate",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
     public static final RegistryObject<Item> LEAD_II_HYDROXIDE = Items.register( "lead_ii_hydroxide",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
-    public static final RegistryObject<Item> LEAD_II_PERMANGANATE = Items.register( "lead_ii_permanganate",
             () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
     //magnesium salts
     public static final RegistryObject<Item> MAGNESIUM_OXIDE = Items.register( "magnesium_oxide",
@@ -1287,19 +986,11 @@ public class ModItems {
             () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
     public static final RegistryObject<Item> MAGNESIUM_ARSENATE = Items.register( "magnesium_arsenate",
             () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
-    public static final RegistryObject<Item> MAGNESIUM_ARSENITE = Items.register( "magnesium_arsenite",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
-    public static final RegistryObject<Item> MAGNESIUM_PHOSPHATE = Items.register( "magnesium_phosphate",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
     public static final RegistryObject<Item> MAGNESIUM_DIHYDROGEN_PHOSPHATE = Items.register( "magnesium_dihydrogen_phosphate",
             () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
     public static final RegistryObject<Item> MAGNESIUM_SULFATE = Items.register( "magnesium_sulfate",
             () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
-    public static final RegistryObject<Item> MAGNESIUM_HYDROGEN_SULFATE = Items.register( "magnesium_hydrogen_sulfate",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
     public static final RegistryObject<Item> MAGNESIUM_THIOSULFATE = Items.register( "magnesium_thiosulfate",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
-    public static final RegistryObject<Item> MAGNESIUM_SULFITE = Items.register( "magnesium_sulfite",
             () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
     public static final RegistryObject<Item> MAGNESIUM_NITRATE = Items.register( "magnesium_nitrate",
             () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
@@ -1307,31 +998,13 @@ public class ModItems {
             () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
     public static final RegistryObject<Item> MAGNESIUM_CHLORATE = Items.register( "magnesium_chlorate",
             () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
-    public static final RegistryObject<Item> MAGNESIUM_CHLORITE = Items.register( "magnesium_chlorite",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
-    public static final RegistryObject<Item> MAGNESIUM_HYPOCHLORITE = Items.register( "magnesium_hypochlorite",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
-    public static final RegistryObject<Item> MAGNESIUM_IODATE = Items.register( "magnesium_iodate",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
-    public static final RegistryObject<Item> MAGNESIUM_BROMATE = Items.register( "magnesium_bromate",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
     public static final RegistryObject<Item> MAGNESIUM_CARBONATE = Items.register( "magnesium_carbonate",
             () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
-    public static final RegistryObject<Item> MAGNESIUM_BICARBONATE = Items.register( "magnesium_bicarbonate",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
     public static final RegistryObject<Item> MAGNESIUM_CHROMATE = Items.register( "magnesium_chromate",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
-    public static final RegistryObject<Item> MAGNESIUM_DICHROMATE = Items.register( "magnesium_dichromate",
             () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
     public static final RegistryObject<Item> MAGNESIUM_ACETATE = Items.register( "magnesium_acetate",
             () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
     public static final RegistryObject<Item> MAGNESIUM_FORMATE = Items.register( "magnesium_formate",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
-    public static final RegistryObject<Item> MAGNESIUM_CYANIDE = Items.register( "magnesium_cyanide",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
-    public static final RegistryObject<Item> MAGNESIUM_CYANATE = Items.register( "magnesium_cyanate",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
-    public static final RegistryObject<Item> MAGNESIUM_THIOCYANATE = Items.register( "magnesium_thiocyanate",
             () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
     public static final RegistryObject<Item> MAGNESIUM_PEROXIDE = Items.register( "magnesium_peroxide",
             () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
@@ -1350,209 +1023,51 @@ public class ModItems {
             () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
     public static final RegistryObject<Item> MANGANESE_II_CHLORIDE = Items.register( "manganese_ii_chloride",
             () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
-    public static final RegistryObject<Item> MANGANESE_II_NITRIDE = Items.register( "manganese_ii_nitride",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
     public static final RegistryObject<Item> MANGANESE_II_BROMIDE = Items.register( "manganese_ii_bromide",
             () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
     public static final RegistryObject<Item> MANGANESE_II_IODIDE = Items.register( "manganese_ii_iodide",
             () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
-    public static final RegistryObject<Item> MANGANESE_II_ARSENATE = Items.register( "manganese_ii_arsenate",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
-    public static final RegistryObject<Item> MANGANESE_II_ARSENITE = Items.register( "manganese_ii_arsenite",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
     public static final RegistryObject<Item> MANGANESE_II_PHOSPHATE = Items.register( "manganese_ii_phosphate",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
-    public static final RegistryObject<Item> MANGANESE_II_DIHYDROGEN_PHOSPHATE = Items.register( "manganese_ii_dihydrogen_phosphate",
             () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
     public static final RegistryObject<Item> MANGANESE_II_SULFATE = Items.register( "manganese_ii_sulfate",
             () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
-    public static final RegistryObject<Item> MANGANESE_II_HYDROGEN_SULFATE = Items.register( "manganese_ii_hydrogen_sulfate",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
-    public static final RegistryObject<Item> MANGANESE_II_THIOSULFATE = Items.register( "manganese_ii_thiosulfate",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
-    public static final RegistryObject<Item> MANGANESE_II_SULFITE = Items.register( "manganese_ii_sulfite",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
     public static final RegistryObject<Item> MANGANESE_II_NITRATE = Items.register( "manganese_ii_nitrate",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
-    public static final RegistryObject<Item> MANGANESE_II_PERCHLORATE = Items.register( "manganese_ii_perchlorate",
             () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
     public static final RegistryObject<Item> MANGANESE_II_CHLORATE = Items.register( "manganese_ii_chlorate",
             () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
-    public static final RegistryObject<Item> MANGANESE_II_CHLORITE = Items.register( "manganese_ii_chlorite",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
-    public static final RegistryObject<Item> MANGANESE_II_HYPOCHLORITE = Items.register( "manganese_ii_hypochlorite",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
-    public static final RegistryObject<Item> MANGANESE_II_IODATE = Items.register( "manganese_ii_iodate",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
-    public static final RegistryObject<Item> MANGANESE_II_BROMATE = Items.register( "manganese_ii_bromate",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
     public static final RegistryObject<Item> MANGANESE_II_CARBONATE = Items.register( "manganese_ii_carbonate",
             () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
-    public static final RegistryObject<Item> MANGANESE_II_BICARBONATE = Items.register( "manganese_ii_bicarbonate",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
-    public static final RegistryObject<Item> MANGANESE_II_CHROMATE = Items.register( "manganese_ii_chromate",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
-    public static final RegistryObject<Item> MANGANESE_II_DICHROMATE = Items.register( "manganese_ii_dichromate",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
     public static final RegistryObject<Item> MANGANESE_II_ACETATE = Items.register( "manganese_ii_acetate",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
-    public static final RegistryObject<Item> MANGANESE_II_FORMATE = Items.register( "manganese_ii_formate",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
-    public static final RegistryObject<Item> MANGANESE_II_CYANIDE = Items.register( "manganese_ii_cyanide",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
-    public static final RegistryObject<Item> MANGANESE_II_CYANATE = Items.register( "manganese_ii_cyanate",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
-    public static final RegistryObject<Item> MANGANESE_II_THIOCYANATE = Items.register( "manganese_ii_thiocyanate",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
-    public static final RegistryObject<Item> MANGANESE_II_PEROXIDE = Items.register( "manganese_ii_peroxide",
             () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
     public static final RegistryObject<Item> MANGANESE_II_OXALATE = Items.register( "manganese_ii_oxalate",
             () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
     public static final RegistryObject<Item> MANGANESE_II_HYDROXIDE = Items.register( "manganese_ii_hydroxide",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
-    public static final RegistryObject<Item> MANGANESE_II_PERMANGANATE = Items.register( "manganese_ii_permanganate",
             () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
     //manganese iii salts
     public static final RegistryObject<Item> MANGANESE_III_OXIDE = Items.register( "manganese_iii_oxide",
             () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
     public static final RegistryObject<Item> MANGANESE_III_FLUORIDE = Items.register( "manganese_iii_fluoride",
             () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
-    public static final RegistryObject<Item> MANGANESE_III_SULFIDE = Items.register( "manganese_iii_sulfide",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
-    public static final RegistryObject<Item> MANGANESE_III_CHLORIDE = Items.register( "manganese_iii_chloride",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
-    public static final RegistryObject<Item> MANGANESE_III_NITRIDE = Items.register( "manganese_iii_nitride",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
-    public static final RegistryObject<Item> MANGANESE_III_BROMIDE = Items.register( "manganese_iii_bromide",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
-    public static final RegistryObject<Item> MANGANESE_III_IODIDE = Items.register( "manganese_iii_iodide",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
-    public static final RegistryObject<Item> MANGANESE_III_ARSENATE = Items.register( "manganese_iii_arsenate",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
-    public static final RegistryObject<Item> MANGANESE_III_ARSENITE = Items.register( "manganese_iii_arsenite",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
     public static final RegistryObject<Item> MANGANESE_III_PHOSPHATE = Items.register( "manganese_iii_phosphate",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
-    public static final RegistryObject<Item> MANGANESE_III_DIHYDROGEN_PHOSPHATE = Items.register( "manganese_iii_dihydrogen_phosphate",
             () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
     public static final RegistryObject<Item> MANGANESE_III_SULFATE = Items.register( "manganese_iii_sulfate",
             () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
-    public static final RegistryObject<Item> MANGANESE_III_HYDROGEN_SULFATE = Items.register( "manganese_iii_hydrogen_sulfate",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
-    public static final RegistryObject<Item> MANGANESE_III_THIOSULFATE = Items.register( "manganese_iii_thiosulfate",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
-    public static final RegistryObject<Item> MANGANESE_III_SULFITE = Items.register( "manganese_iii_sulfite",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
-    public static final RegistryObject<Item> MANGANESE_III_NITRATE = Items.register( "manganese_iii_nitrate",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
-    public static final RegistryObject<Item> MANGANESE_III_PERCHLORATE = Items.register( "manganese_iii_perchlorate",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
-    public static final RegistryObject<Item> MANGANESE_III_CHLORATE = Items.register( "manganese_iii_chlorate",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
-    public static final RegistryObject<Item> MANGANESE_III_CHLORITE = Items.register( "manganese_iii_chlorite",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
-    public static final RegistryObject<Item> MANGANESE_III_HYPOCHLORITE = Items.register( "manganese_iii_hypochlorite",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
-    public static final RegistryObject<Item> MANGANESE_III_IODATE = Items.register( "manganese_iii_iodate",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
-    public static final RegistryObject<Item> MANGANESE_III_BROMATE = Items.register( "manganese_iii_bromate",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
-    public static final RegistryObject<Item> MANGANESE_III_CARBONATE = Items.register( "manganese_iii_carbonate",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
-    public static final RegistryObject<Item> MANGANESE_III_BICARBONATE = Items.register( "manganese_iii_bicarbonate",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
-    public static final RegistryObject<Item> MANGANESE_III_CHROMATE = Items.register( "manganese_iii_chromate",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
-    public static final RegistryObject<Item> MANGANESE_III_DICHROMATE = Items.register( "manganese_iii_dichromate",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
     public static final RegistryObject<Item> MANGANESE_III_ACETATE = Items.register( "manganese_iii_acetate",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
-    public static final RegistryObject<Item> MANGANESE_III_FORMATE = Items.register( "manganese_iii_formate",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
-    public static final RegistryObject<Item> MANGANESE_III_CYANIDE = Items.register( "manganese_iii_cyanide",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
-    public static final RegistryObject<Item> MANGANESE_III_CYANATE = Items.register( "manganese_iii_cyanate",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
-    public static final RegistryObject<Item> MANGANESE_III_THIOCYANATE = Items.register( "manganese_iii_thiocyanate",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
-    public static final RegistryObject<Item> MANGANESE_III_PEROXIDE = Items.register( "manganese_iii_peroxide",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
-    public static final RegistryObject<Item> MANGANESE_III_OXALATE = Items.register( "manganese_iii_oxalate",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
-    public static final RegistryObject<Item> MANGANESE_III_HYDROXIDE = Items.register( "manganese_iii_hydroxide",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
-    public static final RegistryObject<Item> MANGANESE_III_PERMANGANATE = Items.register( "manganese_iii_permanganate",
             () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
     //MERCURY I SALTS
     public static final RegistryObject<Item> MERCURY_I_OXIDE = Items.register( "mercury_i_oxide",
             () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
     public static final RegistryObject<Item> MERCURY_I_FLUORIDE = Items.register( "mercury_i_fluoride",
             () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
-    public static final RegistryObject<Item> MERCURY_I_SULFIDE = Items.register( "mercury_i_sulfide",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
     public static final RegistryObject<Item> MERCURY_I_CHLORIDE = Items.register( "mercury_i_chloride",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
-    public static final RegistryObject<Item> MERCURY_I_NITRIDE = Items.register( "mercury_i_nitride",
             () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
     public static final RegistryObject<Item> MERCURY_I_BROMIDE = Items.register( "mercury_i_bromide",
             () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
     public static final RegistryObject<Item> MERCURY_I_IODIDE = Items.register( "mercury_i_iodide",
             () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
-    public static final RegistryObject<Item> MERCURY_I_ARSENATE = Items.register( "mercury_i_arsenate",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
-    public static final RegistryObject<Item> MERCURY_I_ARSENITE = Items.register( "mercury_i_arsenite",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
-    public static final RegistryObject<Item> MERCURY_I_PHOSPHATE = Items.register( "mercury_i_phosphate",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
-    public static final RegistryObject<Item> MERCURY_I_DIHYDROGEN_PHOSPHATE = Items.register( "mercury_i_dihydrogen_phosphate",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
     public static final RegistryObject<Item> MERCURY_I_SULFATE = Items.register( "mercury_i_sulfate",
             () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
-    public static final RegistryObject<Item> MERCURY_I_HYDROGEN_SULFATE = Items.register( "mercury_i_hydrogen_sulfate",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
-    public static final RegistryObject<Item> MERCURY_I_THIOSULFATE = Items.register( "mercury_i_thiosulfate",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
-    public static final RegistryObject<Item> MERCURY_I_SULFITE = Items.register( "mercury_i_sulfite",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
     public static final RegistryObject<Item> MERCURY_I_NITRATE = Items.register( "mercury_i_nitrate",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
-    public static final RegistryObject<Item> MERCURY_I_PERCHLORATE = Items.register( "mercury_i_perchlorate",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
-    public static final RegistryObject<Item> MERCURY_I_CHLORATE = Items.register( "mercury_i_chlorate",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
-    public static final RegistryObject<Item> MERCURY_I_CHLORITE = Items.register( "mercury_i_chlorite",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
-    public static final RegistryObject<Item> MERCURY_I_HYPOCHLORITE = Items.register( "mercury_i_hypochlorite",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
-    public static final RegistryObject<Item> MERCURY_I_IODATE = Items.register( "mercury_i_iodate",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
-    public static final RegistryObject<Item> MERCURY_I_BROMATE = Items.register( "mercury_i_bromate",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
-    public static final RegistryObject<Item> MERCURY_I_CARBONATE = Items.register( "mercury_i_carbonate",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
-    public static final RegistryObject<Item> MERCURY_I_BICARBONATE = Items.register( "mercury_i_bicarbonate",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
-    public static final RegistryObject<Item> MERCURY_I_CHROMATE = Items.register( "mercury_i_chromate",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
-    public static final RegistryObject<Item> MERCURY_I_DICHROMATE = Items.register( "mercury_i_dichromate",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
-    public static final RegistryObject<Item> MERCURY_I_ACETATE = Items.register( "mercury_i_acetate",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
-    public static final RegistryObject<Item> MERCURY_I_FORMATE = Items.register( "mercury_i_formate",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
-    public static final RegistryObject<Item> MERCURY_I_CYANIDE = Items.register( "mercury_i_cyanide",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
-    public static final RegistryObject<Item> MERCURY_I_CYANATE = Items.register( "mercury_i_cyanate",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
-    public static final RegistryObject<Item> MERCURY_I_THIOCYANATE = Items.register( "mercury_i_thiocyanate",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
-    public static final RegistryObject<Item> MERCURY_I_PEROXIDE = Items.register( "mercury_i_peroxide",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
-    public static final RegistryObject<Item> MERCURY_I_OXALATE = Items.register( "mercury_i_oxalate",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
-    public static final RegistryObject<Item> MERCURY_I_HYDROXIDE = Items.register( "mercury_i_hydroxide",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
-    public static final RegistryObject<Item> MERCURY_I_PERMANGANATE = Items.register( "mercury_i_permanganate",
             () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
     //mercury ii salts
     public static final RegistryObject<Item> MERCURY_II_OXIDE = Items.register( "mercury_ii_oxide",
@@ -1563,138 +1078,28 @@ public class ModItems {
             () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
     public static final RegistryObject<Item> MERCURY_II_CHLORIDE = Items.register( "mercury_ii_chloride",
             () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
-    public static final RegistryObject<Item> MERCURY_II_NITRIDE = Items.register( "mercury_ii_nitride",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
     public static final RegistryObject<Item> MERCURY_II_BROMIDE = Items.register( "mercury_ii_bromide",
             () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
     public static final RegistryObject<Item> MERCURY_II_IODIDE = Items.register( "mercury_ii_iodide",
             () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
-    public static final RegistryObject<Item> MERCURY_II_ARSENATE = Items.register( "mercury_ii_arsenate",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
-    public static final RegistryObject<Item> MERCURY_II_ARSENITE = Items.register( "mercury_ii_arsenite",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
-    public static final RegistryObject<Item> MERCURY_II_PHOSPHATE = Items.register( "mercury_ii_phosphate",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
-    public static final RegistryObject<Item> MERCURY_II_DIHYDROGEN_PHOSPHATE = Items.register( "mercury_ii_dihydrogen_phosphate",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
     public static final RegistryObject<Item> MERCURY_II_SULFATE = Items.register( "mercury_ii_sulfate",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
-    public static final RegistryObject<Item> MERCURY_II_HYDROGEN_SULFATE = Items.register( "mercury_ii_hydrogen_sulfate",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
-    public static final RegistryObject<Item> MERCURY_II_THIOSULFATE = Items.register( "mercury_ii_thiosulfate",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
-    public static final RegistryObject<Item> MERCURY_II_SULFITE = Items.register( "mercury_ii_sulfite",
             () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
     public static final RegistryObject<Item> MERCURY_II_NITRATE = Items.register( "mercury_ii_nitrate",
             () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
-    public static final RegistryObject<Item> MERCURY_II_PERCHLORATE = Items.register( "mercury_ii_perchlorate",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
-    public static final RegistryObject<Item> MERCURY_II_CHLORATE = Items.register( "mercury_ii_chlorate",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
-    public static final RegistryObject<Item> MERCURY_II_CHLORITE = Items.register( "mercury_ii_chlorite",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
-    public static final RegistryObject<Item> MERCURY_II_HYPOCHLORITE = Items.register( "mercury_ii_hypochlorite",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
-    public static final RegistryObject<Item> MERCURY_II_IODATE = Items.register( "mercury_ii_iodate",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
-    public static final RegistryObject<Item> MERCURY_II_BROMATE = Items.register( "mercury_ii_bromate",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
-    public static final RegistryObject<Item> MERCURY_II_CARBONATE = Items.register( "mercury_ii_carbonate",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
-    public static final RegistryObject<Item> MERCURY_II_BICARBONATE = Items.register( "mercury_ii_bicarbonate",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
-    public static final RegistryObject<Item> MERCURY_II_CHROMATE = Items.register( "mercury_ii_chromate",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
-    public static final RegistryObject<Item> MERCURY_II_DICHROMATE = Items.register( "mercury_ii_dichromate",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
     public static final RegistryObject<Item> MERCURY_II_ACETATE = Items.register( "mercury_ii_acetate",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
-    public static final RegistryObject<Item> MERCURY_II_FORMATE = Items.register( "mercury_ii_formate",
             () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
     public static final RegistryObject<Item> MERCURY_II_CYANIDE = Items.register( "mercury_ii_cyanide",
             () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
-    public static final RegistryObject<Item> MERCURY_II_CYANATE = Items.register( "mercury_ii_cyanate",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
     public static final RegistryObject<Item> MERCURY_II_THIOCYANATE = Items.register( "mercury_ii_thiocyanate",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
-    public static final RegistryObject<Item> MERCURY_II_PEROXIDE = Items.register( "mercury_ii_peroxide",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
-    public static final RegistryObject<Item> MERCURY_II_OXALATE = Items.register( "mercury_ii_oxalate",
             () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
     public static final RegistryObject<Item> MERCURY_II_HYDROXIDE = Items.register( "mercury_ii_hydroxide",
             () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
-    public static final RegistryObject<Item> MERCURY_II_PERMANGANATE = Items.register( "mercury_ii_permanganate",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
     //NITRONIUM SALTS
-    public static final RegistryObject<Item> NITRONIUM_OXIDE = Items.register( "nitronium_oxide",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
     public static final RegistryObject<Item> NITRONIUM_FLUORIDE = Items.register( "nitronium_fluoride",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
-    public static final RegistryObject<Item> NITRONIUM_SULFIDE = Items.register( "nitronium_sulfide",
             () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
     public static final RegistryObject<Item> NITRONIUM_CHLORIDE = Items.register( "nitronium_chloride",
             () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
-    public static final RegistryObject<Item> NITRONIUM_NITRIDE = Items.register( "nitronium_nitride",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
-    public static final RegistryObject<Item> NITRONIUM_BROMIDE = Items.register( "nitronium_bromide",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
-    public static final RegistryObject<Item> NITRONIUM_IODIDE = Items.register( "nitronium_iodide",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
-    public static final RegistryObject<Item> NITRONIUM_ARSENATE = Items.register( "nitronium_arsenate",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
-    public static final RegistryObject<Item> NITRONIUM_ARSENITE = Items.register( "nitronium_arsenite",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
-    public static final RegistryObject<Item> NITRONIUM_PHOSPHATE = Items.register( "nitronium_phosphate",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
-    public static final RegistryObject<Item> NITRONIUM_DIHYDROGEN_PHOSPHATE = Items.register( "nitronium_dihydrogen_phosphate",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
-    public static final RegistryObject<Item> NITRONIUM_SULFATE = Items.register( "nitronium_sulfate",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
-    public static final RegistryObject<Item> NITRONIUM_HYDROGEN_SULFATE = Items.register( "nitronium_hydrogen_sulfate",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
-    public static final RegistryObject<Item> NITRONIUM_THIOSULFATE = Items.register( "nitronium_thiosulfate",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
-    public static final RegistryObject<Item> NITRONIUM_SULFITE = Items.register( "nitronium_sulfite",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
-    public static final RegistryObject<Item> NITRONIUM_NITRATE = Items.register( "nitronium_nitrate",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
     public static final RegistryObject<Item> NITRONIUM_PERCHLORATE = Items.register( "nitronium_perchlorate",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
-    public static final RegistryObject<Item> NITRONIUM_CHLORATE = Items.register( "nitronium_chlorate",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
-    public static final RegistryObject<Item> NITRONIUM_CHLORITE = Items.register( "nitronium_chlorite",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
-    public static final RegistryObject<Item> NITRONIUM_HYPOCHLORITE = Items.register( "nitronium_hypochlorite",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
-    public static final RegistryObject<Item> NITRONIUM_IODATE = Items.register( "nitronium_iodate",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
-    public static final RegistryObject<Item> NITRONIUM_BROMATE = Items.register( "nitronium_bromate",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
-    public static final RegistryObject<Item> NITRONIUM_CARBONATE = Items.register( "nitronium_carbonate",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
-    public static final RegistryObject<Item> NITRONIUM_BICARBONATE = Items.register( "nitronium_bicarbonate",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
-    public static final RegistryObject<Item> NITRONIUM_CHROMATE = Items.register( "nitronium_chromate",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
-    public static final RegistryObject<Item> NITRONIUM_DICHROMATE = Items.register( "nitronium_dichromate",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
-    public static final RegistryObject<Item> NITRONIUM_ACETATE = Items.register( "nitronium_acetate",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
-    public static final RegistryObject<Item> NITRONIUM_FORMATE = Items.register( "nitronium_formate",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
-    public static final RegistryObject<Item> NITRONIUM_CYANIDE = Items.register( "nitronium_cyanide",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
-    public static final RegistryObject<Item> NITRONIUM_CYANATE = Items.register( "nitronium_cyanate",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
-    public static final RegistryObject<Item> NITRONIUM_THIOCYANATE = Items.register( "nitronium_thiocyanate",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
-    public static final RegistryObject<Item> NITRONIUM_PEROXIDE = Items.register( "nitronium_peroxide",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
-    public static final RegistryObject<Item> NITRONIUM_OXALATE = Items.register( "nitronium_oxalate",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
-    public static final RegistryObject<Item> NITRONIUM_HYDROXIDE = Items.register( "nitronium_hydroxide",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
-    public static final RegistryObject<Item> NITRONIUM_PERMANGANATE = Items.register( "nitronium_permanganate",
             () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
     //silver salts
     public static final RegistryObject<Item> SILVER_OXIDE = Items.register( "silver_oxide",
@@ -1717,17 +1122,11 @@ public class ModItems {
             () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
     public static final RegistryObject<Item> SILVER_PHOSPHATE = Items.register( "silver_phosphate",
             () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
-    public static final RegistryObject<Item> SILVER_DIHYDROGEN_PHOSPHATE = Items.register( "silver_dihydrogen_phosphate",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
     public static final RegistryObject<Item> SILVER_SULFATE = Items.register( "silver_sulfate",
             () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
-    public static final RegistryObject<Item> SILVER_HYDROGEN_SULFATE = Items.register( "silver_hydrogen_sulfate",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
-    public static final RegistryObject<Item> SILVER_THIOSULFATE = Items.register( "silver_thiosulfate",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
-    public static final RegistryObject<Item> SILVER_SULFITE = Items.register( "silver_sulfite",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
     public static final RegistryObject<Item> SILVER_NITRATE = Items.register( "silver_nitrate",
+            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
+    public static final RegistryObject<Item> SILVER_NITRITE = Items.register( "silver_nitrite",
             () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
     public static final RegistryObject<Item> SILVER_PERCHLORATE = Items.register( "silver_perchlorate",
             () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
@@ -1743,23 +1142,15 @@ public class ModItems {
             () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
     public static final RegistryObject<Item> SILVER_CARBONATE = Items.register( "silver_carbonate",
             () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
-    public static final RegistryObject<Item> SILVER_BICARBONATE = Items.register( "silver_bicarbonate",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
     public static final RegistryObject<Item> SILVER_CHROMATE = Items.register( "silver_chromate",
             () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
     public static final RegistryObject<Item> SILVER_DICHROMATE = Items.register( "silver_dichromate",
             () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
     public static final RegistryObject<Item> SILVER_ACETATE = Items.register( "silver_acetate",
             () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
-    public static final RegistryObject<Item> SILVER_FORMATE = Items.register( "silver_formate",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
     public static final RegistryObject<Item> SILVER_CYANIDE = Items.register( "silver_cyanide",
             () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
-    public static final RegistryObject<Item> SILVER_CYANATE = Items.register( "silver_cyanate",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
     public static final RegistryObject<Item> SILVER_THIOCYANATE = Items.register( "silver_thiocyanate",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
-    public static final RegistryObject<Item> SILVER_PEROXIDE = Items.register( "silver_peroxide",
             () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
     public static final RegistryObject<Item> SILVER_OXALATE = Items.register( "silver_oxalate",
             () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
@@ -1782,21 +1173,7 @@ public class ModItems {
             () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
     public static final RegistryObject<Item> STRONTIUM_IODIDE = Items.register( "strontium_iodide",
             () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
-    public static final RegistryObject<Item> STRONTIUM_ARSENATE = Items.register( "strontium_arsenate",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
-    public static final RegistryObject<Item> STRONTIUM_ARSENITE = Items.register( "strontium_arsenite",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
-    public static final RegistryObject<Item> STRONTIUM_PHOSPHATE = Items.register( "strontium_phosphate",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
-    public static final RegistryObject<Item> STRONTIUM_DIHYDROGEN_PHOSPHATE = Items.register( "strontium_dihydrogen_phosphate",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
     public static final RegistryObject<Item> STRONTIUM_SULFATE = Items.register( "strontium_sulfate",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
-    public static final RegistryObject<Item> STRONTIUM_HYDROGEN_SULFATE = Items.register( "strontium_hydrogen_sulfate",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
-    public static final RegistryObject<Item> STRONTIUM_THIOSULFATE = Items.register( "strontium_thiosulfate",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
-    public static final RegistryObject<Item> STRONTIUM_SULFITE = Items.register( "strontium_sulfite",
             () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
     public static final RegistryObject<Item> STRONTIUM_NITRATE = Items.register( "strontium_nitrate",
             () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
@@ -1804,39 +1181,21 @@ public class ModItems {
             () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
     public static final RegistryObject<Item> STRONTIUM_CHLORATE = Items.register( "strontium_chlorate",
             () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
-    public static final RegistryObject<Item> STRONTIUM_CHLORITE = Items.register( "strontium_chlorite",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
-    public static final RegistryObject<Item> STRONTIUM_HYPOCHLORITE = Items.register( "strontium_hypochlorite",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
-    public static final RegistryObject<Item> STRONTIUM_IODATE = Items.register( "strontium_iodate",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
     public static final RegistryObject<Item> STRONTIUM_BROMATE = Items.register( "strontium_bromate",
             () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
     public static final RegistryObject<Item> STRONTIUM_CARBONATE = Items.register( "strontium_carbonate",
             () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
-    public static final RegistryObject<Item> STRONTIUM_BICARBONATE = Items.register( "strontium_bicarbonate",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
     public static final RegistryObject<Item> STRONTIUM_CHROMATE = Items.register( "strontium_chromate",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
-    public static final RegistryObject<Item> STRONTIUM_DICHROMATE = Items.register( "strontium_dichromate",
             () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
     public static final RegistryObject<Item> STRONTIUM_ACETATE = Items.register( "strontium_acetate",
             () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
     public static final RegistryObject<Item> STRONTIUM_FORMATE = Items.register( "strontium_formate",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
-    public static final RegistryObject<Item> STRONTIUM_CYANIDE = Items.register( "strontium_cyanide",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
-    public static final RegistryObject<Item> STRONTIUM_CYANATE = Items.register( "strontium_cyanate",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
-    public static final RegistryObject<Item> STRONTIUM_THIOCYANATE = Items.register( "strontium_thiocyanate",
             () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
     public static final RegistryObject<Item> STRONTIUM_PEROXIDE = Items.register( "strontium_peroxide",
             () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
     public static final RegistryObject<Item> STRONTIUM_OXALATE = Items.register( "strontium_oxalate",
             () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
     public static final RegistryObject<Item> STRONTIUM_HYDROXIDE = Items.register( "strontium_hydroxide",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
-    public static final RegistryObject<Item> STRONTIUM_PERMANGANATE = Items.register( "strontium_permanganate",
             () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
     //tin ii salts
     public static final RegistryObject<Item> TIN_II_OXIDE = Items.register( "tin_ii_oxide",
@@ -1847,67 +1206,17 @@ public class ModItems {
             () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
     public static final RegistryObject<Item> TIN_II_CHLORIDE = Items.register( "tin_ii_chloride",
             () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
-    public static final RegistryObject<Item> TIN_II_NITRIDE = Items.register( "tin_ii_nitride",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
     public static final RegistryObject<Item> TIN_II_BROMIDE = Items.register( "tin_ii_bromide",
             () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
     public static final RegistryObject<Item> TIN_II_IODIDE = Items.register( "tin_ii_iodide",
             () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
-    public static final RegistryObject<Item> TIN_II_ARSENATE = Items.register( "tin_ii_arsenate",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
-    public static final RegistryObject<Item> TIN_II_ARSENITE = Items.register( "tin_ii_arsenite",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
-    public static final RegistryObject<Item> TIN_II_PHOSPHATE = Items.register( "tin_ii_phosphate",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
-    public static final RegistryObject<Item> TIN_II_DIHYDROGEN_PHOSPHATE = Items.register( "tin_ii_dihydrogen_phosphate",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
     public static final RegistryObject<Item> TIN_II_SULFATE = Items.register( "tin_ii_sulfate",
             () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
-    public static final RegistryObject<Item> TIN_II_HYDROGEN_SULFATE = Items.register( "tin_ii_hydrogen_sulfate",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
-    public static final RegistryObject<Item> TIN_II_THIOSULFATE = Items.register( "tin_ii_thiosulfate",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
-    public static final RegistryObject<Item> TIN_II_SULFITE = Items.register( "tin_ii_sulfite",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
-    public static final RegistryObject<Item> TIN_II_NITRATE = Items.register( "tin_ii_nitrate",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
-    public static final RegistryObject<Item> TIN_II_PERCHLORATE = Items.register( "tin_ii_perchlorate",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
-    public static final RegistryObject<Item> TIN_II_CHLORATE = Items.register( "tin_ii_chlorate",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
-    public static final RegistryObject<Item> TIN_II_CHLORITE = Items.register( "tin_ii_chlorite",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
-    public static final RegistryObject<Item> TIN_II_HYPOCHLORITE = Items.register( "tin_ii_hypochlorite",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
-    public static final RegistryObject<Item> TIN_II_IODATE = Items.register( "tin_ii_iodate",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
-    public static final RegistryObject<Item> TIN_II_BROMATE = Items.register( "tin_ii_bromate",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
-    public static final RegistryObject<Item> TIN_II_CARBONATE = Items.register( "tin_ii_carbonate",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
-    public static final RegistryObject<Item> TIN_II_BICARBONATE = Items.register( "tin_ii_bicarbonate",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
-    public static final RegistryObject<Item> TIN_II_CHROMATE = Items.register( "tin_ii_chromate",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
-    public static final RegistryObject<Item> TIN_II_DICHROMATE = Items.register( "tin_ii_dichromate",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
     public static final RegistryObject<Item> TIN_II_ACETATE = Items.register( "tin_ii_acetate",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
-    public static final RegistryObject<Item> TIN_II_FORMATE = Items.register( "tin_ii_formate",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
-    public static final RegistryObject<Item> TIN_II_CYANIDE = Items.register( "tin_ii_cyanide",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
-    public static final RegistryObject<Item> TIN_II_CYANATE = Items.register( "tin_ii_cyanate",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
-    public static final RegistryObject<Item> TIN_II_THIOCYANATE = Items.register( "tin_ii_thiocyanate",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
-    public static final RegistryObject<Item> TIN_II_PEROXIDE = Items.register( "tin_ii_peroxide",
             () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
     public static final RegistryObject<Item> TIN_II_OXALATE = Items.register( "tin_ii_oxalate",
             () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
     public static final RegistryObject<Item> TIN_II_HYDROXIDE = Items.register( "tin_ii_hydroxide",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
-    public static final RegistryObject<Item> TIN_II_PERMANGANATE = Items.register( "tin_ii_permanganate",
             () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
     //TIN IV SALTS
     public static final RegistryObject<Item> TIN_IV_OXIDE = Items.register( "tin_iv_oxide",
@@ -1918,67 +1227,15 @@ public class ModItems {
             () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
     public static final RegistryObject<Item> TIN_IV_CHLORIDE = Items.register( "tin_iv_chloride",
             () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
-    public static final RegistryObject<Item> TIN_IV_NITRIDE = Items.register( "tin_iv_nitride",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
     public static final RegistryObject<Item> TIN_IV_BROMIDE = Items.register( "tin_iv_bromide",
             () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
     public static final RegistryObject<Item> TIN_IV_IODIDE = Items.register( "tin_iv_iodide",
             () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
     public static final RegistryObject<Item> TIN_IV_ARSENATE = Items.register( "tin_iv_arsenate",
             () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
-    public static final RegistryObject<Item> TIN_IV_ARSENITE = Items.register( "tin_iv_arsenite",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
-    public static final RegistryObject<Item> TIN_IV_PHOSPHATE = Items.register( "tin_iv_phosphate",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
-    public static final RegistryObject<Item> TIN_IV_DIHYDROGEN_PHOSPHATE = Items.register( "tin_iv_dihydrogen_phosphate",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
-    public static final RegistryObject<Item> TIN_IV_SULFATE = Items.register( "tin_iv_sulfate",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
-    public static final RegistryObject<Item> TIN_IV_HYDROGEN_SULFATE = Items.register( "tin_iv_hydrogen_sulfate",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
-    public static final RegistryObject<Item> TIN_IV_THIOSULFATE = Items.register( "tin_iv_thiosulfate",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
-    public static final RegistryObject<Item> TIN_IV_SULFITE = Items.register( "tin_iv_sulfite",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
     public static final RegistryObject<Item> TIN_IV_NITRATE = Items.register( "tin_iv_nitrate",
             () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
-    public static final RegistryObject<Item> TIN_IV_PERCHLORATE = Items.register( "tin_iv_perchlorate",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
-    public static final RegistryObject<Item> TIN_IV_CHLORATE = Items.register( "tin_iv_chlorate",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
-    public static final RegistryObject<Item> TIN_IV_CHLORITE = Items.register( "tin_iv_chlorite",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
-    public static final RegistryObject<Item> TIN_IV_HYPOCHLORITE = Items.register( "tin_iv_hypochlorite",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
-    public static final RegistryObject<Item> TIN_IV_IODATE = Items.register( "tin_iv_iodate",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
-    public static final RegistryObject<Item> TIN_IV_BROMATE = Items.register( "tin_iv_bromate",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
-    public static final RegistryObject<Item> TIN_IV_CARBONATE = Items.register( "tin_iv_carbonate",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
-    public static final RegistryObject<Item> TIN_IV_BICARBONATE = Items.register( "tin_iv_bicarbonate",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
-    public static final RegistryObject<Item> TIN_IV_CHROMATE = Items.register( "tin_iv_chromate",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
-    public static final RegistryObject<Item> TIN_IV_DICHROMATE = Items.register( "tin_iv_dichromate",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
-    public static final RegistryObject<Item> TIN_IV_ACETATE = Items.register( "tin_iv_acetate",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
-    public static final RegistryObject<Item> TIN_IV_FORMATE = Items.register( "tin_iv_formate",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
-    public static final RegistryObject<Item> TIN_IV_CYANIDE = Items.register( "tin_iv_cyanide",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
-    public static final RegistryObject<Item> TIN_IV_CYANATE = Items.register( "tin_iv_cyanate",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
-    public static final RegistryObject<Item> TIN_IV_THIOCYANATE = Items.register( "tin_iv_thiocyanate",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
-    public static final RegistryObject<Item> TIN_IV_PEROXIDE = Items.register( "tin_iv_peroxide",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
-    public static final RegistryObject<Item> TIN_IV_OXALATE = Items.register( "tin_iv_oxalate",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
     public static final RegistryObject<Item> TIN_IV_HYDROXIDE = Items.register( "tin_iv_hydroxide",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
-    public static final RegistryObject<Item> TIN_IV_PERMANGANATE = Items.register( "tin_iv_permanganate",
             () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
     //zinc
     public static final RegistryObject<Item> ZINC_OXIDE = Items.register( "zinc_oxide",
@@ -2005,10 +1262,6 @@ public class ModItems {
             () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
     public static final RegistryObject<Item> ZINC_SULFATE = Items.register( "zinc_sulfate",
             () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
-    public static final RegistryObject<Item> ZINC_HYDROGEN_SULFATE = Items.register( "zinc_hydrogen_sulfate",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
-    public static final RegistryObject<Item> ZINC_THIOSULFATE = Items.register( "zinc_thiosulfate",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
     public static final RegistryObject<Item> ZINC_SULFITE = Items.register( "zinc_sulfite",
             () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
     public static final RegistryObject<Item> ZINC_NITRATE = Items.register( "zinc_nitrate",
@@ -2017,17 +1270,9 @@ public class ModItems {
             () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
     public static final RegistryObject<Item> ZINC_CHLORATE = Items.register( "zinc_chlorate",
             () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
-    public static final RegistryObject<Item> ZINC_CHLORITE = Items.register( "zinc_chlorite",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
-    public static final RegistryObject<Item> ZINC_HYPOCHLORITE = Items.register( "zinc_hypochlorite",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
-    public static final RegistryObject<Item> ZINC_IODATE = Items.register( "zinc_iodate",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
     public static final RegistryObject<Item> ZINC_BROMATE = Items.register( "zinc_bromate",
             () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
     public static final RegistryObject<Item> ZINC_CARBONATE = Items.register( "zinc_carbonate",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
-    public static final RegistryObject<Item> ZINC_BICARBONATE = Items.register( "zinc_bicarbonate",
             () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
     public static final RegistryObject<Item> ZINC_CHROMATE = Items.register( "zinc_chromate",
             () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
@@ -2039,13 +1284,9 @@ public class ModItems {
             () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
     public static final RegistryObject<Item> ZINC_CYANIDE = Items.register( "zinc_cyanide",
             () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
-    public static final RegistryObject<Item> ZINC_CYANATE = Items.register( "zinc_cyanate",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
     public static final RegistryObject<Item> ZINC_THIOCYANATE = Items.register( "zinc_thiocyanate",
             () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
     public static final RegistryObject<Item> ZINC_PEROXIDE = Items.register( "zinc_peroxide",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
-    public static final RegistryObject<Item> ZINC_OXALATE = Items.register( "zinc_oxalate",
             () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
     public static final RegistryObject<Item> ZINC_HYDROXIDE = Items.register( "zinc_hydroxide",
             () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
@@ -2060,41 +1301,17 @@ public class ModItems {
             () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
     public static final RegistryObject<Item> CAESIUM_CHLORIDE = Items.register( "caesium_chloride",
             () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
-    public static final RegistryObject<Item> CAESIUM_NITRIDE = Items.register( "caesium_nitride",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
     public static final RegistryObject<Item> CAESIUM_BROMIDE = Items.register( "caesium_bromide",
             () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
     public static final RegistryObject<Item> CAESIUM_IODIDE = Items.register( "caesium_iodide",
             () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
     public static final RegistryObject<Item> CAESIUM_ARSENATE = Items.register( "caesium_arsenate",
             () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
-    public static final RegistryObject<Item> CAESIUM_ARSENITE = Items.register( "caesium_arsenite",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
-    public static final RegistryObject<Item> CAESIUM_PHOSPHATE = Items.register( "caesium_phosphate",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
-    public static final RegistryObject<Item> CAESIUM_DIHYDROGEN_PHOSPHATE = Items.register( "caesium_dihydrogen_phosphate",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
     public static final RegistryObject<Item> CAESIUM_SULFATE = Items.register( "caesium_sulfate",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
-    public static final RegistryObject<Item> CAESIUM_HYDROGEN_SULFATE = Items.register( "caesium_hydrogen_sulfate",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
-    public static final RegistryObject<Item> CAESIUM_THIOSULFATE = Items.register( "caesium_thiosulfate",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
-    public static final RegistryObject<Item> CAESIUM_SULFITE = Items.register( "caesium_sulfite",
             () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
     public static final RegistryObject<Item> CAESIUM_NITRATE = Items.register( "caesium_nitrate",
             () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
     public static final RegistryObject<Item> CAESIUM_PERCHLORATE = Items.register( "caesium_perchlorate",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
-    public static final RegistryObject<Item> CAESIUM_CHLORATE = Items.register( "caesium_chlorate",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
-    public static final RegistryObject<Item> CAESIUM_CHLORITE = Items.register( "caesium_chlorite",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
-    public static final RegistryObject<Item> CAESIUM_HYPOCHLORITE = Items.register( "caesium_hypochlorite",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
-    public static final RegistryObject<Item> CAESIUM_IODATE = Items.register( "caesium_iodate",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
-    public static final RegistryObject<Item> CAESIUM_BROMATE = Items.register( "caesium_bromate",
             () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
     public static final RegistryObject<Item> CAESIUM_CARBONATE = Items.register( "caesium_carbonate",
             () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
@@ -2102,25 +1319,13 @@ public class ModItems {
             () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
     public static final RegistryObject<Item> CAESIUM_CHROMATE = Items.register( "caesium_chromate",
             () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
-    public static final RegistryObject<Item> CAESIUM_DICHROMATE = Items.register( "caesium_dichromate",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
     public static final RegistryObject<Item> CAESIUM_ACETATE = Items.register( "caesium_acetate",
             () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
     public static final RegistryObject<Item> CAESIUM_FORMATE = Items.register( "caesium_formate",
             () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
     public static final RegistryObject<Item> CAESIUM_CYANIDE = Items.register( "caesium_cyanide",
             () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
-    public static final RegistryObject<Item> CAESIUM_CYANATE = Items.register( "caesium_cyanate",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
-    public static final RegistryObject<Item> CAESIUM_THIOCYANATE = Items.register( "caesium_thiocyanate",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
-    public static final RegistryObject<Item> CAESIUM_PEROXIDE = Items.register( "caesium_peroxide",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
-    public static final RegistryObject<Item> CAESIUM_OXALATE = Items.register( "caesium_oxalate",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
     public static final RegistryObject<Item> CAESIUM_HYDROXIDE = Items.register( "caesium_hydroxide",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
-    public static final RegistryObject<Item> CAESIUM_PERMANGANATE = Items.register( "caesium_permanganate",
             () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
     //rubidium salts
     public static final RegistryObject<Item> RUBIDIUM_OXIDE = Items.register( "rubidium_oxide",
@@ -2131,63 +1336,19 @@ public class ModItems {
             () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
     public static final RegistryObject<Item> RUBIDIUM_CHLORIDE = Items.register( "rubidium_chloride",
             () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
-    public static final RegistryObject<Item> RUBIDIUM_NITRIDE = Items.register( "rubidium_nitride",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
     public static final RegistryObject<Item> RUBIDIUM_BROMIDE = Items.register( "rubidium_bromide",
             () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
     public static final RegistryObject<Item> RUBIDIUM_IODIDE = Items.register( "rubidium_iodide",
             () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
-    public static final RegistryObject<Item> RUBIDIUM_ARSENATE = Items.register( "rubidium_arsenate",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
-    public static final RegistryObject<Item> RUBIDIUM_ARSENITE = Items.register( "rubidium_arsenite",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
-    public static final RegistryObject<Item> RUBIDIUM_PHOSPHATE = Items.register( "rubidium_phosphate",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
-    public static final RegistryObject<Item> RUBIDIUM_DIHYDROGEN_PHOSPHATE = Items.register( "rubidium_dihydrogen_phosphate",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
     public static final RegistryObject<Item> RUBIDIUM_SULFATE = Items.register( "rubidium_sulfate",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
-    public static final RegistryObject<Item> RUBIDIUM_HYDROGEN_SULFATE = Items.register( "rubidium_hydrogen_sulfate",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
-    public static final RegistryObject<Item> RUBIDIUM_THIOSULFATE = Items.register( "rubidium_thiosulfate",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
-    public static final RegistryObject<Item> RUBIDIUM_SULFITE = Items.register( "rubidium_sulfite",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
-    public static final RegistryObject<Item> RUBIDIUM_NITRATE = Items.register( "rubidium_nitrate",
             () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
     public static final RegistryObject<Item> RUBIDIUM_PERCHLORATE = Items.register( "rubidium_perchlorate",
             () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
-    public static final RegistryObject<Item> RUBIDIUM_CHLORATE = Items.register( "rubidium_chlorate",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
-    public static final RegistryObject<Item> RUBIDIUM_CHLORITE = Items.register( "rubidium_chlorite",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
-    public static final RegistryObject<Item> RUBIDIUM_HYPOCHLORITE = Items.register( "rubidium_hypochlorite",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
-    public static final RegistryObject<Item> RUBIDIUM_IODATE = Items.register( "rubidium_iodate",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
-    public static final RegistryObject<Item> RUBIDIUM_BROMATE = Items.register( "rubidium_bromate",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
     public static final RegistryObject<Item> RUBIDIUM_CARBONATE = Items.register( "rubidium_carbonate",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
-    public static final RegistryObject<Item> RUBIDIUM_BICARBONATE = Items.register( "rubidium_bicarbonate",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
-    public static final RegistryObject<Item> RUBIDIUM_CHROMATE = Items.register( "rubidium_chromate",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
-    public static final RegistryObject<Item> RUBIDIUM_DICHROMATE = Items.register( "rubidium_dichromate",
             () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
     public static final RegistryObject<Item> RUBIDIUM_ACETATE = Items.register( "rubidium_acetate",
             () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
-    public static final RegistryObject<Item> RUBIDIUM_FORMATE = Items.register( "rubidium_formate",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
     public static final RegistryObject<Item> RUBIDIUM_CYANIDE = Items.register( "rubidium_cyanide",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
-    public static final RegistryObject<Item> RUBIDIUM_CYANATE = Items.register( "rubidium_cyanate",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
-    public static final RegistryObject<Item> RUBIDIUM_THIOCYANATE = Items.register( "rubidium_thiocyanate",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
-    public static final RegistryObject<Item> RUBIDIUM_PEROXIDE = Items.register( "rubidium_peroxide",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
-    public static final RegistryObject<Item> RUBIDIUM_OXALATE = Items.register( "rubidium_oxalate",
             () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
     public static final RegistryObject<Item> RUBIDIUM_HYDROXIDE = Items.register( "rubidium_hydroxide",
             () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\n",""));
