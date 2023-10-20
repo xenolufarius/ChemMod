@@ -397,33 +397,33 @@ public class ModItems {
     public static final RegistryObject<Item> LITHIUM_PERCHLORATE = Items.register( "lithium_perchlorate",
             () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),106.39,"LiClO4",0,4,"\nDesc: Found in lithium batteries, and has applications in chemistry labs.","O,I,S2"));
     public static final RegistryObject<Item> LITHIUM_CHLORATE = Items.register( "lithium_chlorate",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\nDesc:",""));
+            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),90.39,"LiClO3",0,4,"\nDesc: Has potential use in the production of flow-batteries.","O,S2"));
     public static final RegistryObject<Item> LITHIUM_CHLORITE = Items.register( "lithium_chlorite",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\nDesc:",""));
+            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),74.40,"LiClO2",0,4,"\nDesc: Not Much is know about this compound.","S2"));
     public static final RegistryObject<Item> LITHIUM_HYPOCHLORITE = Items.register( "lithium_hypochlorite",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\nDesc:",""));
+            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),58.39,"LiClO",0,4,"\nDesc: Commonly used as a pool disinfectant.","S2"));
     public static final RegistryObject<Item> LITHIUM_IODATE = Items.register( "lithium_iodate",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\nDesc:",""));
+            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),181.84,"LiIO3",0,4,"\nDesc: Used to make 347 nm ruby lasers.","O,I,H,S2"));
     public static final RegistryObject<Item> LITHIUM_CARBONATE = Items.register( "lithium_carbonate",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\nDesc:",""));
+            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),73.89,"Li2CO3",0,4,"\nDesc: This molecule in on the World Health Organization's list of essential medicines. Used to treat mood disorders.","I,S2"));
     public static final RegistryObject<Item> LITHIUM_BICARBONATE = Items.register( "lithium_bicarbonate",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\nDesc:",""));
+            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),67.96,"LiHCO3",0,4,"\nDesc: Not much is known about this molecule.","S2"));
     public static final RegistryObject<Item> LITHIUM_CHROMATE = Items.register( "lithium_chromate",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\nDesc:",""));
+            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),129.90,"Li2CrO4",0,4,"\nDesc: Used in the processes of leather and metal finishing.","T,I,H,A,S2"));
     public static final RegistryObject<Item> LITHIUM_DICHROMATE = Items.register( "lithium_dichromate",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\nDesc:",""));
+            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),229.90,"Li2Cr2O7",0,4,"\nDesc: This molecule has little to no industrial application or use.","O,I,H,S2"));
     public static final RegistryObject<Item> LITHIUM_ACETATE = Items.register( "lithium_acetate",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\nDesc:",""));
+            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),65.98,"LiC2H3O2",0,4,"\nDesc: An buffer ingredient for the gel electrophoresis of DNA and RNA.","I,S2"));
     public static final RegistryObject<Item> LITHIUM_CYANIDE = Items.register( "lithium_cyanide",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\nDesc:",""));
+            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),32.96,"LiCN",0,4,"\nDesc: Useful in organic chemistry reactions, specifically cyanation.","F,T,A,S2"));
     public static final RegistryObject<Item> LITHIUM_THIOCYANATE = Items.register( "lithium_thiocyanate",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\nDesc:",""));
+            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),65.02,"LiSCN",0,0,"\nDesc: This compound is too unstable to use.","I,S2"));
     public static final RegistryObject<Item> LITHIUM_PEROXIDE = Items.register( "lithium_peroxide",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\nDesc:",""));
+            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),45.88,"Li2O2",0,4,"\nDesc: Used in the air purification systems of spacecraft.","O,C,S2"));
     public static final RegistryObject<Item> LITHIUM_OXALATE = Items.register( "lithium_oxalate",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\nDesc:",""));
+            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),102.00,"Li2C2O2",0,4,"\nDesc: Finds use in pyrotechnics as a red flame colorant.","I,S2"));
     public static final RegistryObject<Item> LITHIUM_HYDROXIDE = Items.register( "lithium_hydroxide",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\nDesc:",""));
+            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),23.95,"LiOH",0,4,"\nDesc: This chemical is mainly used to produce cathodes in lithium batteries.","C,S2"));
     //beryllium salts
     public static final RegistryObject<Item> BERYLLIUM_OXIDE = Items.register( "beryllium_oxide",
             () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\nDesc:",""));
