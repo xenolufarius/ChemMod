@@ -426,39 +426,39 @@ public class ModItems {
             () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),23.95,"LiOH",0,4,"\nDesc: This chemical is mainly used to produce cathodes in lithium batteries.","C,S2"));
     //beryllium salts
     public static final RegistryObject<Item> BERYLLIUM_OXIDE = Items.register( "beryllium_oxide",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\nDesc:",""));
+            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),25.01,"BeO",0,4,"\nDesc: Used in rocket engines.","T,H,A"));
     public static final RegistryObject<Item> BERYLLIUM_FLUORIDE = Items.register( "beryllium_fluoride",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\nDesc:",""));
+            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),47.01,"BeF2",0,4,"\nDesc: Useful in the production of beryllium metal.","C,T,H,A"));
     public static final RegistryObject<Item> BERYLLIUM_SULFIDE = Items.register( "beryllium_sulfide",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\nDesc:",""));
+            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),41.08,"BeS",0,4,"\nDesc: Not much is known about this compound.","H"));
     public static final RegistryObject<Item> BERYLLIUM_CHLORIDE = Items.register( "beryllium_chloride",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\nDesc:",""));
+            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),79.92,"BeCl2",0,4,"\nDesc: Finds use in the electrolysis of beryllium and can be used as a catalyst in Friedel Crafts reactions.","I,H"));
     public static final RegistryObject<Item> BERYLLIUM_NITRIDE = Items.register( "beryllium_nitride",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\nDesc:",""));
+            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),55.05,"Be3N2",0,4,"\nDesc: Useful in refractory ceramics and nuclear reactors.","H"));
     public static final RegistryObject<Item> BERYLLIUM_BROMIDE = Items.register( "beryllium_bromide",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\nDesc:",""));
+            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),168.82,"BeBr2",0,4,"\nDesc: Not much is known about this compound's use.","T,H,A"));
     public static final RegistryObject<Item> BERYLLIUM_IODIDE = Items.register( "beryllium_iodide",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\nDesc:",""));
+            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),262.82,"BeI2",0,4,"\nDesc: Useful in the production of the beryllium metal.","S1,H"));
     public static final RegistryObject<Item> BERYLLIUM_SULFATE = Items.register( "beryllium_sulfate",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\nDesc:",""));
+            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),105.68,"BeSO4",0,4,"\nDesc: A compound that played a part in the discovery of nuclear fission as a source of neutrons.","T,H,A"));
     public static final RegistryObject<Item> BERYLLIUM_NITRATE = Items.register( "beryllium_nitrate",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\nDesc:",""));
+            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),133.02,"Be(NO3)2",0,4,"\nDesc: Not much is know about this compound's use.","H"));
     public static final RegistryObject<Item> BERYLLIUM_PERCHLORATE = Items.register( "beryllium_perchlorate",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\nDesc:",""));
+            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),207.91,"Be(ClO4)2",0,4,"\nDesc: This chemical is often used as a solvent for cellulose.","O,H"));
     public static final RegistryObject<Item> BERYLLIUM_IODATE = Items.register( "beryllium_iodate",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\nDesc:",""));
+            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),358.82,"Be(IO3)2",0,4,"\nDesc: Not much is known about this chemical's use.","H"));
     public static final RegistryObject<Item> BERYLLIUM_CARBONATE = Items.register( "beryllium_carbonate",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\nDesc:",""));
+            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),69.02,"BeCO3",0,2,"\nDesc: Not much is known about this compound's use.","T,I,H,A"));
     public static final RegistryObject<Item> BERYLLIUM_CHROMATE = Items.register( "beryllium_chromate",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\nDesc:",""));
+            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),125.01,"BeCrO4",0,4,"\nDesc: This chemical has only been hypothesized to be possible.","T,H"));
     public static final RegistryObject<Item> BERYLLIUM_CYANIDE = Items.register( "beryllium_cyanide",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\nDesc:",""));
+            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),61.05,"Be(CN)2",0,4,"\nDesc: Not much is known about this chemical's use.","T,H"));
     public static final RegistryObject<Item> BERYLLIUM_THIOCYANATE = Items.register( "beryllium_thiocyanate",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\nDesc:",""));
+            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),125.18,"Be(SCN)2",0,4,"\nDesc: Not much is know about this compound's use.","H"));
     public static final RegistryObject<Item> BERYLLIUM_OXALATE = Items.register( "beryllium_oxalate",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\nDesc:",""));
+            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),97.03,"BeC2O4",0,4,"\nDesc: This chemical is used in the preparation of beryllium oxide.","H"));
     public static final RegistryObject<Item> BERYLLIUM_HYDROXIDE = Items.register( "beryllium_hydroxide",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\nDesc:",""));
+            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),43.03,"Be(OH)2",0,4,"\nDesc: Produced as a byproduct of beryllium extraction from ores.","T,H,A"));
    //calcium salts
     public static final RegistryObject<Item> CALCIUM_OXIDE = Items.register( "calcium_oxide",
             () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\nDesc:",""));
