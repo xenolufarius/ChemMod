@@ -461,25 +461,25 @@ public class ModItems {
             () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),43.03,"Be(OH)2",0,4,"\nDesc: Produced as a byproduct of beryllium extraction from ores.","T,H,A"));
    //calcium salts
     public static final RegistryObject<Item> CALCIUM_OXIDE = Items.register( "calcium_oxide",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\nDesc:",""));
+            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),56.08,"CaO",0,4,"\nDesc: Also known as quicklime, has a lot of industrial uses.","C,I"));
     public static final RegistryObject<Item> CALCIUM_FLUORIDE = Items.register( "calcium_fluoride",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\nDesc:",""));
+            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),78.08,"CaF2",0,4,"\nDesc: This compound occurs naturally as the mineral fluorite.",""));
     public static final RegistryObject<Item> CALCIUM_SULFIDE = Items.register( "calcium_sulfide",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\nDesc:",""));
+            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),72.14,"CaS",0,2,"\nDesc: This chemical is phosphorescent, giving off a blood red glow. ","C,I,A"));
     public static final RegistryObject<Item> CALCIUM_CHLORIDE = Items.register( "calcium_chloride",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\nDesc:",""));
+            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),110.98,"CaCl2",0,4,"\nDesc: This compound can act as a desiccant. It is especially useful as a de-icing agent.","I"));
     public static final RegistryObject<Item> CALCIUM_NITRIDE = Items.register( "calcium_nitride",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\nDesc:",""));
+            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),148.25,"Ca3N2",0,4,"\nDesc: Not much is known about this chemical's use.",""));
     public static final RegistryObject<Item> CALCIUM_BROMIDE = Items.register( "calcium_bromide",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\nDesc:",""));
+            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),199.89,"CaBr2",0,4,"\nDesc: This compound finds use in drilling fluids.",""));
     public static final RegistryObject<Item> CALCIUM_IODIDE = Items.register( "calcium_iodide",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\nDesc:",""));
+            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),293.89,"CaI2",0,4,"\nDesc: A compound used in photography and in cat food as a dietary supplement.",""));
     public static final RegistryObject<Item> CALCIUM_ARSENATE = Items.register( "calcium_arsenate",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\nDesc:",""));
+            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),398.07,"Ca3(AsO4)2",0,4,"\nDesc: This chemical was formerly used as a pesticide.","H"));
     public static final RegistryObject<Item> CALCIUM_ARSENITE = Items.register( "calcium_arsenite",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\nDesc:",""));
+            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),253.92,"Ca(AsO2)2",0,4,"\nDesc: This chemical was formerly used as a pesticide.","H"));
     public static final RegistryObject<Item> CALCIUM_PHOSPHATE = Items.register( "calcium_phosphate",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\nDesc:",""));
+            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),310.18,"Ca3(PO4)2",0,4,"\nDesc: This compound is structural for bones. It also hold some nutritional value.","I"));
     public static final RegistryObject<Item> CALCIUM_DIHYDROGEN_PHOSPHATE = Items.register( "calcium_dihydrogen_phosphate",
             () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\nDesc:",""));
     public static final RegistryObject<Item> CALCIUM_SULFATE = Items.register( "calcium_sulfate",
