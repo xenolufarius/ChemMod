@@ -481,130 +481,130 @@ public class ModItems {
     public static final RegistryObject<Item> CALCIUM_PHOSPHATE = Items.register( "calcium_phosphate",
             () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),310.18,"Ca3(PO4)2",0,4,"\nDesc: This compound is structural for bones. It also hold some nutritional value.","I"));
     public static final RegistryObject<Item> CALCIUM_DIHYDROGEN_PHOSPHATE = Items.register( "calcium_dihydrogen_phosphate",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\nDesc:",""));
+            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),234.05,"Ca(H2PO4)2",0,4,"\nDesc: This compound is used as a fertilizer and as a leavening agent.",""));
     public static final RegistryObject<Item> CALCIUM_SULFATE = Items.register( "calcium_sulfate",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\nDesc:",""));
+            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),136.14,"CaSO4",0,4,"\nDesc: This compound is used to produce plaster of paris.",""));
     public static final RegistryObject<Item> CALCIUM_HYDROGEN_SULFATE = Items.register( "calcium_hydrogen_sulfate",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\nDesc:",""));
+            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),202.20,"Ca(HSO3)2",0,4,"\nDesc: This chemical is often used as a food additive, a firming agent.","T"));
     public static final RegistryObject<Item> CALCIUM_THIOSULFATE = Items.register( "calcium_thiosulfate",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\nDesc:",""));
+            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),152.20,"CaS2O3",0,4,"\nDesc: Finds use as a fungicide.","I,H"));
     public static final RegistryObject<Item> CALCIUM_SULFITE = Items.register( "calcium_sulfite",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\nDesc:",""));
+            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),120.17,"CaSO3",0,4,"\nDesc: This substance is an intermediate in the production of gypsum.",""));
     public static final RegistryObject<Item> CALCIUM_NITRATE = Items.register( "calcium_nitrate",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\nDesc:",""));
+            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),164.09,"Ca(NO3)2",0,4,"\nDesc: This chemical is often used as a fertilizer.","O,C,I"));
     public static final RegistryObject<Item> CALCIUM_NITRITE = Items.register( "calcium_nitrite",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\nDesc:",""));
+            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),132.09,"Ca(NO2)2",0,4,"\nDesc: This chemical has been used both as an antifreeze and as a rust inhibitor.","O,T,I,H,A"));
     public static final RegistryObject<Item> CALCIUM_PERCHLORATE = Items.register( "calcium_perchlorate",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\nDesc:",""));
+            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),238.98,"Ca(ClO4)2",0,4,"\nDesc: Remarkably, this has been found on the soils of Mars.","O"));
     public static final RegistryObject<Item> CALCIUM_CHLORATE = Items.register( "calcium_chlorate",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\nDesc:",""));
+            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),206.98,"Ca(ClO3)2",0,4,"\nDesc: Herbicidal, and can be added to pyrotechnics for a pink flame.","O"));
     public static final RegistryObject<Item> CALCIUM_CHLORITE = Items.register( "calcium_chlorite",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\nDesc:",""));
+            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),174.98,"Ca(ClO2)2",0,4,"\nDesc: Not much is known about this substance's use.","T,C,H,I,O"));
     public static final RegistryObject<Item> CALCIUM_HYPOCHLORITE = Items.register( "calcium_hypochlorite",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\nDesc:",""));
+            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),142.98,"Ca(ClO)2",0,4,"\nDesc: An active ingredient in bleaching powder.","O,C,I,A"));
     public static final RegistryObject<Item> CALCIUM_IODATE = Items.register( "calcium_iodate",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\nDesc:",""));
+            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),389.88,"Ca(IO3)2",0,4,"\nDesc: Used in chicken feed as a dietary supplement.",""));
     public static final RegistryObject<Item> CALCIUM_BROMATE = Items.register( "calcium_bromate",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\nDesc:",""));
+            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),295.88,"Ca(BrO3)2",0,4,"\nDesc: Can be found in bread dough. It serves as a flour improver.",""));
     public static final RegistryObject<Item> CALCIUM_CARBONATE = Items.register( "calcium_carbonate",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\nDesc:",""));
+            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),100.09,"CaCO3",0,4,"\nDesc: A major constituent of many rocks, such as calcite, aragonite, chalk, limestone, etc....",""));
     public static final RegistryObject<Item> CALCIUM_BICARBONATE = Items.register( "calcium_bicarbonate",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\nDesc:",""));
+            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),162.11,"Ca(HCO3)2",0,4,"\nDesc: This is used to treat hyperkalemia.","I"));
     public static final RegistryObject<Item> CALCIUM_CHROMATE = Items.register( "calcium_chromate",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\nDesc:",""));
+            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),156.07,"CaCrO4",0,4,"\nDesc: This chemical is often used as a yellow pigment.","O,H,T"));
     public static final RegistryObject<Item> CALCIUM_DICHROMATE = Items.register( "calcium_dichromate",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\nDesc:",""));
+            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),256.07,"CaCr2O7",0,4,"\nDesc: This compound is often used as a corrosion inhibitor.","I,H,A"));
     public static final RegistryObject<Item> CALCIUM_ACETATE = Items.register( "calcium_acetate",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\nDesc:",""));
+            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),158.17,"Ca(C2H3O2)2",0,4,"\nDesc: This chemical has a variety of use, from treating kidney disease to tofu production.",""));
     public static final RegistryObject<Item> CALCIUM_FORMATE = Items.register( "calcium_formate",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\nDesc:",""));
+            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),130.11,"Ca(HCO2)2",0,4,"\nDesc: Often added to animal feed as a preservative.","C,I"));
     public static final RegistryObject<Item> CALCIUM_CYANIDE = Items.register( "calcium_cyanide",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\nDesc:",""));
+            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),92.11,"Ca(CN)2",0,4,"\nDesc: Used in gold and silver mining.","T"));
     public static final RegistryObject<Item> CALCIUM_CYANATE = Items.register( "calcium_cyanate",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\nDesc:",""));
+            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),124.11,"Ca(OCN)2",0,4,"\nDesc: Not much is known about this compound's use.","I"));
     public static final RegistryObject<Item> CALCIUM_THIOCYANATE = Items.register( "calcium_thiocyanate",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\nDesc:",""));
+            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),156.20,"Ca(SCN)2",0,4,"\nDesc: Not much is known about this compound's use.","I"));
     public static final RegistryObject<Item> CALCIUM_PEROXIDE = Items.register( "calcium_peroxide",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\nDesc:",""));
+            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),72.08,"CaO2",0,4,"\nDesc: Finds use in the extraction of precious metals from ores.","O,I"));
     public static final RegistryObject<Item> CALCIUM_OXALATE = Items.register( "calcium_oxalate",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\nDesc:",""));
+            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),128.10,"CaC2O4",0,4,"\nDesc: A major constituent of kidney stones, around ~76%.","T,I"));
     public static final RegistryObject<Item> CALCIUM_HYDROXIDE = Items.register( "calcium_hydroxide",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\nDesc:",""));
+            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),74.09,"Ca(OH)2",0,4,"\nDesc: Also known as slaked lime. Used to prepare lime mortar, and in sewage treatment.","C,I"));
     public static final RegistryObject<Item> CALCIUM_PERMANGANATE = Items.register( "calcium_permanganate",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\nDesc:",""));
+            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),277.95,"Ca(MnO4)2",0,4,"\nDesc: Finds use in the textile industry, in water sterilization, and in the production of deodorizer.","O"));
     //potassium salts
     public static final RegistryObject<Item> POTASSIUM_OXIDE = Items.register( "potassium_oxide",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\nDesc:",""));
+            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),94.20,"K2O",0,4,"\nDesc: Used as a metric in composition assays.","C,S1"));
     public static final RegistryObject<Item> POTASSIUM_FLUORIDE = Items.register( "potassium_fluoride",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\nDesc:",""));
+            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),58.10,"KF",0,4,"\nDesc: A primary source of fluoride ions in manufacturing and chemistry.","T"));
     public static final RegistryObject<Item> POTASSIUM_SULFIDE = Items.register( "potassium_sulfide",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\nDesc:",""));
+            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),110.26,"K2S",0,4,"\nDesc: A byproduct formed when black powder burns.","C,A"));
     public static final RegistryObject<Item> POTASSIUM_CHLORIDE = Items.register( "potassium_chloride",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\nDesc:",""));
+            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),74.56,"KCl",0,4,"\nDesc: Has wide use, from fertilizer, to medicinal, to food production.",""));
     public static final RegistryObject<Item> POTASSIUM_NITRIDE = Items.register( "potassium_nitride",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\nDesc:",""));
+            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),131.30,"K3N",0,0,"\nDesc: This compound is too unstable to use.",""));
     public static final RegistryObject<Item> POTASSIUM_BROMIDE = Items.register( "potassium_bromide",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\nDesc:",""));
+            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),119.00,"KBr",0,4,"\nDesc: Has medical and veterinary use. It is also a sedative.","I"));
     public static final RegistryObject<Item> POTASSIUM_IODIDE = Items.register( "potassium_iodide",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\nDesc:",""));
+            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),166.00,"KI",0,4,"\nDesc: This substance is on the World Health Organization's list of essential medicines.",""));
     public static final RegistryObject<Item> POTASSIUM_ARSENATE = Items.register( "potassium_arsenate",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\nDesc:",""));
+            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),180.03,"KH2AsO4",0,4,"\nDesc: Not much is known.","T,H,A"));
     public static final RegistryObject<Item> POTASSIUM_ARSENITE = Items.register( "potassium_arsenite",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\nDesc:",""));
+            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),146.02,"KAsO2",0,4,"\nDesc: Used most commonly as a rodentcide.","T,H"));
     public static final RegistryObject<Item> POTASSIUM_PHOSPHATE = Items.register( "potassium_phosphate",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\nDesc:",""));
+            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),212.27,"K3PO4",0,4,"\nDesc: Found in dry cereal products. It also has use in organic chemistry.","I"));
     public static final RegistryObject<Item> POTASSIUM_DIHYDROGEN_PHOSPHATE = Items.register( "potassium_dihydrogen_phosphate",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\nDesc:",""));
+            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),136.09,"KH2PO4",0,4,"\nDesc: Found in sports drinks.","I"));
     public static final RegistryObject<Item> POTASSIUM_SULFATE = Items.register( "potassium_sulfate",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\nDesc:",""));
+            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),174.26,"K2SO4",0,4,"\nDesc: Can be used as a fertilizer.","I"));
     public static final RegistryObject<Item> POTASSIUM_HYDROGEN_SULFATE = Items.register( "potassium_hydrogen_sulfate",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\nDesc:",""));
+            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),136.17,"KHSO4",0,4,"\nDesc: Has use in wine making.","C,I"));
     public static final RegistryObject<Item> POTASSIUM_THIOSULFATE = Items.register( "potassium_thiosulfate",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\nDesc:",""));
+            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),190.32,"K2S2O3",0,4,"\nDesc: Can be used as a fertilizer.","I"));
     public static final RegistryObject<Item> POTASSIUM_SULFITE = Items.register( "potassium_sulfite",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\nDesc:",""));
+            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),158.26,"K2SO3",0,4,"\nDesc: A preservative for both food and beverage.",""));
     public static final RegistryObject<Item> POTASSIUM_NITRATE = Items.register( "potassium_nitrate",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\nDesc:",""));
+            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),101.10,"KNO3",0,4,"\nDesc: Also known as salt peter. Used as fertilizer, in fireworks, and rockets.","O,I"));
     public static final RegistryObject<Item> POTASSIUM_NITRITE = Items.register( "potassium_nitrite",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\nDesc:",""));
+            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),85.10,"KNO2",0,4,"\nDesc: Has potential medical use.","O,T,A"));
     public static final RegistryObject<Item> POTASSIUM_PERCHLORATE = Items.register( "potassium_perchlorate",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\nDesc:",""));
+            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),138.55,"KClO4",0,4,"\nDesc: An antithyroid agent, and surprisingly solid rocket propellant.","O,I"));
     public static final RegistryObject<Item> POTASSIUM_CHLORATE = Items.register( "potassium_chlorate",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\nDesc:",""));
+            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),122.55,"KClO3",0,4,"\nDesc: Used in safety matches, fireworks, and explosives.","O,I,A"));
     public static final RegistryObject<Item> POTASSIUM_CHLORITE = Items.register( "potassium_chlorite",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\nDesc:",""));
+            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),106.55,"KClO2",0,4,"\nDesc: Not much is known about this chemical's use.","O"));
     public static final RegistryObject<Item> POTASSIUM_HYPOCHLORITE = Items.register( "potassium_hypochlorite",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\nDesc:",""));
+            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),90.55,"KClO",0,4,"\nDesc: This compound finds use as a sanitizer and as a water disinfectant.","O,I,A"));
     public static final RegistryObject<Item> POTASSIUM_IODATE = Items.register( "potassium_iodate",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\nDesc:",""));
+            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),214.00,"KIO3",0,4,"\nDesc: Used in the iodination of salt. Found in baby formula.","O,C,I"));
     public static final RegistryObject<Item> POTASSIUM_BROMATE = Items.register( "potassium_bromate",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\nDesc:",""));
+            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),167.00,"KBrO3",0,4,"\nDesc: This substance is often used as a flour improver.","O,T,H"));
     public static final RegistryObject<Item> POTASSIUM_CARBONATE = Items.register( "potassium_carbonate",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\nDesc:",""));
+            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),138.21,"K2CO3",0,4,"\nDesc: Used in the production of soap and glass.","I"));
     public static final RegistryObject<Item> POTASSIUM_BICARBONATE = Items.register( "potassium_bicarbonate",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\nDesc:",""));
+            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),100.12,"KHCO3",0,4,"\nDesc: Can be used as a substitute for baking soda. Found in chemical fire extinguishers.","I"));
     public static final RegistryObject<Item> POTASSIUM_CHROMATE = Items.register( "potassium_chromate",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\nDesc:",""));
+            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),194.19,"K2CrO4",0,4,"\nDesc: Has some laboratory applications.","C,H,I"));
     public static final RegistryObject<Item> POTASSIUM_DICHROMATE = Items.register( "potassium_dichromate",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\nDesc:",""));
+            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),294.19,"K2Cr2O7",0,4,"\nDesc: Has some use in leather tanning.","O,C,T,H,A"));
     public static final RegistryObject<Item> POTASSIUM_ACETATE = Items.register( "potassium_acetate",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\nDesc:",""));
+            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),98.14,"KC2H3O2",0,4,"\nDesc: Useful in deicing, and found in fire extinguishers.",""));
     public static final RegistryObject<Item> POTASSIUM_FORMATE = Items.register( "potassium_formate",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\nDesc:",""));
+            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),84.12,"KHCO2",0,4,"\nDesc: Has some potential as a deicing salt.","I"));
     public static final RegistryObject<Item> POTASSIUM_CYANIDE = Items.register( "potassium_cyanide",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\nDesc:",""));
+            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),65.12,"KCN",0,4,"\nDesc: Like other cyanide salts, finds use in gold mining.","C,T,H,A"));
     public static final RegistryObject<Item> POTASSIUM_CYANATE = Items.register( "potassium_cyanate",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\nDesc:",""));
+            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),81.12,"KOCN",0,4,"\nDesc: This compound is used in the production of herbicide.","I"));
     public static final RegistryObject<Item> POTASSIUM_THIOCYANATE = Items.register( "potassium_thiocyanate",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\nDesc:",""));
+            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),97.18,"KSCN",0,4,"\nDesc: Was a popular substance for the creation of fake blood on film.","C,I"));
     public static final RegistryObject<Item> POTASSIUM_PEROXIDE = Items.register( "potassium_peroxide",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\nDesc:",""));
+            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),110.20,"K2O2",0,4,"\nDesc: A bleaching agent which can be used in air purification systems."," O,I,S1"));
     public static final RegistryObject<Item> POTASSIUM_OXALATE = Items.register( "potassium_oxalate",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\nDesc:",""));
+            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),166.22,"K2C2O4",0,4,"\nDesc: Used in mouthwash. Has anticorrosive properties.","I"));
     public static final RegistryObject<Item> POTASSIUM_HYDROXIDE = Items.register( "potassium_hydroxide",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\nDesc:",""));
+            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),56.11,"KOH",0,4,"\nDesc: Is used interchangeably with sodium hydroxide.","C,I"));
     public static final RegistryObject<Item> POTASSIUM_PERMANGANATE = Items.register( "potassium_permanganate",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\nDesc:",""));
+            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),158.03,"KMnO4",0,4,"\nDesc: On the World Health Organization's list of essential medicines. Also has wide chemical and laboratory use.","O,I,A"));
     //aluminum salts
     public static final RegistryObject<Item> ALUMINUM_OXIDE = Items.register( "aluminum_oxide",
             () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\nDesc:",""));
