@@ -816,64 +816,64 @@ public class ModItems {
             () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),103.02,"Cr(OH)3",0,4,"\nDesc: Used both as a pigment and as a mordant.",""));
     //COPPER I SALTS
     public static final RegistryObject<Item> COPPER_I_OXIDE = Items.register( "copper_i_oxide",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\nDesc:",""));
+            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),143.09,"Cu2O",0,4,"\nDesc: Useful as a pigment and as a fungicide.","C,I,A"));
     public static final RegistryObject<Item> COPPER_I_FLUORIDE = Items.register( "copper_i_fluoride",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\nDesc:",""));
+            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),82.54,"CuF",0,1,"\nDesc: Not much is known.","T,A"));
     public static final RegistryObject<Item> COPPER_I_SULFIDE = Items.register( "copper_i_sulfide",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\nDesc:",""));
+            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),159.16,"Cu2S",0,4,"\nDesc: Occurs naturally as the mineral chalcosite.",""));
     public static final RegistryObject<Item> COPPER_I_CHLORIDE = Items.register( "copper_i_chloride",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\nDesc:",""));
+            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),99.00,"CuCl",0,4,"\nDesc: Is often used to produce fungicide. Also has some use in organic chemistry.","I,A,T"));
     public static final RegistryObject<Item> COPPER_I_BROMIDE = Items.register( "copper_i_bromide",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\nDesc:",""));
+            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),143.45,"CuBr",0,4,"\nDesc: Finds use in organic chemistry.",""));
     public static final RegistryObject<Item> COPPER_I_IODIDE = Items.register( "copper_i_iodide",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\nDesc:",""));
+            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),190.45,"CuI",0,4,"\nDesc: Finds use in organic chemistry and in cloud seeding.","C,I,A"));
     public static final RegistryObject<Item> COPPER_I_SULFATE = Items.register( "copper_i_sulfate",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\nDesc:",""));
+            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),223.15,"Cu2SO4",0,4,"\nDesc:Not much is known about this compound's use.",""));
     public static final RegistryObject<Item> COPPER_I_CYANIDE = Items.register( "copper_i_cyanide",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\nDesc:",""));
+            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),89.56,"CuCN",0,4,"\nDesc: Used in the electroplating of copper. Is also a catalyst.","T,A"));
     public static final RegistryObject<Item> COPPER_I_THIOCYANATE = Items.register( "copper_i_thiocyanate",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\nDesc:",""));
+            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),121.63,"CuSCN",0,4,"\nDesc: This compound is a semiconductor. Cna be used as anti-fouling paint.",""));
     public static final RegistryObject<Item> COPPER_I_HYDROXIDE = Items.register( "copper_i_hydroxide",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\nDesc:",""));
+            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),80.55,"CuOH",0,2,"\nDesc: This compound is a precursor to copper I oxide.",""));
     //copper ii salts
     public static final RegistryObject<Item> COPPER_II_OXIDE = Items.register( "copper_ii_oxide",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\nDesc:",""));
+            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),79.55,"CuO",0,4,"\nDesc: Occurs naturally as the mineral tenorite. It is also a precursor to other copper compounds.","A"));
     public static final RegistryObject<Item> COPPER_II_FLUORIDE = Items.register( "copper_ii_fluoride",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\nDesc:",""));
+            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),101.54,"CuF2",0,4,"\nDesc: Finds some uses in organic chemistry.",""));
     public static final RegistryObject<Item> COPPER_II_SULFIDE = Items.register( "copper_ii_sulfide",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\nDesc:",""));
+            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),95.61,"CuS",0,4,"\nDesc: Finds use in photovoltaics.","A"));
     public static final RegistryObject<Item> COPPER_II_CHLORIDE = Items.register( "copper_ii_chloride",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\nDesc:",""));
+            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),134.45,"CuCl2",0,4,"\nDesc: This compound is used in the Wacker process in organic chemistry.","C,T,I,A"));
     public static final RegistryObject<Item> COPPER_II_BROMIDE = Items.register( "copper_ii_bromide",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\nDesc:",""));
+            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),223.37,"CuBr2",0,4,"\nDesc: Has been used in photography, and in the cosmetics industry for skin rejuvenation.","H"));
     public static final RegistryObject<Item> COPPER_II_ARSENATE = Items.register( "copper_ii_arsenate",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\nDesc:",""));
+            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),468.48,"Cu3(AsO4)2",0,4,"\nDesc: This compound is an insecticide, a herbicide, a rodenticide, and a fungicide.",""));
     public static final RegistryObject<Item> COPPER_II_PHOSPHATE = Items.register( "copper_ii_phosphate",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\nDesc:",""));
+            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),380.58,"Cu3(PO4)2",0,4,"\nDesc: Can be used as both a fertilizer and as a fungicide.",""));
     public static final RegistryObject<Item> COPPER_II_SULFATE = Items.register( "copper_ii_sulfate",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\nDesc:",""));
+            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),159.60,"CuSO4",0,4,"\nDesc: Has a wide range of use. Most often used as a fungicide, but has some uses in organic chemistry.","I,A"));
     public static final RegistryObject<Item> COPPER_II_NITRATE = Items.register( "copper_ii_nitrate",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\nDesc:",""));
+            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),187.56,"Cu(NO3)2",0,4,"\nDesc: This compound often is converted to copper II oxide. It is used in organic chemistry.","I,O"));
     public static final RegistryObject<Item> COPPER_II_PERCHLORATE = Items.register( "copper_ii_perchlorate",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\nDesc:",""));
+            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),262.45,"Cu(ClO4)2",0,4,"\nDesc: Not much is known about this compound.","O,I"));
     public static final RegistryObject<Item> COPPER_II_CHLORATE = Items.register( "copper_ii_chlorate",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\nDesc:",""));
+            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),230.45,"Cu(ClO3)2",0,4,"\nDesc: Used in the production of the TACC explosive.","O"));
     public static final RegistryObject<Item> COPPER_II_CARBONATE = Items.register( "copper_ii_carbonate",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\nDesc:",""));
+            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),123.55,"CuCO3",0,2,"\nDesc: Not much is known.",""));
     public static final RegistryObject<Item> COPPER_II_CHROMATE = Items.register( "copper_ii_chromate",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\nDesc:",""));
+            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),179.54,"CuCrO4",0,4,"\nDesc: Can be used as a fungicide.","I,H,A"));
     public static final RegistryObject<Item> COPPER_II_ACETATE = Items.register( "copper_ii_acetate",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\nDesc:",""));
+            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),181.63,"Cu(C2H3O2)2",0,4,"\nDesc: Finds some use in organic chemistry.","C,T,I,A"));
     public static final RegistryObject<Item> COPPER_II_FORMATE = Items.register( "copper_ii_formate",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\nDesc:",""));
+            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),153.58,"Cu(HCO2)2",0,4,"\nDesc: An insecticide and biocide. Used as an antibacterial agent in cellulose materials.","I,A"));
     public static final RegistryObject<Item> COPPER_II_THIOCYANATE = Items.register( "copper_ii_thiocyanate",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\nDesc:",""));
+            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),179.71,"Cu(SCN)2",0,4,"\nDesc: Not much is known.",""));
     public static final RegistryObject<Item> COPPER_II_PEROXIDE = Items.register( "copper_ii_peroxide",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\nDesc:",""));
+            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),95.95,"CuO2",0,2,"\nDesc: Not much is known.",""));
     public static final RegistryObject<Item> COPPER_II_OXALATE = Items.register( "copper_ii_oxalate",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\nDesc:",""));
+            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),153.58,"CuC2O4",0,4,"\nDesc: Used in organic chemistry. Has also been used in seed treatment.","I"));
     public static final RegistryObject<Item> COPPER_II_HYDROXIDE = Items.register( "copper_ii_hydroxide",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\nDesc:",""));
+            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),97.56,"Cu(OH)2",0,4,"\nDesc: Can be used as a fungicide. An ingredient in Schweizer's reagent.","I"));
     //IRON II SALTS
     public static final RegistryObject<Item> IRON_II_OXIDE = Items.register( "iron_ii_oxide",
             () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\nDesc:",""));
