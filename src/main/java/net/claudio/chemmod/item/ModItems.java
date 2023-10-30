@@ -711,109 +711,109 @@ public class ModItems {
             () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),135.97,"NH4MnO4",0,4,"\nDesc: Not much is known about this compound's use.","O,A,H,E"));
     //barium salts
     public static final RegistryObject<Item> BARIUM_OXIDE = Items.register( "barium_oxide",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\nDesc:",""));
+            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),153.33,"BaO",0,4,"\nDesc: Used for coating hot cathodes.","C,T,I,A"));
     public static final RegistryObject<Item> BARIUM_FLUORIDE = Items.register( "barium_fluoride",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\nDesc:",""));
+            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),175.32,"BaF2",0,4,"\nDesc: Has been used in the production of welding agents. Metallurgic uses.","I,T"));
     public static final RegistryObject<Item> BARIUM_SULFIDE = Items.register( "barium_sulfide",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\nDesc:",""));
+            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),169.39,"BaS",0,4,"\nDesc: This compound is a precursor to other barium compounds.","I,A,F,T"));
     public static final RegistryObject<Item> BARIUM_CHLORIDE = Items.register( "barium_chloride",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\nDesc:",""));
+            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),208.23,"BaCl2",0,4,"\nDesc: Is used in the purification of brine solutions in chlorine plants.","T,C"));
     public static final RegistryObject<Item> BARIUM_NITRIDE = Items.register( "barium_nitride",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\nDesc:",""));
+            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),440.00,"Ba3N2",0,4,"\nDesc:Not much is known about this compound's use.","T,I"));
     public static final RegistryObject<Item> BARIUM_BROMIDE = Items.register( "barium_bromide",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\nDesc:",""));
+            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),297.14,"BaBr2",0,4,"\nDesc: Finds use in photography. Was used by Marie Curie for radium purification.","T,I"));
     public static final RegistryObject<Item> BARIUM_IODIDE = Items.register( "barium_iodide",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\nDesc:",""));
+            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),391.14,"BaI2",0,4,"\nDesc: Not much is known about this compound's use.","T"));
     public static final RegistryObject<Item> BARIUM_ARSENATE = Items.register( "barium_arsenate",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\nDesc:",""));
+            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),689.80,"Ba3(AsO4)2",0,4,"\nDesc: Not much is known.","T"));
     public static final RegistryObject<Item> BARIUM_PHOSPHATE = Items.register( "barium_phosphate",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\nDesc:",""));
+            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),601.93,"Ba3(PO4)2",0,4,"\nDesc: Has been used in the production of pulse lasers and glasses.","T,I"));
     public static final RegistryObject<Item> BARIUM_DIHYDROGEN_PHOSPHATE = Items.register( "barium_dihydrogen_phosphate",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\nDesc:",""));
+            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),331.30,"Ba(H2PO4)2",0,4,"\nDesc: Not much is known.","T,I"));
     public static final RegistryObject<Item> BARIUM_SULFATE = Items.register( "barium_sulfate",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\nDesc:",""));
+            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),233.39,"BaSO4",0,4,"\nDesc: This compound has wide use. Occurs as the mineral barite, which is our main source of barium.",""));
     public static final RegistryObject<Item> BARIUM_SULFITE = Items.register( "barium_sulfite",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\nDesc:",""));
+            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),217.39,"BaSO3",0,4,"\nDesc: This compound does not find much use.",""));
     public static final RegistryObject<Item> BARIUM_NITRATE = Items.register( "barium_nitrate",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\nDesc:",""));
+            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),261.34,"Ba(NO3)2",0,4,"\nDesc: Has some use in pyrotechnics. Formerly used in the production of baratol.","O,I,T"));
     public static final RegistryObject<Item> BARIUM_NITRITE = Items.register( "barium_nitrite",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\nDesc:",""));
+            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),229.34,"Ba(NO2)2",0,4,"\nDesc: Used in the preparation of other metal nitrites.","T"));
     public static final RegistryObject<Item> BARIUM_PERCHLORATE = Items.register( "barium_perchlorate",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\nDesc:",""));
+            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),336.23,"Ba(ClO4)2",0,4,"\nDesc: Used to make explosives.","T,O"));
     public static final RegistryObject<Item> BARIUM_CHLORATE = Items.register( "barium_chlorate",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\nDesc:",""));
+            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),304.23,"Ba(ClO3)2",0,4,"\nDesc: In pyrotechnics, can be used to add a green color.","O,T,I,A"));
     public static final RegistryObject<Item> BARIUM_HYPOCHLORITE = Items.register( "barium_hypochlorite",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\nDesc:",""));
+            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),240.23,"Ba(ClO)2",0,4,"\nDesc: Is a bleaching agent. Used in the decontamination of explosives.","S1,T,O"));
     public static final RegistryObject<Item> BARIUM_IODATE = Items.register( "barium_iodate",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\nDesc:",""));
+            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),487.13,"Ba(IO3)2",0,4,"\nDesc: Not much is known.","T"));
     public static final RegistryObject<Item> BARIUM_BROMATE = Items.register( "barium_bromate",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\nDesc:",""));
+            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),393.13,"Ba(BrO3)2",0,4,"\nDesc: Not much is known.","T,O,I"));
     public static final RegistryObject<Item> BARIUM_CARBONATE = Items.register( "barium_carbonate",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\nDesc:",""));
+            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),197.34,"BaCO3",0,4,"\nDesc: Is used to remove sulfate impurities from feedstock.","I"));
     public static final RegistryObject<Item> BARIUM_CHROMATE = Items.register( "barium_chromate",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\nDesc:",""));
+            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),253.37,"BaCrO4",0,4,"\nDesc: Is used as a chromium carrier. Has been used in pyrotechnics.","O,I,T,H,A"));
     public static final RegistryObject<Item> BARIUM_ACETATE = Items.register( "barium_acetate",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\nDesc:",""));
+            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),255.42,"Ba(C2H3O2)2",0,4,"\nDesc: Finds use as a mordant in fabrics.","T"));
     public static final RegistryObject<Item> BARIUM_CYANIDE = Items.register( "barium_cyanide",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\nDesc:",""));
+            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),189.36,"Ba(CN)2",0,4,"\nDesc: Useful for electroplating.","T,A"));
     public static final RegistryObject<Item> BARIUM_THIOCYANATE = Items.register( "barium_thiocyanate",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\nDesc:",""));
+            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),253.49,"Ba(SCN)2",0,4,"\nDesc: Can be used for dyeing textiles or in photography.","T,I"));
     public static final RegistryObject<Item> BARIUM_PEROXIDE = Items.register( "barium_peroxide",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\nDesc:",""));
+            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),169.33,"BaO2",0,4,"\nDesc: This peroxide is the first to be discovered. It finds use in pyrotechnics.","T,O,I"));
     public static final RegistryObject<Item> BARIUM_OXALATE = Items.register( "barium_oxalate",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\nDesc:",""));
+            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),225.35,"BaC2O4",0,4,"\nDesc: Finds some use in pyrotechnics.","I"));
     public static final RegistryObject<Item> BARIUM_HYDROXIDE = Items.register( "barium_hydroxide",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\nDesc:",""));
+            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),171.34,"Ba(OH)2",0,4,"\nDesc: A precursor to other barium compounds.","C,I,T"));
     public static final RegistryObject<Item> BARIUM_PERMANGANATE = Items.register( "barium_permanganate",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\nDesc:",""));
+            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),375.20,"Ba(MnO4)2",0,4,"\nDesc: Not much is known about this compound's use.","O,T"));
     //chromium II
     public static final RegistryObject<Item> CHROMIUM_II_OXIDE = Items.register( "chromium_ii_oxide",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\nDesc:",""));
+            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),68.00,"CrO",0,4,"\nDesc: Has been observed in red novae.",""));
     public static final RegistryObject<Item> CHROMIUM_II_FLUORIDE = Items.register( "chromium_ii_fluoride",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\nDesc:",""));
+            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),90.00,"CrF2",0,4,"\nDesc: Not much is known.","C,I"));
     public static final RegistryObject<Item> CHROMIUM_II_SULFIDE = Items.register( "chromium_ii_sulfide",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\nDesc:",""));
+            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),84.06,"CrS",0,4,"\nDesc: Is a semiconductor.",""));
     public static final RegistryObject<Item> CHROMIUM_II_CHLORIDE = Items.register( "chromium_ii_chloride",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\nDesc:",""));
+            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),122.90,"CrCl2",0,4,"\nDesc: Used in the synthesis of other chromium compounds.","I"));
     public static final RegistryObject<Item> CHROMIUM_II_BROMIDE = Items.register( "chromium_ii_bromide",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\nDesc:",""));
+            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),211.80,"CrBr2",0,4,"\nDesc: Not much is known.",""));
     public static final RegistryObject<Item> CHROMIUM_II_IODIDE = Items.register( "chromium_ii_iodide",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\nDesc:",""));
+            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),305.81,"CrI2",0,4,"\nDesc: Not much is known.",""));
     public static final RegistryObject<Item> CHROMIUM_II_CHROMATE = Items.register( "chromium_ii_chromate",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\nDesc:",""));
+            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),167.99,"Cr2O4",0,4,"\nDesc: Not much is known.","H"));
     public static final RegistryObject<Item> CHROMIUM_II_ACETATE = Items.register( "chromium_ii_acetate",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\nDesc:",""));
+            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),340.18,"Cr2(C2H3O2)4",0,4,"\nDesc: This compound was formerly used as a target product for chemistry students to produce as a challenge.",""));
     public static final RegistryObject<Item> CHROMIUM_II_OXALATE = Items.register( "chromium_ii_oxalate",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\nDesc:",""));
+            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),140.02,"CrC2O4",0,4,"\nDesc: Not much is known.",""));
     //chromium_iii
     public static final RegistryObject<Item> CHROMIUM_III_OXIDE = Items.register( "chromium_iii_oxide",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\nDesc:",""));
+            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),151.99,"Cr2O3",0,4,"\nDesc: Is a pigment.","I,H"));
     public static final RegistryObject<Item> CHROMIUM_III_FLUORIDE = Items.register( "chromium_iii_fluoride",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\nDesc:",""));
+            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),108.99,"CrF3",0,4,"\nDesc: Has been used as a mordant, and as a corrosion inhibitor.","T"));
     public static final RegistryObject<Item> CHROMIUM_III_SULFIDE = Items.register( "chromium_iii_sulfide",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\nDesc:",""));
+            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),200.19,"Cr2S3",0,4,"\nDesc: Not much is known about this compound's use.",""));
     public static final RegistryObject<Item> CHROMIUM_III_CHLORIDE = Items.register( "chromium_iii_chloride",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\nDesc:",""));
+            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),158.36,"CrCl3",0,4,"\nDesc: Used in the dyeing of wool.","C,I,A"));
     public static final RegistryObject<Item> CHROMIUM_III_NITRIDE = Items.register( "chromium_iii_nitride",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\nDesc:",""));
+            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),66.00,"CrN",0,4,"\nDesc: Can be applied as a corrosion resistant coating.",""));
     public static final RegistryObject<Item> CHROMIUM_III_BROMIDE = Items.register( "chromium_iii_bromide",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\nDesc:",""));
+            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),291.71,"CrBr3",0,4,"\nDesc: A precursor for the catalyst used for the oligomerization of ethylene.",""));
     public static final RegistryObject<Item> CHROMIUM_III_IODIDE = Items.register( "chromium_iii_iodide",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\nDesc:",""));
+            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),432.71,"CrI3",0,4,"\nDesc: This compound is special in that it is a magnetic material that is also 2D.",""));
     public static final RegistryObject<Item> CHROMIUM_III_PHOSPHATE = Items.register( "chromium_iii_phosphate",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\nDesc:",""));
+            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),146.97,"CrPO4",0,4,"\nDesc: Can be applied as an anti-corrosive coating.",""));
     public static final RegistryObject<Item> CHROMIUM_III_SULFATE = Items.register( "chromium_iii_sulfate",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\nDesc:",""));
+            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),392.16,"Cr2(SO4)3",0,4,"\nDesc: Finds some use in leather tanning.","C,I,H,A"));
     public static final RegistryObject<Item> CHROMIUM_III_NITRATE = Items.register( "chromium_iii_nitrate",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\nDesc:",""));
+            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),238.01,"Cr(NO3)3",0,4,"\nDesc: Used in the dyeing industry. Also has some lab uses.","O,H"));
     public static final RegistryObject<Item> CHROMIUM_III_PERCHLORATE = Items.register( "chromium_iii_perchlorate",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\nDesc:",""));
+            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),350.35,"Cr(ClO4)3",0,4,"\nDesc: Not much is known about this compound's use.","C,T,H"));
     public static final RegistryObject<Item> CHROMIUM_III_CHROMATE = Items.register( "chromium_iii_chromate",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\nDesc:",""));
+            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),451.97,"Cr2(CrO4)3",0,4,"\nDesc: Used as a mordant, and has anti-corrosive properties.","O,C,I,H,A"));
     public static final RegistryObject<Item> CHROMIUM_III_OXALATE = Items.register( "chromium_iii_oxalate",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\nDesc:",""));
+            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),368.05,"Cr2(C2O4)3",0,4,"\nDesc: Not much is known about this compound's use.","C,I,H"));
     public static final RegistryObject<Item> CHROMIUM_III_HYDROXIDE = Items.register( "chromium_iii_hydroxide",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\nDesc:",""));
+            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),103.02,"Cr(OH)3",0,4,"\nDesc: Used both as a pigment and as a mordant.",""));
     //COPPER I SALTS
     public static final RegistryObject<Item> COPPER_I_OXIDE = Items.register( "copper_i_oxide",
             () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\nDesc:",""));
