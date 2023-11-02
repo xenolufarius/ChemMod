@@ -876,171 +876,171 @@ public class ModItems {
             () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),97.56,"Cu(OH)2",0,4,"\nDesc: Can be used as a fungicide. An ingredient in Schweizer's reagent.","I"));
     //IRON II SALTS
     public static final RegistryObject<Item> IRON_II_OXIDE = Items.register( "iron_ii_oxide",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\nDesc:",""));
+            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),71.84,"FeO",0,4,"\nDesc: Used as a pigment.",""));
     public static final RegistryObject<Item> IRON_II_FLUORIDE = Items.register( "iron_ii_fluoride",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\nDesc:",""));
+            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),93.84,"FeF2",0,4,"\nDesc: This is often used in organic chemistry as a catalyst.","C,H,A"));
     public static final RegistryObject<Item> IRON_II_SULFIDE = Items.register( "iron_ii_sulfide",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\nDesc:",""));
+            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),87.91,"FeS",0,2,"\nDesc: This substance is pyrophoric. It is the green part of overcooked hard boiled eggs.","S3"));
     public static final RegistryObject<Item> IRON_II_CHLORIDE = Items.register( "iron_ii_chloride",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\nDesc:",""));
+            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),126.75,"FeCl2",0,4,"\nDesc: This substance has some laboratory use. Used in wastewater treatment for odor.","H"));
     public static final RegistryObject<Item> IRON_II_BROMIDE = Items.register( "iron_ii_bromide",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\nDesc:",""));
+            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),215.65,"FeBr2",0,4,"\nDesc: Not much is known.",""));
     public static final RegistryObject<Item> IRON_II_IODIDE = Items.register( "iron_ii_iodide",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\nDesc:",""));
+            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),309.65,"FeI2",0,4,"\nDesc: In the homeopathy, it finds use as a medicine.",""));
     public static final RegistryObject<Item> IRON_II_ARSENATE = Items.register( "iron_ii_arsenate",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\nDesc:",""));
+            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),445.37,"Fe3(AsO4)2",0,4,"\nDesc: An insecticide, and a pesticide.","T,H,I"));
     public static final RegistryObject<Item> IRON_II_PHOSPHATE = Items.register( "iron_ii_phosphate",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\nDesc:",""));
+            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),357.48,"Fe3(PO4)2",0,4,"\nDesc: Occurs naturally as the mineral vivianite.","I"));
     public static final RegistryObject<Item> IRON_II_SULFATE = Items.register( "iron_ii_sulfate",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\nDesc:",""));
+            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),151.91,"FeSO4",0,4,"\nDesc: This is on the World Health Organization's list of essential medicines. It is an iron supplement, and a precursor to other iron compounds.","I"));
     public static final RegistryObject<Item> IRON_II_NITRATE = Items.register( "iron_ii_nitrate",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\nDesc:",""));
+            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),179.86,"Fe(NO3)2",0,4,"\nDesc: It has been considered as a potential dye remover.",""));
     public static final RegistryObject<Item> IRON_II_PERCHLORATE = Items.register( "iron_ii_perchlorate",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\nDesc:",""));
+            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),272.76,"Fe(ClO4)2",0,4,"\nDesc: Found in batteries, and used in pyrotechnics.","O,I"));
     public static final RegistryObject<Item> IRON_II_CARBONATE = Items.register( "iron_ii_carbonate",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\nDesc:",""));
+            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),115.85,"FeCO3",0,4,"\nDesc: Useful as an iron supplement.",""));
     public static final RegistryObject<Item> IRON_II_ACETATE = Items.register( "iron_ii_acetate",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\nDesc:",""));
+            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),173.93,"Fe(C2H3O2)2",0,4,"\nDesc: Used as a mordant in the dyeing industry.","I"));
     public static final RegistryObject<Item> IRON_II_THIOCYANATE = Items.register( "iron_ii_thiocyanate",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\nDesc:",""));
+            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),172.01,"Fe(SCN)2",0,2,"\nDesc: In organic chemistry, it can be used to detect peroxides.",""));
     public static final RegistryObject<Item> IRON_II_OXALATE = Items.register( "iron_ii_oxalate",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\nDesc:",""));
+            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),143.86,"FeC2O4",0,4,"\nDesc: Occurs naturally as the mineral humboldtine","I"));
     public static final RegistryObject<Item> IRON_II_HYDROXIDE = Items.register( "iron_ii_hydroxide",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\nDesc:",""));
+            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),89.86,"Fe(OH)2",0,4,"\nDesc: Used in nickel-iron batteries. It has also been used as a detoxing agent for wetlands.",""));
     //iron iii salts
     public static final RegistryObject<Item> IRON_III_OXIDE = Items.register( "iron_iii_oxide",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\nDesc:",""));
+            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),159.69,"Fe2O3",0,4,"\nDesc: Finds use in the production of iron, steen, and other alloys.","I"));
     public static final RegistryObject<Item> IRON_III_FLUORIDE = Items.register( "iron_iii_fluoride",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\nDesc:",""));
+            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),112.84,"FeF3",0,4,"\nDesc: This substance is used in ceramics.","C,I"));
     public static final RegistryObject<Item> IRON_III_CHLORIDE = Items.register( "iron_iii_chloride",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\nDesc:",""));
+            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),162.20,"FeCl3",0,4,"\nDesc: Used in sewage treatment, and in the general production of clean water.","C,I"));
     public static final RegistryObject<Item> IRON_III_BROMIDE = Items.register( "iron_iii_bromide",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\nDesc:",""));
+            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),295.56,"FeBr3",0,4,"\nDesc: Used in organic chemistry.","C,I"));
     public static final RegistryObject<Item> IRON_III_IODIDE = Items.register( "iron_iii_iodide",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\nDesc:",""));
+            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),436.56,"FeI3",0,1,"\nDesc: Not much is known about this compound's use.",""));
     public static final RegistryObject<Item> IRON_III_ARSENATE = Items.register( "iron_iii_arsenate",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\nDesc:",""));
+            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),194.76,"FeAsO4",0,4,"\nDesc: Insecticide.","H,A,T"));
     public static final RegistryObject<Item> IRON_III_PHOSPHATE = Items.register( "iron_iii_phosphate",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\nDesc:",""));
+            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),150.82,"FePO4",0,4,"\nDesc: Finds use in the production of steel, as a pesticide, and occurs naturally as the mineral strengite.","I"));
     public static final RegistryObject<Item> IRON_III_SULFATE = Items.register( "iron_iii_sulfate",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\nDesc:",""));
+            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),399.88,"Fe2(SO4)3",0,4,"\nDesc: This substance can act as a mordant, and a coagulant for industrial waste.",""));
     public static final RegistryObject<Item> IRON_III_NITRATE = Items.register( "iron_iii_nitrate",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\nDesc:",""));
+            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),241.86,"Fe(NO3)3",0,4,"\nDesc: Has uses in organic chemistry. Used to etch silver.","O,I"));
     public static final RegistryObject<Item> IRON_III_OXALATE = Items.register( "iron_iii_oxalate",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\nDesc:",""));
+            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),375.75,"Fe2(C2O4)3",0,4,"\nDesc: Has used in organic chemistry, photography, and in batteries.",""));
     //LEAD II
     public static final RegistryObject<Item> LEAD_II_OXIDE = Items.register( "lead_ii_oxide",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\nDesc:",""));
+            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),223.20,"PbO",0,4,"\nDesc: Found in lead based glass and in ceramics.","I,H,A"));
     public static final RegistryObject<Item> LEAD_II_FLUORIDE = Items.register( "lead_ii_fluoride",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\nDesc:",""));
+            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),245.20,"PbF2",0,4,"\nDesc: Used to make low melting glass.","I,H,A"));
     public static final RegistryObject<Item> LEAD_II_SULFIDE = Items.register( "lead_ii_sulfide",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\nDesc:",""));
+            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),239.30,"PbS",0,4,"\nDesc: This substance is a semiconductor. It occurs naturally as the mineral galena.","I,H,A"));
     public static final RegistryObject<Item> LEAD_II_CHLORIDE = Items.register( "lead_ii_chloride",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\nDesc:",""));
+            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),278.10,"PbCl2",0,4,"\nDesc: This compound is considered one of the most important lead based reagents. It occurs naturally as the mineral cotunnite.","I,H,A"));
     public static final RegistryObject<Item> LEAD_II_BROMIDE = Items.register( "lead_ii_bromide",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\nDesc:",""));
+            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),367.01,"PbBr2",0,4,"\nDesc: A byproduct of leaded-gasoline combustion.","I,H,A"));
     public static final RegistryObject<Item> LEAD_II_IODIDE = Items.register( "lead_ii_iodide",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\nDesc:",""));
+            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),461.01,"PbI2",0,4,"\nDesc: Used in solar cells, and was formerly used as the paint Iodide Yellow.","I,H,A"));
     public static final RegistryObject<Item> LEAD_II_ARSENITE = Items.register( "lead_ii_arsenite",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\nDesc:",""));
+            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),421.00,"Pb(AsO2)2",0,4,"\nDesc: An insecticide.","I,H,A"));
     public static final RegistryObject<Item> LEAD_II_PHOSPHATE = Items.register( "lead_ii_phosphate",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\nDesc:",""));
+            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),811.54,"Pb3(PO4)2",0,4,"\nDesc: Not much is known about this compound.","I,H,A"));
     public static final RegistryObject<Item> LEAD_II_SULFATE = Items.register( "lead_ii_sulfate",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\nDesc:",""));
+            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),303.26,"PbSO4",0,4,"\nDesc: Used in lead-acid storage batteries. It is also used for paint pigments.","I,H,A"));
     public static final RegistryObject<Item> LEAD_II_THIOSULFATE = Items.register( "lead_ii_thiosulfate",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\nDesc:",""));
+            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),319.00,"PbS2O3",0,4,"\nDesc: This compound is useful in photography.","I,H,A"));
     public static final RegistryObject<Item> LEAD_II_NITRATE = Items.register( "lead_ii_nitrate",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\nDesc:",""));
+            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),331.20,"Pb(NO3)2",0,4,"\nDesc: This substance is used to heat stabilize nylon and polyesters.","C,I,H,A"));
     public static final RegistryObject<Item> LEAD_II_PERCHLORATE = Items.register( "lead_ii_perchlorate",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\nDesc:",""));
+            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),406.10,"Pb(ClO4)2",0,4,"\nDesc: Not much is known about this compound's use.","O,I,T,A"));
     public static final RegistryObject<Item> LEAD_II_IODATE = Items.register( "lead_ii_iodate",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\nDesc:",""));
+            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),557.01,"Pb(IO3)2",0,4,"\nDesc: This compound is often used in the volumetric determination of lead content in ore.","O,I,H,A"));
     public static final RegistryObject<Item> LEAD_II_CARBONATE = Items.register( "lead_ii_carbonate",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\nDesc:",""));
+            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),267.21,"PbCO3",0,4,"\nDesc: Finds some lab uses. Occurs naturally as the mineral cerussite.","I,H,A"));
     public static final RegistryObject<Item> LEAD_II_CHROMATE = Items.register( "lead_ii_chromate",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\nDesc:",""));
+            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),323.19,"PbCrO4",0,4,"\nDesc: Is known as the paint Chrome Yellow.","T,H,A"));
     public static final RegistryObject<Item> LEAD_II_ACETATE = Items.register( "lead_ii_acetate",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\nDesc:",""));
+            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),325.29,"Pb(C2H3O2)2",0,4,"\nDesc: Formerly used as a sweetener and in cosmetics.","H,A"));
     public static final RegistryObject<Item> LEAD_II_CYANIDE = Items.register( "lead_ii_cyanide",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\nDesc:",""));
+            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),259.00,"Pb(CN)2",0,4,"\nDesc: Useful in metallurgy.","T,H,A"));
     public static final RegistryObject<Item> LEAD_II_THIOCYANATE = Items.register( "lead_ii_thiocyanate",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\nDesc:",""));
+            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),323.36,"Pb(SCN)2",0,4,"\nDesc: Is often used in the production of explosives.","I,H,A"));
     public static final RegistryObject<Item> LEAD_II_HYDROXIDE = Items.register( "lead_ii_hydroxide",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\nDesc:",""));
+            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),241.20,"Pb(OH)2",0,4,"\nDesc: This compound was potentially used by chemists in the past.","T,I,H,A"));
     //magnesium salts
     public static final RegistryObject<Item> MAGNESIUM_OXIDE = Items.register( "magnesium_oxide",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\nDesc:",""));
+            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),40.30,"MgO",0,4,"\nDesc: This compound is a refractory material.","I"));
     public static final RegistryObject<Item> MAGNESIUM_FLUORIDE = Items.register( "magnesium_fluoride",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\nDesc:",""));
+            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),62.30,"MgF2",0,4,"\nDesc: Used in the production of optics.","I"));
     public static final RegistryObject<Item> MAGNESIUM_SULFIDE = Items.register( "magnesium_sulfide",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\nDesc:",""));
+            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),56.38,"MgS",0,2,"\nDesc: A byproduct in steel-making.",""));
     public static final RegistryObject<Item> MAGNESIUM_CHLORIDE = Items.register( "magnesium_chloride",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\nDesc:",""));
+            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),95.21,"MgCl2",0,4,"\nDesc: This substance has wide use, such as magnesium metal production, de-icing, and in the food industry.","I"));
     public static final RegistryObject<Item> MAGNESIUM_NITRIDE = Items.register( "magnesium_nitride",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\nDesc:",""));
+            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),100.95,"Mg3N2",0,4,"\nDesc: Has some laboratory uses.","F,I"));
     public static final RegistryObject<Item> MAGNESIUM_BROMIDE = Items.register( "magnesium_bromide",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\nDesc:",""));
+            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),184.11,"MgBr2",0,4,"\nDesc: This compound has uses in organic chemistry. It also is a tranquilizer.",""));
     public static final RegistryObject<Item> MAGNESIUM_IODIDE = Items.register( "magnesium_iodide",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\nDesc:",""));
+            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),278.11,"MgI2",0,4,"\nDesc: Finds use in organic chemistry.","I,C"));
     public static final RegistryObject<Item> MAGNESIUM_ARSENATE = Items.register( "magnesium_arsenate",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\nDesc:",""));
+            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),350.75,"Mg3(AsO4)2",0,4,"\nDesc: This compound is an insecticide. It is also used in the production of fluorescent lamps.","H"));
     public static final RegistryObject<Item> MAGNESIUM_DIHYDROGEN_PHOSPHATE = Items.register( "magnesium_dihydrogen_phosphate",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\nDesc:",""));
+            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),218.28,"Mg(H2PO4)2",0,4,"\nDesc: This substance is often used as a food additive. It functions as an acid regulator.",""));
     public static final RegistryObject<Item> MAGNESIUM_SULFATE = Items.register( "magnesium_sulfate",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\nDesc:",""));
+            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),120.37,"MgSO4",0,4,"\nDesc: Also known as bath salts or epsom salt.",""));
     public static final RegistryObject<Item> MAGNESIUM_THIOSULFATE = Items.register( "magnesium_thiosulfate",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\nDesc:",""));
+            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),136.44,"MgS2O3",0,4,"\nDesc: Often used as fertilizer.","I"));
     public static final RegistryObject<Item> MAGNESIUM_NITRATE = Items.register( "magnesium_nitrate",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\nDesc:",""));
+            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),148.32,"Mg(NO3)2",0,4,"\nDesc: Used in the production of nitric acid.","O,I"));
     public static final RegistryObject<Item> MAGNESIUM_PERCHLORATE = Items.register( "magnesium_perchlorate",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\nDesc:",""));
+            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),223.21,"Mg(ClO4)2",0,4,"\nDesc: Functions as a desiccant.","O,I"));
     public static final RegistryObject<Item> MAGNESIUM_CHLORATE = Items.register( "magnesium_chlorate",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\nDesc:",""));
+            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),191.20,"Mg(ClO3)2",0,4,"\nDesc: Functions as a desiccant, and as a defoliant. It is also used as eye drop lubricant.","O,I"));
     public static final RegistryObject<Item> MAGNESIUM_CARBONATE = Items.register( "magnesium_carbonate",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\nDesc:",""));
+            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),84.31,"MgCO3",0,4,"\nDesc: Used in the production of magnesium oxide. It is also a food additive and a laxative.",""));
     public static final RegistryObject<Item> MAGNESIUM_CHROMATE = Items.register( "magnesium_chromate",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\nDesc:",""));
+            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),140.30,"MbCrO4",0,4,"\nDesc: Can be used as corrosion inhibitor. Is used in the cosmetics industry.","I,H,A"));
     public static final RegistryObject<Item> MAGNESIUM_ACETATE = Items.register( "magnesium_acetate",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\nDesc:",""));
+            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),142.39,"Mg(C2H3O2)2",0,4,"\nDesc: Is often used in the production of calcium magnesium acetate.","I"));
     public static final RegistryObject<Item> MAGNESIUM_FORMATE = Items.register( "magnesium_formate",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\nDesc:",""));
+            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),114.33,"Mg(HCO2)2",0,4,"\nDesc: Used in organic chemistry.",""));
     public static final RegistryObject<Item> MAGNESIUM_PEROXIDE = Items.register( "magnesium_peroxide",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\nDesc:",""));
+            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),56.30,"MgO2",0,4,"\nDesc: Used in the reduction of contamination of groundwater.","O"));
     public static final RegistryObject<Item> MAGNESIUM_OXALATE = Items.register( "magnesium_oxalate",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\nDesc:",""));
+            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),112.32,"MgC2O4",0,4,"\nDesc: Has some lab use.","I"));
     public static final RegistryObject<Item> MAGNESIUM_HYDROXIDE = Items.register( "magnesium_hydroxide",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\nDesc:",""));
+            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),58.32,"Mg(OH)2",0,4,"\nDesc: This compound can be used as an antacid. Also known as milk of magnesia.","I"));
     public static final RegistryObject<Item> MAGNESIUM_PERMANGANATE = Items.register( "magnesium_permanganate",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\nDesc:",""));
+            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),262.18,"Mg(MnO4)2",0,4,"\nDesc: This substance is a wood impregnation agent.",""));
     //MANGANESE II SALTS
     public static final RegistryObject<Item> MANGANESE_II_OXIDE = Items.register( "manganese_ii_oxide",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\nDesc:",""));
+            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),70.94,"MnO",0,4,"\nDesc: Can be used as a fertilizer or as a food additive.",""));
     public static final RegistryObject<Item> MANGANESE_II_FLUORIDE = Items.register( "manganese_ii_fluoride",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\nDesc:",""));
+            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),92.93,"MnF2",0,4,"\nDesc: Used in the production of glass and lasers.","I"));
     public static final RegistryObject<Item> MANGANESE_II_SULFIDE = Items.register( "manganese_ii_sulfide",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\nDesc:",""));
+            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),87.00,"MnS",0,4,"\nDesc: Occurs naturally as the minerals alabandite and rambergite.","I"));
     public static final RegistryObject<Item> MANGANESE_II_CHLORIDE = Items.register( "manganese_ii_chloride",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\nDesc:",""));
+            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),125.84,"MnCl2",0,4,"\nDesc: Finds use in organic chemistry. It is also used in the production of dry cell batteries.",""));
     public static final RegistryObject<Item> MANGANESE_II_BROMIDE = Items.register( "manganese_ii_bromide",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\nDesc:",""));
+            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),214.75,"MnBr2",0,4,"\nDesc: In organic chemistry, it is used in the Stille reaction.","I"));
     public static final RegistryObject<Item> MANGANESE_II_IODIDE = Items.register( "manganese_ii_iodide",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\nDesc:",""));
+            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),308.75,"MnI2",0,4,"\nDesc: Finds use in the lighting industry.","H"));
     public static final RegistryObject<Item> MANGANESE_II_PHOSPHATE = Items.register( "manganese_ii_phosphate",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\nDesc:",""));
+            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),354.76,"Mn3(PO4)2",0,4,"\nDesc: Is often used as an anti-corrosion coating.","I,H"));
     public static final RegistryObject<Item> MANGANESE_II_SULFATE = Items.register( "manganese_ii_sulfate",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\nDesc:",""));
+            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),151.00,"MnSO4",0,4,"\nDesc: This is an important precursor salt.","H,A"));
     public static final RegistryObject<Item> MANGANESE_II_NITRATE = Items.register( "manganese_ii_nitrate",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\nDesc:",""));
+            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),178.95,"Mn(NO3)2",0,4,"\nDesc: Useful in the production of fertilizers.",""));
     public static final RegistryObject<Item> MANGANESE_II_CHLORATE = Items.register( "manganese_ii_chlorate",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\nDesc:",""));
+            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),221.84,"Mn(ClO3)2",0,1,"\nDesc: This compound does not find much use, since it explodes at room temperature.","E"));
     public static final RegistryObject<Item> MANGANESE_II_CARBONATE = Items.register( "manganese_ii_carbonate",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\nDesc:",""));
+            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),114.95,"MnCO3",0,4,"\nDesc: Used in fertilizers, ceramics and in healthy foods.",""));
     public static final RegistryObject<Item> MANGANESE_II_ACETATE = Items.register( "manganese_ii_acetate",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\nDesc:",""));
+            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),173.03,"Mn(C2H3O2)2",0,4,"\nDesc: Finds use as a fertilizer, and as a catalyst in the lab.",""));
     public static final RegistryObject<Item> MANGANESE_II_OXALATE = Items.register( "manganese_ii_oxalate",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\nDesc:",""));
+            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),142.96,"MnC2O4",0,4,"\nDesc: This compound is often used as a siccative for oil based paints.","I"));
     public static final RegistryObject<Item> MANGANESE_II_HYDROXIDE = Items.register( "manganese_ii_hydroxide",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\nDesc:",""));
+            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),88.95,"Mn(OH)2",0,2,"\nDesc: This compound is also known as pyrochroite.",""));
     //manganese iii salts
     public static final RegistryObject<Item> MANGANESE_III_OXIDE = Items.register( "manganese_iii_oxide",
             () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\nDesc:",""));
