@@ -7,11 +7,11 @@
     }
   ],
   "output":[ {
-    "item": "chemmod:DHI",
+    "item": "chemmod:dhi",
     "count": 10
   },
     {
-      "item": "chemmod:DHICA",
+      "item": "chemmod:dhica",
       "count": 10
     }
   ]

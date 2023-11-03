@@ -1,0 +1,14 @@
+{
+  "type": "chemmod:deconstructor",
+
+  "ingredients": [
+    {
+      "tag": "chemmod:purpur"
+    }
+  ],
+  "output": [{
+    "item": "chemmod:manganese_iii_phosphate",
+    "count": 4
+  }
+]
+}
