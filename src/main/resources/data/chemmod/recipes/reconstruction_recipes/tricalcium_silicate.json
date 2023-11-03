@@ -3,31 +3,16 @@
 
   "ingredients": [
     {
-      "item": "chemmod:calcium"
+      "item": "chemmod:calcium_oxide"
     },
     {
-      "item": "chemmod:calcium"
+      "item": "chemmod:calcium_oxide"
     },
     {
-      "item": "chemmod:calcium"
+      "item": "chemmod:calcium_oxide"
     },
     {
-      "item": "chemmod:silicon"
-    },
-    {
-      "item": "chemmod:oxygen"
-    },
-    {
-      "item": "chemmod:oxygen"
-    },
-    {
-      "item": "chemmod:oxygen"
-    },
-    {
-      "item": "chemmod:oxygen"
-    },
-    {
-      "item": "chemmod:oxygen"
+      "item": "chemmod:silicon_dioxide"
     }
   ],
   "result": {

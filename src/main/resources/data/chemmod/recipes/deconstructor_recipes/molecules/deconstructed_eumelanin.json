@@ -1,0 +1,19 @@
+{
+  "type": "chemmod:deconstructor",
+
+  "ingredients": [
+    {
+      "item": "chemmod:eumelanin"
+    }
+  ],
+  "output":[ {
+    "item": "chemmod:DHI",
+    "count": 10
+  },
+    {
+      "item": "chemmod:DHICA",
+      "count": 10
+    }
+  ]
+
+}

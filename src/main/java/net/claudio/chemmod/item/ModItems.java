@@ -282,11 +282,11 @@ public class ModItems {
 
     //Molecules
     public static final RegistryObject<Item> WATER = Items.register( "water",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\nDesc:",""));
+            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),18.02,"H2O",0,4,"\nDesc: This is perhaps the most important molecule for life.",""));
     public static final RegistryObject<Item> CARBON_DIOXIDE = Items.register( "carbon_dioxide",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\nDesc:",""));
+            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),44.01,"CO2",0,4,"\nDesc: This is the primary source of carbon for life.",""));
     public static final RegistryObject<Item> AMMONIA = Items.register( "ammonia",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\nDesc:",""));
+            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),17.03,"NH3",0,4,"\nDesc: This is a common precursor to fertilizers.","G,C,T,A"));
     //Salts:
     //list out anions: Cl, C03, SO4, HCO3, OH, NO3, Cr2O7, CN, ClO3, PO4,
     //list out cations: Li, Be, Na, Mg, K, Ca, Rb, Sr, Cs, Ba, Fr, Ra, NH4
@@ -1353,143 +1353,148 @@ public class ModItems {
     public static final RegistryObject<Item> RUBIDIUM_PERMANGANATE = Items.register( "rubidium_permanganate",
             () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),204.40,"RbMnO4",0,4,"\nDesc: Used to detect the presence of perchlorate ions.",""));
 
+    //TODO: FINISH THE SALTS. DONE
     //TODO: MARKER FOR END OF SALTS
     //Oxides:
     public static final RegistryObject<Item> SILICON_DIOXIDE = Items.register( "silicon_dioxide",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\nDesc:",""));
+            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),60.08,"SiO2",0,4,"\nDesc: This is a major constituent of many minerals found on earth.",""));
     public static final RegistryObject<Item> NITROGEN_DIOXIDE = Items.register( "nitrogen_dioxide",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\nDesc:",""));
+            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),46.01,"NO2",0,4,"\nDesc: This often an intermediate in the production of nitric acid.","O,H,T,C,G"));
     //Oxides^^^^^
     public static final RegistryObject<Item> POLYVINYL_CHLORIDE = Items.register( "polyvinyl_chloride",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\nDesc:",""));
+            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),62.50,"(C2H3Cl)n",0,4,"\nDesc: Also known as PVC, this is the 3rd most widely produced synthetic polymer of plastic.",""));
     public static final RegistryObject<Item> CHLOROETHENE = Items.register( "chloroethene",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\nDesc:",""));
+            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),62.50,"C2H3Cl",0,4,"\nDesc: Also known as vinyl chloride, it is used to produce PVC.","F,H"));
     public static final RegistryObject<Item> BEESWAX = Items.register( "beeswax",
             () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\nDesc:",""));
     //Main beeswax constituents vvv
     public static final RegistryObject<Item> TRIACONTANYL_PALMITATE = Items.register( "triacontanyl_palmitate",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\nDesc:",""));
+            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),677.20,"C46H92O2",0,4,"\nDesc: A wax ester that is the main constituent to beeswax.",""));
     public static final RegistryObject<Item> TRIACONTANOL = Items.register( "triacontanol",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\nDesc:",""));
+            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),438.81,"C30H62O",0,4,"\nDesc: This acts as a growth stimulant for many plants.","Sg"));
     public static final RegistryObject<Item> PALMITIC_ACID = Items.register( "palmitic_acid",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\nDesc:",""));
+            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),256.43,"C16H32O2",0,4,"\nDesc: Used to make soaps, napalm, and has been used as a food additive.","I"));
     public static final RegistryObject<Item> CEROTIC_ACID = Items.register( "cerotic_acid",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\nDesc:",""));
+            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),396.70,"C26H52O2",0,4,"\nDesc: A saturated fatty acid found in beeswax.","I"));
     //^^^
     public static final RegistryObject<Item> HYDROXYAPATITE = Items.register( "hydroxyapatite",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\nDesc:",""));
+            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),502.31,"Ca5(PO4)3OH",0,4,"\nDesc: Constitutes 50% by volume and 70% by weight of human bone. This has potential dental use.",""));
     public static final RegistryObject<Item> COLLAGEN_TYPE_1 = Items.register( "collagen_type_1",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\nDesc:",""));
+            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),000,"Unknown",0,4,"\nDesc: The most abundant protein in humans. It is very large and complex.",""));
     public static final RegistryObject<Item> PROLINE = Items.register( "proline",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\nDesc:",""));
+            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),115.13,"C5H9NO2",0,4,"\nDesc: An amino acid used to produce proteins.",""));
     //Spider Silk vvvv
     public static final RegistryObject<Item> GLYCINE = Items.register( "glycine",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\nDesc:",""));
+            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),75.07,"C2H5NO2",0,4,"\nDesc: An amino acid used to produce proteins.",""));
     public static final RegistryObject<Item> ALANINE = Items.register( "alanine",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\nDesc:",""));
+            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),89.09,"C3H7NO2",0,4,"\nDesc: An amino acid used to produce proteins.",""));
     //^^^^
-    public static final RegistryObject<Item> MELANIN = Items.register( "melanin",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\nDesc:",""));
+    public static final RegistryObject<Item> EUMELANIN = Items.register( "eumelanin",
+            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),000,"Unknown",0,4,"\nDesc: The most common type of melanin, a group of natural pigments.",""));
+    public static final RegistryObject<Item> DHI = Items.register( "dhi",
+            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),149.15,"C8H7NO2",0,4,"\nDesc: An intermediate in the production of eumelanin.","C,I,A"));
+    public static final RegistryObject<Item> DHICA = Items.register( "dhica",
+            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),193.16,"C9H7NO4",0,4,"\nDesc: An intermediate in the biosynthesis of eumelanin",""));
 
     //Concrete vvv
     public static final RegistryObject<Item> ALITE = Items.register( "alite",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\nDesc:",""));
+            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),228.32,"Ca3SiO5",0,4,"\nDesc: Used in cement, alite is the impure mineral of tricalcium silicate.",""));
     public static final RegistryObject<Item> BELITE = Items.register( "belite",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\nDesc:",""));
+            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),172.24,"Ca2SiO4",0,4,"\nDesc: Used in cement, belite is known in nature as larnite.","I"));
     public static final RegistryObject<Item> TRICALCIUM_SILICATE = Items.register( "tricalcium_silicate",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\nDesc:",""));
+            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),228.32,"Ca3SiO5",0,1,"\nDesc: The main constituent of alite, but unstable as its pure form.","C,I"));
     public static final RegistryObject<Item> DICALCIUM_SILICATE = Items.register( "dicalcium_silicate",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\nDesc:",""));
+            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),172.24,"Ca2SiO4",0,4,"\nDesc: Occurs naturally as the mineral larnite.","I"));
 
     //^^^
     public static final RegistryObject<Item> CELLULOSE = Items.register( "cellulose",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\nDesc:",""));
+            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),162.14,"(C6H10O5)n",0,4,"\nDesc: The structural component of plant cell walls, it is the most abundant organic polymer.",""));
     //Standin for keratin  vvvv
     public static final RegistryObject<Item> CYSTEINE = Items.register( "cysteine",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\nDesc:",""));
+            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),121.15,"C3H7NO2S",0,4,"\nDesc: An amino acid used to produce proteins.",""));
     public static final RegistryObject<Item> BERYLLIUM_ALUMINUM_SILICATE = Items.register( "beryllium_aluminum_silicate",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\nDesc:",""));
+            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),537.50,"Be3Al2Si6O18",0,4,"\nDesc: The mineral form of this compound is known as beryl. Certain gemstones are the impure forms of beryl.",""));
     public static final RegistryObject<Item> SILICATE_TETRAHEDRON = Items.register( "silicate_tetrahedron",
             () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\nDesc:",""));
     public static final RegistryObject<Item> NITROGLYCERIN = Items.register( "nitroglycerin",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\nDesc:",""));
+            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),227.09,"C3H5N3O9",0,4,"\nDesc: An explosive liquid used to make explosives, such as dynamite.","F,T,H,E"));
     //Fish output vvv
     public static final RegistryObject<Item> FISH_OIL = Items.register( "fish_oil",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\nDesc:",""));
+            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),000,"Unknown",0,4,"\nDesc: Derived from the tissue of oily fish, it is a good source of omega-3 fatty acids.",""));
     public static final RegistryObject<Item> EICOSAPENTAENOIC_ACID = Items.register( "eicosapentaenoic_acid",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\nDesc:",""));
+            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),302.45,"C20H30O2",0,4,"\nDesc: An omega-3 fatty acid that has seen wide medicinal use.","C"));
     public static final RegistryObject<Item> DOCOSAHEXAENOIC_ACID = Items.register( "docosahexaenoic_acid",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\nDesc:",""));
+            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),328.49,"C22H32O2",0,4,"\nDesc: An omega-3 fatty acid with various health benefits.",""));
     // ^^^^
     //Frog Secretions vvv
     //Dermorphin is stronger than morphine. Drug tag needed
     public static final RegistryObject<Item> DERMORPHIN = Items.register( "dermorphin",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\nDesc:",""));
+            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),802.89,"C40H50N8O10",0,4,"\nDesc: A natural opioid secreted by certain frogs.","Sm"));
     public static final RegistryObject<Item> DELTORPHIN = Items.register( "deltorphin",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\nDesc:",""));
+            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),955.15,"C44H62N10S10S2",0,4,"\nDesc: A natural opioid secreted by certain frogs.","Sm"));
     //^^^
     //Mushrooms vvv
     public static final RegistryObject<Item> CHITIN = Items.register( "chitin",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\nDesc:",""));
+            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),203.19,"(C8H13O5N)n",0,4,"\nDesc: The primary component to the cell walls of fungi.",""));
     public static final RegistryObject<Item> N_ACETYLGLUCOSAMINE = Items.register( "n_acetylglucosamine",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\nDesc:",""));
+            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),221.21,"C8H15NO6",0,4,"\nDesc: A component of various cell wall types, seen in bacteria and fungi.",""));
     public static final RegistryObject<Item> GLYCOGEN = Items.register( "glycogen",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\nDesc:",""));
+            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),180.16,"(C6H12O6)n",0,4,"\nDesc: A polysaccharide composed of glucose. The primary storage of glucose, also known as animal starch.",""));
     //^^^
     public static final RegistryObject<Item> LAZURITE = Items.register( "lazurite",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\nDesc:",""));
+            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),000,"(Na,Ca)8[(S,Cl,SO4,OH)2|(Al6Si6O24)]",0,4,"\nDesc: The primary constituent of lapis lazuli",""));
      //Red Quartz (Red Stone) 2nd vvv
     public static final RegistryObject<Item> HEMATITE = Items.register( "hematite",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\nDesc:",""));
+            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),159.69,"Fe2O3",0,4,"\nDesc: The mineral form of iron III oxide, found widely in rocks and soils.",""));
     //Slime vvv
     public static final RegistryObject<Item> POLYVINYL_ALCOHOL = Items.register( "polyvinyl_alcohol",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\nDesc:",""));
+            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),44.06,"(C2H4O)n",0,4,"\nDesc: Also known as PVOH. This polymer has a wide range of uses.",""));
     public static final RegistryObject<Item> ETHENOL = Items.register( "ethenol",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\nDesc:",""));
+            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),44.06,"C2H4O",0,1,"\nDesc: Also known as vinyl chloride. Despite being the monomer of PVOH, it is too unstable and is not its precursor.",""));
 
     public static final RegistryObject<Item> SODIUM_TETRABORATE = Items.register( "sodium_tetraborate",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\nDesc:",""));
+            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),201.16,"Na2B4O7",0,4,"\nDesc: Also known as borax. It has many uses such as in glass making, as a pesticide, in skins tanning, etc...","H"));
     //^^^
     public static final RegistryObject<Item> PROPANOL = Items.register( "propanol",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\nDesc:",""));
+            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),60.10,"C3H8O",0,4,"\nDesc: Produced naturally during fermentation. It is used as a solvent in pharmaceuticals.","F,H"));
 
     public static final RegistryObject<Item> POLYETHYLENE_TEREPHTHALATE = Items.register( "polyethylene_terephthalate",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\nDesc:",""));
+            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),192.18,"(C10H8O4)n",0,4,"\nDesc: Also known as polyester PET. A polyester polymer with a wide range of manufacturing uses.",""));
     public static final RegistryObject<Item> TEREPHTHALIC_ACID = Items.register( "terephthalic_acid",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\nDesc:",""));
+            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),166.13,"C8H6O4",0,4,"\nDesc: A commodity chemical and a precursor to polyester PET.","I"));
     public static final RegistryObject<Item> ETHYLENE_GLYCOL = Items.register( "ethylene_glycol",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\nDesc:",""));
+            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),62.07,"C2H6O2",0,4,"\nDesc: Raw material of polyester fibers and is used in antifreeze formulations.","I,H"));
     //Sugars:
     public static final RegistryObject<Item> SUCROSE = Items.register( "sucrose",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\nDesc:",""));
+            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),342.30,"C12H22O11",0,4,"\nDesc: Also known as table sugar, it is produced naturally in plants.",""));
     public static final RegistryObject<Item> GLUCOSE = Items.register( "glucose",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\nDesc:",""));
+            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),180.16,"C6H12O6",0,4,"\nDesc: The most important source of energy in all organisms.",""));
     public static final RegistryObject<Item> FRUCTOSE = Items.register( "fructose",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\nDesc:",""));
+            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),180.16,"C6H12O6",0,4,"\nDesc: Also known as fruit sugar. It is an important sweetener added to most foods. It is 1.7 times sweeter than sucrose.",""));
     public static final RegistryObject<Item> LACTOSE = Items.register( "lactose",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\nDesc:",""));
+            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),342.30,"C12H22O11",0,4,"\nDesc: Also known as milk sugar. It is added to baby formula.",""));
     public static final RegistryObject<Item> GALACTOSE = Items.register( "galactose",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\nDesc:",""));
+            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),180.16,"C6H12O6",0,4,"\nDesc: Also known as brain sugar. It is as sweet as glucose.",""));
 
     //Sugars^^^^^
     //candle Wax vvv and other alkanes
     public static final RegistryObject<Item> DOCOSANE = Items.register( "docosane",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\nDesc:",""));
+            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),310.60,"C22H46",0,4,"\nDesc: This has some use in organic chemistry, and is used in temperature sensing devices.","I"));
     public static final RegistryObject<Item> OCTADECANE = Items.register( "octadecane",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\nDesc:",""));
+            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),254.50,"C18H38",0,4,"\nDesc: This is used in organic chemistry.","H"));
     //^^^
     public static final RegistryObject<Item> METHANE = Items.register( "methane",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\nDesc:",""));
+            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),16.04,"CH4",0,4,"\nDesc: The simplest alkane. It is the main constituent of natural gas and greenhouse gases.","F"));
     public static final RegistryObject<Item> ETHANE = Items.register( "ethane",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\nDesc:",""));
+            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),30.07,"C2H6",0,4,"\nDesc: This is often isolated from natural gas. It is used to make feedstock and ethylene.","F"));
     public static final RegistryObject<Item> PROPANE = Items.register( "propane",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\nDesc:",""));
+            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),44.10,"C3H8",0,4,"\nDesc: A byproduct of natural gas and petroleum refining. This is a popular fuel for bbq, stoves, etc...","F,G"));
     public static final RegistryObject<Item> BUTANE = Items.register( "butane",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\nDesc:",""));
+            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),58.12,"C4H10",0,4,"\nDesc: Used in gasoline blending and ethylene production. Isobutane is used as a refrigerant.","F,G"));
     public static final RegistryObject<Item> PENTANE = Items.register( "pentane",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\nDesc:",""));
+            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),72.15,"C5H12",0,4,"\nDesc: Similar to butane and hexane. Used commonly as a fuel. It can act as a solvent for laboratories.","F,I,H,A"));
     public static final RegistryObject<Item> HEXANE = Items.register( "hexane",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\nDesc:",""));
+            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),86.18,"C6H14",0,4,"\nDesc: Hexane can be used to make glue for shoes. It is also used to extract cooking oil from seeds, and can be used for cleaning and degreasing.","F,I,H,A"));
 
 
 

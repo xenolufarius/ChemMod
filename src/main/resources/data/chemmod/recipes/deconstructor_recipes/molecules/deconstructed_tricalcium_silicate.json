@@ -7,11 +7,11 @@
     }
   ],
   "output":[ {
-    "item": "chemmod:calcium",
+    "item": "chemmod:calcium_oxide",
     "count": 3
   },
     {
-      "item": "chemmod:silicon",
+      "item": "chemmod:silicon_dioxide",
       "count": 1
     }
   ]
