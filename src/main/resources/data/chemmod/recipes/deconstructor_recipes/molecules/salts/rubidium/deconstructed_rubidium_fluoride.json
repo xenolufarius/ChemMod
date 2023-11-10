@@ -1,0 +1,19 @@
+{
+  "type": "chemmod:deconstructor",
+
+  "ingredients": [
+    {
+      "item": "chemmod:sodium_fluoride"
+    }
+  ],
+  "output":[ {
+    "item": "chemmod:sodium",
+    "count": 1
+  },
+    {
+      "item": "chemmod:fluoride",
+      "count": 1
+    }
+  ]
+
+}

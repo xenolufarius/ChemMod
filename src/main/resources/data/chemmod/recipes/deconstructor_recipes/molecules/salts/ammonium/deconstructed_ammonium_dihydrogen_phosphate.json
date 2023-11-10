@@ -1,0 +1,19 @@
+{
+  "type": "chemmod:deconstructor",
+
+  "ingredients": [
+    {
+      "item": "chemmod:sodium_dihydrogen_phosphate"
+    }
+  ],
+  "output":[ {
+    "item": "chemmod:sodium",
+    "count": 1
+  },
+    {
+      "item": "chemmod:phosphorus",
+      "count": 1
+    }
+  ]
+
+}

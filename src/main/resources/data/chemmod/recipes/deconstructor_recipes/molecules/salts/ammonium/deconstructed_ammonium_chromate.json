@@ -1,0 +1,19 @@
+{
+  "type": "chemmod:deconstructor",
+
+  "ingredients": [
+    {
+      "item": "chemmod:sodium_chromate"
+    }
+  ],
+  "output":[ {
+    "item": "chemmod:sodium",
+    "count": 2
+  },
+    {
+      "item": "chemmod:chromium",
+      "count": 1
+    }
+  ]
+
+}

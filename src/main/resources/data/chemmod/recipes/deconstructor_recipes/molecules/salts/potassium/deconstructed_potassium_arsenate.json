@@ -1,0 +1,19 @@
+{
+  "type": "chemmod:deconstructor",
+
+  "ingredients": [
+    {
+      "item": "chemmod:sodium_arsenate"
+    }
+  ],
+  "output":[ {
+    "item": "chemmod:sodium",
+    "count": 3
+  },
+    {
+      "item": "chemmod:arsenic",
+      "count": 1
+    }
+  ]
+
+}

@@ -1,0 +1,19 @@
+{
+  "type": "chemmod:deconstructor",
+
+  "ingredients": [
+    {
+      "item": "chemmod:sodium_nitrite"
+    }
+  ],
+  "output":[ {
+    "item": "chemmod:sodium",
+    "count": 1
+  },
+    {
+      "item": "chemmod:nitrogen",
+      "count": 1
+    }
+  ]
+
+}
