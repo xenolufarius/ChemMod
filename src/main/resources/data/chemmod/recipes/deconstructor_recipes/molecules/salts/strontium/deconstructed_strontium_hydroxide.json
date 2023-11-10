@@ -1,0 +1,19 @@
+{
+  "type": "chemmod:deconstructor",
+
+  "ingredients": [
+    {
+      "item": "chemmod:calcium_hydroxide"
+    }
+  ],
+  "output":[ {
+    "item": "chemmod:calcium",
+    "count": 1
+  },
+    {
+      "item": "chemmod:oxygen",
+      "count": 2
+    }
+  ]
+
+}

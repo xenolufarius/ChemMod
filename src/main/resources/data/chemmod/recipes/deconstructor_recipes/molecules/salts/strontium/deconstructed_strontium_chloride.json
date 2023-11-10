@@ -1,0 +1,19 @@
+{
+  "type": "chemmod:deconstructor",
+
+  "ingredients": [
+    {
+      "item": "chemmod:calcium_chloride"
+    }
+  ],
+  "output":[ {
+    "item": "chemmod:calcium",
+    "count": 1
+  },
+    {
+      "item": "chemmod:chloride",
+      "count": 2
+    }
+  ]
+
+}

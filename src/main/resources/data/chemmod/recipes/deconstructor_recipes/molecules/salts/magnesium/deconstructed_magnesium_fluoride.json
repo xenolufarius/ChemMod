@@ -1,0 +1,19 @@
+{
+  "type": "chemmod:deconstructor",
+
+  "ingredients": [
+    {
+      "item": "chemmod:calcium_fluoride"
+    }
+  ],
+  "output":[ {
+    "item": "chemmod:calcium",
+    "count": 1
+  },
+    {
+      "item": "chemmod:fluoride",
+      "count": 2
+    }
+  ]
+
+}

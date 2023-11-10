@@ -1,0 +1,19 @@
+{
+  "type": "chemmod:deconstructor",
+
+  "ingredients": [
+    {
+      "item": "chemmod:calcium_dihydrogen_phosphate"
+    }
+  ],
+  "output":[ {
+    "item": "chemmod:calcium",
+    "count": 1
+  },
+    {
+      "item": "chemmod:phosphorus",
+      "count": 2
+    }
+  ]
+
+}
