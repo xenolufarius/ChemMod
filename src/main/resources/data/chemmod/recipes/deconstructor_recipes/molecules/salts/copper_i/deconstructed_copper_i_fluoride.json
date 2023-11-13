@@ -3,11 +3,11 @@
 
   "ingredients": [
     {
-      "item": "chemmod:sodium_fluoride"
+      "item": "chemmod:copper_i_fluoride"
     }
   ],
   "output":[ {
-    "item": "chemmod:sodium",
+    "item": "chemmod:copper",
     "count": 1
   },
     {

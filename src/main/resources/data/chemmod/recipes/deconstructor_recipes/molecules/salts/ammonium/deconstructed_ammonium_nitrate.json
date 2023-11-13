@@ -3,11 +3,11 @@
 
   "ingredients": [
     {
-      "item": "chemmod:sodium_nitrate"
+      "item": "chemmod:ammonium_nitrate"
     }
   ],
   "output":[ {
-    "item": "chemmod:sodium",
+    "item": "chemmod:ammonia",
     "count": 1
   },
     {

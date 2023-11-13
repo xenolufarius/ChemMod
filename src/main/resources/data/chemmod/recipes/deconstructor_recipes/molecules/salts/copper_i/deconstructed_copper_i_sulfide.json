@@ -3,11 +3,11 @@
 
   "ingredients": [
     {
-      "item": "chemmod:sodium_sulfide"
+      "item": "chemmod:copper_i_sulfide"
     }
   ],
   "output":[ {
-    "item": "chemmod:sodium",
+    "item": "chemmod:copper",
     "count": 2
   },
     {

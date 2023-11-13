@@ -3,11 +3,11 @@
 
   "ingredients": [
     {
-      "item": "chemmod:sodium_cyanate"
+      "item": "chemmod:ammonium_cyanate"
     }
   ],
   "output":[ {
-    "item": "chemmod:sodium",
+    "item": "chemmod:ammonia",
     "count": 1
   },
     {

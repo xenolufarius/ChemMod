@@ -3,11 +3,11 @@
 
   "ingredients": [
     {
-      "item": "chemmod:sodium_sulfide"
+      "item": "chemmod:ammonium_sulfide"
     }
   ],
   "output":[ {
-    "item": "chemmod:sodium",
+    "item": "chemmod:ammonia",
     "count": 2
   },
     {

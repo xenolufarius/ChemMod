@@ -3,11 +3,11 @@
 
   "ingredients": [
     {
-      "item": "chemmod:calcium_carbonate"
+      "item": "chemmod:barium_carbonate"
     }
   ],
   "output":[ {
-    "item": "chemmod:calcium",
+    "item": "chemmod:barium",
     "count": 1
   },
     {

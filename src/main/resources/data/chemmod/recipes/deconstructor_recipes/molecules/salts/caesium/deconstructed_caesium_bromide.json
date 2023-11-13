@@ -3,11 +3,11 @@
 
   "ingredients": [
     {
-      "item": "chemmod:sodium_bromide"
+      "item": "chemmod:caesium_bromide"
     }
   ],
   "output":[ {
-    "item": "chemmod:sodium",
+    "item": "chemmod:caesium",
     "count": 1
   },
     {

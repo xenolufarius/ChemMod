@@ -3,11 +3,11 @@
 
   "ingredients": [
     {
-      "item": "chemmod:calcium_bromide"
+      "item": "chemmod:beryllium_bromide"
     }
   ],
   "output":[ {
-    "item": "chemmod:calcium",
+    "item": "chemmod:beryllium",
     "count": 1
   },
     {

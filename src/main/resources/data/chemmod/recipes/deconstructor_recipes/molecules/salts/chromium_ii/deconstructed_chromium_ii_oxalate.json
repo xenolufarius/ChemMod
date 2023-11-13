@@ -3,11 +3,11 @@
 
   "ingredients": [
     {
-      "item": "chemmod:calcium_oxalate"
+      "item": "chemmod:chromium_ii_oxalate"
     }
   ],
   "output":[ {
-    "item": "chemmod:calcium",
+    "item": "chemmod:chromium",
     "count": 1
   },
     {

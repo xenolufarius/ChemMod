@@ -3,11 +3,11 @@
 
   "ingredients": [
     {
-      "item": "chemmod:calcium_thiocyanate"
+      "item": "chemmod:beryllium_thiocyanate"
     }
   ],
   "output":[ {
-    "item": "chemmod:calcium",
+    "item": "chemmod:beryllium",
     "count": 1
   },
     {

@@ -3,11 +3,11 @@
 
   "ingredients": [
     {
-      "item": "chemmod:calcium_perchlorate"
+      "item": "chemmod:beryllium_perchlorate"
     }
   ],
   "output":[ {
-    "item": "chemmod:calcium",
+    "item": "chemmod:beryllium",
     "count": 1
   },
     {

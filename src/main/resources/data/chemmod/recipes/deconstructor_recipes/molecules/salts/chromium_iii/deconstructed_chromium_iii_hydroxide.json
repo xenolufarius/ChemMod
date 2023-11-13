@@ -3,11 +3,11 @@
 
   "ingredients": [
     {
-      "item": "chemmod:aluminum_hydroxide"
+      "item": "chemmod:chromium_iii_hydroxide"
     }
   ],
   "output":[ {
-    "item": "chemmod:aluminum",
+    "item": "chemmod:chromium",
     "count": 1
   },
     {

@@ -3,16 +3,16 @@
 
   "ingredients": [
     {
-      "item": "chemmod:calcium_chromate"
+      "item": "chemmod:chromium_ii_chromate"
     }
   ],
   "output":[ {
-    "item": "chemmod:calcium",
-    "count": 1
+    "item": "chemmod:chromium",
+    "count": 2
   },
     {
-      "item": "chemmod:chromium",
-      "count": 1
+      "item": "chemmod:oxygen",
+      "count": 4
     }
   ]
 

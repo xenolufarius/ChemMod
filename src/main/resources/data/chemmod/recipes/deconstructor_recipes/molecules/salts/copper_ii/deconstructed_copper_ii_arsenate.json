@@ -3,11 +3,11 @@
 
   "ingredients": [
     {
-      "item": "chemmod:calcium_arsenate"
+      "item": "chemmod:copper_ii_arsenate"
     }
   ],
   "output":[ {
-    "item": "chemmod:calcium",
+    "item": "chemmod:copper",
     "count": 3
   },
     {

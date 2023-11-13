@@ -3,11 +3,11 @@
 
   "ingredients": [
     {
-      "item": "chemmod:calcium_cyanide"
+      "item": "chemmod:beryllium_cyanide"
     }
   ],
   "output":[ {
-    "item": "chemmod:calcium",
+    "item": "chemmod:beryllium",
     "count": 1
   },
     {

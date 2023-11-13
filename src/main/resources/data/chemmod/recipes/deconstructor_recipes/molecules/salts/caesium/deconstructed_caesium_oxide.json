@@ -3,11 +3,11 @@
 
   "ingredients": [
     {
-      "item": "chemmod:sodium_oxide"
+      "item": "chemmod:caesium_oxide"
     }
   ],
   "output":[ {
-    "item": "chemmod:sodium",
+    "item": "chemmod:caesium",
     "count": 2
   },
     {

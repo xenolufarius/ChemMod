@@ -3,11 +3,11 @@
 
   "ingredients": [
     {
-      "item": "chemmod:calcium_oxalate"
+      "item": "chemmod:copper_ii_oxalate"
     }
   ],
   "output":[ {
-    "item": "chemmod:calcium",
+    "item": "chemmod:copper",
     "count": 1
   },
     {

@@ -3,11 +3,11 @@
 
   "ingredients": [
     {
-      "item": "chemmod:aluminum_perchlorate"
+      "item": "chemmod:chromium_iii_perchlorate"
     }
   ],
   "output":[ {
-    "item": "chemmod:aluminum",
+    "item": "chemmod:chromium",
     "count": 1
   },
     {

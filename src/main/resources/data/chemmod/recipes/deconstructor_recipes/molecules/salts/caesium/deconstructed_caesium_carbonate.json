@@ -3,11 +3,11 @@
 
   "ingredients": [
     {
-      "item": "chemmod:sodium_carbonate"
+      "item": "chemmod:caesium_carbonate"
     }
   ],
   "output":[ {
-    "item": "chemmod:sodium",
+    "item": "chemmod:caesium",
     "count": 2
   },
     {

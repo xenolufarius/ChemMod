@@ -3,11 +3,11 @@
 
   "ingredients": [
     {
-      "item": "chemmod:calcium_cyanide"
+      "item": "chemmod:barium_cyanide"
     }
   ],
   "output":[ {
-    "item": "chemmod:calcium",
+    "item": "chemmod:barium",
     "count": 1
   },
     {

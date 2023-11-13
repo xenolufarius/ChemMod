@@ -3,11 +3,11 @@
 
   "ingredients": [
     {
-      "item": "chemmod:calcium_fluoride"
+      "item": "chemmod:barium_fluoride"
     }
   ],
   "output":[ {
-    "item": "chemmod:calcium",
+    "item": "chemmod:barium",
     "count": 1
   },
     {

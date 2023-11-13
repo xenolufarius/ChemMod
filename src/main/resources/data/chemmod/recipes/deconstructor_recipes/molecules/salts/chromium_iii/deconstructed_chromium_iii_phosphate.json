@@ -3,11 +3,11 @@
 
   "ingredients": [
     {
-      "item": "chemmod:aluminum_phosphate"
+      "item": "chemmod:chromium_iii_phosphate"
     }
   ],
   "output":[ {
-    "item": "chemmod:aluminum",
+    "item": "chemmod:chromium",
     "count": 1
   },
     {

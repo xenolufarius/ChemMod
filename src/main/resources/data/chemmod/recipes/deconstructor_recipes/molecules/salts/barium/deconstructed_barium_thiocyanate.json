@@ -3,11 +3,11 @@
 
   "ingredients": [
     {
-      "item": "chemmod:calcium_thiocyanate"
+      "item": "chemmod:barium_thiocyanate"
     }
   ],
   "output":[ {
-    "item": "chemmod:calcium",
+    "item": "chemmod:barium",
     "count": 1
   },
     {

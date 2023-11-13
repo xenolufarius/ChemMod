@@ -3,11 +3,11 @@
 
   "ingredients": [
     {
-      "item": "chemmod:sodium_cyanide"
+      "item": "chemmod:copper_i_cyanide"
     }
   ],
   "output":[ {
-    "item": "chemmod:sodium",
+    "item": "chemmod:copper",
     "count": 1
   },
     {

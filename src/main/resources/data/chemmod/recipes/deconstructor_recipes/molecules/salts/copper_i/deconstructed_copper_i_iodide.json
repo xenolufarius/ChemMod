@@ -3,11 +3,11 @@
 
   "ingredients": [
     {
-      "item": "chemmod:sodium_iodide"
+      "item": "chemmod:copper_i_iodide"
     }
   ],
   "output":[ {
-    "item": "chemmod:sodium",
+    "item": "chemmod:copper",
     "count": 1
   },
     {

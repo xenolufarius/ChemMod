@@ -3,16 +3,16 @@
 
   "ingredients": [
     {
-      "item": "chemmod:aluminum_chromate"
+      "item": "chemmod:chromium_iii_chromate"
     }
   ],
   "output":[ {
-    "item": "chemmod:aluminum",
-    "count": 2
+    "item": "chemmod:chromium",
+    "count": 5
   },
     {
-      "item": "chemmod:chromium",
-      "count": 3
+      "item": "chemmod:oxygen",
+      "count": 12
     }
   ]
 

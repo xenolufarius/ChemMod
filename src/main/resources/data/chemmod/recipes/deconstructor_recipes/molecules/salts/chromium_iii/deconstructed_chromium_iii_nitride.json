@@ -3,11 +3,11 @@
 
   "ingredients": [
     {
-      "item": "chemmod:aluminum_nitride"
+      "item": "chemmod:chromium_iii_nitride"
     }
   ],
   "output":[ {
-    "item": "chemmod:aluminum",
+    "item": "chemmod:chromium",
     "count": 1
   },
     {
