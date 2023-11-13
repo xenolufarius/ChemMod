@@ -1,0 +1,19 @@
+{
+  "type": "chemmod:deconstructor",
+
+  "ingredients": [
+    {
+      "item": "chemmod:aluminum_hydroxide"
+    }
+  ],
+  "output":[ {
+    "item": "chemmod:aluminum",
+    "count": 1
+  },
+    {
+      "item": "chemmod:oxygen",
+      "count": 3
+    }
+  ]
+
+}

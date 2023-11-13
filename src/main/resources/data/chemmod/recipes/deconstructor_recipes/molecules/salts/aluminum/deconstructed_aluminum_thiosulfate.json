@@ -1,0 +1,19 @@
+{
+  "type": "chemmod:deconstructor",
+
+  "ingredients": [
+    {
+      "item": "chemmod:aluminum_thiosulfate"
+    }
+  ],
+  "output":[ {
+    "item": "chemmod:aluminum",
+    "count": 2
+  },
+    {
+      "item": "chemmod:sulfur",
+      "count": 6
+    }
+  ]
+
+}

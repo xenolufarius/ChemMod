@@ -1,0 +1,19 @@
+{
+  "type": "chemmod:deconstructor",
+
+  "ingredients": [
+    {
+      "item": "chemmod:tin_iv_chloride"
+    }
+  ],
+  "output":[ {
+    "item": "chemmod:tin",
+    "count": 1
+  },
+    {
+      "item": "chemmod:chlorine",
+      "count": 4
+    }
+  ]
+
+}

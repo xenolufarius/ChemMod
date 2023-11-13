@@ -1,0 +1,19 @@
+{
+  "type": "chemmod:deconstructor",
+
+  "ingredients": [
+    {
+      "item": "chemmod:tin_iv_arsenate"
+    }
+  ],
+  "output":[ {
+    "item": "chemmod:tin",
+    "count": 3
+  },
+    {
+      "item": "chemmod:arsenic",
+      "count": 4
+    }
+  ]
+
+}

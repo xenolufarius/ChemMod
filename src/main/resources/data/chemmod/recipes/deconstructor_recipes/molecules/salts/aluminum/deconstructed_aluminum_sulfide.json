@@ -1,0 +1,19 @@
+{
+  "type": "chemmod:deconstructor",
+
+  "ingredients": [
+    {
+      "item": "chemmod:aluminum_sulfide"
+    }
+  ],
+  "output":[ {
+    "item": "chemmod:aluminum",
+    "count": 2
+  },
+    {
+      "item": "chemmod:sulfur",
+      "count": 3
+    }
+  ]
+
+}

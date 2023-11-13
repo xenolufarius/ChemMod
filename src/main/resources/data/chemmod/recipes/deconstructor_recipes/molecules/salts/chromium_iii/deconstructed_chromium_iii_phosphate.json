@@ -1,0 +1,19 @@
+{
+  "type": "chemmod:deconstructor",
+
+  "ingredients": [
+    {
+      "item": "chemmod:aluminum_phosphate"
+    }
+  ],
+  "output":[ {
+    "item": "chemmod:aluminum",
+    "count": 1
+  },
+    {
+      "item": "chemmod:phosphorus",
+      "count": 1
+    }
+  ]
+
+}

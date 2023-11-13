@@ -1,0 +1,19 @@
+{
+  "type": "chemmod:deconstructor",
+
+  "ingredients": [
+    {
+      "item": "chemmod:aluminum_chromate"
+    }
+  ],
+  "output":[ {
+    "item": "chemmod:aluminum",
+    "count": 2
+  },
+    {
+      "item": "chemmod:chromium",
+      "count": 3
+    }
+  ]
+
+}

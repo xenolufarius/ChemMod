@@ -1,0 +1,19 @@
+{
+  "type": "chemmod:deconstructor",
+
+  "ingredients": [
+    {
+      "item": "chemmod:aluminum_cyanide"
+    }
+  ],
+  "output":[ {
+    "item": "chemmod:aluminum",
+    "count": 1
+  },
+    {
+      "item": "chemmod:nitrogen",
+      "count": 3
+    }
+  ]
+
+}

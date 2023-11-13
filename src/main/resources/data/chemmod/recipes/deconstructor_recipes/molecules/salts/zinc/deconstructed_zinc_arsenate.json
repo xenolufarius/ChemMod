@@ -1,0 +1,19 @@
+{
+  "type": "chemmod:deconstructor",
+
+  "ingredients": [
+    {
+      "item": "chemmod:calcium_arsenate"
+    }
+  ],
+  "output":[ {
+    "item": "chemmod:calcium",
+    "count": 3
+  },
+    {
+      "item": "chemmod:arsenic",
+      "count": 2
+    }
+  ]
+
+}

@@ -1,0 +1,19 @@
+{
+  "type": "chemmod:deconstructor",
+
+  "ingredients": [
+    {
+      "item": "chemmod:aluminum_bromide"
+    }
+  ],
+  "output":[ {
+    "item": "chemmod:aluminum",
+    "count": 1
+  },
+    {
+      "item": "chemmod:bromine",
+      "count": 3
+    }
+  ]
+
+}

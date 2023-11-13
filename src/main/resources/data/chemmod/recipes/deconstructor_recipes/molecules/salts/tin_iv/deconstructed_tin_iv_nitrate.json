@@ -1,0 +1,19 @@
+{
+  "type": "chemmod:deconstructor",
+
+  "ingredients": [
+    {
+      "item": "chemmod:tin_iv_nitrate"
+    }
+  ],
+  "output":[ {
+    "item": "chemmod:tin",
+    "count": 1
+  },
+    {
+      "item": "chemmod:nitrogen",
+      "count": 4
+    }
+  ]
+
+}

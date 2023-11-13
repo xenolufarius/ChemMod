@@ -1,0 +1,19 @@
+{
+  "type": "chemmod:deconstructor",
+
+  "ingredients": [
+    {
+      "item": "chemmod:aluminum_acetate"
+    }
+  ],
+  "output":[ {
+    "item": "chemmod:aluminum",
+    "count": 1
+  },
+    {
+      "item": "chemmod:carbon",
+      "count": 6
+    }
+  ]
+
+}
