@@ -8,11 +8,11 @@
   ],
   "output":[ {
     "item": "chemmod:mercury",
-    "count": 1
+    "count": 2
   },
     {
       "item": "chemmod:chlorine",
-      "count": 1
+      "count": 2
     }
   ]
 
