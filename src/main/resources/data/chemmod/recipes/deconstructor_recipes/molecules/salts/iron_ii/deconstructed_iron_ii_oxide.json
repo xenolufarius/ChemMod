@@ -3,11 +3,11 @@
 
   "ingredients": [
     {
-      "item": "chemmod:calcium_oxide"
+      "item": "chemmod:iron_ii_oxide"
     }
   ],
   "output":[ {
-    "item": "chemmod:calcium",
+    "item": "chemmod:iron",
     "count": 1
   },
     {

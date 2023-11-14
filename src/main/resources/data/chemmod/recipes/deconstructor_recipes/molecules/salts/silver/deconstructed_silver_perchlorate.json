@@ -3,11 +3,11 @@
 
   "ingredients": [
     {
-      "item": "chemmod:sodium_perchlorate"
+      "item": "chemmod:silver_perchlorate"
     }
   ],
   "output":[ {
-    "item": "chemmod:sodium",
+    "item": "chemmod:silver",
     "count": 1
   },
     {

@@ -3,11 +3,11 @@
 
   "ingredients": [
     {
-      "item": "chemmod:calcium_carbonate"
+      "item": "chemmod:magnesium_carbonate"
     }
   ],
   "output":[ {
-    "item": "chemmod:calcium",
+    "item": "chemmod:magnesium",
     "count": 1
   },
     {

@@ -3,11 +3,11 @@
 
   "ingredients": [
     {
-      "item": "chemmod:sodium_oxalate"
+      "item": "chemmod:potassium_oxalate"
     }
   ],
   "output":[ {
-    "item": "chemmod:sodium",
+    "item": "chemmod:potassium",
     "count": 2
   },
     {

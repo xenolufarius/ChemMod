@@ -3,11 +3,11 @@
 
   "ingredients": [
     {
-      "item": "chemmod:calcium_peroxide"
+      "item": "chemmod:magnesium_peroxide"
     }
   ],
   "output":[ {
-    "item": "chemmod:calcium",
+    "item": "chemmod:magnesium",
     "count": 1
   },
     {

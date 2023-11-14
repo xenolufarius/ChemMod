@@ -3,11 +3,11 @@
 
   "ingredients": [
     {
-      "item": "chemmod:calcium_nitrate"
+      "item": "chemmod:iron_ii_nitrate"
     }
   ],
   "output":[ {
-    "item": "chemmod:calcium",
+    "item": "chemmod:iron",
     "count": 1
   },
     {

@@ -3,11 +3,11 @@
 
   "ingredients": [
     {
-      "item": "chemmod:sodium_sulfate"
+      "item": "chemmod:rubidium_sulfate"
     }
   ],
   "output":[ {
-    "item": "chemmod:sodium",
+    "item": "chemmod:rubidium",
     "count": 2
   },
     {

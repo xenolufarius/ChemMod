@@ -3,11 +3,11 @@
 
   "ingredients": [
     {
-      "item": "chemmod:aluminum_phosphate"
+      "item": "chemmod:manganese_iii_phosphate"
     }
   ],
   "output":[ {
-    "item": "chemmod:aluminum",
+    "item": "chemmod:manganese",
     "count": 1
   },
     {

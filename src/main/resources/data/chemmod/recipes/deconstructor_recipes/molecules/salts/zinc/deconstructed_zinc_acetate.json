@@ -3,11 +3,11 @@
 
   "ingredients": [
     {
-      "item": "chemmod:calcium_acetate"
+      "item": "chemmod:zinc_acetate"
     }
   ],
   "output":[ {
-    "item": "chemmod:calcium",
+    "item": "chemmod:zinc",
     "count": 1
   },
     {

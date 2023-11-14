@@ -3,11 +3,11 @@
 
   "ingredients": [
     {
-      "item": "chemmod:sodium_chlorate"
+      "item": "chemmod:potassium_chlorate"
     }
   ],
   "output":[ {
-    "item": "chemmod:sodium",
+    "item": "chemmod:potassium",
     "count": 1
   },
     {

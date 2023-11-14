@@ -3,11 +3,11 @@
 
   "ingredients": [
     {
-      "item": "chemmod:sodium_carbonate"
+      "item": "chemmod:silver_carbonate"
     }
   ],
   "output":[ {
-    "item": "chemmod:sodium",
+    "item": "chemmod:silver",
     "count": 2
   },
     {

@@ -3,11 +3,11 @@
 
   "ingredients": [
     {
-      "item": "chemmod:calcium_oxide"
+      "item": "chemmod:mercury_ii_oxide"
     }
   ],
   "output":[ {
-    "item": "chemmod:calcium",
+    "item": "chemmod:mercury",
     "count": 1
   },
     {

@@ -3,11 +3,11 @@
 
   "ingredients": [
     {
-      "item": "chemmod:calcium_perchlorate"
+      "item": "chemmod:lead_ii_perchlorate"
     }
   ],
   "output":[ {
-    "item": "chemmod:calcium",
+    "item": "chemmod:lead",
     "count": 1
   },
     {

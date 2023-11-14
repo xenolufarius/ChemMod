@@ -3,11 +3,11 @@
 
   "ingredients": [
     {
-      "item": "chemmod:calcium_acetate"
+      "item": "chemmod:strontium_acetate"
     }
   ],
   "output":[ {
-    "item": "chemmod:calcium",
+    "item": "chemmod:strontium",
     "count": 1
   },
     {

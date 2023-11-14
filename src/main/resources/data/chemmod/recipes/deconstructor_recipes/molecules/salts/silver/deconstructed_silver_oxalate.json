@@ -3,11 +3,11 @@
 
   "ingredients": [
     {
-      "item": "chemmod:sodium_oxalate"
+      "item": "chemmod:silver_oxalate"
     }
   ],
   "output":[ {
-    "item": "chemmod:sodium",
+    "item": "chemmod:silver",
     "count": 2
   },
     {

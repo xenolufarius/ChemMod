@@ -3,11 +3,11 @@
 
   "ingredients": [
     {
-      "item": "chemmod:sodium_chromate"
+      "item": "chemmod:potassium_chromate"
     }
   ],
   "output":[ {
-    "item": "chemmod:sodium",
+    "item": "chemmod:potassium",
     "count": 2
   },
     {

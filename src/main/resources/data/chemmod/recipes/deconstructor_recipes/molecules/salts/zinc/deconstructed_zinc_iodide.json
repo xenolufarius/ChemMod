@@ -3,11 +3,11 @@
 
   "ingredients": [
     {
-      "item": "chemmod:calcium_iodide"
+      "item": "chemmod:zinc_iodide"
     }
   ],
   "output":[ {
-    "item": "chemmod:calcium",
+    "item": "chemmod:zinc",
     "count": 1
   },
     {

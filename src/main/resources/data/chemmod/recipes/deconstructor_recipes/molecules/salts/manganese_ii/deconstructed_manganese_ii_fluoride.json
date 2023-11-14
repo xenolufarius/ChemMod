@@ -3,11 +3,11 @@
 
   "ingredients": [
     {
-      "item": "chemmod:calcium_fluoride"
+      "item": "chemmod:manganese_ii_fluoride"
     }
   ],
   "output":[ {
-    "item": "chemmod:calcium",
+    "item": "chemmod:manganese",
     "count": 1
   },
     {

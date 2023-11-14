@@ -3,11 +3,11 @@
 
   "ingredients": [
     {
-      "item": "chemmod:calcium_phosphate"
+      "item": "chemmod:zinc_phosphate"
     }
   ],
   "output":[ {
-    "item": "chemmod:calcium",
+    "item": "chemmod:zinc",
     "count": 3
   },
     {

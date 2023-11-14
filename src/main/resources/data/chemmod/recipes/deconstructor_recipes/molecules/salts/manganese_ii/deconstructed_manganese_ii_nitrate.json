@@ -3,11 +3,11 @@
 
   "ingredients": [
     {
-      "item": "chemmod:calcium_nitrate"
+      "item": "chemmod:manganese_ii_nitrate"
     }
   ],
   "output":[ {
-    "item": "chemmod:calcium",
+    "item": "chemmod:manganese",
     "count": 1
   },
     {

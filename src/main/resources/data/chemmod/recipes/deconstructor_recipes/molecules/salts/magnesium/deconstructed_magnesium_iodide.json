@@ -3,11 +3,11 @@
 
   "ingredients": [
     {
-      "item": "chemmod:calcium_iodide"
+      "item": "chemmod:magnesium_iodide"
     }
   ],
   "output":[ {
-    "item": "chemmod:calcium",
+    "item": "chemmod:magnesium",
     "count": 1
   },
     {

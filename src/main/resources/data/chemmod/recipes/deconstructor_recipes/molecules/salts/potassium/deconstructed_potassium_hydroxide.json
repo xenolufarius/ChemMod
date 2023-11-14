@@ -3,11 +3,11 @@
 
   "ingredients": [
     {
-      "item": "chemmod:sodium_hydroxide"
+      "item": "chemmod:potassium_hydroxide"
     }
   ],
   "output":[ {
-    "item": "chemmod:sodium",
+    "item": "chemmod:potassium",
     "count": 1
   },
     {

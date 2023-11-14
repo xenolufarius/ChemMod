@@ -3,11 +3,11 @@
 
   "ingredients": [
     {
-      "item": "chemmod:calcium_chlorate"
+      "item": "chemmod:manganese_ii_chlorate"
     }
   ],
   "output":[ {
-    "item": "chemmod:calcium",
+    "item": "chemmod:manganese",
     "count": 1
   },
     {

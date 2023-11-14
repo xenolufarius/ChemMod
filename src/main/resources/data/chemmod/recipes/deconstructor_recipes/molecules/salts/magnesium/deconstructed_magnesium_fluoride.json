@@ -3,11 +3,11 @@
 
   "ingredients": [
     {
-      "item": "chemmod:calcium_fluoride"
+      "item": "chemmod:magnesium_fluoride"
     }
   ],
   "output":[ {
-    "item": "chemmod:calcium",
+    "item": "chemmod:magnesium",
     "count": 1
   },
     {

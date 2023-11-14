@@ -3,11 +3,11 @@
 
   "ingredients": [
     {
-      "item": "chemmod:calcium_oxide"
+      "item": "chemmod:tin_ii_oxide"
     }
   ],
   "output":[ {
-    "item": "chemmod:calcium",
+    "item": "chemmod:tin",
     "count": 1
   },
     {

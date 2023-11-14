@@ -3,11 +3,11 @@
 
   "ingredients": [
     {
-      "item": "chemmod:calcium_hydroxide"
+      "item": "chemmod:zinc_hydroxide"
     }
   ],
   "output":[ {
-    "item": "chemmod:calcium",
+    "item": "chemmod:zinc",
     "count": 1
   },
     {

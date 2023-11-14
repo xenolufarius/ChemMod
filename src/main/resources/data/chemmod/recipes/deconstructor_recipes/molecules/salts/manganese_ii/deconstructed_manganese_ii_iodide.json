@@ -3,11 +3,11 @@
 
   "ingredients": [
     {
-      "item": "chemmod:calcium_iodide"
+      "item": "chemmod:manganese_ii_iodide"
     }
   ],
   "output":[ {
-    "item": "chemmod:calcium",
+    "item": "chemmod:manganese",
     "count": 1
   },
     {

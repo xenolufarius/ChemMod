@@ -3,11 +3,11 @@
 
   "ingredients": [
     {
-      "item": "chemmod:calcium_chlorate"
+      "item": "chemmod:strontium_chlorate"
     }
   ],
   "output":[ {
-    "item": "chemmod:calcium",
+    "item": "chemmod:strontium",
     "count": 1
   },
     {

@@ -3,11 +3,11 @@
 
   "ingredients": [
     {
-      "item": "chemmod:calcium_chromate"
+      "item": "chemmod:magnesium_chromate"
     }
   ],
   "output":[ {
-    "item": "chemmod:calcium",
+    "item": "chemmod:magnesium",
     "count": 1
   },
     {

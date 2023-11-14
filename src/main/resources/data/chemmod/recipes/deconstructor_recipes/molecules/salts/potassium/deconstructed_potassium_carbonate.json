@@ -3,11 +3,11 @@
 
   "ingredients": [
     {
-      "item": "chemmod:sodium_carbonate"
+      "item": "chemmod:potassium_carbonate"
     }
   ],
   "output":[ {
-    "item": "chemmod:sodium",
+    "item": "chemmod:potassium",
     "count": 2
   },
     {

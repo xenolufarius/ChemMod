@@ -3,11 +3,11 @@
 
   "ingredients": [
     {
-      "item": "chemmod:calcium_cyanide"
+      "item": "chemmod:mercury_ii_cyanide"
     }
   ],
   "output":[ {
-    "item": "chemmod:calcium",
+    "item": "chemmod:mercury",
     "count": 1
   },
     {

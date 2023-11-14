@@ -3,11 +3,11 @@
 
   "ingredients": [
     {
-      "item": "chemmod:calcium_arsenate"
+      "item": "chemmod:iron_ii_arsenate"
     }
   ],
   "output":[ {
-    "item": "chemmod:calcium",
+      "item": "chemmod:iron",
     "count": 3
   },
     {

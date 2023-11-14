@@ -3,11 +3,11 @@
 
   "ingredients": [
     {
-      "item": "chemmod:calcium_iodate"
+      "item": "chemmod:lead_ii_iodate"
     }
   ],
   "output":[ {
-    "item": "chemmod:calcium",
+    "item": "chemmod:lead",
     "count": 1
   },
     {

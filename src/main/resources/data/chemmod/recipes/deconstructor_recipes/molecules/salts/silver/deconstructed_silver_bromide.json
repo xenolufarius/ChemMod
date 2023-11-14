@@ -3,11 +3,11 @@
 
   "ingredients": [
     {
-      "item": "chemmod:sodium_bromide"
+      "item": "chemmod:silver_bromide"
     }
   ],
   "output":[ {
-    "item": "chemmod:sodium",
+    "item": "chemmod:silver",
     "count": 1
   },
     {

@@ -3,11 +3,11 @@
 
   "ingredients": [
     {
-      "item": "chemmod:aluminum_acetate"
+      "item": "chemmod:manganese_iii_acetate"
     }
   ],
   "output":[ {
-    "item": "chemmod:aluminum",
+    "item": "chemmod:manganese",
     "count": 1
   },
     {

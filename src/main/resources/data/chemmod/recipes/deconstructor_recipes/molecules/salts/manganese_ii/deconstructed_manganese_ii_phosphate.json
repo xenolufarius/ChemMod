@@ -3,11 +3,11 @@
 
   "ingredients": [
     {
-      "item": "chemmod:calcium_phosphate"
+      "item": "chemmod:manganese_ii_phosphate"
     }
   ],
   "output":[ {
-    "item": "chemmod:calcium",
+    "item": "chemmod:manganese",
     "count": 3
   },
     {

@@ -3,11 +3,11 @@
 
   "ingredients": [
     {
-      "item": "chemmod:sodium_hypochlorite"
+      "item": "chemmod:silver_hypochlorite"
     }
   ],
   "output":[ {
-    "item": "chemmod:sodium",
+    "item": "chemmod:silver",
     "count": 1
   },
     {

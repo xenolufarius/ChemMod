@@ -3,15 +3,15 @@
 
   "ingredients": [
     {
-      "item": "chemmod:aluminum_fluoride"
+      "item": "chemmod:manganese_iii_sulfate"
     }
   ],
   "output":[ {
-    "item": "chemmod:aluminum",
-    "count": 1
+    "item": "chemmod:manganese",
+    "count": 2
   },
     {
-      "item": "chemmod:fluorine",
+      "item": "chemmod:sulfur",
       "count": 3
     }
   ]

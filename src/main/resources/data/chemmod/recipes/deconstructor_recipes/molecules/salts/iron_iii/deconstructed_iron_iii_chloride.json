@@ -3,11 +3,11 @@
 
   "ingredients": [
     {
-      "item": "chemmod:aluminum_chloride"
+      "item": "chemmod:iron_iii_chloride"
     }
   ],
   "output":[ {
-    "item": "chemmod:aluminum",
+    "item": "chemmod:iron",
     "count": 1
   },
     {

@@ -3,11 +3,11 @@
 
   "ingredients": [
     {
-      "item": "chemmod:sodium_bromide"
+      "item": "chemmod:mercury_i_bromide"
     }
   ],
   "output":[ {
-    "item": "chemmod:sodium",
+    "item": "chemmod:mercury",
     "count": 1
   },
     {

@@ -3,11 +3,11 @@
 
   "ingredients": [
     {
-      "item": "chemmod:calcium_phosphate"
+      "item": "chemmod:lead_ii_phosphate"
     }
   ],
   "output":[ {
-    "item": "chemmod:calcium",
+    "item": "chemmod:lead",
     "count": 3
   },
     {

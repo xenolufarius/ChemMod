@@ -3,11 +3,11 @@
 
   "ingredients": [
     {
-      "item": "chemmod:calcium_cyanide"
+      "item": "chemmod:lead_ii_cyanide"
     }
   ],
   "output":[ {
-    "item": "chemmod:calcium",
+    "item": "chemmod:lead",
     "count": 1
   },
     {

@@ -3,11 +3,11 @@
 
   "ingredients": [
     {
-      "item": "chemmod:sodium_fluoride"
+      "item": "chemmod:mercury_i_fluoride"
     }
   ],
   "output":[ {
-    "item": "chemmod:sodium",
+    "item": "chemmod:mercury",
     "count": 1
   },
     {

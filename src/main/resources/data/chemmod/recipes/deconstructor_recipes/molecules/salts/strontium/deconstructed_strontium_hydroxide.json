@@ -3,11 +3,11 @@
 
   "ingredients": [
     {
-      "item": "chemmod:calcium_hydroxide"
+      "item": "chemmod:strontium_hydroxide"
     }
   ],
   "output":[ {
-    "item": "chemmod:calcium",
+    "item": "chemmod:strontium",
     "count": 1
   },
     {

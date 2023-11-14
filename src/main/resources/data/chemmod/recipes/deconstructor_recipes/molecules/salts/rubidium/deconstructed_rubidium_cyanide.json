@@ -3,11 +3,11 @@
 
   "ingredients": [
     {
-      "item": "chemmod:sodium_cyanide"
+      "item": "chemmod:rubidium_cyanide"
     }
   ],
   "output":[ {
-    "item": "chemmod:sodium",
+    "item": "chemmod:rubidium",
     "count": 1
   },
     {

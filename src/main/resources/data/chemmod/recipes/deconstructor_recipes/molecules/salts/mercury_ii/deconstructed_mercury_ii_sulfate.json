@@ -3,11 +3,11 @@
 
   "ingredients": [
     {
-      "item": "chemmod:calcium_sulfate"
+      "item": "chemmod:mercury_ii_sulfate"
     }
   ],
   "output":[ {
-    "item": "chemmod:calcium",
+    "item": "chemmod:mercury",
     "count": 1
   },
     {

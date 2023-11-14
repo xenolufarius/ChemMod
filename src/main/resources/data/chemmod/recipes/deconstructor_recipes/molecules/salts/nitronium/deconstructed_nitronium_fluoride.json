@@ -3,11 +3,11 @@
 
   "ingredients": [
     {
-      "item": "chemmod:sodium_fluoride"
+      "item": "chemmod:nitronium_fluoride"
     }
   ],
   "output":[ {
-    "item": "chemmod:sodium",
+    "item": "chemmod:nitrogen",
     "count": 1
   },
     {

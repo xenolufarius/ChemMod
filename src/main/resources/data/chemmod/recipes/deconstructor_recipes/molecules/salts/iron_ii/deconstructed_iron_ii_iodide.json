@@ -3,11 +3,11 @@
 
   "ingredients": [
     {
-      "item": "chemmod:calcium_iodide"
+      "item": "chemmod:iron_ii_iodide"
     }
   ],
   "output":[ {
-    "item": "chemmod:calcium",
+    "item": "chemmod:iron",
     "count": 1
   },
     {

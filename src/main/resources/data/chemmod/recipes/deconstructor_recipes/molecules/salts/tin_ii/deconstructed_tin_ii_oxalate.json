@@ -3,11 +3,11 @@
 
   "ingredients": [
     {
-      "item": "chemmod:calcium_oxalate"
+      "item": "chemmod:tin_ii_oxalate"
     }
   ],
   "output":[ {
-    "item": "chemmod:calcium",
+    "item": "chemmod:tin",
     "count": 1
   },
     {

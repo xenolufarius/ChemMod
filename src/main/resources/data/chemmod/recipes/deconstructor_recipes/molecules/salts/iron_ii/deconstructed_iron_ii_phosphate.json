@@ -3,11 +3,11 @@
 
   "ingredients": [
     {
-      "item": "chemmod:calcium_phosphate"
+      "item": "chemmod:iron_ii_phosphate"
     }
   ],
   "output":[ {
-    "item": "chemmod:calcium",
+    "item": "chemmod:iron",
     "count": 3
   },
     {

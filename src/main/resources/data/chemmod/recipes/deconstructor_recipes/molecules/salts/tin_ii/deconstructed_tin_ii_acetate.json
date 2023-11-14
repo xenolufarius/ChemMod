@@ -3,11 +3,11 @@
 
   "ingredients": [
     {
-      "item": "chemmod:calcium_acetate"
+      "item": "chemmod:tin_ii_acetate"
     }
   ],
   "output":[ {
-    "item": "chemmod:calcium",
+    "item": "chemmod:tin",
     "count": 1
   },
     {

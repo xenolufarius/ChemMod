@@ -3,11 +3,11 @@
 
   "ingredients": [
     {
-      "item": "chemmod:calcium_hydroxide"
+      "item": "chemmod:mercury_ii_hydroxide"
     }
   ],
   "output":[ {
-    "item": "chemmod:calcium",
+    "item": "chemmod:mercury",
     "count": 1
   },
     {

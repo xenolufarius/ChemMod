@@ -3,11 +3,11 @@
 
   "ingredients": [
     {
-      "item": "chemmod:calcium_chromate"
+      "item": "chemmod:lead_ii_chromate"
     }
   ],
   "output":[ {
-    "item": "chemmod:calcium",
+    "item": "chemmod:lead",
     "count": 1
   },
     {

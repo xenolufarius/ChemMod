@@ -3,11 +3,11 @@
 
   "ingredients": [
     {
-      "item": "chemmod:calcium_fluoride"
+      "item": "chemmod:tin_ii_fluoride"
     }
   ],
   "output":[ {
-    "item": "chemmod:calcium",
+    "item": "chemmod:tin",
     "count": 1
   },
     {

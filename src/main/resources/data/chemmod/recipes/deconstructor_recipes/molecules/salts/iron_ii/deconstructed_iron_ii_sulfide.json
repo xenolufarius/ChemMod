@@ -3,11 +3,11 @@
 
   "ingredients": [
     {
-      "item": "chemmod:calcium_sulfide"
+      "item": "chemmod:iron_ii_sulfide"
     }
   ],
   "output":[ {
-    "item": "chemmod:calcium",
+    "item": "chemmod:iron",
     "count": 1
   },
     {

@@ -3,11 +3,11 @@
 
   "ingredients": [
     {
-      "item": "chemmod:sodium_carbonate"
+      "item": "chemmod:rubidium_carbonate"
     }
   ],
   "output":[ {
-    "item": "chemmod:sodium",
+    "item": "chemmod:rubidium",
     "count": 2
   },
     {

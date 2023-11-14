@@ -3,11 +3,11 @@
 
   "ingredients": [
     {
-      "item": "chemmod:calcium_nitrate"
+      "item": "chemmod:mercury_ii_nitrate"
     }
   ],
   "output":[ {
-    "item": "chemmod:calcium",
+    "item": "chemmod:mercury",
     "count": 1
   },
     {

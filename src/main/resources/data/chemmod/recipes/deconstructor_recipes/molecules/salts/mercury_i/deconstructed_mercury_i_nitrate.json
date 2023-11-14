@@ -3,11 +3,11 @@
 
   "ingredients": [
     {
-      "item": "chemmod:sodium_nitrate"
+      "item": "chemmod:mercury_i_nitrate"
     }
   ],
   "output":[ {
-    "item": "chemmod:sodium",
+    "item": "chemmod:mercury",
     "count": 1
   },
     {
