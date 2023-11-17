@@ -40,7 +40,8 @@ public class DeconstructorBlockRecipe implements Recipe<SimpleContainer> {
 
 
         //gets first item in recipe list
-        return recipeItems.get(0).test(pContainer.getItem(1));
+        //Comment for slot 0
+        return recipeItems.get(0).test(pContainer.getItem(0));
     }
 
     @Override

@@ -34,9 +34,11 @@ public class DeconstructorBlockMenu extends AbstractContainerMenu {
         addPlayerInventory(inv);
         addPlayerHotbar(inv);
 
+        //position 1 is not used. it is merely there to allow for shift right clicking
         this.blockEntity.getCapability(CapabilityItemHandler.ITEM_HANDLER_CAPABILITY).ifPresent(handler -> {
-            //this.addSlot(new SlotItemHandler(handler, 0, 12, 15));
-            this.addSlot(new SlotItemHandler(handler, 1, 80, 15));
+
+            this.addSlot(new SlotItemHandler(handler, 0, 80, 15));
+            this.addSlot(new SlotItemHandler(handler, 1, 400, 15));
             this.addSlot(new SlotItemHandler(handler, 2, 80, 60));
             this.addSlot(new SlotItemHandler(handler, 3, 60, 60));
         });

@@ -23,6 +23,7 @@ public class RadiationHudOverlay
 
         RenderSystem.setShader(GameRenderer::getPositionTexShader);
         RenderSystem.setShaderColor(1.0F, 1.0F, 1.0F, 1.0F);
+        /*
         RenderSystem.setShaderTexture(0, EMPTY_RADS);
         //empty
         for(int i = 0; i < 10; i++) {
@@ -30,6 +31,8 @@ public class RadiationHudOverlay
                     12,12);
         }
 
+
+         */
         //filled
         RenderSystem.setShaderTexture(0, FILLED_RADS);
 

@@ -162,7 +162,8 @@ public class DeconstructorBlockEntity extends BlockEntity implements MenuProvide
             recipe.ifPresent(deconstructorBlockRecipe -> {
                 NonNullList<ItemStack> outputs = deconstructorBlockRecipe.getOutput();
                 if(pEntity.itemHandler.getStackInSlot(2).getMaxStackSize()+1 > pEntity.itemHandler.getStackInSlot(2).getCount() + outputs.get(0).getCount() || (outputs.size()>1 && pEntity.itemHandler.getStackInSlot(3).getMaxStackSize() > pEntity.itemHandler.getStackInSlot(3).getCount() + outputs.get(1).getCount())) {
-                    pEntity.itemHandler.extractItem(1, 1, false);
+                    //Comment for slot 0
+                    pEntity.itemHandler.extractItem(0, 1, false);
                     for (ItemStack output : outputs) {
                             if (output.getItem() == outputs.get(0).getItem()) {
                                 if (pEntity.itemHandler.getStackInSlot(2).getItem() == output.getItem() || pEntity.itemHandler.getStackInSlot(2).isEmpty()) {
