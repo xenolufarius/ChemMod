@@ -9,6 +9,12 @@
       "item": "chemmod:aluminum"
     },
     {
+      "item": "chemmod:aluminum"
+    },
+    {
+      "item": "chemmod:aluminum"
+    },
+    {
       "item": "chemmod:oxygen"
     },
     {
@@ -20,7 +26,7 @@
   ],
   "result": {
     "item": "chemmod:aluminum_oxide",
-    "count": 1
+    "count": 2
   }
 
 }

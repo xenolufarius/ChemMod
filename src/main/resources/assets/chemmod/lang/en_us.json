@@ -876,6 +876,7 @@
   "itemGroup.blockstab": "Blocks Tab",
 
 
-  "entity.minecraft.villager.chemmod.chemist": "Chemist"
+  "entity.minecraft.villager.chemmod.chemist": "Chemist",
+  "entity.minecraft.villager.chemmod.alchemist": "Alchemist"
 
 }

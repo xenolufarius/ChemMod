@@ -3,16 +3,7 @@
 
   "ingredients": [
     {
-      "item": "chemmod:methane"
-    },
-    {
-      "item": "chemmod:carbon"
-    },
-    {
-      "item": "chemmod:hydrogen"
-    },
-    {
-      "item": "chemmod:hydrogen"
+      "item": "chemmod:butane"
     },
     {
       "item": "chemmod:nitrogen"

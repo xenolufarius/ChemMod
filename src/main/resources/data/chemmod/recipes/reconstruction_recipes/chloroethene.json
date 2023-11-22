@@ -12,6 +12,15 @@
       "item": "chemmod:carbon"
     },
     {
+      "item": "chemmod:chlorine"
+    },
+    {
+      "item": "chemmod:carbon"
+    },
+    {
+      "item": "chemmod:carbon"
+    },
+    {
       "item": "chemmod:hydrogen"
     },
     {
@@ -23,7 +32,7 @@
   ],
   "result": {
     "item": "chemmod:chloroethene",
-    "count": 1
+    "count": 2
   }
 
 }

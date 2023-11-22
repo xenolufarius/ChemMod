@@ -1,0 +1,19 @@
+{
+  "type": "chemmod:deconstructor",
+
+  "ingredients": [
+    {
+      "item": "chemmod:carbonic_acid_dil"
+    }
+  ],
+  "output":[ {
+    "item": "chemmod:carbon_dioxide",
+    "count": 1
+  },
+    {
+      "item": "chemmod:water",
+      "count": 1
+    }
+  ]
+
+}

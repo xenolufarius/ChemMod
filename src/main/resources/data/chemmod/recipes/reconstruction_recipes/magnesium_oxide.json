@@ -6,12 +6,15 @@
       "item": "chemmod:magnesium"
     },
     {
+      "item": "chemmod:magnesium"
+    },
+    {
       "item": "chemmod:oxygen"
     }
   ],
   "result": {
     "item": "chemmod:magnesium_oxide",
-    "count": 1
+    "count": 2
   }
 
 }

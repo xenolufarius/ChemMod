@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:smelting",
+  "cookingtime": 100,
+  "experience": 0.35,
+  "ingredient": {
+    "item": "chemmod:ethane"
+  },
+  "result": {
+    "item": "chemmod:carbon_dioxide",
+    "count": 2
+  }
+}

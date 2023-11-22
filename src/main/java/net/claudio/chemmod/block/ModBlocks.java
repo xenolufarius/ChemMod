@@ -46,8 +46,16 @@ public class ModBlocks {
             () -> new ReconstructorBlock(BlockBehaviour.Properties.of(Material.METAL).strength(2f).requiresCorrectToolForDrops().noOcclusion()), ModCreativeModeTab.BLOCKS_TAB);
 
     //Village Job Blocks
+    //tier 1. Just wood. maybe a glass bottle. A tutorial with water crafting, and ends with the deconstructor block for sale
     public static final RegistryObject<Block> ALCHEMY_TABLE = registerBlock("alchemy_table",
             () -> new Block(BlockBehaviour.Properties.of(Material.WOOD).strength(1f)), ModCreativeModeTab.BLOCKS_TAB);
+    //tier 2. same ingredients as tier 1 but added elemental sulfur. Sells salts.
+    public static final RegistryObject<Block> ALCHEMY_TABLE_2 = registerBlock("alchemy_table_2",
+            () -> new Block(BlockBehaviour.Properties.of(Material.WOOD).strength(1f)), ModCreativeModeTab.BLOCKS_TAB);
+    //tier 3. same ingredients as tier 2, but added elemental lead. More salts
+    public static final RegistryObject<Block> ALCHEMY_TABLE_3 = registerBlock("alchemy_table_3",
+            () -> new Block(BlockBehaviour.Properties.of(Material.WOOD).strength(1f)), ModCreativeModeTab.BLOCKS_TAB);
+
 
 
 

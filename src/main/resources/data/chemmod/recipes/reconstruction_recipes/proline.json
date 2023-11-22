@@ -3,7 +3,10 @@
 
   "ingredients": [
     {
-      "item": "chemmod:propane"
+      "item": "chemmod:hexane"
+    },
+    {
+      "item": "chemmod:methane"
     },
     {
       "item": "chemmod:carbon"
@@ -12,7 +15,10 @@
       "item": "chemmod:carbon"
     },
     {
-      "item": "chemmod:hydrogen"
+      "item": "chemmod:carbon"
+    },
+    {
+      "item": "chemmod:nitrogen_dioxide"
     },
     {
       "item": "chemmod:nitrogen_dioxide"
@@ -20,7 +26,7 @@
   ],
   "result": {
     "item": "chemmod:proline",
-    "count": 1
+    "count": 2
   }
 
 }

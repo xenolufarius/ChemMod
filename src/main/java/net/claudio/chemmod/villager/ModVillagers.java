@@ -32,11 +32,19 @@ public class ModVillagers {
     public static final RegistryObject<PoiType> EMERALD_BLOCK_POI = POI_TYPES.register("emerald_block_poi",
             () -> new PoiType(ImmutableSet.copyOf(Blocks.EMERALD_BLOCK.getStateDefinition().getPossibleStates()),
                     1, 1));
+    public static final RegistryObject<PoiType> ALCHEMY_TABLE_POI = POI_TYPES.register("alchemy_table_poi",
+            () -> new PoiType(ImmutableSet.copyOf(ModBlocks.ALCHEMY_TABLE.get().getStateDefinition().getPossibleStates()),
+                    1, 1));
+
+    //VILLAGER PROFESSIONS
     public static final RegistryObject<VillagerProfession> CHEMIST = VILLAGER_PROFESSIONS.register("chemist",
             () -> new VillagerProfession("chemist", x -> x.get() == EMERALD_BLOCK_POI.get(),
                     x -> x.get() == EMERALD_BLOCK_POI.get(), ImmutableSet.of(), ImmutableSet.of(),
                     SoundEvents.VILLAGER_WORK_CLERIC));
-
+    public static final RegistryObject<VillagerProfession> ALCHEMIST = VILLAGER_PROFESSIONS.register("alchemist",
+            () -> new VillagerProfession("alchemist", x -> x.get() == ALCHEMY_TABLE_POI.get(),
+                    x -> x.get() == ALCHEMY_TABLE_POI.get(), ImmutableSet.of(), ImmutableSet.of(),
+                    SoundEvents.VILLAGER_WORK_CLERIC));
     public static void registerPOIs()
     {
         try{

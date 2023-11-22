@@ -6,7 +6,7 @@
       "item": "chemmod:carbon"
     },
     {
-      "item": "chemmod:oxygen"
+      "item": "chemmod:carbon"
     },
     {
       "item": "chemmod:oxygen"
@@ -14,7 +14,7 @@
   ],
   "result": {
     "item": "chemmod:carbon_dioxide",
-    "count": 1
+    "count": 2
   }
 
 }

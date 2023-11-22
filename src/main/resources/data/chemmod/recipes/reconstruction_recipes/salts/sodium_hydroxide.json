@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shapeless",
+
+  "ingredients": [
+    {
+      "item": "chemmod:sodium_chloride"
+    },
+    {
+      "item": "chemmod:sodium_chloride"
+    },
+    {
+      "item": "chemmod:water"
+    },
+    {
+      "item": "chemmod:water"
+    }
+  ],
+  "result": {
+    "item": "chemmod:sodium_hydroxide",
+    "count": 2
+  }
+
+}

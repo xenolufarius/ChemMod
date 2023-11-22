@@ -3,36 +3,15 @@
 
   "ingredients": [
     {
-      "item": "chemmod:carbon"
-    },
-    {
-      "item": "chemmod:carbon"
-    },
-    {
-      "item": "chemmod:hydrogen"
-    },
-    {
-      "item": "chemmod:hydrogen"
-    },
-    {
-      "item": "chemmod:hydrogen"
-    },
-    {
-      "item": "chemmod:hydrogen"
-    },
-    {
-      "item": "chemmod:hydrogen"
-    },
-    {
-      "item": "chemmod:hydrogen"
-    },
+      "item": "chemmod:ethane"
+    }
     {
       "item": "chemmod:oxygen"
     }
   ],
   "result": {
     "item": "chemmod:ethanol",
-    "count": 1
+    "count": 2
   }
 
 }

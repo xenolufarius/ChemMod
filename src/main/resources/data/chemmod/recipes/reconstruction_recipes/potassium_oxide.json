@@ -9,12 +9,18 @@
       "item": "chemmod:potassium"
     },
     {
+      "item": "chemmod:potassium"
+    },
+    {
+      "item": "chemmod:potassium"
+    },
+    {
       "item": "chemmod:oxygen"
     }
   ],
   "result": {
     "item": "chemmod:potassium_oxide",
-    "count": 1
+    "count": 2
   }
 
 }

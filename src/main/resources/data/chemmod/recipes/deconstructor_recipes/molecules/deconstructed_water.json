@@ -3,7 +3,8 @@
 
   "ingredients": [
     {
-      "item": "chemmod:water"
+      "item": "chemmod:water",
+      "count": 2
     }
   ],
   "output":[ {

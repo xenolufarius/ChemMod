@@ -6,6 +6,9 @@
       "item": "chemmod:potassium"
     },
     {
+      "item": "chemmod:potassium"
+    },
+    {
       "item": "chemmod:nitrogen"
     },
     {
@@ -20,7 +23,7 @@
   ],
   "result": {
     "item": "chemmod:potassium_nitrate",
-    "count": 1
+    "count": 2
   }
 
 }

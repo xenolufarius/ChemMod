@@ -1,6 +1,7 @@
 {
   "values":
           [
-            "chemmod:emerald_block_poi"
+            "chemmod:emerald_block_poi",
+            "chemmod:alchemy_table_poi"
           ]
 }

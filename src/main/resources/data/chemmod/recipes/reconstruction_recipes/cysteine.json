@@ -3,7 +3,7 @@
 
   "ingredients": [
     {
-      "item": "chemmod:ethane"
+      "item": "chemmod:pentane"
     },
     {
       "item": "chemmod:carbon"
@@ -19,6 +19,9 @@
     },
     {
       "item": "chemmod:oxygen"
+    },
+    {
+      "item": "chemmod:sulfur"
     },
     {
       "item": "chemmod:sulfur"
