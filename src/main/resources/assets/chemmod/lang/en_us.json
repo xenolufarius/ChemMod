@@ -27,6 +27,11 @@
   "block.chemmod.jumpy_block": "Jumpy Block",
   "block.chemmod.lava_lamp": "Lava Lamp",
 
+  "block.chemmod.deconstructor_block": "Deconstructor",
+  "block.chemmod.alchemy_table": "Alchemy Table",
+
+
+
 
 
   "block.chemmod.lithium_block": "Lithium Block",
@@ -862,6 +867,9 @@
   "item.chemmod.butane": "Butane",
   "item.chemmod.pentane": "Pentane",
   "item.chemmod.hexane": "Hexane",
+
+  "item.chemmod.carbonic_acid_dil": "Carbonic Acid",
+
 
 
 

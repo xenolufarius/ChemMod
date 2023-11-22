@@ -146,16 +146,16 @@ public class ModEvents {
 
             //For Result Items
             ItemStack deconstructor_block = new ItemStack(ModBlocks.DECONSTRUCTOR_BLOCK.get(), 1);
-            ItemStack hydrogen_gas = new ItemStack(ModItems.HYDROGEN.get(), 4);
+            ItemStack hydrogen_gas = new ItemStack(ModItems.HYDROGEN.get(), 8);
             ItemStack oxygen_gas = new ItemStack(ModItems.OXYGEN.get(), 2);
             ItemStack methane = new ItemStack(ModItems.METHANE.get(),1);
             ItemStack ethane = new ItemStack(ModItems.ETHANE.get(),1);
             ItemStack propane = new ItemStack(ModItems.PROPANE.get(),1);
             ItemStack ammonia = new ItemStack(ModItems.AMMONIA.get(),1);
             ItemStack sodium_chloride = new ItemStack(ModItems.SODIUM_CHLORIDE.get(),2);
-            ItemStack water = new ItemStack(ModItems.WATER.get(),3);
+            ItemStack water = new ItemStack(ModItems.WATER.get(),5);
             ItemStack sodium_carbonate = new ItemStack(ModItems.SODIUM_CARBONATE.get(),1);
-            ItemStack nitrogen_gas = new ItemStack(ModItems.NITROGEN.get(),1);
+            ItemStack nitrogen_gas = new ItemStack(ModItems.NITROGEN.get(),3);
             ItemStack uranium = new ItemStack(ModItems.URANIUM.get(), 1);
             ItemStack nether_star = new ItemStack(Items.NETHER_STAR.asItem(), 1);
             int villagerlevel = 1;
@@ -167,11 +167,11 @@ public class ModEvents {
             //Don't know but adding numbers = higher level of villager
             trades.get(villagerlevel).add((trader, rand) -> new MerchantOffer(
                     new ItemStack(Items.EMERALD, 1),
-                    hydrogen_gas, 3, 1, 0.02F));
+                    hydrogen_gas, 6, 1, 0.02F));
 
             trades.get(villagerlevel).add((trader, rand) -> new MerchantOffer(
-                    new ItemStack(Items.EMERALD, 2),
-                    oxygen_gas, 3, 1, 0.02F));
+                    new ItemStack(Items.EMERALD, 1),
+                    oxygen_gas, 6, 1, 0.02F));
 
             //Apprentice ~64xp
             trades.get(villagerlevel+1).add((trader, rand) -> new MerchantOffer(
@@ -193,10 +193,10 @@ public class ModEvents {
 
             //Expert ~100xp
             trades.get(villagerlevel+3).add((trader, rand) -> new MerchantOffer(
-                    new ItemStack(ModItems.AMMONIA.get(), 1),
+                    new ItemStack(ModItems.AMMONIA.get(), 2),
                     sodium_chloride, 5, 12, 0.02F));
             trades.get(villagerlevel+3).add((trader, rand) -> new MerchantOffer(
-                    new ItemStack(ModItems.AMMONIA.get(), 1),
+                    new ItemStack(ModItems.AMMONIA.get(), 2),
                     water, 4, 12, 0.02F));
 
             //Master
