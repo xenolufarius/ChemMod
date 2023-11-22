@@ -1,6 +1,6 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "chemmod:item/standard_white_salt"
+    "layer0": "chemmod:item/light_pink_salt"
   }
 }
