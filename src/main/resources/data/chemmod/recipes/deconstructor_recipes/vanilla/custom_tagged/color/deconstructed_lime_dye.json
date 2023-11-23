@@ -3,7 +3,7 @@
 
   "ingredients": [
     {
-      "tag": "chemmod:color"
+      "item": "minecraft:lime_dye"
     }
   ],
   "output": [{

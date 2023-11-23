@@ -3,15 +3,15 @@
 
   "ingredients": [
     {
-      "tag": "chemmod:cobweb"
+      "item": "minecraft:yellow_dye"
     }
   ],
   "output": [{
     "item": "chemmod:glycine",
-    "count": 2
+    "count": 4
   },
     {
-      "item": "chemmod:alanine",
+      "item": "chemmod:melanin",
       "count": 2
     }
 ]

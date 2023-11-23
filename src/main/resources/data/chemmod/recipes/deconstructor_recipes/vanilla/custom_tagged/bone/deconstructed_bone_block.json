@@ -3,16 +3,16 @@
 
   "ingredients": [
     {
-      "item": "minecraft:bone"
+      "item": "minecraft:bone_block"
     }
   ],
   "output": [{
     "item": "chemmod:hydroxyapatite",
-    "count": 3
+    "count": 9
   },
     {
       "item": "chemmod:collagen_type_1",
-      "count": 3
+      "count": 9
     }
 ]
 }

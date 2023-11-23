@@ -3,16 +3,16 @@
 
   "ingredients": [
     {
-      "item": "minecraft:bone"
+      "item": "minecraft:wither_skeleton_skull"
     }
   ],
   "output": [{
     "item": "chemmod:hydroxyapatite",
-    "count": 3
+    "count": 6
   },
     {
       "item": "chemmod:collagen_type_1",
-      "count": 3
+      "count": 6
     }
 ]
 }
