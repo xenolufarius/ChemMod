@@ -1,0 +1,18 @@
+{
+  "type": "chemmod:deconstructor",
+
+  "ingredients": [
+    {
+      "tag": "minecraft:wart_blocks"
+    }
+  ],
+  "output": [{
+    "item": "chemmod:chitin",
+    "count": 27
+  },
+    {
+      "item": "chemmod:glycogen",
+      "count": 9
+    }
+]
+}

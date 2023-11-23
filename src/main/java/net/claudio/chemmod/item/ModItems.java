@@ -1366,7 +1366,7 @@ public class ModItems {
     public static final RegistryObject<Item> CHLOROETHENE = Items.register( "chloroethene",
             () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),62.50,"C2H3Cl",0,4,"\nDesc: Also known as vinyl chloride, it is used to produce PVC.","F,H"));
     public static final RegistryObject<Item> BEESWAX = Items.register( "beeswax",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\nDesc:",""));
+            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),677.20,"C46H92O2",0,4,"\nDesc: A natural wax produced by bees. It is the main structural component to honeycombs and hives in general.",""));
     //Main beeswax constituents vvv
     public static final RegistryObject<Item> TRIACONTANYL_PALMITATE = Items.register( "triacontanyl_palmitate",
             () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),677.20,"C46H92O2",0,4,"\nDesc: A wax ester that is the main constituent to beeswax.",""));
@@ -1464,6 +1464,11 @@ public class ModItems {
             () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),166.13,"C8H6O4",0,4,"\nDesc: A commodity chemical and a precursor to polyester PET.","I"));
     public static final RegistryObject<Item> ETHYLENE_GLYCOL = Items.register( "ethylene_glycol",
             () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),62.07,"C2H6O2",0,4,"\nDesc: Raw material of polyester fibers and is used in antifreeze formulations.","I,H"));
+
+    //minerals
+    public static final RegistryObject<Item> KAOLINITE = Items.register( "kaolinite",
+            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),258.18,"Al2Si2O5(OH)4",0,4,"\nDesc: ",""));
+
     //Sugars:
     public static final RegistryObject<Item> SUCROSE = Items.register( "sucrose",
             () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),342.30,"C12H22O11",0,4,"\nDesc: Also known as table sugar, it is produced naturally in plants.",""));

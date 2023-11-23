@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:smelting",
+  "cookingtime": 50,
+  "experience": 0.35,
+  "ingredient": {
+    "item": "chemmod:pentane"
+  },
+  "result": {
+    "item": "chemmod:carbon_dioxide",
+    "count": 5
+  }
+}

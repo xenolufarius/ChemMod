@@ -1,0 +1,15 @@
+{
+  "type": "chemmod:deconstructor",
+
+  "ingredients": [
+    {
+      "item": "minecraft:grass_block"
+    }
+  ],
+  "output": [
+    {
+      "item": "chemmod:cellulose",
+      "count": 2
+    }
+]
+}

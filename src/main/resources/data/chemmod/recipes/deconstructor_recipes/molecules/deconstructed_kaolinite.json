@@ -1,0 +1,19 @@
+{
+  "type": "chemmod:deconstructor",
+
+  "ingredients": [
+    {
+      "item": "chemmod:kaolinite"
+    }
+  ],
+  "output":[ {
+    "item": "chemmod:aluminum_oxide",
+    "count": 1
+  },
+    {
+      "item": "chemmod:silicon_dioxide",
+      "count": 2
+    }
+  ]
+
+}

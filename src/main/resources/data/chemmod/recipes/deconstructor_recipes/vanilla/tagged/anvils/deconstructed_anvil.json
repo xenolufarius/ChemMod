@@ -1,0 +1,14 @@
+{
+  "type": "chemmod:deconstructor",
+
+  "ingredients": [
+    {
+      "item": "minecraft:anvil"
+    }
+  ],
+  "output": [{
+    "item": "chemmod:iron",
+    "count": 20
+  }
+]
+}

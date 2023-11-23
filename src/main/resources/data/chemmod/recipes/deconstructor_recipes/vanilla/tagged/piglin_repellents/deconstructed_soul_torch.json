@@ -1,0 +1,18 @@
+{
+  "type": "chemmod:deconstructor",
+
+  "ingredients": [
+    {
+      "item": "minecraft:soul_torch"
+    }
+  ],
+  "output": [{
+    "item": "chemmod:butane",
+    "count": 1
+  },
+    {
+      "item": "chemmod:cellulose",
+      "count": 1
+    }
+]
+}

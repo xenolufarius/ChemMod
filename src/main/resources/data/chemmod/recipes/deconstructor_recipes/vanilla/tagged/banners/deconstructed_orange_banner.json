@@ -1,0 +1,18 @@
+{
+  "type": "chemmod:deconstructor",
+
+  "ingredients": [
+    {
+      "item": "minecraft:orange_banner"
+    }
+  ],
+  "output": [{
+    "item": "chemmod:polyvinyl_chloride",
+    "count": 2
+  },
+    {
+      "item": "minecraft:orange_dye",
+      "count": 1
+    }
+  ]
+}

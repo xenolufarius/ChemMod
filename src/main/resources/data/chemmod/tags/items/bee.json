@@ -1,7 +1,9 @@
 {
   "values": [
     "minecraft:bee_nest",
-    "minecraft:beehive"
+    "minecraft:beehive",
+    "minecraft:honeycomb",
+    "minecraft:honeycomb_block"
   ]
 
 

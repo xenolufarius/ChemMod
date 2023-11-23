@@ -1,0 +1,18 @@
+{
+  "type": "chemmod:deconstructor",
+
+  "ingredients": [
+    {
+      "item": "minecraft:soul_campfire"
+    }
+  ],
+  "output": [{
+    "item": "chemmod:butane",
+    "count": 8
+  },
+    {
+      "item": "chemmod:cellulose",
+      "count": 4
+    }
+]
+}

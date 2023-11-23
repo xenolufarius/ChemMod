@@ -1,0 +1,18 @@
+{
+  "type": "chemmod:deconstructor",
+
+  "ingredients": [
+    {
+      "item": "minecraft:soul_lantern"
+    }
+  ],
+  "output": [{
+    "item": "chemmod:butane",
+    "count": 4
+  },
+    {
+      "item": "chemmod:silicon_dioxide",
+      "count": 1
+    }
+]
+}

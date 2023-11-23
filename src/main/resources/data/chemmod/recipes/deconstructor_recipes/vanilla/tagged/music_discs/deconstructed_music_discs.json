@@ -1,0 +1,14 @@
+{
+  "type": "chemmod:deconstructor",
+
+  "ingredients": [
+    {
+      "tag": "minecraft:music_discs"
+    }
+  ],
+  "output": [{
+    "item": "chemmod:polyvinyl_chloride",
+    "count": 2
+  }
+]
+}

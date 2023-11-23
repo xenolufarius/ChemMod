@@ -1,0 +1,16 @@
+{
+  "type": "chemmod:deconstructor",
+
+  "ingredients": [
+    {
+      "item": "minecraft:honeycomb_block"
+    }
+  ],
+  "output": [{
+    "item": "chemmod:beeswax",
+    "count": 4,
+    "chance": 0,
+    "other": "I can add whatever property like this. And any comments. Maybe include chance for random chance later."
+  }
+]
+}

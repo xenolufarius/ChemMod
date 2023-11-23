@@ -1,0 +1,20 @@
+{
+  "type": "chemmod:deconstructor",
+
+  "ingredients": [
+    {
+      "item": "minecraft:beehive"
+    }
+  ],
+  "output": [{
+    "item": "chemmod:beeswax",
+    "count": 3,
+    "chance": 0,
+    "other": "I can add whatever property like this. And any comments. Maybe include chance for random chance later."
+  },
+    {
+      "item": "chemmod:cellulose",
+      "count": 12
+    }
+]
+}

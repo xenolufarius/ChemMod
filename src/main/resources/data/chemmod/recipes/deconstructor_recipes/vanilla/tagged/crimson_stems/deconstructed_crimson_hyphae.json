@@ -1,0 +1,18 @@
+{
+  "type": "chemmod:deconstructor",
+
+  "ingredients": [
+    {
+      "item": "minecraft:crimson_hyphae"
+    }
+  ],
+  "output": [{
+    "item": "chemmod:cellulose",
+    "count": 1
+  },
+    {
+      "item": "chemmod:glucose",
+      "count": 5
+    }
+]
+}

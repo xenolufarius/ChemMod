@@ -1,0 +1,14 @@
+{
+  "type": "chemmod:deconstructor",
+
+  "ingredients": [
+    {
+      "tag": "minecraft:candles"
+    }
+  ],
+  "output": [{
+    "item": "chemmod:beeswax",
+    "count": 1
+  }
+]
+}

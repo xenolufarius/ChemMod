@@ -1,0 +1,14 @@
+{
+  "type": "chemmod:deconstructor",
+
+  "ingredients": [
+    {
+      "item": "minecraft:terracotta"
+    }
+  ],
+  "output": [{
+    "item": "chemmod:kaolinite",
+    "count": 4
+  }
+]
+}

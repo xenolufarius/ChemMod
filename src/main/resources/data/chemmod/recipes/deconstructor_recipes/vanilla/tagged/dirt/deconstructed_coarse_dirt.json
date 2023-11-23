@@ -1,0 +1,18 @@
+{
+  "type": "chemmod:deconstructor",
+
+  "ingredients": [
+    {
+      "item": "minecraft:coarse_dirt"
+    }
+  ],
+  "output": [{
+    "item": "chemmod:silicon_dioxide",
+    "count": 2
+  },
+    {
+      "item": "chemmod:cellulose",
+      "count": 1
+    }
+]
+}

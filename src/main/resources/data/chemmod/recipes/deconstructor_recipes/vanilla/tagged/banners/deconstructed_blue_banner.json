@@ -1,0 +1,18 @@
+{
+  "type": "chemmod:deconstructor",
+
+  "ingredients": [
+    {
+      "item": "minecraft:blue_banner"
+    }
+  ],
+  "output": [{
+    "item": "chemmod:polyvinyl_chloride",
+    "count": 2
+  },
+    {
+      "item": "minecraft:blue_dye",
+      "count": 1
+    }
+  ]
+}
