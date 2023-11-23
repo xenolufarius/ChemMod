@@ -197,7 +197,7 @@ public class ModEvents {
                     sodium_chloride, 5, 12, 0.02F));
             trades.get(villagerlevel+3).add((trader, rand) -> new MerchantOffer(
                     new ItemStack(ModItems.AMMONIA.get(), 2),
-                    water, 4, 12, 0.02F));
+                    water, 6, 8, 0.02F));
 
             //Master
             trades.get(villagerlevel+4).add((trader, rand) -> new MerchantOffer(
