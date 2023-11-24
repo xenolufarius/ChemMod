@@ -3,7 +3,7 @@
 
   "ingredients": [
     {
-      "tag": "chemmod:crops"
+      "item": "minecraft:cocoa_beans"
     }
   ],
   "output": [{

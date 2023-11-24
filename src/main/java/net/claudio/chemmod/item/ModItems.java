@@ -1468,6 +1468,8 @@ public class ModItems {
     //minerals
     public static final RegistryObject<Item> KAOLINITE = Items.register( "kaolinite",
             () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),258.18,"Al2Si2O5(OH)4",0,4,"\nDesc: ",""));
+    public static final RegistryObject<Item> OLIVINE = Items.register( "olivine",
+            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),000.00,"(Mg,Fe)2SiO4",0,4,"\nDesc: ",""));
 
     //Sugars:
     public static final RegistryObject<Item> SUCROSE = Items.register( "sucrose",
@@ -1505,6 +1507,10 @@ public class ModItems {
     //Acids and Bases
     public static final RegistryObject<Item> CARBONIC_ACID_DIL = Items.register( "carbonic_acid_dil",
             () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),62.03,"H2CO3",0,4,"\nDesc: ",""));
+
+    //
+    public static final RegistryObject<Item> COPPER_II_CARBONATE_HYDROXIDE = Items.register( "copper_ii_carbonate_hydroxide",
+            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),221.11,"Cu2CO3(OH)2",0,4,"\nDesc: ",""));
 
 
 

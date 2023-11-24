@@ -3,12 +3,12 @@
 
   "ingredients": [
     {
-      "tag": "chemmod:coral"
+      "item": "minecraft:cut_copper_stairs"
     }
   ],
   "output": [{
-    "item": "chemmod:calcium_carbonate",
-    "count": 2
+    "item": "chemmod:copper",
+    "count": 12
   }
 ]
 }

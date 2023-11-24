@@ -3,12 +3,16 @@
 
   "ingredients": [
     {
-      "item": "minecraft:emerald"
+      "tag": "minecraft:emerald_ores"
     }
   ],
   "output": [{
     "item": "chemmod:beryllium_aluminum_silicate",
-    "count": 4
-  }
+    "count": 6
+  },
+    {
+      "item": "chemmod:silicon_dioxide",
+      "count": 2
+    }
 ]
 }

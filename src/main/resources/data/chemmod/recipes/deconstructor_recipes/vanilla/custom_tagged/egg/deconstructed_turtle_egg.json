@@ -3,7 +3,7 @@
 
   "ingredients": [
     {
-      "tag": "chemmod:coral"
+      "item": "minecraft:turtle_egg"
     }
   ],
   "output": [{

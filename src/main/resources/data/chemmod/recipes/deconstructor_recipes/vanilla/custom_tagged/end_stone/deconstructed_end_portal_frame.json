@@ -3,7 +3,7 @@
 
   "ingredients": [
     {
-      "item": "minecraft:end_stone"
+      "item": "minecraft:end_portal_frame"
     }
   ],
   "output": [{

@@ -6,6 +6,7 @@
     "minecraft:ender_pearl",
     "minecraft:ender_eye",
     "minecraft:blaze_rod",
+    "minecraft:end_rod",
     "minecraft:ghast_tear",
     "minecraft:potion",
     "minecraft:splash_potion",
@@ -16,7 +17,8 @@
     "minecraft:dragon_breath",
     "minecraft:totem_of_undying",
     "minecraft:respawn_anchor",
-    "minecraft:echo_shard"
+    "minecraft:echo_shard",
+    "minecraft:experience_bottle"
   ]
 
 

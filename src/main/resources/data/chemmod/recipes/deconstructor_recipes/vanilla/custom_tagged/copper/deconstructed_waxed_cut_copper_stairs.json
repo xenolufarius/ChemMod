@@ -1,0 +1,18 @@
+{
+  "type": "chemmod:deconstructor",
+
+  "ingredients": [
+    {
+      "item": "minecraft:waxed_cut_copper_stairs"
+    }
+  ],
+  "output": [{
+    "item": "chemmod:copper",
+    "count": 12
+  },
+    {
+      "item": "chemmod:beeswax",
+      "count": 1
+    }
+]
+}

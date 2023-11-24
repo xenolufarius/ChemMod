@@ -1,0 +1,18 @@
+{
+  "type": "chemmod:deconstructor",
+
+  "ingredients": [
+    {
+      "tag": "chemmod:fish_bucket"
+    }
+  ],
+  "output": [{
+    "item": "chemmod:fish_oil",
+    "count": 2
+  },
+    {
+      "item": "chemmod:iron",
+      "count": 27
+    }
+]
+}

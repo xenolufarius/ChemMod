@@ -3,15 +3,15 @@
 
   "ingredients": [
     {
-      "tag": "chemmod:elytra"
+      "item": "minecraft:fire_charge"
     }
   ],
   "output": [{
-    "item": "chemmod:cysteine",
-    "count": 6
+    "item": "chemmod:potassium_nitrate",
+    "count": 4
   },
     {
-      "item": "chemmod:alanine",
+      "item": "chemmod:carbon",
       "count": 8
     }
 ]

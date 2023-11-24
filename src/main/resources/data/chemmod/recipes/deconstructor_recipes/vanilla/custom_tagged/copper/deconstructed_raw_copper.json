@@ -1,0 +1,18 @@
+{
+  "type": "chemmod:deconstructor",
+
+  "ingredients": [
+    {
+      "item": "minecraft:raw_copper"
+    }
+  ],
+  "output": [{
+    "item": "chemmod:copper",
+    "count": 2
+  },
+    {
+      "item": "chemmod:silicon_dioxide",
+      "count": 1
+    }
+]
+}

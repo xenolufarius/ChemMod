@@ -3,11 +3,11 @@
 
   "ingredients": [
     {
-      "tag": "chemmod:coral"
+      "item": "minecraft:popped_chorus_fruit"
     }
   ],
   "output": [{
-    "item": "chemmod:calcium_carbonate",
+    "item": "chemmod:cellulose",
     "count": 2
   }
 ]

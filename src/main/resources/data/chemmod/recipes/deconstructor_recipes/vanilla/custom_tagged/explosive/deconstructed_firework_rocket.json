@@ -1,0 +1,18 @@
+{
+  "type": "chemmod:deconstructor",
+
+  "ingredients": [
+    {
+      "item": "minecraft:firework_rocket"
+    }
+  ],
+  "output": [{
+    "item": "chemmod:potassium_nitrate",
+    "count": 4
+  },
+    {
+      "item": "chemmod:cellulose",
+      "count": 1
+    }
+]
+}

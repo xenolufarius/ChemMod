@@ -1,0 +1,18 @@
+{
+  "type": "chemmod:deconstructor",
+
+  "ingredients": [
+    {
+      "item": "minecraft:tnt_minecart"
+    }
+  ],
+  "output": [{
+    "item": "chemmod:trinitrotoluene",
+    "count": 3
+  },
+    {
+      "item": "chemmod:iron",
+      "count": 45
+    }
+]
+}

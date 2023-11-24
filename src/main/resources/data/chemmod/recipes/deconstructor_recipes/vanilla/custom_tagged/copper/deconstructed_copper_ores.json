@@ -3,15 +3,15 @@
 
   "ingredients": [
     {
-      "item": "minecraft:end_stone"
+      "tag": "minecraft:copper_ores"
     }
   ],
   "output": [{
-    "item": "chemmod:silicon_dioxide",
-    "count": 4
+    "item": "chemmod:copper",
+    "count": 2
   },
     {
-      "item": "chemmod:olivine",
+      "item": "chemmod:silicon_dioxide",
       "count": 2
     }
 ]

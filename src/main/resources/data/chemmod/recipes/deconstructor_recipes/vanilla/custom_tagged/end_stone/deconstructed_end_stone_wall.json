@@ -3,12 +3,12 @@
 
   "ingredients": [
     {
-      "item": "minecraft:end_stone"
+      "item": "minecraft:end_stone_wall"
     }
   ],
   "output": [{
     "item": "chemmod:silicon_dioxide",
-    "count": 4
+    "count": 3
   },
     {
       "item": "chemmod:olivine",

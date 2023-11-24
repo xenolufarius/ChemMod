@@ -3,11 +3,11 @@
 
   "ingredients": [
     {
-      "tag": "chemmod:coral"
+      "item": "minecraft:copper_ingot"
     }
   ],
   "output": [{
-    "item": "chemmod:calcium_carbonate",
+    "item": "chemmod:copper",
     "count": 2
   }
 ]

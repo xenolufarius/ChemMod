@@ -3,7 +3,7 @@
 
   "ingredients": [
     {
-      "tag": "chemmod:explosive"
+      "item": "minecraft:firework_star"
     }
   ],
   "output": [{
@@ -11,8 +11,8 @@
     "count": 4
   },
     {
-      "item": "chemmod:nitroglycerin",
-      "count": 3
+      "item": "chemmod:carbon",
+      "count": 4
     }
 ]
 }

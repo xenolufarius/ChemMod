@@ -3,12 +3,16 @@
 
   "ingredients": [
     {
-      "tag": "chemmod:coral"
+      "item": "minecraft:dragon_egg"
     }
   ],
   "output": [{
     "item": "chemmod:calcium_carbonate",
-    "count": 2
-  }
+    "count": 64
+  },
+    {
+      "item": "chemmod:cysteine",
+      "count": 64
+    }
 ]
 }

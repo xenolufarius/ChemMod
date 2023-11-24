@@ -3,12 +3,12 @@
 
   "ingredients": [
     {
-      "tag": "chemmod:coral"
+      "tag": "chemmod:spawn_egg"
     }
   ],
   "output": [{
     "item": "chemmod:calcium_carbonate",
-    "count": 2
+    "count": 6
   }
 ]
 }

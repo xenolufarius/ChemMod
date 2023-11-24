@@ -1,0 +1,19 @@
+{
+  "type": "chemmod:deconstructor",
+
+  "ingredients": [
+    {
+      "item": "chemmod:olivine"
+    }
+  ],
+  "output":[ {
+    "item": "chemmod:magnesium",
+    "count": 1
+  },
+    {
+      "item": "chemmod:silicon_dioxide",
+      "count": 1
+    }
+  ]
+
+}

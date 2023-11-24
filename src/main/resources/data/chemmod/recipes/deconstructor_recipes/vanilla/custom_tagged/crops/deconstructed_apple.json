@@ -3,12 +3,12 @@
 
   "ingredients": [
     {
-      "tag": "chemmod:copper"
+      "item": "minecraft:apple"
     }
   ],
   "output": [{
-    "item": "chemmod:copper",
-    "count": 1
+    "item": "chemmod:cellulose",
+    "count": 2
   }
 ]
 }

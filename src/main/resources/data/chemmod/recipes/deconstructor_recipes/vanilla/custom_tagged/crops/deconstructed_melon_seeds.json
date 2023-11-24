@@ -3,12 +3,12 @@
 
   "ingredients": [
     {
-      "tag": "chemmod:coral"
+      "item": "minecraft:melon_seeds"
     }
   ],
   "output": [{
-    "item": "chemmod:calcium_carbonate",
-    "count": 2
+    "item": "chemmod:cellulose",
+    "count": 1
   }
 ]
 }

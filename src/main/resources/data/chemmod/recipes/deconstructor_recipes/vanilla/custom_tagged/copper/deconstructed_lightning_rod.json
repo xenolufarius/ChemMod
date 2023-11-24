@@ -3,12 +3,12 @@
 
   "ingredients": [
     {
-      "tag": "chemmod:coral"
+      "item": "minecraft:lightning_rod"
     }
   ],
   "output": [{
-    "item": "chemmod:calcium_carbonate",
-    "count": 2
+    "item": "chemmod:copper",
+    "count": 6
   }
 ]
 }

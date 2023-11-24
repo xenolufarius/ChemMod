@@ -1,0 +1,14 @@
+{
+  "type": "chemmod:deconstructor",
+
+  "ingredients": [
+    {
+      "item": "minecraft:glistening_melon_slice"
+    }
+  ],
+  "output": [{
+    "item": "chemmod:cellulose",
+    "count": 1
+  }
+]
+}
