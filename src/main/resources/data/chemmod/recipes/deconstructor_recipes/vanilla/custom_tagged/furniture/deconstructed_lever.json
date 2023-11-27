@@ -3,12 +3,12 @@
 
   "ingredients": [
     {
-      "tag": "chemmod:glass"
+      "item": "minecraft:lever"
     }
   ],
   "output": [{
-    "item": "chemmod:silicon_dioxide",
-    "count": 4
+    "item": "chemmod:cellulose",
+    "count": 6
   }
 ]
 }

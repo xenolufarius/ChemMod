@@ -3,12 +3,12 @@
 
   "ingredients": [
     {
-      "tag": "chemmod:grain"
+      "item": "minecraft:gold_ingot"
     }
   ],
   "output": [{
-    "item": "chemmod:cellulose",
-    "count": 2
+    "item": "chemmod:gold",
+    "count": 9
   }
 ]
 }

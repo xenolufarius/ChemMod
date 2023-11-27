@@ -3,12 +3,12 @@
 
   "ingredients": [
     {
-      "tag": "chemmod:glass"
+      "item": "minecraft:gold_nugget"
     }
   ],
   "output": [{
-    "item": "chemmod:silicon_dioxide",
-    "count": 4
+    "item": "chemmod:gold",
+    "count": 1
   }
 ]
 }

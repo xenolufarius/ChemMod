@@ -3,12 +3,12 @@
 
   "ingredients": [
     {
-      "tag": "chemmod:fungi"
+      "item": "minecraft:shroomlight"
     }
   ],
   "output": [{
     "item": "chemmod:chitin",
-    "count": 3
+    "count": 6
   },
     {
       "item": "chemmod:glycogen",

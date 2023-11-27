@@ -3,12 +3,12 @@
 
   "ingredients": [
     {
-      "tag": "chemmod:glass"
+      "tag": "chemmod:glass_pane"
     }
   ],
   "output": [{
     "item": "chemmod:silicon_dioxide",
-    "count": 4
+    "count": 3
   }
 ]
 }

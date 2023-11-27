@@ -3,12 +3,12 @@
 
   "ingredients": [
     {
-      "tag": "chemmod:glass"
+      "item": "minecraft:glass_bottle"
     }
   ],
   "output": [{
     "item": "chemmod:silicon_dioxide",
-    "count": 4
+    "count": 3
   }
 ]
 }

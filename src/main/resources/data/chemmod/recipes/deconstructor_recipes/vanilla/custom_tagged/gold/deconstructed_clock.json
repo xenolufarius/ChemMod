@@ -1,0 +1,18 @@
+{
+  "type": "chemmod:deconstructor",
+
+  "ingredients": [
+    {
+      "item": "minecraft:clock"
+    }
+  ],
+  "output": [{
+    "item": "chemmod:gold",
+    "count": 36
+  },
+    {
+      "item": "chemmod:silicon_dioxide",
+      "count": 3
+    }
+]
+}

@@ -1,0 +1,18 @@
+{
+  "type": "chemmod:deconstructor",
+
+  "ingredients": [
+    {
+      "item": "minecraft:warped_fungus"
+    }
+  ],
+  "output": [{
+    "item": "chemmod:chitin",
+    "count": 3
+  },
+    {
+      "item": "chemmod:glycogen",
+      "count": 1
+    }
+]
+}

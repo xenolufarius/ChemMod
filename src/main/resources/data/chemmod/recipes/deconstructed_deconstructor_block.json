@@ -1,0 +1,19 @@
+{
+  "type": "chemmod:deconstructor",
+
+  "ingredients": [
+    {
+      "item": "chemmod:deconstructor_block"
+    }
+  ],
+  "output": [{
+    "item": "chemmod:seaborgium",
+    "count": 10
+  },
+    {
+      "item": "chemmod:oganesson",
+      "count": 10
+    }
+]
+
+}

@@ -1,0 +1,14 @@
+{
+  "type": "chemmod:deconstructor",
+
+  "ingredients": [
+    {
+      "item": "minecraft:command_block_minecart"
+    }
+  ],
+  "output": [{
+    "item": "chemmod:cellulose",
+    "count": 6
+  }
+]
+}

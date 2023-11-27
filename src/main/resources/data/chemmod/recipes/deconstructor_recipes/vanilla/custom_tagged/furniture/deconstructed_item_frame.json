@@ -3,7 +3,7 @@
 
   "ingredients": [
     {
-      "tag": "chemmod:furniture"
+      "item": "minecraft:item_frame"
     }
   ],
   "output": [{

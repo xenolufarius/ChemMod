@@ -1,0 +1,18 @@
+{
+  "type": "chemmod:deconstructor",
+
+  "ingredients": [
+    {
+      "item": "minecraft:mushroom_stem"
+    }
+  ],
+  "output": [{
+    "item": "chemmod:chitin",
+    "count": 7
+  },
+    {
+      "item": "chemmod:glycogen",
+      "count": 2
+    }
+]
+}

@@ -1,0 +1,18 @@
+{
+  "type": "chemmod:deconstructor",
+
+  "ingredients": [
+    {
+      "item": "minecraft:glistering_melon_slice"
+    }
+  ],
+  "output": [{
+    "item": "chemmod:gold",
+    "count": 8
+  },
+    {
+      "item": "chemmod:cellulose",
+      "count": 2
+    }
+]
+}

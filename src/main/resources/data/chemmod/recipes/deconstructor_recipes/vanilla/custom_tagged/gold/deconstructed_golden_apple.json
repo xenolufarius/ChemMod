@@ -1,0 +1,18 @@
+{
+  "type": "chemmod:deconstructor",
+
+  "ingredients": [
+    {
+      "item": "minecraft:golden_apple"
+    }
+  ],
+  "output": [{
+    "item": "chemmod:gold",
+    "count": 64
+  },
+    {
+      "item": "chemmod:cellulose",
+      "count": 2
+    }
+]
+}

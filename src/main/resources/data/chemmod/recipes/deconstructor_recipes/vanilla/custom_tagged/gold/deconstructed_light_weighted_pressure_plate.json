@@ -1,0 +1,14 @@
+{
+  "type": "chemmod:deconstructor",
+
+  "ingredients": [
+    {
+      "item": "minecraft:light_weighted_pressure_plate"
+    }
+  ],
+  "output": [{
+    "item": "chemmod:gold",
+    "count": 18
+  }
+]
+}

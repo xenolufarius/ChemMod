@@ -3,12 +3,12 @@
 
   "ingredients": [
     {
-      "tag": "chemmod:glass"
+      "item": "minecraft:golden_leggings"
     }
   ],
   "output": [{
-    "item": "chemmod:silicon_dioxide",
-    "count": 4
+    "item": "chemmod:gold",
+    "count": 63
   }
 ]
 }
