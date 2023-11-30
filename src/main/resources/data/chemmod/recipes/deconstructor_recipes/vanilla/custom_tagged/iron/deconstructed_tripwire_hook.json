@@ -1,0 +1,18 @@
+{
+  "type": "chemmod:deconstructor",
+
+  "ingredients": [
+    {
+      "item": "minecraft:tripwire_hook"
+    }
+  ],
+  "output": [{
+    "item": "chemmod:iron",
+    "count": 9
+  },
+    {
+      "item": "chemmod:cellulose",
+      "count": 3
+    }
+]
+}

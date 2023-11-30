@@ -3,16 +3,15 @@
 
   "ingredients": [
     {
-      "tag": "minecraft:copper_ores"
+      "item": "minecraft:recovery_compass"
     }
   ],
   "output": [{
-    "item": "chemmod:copper",
-    "count": 2
+    "item": "chemmod:iron",
+    "count": 36
   },
     {
       "item": "chemmod:silicon_dioxide",
-      "count": 4
+      "count": 2
     }
 ]
-}

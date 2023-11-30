@@ -3,12 +3,12 @@
 
   "ingredients": [
     {
-      "tag": "chemmod:lapis"
+      "item": "minecraft:beacon"
     }
   ],
   "output": [{
-    "item": "chemmod:lazurite",
-    "count": 4
+    "item": "chemmod:oganesson",
+    "count": 10
   }
 ]
 }

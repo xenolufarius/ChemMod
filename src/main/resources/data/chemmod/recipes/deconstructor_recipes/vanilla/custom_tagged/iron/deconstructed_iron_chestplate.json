@@ -3,16 +3,16 @@
 
   "ingredients": [
     {
-      "tag": "chemmod:milk"
+      "item": "minecraft:iron_chestplate"
     }
   ],
   "output": [{
-    "item": "chemmod:lactose",
-    "count": 10
+    "item": "chemmod:iron",
+    "count": 64
   },
     {
       "item": "chemmod:iron",
-      "count": 27
+      "count": 8
     }
 ]
 }

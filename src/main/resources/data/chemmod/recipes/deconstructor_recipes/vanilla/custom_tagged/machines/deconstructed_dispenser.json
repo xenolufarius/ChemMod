@@ -1,0 +1,18 @@
+{
+  "type": "chemmod:deconstructor",
+
+  "ingredients": [
+    {
+      "item": "minecraft:dispenser"
+    }
+  ],
+  "output": [{
+    "item": "chemmod:silicon_dioxide",
+    "count": 30
+  },
+    {
+      "item": "chemmod:hematite",
+      "count": 2
+    }
+]
+}

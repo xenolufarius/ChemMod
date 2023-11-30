@@ -3,11 +3,11 @@
 
   "ingredients": [
     {
-      "tag": "chemmod:machine"
+      "item": "minecraft:sea_pickle"
     }
   ],
   "output": [{
-    "item": "chemmod:iron",
+    "item": "chemmod:cellulose",
     "count": 2
   }
 ]

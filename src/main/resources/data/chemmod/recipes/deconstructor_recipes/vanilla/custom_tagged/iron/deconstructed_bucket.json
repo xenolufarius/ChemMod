@@ -3,12 +3,12 @@
 
   "ingredients": [
     {
-      "tag": "chemmod:netherite"
+      "item": "minecraft:bucket"
     }
   ],
   "output": [{
-    "item": "chemmod:silicate_tetrahedron",
-    "count": 30
+    "item": "chemmod:iron",
+    "count": 27
   }
 ]
 }

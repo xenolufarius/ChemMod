@@ -3,16 +3,16 @@
 
   "ingredients": [
     {
-      "item": "minecraft:leather"
+      "item": "minecraft:leather_horse_armor"
     }
   ],
   "output": [{
     "item": "chemmod:collagen_type_1",
-    "count": 4
+    "count": 28
   },
     {
       "item": "chemmod:cysteine",
-      "count": 4
+      "count": 28
     }
 ]
 }

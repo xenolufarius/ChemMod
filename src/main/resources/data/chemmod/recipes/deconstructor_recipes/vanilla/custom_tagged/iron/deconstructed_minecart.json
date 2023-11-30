@@ -3,12 +3,13 @@
 
   "ingredients": [
     {
-      "item": "minecraft:grass"
+      "item": "minecraft:minecart"
     }
   ],
   "output": [{
-    "item": "chemmod:cellulose",
-    "count": 2
+    "item": "chemmod:iron",
+
+    "count": 45
   }
 ]
 }

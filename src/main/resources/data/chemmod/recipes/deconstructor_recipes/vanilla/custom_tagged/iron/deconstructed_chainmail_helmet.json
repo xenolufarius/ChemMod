@@ -3,12 +3,12 @@
 
   "ingredients": [
     {
-      "tag": "chemmod:magic"
+      "item": "minecraft:chainmail_helmet"
     }
   ],
   "output": [{
-    "item": "chemmod:oganesson",
-    "count": 10
+    "item": "chemmod:iron",
+    "count": 25
   }
 ]
 }

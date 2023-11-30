@@ -3,12 +3,12 @@
 
   "ingredients": [
     {
-      "item": "minecraft:grass"
+      "item": "minecraft:netherite_scrap"
     }
   ],
   "output": [{
-    "item": "chemmod:cellulose",
-    "count": 2
+    "item": "chemmod:silicon_dioxide",
+    "count": 5
   }
 ]
 }

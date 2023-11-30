@@ -1,0 +1,18 @@
+{
+  "type": "chemmod:deconstructor",
+
+  "ingredients": [
+    {
+      "item": "minecraft:iron_hoe"
+    }
+  ],
+  "output": [{
+    "item": "chemmod:iron",
+    "count": 18
+  },
+    {
+      "item": "chemmod:cellulose",
+      "count": 2
+    }
+]
+}

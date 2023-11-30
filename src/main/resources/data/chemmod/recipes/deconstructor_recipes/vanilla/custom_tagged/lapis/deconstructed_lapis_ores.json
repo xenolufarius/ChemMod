@@ -3,15 +3,15 @@
 
   "ingredients": [
     {
-      "item": "minecraft:leather"
+      "tag": "minecraft:lapis_ores"
     }
   ],
   "output": [{
-    "item": "chemmod:collagen_type_1",
-    "count": 4
+    "item": "chemmod:lazurite",
+    "count": 8
   },
     {
-      "item": "chemmod:cysteine",
+      "item": "chemmod:silicon_dioxide",
       "count": 4
     }
 ]

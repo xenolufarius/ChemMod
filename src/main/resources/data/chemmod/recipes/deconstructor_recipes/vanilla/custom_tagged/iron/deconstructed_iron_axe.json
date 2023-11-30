@@ -1,0 +1,18 @@
+{
+  "type": "chemmod:deconstructor",
+
+  "ingredients": [
+    {
+      "item": "minecraft:iron_axe"
+    }
+  ],
+  "output": [{
+    "item": "chemmod:iron",
+    "count": 27
+  },
+    {
+      "item": "chemmod:cellulose",
+      "count": 2
+    }
+]
+}

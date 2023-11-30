@@ -3,12 +3,12 @@
 
   "ingredients": [
     {
-      "item": "minecraft:grass"
+      "item": "minecraft:iron_leggings"
     }
   ],
   "output": [{
-    "item": "chemmod:cellulose",
-    "count": 2
+    "item": "chemmod:iron",
+    "count": 63
   }
 ]
 }

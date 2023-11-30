@@ -3,12 +3,12 @@
 
   "ingredients": [
     {
-      "tag": "chemmod:iron"
+      "item": "minecraft:ender_eye"
     }
   ],
   "output": [{
-    "item": "chemmod:iron",
-    "count": 1
+    "item": "chemmod:oganesson",
+    "count": 10
   }
 ]
 }

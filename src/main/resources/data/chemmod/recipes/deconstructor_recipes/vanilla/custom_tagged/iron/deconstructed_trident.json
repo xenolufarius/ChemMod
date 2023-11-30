@@ -1,0 +1,18 @@
+{
+  "type": "chemmod:deconstructor",
+
+  "ingredients": [
+    {
+      "item": "minecraft:trident"
+    }
+  ],
+  "output": [{
+    "item": "chemmod:silver",
+    "count": 15
+  },
+    {
+      "item": "chemmod:beryllium_aluminum_silicate",
+      "count": 12
+    }
+]
+}

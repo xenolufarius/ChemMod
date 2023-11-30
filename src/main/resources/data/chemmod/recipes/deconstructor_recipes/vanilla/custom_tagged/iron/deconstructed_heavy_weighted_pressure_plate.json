@@ -1,0 +1,14 @@
+{
+  "type": "chemmod:deconstructor",
+
+  "ingredients": [
+    {
+      "item": "minecraft:heavy_weighted_pressure_plate"
+    }
+  ],
+  "output": [{
+    "item": "chemmod:iron",
+    "count": 18
+  }
+]
+}

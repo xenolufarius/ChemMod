@@ -3,16 +3,16 @@
 
   "ingredients": [
     {
-      "tag": "minecraft:copper_ores"
+      "item": "minecraft:dirt_path"
     }
   ],
   "output": [{
-    "item": "chemmod:copper",
-    "count": 2
+    "item": "chemmod:cellulose",
+    "count": 1
   },
     {
       "item": "chemmod:silicon_dioxide",
-      "count": 4
+      "count": 2
     }
 ]
 }

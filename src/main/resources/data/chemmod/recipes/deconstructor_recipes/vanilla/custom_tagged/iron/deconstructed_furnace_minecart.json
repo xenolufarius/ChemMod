@@ -3,16 +3,15 @@
 
   "ingredients": [
     {
-      "tag": "minecraft:copper_ores"
+      "item": "minecraft:furnace_minecart"
     }
   ],
   "output": [{
-    "item": "chemmod:copper",
-    "count": 2
+    "item": "chemmod:iron",
+    "count": 45
   },
     {
       "item": "chemmod:silicon_dioxide",
-      "count": 4
+      "count": 32
     }
 ]
-}

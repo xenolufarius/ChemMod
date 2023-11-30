@@ -3,12 +3,12 @@
 
   "ingredients": [
     {
-      "item": "minecraft:grass"
+      "item": "minecraft:lapis_lazuli"
     }
   ],
   "output": [{
-    "item": "chemmod:cellulose",
-    "count": 2
+    "item": "chemmod:lazurite",
+    "count": 4
   }
 ]
 }
