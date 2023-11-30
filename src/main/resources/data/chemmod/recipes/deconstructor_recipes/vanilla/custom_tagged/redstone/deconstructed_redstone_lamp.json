@@ -3,16 +3,16 @@
 
   "ingredients": [
     {
-      "item": "minecraft:redstone"
+      "item": "minecraft:redstone_lamp"
     }
   ],
   "output": [{
     "item": "chemmod:silicon_dioxide",
-    "count": 2
+    "count": 16
   },
     {
       "item": "chemmod:hematite",
-      "count": 1
+      "count": 4
     }
 ]
 }

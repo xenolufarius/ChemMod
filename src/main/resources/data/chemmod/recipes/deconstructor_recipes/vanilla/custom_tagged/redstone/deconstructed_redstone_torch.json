@@ -3,7 +3,7 @@
 
   "ingredients": [
     {
-      "item": "minecraft:redstone"
+      "item": "minecraft:redstone_torch"
     }
   ],
   "output": [{

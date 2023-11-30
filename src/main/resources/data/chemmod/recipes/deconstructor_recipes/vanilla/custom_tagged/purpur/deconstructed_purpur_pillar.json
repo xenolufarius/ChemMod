@@ -1,0 +1,14 @@
+{
+  "type": "chemmod:deconstructor",
+
+  "ingredients": [
+    {
+      "item": "minecraft:purpur_pillar"
+    }
+  ],
+  "output": [{
+    "item": "chemmod:manganese_iii_phosphate",
+    "count": 4
+  }
+]
+}

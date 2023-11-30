@@ -3,12 +3,12 @@
 
   "ingredients": [
     {
-      "tag": "chemmod:purpur"
+      "item": "minecraft:purpur_stairs"
     }
   ],
   "output": [{
     "item": "chemmod:manganese_iii_phosphate",
-    "count": 4
+    "count": 6
   }
 ]
 }

@@ -3,16 +3,16 @@
 
   "ingredients": [
     {
-      "item": "minecraft:redstone"
+      "item": "minecraft:repeater"
     }
   ],
   "output": [{
     "item": "chemmod:silicon_dioxide",
-    "count": 2
+    "count": 18
   },
     {
       "item": "chemmod:hematite",
-      "count": 1
+      "count": 3
     }
 ]
 }
