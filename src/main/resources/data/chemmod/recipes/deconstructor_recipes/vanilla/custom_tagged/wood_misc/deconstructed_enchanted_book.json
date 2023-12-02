@@ -1,0 +1,18 @@
+{
+  "type": "chemmod:deconstructor",
+
+  "ingredients": [
+    {
+      "item": "minecraft:enchanted_book"
+    }
+  ],
+  "output": [{
+    "item": "chemmod:cellulose",
+    "count": 3
+  },
+    {
+      "item": "chemmod:cysteine",
+      "count": 4
+    }
+]
+}

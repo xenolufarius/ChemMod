@@ -3,11 +3,11 @@
 
   "ingredients": [
     {
-      "tag": "chemmod:wood_misc"
+      "item": "minecraft:prismarine_crystals"
     }
   ],
   "output": [{
-    "item": "chemmod:cellulose",
+    "item": "chemmod:beryllium_aluminum_silicate",
     "count": 1
   }
 ]

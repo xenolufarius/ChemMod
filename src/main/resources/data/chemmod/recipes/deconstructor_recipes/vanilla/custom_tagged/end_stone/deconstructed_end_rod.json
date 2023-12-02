@@ -1,0 +1,18 @@
+{
+  "type": "chemmod:deconstructor",
+
+  "ingredients": [
+    {
+      "item": "minecraft:end_rod"
+    }
+  ],
+  "output": [{
+    "item": "chemmod:silicon_dioxide",
+    "count": 4
+  },
+    {
+      "item": "chemmod:olivine",
+      "count": 2
+    }
+]
+}

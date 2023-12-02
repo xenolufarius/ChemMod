@@ -1,0 +1,14 @@
+{
+  "type": "chemmod:deconstructor",
+
+  "ingredients": [
+    {
+      "tag": "chemmod:lapis"
+    }
+  ],
+  "output": [{
+    "item": "chemmod:lazurite",
+    "count": 4
+  }
+]
+}

@@ -1,0 +1,14 @@
+{
+  "type": "chemmod:deconstructor",
+
+  "ingredients": [
+    {
+      "item": "minecraft:prismarine_shard"
+    }
+  ],
+  "output": [{
+    "item": "chemmod:beryllium_aluminum_silicate",
+    "count": 2
+  }
+]
+}

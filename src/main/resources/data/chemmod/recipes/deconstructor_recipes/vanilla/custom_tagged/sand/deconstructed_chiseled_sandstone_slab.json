@@ -1,0 +1,14 @@
+{
+  "type": "chemmod:deconstructor",
+
+  "ingredients": [
+    {
+      "item": "minecraft:chiseled_sandstone_slab"
+    }
+  ],
+  "output": [{
+    "item": "chemmod:silicon_dioxide",
+    "count": 4
+  }
+]
+}

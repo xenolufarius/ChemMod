@@ -3,7 +3,7 @@
 
   "ingredients": [
     {
-      "tag": "chemmod:sponge"
+      "item": "minecraft:sponge"
     }
   ],
   "output": [{

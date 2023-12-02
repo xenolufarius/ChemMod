@@ -3,12 +3,12 @@
 
   "ingredients": [
     {
-      "tag": "chemmod:wooden_weapon"
+      "item": "minecraft:gold_leggings"
     }
   ],
   "output": [{
-    "item": "chemmod:cellulose",
-    "count": 4
+    "item": "chemmod:gold",
+    "count": 63
   }
 ]
 }

@@ -3,7 +3,7 @@
 
   "ingredients": [
     {
-      "tag": "chemmod:slime"
+      "item": "minecraft:slime_ball"
     }
   ],
   "output": [{

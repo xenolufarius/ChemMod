@@ -1,0 +1,14 @@
+{
+  "type": "chemmod:deconstructor",
+
+  "ingredients": [
+    {
+      "item": "minecraft:snowball"
+    }
+  ],
+  "output": [{
+    "item": "chemmod:water",
+    "count": 8
+  }
+]
+}

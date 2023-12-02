@@ -1,0 +1,18 @@
+{
+  "type": "chemmod:deconstructor",
+
+  "ingredients": [
+    {
+      "item": "minecraft:cake"
+    }
+  ],
+  "output": [{
+    "item": "chemmod:sucrose",
+    "count": 10
+  },
+    {
+      "item": "chemmod:cellulose",
+      "count": 3
+    }
+]
+}

@@ -1,0 +1,14 @@
+{
+  "type": "chemmod:deconstructor",
+
+  "ingredients": [
+    {
+      "tag": "chemmod:stone_slab"
+    }
+  ],
+  "output": [{
+    "item": "chemmod:silicon_dioxide",
+    "count": 2
+  }
+]
+}

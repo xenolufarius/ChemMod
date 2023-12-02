@@ -1,0 +1,14 @@
+{
+  "type": "chemmod:deconstructor",
+
+  "ingredients": [
+    {
+      "item": "minecraft:gold_helmet"
+    }
+  ],
+  "output": [{
+    "item": "chemmod:gold",
+    "count": 45
+  }
+]
+}

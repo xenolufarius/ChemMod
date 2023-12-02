@@ -1,0 +1,14 @@
+{
+  "type": "chemmod:deconstructor",
+
+  "ingredients": [
+    {
+      "item": "minecraft:shulker_shell"
+    }
+  ],
+  "output": [{
+    "item": "chemmod:collagen_type_1",
+    "count": 4
+  }
+]
+}

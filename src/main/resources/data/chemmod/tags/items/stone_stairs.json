@@ -1,0 +1,30 @@
+{
+  "values": [
+    "minecraft:cobblestone_stairs",
+    "minecraft:brick_stairs",
+    "minecraft:stone_brick_stairs",
+    "minecraft:mud_brick_stairs",
+    "minecraft:nether_brick_stairs",
+    "minecraft:quartz_stairs",
+    "minecraft:polished_granite_stairs",
+    "minecraft:mossy_cobblestone_stairs",
+    "minecraft:polished_diorite_stairs",
+    "minecraft:mossy_stone_brick_stairs",
+    "minecraft:stone_stairs",
+    "minecraft:smooth_quartz_stairs",
+    "minecraft:granite_stairs",
+    "minecraft:andesite_stairs",
+    "minecraft:red_nether_bricks_stairs",
+    "minecraft:polished_andesite_stairs",
+    "minecraft:diorite_stairs",
+    "minecraft:cobbled_deepslate_stairs",
+    "minecraft:polished_deepslate_stairs",
+    "minecraft:deepslate_brick_stairs",
+    "minecraft:deepslate_tile_stairs",
+    "minecraft:blackstone_stairs",
+    "minecraft:polished_blackstone_stairs",
+    "minecraft:polished_blackstone_brick_stairs"
+  ]
+
+
+}

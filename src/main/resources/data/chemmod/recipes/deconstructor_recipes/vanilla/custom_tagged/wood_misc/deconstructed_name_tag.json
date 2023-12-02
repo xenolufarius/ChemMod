@@ -1,0 +1,14 @@
+{
+  "type": "chemmod:deconstructor",
+
+  "ingredients": [
+    {
+      "item": "minecraft:name_tag"
+    }
+  ],
+  "output": [{
+    "item": "chemmod:cellulose",
+    "count": 3
+  }
+]
+}

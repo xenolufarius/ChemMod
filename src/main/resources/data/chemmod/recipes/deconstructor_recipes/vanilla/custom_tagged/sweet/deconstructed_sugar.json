@@ -1,0 +1,14 @@
+{
+  "type": "chemmod:deconstructor",
+
+  "ingredients": [
+    {
+      "item": "minecraft:sugar"
+    }
+  ],
+  "output": [{
+    "item": "chemmod:sucrose",
+    "count": 4
+  }
+]
+}

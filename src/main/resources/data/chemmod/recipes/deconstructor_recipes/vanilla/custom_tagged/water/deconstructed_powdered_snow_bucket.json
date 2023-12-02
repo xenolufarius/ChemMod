@@ -1,0 +1,18 @@
+{
+  "type": "chemmod:deconstructor",
+
+  "ingredients": [
+    {
+      "item": "minecraft:powdered_snow_bucket"
+    }
+  ],
+  "output": [{
+    "item": "chemmod:water",
+    "count": 20
+  },
+    {
+      "item": "chemmod:iron",
+      "count": 27
+    }
+]
+}

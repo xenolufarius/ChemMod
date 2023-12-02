@@ -1,0 +1,14 @@
+{
+  "type": "chemmod:deconstructor",
+
+  "ingredients": [
+    {
+      "item": "minecraft:smooth_sandstone"
+    }
+  ],
+  "output": [{
+    "item": "chemmod:silicon_dioxide",
+    "count": 8
+  }
+]
+}

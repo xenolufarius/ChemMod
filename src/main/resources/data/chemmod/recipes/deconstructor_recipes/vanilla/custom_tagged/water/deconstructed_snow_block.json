@@ -1,0 +1,14 @@
+{
+  "type": "chemmod:deconstructor",
+
+  "ingredients": [
+    {
+      "item": "minecraft:snow_block"
+    }
+  ],
+  "output": [{
+    "item": "chemmod:water",
+    "count": 32
+  }
+]
+}

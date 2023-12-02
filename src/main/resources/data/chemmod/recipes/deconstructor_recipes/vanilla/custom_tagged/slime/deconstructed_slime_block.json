@@ -1,0 +1,18 @@
+{
+  "type": "chemmod:deconstructor",
+
+  "ingredients": [
+    {
+      "item": "minecraft:slime_block"
+    }
+  ],
+  "output": [{
+    "item": "chemmod:polyvinyl_alcohol",
+    "count": 9
+  },
+    {
+      "item": "chemmod:sodium_tetraborate",
+      "count": 18
+    }
+]
+}

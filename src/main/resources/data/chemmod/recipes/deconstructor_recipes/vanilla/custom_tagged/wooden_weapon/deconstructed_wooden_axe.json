@@ -1,0 +1,14 @@
+{
+  "type": "chemmod:deconstructor",
+
+  "ingredients": [
+    {
+      "item": "minecraft:wooden_axe"
+    }
+  ],
+  "output": [{
+    "item": "chemmod:cellulose",
+    "count": 8
+  }
+]
+}

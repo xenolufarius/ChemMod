@@ -3,12 +3,12 @@
 
   "ingredients": [
     {
-      "tag": "chemmod:torch"
+      "item": "minecraft:torch"
     }
   ],
   "output": [{
     "item": "chemmod:carbon",
-    "count": 2
+    "count": 1
   },
     {
       "item": "chemmod:cellulose",

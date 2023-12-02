@@ -1,0 +1,14 @@
+{
+  "type": "chemmod:deconstructor",
+
+  "ingredients": [
+    {
+      "tag": "chemmod:magic"
+    }
+  ],
+  "output": [{
+    "item": "chemmod:oganesson",
+    "count": 10
+  }
+]
+}

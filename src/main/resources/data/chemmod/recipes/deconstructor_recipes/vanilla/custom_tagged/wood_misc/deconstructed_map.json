@@ -1,0 +1,14 @@
+{
+  "type": "chemmod:deconstructor",
+
+  "ingredients": [
+    {
+      "item": "minecraft:map"
+    }
+  ],
+  "output": [{
+    "item": "chemmod:cellulose",
+    "count": 4
+  }
+]
+}

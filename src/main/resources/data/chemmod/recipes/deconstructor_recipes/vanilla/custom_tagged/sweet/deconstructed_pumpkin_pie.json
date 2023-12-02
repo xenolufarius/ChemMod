@@ -3,12 +3,16 @@
 
   "ingredients": [
     {
-      "tag": "chemmod:sweet"
+      "item": "minecraft:pumpkin_pie"
     }
   ],
   "output": [{
     "item": "chemmod:sucrose",
-    "count": 2
-  }
+    "count": 10
+  },
+    {
+      "item": "chemmod:cellulose",
+      "count": 3
+    }
 ]
 }

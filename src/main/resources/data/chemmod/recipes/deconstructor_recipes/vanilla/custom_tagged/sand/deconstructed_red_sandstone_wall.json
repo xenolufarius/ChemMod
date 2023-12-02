@@ -1,0 +1,14 @@
+{
+  "type": "chemmod:deconstructor",
+
+  "ingredients": [
+    {
+      "item": "minecraft:red_sandstone_wall"
+    }
+  ],
+  "output": [{
+    "item": "chemmod:silicon_dioxide",
+    "count": 8
+  }
+]
+}

@@ -1,0 +1,18 @@
+{
+  "type": "chemmod:deconstructor",
+
+  "ingredients": [
+    {
+      "item": "minecraft:turtle_helmet"
+    }
+  ],
+  "output": [{
+    "item": "chemmod:cysteine",
+    "count": 20
+  },
+    {
+      "item": "chemmod:alanine",
+      "count": 20
+    }
+]
+}

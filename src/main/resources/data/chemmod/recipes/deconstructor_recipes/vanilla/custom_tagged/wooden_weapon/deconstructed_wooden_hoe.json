@@ -3,12 +3,12 @@
 
   "ingredients": [
     {
-      "tag": "chemmod:water"
+      "item": "minecraft:wooden_hoe"
     }
   ],
   "output": [{
-    "item": "chemmod:water",
-    "count": 32
+    "item": "chemmod:cellulose",
+    "count": 6
   }
 ]
 }

@@ -1,0 +1,18 @@
+{
+  "type": "chemmod:deconstructor",
+
+  "ingredients": [
+    {
+      "item": "minecraft:torch"
+    }
+  ],
+  "output": [{
+    "item": "chemmod:carbon",
+    "count": 1
+  },
+    {
+      "item": "chemmod:iron",
+      "count": 8
+    }
+]
+}

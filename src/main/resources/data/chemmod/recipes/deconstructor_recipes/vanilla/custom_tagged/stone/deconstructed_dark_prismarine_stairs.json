@@ -1,0 +1,19 @@
+
+{
+  "type": "chemmod:deconstructor",
+
+  "ingredients": [
+    {
+      "item": "minecraft:dark_prismarine_stairs"
+    }
+  ],
+  "output": [{
+    "item": "chemmod:beryllium_aluminum_silicate",
+    "count": 24
+  },
+    {
+      "item": "chemmod:eumelanin",
+      "count": 3
+    }
+]
+}

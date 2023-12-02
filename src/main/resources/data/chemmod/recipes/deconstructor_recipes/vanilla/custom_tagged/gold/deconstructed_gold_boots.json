@@ -1,0 +1,14 @@
+{
+  "type": "chemmod:deconstructor",
+
+  "ingredients": [
+    {
+      "item": "minecraft:gold_boots"
+    }
+  ],
+  "output": [{
+    "item": "chemmod:gold",
+    "count": 36
+  }
+]
+}

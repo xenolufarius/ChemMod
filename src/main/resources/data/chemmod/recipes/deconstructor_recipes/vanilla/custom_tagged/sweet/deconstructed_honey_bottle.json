@@ -1,0 +1,18 @@
+{
+  "type": "chemmod:deconstructor",
+
+  "ingredients": [
+    {
+      "item": "minecraft:honey_bottle"
+    }
+  ],
+  "output": [{
+    "item": "chemmod:fructose",
+    "count": 4
+  },
+    {
+      "item": "chemmod:glucose",
+      "count": 4
+    }
+]
+}

@@ -1,0 +1,14 @@
+{
+  "type": "chemmod:deconstructor",
+
+  "ingredients": [
+    {
+      "item": "minecraft:blue_ice"
+    }
+  ],
+  "output": [{
+    "item": "chemmod:water",
+    "count": 32
+  }
+]
+}

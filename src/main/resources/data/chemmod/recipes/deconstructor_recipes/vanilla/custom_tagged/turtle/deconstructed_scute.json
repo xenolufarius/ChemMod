@@ -1,0 +1,18 @@
+{
+  "type": "chemmod:deconstructor",
+
+  "ingredients": [
+    {
+      "item": "minecraft:scute"
+    }
+  ],
+  "output": [{
+    "item": "chemmod:cysteine",
+    "count": 4
+  },
+    {
+      "item": "chemmod:alanine",
+      "count": 4
+    }
+]
+}

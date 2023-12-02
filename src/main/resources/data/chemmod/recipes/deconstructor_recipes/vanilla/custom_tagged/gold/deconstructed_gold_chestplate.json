@@ -1,0 +1,18 @@
+{
+  "type": "chemmod:deconstructor",
+
+  "ingredients": [
+    {
+      "item": "minecraft:gold_chestplate"
+    }
+  ],
+  "output": [{
+    "item": "chemmod:gold",
+    "count": 64
+  },
+    {
+      "item": "chemmod:gold",
+      "count": 8
+    }
+  ]
+}

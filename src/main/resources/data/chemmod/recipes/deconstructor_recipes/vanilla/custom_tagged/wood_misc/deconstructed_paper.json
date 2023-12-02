@@ -1,0 +1,14 @@
+{
+  "type": "chemmod:deconstructor",
+
+  "ingredients": [
+    {
+      "item": "minecraft:paper"
+    }
+  ],
+  "output": [{
+    "item": "chemmod:cellulose",
+    "count": 1
+  }
+]
+}

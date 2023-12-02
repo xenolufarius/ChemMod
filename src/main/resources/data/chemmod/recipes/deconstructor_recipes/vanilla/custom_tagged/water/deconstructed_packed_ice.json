@@ -1,0 +1,14 @@
+{
+  "type": "chemmod:deconstructor",
+
+  "ingredients": [
+    {
+      "item": "minecraft:packed_ice"
+    }
+  ],
+  "output": [{
+    "item": "chemmod:water",
+    "count": 48
+  }
+]
+}

@@ -1,0 +1,15 @@
+
+{
+  "type": "chemmod:deconstructor",
+
+  "ingredients": [
+    {
+      "item": "minecraft:prismarine_bricks"
+    }
+  ],
+  "output": [{
+    "item": "chemmod:beryllium_aluminum_silicate",
+    "count": 18
+  }
+]
+}

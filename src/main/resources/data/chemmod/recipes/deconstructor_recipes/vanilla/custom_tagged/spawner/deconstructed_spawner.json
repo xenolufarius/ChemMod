@@ -8,7 +8,11 @@
   ],
   "output": [{
     "item": "chemmod:iron",
-    "count": 6
-  }
+    "count": 32
+  },
+    {
+      "item": "chemmod:carbon",
+      "count": 32
+    }
 ]
 }

@@ -1,0 +1,18 @@
+{
+  "type": "chemmod:deconstructor",
+
+  "ingredients": [
+    {
+      "item": "minecraft:cookie"
+    }
+  ],
+  "output": [{
+    "item": "chemmod:sucrose",
+    "count": 1
+  },
+    {
+      "item": "chemmod:theobromine",
+      "count": 1
+    }
+]
+}

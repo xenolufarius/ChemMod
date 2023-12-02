@@ -1,0 +1,18 @@
+{
+  "type": "chemmod:deconstructor",
+
+  "ingredients": [
+    {
+      "item": "minecraft:piston"
+    }
+  ],
+  "output": [{
+    "item": "chemmod:iron",
+    "count": 2
+  },
+    {
+      "item": "chemmod:cellulose",
+      "count": 2
+    }
+]
+}

@@ -1512,6 +1512,10 @@ public class ModItems {
     public static final RegistryObject<Item> COPPER_II_CARBONATE_HYDROXIDE = Items.register( "copper_ii_carbonate_hydroxide",
             () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),221.11,"Cu2CO3(OH)2",0,4,"\nDesc: ",""));
 
+    //Drugs
+    public static final RegistryObject<Item> THEOBROMINE = Items.register( "theobromine",
+            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),180.17,"C7H8N4O2",0,4,"\nDesc: ",""));
+
 
 
 

@@ -1,0 +1,18 @@
+{
+  "type": "chemmod:deconstructor",
+
+  "ingredients": [
+    {
+      "item": "minecraft:crossbow"
+    }
+  ],
+  "output": [{
+    "item": "chemmod:cellulose",
+    "count": 4
+  },
+    {
+      "item": "chemmod:glycine",
+      "count": 12
+    }
+]
+}

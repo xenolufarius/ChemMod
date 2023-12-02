@@ -1,0 +1,14 @@
+{
+  "type": "chemmod:deconstructor",
+
+  "ingredients": [
+    {
+      "tag": "chemmod:grain"
+    }
+  ],
+  "output": [{
+    "item": "chemmod:cellulose",
+    "count": 2
+  }
+]
+}

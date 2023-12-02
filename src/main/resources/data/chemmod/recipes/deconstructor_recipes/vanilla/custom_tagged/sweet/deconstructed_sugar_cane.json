@@ -3,15 +3,15 @@
 
   "ingredients": [
     {
-      "tag": "chemmod:turtle"
+      "item": "minecraft:sugar_cane"
     }
   ],
   "output": [{
-    "item": "chemmod:cysteine",
+    "item": "chemmod:sucrose",
     "count": 4
   },
     {
-      "item": "chemmod:alanine",
+      "item": "chemmod:cellulose",
       "count": 4
     }
 ]
