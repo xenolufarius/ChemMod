@@ -15,6 +15,7 @@ import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.inventory.AbstractContainerMenu;
 import net.minecraft.world.inventory.ContainerData;
 import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.crafting.Ingredient;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.entity.BlockEntity;
 import net.minecraft.world.level.block.state.BlockState;
@@ -160,6 +161,8 @@ public class DeconstructorBlockEntity extends BlockEntity implements MenuProvide
 
         if (hasRecipe(pEntity)) {
             recipe.ifPresent(deconstructorBlockRecipe -> {
+                NonNullList<Ingredient> inputs = deconstructorBlockRecipe.getIngredients();
+
                 NonNullList<ItemStack> outputs = deconstructorBlockRecipe.getOutput();
                 if(pEntity.itemHandler.getStackInSlot(2).getMaxStackSize()+1 > pEntity.itemHandler.getStackInSlot(2).getCount() + outputs.get(0).getCount() || (outputs.size()>1 && pEntity.itemHandler.getStackInSlot(3).getMaxStackSize() > pEntity.itemHandler.getStackInSlot(3).getCount() + outputs.get(1).getCount())) {
                     //Comment for slot 0

@@ -266,6 +266,8 @@ public class ModEvents {
 
                 }
             });
+
+
         }
     }
 
@@ -301,6 +303,10 @@ public class ModEvents {
                         event.player.hurt(DamageSource.WITHER, 30);
                     }
                 }
+                //TODO: This is where stability code is ran
+                if (event.player.tickCount % 200 == 0) {
+                    itemStabilityDetectedInInventory(event.player);
+                }
             });
         }
     }
@@ -332,10 +338,24 @@ public class ModEvents {
 
     //detecting stability of items in player inventory.
     //Just copied over rad code. Need to adjust.
-    public static void itemStabilityDetectedInInventory(TickEvent.PlayerTickEvent event)
+    //TickEvent.PlayerTickEvent event
+    public static void itemStabilityDetectedInInventory(Player player)
     {
-        for(ItemStack stack : event.player.inventoryMenu.getItems())
+        for(ItemStack stack : player.inventoryMenu.getItems())
         {
+            int slot = 0;
+            for(ItemStack stack1 : player.getInventory().items)
+            {
+                if (!stack.equals(stack1))
+                {
+                    slot++;
+
+                }
+                if(stack.equals(stack1))
+                {
+                    break;
+                }
+            }
             if(!stack.isEmpty() && stack.getItem().getClass() == ChemicalItem.class)
             {
                 ChemicalItem chemicalItem = (ChemicalItem) stack.getItem();
@@ -347,12 +367,24 @@ public class ModEvents {
                     if(chemicalItem.getcSTAB() == 0)
                     {
                         stack = new ItemStack((Item)null);
+                        player.getInventory().items.set(slot,stack);
+
                         //Need to send this back to Player inventory
                     }
                     if(chemicalItem.getcSTAB() == 1 || chemicalItem.getcSTAB() == 2)
                     {
                         //Craft the item into oxidized version
                         //Need to send this back to Player
+                        if(chemicalItem.equals(ModItems.RUBIDIUM))
+                        {
+                            int count = stack.getCount();
+                            stack = new ItemStack(ModItems.RUBIDIUM_OXIDE.get());
+                            if(stack.getCount()<count)
+                            {
+                                stack.grow(4);
+                            }
+                        }
+                        player.getInventory().items.set(slot,stack);
                     }
                 }
             }
