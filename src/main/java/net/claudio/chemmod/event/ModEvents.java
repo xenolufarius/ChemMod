@@ -373,17 +373,61 @@ public class ModEvents {
                     }
                     if(chemicalItem.getcSTAB() == 1 || chemicalItem.getcSTAB() == 2)
                     {
-                        //Craft the item into oxidized version
+                        //Craft the item into oxidized version / polyatoms from monoatoms
                         //Need to send this back to Player
-                        if(chemicalItem.equals(ModItems.RUBIDIUM))
+                        if(chemicalItem.equals(ModItems.HYDROGEN.get()))
                         {
                             int count = stack.getCount();
-                            stack = new ItemStack(ModItems.RUBIDIUM_OXIDE.get());
-                            if(stack.getCount()<count)
-                            {
-                                stack.grow(4);
-                            }
+                            stack = new ItemStack(ModItems.HYDROGEN_GAS.get().asItem(), count/2);
                         }
+                        if(chemicalItem.equals(ModItems.NITROGEN.get()))
+                        {
+                            int count = stack.getCount();
+                            stack = new ItemStack(ModItems.NITROGEN_GAS.get().asItem(), count/2);
+                        }
+                        if(chemicalItem.equals(ModItems.OXYGEN.get()))
+                        {
+                            int count = stack.getCount();
+                            stack = new ItemStack(ModItems.OXYGEN_GAS.get().asItem(), count/2);
+                        }
+                        if(chemicalItem.equals(ModItems.FLUORINE.get()))
+                        {
+                            int count = stack.getCount();
+                            stack = new ItemStack(ModItems.FLUORINE_GAS.get().asItem(), count/2);
+                        }
+                        if(chemicalItem.equals(ModItems.PHOSPHORUS.get()))
+                        {
+                            int count = stack.getCount();
+                            stack = new ItemStack(ModItems.WHITE_PHOSPHORUS.get().asItem(), count/4);
+                        }
+                        if(chemicalItem.equals(ModItems.SULFUR.get()))
+                        {
+                            int count = stack.getCount();
+                            stack = new ItemStack(ModItems.OCTASULFUR.get().asItem(), count/8);
+                        }
+                        if(chemicalItem.equals(ModItems.CHLORINE.get()))
+                        {
+                            int count = stack.getCount();
+                            stack = new ItemStack(ModItems.CHLORINE_GAS.get().asItem(), count/2);
+                        }
+                        if(chemicalItem.equals(ModItems.BROMINE.get()))
+                        {
+                            int count = stack.getCount();
+                            stack = new ItemStack(ModItems.BROMINE_GAS.get().asItem(), count/2);
+                        }
+                        if(chemicalItem.equals(ModItems.IODINE.get()))
+                        {
+                            int count = stack.getCount();
+                            stack = new ItemStack(ModItems.IODINE_GAS.get().asItem(), count/2);
+                        }
+
+                        //oxides
+                        if(chemicalItem.equals(ModItems.RUBIDIUM.get()))
+                        {
+                            int count = stack.getCount();
+                            stack = new ItemStack(ModItems.RUBIDIUM_OXIDE.get().asItem(), count);
+                        }
+
                         player.getInventory().items.set(slot,stack);
                     }
                 }

@@ -41,9 +41,11 @@ public class ModItems {
     //TODO: Solve mob effects for food consumption. Solved kinda. Need to give all food properties now. Done
     //TODO: Maybe Change FOOD param to be more flexible and include SDS pictograms. Done
     //TODO: Update SDS to reflect new system Done
-    //TODO: Recipes, STAB, Villagers (Mostly done. Need to refine later), PNG files (DONE)
+    //TODO: Recipes (DONE) MOSTLY, STAB (DONE), Villagers (Mostly done. Need to refine later), PNG files (DONE)
     //.food(new FoodProperties.Builder().nutrition(1).effect(new MobEffectInstance(MobEffects.WITHER,600,7),1f).build())
     public static final RegistryObject<Item> HYDROGEN = Items.register( "hydrogen",
+            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()), 1.01, "H", 0, 1, "\nDesc: Hydrogen is most commonly found as a diatomic gas as H2 (g). It is unstable in its monoatomic state.","T"));
+    public static final RegistryObject<Item> HYDROGEN_GAS = Items.register( "hydrogen_gas",
             () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()), 2.02, "H2", 0, 4, "\nDesc: Hydrogen is most commonly found as a diatomic gas as H2 (g). It is commonly referred to as Hydrogen Gas.","T"));
     public static final RegistryObject<Item> HELIUM = Items.register( "helium",
             () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()), 4.00, "He", 0, 4, "\nDesc: Helium is the first of the noble gases, and is commonly found involved in the fusion reactions in the Sun.","T"));
@@ -56,10 +58,16 @@ public class ModItems {
     public static final RegistryObject<Item> CARBON = Items.register( "carbon",
             () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()), 12.01, "C", 0, 4, "\nDesc: Carbon is a versatile element that forms the basis of organic chemistry. It exists in various forms, including diamond and graphite.","T"));
     public static final RegistryObject<Item> NITROGEN = Items.register( "nitrogen",
+            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()), 14.01, "N", 0, 1, "\nDesc: Nitrogen is a diatomic gas (N2) and an essential element for life. It is unstable in its monoatomic state.","T"));
+    public static final RegistryObject<Item> NITROGEN_GAS = Items.register( "nitrogen_gas",
             () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()), 28.02, "N2", 0, 4, "\nDesc: Nitrogen is a diatomic gas (N2) and an essential element for life. It makes up a significant portion of Earth's atmosphere.","T"));
     public static final RegistryObject<Item> OXYGEN = Items.register( "oxygen",
+            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()), 16.00, "O", 0, 1, "\nDesc: Oxygen is a diatomic gas (O2) essential for respiration and combustion. It is unstable in its monoatomic state.","T"));
+    public static final RegistryObject<Item> OXYGEN_GAS = Items.register( "oxygen_gas",
             () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()), 32.00, "O2", 0, 4, "\nDesc: Oxygen is a diatomic gas (O2) essential for respiration and combustion. It's the most abundant element in the Earth's crust.","T"));
     public static final RegistryObject<Item> FLUORINE = Items.register( "fluorine",
+            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()), 19.00, "F", 0, 1, "\nDesc: Fluorine is a highly reactive diatomic gas (F2) known for its strong oxidizing properties. It is unstable in its monoatomic state.","T"));
+    public static final RegistryObject<Item> FLUORINE_GAS = Items.register( "fluorine_gas",
             () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()), 38.00, "F2", 0, 1, "\nDesc: Fluorine is a highly reactive diatomic gas (F2) known for its strong oxidizing properties. It's used in various industrial applications.","T"));
     public static final RegistryObject<Item> NEON = Items.register( "neon",
             () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()), 20.18, "Ne", 0, 4, "\nDesc: Neon is a noble gas known for its bright and colorful light emission in neon signs. It's chemically inert and non-reactive.","T"));
@@ -72,10 +80,16 @@ public class ModItems {
     public static final RegistryObject<Item> SILICON = Items.register( "silicon",
             () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()), 28.09, "Si", 0, 4, "\nDesc: Silicon is a fundamental element in semiconductors and electronics. It's also a major component of Earth's crust and is used in various materials.","T"));
     public static final RegistryObject<Item> PHOSPHORUS = Items.register( "phosphorus",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()), 123.90, "P4", 0, 4, "\nDesc: Phosphorus is an essential element for life, found in DNA, RNA, and ATP. It's used in various industries, including fertilizers and detergents.","T"));
+            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()), 30.97, "P", 0, 1, "\nDesc: Phosphorus is an essential element for life, found in DNA, RNA, and ATP. It is often found as white phosphorous as a cluster of 4 atoms in a tetrahedral orientation. It is unstable in its monoatomic state.","T"));
+    public static final RegistryObject<Item> WHITE_PHOSPHORUS = Items.register( "white_phosphorus",
+            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()), 123.90, "P4", 0, 4, "\nDesc: White Phosphorus is the most common stable form of Phosphorus found on Earth. Phosphorus is an essential element for life, found in DNA, RNA, and ATP. It's used in various industries, including fertilizers and detergents.","T"));
     public static final RegistryObject<Item> SULFUR = Items.register( "sulfur",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()), 256.52, "S8", 0, 4, "\nDesc: Sulfur is a non-metal essential for life and used in various industrial processes, including the production of sulfuric acid.","T"));
+            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()), 32.07, "S", 0, 1, "\nDesc: Sulfur is a non-metal essential for life and used in various industrial processes. It often forms rings of 8, known as octasulfur. It is unstable in its monoatomic state.","T"));
+    public static final RegistryObject<Item> OCTASULFUR = Items.register( "octasulfur",
+            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()), 256.52, "S8", 0, 4, "\nDesc: Octasulfur is the most common stable form of sulfur. Sulfur is a non-metal essential for life and used in various industrial processes, including the production of sulfuric acid.","T"));
     public static final RegistryObject<Item> CHLORINE = Items.register( "chlorine",
+            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()), 35.45, "Cl", 0, 1, "\nDesc: Chlorine is a highly reactive diatomic element used in disinfectants, plastics, and as a component of table salt (sodium chloride). It is unstable in its monoatomic state.","T"));
+    public static final RegistryObject<Item> CHLORINE_GAS = Items.register( "chlorine_gas",
             () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()), 70.90, "Cl2", 0, 4, "\nDesc: Chlorine is a highly reactive diatomic element used in disinfectants, plastics, and as a component of table salt (sodium chloride).","T"));
     public static final RegistryObject<Item> ARGON = Items.register( "argon",
             () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()), 39.95, "Ar", 0, 4, "\nDesc: Argon is a noble gas known for its inertness. It's used in various applications, including welding and lighting.","T"));
@@ -112,6 +126,8 @@ public class ModItems {
     public static final RegistryObject<Item> SELENIUM = Items.register( "selenium",
             () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()), 78.97, "Se", 0, 4, "\nDesc: Selenium is used in electronics and as a dietary supplement.","T"));
     public static final RegistryObject<Item> BROMINE = Items.register( "bromine",
+            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()), 79.90, "Br", 0, 1, "\nDesc: Bromine is a reddish-brown liquid at room temperature and is used in flame retardants. It is unstable in its monoatomic state.","T"));
+    public static final RegistryObject<Item> BROMINE_GAS = Items.register( "bromine_gas",
             () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()), 159.80, "Br2", 0, 4, "\nDesc: Bromine is a reddish-brown liquid at room temperature and is used in flame retardants.","T"));
     public static final RegistryObject<Item> KRYPTON = Items.register( "krypton",
             () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()), 83.80, "Kr", 0, 4, "\nDesc: Krypton is a noble gas used in lighting and lasers.","T"));
@@ -148,6 +164,8 @@ public class ModItems {
     public static final RegistryObject<Item> TELLURIUM = Items.register( "tellurium",
             () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()), 127.60, "Te", 0, 4, "\nDesc: Tellurium is used in solar panels and alloys.","T"));
     public static final RegistryObject<Item> IODINE = Items.register( "iodine",
+            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()), 126.90, "I", 0, 1, "\nDesc: Iodine is commonly used in medicine, particularly in the form of iodine solutions for disinfection. It is unstable in its monoatomic state.","T"));
+    public static final RegistryObject<Item> IODINE_GAS = Items.register( "iodine_gas",
             () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()), 253.80, "I2", 0, 4, "\nDesc: Iodine is commonly used in medicine, particularly in the form of iodine solutions for disinfection.","T"));
     public static final RegistryObject<Item> XENON = Items.register( "xenon",
             () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()), 131.29, "Xe", 0, 4, "\nDesc: Xenon is employed in various applications, including lighting and anesthesia.","T"));
