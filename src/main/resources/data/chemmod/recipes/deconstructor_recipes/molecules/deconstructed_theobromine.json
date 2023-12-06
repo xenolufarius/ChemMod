@@ -1,0 +1,19 @@
+{
+  "type": "chemmod:deconstructor",
+
+  "ingredients": [
+    {
+      "item": "chemmod:theobromine"
+    }
+  ],
+  "output":[ {
+    "item": "chemmod:nitrogen",
+    "count": 4
+  },
+    {
+      "item": "chemmod:oxygen",
+      "count": 2
+    }
+  ]
+
+}

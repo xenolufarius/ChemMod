@@ -3,15 +3,15 @@
 
   "ingredients": [
     {
-      "item": "chemmod:carbonic_acid_dil"
+      "item": "chemmod:sodium_hydrosulfide"
     }
   ],
   "output":[ {
-    "item": "chemmod:carbon_dioxide",
+    "item": "chemmod:sodium",
     "count": 1
   },
     {
-      "item": "chemmod:hydrogen",
+      "item": "chemmod:sulfur",
       "count": 1
     }
   ]

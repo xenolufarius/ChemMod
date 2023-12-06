@@ -209,8 +209,8 @@ public class ModEvents {
             Int2ObjectMap<List<VillagerTrades.ItemListing>> trades = event.getTrades();
 
             //For Result Items
-            ItemStack deconstructor_block = new ItemStack(ModBlocks.DECONSTRUCTOR_BLOCK.get(), 1);
-            ItemStack hydrogen_gas = new ItemStack(ModItems.HYDROGEN_GAS.get(), 8);
+            ItemStack octasulfur = new ItemStack(ModItems.OCTASULFUR.get(), 1);
+            ItemStack white_phosphorus = new ItemStack(ModItems.WHITE_PHOSPHORUS.get(), 2);
             ItemStack oxygen_gas = new ItemStack(ModItems.OXYGEN_GAS.get(), 2);
             ItemStack methane = new ItemStack(ModItems.METHANE.get(),1);
             ItemStack ethane = new ItemStack(ModItems.ETHANE.get(),1);
@@ -230,12 +230,12 @@ public class ModEvents {
             //I guess can only have 2 trades at this level at a given time? Can I adjust this?
             //Don't know but adding numbers = higher level of villager
             trades.get(villagerlevel).add((trader, rand) -> new MerchantOffer(
-                    new ItemStack(Items.EMERALD, 1),
-                    hydrogen_gas, 6, 1, 0.02F));
+                    new ItemStack(Items.FEATHER, 4),
+                    octasulfur, 4, 2, 0.02F));
 
             trades.get(villagerlevel).add((trader, rand) -> new MerchantOffer(
-                    new ItemStack(Items.EMERALD, 1),
-                    oxygen_gas, 6, 1, 0.02F));
+                    new ItemStack(ModItems.SULFUR_DIOXIDE.get(), 2),
+                    white_phosphorus, 4, 1, 0.02F));
 
             //Apprentice ~64xp
             trades.get(villagerlevel+1).add((trader, rand) -> new MerchantOffer(
@@ -246,6 +246,7 @@ public class ModEvents {
             trades.get(villagerlevel+1).add((trader, rand) -> new MerchantOffer(
                     new ItemStack(ModItems.WATER.get(), 4),
                     ethane, 3, 8, 0.02F));
+
 
             //Journeyman ~80xp
             trades.get(villagerlevel+2).add((trader, rand) -> new MerchantOffer(
@@ -266,7 +267,7 @@ public class ModEvents {
             //Master
             trades.get(villagerlevel+4).add((trader, rand) -> new MerchantOffer(
                     new ItemStack(ModItems.SODIUM_CARBONATE.get(), 5),
-                    deconstructor_block, 1, 20, 0.02F));
+                    water, 1, 20, 0.02F));
         }
         if(event.getType() == ModVillagers.ALCHEMIST_3.get())
         {

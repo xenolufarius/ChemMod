@@ -1,0 +1,19 @@
+{
+  "type": "chemmod:deconstructor",
+
+  "ingredients": [
+    {
+      "item": "chemmod:1_2_dichloroethane"
+    }
+  ],
+  "output":[ {
+    "item": "chemmod:ethane",
+    "count": 1
+  },
+    {
+      "item": "chemmod:chlorine",
+      "count": 2
+    }
+  ]
+
+}

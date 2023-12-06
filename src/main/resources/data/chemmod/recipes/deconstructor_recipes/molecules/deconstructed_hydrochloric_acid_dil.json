@@ -3,11 +3,11 @@
 
   "ingredients": [
     {
-      "item": "chemmod:carbonic_acid_dil"
+      "item": "chemmod:hydrochloric_acid_dil"
     }
   ],
   "output":[ {
-    "item": "chemmod:carbon_dioxide",
+    "item": "chemmod:chlorine",
     "count": 1
   },
     {

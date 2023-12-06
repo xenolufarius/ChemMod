@@ -3,15 +3,15 @@
 
   "ingredients": [
     {
-      "item": "chemmod:carbonic_acid_dil"
+      "item": "chemmod:nitric_oxide"
     }
   ],
   "output":[ {
-    "item": "chemmod:carbon_dioxide",
+    "item": "chemmod:nitrogen",
     "count": 1
   },
     {
-      "item": "chemmod:hydrogen",
+      "item": "chemmod:oxygen",
       "count": 1
     }
   ]

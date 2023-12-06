@@ -1,0 +1,19 @@
+{
+  "type": "chemmod:deconstructor",
+
+  "ingredients": [
+    {
+      "item": "chemmod:sulfur_dioxide"
+    }
+  ],
+  "output":[ {
+    "item": "chemmod:sulfur",
+    "count": 1
+  },
+    {
+      "item": "chemmod:oxygen",
+      "count": 2
+    }
+  ]
+
+}

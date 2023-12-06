@@ -1,0 +1,19 @@
+{
+  "type": "chemmod:deconstructor",
+
+  "ingredients": [
+    {
+      "item": "chemmod:nitric_acid_dil"
+    }
+  ],
+  "output":[ {
+    "item": "chemmod:nitrogen",
+    "count": 1
+  },
+    {
+      "item": "chemmod:oxygen",
+      "count": 3
+    }
+  ]
+
+}
