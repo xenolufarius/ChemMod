@@ -3,16 +3,16 @@
 
   "ingredients": [
     {
-      "item": "chemmod:hydrogen"
+      "item": "chemmod:hydrogen_gas"
     },
     {
-      "item": "chemmod:hydrogen"
+      "item": "chemmod:hydrogen_gas"
     },
     {
-      "item": "chemmod:hydrogen"
+      "item": "chemmod:hydrogen_gas"
     },
     {
-      "item": "chemmod:nitrogen"
+      "item": "chemmod:nitrogen_gas"
     }
   ],
   "result": {

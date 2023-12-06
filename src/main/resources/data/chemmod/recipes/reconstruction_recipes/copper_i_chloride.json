@@ -6,12 +6,15 @@
       "item": "chemmod:copper"
     },
     {
-      "item": "chemmod:chlorine"
+      "item": "chemmod:copper"
+    },
+    {
+      "item": "chemmod:chlorine_gas"
     }
   ],
   "result": {
     "item": "chemmod:copper_i_chloride",
-    "count": 1
+    "count": 2
   }
 
 }

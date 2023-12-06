@@ -146,8 +146,8 @@ public class ModEvents {
 
             //For Result Items
             ItemStack deconstructor_block = new ItemStack(ModBlocks.DECONSTRUCTOR_BLOCK.get(), 1);
-            ItemStack hydrogen_gas = new ItemStack(ModItems.HYDROGEN.get(), 8);
-            ItemStack oxygen_gas = new ItemStack(ModItems.OXYGEN.get(), 2);
+            ItemStack hydrogen_gas = new ItemStack(ModItems.HYDROGEN_GAS.get(), 8);
+            ItemStack oxygen_gas = new ItemStack(ModItems.OXYGEN_GAS.get(), 2);
             ItemStack methane = new ItemStack(ModItems.METHANE.get(),1);
             ItemStack ethane = new ItemStack(ModItems.ETHANE.get(),1);
             ItemStack propane = new ItemStack(ModItems.PROPANE.get(),1);
@@ -155,7 +155,7 @@ public class ModEvents {
             ItemStack sodium_chloride = new ItemStack(ModItems.SODIUM_CHLORIDE.get(),2);
             ItemStack water = new ItemStack(ModItems.WATER.get(),5);
             ItemStack sodium_carbonate = new ItemStack(ModItems.SODIUM_CARBONATE.get(),1);
-            ItemStack nitrogen_gas = new ItemStack(ModItems.NITROGEN.get(),3);
+            ItemStack nitrogen_gas = new ItemStack(ModItems.NITROGEN_GAS.get(),3);
             ItemStack uranium = new ItemStack(ModItems.URANIUM.get(), 1);
             ItemStack nether_star = new ItemStack(Items.NETHER_STAR.asItem(), 1);
             int villagerlevel = 1;

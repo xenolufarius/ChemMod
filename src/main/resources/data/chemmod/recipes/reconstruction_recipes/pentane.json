@@ -12,10 +12,10 @@
       "item": "chemmod:carbon"
     },
     {
-      "item": "chemmod:hydrogen"
+      "item": "chemmod:hydrogen_gas"
     },
     {
-      "item": "chemmod:hydrogen"
+      "item": "chemmod:hydrogen_gas"
     }
   ],
   "result": {

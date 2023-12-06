@@ -6,12 +6,15 @@
       "item": "chemmod:sodium"
     },
     {
-      "item": "chemmod:chlorine"
+      "item": "chemmod:sodium"
+    },
+    {
+      "item": "chemmod:chlorine_gas"
     }
   ],
   "result": {
     "item": "chemmod:sodium_chloride",
-    "count": 1
+    "count": 2
   }
 
 }
