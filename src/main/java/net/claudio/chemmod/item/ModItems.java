@@ -1378,6 +1378,13 @@ public class ModItems {
             () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),60.08,"SiO2",0,4,"\nDesc: This is a major constituent of many minerals found on earth.",""));
     public static final RegistryObject<Item> NITROGEN_DIOXIDE = Items.register( "nitrogen_dioxide",
             () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),46.01,"NO2",0,4,"\nDesc: This often an intermediate in the production of nitric acid.","O,H,T,C,G"));
+    public static final RegistryObject<Item> SULFUR_DIOXIDE = Items.register( "sulfur_dioxide",
+            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),64.07,"SO2",0,4,"\nDesc: ",""));
+    public static final RegistryObject<Item> HYDROGEN_PEROXIDE = Items.register( "hydrogen_peroxide",
+            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),34.01,"H2O2",0,4,"\nDesc: ",""));
+    public static final RegistryObject<Item> NITRIC_OXIDE = Items.register( "nitric_oxide",
+            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),30.01,"NO",0,4,"\nDesc: ",""));
+
     //Oxides^^^^^
     public static final RegistryObject<Item> POLYVINYL_CHLORIDE = Items.register( "polyvinyl_chloride",
             () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),62.50,"(C2H3Cl)n",0,4,"\nDesc: Also known as PVC, this is the 3rd most widely produced synthetic polymer of plastic.",""));
@@ -1525,10 +1532,24 @@ public class ModItems {
     //Acids and Bases
     public static final RegistryObject<Item> CARBONIC_ACID_DIL = Items.register( "carbonic_acid_dil",
             () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),62.03,"H2CO3",0,4,"\nDesc: ",""));
+    public static final RegistryObject<Item> HYDROCHLORIC_ACID_DIL = Items.register( "hydrochloric_acid_dil",
+            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),36.46,"HCl",0,4,"\nDesc: ",""));
+    public static final RegistryObject<Item> SULFURIC_ACID_DIL = Items.register( "sulfuric_acid_dil",
+            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),98.08,"H2SO4",0,4,"\nDesc: ",""));
+    public static final RegistryObject<Item> NITRIC_ACID_DIL = Items.register( "nitric_acid_dil",
+            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),63.01,"HNO3",0,4,"\nDesc: ",""));
 
     //
     public static final RegistryObject<Item> COPPER_II_CARBONATE_HYDROXIDE = Items.register( "copper_ii_carbonate_hydroxide",
             () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),221.11,"Cu2CO3(OH)2",0,4,"\nDesc: ",""));
+    public static final RegistryObject<Item> HYDROGEN_SULFIDE = Items.register( "hydrogen_sulfide",
+            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),34.08,"H2S",0,4,"\nDesc: ",""));
+    public static final RegistryObject<Item> SODIUM_HYDROSULFIDE = Items.register( "sodium_hydrosulfide",
+            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),56.06,"NaSH",0,4,"\nDesc: ",""));
+    public static final RegistryObject<Item> EDT = Items.register( "edt",
+            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),94.19,"C2H6S2",0,4,"\nDesc: Its IUPAC name is Ethane-1,2-dithiol.",""));
+    public static final RegistryObject<Item> _1_2_DICHLOROETHANE = Items.register( "1_2_dichloroethane",
+            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),98.95,"C2H4Cl2",0,4,"\nDesc: ",""));
 
     //Drugs
     public static final RegistryObject<Item> THEOBROMINE = Items.register( "theobromine",

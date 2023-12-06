@@ -35,6 +35,12 @@ public class ModVillagers {
     public static final RegistryObject<PoiType> ALCHEMY_TABLE_POI = POI_TYPES.register("alchemy_table_poi",
             () -> new PoiType(ImmutableSet.copyOf(ModBlocks.ALCHEMY_TABLE.get().getStateDefinition().getPossibleStates()),
                     1, 1));
+    public static final RegistryObject<PoiType> ALCHEMY_TABLE_POI2 = POI_TYPES.register("alchemy_table_poi2",
+            () -> new PoiType(ImmutableSet.copyOf(ModBlocks.ALCHEMY_TABLE_2.get().getStateDefinition().getPossibleStates()),
+                    1, 1));
+    public static final RegistryObject<PoiType> ALCHEMY_TABLE_POI3 = POI_TYPES.register("alchemy_table_poi3",
+            () -> new PoiType(ImmutableSet.copyOf(ModBlocks.ALCHEMY_TABLE_3.get().getStateDefinition().getPossibleStates()),
+                    1, 1));
 
     //VILLAGER PROFESSIONS
     public static final RegistryObject<VillagerProfession> CHEMIST = VILLAGER_PROFESSIONS.register("chemist",
@@ -45,6 +51,15 @@ public class ModVillagers {
             () -> new VillagerProfession("alchemist", x -> x.get() == ALCHEMY_TABLE_POI.get(),
                     x -> x.get() == ALCHEMY_TABLE_POI.get(), ImmutableSet.of(), ImmutableSet.of(),
                     SoundEvents.VILLAGER_WORK_CLERIC));
+    public static final RegistryObject<VillagerProfession> ALCHEMIST_2 = VILLAGER_PROFESSIONS.register("alchemist_2",
+            () -> new VillagerProfession("alchemist2", x -> x.get() == ALCHEMY_TABLE_POI2.get(),
+                    x -> x.get() == ALCHEMY_TABLE_POI2.get(), ImmutableSet.of(), ImmutableSet.of(),
+                    SoundEvents.VILLAGER_WORK_CLERIC));
+    public static final RegistryObject<VillagerProfession> ALCHEMIST_3 = VILLAGER_PROFESSIONS.register("alchemist_3",
+            () -> new VillagerProfession("alchemist3", x -> x.get() == ALCHEMY_TABLE_POI3.get(),
+                    x -> x.get() == ALCHEMY_TABLE_POI3.get(), ImmutableSet.of(), ImmutableSet.of(),
+                    SoundEvents.VILLAGER_WORK_CLERIC));
+
     public static void registerPOIs()
     {
         try{

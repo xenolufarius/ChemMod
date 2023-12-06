@@ -204,6 +204,134 @@ public class ModEvents {
                     new ItemStack(ModItems.SODIUM_CARBONATE.get(), 5),
                     deconstructor_block, 1, 20, 0.02F));
         }
+        if(event.getType() == ModVillagers.ALCHEMIST_2.get())
+        {
+            Int2ObjectMap<List<VillagerTrades.ItemListing>> trades = event.getTrades();
+
+            //For Result Items
+            ItemStack deconstructor_block = new ItemStack(ModBlocks.DECONSTRUCTOR_BLOCK.get(), 1);
+            ItemStack hydrogen_gas = new ItemStack(ModItems.HYDROGEN_GAS.get(), 8);
+            ItemStack oxygen_gas = new ItemStack(ModItems.OXYGEN_GAS.get(), 2);
+            ItemStack methane = new ItemStack(ModItems.METHANE.get(),1);
+            ItemStack ethane = new ItemStack(ModItems.ETHANE.get(),1);
+            ItemStack propane = new ItemStack(ModItems.PROPANE.get(),1);
+            ItemStack ammonia = new ItemStack(ModItems.AMMONIA.get(),1);
+            ItemStack sodium_chloride = new ItemStack(ModItems.SODIUM_CHLORIDE.get(),2);
+            ItemStack water = new ItemStack(ModItems.WATER.get(),5);
+            ItemStack sodium_carbonate = new ItemStack(ModItems.SODIUM_CARBONATE.get(),1);
+            ItemStack nitrogen_gas = new ItemStack(ModItems.NITROGEN_GAS.get(),3);
+            ItemStack uranium = new ItemStack(ModItems.URANIUM.get(), 1);
+            ItemStack nether_star = new ItemStack(Items.NETHER_STAR.asItem(), 1);
+            int villagerlevel = 1;
+
+            //TODO: Refine this trading list.
+            //TODO: Fix diatoms! Since I'm going to do realistic synthesis from now on, I want it to be correct.
+            //Novice ~12xp
+            //I guess can only have 2 trades at this level at a given time? Can I adjust this?
+            //Don't know but adding numbers = higher level of villager
+            trades.get(villagerlevel).add((trader, rand) -> new MerchantOffer(
+                    new ItemStack(Items.EMERALD, 1),
+                    hydrogen_gas, 6, 1, 0.02F));
+
+            trades.get(villagerlevel).add((trader, rand) -> new MerchantOffer(
+                    new ItemStack(Items.EMERALD, 1),
+                    oxygen_gas, 6, 1, 0.02F));
+
+            //Apprentice ~64xp
+            trades.get(villagerlevel+1).add((trader, rand) -> new MerchantOffer(
+                    //Currency, Cost, stack = Result
+                    new ItemStack(ModItems.WATER.get(), 2),
+                    methane, 7, 7, 0.02F));
+            //Max Uses,EXP for Villager,Multiplier for Price
+            trades.get(villagerlevel+1).add((trader, rand) -> new MerchantOffer(
+                    new ItemStack(ModItems.WATER.get(), 4),
+                    ethane, 3, 8, 0.02F));
+
+            //Journeyman ~80xp
+            trades.get(villagerlevel+2).add((trader, rand) -> new MerchantOffer(
+                    new ItemStack(ModItems.CARBON_DIOXIDE.get(), 1),
+                    propane, 12, 3, 0.02F));
+            trades.get(villagerlevel+2).add((trader, rand) -> new MerchantOffer(
+                    new ItemStack(ModItems.CARBON_DIOXIDE.get(), 4),
+                    nitrogen_gas, 9, 6, 0.02F));
+
+            //Expert ~100xp
+            trades.get(villagerlevel+3).add((trader, rand) -> new MerchantOffer(
+                    new ItemStack(ModItems.AMMONIA.get(), 2),
+                    sodium_chloride, 5, 12, 0.02F));
+            trades.get(villagerlevel+3).add((trader, rand) -> new MerchantOffer(
+                    new ItemStack(ModItems.AMMONIA.get(), 2),
+                    water, 7, 8, 0.02F));
+
+            //Master
+            trades.get(villagerlevel+4).add((trader, rand) -> new MerchantOffer(
+                    new ItemStack(ModItems.SODIUM_CARBONATE.get(), 5),
+                    deconstructor_block, 1, 20, 0.02F));
+        }
+        if(event.getType() == ModVillagers.ALCHEMIST_3.get())
+        {
+            Int2ObjectMap<List<VillagerTrades.ItemListing>> trades = event.getTrades();
+
+            //For Result Items
+            ItemStack deconstructor_block = new ItemStack(ModBlocks.DECONSTRUCTOR_BLOCK.get(), 1);
+            ItemStack hydrogen_gas = new ItemStack(ModItems.HYDROGEN_GAS.get(), 8);
+            ItemStack oxygen_gas = new ItemStack(ModItems.OXYGEN_GAS.get(), 2);
+            ItemStack methane = new ItemStack(ModItems.METHANE.get(),1);
+            ItemStack ethane = new ItemStack(ModItems.ETHANE.get(),1);
+            ItemStack propane = new ItemStack(ModItems.PROPANE.get(),1);
+            ItemStack ammonia = new ItemStack(ModItems.AMMONIA.get(),1);
+            ItemStack sodium_chloride = new ItemStack(ModItems.SODIUM_CHLORIDE.get(),2);
+            ItemStack water = new ItemStack(ModItems.WATER.get(),5);
+            ItemStack sodium_carbonate = new ItemStack(ModItems.SODIUM_CARBONATE.get(),1);
+            ItemStack nitrogen_gas = new ItemStack(ModItems.NITROGEN_GAS.get(),3);
+            ItemStack uranium = new ItemStack(ModItems.URANIUM.get(), 1);
+            ItemStack nether_star = new ItemStack(Items.NETHER_STAR.asItem(), 1);
+            int villagerlevel = 1;
+
+            //TODO: Refine this trading list.
+            //TODO: Fix diatoms! Since I'm going to do realistic synthesis from now on, I want it to be correct.
+            //Novice ~12xp
+            //I guess can only have 2 trades at this level at a given time? Can I adjust this?
+            //Don't know but adding numbers = higher level of villager
+            trades.get(villagerlevel).add((trader, rand) -> new MerchantOffer(
+                    new ItemStack(Items.EMERALD, 1),
+                    hydrogen_gas, 6, 1, 0.02F));
+
+            trades.get(villagerlevel).add((trader, rand) -> new MerchantOffer(
+                    new ItemStack(Items.EMERALD, 1),
+                    oxygen_gas, 6, 1, 0.02F));
+
+            //Apprentice ~64xp
+            trades.get(villagerlevel+1).add((trader, rand) -> new MerchantOffer(
+                    //Currency, Cost, stack = Result
+                    new ItemStack(ModItems.WATER.get(), 2),
+                    methane, 7, 7, 0.02F));
+            //Max Uses,EXP for Villager,Multiplier for Price
+            trades.get(villagerlevel+1).add((trader, rand) -> new MerchantOffer(
+                    new ItemStack(ModItems.WATER.get(), 4),
+                    ethane, 3, 8, 0.02F));
+
+            //Journeyman ~80xp
+            trades.get(villagerlevel+2).add((trader, rand) -> new MerchantOffer(
+                    new ItemStack(ModItems.CARBON_DIOXIDE.get(), 1),
+                    propane, 12, 3, 0.02F));
+            trades.get(villagerlevel+2).add((trader, rand) -> new MerchantOffer(
+                    new ItemStack(ModItems.CARBON_DIOXIDE.get(), 4),
+                    nitrogen_gas, 9, 6, 0.02F));
+
+            //Expert ~100xp
+            trades.get(villagerlevel+3).add((trader, rand) -> new MerchantOffer(
+                    new ItemStack(ModItems.AMMONIA.get(), 2),
+                    sodium_chloride, 5, 12, 0.02F));
+            trades.get(villagerlevel+3).add((trader, rand) -> new MerchantOffer(
+                    new ItemStack(ModItems.AMMONIA.get(), 2),
+                    water, 7, 8, 0.02F));
+
+            //Master
+            trades.get(villagerlevel+4).add((trader, rand) -> new MerchantOffer(
+                    new ItemStack(ModItems.SODIUM_CARBONATE.get(), 5),
+                    deconstructor_block, 1, 20, 0.02F));
+        }
 
     }
 

@@ -49,10 +49,10 @@ public class ModBlocks {
     //tier 1. Just wood. maybe a glass bottle. A tutorial with water crafting, and ends with the deconstructor block for sale
     public static final RegistryObject<Block> ALCHEMY_TABLE = registerBlock("alchemy_table",
             () -> new Block(BlockBehaviour.Properties.of(Material.WOOD).strength(1f)), ModCreativeModeTab.BLOCKS_TAB);
-    //tier 2. same ingredients as tier 1 but added elemental sulfur. Sells salts.
+    //tier 2. same ingredients as tier 1 but added elemental sulfur. tutorial #2. Gives access to salts/elements not available to players via vanilla
     public static final RegistryObject<Block> ALCHEMY_TABLE_2 = registerBlock("alchemy_table_2",
             () -> new Block(BlockBehaviour.Properties.of(Material.WOOD).strength(1f)), ModCreativeModeTab.BLOCKS_TAB);
-    //tier 3. same ingredients as tier 2, but added elemental lead. More salts
+    //tier 3. same ingredients as tier 2, but added elemental mercury. final tutorial. Gives access to salts/elements not available to players via vanilla
     public static final RegistryObject<Block> ALCHEMY_TABLE_3 = registerBlock("alchemy_table_3",
             () -> new Block(BlockBehaviour.Properties.of(Material.WOOD).strength(1f)), ModCreativeModeTab.BLOCKS_TAB);
 
