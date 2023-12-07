@@ -2,6 +2,8 @@
   "values":
           [
             "chemmod:emerald_block_poi",
-            "chemmod:alchemy_table_poi"
+            "chemmod:alchemy_table_poi",
+            "chemmod:alchemy_table_poi2",
+            "chemmod:alchemy_table_poi3"
           ]
 }

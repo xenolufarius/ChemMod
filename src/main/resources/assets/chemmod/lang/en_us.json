@@ -821,6 +821,9 @@
   "item.chemmod.carbon_dioxide": "Carbon Dioxide",
   "item.chemmod.ammonia": "Ammonia",
   "item.chemmod.silicon_dioxide": "Silicon Dioxide",
+  "item.chemmod.sulfur_dioxide": "Sulfur Dioxide",
+  "item.chemmod.hydrogen_peroxide": "Hydrogen Peroxide",
+  "item.chemmod.nitric_oxide": "Nitric Oxide",
   "item.chemmod.nitrogen_dioxide": "Nitrogen Dioxide",
   "item.chemmod.polyvinyl_chloride": "Polyvinyl Chloride",
   "item.chemmod.chloroethene": "Chloroethene",
@@ -856,6 +859,8 @@
   "item.chemmod.glycogen": "Glycogen",
   "item.chemmod.lazurite": "Lazurite",
   "item.chemmod.hematite": "Hematite",
+  "item.chemmod.pyrite": "Pyrite",
+  "item.chemmod.olivine": "Olivine",
   "item.chemmod.polyvinyl_alcohol": "Polyvinyl Alcohol",
   "item.chemmod.ethenol": "Ethenol",
   "item.chemmod.sodium_tetraborate": "Sodium Tetraborate",
@@ -876,8 +881,20 @@
   "item.chemmod.butane": "Butane",
   "item.chemmod.pentane": "Pentane",
   "item.chemmod.hexane": "Hexane",
+  "item.chemmod.theobromine": "Theobromine",
+  "item.chemmod.copper_ii_carbonate_hydroxide": "Copper II Carbonate Hydroxide",
+  "item.chemmod.hydrogen_sulfide": "Hydrogen Sulfide",
+  "item.chemmod.sodium_hydrosulfide": "Sodium Hydrosulfide",
+  "item.chemmod.edt": "EDT",
+  "item.chemmod.1_2_dichloroethane": "1,2-Dichloroethane",
+
+
+
 
   "item.chemmod.carbonic_acid_dil": "Carbonic Acid",
+  "item.chemmod.hydrochloric_acid_dil": "Hydrochloric Acid",
+  "item.chemmod.sulfuric_acid_dil": "Sulfuric Acid",
+  "item.chemmod.nitric_acid_dil": "Nitric Acid",
 
 
 
@@ -894,6 +911,8 @@
 
 
   "entity.minecraft.villager.chemmod.chemist": "Chemist",
-  "entity.minecraft.villager.chemmod.alchemist": "Alchemist"
+  "entity.minecraft.villager.chemmod.alchemist": "Alchemist Instructor",
+  "entity.minecraft.villager.chemmod.alchemist_2": "Alchemist Professor",
+  "entity.minecraft.villager.chemmod.alchemist_3": "Alchemist Grandmaster"
 
 }
