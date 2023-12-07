@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shapeless",
+
+  "ingredients": [
+    {
+      "item": "chemmod:1_2_dichloroethane"
+    },
+    {
+      "item": "chemmod:sodium_hydrosulfide"
+    },
+    {
+      "item": "chemmod:sodium_hydrosulfide"
+    }
+  ],
+  "result": {
+    "item": "chemmod:edt",
+    "count": 1
+  }
+
+}

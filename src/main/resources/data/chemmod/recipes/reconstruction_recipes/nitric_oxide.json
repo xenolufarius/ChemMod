@@ -1,0 +1,38 @@
+{
+  "type": "minecraft:crafting_shapeless",
+
+  "ingredients": [
+    {
+      "item": "chemmod:ammonia"
+    },
+    {
+      "item": "chemmod:ammonia"
+    },
+    {
+      "item": "chemmod:ammonia"
+    },
+    {
+      "item": "chemmod:ammonia"
+    },
+    {
+      "item": "chemmod:oxygen_gas"
+    },
+    {
+      "item": "chemmod:oxygen_gas"
+    },
+    {
+      "item": "chemmod:oxygen_gas"
+    },
+    {
+      "item": "chemmod:oxygen_gas"
+    },
+    {
+      "item": "chemmod:oxygen_gas"
+    }
+  ],
+  "result": {
+    "item": "chemmod:nitric_oxide",
+    "count": 4
+  }
+
+}

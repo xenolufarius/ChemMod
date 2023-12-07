@@ -1,0 +1,19 @@
+{
+  "type": "chemmod:deconstructor",
+
+  "ingredients": [
+    {
+      "item": "chemmod:pyrite"
+    }
+  ],
+  "output":[ {
+    "item": "chemmod:iron",
+    "count": 1
+  },
+    {
+      "item": "chemmod:sulfur",
+      "count": 2
+    }
+  ]
+
+}

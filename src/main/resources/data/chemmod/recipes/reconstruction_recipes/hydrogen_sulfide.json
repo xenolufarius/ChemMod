@@ -1,0 +1,38 @@
+{
+  "type": "minecraft:crafting_shapeless",
+
+  "ingredients": [
+    {
+      "item": "chemmod:octasulfur"
+    },
+    {
+      "item": "chemmod:hydrogen_gas"
+    },
+    {
+      "item": "chemmod:hydrogen_gas"
+    },
+    {
+      "item": "chemmod:hydrogen_gas"
+    },
+    {
+      "item": "chemmod:hydrogen_gas"
+    },
+    {
+      "item": "chemmod:hydrogen_gas"
+    },
+    {
+      "item": "chemmod:hydrogen_gas"
+    },
+    {
+      "item": "chemmod:hydrogen_gas"
+    },
+    {
+      "item": "chemmod:hydrogen_gas"
+    }
+  ],
+  "result": {
+    "item": "chemmod:hydrogen_sulfide",
+    "count": 8
+  }
+
+}

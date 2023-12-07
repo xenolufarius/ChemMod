@@ -1495,6 +1495,8 @@ public class ModItems {
             () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),258.18,"Al2Si2O5(OH)4",0,4,"\nDesc: ",""));
     public static final RegistryObject<Item> OLIVINE = Items.register( "olivine",
             () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),000.00,"(Mg,Fe)2SiO4",0,4,"\nDesc: ",""));
+    public static final RegistryObject<Item> PYRITE = Items.register( "pyrite",
+            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),119.98,"FeS2",0,4,"\nDesc: Also known as Fool's Gold.",""));
 
     //Sugars:
     public static final RegistryObject<Item> SUCROSE = Items.register( "sucrose",

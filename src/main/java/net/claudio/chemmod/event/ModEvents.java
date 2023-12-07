@@ -21,6 +21,7 @@ import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.server.packs.resources.ResourceManager;
 import net.minecraft.world.damagesource.BadRespawnPointDamage;
 import net.minecraft.world.damagesource.DamageSource;
+import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.entity.item.ItemEntity;
@@ -31,6 +32,8 @@ import net.minecraft.world.entity.projectile.ItemSupplier;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Items;
+import net.minecraft.world.item.PotionItem;
+import net.minecraft.world.item.alchemy.Potion;
 import net.minecraft.world.item.trading.MerchantOffer;
 import net.minecraft.world.level.ExplosionDamageCalculator;
 import net.minecraft.world.level.block.Blocks;
@@ -211,17 +214,15 @@ public class ModEvents {
             //For Result Items
             ItemStack octasulfur = new ItemStack(ModItems.OCTASULFUR.get(), 1);
             ItemStack white_phosphorus = new ItemStack(ModItems.WHITE_PHOSPHORUS.get(), 2);
-            ItemStack oxygen_gas = new ItemStack(ModItems.OXYGEN_GAS.get(), 2);
-            ItemStack methane = new ItemStack(ModItems.METHANE.get(),1);
-            ItemStack ethane = new ItemStack(ModItems.ETHANE.get(),1);
-            ItemStack propane = new ItemStack(ModItems.PROPANE.get(),1);
-            ItemStack ammonia = new ItemStack(ModItems.AMMONIA.get(),1);
-            ItemStack sodium_chloride = new ItemStack(ModItems.SODIUM_CHLORIDE.get(),2);
-            ItemStack water = new ItemStack(ModItems.WATER.get(),5);
-            ItemStack sodium_carbonate = new ItemStack(ModItems.SODIUM_CARBONATE.get(),1);
-            ItemStack nitrogen_gas = new ItemStack(ModItems.NITROGEN_GAS.get(),3);
-            ItemStack uranium = new ItemStack(ModItems.URANIUM.get(), 1);
-            ItemStack nether_star = new ItemStack(Items.NETHER_STAR.asItem(), 1);
+            ItemStack hydrogen_sulfide = new ItemStack(ModItems.HYDROGEN_SULFIDE.get(), 2);
+            ItemStack sodium_hydroxide = new ItemStack(ModItems.SODIUM_HYDROXIDE.get(),2);
+            ItemStack pyrite = new ItemStack(ModItems.PYRITE.get(),1);
+            ItemStack hydrogen_peroxide = new ItemStack(ModItems.HYDROGEN_PEROXIDE.get(),2);
+            ItemStack lithium_fluoride = new ItemStack(ModItems.LITHIUM_FLUORIDE.get(),3);
+            ItemStack zinc = new ItemStack(ModItems.ZINC.get(),3);
+            ItemStack lead_ii_iodate = new ItemStack(ModItems.LEAD_II_IODATE.get(),2);
+            ItemStack _1_2_dichloroethane = new ItemStack(ModItems._1_2_DICHLOROETHANE.get(),1);
+            ItemStack mercury = new ItemStack(ModItems.MERCURY.get(),5);
             int villagerlevel = 1;
 
             //TODO: Refine this trading list.
@@ -240,53 +241,53 @@ public class ModEvents {
             //Apprentice ~64xp
             trades.get(villagerlevel+1).add((trader, rand) -> new MerchantOffer(
                     //Currency, Cost, stack = Result
-                    new ItemStack(ModItems.WATER.get(), 2),
-                    methane, 7, 7, 0.02F));
+                    new ItemStack(ModItems.HYDROGEN_SULFIDE.get(), 2),
+                    sodium_hydroxide, 8, 4, 0.02F));
             //Max Uses,EXP for Villager,Multiplier for Price
             trades.get(villagerlevel+1).add((trader, rand) -> new MerchantOffer(
-                    new ItemStack(ModItems.WATER.get(), 4),
-                    ethane, 3, 8, 0.02F));
-
+                    new ItemStack(ModItems.IRON_II_SULFIDE.get(), 4),
+                    pyrite, 7, 5, 0.02F));
 
             //Journeyman ~80xp
             trades.get(villagerlevel+2).add((trader, rand) -> new MerchantOffer(
-                    new ItemStack(ModItems.CARBON_DIOXIDE.get(), 1),
-                    propane, 12, 3, 0.02F));
+                    new ItemStack(ModItems.SODIUM_SULFIDE.get(), 1),
+                    hydrogen_peroxide, 12, 3, 0.02F));
             trades.get(villagerlevel+2).add((trader, rand) -> new MerchantOffer(
-                    new ItemStack(ModItems.CARBON_DIOXIDE.get(), 4),
-                    nitrogen_gas, 9, 6, 0.02F));
+                    new ItemStack(ModItems.SODIUM_THIOSULFATE.get(), 2),
+                    zinc, 9, 6, 0.02F));
 
             //Expert ~100xp
             trades.get(villagerlevel+3).add((trader, rand) -> new MerchantOffer(
-                    new ItemStack(ModItems.AMMONIA.get(), 2),
-                    sodium_chloride, 5, 12, 0.02F));
+                    new ItemStack(ModItems.ZINC_SULFATE.get(), 1),
+                    lead_ii_iodate, 5, 12, 0.02F));
             trades.get(villagerlevel+3).add((trader, rand) -> new MerchantOffer(
-                    new ItemStack(ModItems.AMMONIA.get(), 2),
-                    water, 7, 8, 0.02F));
+                    new ItemStack(ModItems.SODIUM_SULFATE.get(), 1),
+                    lithium_fluoride, 7, 8, 0.02F));
 
             //Master
             trades.get(villagerlevel+4).add((trader, rand) -> new MerchantOffer(
-                    new ItemStack(ModItems.SODIUM_CARBONATE.get(), 5),
-                    water, 1, 20, 0.02F));
+                    new ItemStack(ModItems.SODIUM_HYDROSULFIDE.get(), 1),
+                    _1_2_dichloroethane, 10, 10, 0.02F));
+            trades.get(villagerlevel+4).add((trader, rand) -> new MerchantOffer(
+                    new ItemStack(ModItems.EDT.get(), 1),
+                    mercury, 10, 20, 0.02F));
         }
         if(event.getType() == ModVillagers.ALCHEMIST_3.get())
         {
             Int2ObjectMap<List<VillagerTrades.ItemListing>> trades = event.getTrades();
 
             //For Result Items
-            ItemStack deconstructor_block = new ItemStack(ModBlocks.DECONSTRUCTOR_BLOCK.get(), 1);
-            ItemStack hydrogen_gas = new ItemStack(ModItems.HYDROGEN_GAS.get(), 8);
-            ItemStack oxygen_gas = new ItemStack(ModItems.OXYGEN_GAS.get(), 2);
-            ItemStack methane = new ItemStack(ModItems.METHANE.get(),1);
-            ItemStack ethane = new ItemStack(ModItems.ETHANE.get(),1);
-            ItemStack propane = new ItemStack(ModItems.PROPANE.get(),1);
-            ItemStack ammonia = new ItemStack(ModItems.AMMONIA.get(),1);
-            ItemStack sodium_chloride = new ItemStack(ModItems.SODIUM_CHLORIDE.get(),2);
-            ItemStack water = new ItemStack(ModItems.WATER.get(),5);
-            ItemStack sodium_carbonate = new ItemStack(ModItems.SODIUM_CARBONATE.get(),1);
-            ItemStack nitrogen_gas = new ItemStack(ModItems.NITROGEN_GAS.get(),3);
-            ItemStack uranium = new ItemStack(ModItems.URANIUM.get(), 1);
-            ItemStack nether_star = new ItemStack(Items.NETHER_STAR.asItem(), 1);
+            Potion potion = new Potion("healing", new MobEffectInstance(MobEffects.HEAL, 1, 1));
+            ItemStack potion_placeholder = new ItemStack(Items.POTION, 1);
+            ItemStack tin = new ItemStack(ModItems.TIN.get(), 4);
+            ItemStack potassium_chromate = new ItemStack(ModItems.POTASSIUM_CHROMATE.get(),2);
+            ItemStack silver = new ItemStack(ModItems.SILVER.get(),10);
+            ItemStack magnesium = new ItemStack(ModItems.MAGNESIUM.get(),5);
+            ItemStack caesium_sulfide = new ItemStack(ModItems.CAESIUM_SULFIDE.get(),1);
+            ItemStack aluminum = new ItemStack(ModItems.ALUMINUM.get(),10);
+            ItemStack bromine = new ItemStack(ModItems.BROMINE_GAS.get(),5);
+            ItemStack gold = new ItemStack(ModItems.GOLD.get(),9);
+            ItemStack radicalizer_block = new ItemStack(ModBlocks.RADICALIZER_BLOCK.get(),1);
             int villagerlevel = 1;
 
             //TODO: Refine this trading list.
@@ -295,43 +296,46 @@ public class ModEvents {
             //I guess can only have 2 trades at this level at a given time? Can I adjust this?
             //Don't know but adding numbers = higher level of villager
             trades.get(villagerlevel).add((trader, rand) -> new MerchantOffer(
-                    new ItemStack(Items.EMERALD, 1),
-                    hydrogen_gas, 6, 1, 0.02F));
+                    new ItemStack(ModItems.MERCURY_II_OXIDE.get(), 1),
+                    potion_placeholder, 3, 1, 0.02F));
 
             trades.get(villagerlevel).add((trader, rand) -> new MerchantOffer(
-                    new ItemStack(Items.EMERALD, 1),
-                    oxygen_gas, 6, 1, 0.02F));
+                    new ItemStack(ModItems.MERCURY_II_CHLORIDE.get(), 1),
+                    tin, 9, 1, 0.02F));
 
             //Apprentice ~64xp
             trades.get(villagerlevel+1).add((trader, rand) -> new MerchantOffer(
                     //Currency, Cost, stack = Result
-                    new ItemStack(ModItems.WATER.get(), 2),
-                    methane, 7, 7, 0.02F));
+                    new ItemStack(ModItems.MERCURY_II_SULFIDE.get(), 1),
+                    potassium_chromate, 3, 8, 0.02F));
             //Max Uses,EXP for Villager,Multiplier for Price
             trades.get(villagerlevel+1).add((trader, rand) -> new MerchantOffer(
-                    new ItemStack(ModItems.WATER.get(), 4),
-                    ethane, 3, 8, 0.02F));
+                    new ItemStack(ModItems.MERCURY_II_SULFATE.get(), 1),
+                    silver, 7, 7, 0.02F));
 
             //Journeyman ~80xp
             trades.get(villagerlevel+2).add((trader, rand) -> new MerchantOffer(
-                    new ItemStack(ModItems.CARBON_DIOXIDE.get(), 1),
-                    propane, 12, 3, 0.02F));
+                    new ItemStack(ModItems.SILVER_OXIDE.get(), 1),
+                    magnesium, 12, 3, 0.02F));
             trades.get(villagerlevel+2).add((trader, rand) -> new MerchantOffer(
-                    new ItemStack(ModItems.CARBON_DIOXIDE.get(), 4),
-                    nitrogen_gas, 9, 6, 0.02F));
+                    new ItemStack(ModItems.SILVER_SULFIDE.get(), 1),
+                    caesium_sulfide, 9, 6, 0.02F));
 
             //Expert ~100xp
             trades.get(villagerlevel+3).add((trader, rand) -> new MerchantOffer(
-                    new ItemStack(ModItems.AMMONIA.get(), 2),
-                    sodium_chloride, 5, 12, 0.02F));
+                    new ItemStack(ModItems.NITRIC_ACID_DIL.get(), 1),
+                    aluminum, 5, 12, 0.02F));
             trades.get(villagerlevel+3).add((trader, rand) -> new MerchantOffer(
-                    new ItemStack(ModItems.AMMONIA.get(), 2),
-                    water, 7, 8, 0.02F));
+                    new ItemStack(ModItems.ALUMINUM_CHLORIDE.get(), 1),
+                    bromine, 7, 8, 0.02F));
 
             //Master
             trades.get(villagerlevel+4).add((trader, rand) -> new MerchantOffer(
-                    new ItemStack(ModItems.SODIUM_CARBONATE.get(), 5),
-                    deconstructor_block, 1, 20, 0.02F));
+                    new ItemStack(ModItems.LEAD.get(), 9),
+                    gold, 10, 10, 0.02F));
+            trades.get(villagerlevel+4).add((trader, rand) -> new MerchantOffer(
+                    new ItemStack(ModItems.ALUMINUM_BROMIDE.get(), 10),
+                    radicalizer_block, 1, 40, 0.02F));
         }
 
     }

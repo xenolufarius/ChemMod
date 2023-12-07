@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shapeless",
+
+  "ingredients": [
+    {
+      "item": "chemmod:chlorine_gas"
+    },
+    {
+      "item": "chemmod:hydrogen_gas"
+    }
+  ],
+  "result": {
+    "item": "chemmod:hydrochloric_acid_dil",
+    "count": 2
+  }
+
+}

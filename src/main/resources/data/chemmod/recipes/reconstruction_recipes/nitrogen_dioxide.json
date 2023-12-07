@@ -3,10 +3,10 @@
 
   "ingredients": [
     {
-      "item": "chemmod:nitrogen_gas"
+      "item": "chemmod:nitric_oxide"
     },
     {
-      "item": "chemmod:oxygen_gas"
+      "item": "chemmod:nitric_oxide"
     },
     {
       "item": "chemmod:oxygen_gas"

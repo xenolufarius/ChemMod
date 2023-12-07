@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shapeless",
+
+  "ingredients": [
+    {
+      "item": "chemmod:sodium_sulfide"
+    },
+    {
+      "item": "chemmod:hydrogen_sulfide"
+    }
+  ],
+  "result": {
+    "item": "chemmod:sodium_hydrosulfide",
+    "count": 2
+  }
+
+}

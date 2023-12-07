@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shapeless",
+
+  "ingredients": [
+    {
+      "item": "chemmod:sulfur_dioxide"
+    },
+    {
+      "item": "chemmod:hydrogen_peroxide"
+    }
+  ],
+  "result": {
+    "item": "chemmod:sulfuric_acid_dil",
+    "count": 1
+  }
+
+}

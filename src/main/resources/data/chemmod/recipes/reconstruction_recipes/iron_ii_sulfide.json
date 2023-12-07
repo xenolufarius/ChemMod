@@ -1,0 +1,38 @@
+{
+  "type": "minecraft:crafting_shapeless",
+
+  "ingredients": [
+    {
+      "item": "chemmod:octasulfur"
+    },
+    {
+      "item": "chemmod:iron"
+    },
+    {
+      "item": "chemmod:iron"
+    },
+    {
+      "item": "chemmod:iron"
+    },
+    {
+      "item": "chemmod:iron"
+    },
+    {
+      "item": "chemmod:iron"
+    },
+    {
+      "item": "chemmod:iron"
+    },
+    {
+      "item": "chemmod:iron"
+    },
+    {
+      "item": "chemmod:iron"
+    }
+  ],
+  "result": {
+    "item": "chemmod:iron_ii_sulfide",
+    "count": 8
+  }
+
+}

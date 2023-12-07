@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shapeless",
+
+  "ingredients": [
+    {
+      "item": "chemmod:mercury_ii_oxide"
+    },
+    {
+      "item": "chemmod:sulfuric_acid_dil"
+    }
+  ],
+  "result": {
+    "item": "chemmod:mercury_ii_sulfate",
+    "count": 1
+  }
+
+}

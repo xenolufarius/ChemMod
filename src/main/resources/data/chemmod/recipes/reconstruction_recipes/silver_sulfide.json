@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shapeless",
+
+  "ingredients": [
+    {
+      "item": "chemmod:silver"
+    },
+    {
+      "item": "chemmod:silver"
+    },
+    {
+      "item": "chemmod:hydrogen_sulfide"
+    }
+  ],
+  "result": {
+    "item": "chemmod:silver_sulfide",
+    "count": 1
+  }
+
+}

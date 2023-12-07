@@ -1,0 +1,38 @@
+{
+  "type": "minecraft:crafting_shapeless",
+
+  "ingredients": [
+    {
+      "item": "chemmod:octasulfur"
+    },
+    {
+      "item": "chemmod:mercury"
+    },
+    {
+      "item": "chemmod:mercury"
+    },
+    {
+      "item": "chemmod:mercury"
+    },
+    {
+      "item": "chemmod:mercury"
+    },
+    {
+      "item": "chemmod:mercury"
+    },
+    {
+      "item": "chemmod:mercury"
+    },
+    {
+      "item": "chemmod:mercury"
+    },
+    {
+      "item": "chemmod:mercury"
+    }
+  ],
+  "result": {
+    "item": "chemmod:mercury_ii_sulfide",
+    "count": 8
+  }
+
+}

@@ -1,0 +1,35 @@
+{
+  "type": "minecraft:crafting_shapeless",
+
+  "ingredients": [
+    {
+      "item": "chemmod:aluminum"
+    },
+    {
+      "item": "chemmod:aluminum"
+    },
+    {
+      "item": "chemmod:hydrochloric_acid_dil"
+    },
+    {
+      "item": "chemmod:hydrochloric_acid_dil"
+    },
+    {
+      "item": "chemmod:hydrochloric_acid_dil"
+    },
+    {
+      "item": "chemmod:hydrochloric_acid_dil"
+    },
+    {
+      "item": "chemmod:hydrochloric_acid_dil"
+    },
+    {
+      "item": "chemmod:hydrochloric_acid_dil"
+    }
+  ],
+  "result": {
+    "item": "chemmod:aluminum_chloride",
+    "count": 2
+  }
+
+}

@@ -1,0 +1,26 @@
+{
+  "type": "minecraft:crafting_shapeless",
+
+  "ingredients": [
+    {
+      "item": "chemmod:oxygen_gas"
+    },
+    {
+      "item": "chemmod:silver"
+    },
+    {
+      "item": "chemmod:silver"
+    },
+    {
+      "item": "chemmod:silver"
+    },
+    {
+      "item": "chemmod:silver"
+    }
+  ],
+  "result": {
+    "item": "chemmod:silver_oxide",
+    "count": 2
+  }
+
+}
