@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shapeless",
+
+  "ingredients": [
+    {
+      "item": "chemmod:ammonia"
+    },
+    {
+      "item": "chemmod:sodium_hydroxide"
+    }
+  ],
+  "result": {
+    "item": "chemmod:sodium_amide",
+    "count": 1
+  }
+
+}

@@ -1557,6 +1557,14 @@ public class ModItems {
     public static final RegistryObject<Item> THEOBROMINE = Items.register( "theobromine",
             () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),180.17,"C7H8N4O2",0,4,"\nDesc: ",""));
 
+    //Fluorides
+    public static final RegistryObject<Item> NITROGEN_TRIFLUORIDE = Items.register( "nitrogen_trifluoride",
+            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),71.00,"NF3",0,4,"\nDesc: ",""));
+
+    //Amides
+    public static final RegistryObject<Item> SODIUM_AMIDE = Items.register( "sodium_amide",
+            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),39.01,"NaNH2",0,4,"\nDesc: ",""));
+
 
 
 

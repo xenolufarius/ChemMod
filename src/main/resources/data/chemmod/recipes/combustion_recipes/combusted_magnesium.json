@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:smelting",
+  "cookingtime": 50,
+  "experience": 0.35,
+  "ingredient": {
+    "item": "chemmod:magnesium"
+  },
+  "result": {
+    "item": "chemmod:magnesium_oxide",
+    "count": 1
+  }
+}

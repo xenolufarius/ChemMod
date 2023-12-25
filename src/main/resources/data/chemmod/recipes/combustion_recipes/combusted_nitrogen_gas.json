@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:smelting",
+  "cookingtime": 50,
+  "experience": 0.35,
+  "ingredient": {
+    "item": "chemmod:nitrogen_gas"
+  },
+  "result": {
+    "item": "chemmod:nitric_oxide",
+    "count": 2
+  }
+}

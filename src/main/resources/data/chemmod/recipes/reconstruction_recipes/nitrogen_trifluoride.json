@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shapeless",
+
+  "ingredients": [
+    {
+      "item": "chemmod:nitrogen_gas"
+    },
+    {
+      "item": "chemmod:fluorine_gas"
+    },
+    {
+      "item": "chemmod:fluorine_gas"
+    },
+    {
+      "item": "chemmod:fluorine_gas"
+    }
+  ],
+  "result": {
+    "item": "chemmod:nitrogen_trifluoride",
+    "count": 2
+  }
+
+}

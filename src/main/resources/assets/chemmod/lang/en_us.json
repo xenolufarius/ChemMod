@@ -28,7 +28,10 @@
   "block.chemmod.lava_lamp": "Lava Lamp",
 
   "block.chemmod.deconstructor_block": "Deconstructor",
-  "block.chemmod.alchemy_table": "Alchemy Table",
+  "block.chemmod.radicalizer": "Radicalizer",
+  "block.chemmod.alchemy_table": "Novice Alchemy Table",
+  "block.chemmod.alchemy_table_2": "Apprentice Alchemy Table",
+  "block.chemmod.alchemy_table_3": "Master Alchemy Table",
 
 
 

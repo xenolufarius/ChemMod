@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shapeless",
+
+  "ingredients": [
+    {
+      "item": "chemmod:carbon_dioxide"
+    },
+    {
+      "item": "chemmod:ammonia"
+    },
+    {
+      "item": "chemmod:ammonia"
+    }
+  ],
+  "result": {
+    "item": "chemmod:ammonium_carbonate",
+    "count": 1
+  }
+
+}

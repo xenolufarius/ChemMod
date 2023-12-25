@@ -1,0 +1,19 @@
+{
+  "type": "chemmod:deconstructor",
+
+  "ingredients": [
+    {
+      "item": "chemmod:alchemy_table_2"
+    }
+  ],
+  "output": [{
+    "item": "chemmod:cellulose",
+    "count": 10
+  },
+    {
+      "item": "chemmod:sulfur",
+      "count": 8
+    }
+]
+
+}

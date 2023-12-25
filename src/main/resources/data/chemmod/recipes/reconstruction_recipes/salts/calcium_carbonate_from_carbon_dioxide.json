@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shapeless",
+
+  "ingredients": [
+    {
+      "item": "chemmod:carbon_dioxide"
+    },
+    {
+      "item": "chemmod:calcium_oxide"
+    }
+  ],
+  "result": {
+    "item": "chemmod:calcium_carbonate",
+    "count": 1
+  }
+
+}

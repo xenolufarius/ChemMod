@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "#": {
+      "item": "minecraft:glass_bottle"
+    },
+    "X": {
+      "tag": "minecraft:planks"
+    }
+  },
+  "pattern": [
+    " # ",
+    "XXX",
+    "X X"
+  ],
+  "result": {
+    "item": "chemmod:alchemy_table"
+  }
+}
