@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shapeless",
+
+  "ingredients": [
+    {
+      "item": "chemmod:sulfuric_acid_dil"
+    },
+    {
+      "item": "chemmod:sodium_carbonate"
+    }
+  ],
+  "result": {
+    "item": "chemmod:sodium_sulfate",
+    "count": 1
+  }
+
+}

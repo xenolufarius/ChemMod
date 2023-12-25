@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shapeless",
+
+  "ingredients": [
+    {
+      "item": "chemmod:sodium_carbonate"
+    },
+    {
+      "item": "chemmod:carbon_dioxide"
+    },
+    {
+      "item": "chemmod:water"
+    }
+  ],
+  "result": {
+    "item": "chemmod:sodium_bicarbonate",
+    "count": 2
+  }
+
+}

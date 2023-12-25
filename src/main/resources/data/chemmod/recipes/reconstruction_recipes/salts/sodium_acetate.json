@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shapeless",
+
+  "ingredients": [
+    {
+      "item": "chemmod:vinegar"
+    },
+    {
+      "item": "chemmod:vinegar"
+    },
+    {
+      "item": "chemmod:sodium_carbonate"
+    }
+  ],
+  "result": {
+    "item": "chemmod:sodium_acetate",
+    "count": 2
+  }
+
+}

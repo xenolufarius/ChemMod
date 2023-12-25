@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shapeless",
+
+  "ingredients": [
+    {
+      "item": "chemmod:hydrogen_sulfide"
+    },
+    {
+      "item": "chemmod:hydrogen_sulfide"
+    },
+    {
+      "item": "chemmod:oxygen_gas"
+    }
+  ],
+  "result": {
+    "item": "chemmod:sulfur",
+    "count": 2
+  }
+
+}

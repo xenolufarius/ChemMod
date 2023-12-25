@@ -1540,12 +1540,16 @@ public class ModItems {
             () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),98.08,"H2SO4",0,4,"\nDesc: ",""));
     public static final RegistryObject<Item> NITRIC_ACID_DIL = Items.register( "nitric_acid_dil",
             () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),63.01,"HNO3",0,4,"\nDesc: ",""));
+    public static final RegistryObject<Item> VINEGAR = Items.register( "vinegar",
+            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),60.05,"CH3COOH",0,4,"\nDesc: ",""));
 
     //
     public static final RegistryObject<Item> COPPER_II_CARBONATE_HYDROXIDE = Items.register( "copper_ii_carbonate_hydroxide",
             () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),221.11,"Cu2CO3(OH)2",0,4,"\nDesc: ",""));
     public static final RegistryObject<Item> HYDROGEN_SULFIDE = Items.register( "hydrogen_sulfide",
             () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),34.08,"H2S",0,4,"\nDesc: ",""));
+    public static final RegistryObject<Item> HYDROGEN_BROMIDE = Items.register( "hydrogen_bromide",
+            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),80.91,"HBr",0,4,"\nDesc: ",""));
     public static final RegistryObject<Item> SODIUM_HYDROSULFIDE = Items.register( "sodium_hydrosulfide",
             () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),56.06,"NaSH",0,4,"\nDesc: ",""));
     public static final RegistryObject<Item> EDT = Items.register( "edt",
