@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shapeless",
+
+  "ingredients": [
+    {
+      "item": "chemmod:lead"
+    },
+    {
+      "item": "chemmod:lead"
+    },
+    {
+      "item": "chemmod:oxygen_gas"
+    }
+  ],
+  "result": {
+    "item": "chemmod:lead_ii_oxide",
+    "count": 1
+  }
+
+}

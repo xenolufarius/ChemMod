@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shapeless",
+
+  "ingredients": [
+    {
+      "item": "chemmod:sulfur_dioxide"
+    },
+    {
+      "item": "chemmod:sulfur_dioxide"
+    },
+    {
+      "item": "chemmod:oxygen_gas"
+    }
+  ],
+  "result": {
+    "item": "chemmod:sulfur_trioxide",
+    "count": 2
+  }
+
+}

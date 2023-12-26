@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shapeless",
+
+  "ingredients": [
+    {
+      "item": "chemmod:theobromine"
+    },
+    {
+      "item": "chemmod:dms"
+    }
+  ],
+  "result": {
+    "item": "chemmod:caffeine",
+    "count": 1
+  }
+
+}

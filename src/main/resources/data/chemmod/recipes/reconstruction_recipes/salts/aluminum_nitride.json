@@ -1,0 +1,32 @@
+{
+  "type": "minecraft:crafting_shapeless",
+
+  "ingredients": [
+    {
+      "item": "chemmod:aluminum"
+    },
+    {
+      "item": "chemmod:aluminum"
+    },
+    {
+      "item": "chemmod:aluminum"
+    },
+    {
+      "item": "chemmod:aluminum"
+    },
+    {
+      "item": "chemmod:aluminum"
+    },
+    {
+      "item": "chemmod:aluminum"
+    },
+    {
+      "item": "chemmod:nitrogen_gas"
+    }
+  ],
+  "result": {
+    "item": "chemmod:aluminum_nitride",
+    "count": 2
+  }
+
+}

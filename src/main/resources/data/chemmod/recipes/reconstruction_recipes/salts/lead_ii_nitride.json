@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shapeless",
+
+  "ingredients": [
+    {
+      "item": "chemmod:lead"
+    },
+    {
+      "item": "chemmod:lead"
+    },
+    {
+      "item": "chemmod:lead"
+    },
+    {
+      "item": "chemmod:nitrogen_gas"
+    }
+  ],
+  "result": {
+    "item": "chemmod:lead_ii_nitride",
+    "count": 1
+  }
+
+}

@@ -1,0 +1,26 @@
+{
+  "type": "minecraft:crafting_shapeless",
+
+  "ingredients": [
+    {
+      "item": "chemmod:aluminum"
+    },
+    {
+      "item": "chemmod:aluminum"
+    },
+    {
+      "item": "chemmod:chlorine_gas"
+    },
+    {
+      "item": "chemmod:chlorine_gas"
+    },
+    {
+      "item": "chemmod:chlorine_gas"
+    }
+  ],
+  "result": {
+    "item": "chemmod:aluminum_chloride",
+    "count": 2
+  }
+
+}

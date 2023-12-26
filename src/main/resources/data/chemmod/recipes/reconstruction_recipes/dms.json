@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shapeless",
+
+  "ingredients": [
+    {
+      "item": "chemmod:methanol"
+    },
+    {
+      "item": "chemmod:methanol"
+    },
+    {
+      "item": "chemmod:sulfur_trioxide"
+    }
+  ],
+  "result": {
+    "item": "chemmod:dms",
+    "count": 1
+  }
+
+}

@@ -278,7 +278,7 @@ public class ModEvents {
 
             //For Result Items
             Potion potion = new Potion("healing", new MobEffectInstance(MobEffects.HEAL, 1, 1));
-            ItemStack potion_placeholder = new ItemStack(Items.POTION, 1);
+            ItemStack methanol = new ItemStack(ModItems.METHANOL.get(), 5);
             ItemStack tin = new ItemStack(ModItems.TIN.get(), 4);
             ItemStack potassium_chromate = new ItemStack(ModItems.POTASSIUM_CHROMATE.get(),2);
             ItemStack silver = new ItemStack(ModItems.SILVER.get(),10);
@@ -297,7 +297,7 @@ public class ModEvents {
             //Don't know but adding numbers = higher level of villager
             trades.get(villagerlevel).add((trader, rand) -> new MerchantOffer(
                     new ItemStack(ModItems.MERCURY_II_OXIDE.get(), 1),
-                    potion_placeholder, 3, 1, 0.02F));
+                    methanol, 3, 1, 0.02F));
 
             trades.get(villagerlevel).add((trader, rand) -> new MerchantOffer(
                     new ItemStack(ModItems.MERCURY_II_CHLORIDE.get(), 1),

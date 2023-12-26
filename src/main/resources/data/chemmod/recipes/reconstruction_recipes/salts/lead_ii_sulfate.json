@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shapeless",
+
+  "ingredients": [
+    {
+      "item": "chemmod:lead"
+    },
+    {
+      "item": "chemmod:sulfuric_acid_dil"
+    }
+  ],
+  "result": {
+    "item": "chemmod:lead_ii_sulfate",
+    "count": 1
+  }
+
+}

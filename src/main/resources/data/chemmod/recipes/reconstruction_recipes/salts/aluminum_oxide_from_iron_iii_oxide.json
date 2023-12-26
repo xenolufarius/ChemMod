@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shapeless",
+
+  "ingredients": [
+    {
+      "item": "chemmod:aluminum"
+    },
+    {
+      "item": "chemmod:aluminum"
+    },
+    {
+      "item": "chemmod:iron_iii_oxide"
+    }
+  ],
+  "result": {
+    "item": "chemmod:aluminum_oxide",
+    "count": 1
+  }
+
+}
