@@ -650,6 +650,11 @@ public class ModEvents {
                             player.hurt(DamageSource.explosion(new Explosion(player.level, player, player.getX(), player.getY(), player.getZ(),3.0f)), 20);
 
                         }
+                        //SPECIAL CASE Hyper
+                        //Grants speed boost. Rn for 3 seconds. I suspect 20 ticks = 1 s, so 60 = 3
+                        if (sds.equals("S2")) {
+                            player.addEffect(new MobEffectInstance(MobEffects.MOVEMENT_SPEED,200,5));
+                        }
                         //TOXIC
                         //Kills player
                         if (sds.equals("T")) {

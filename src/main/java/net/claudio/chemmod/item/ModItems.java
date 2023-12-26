@@ -1571,7 +1571,7 @@ public class ModItems {
     public static final RegistryObject<Item> THEOBROMINE = Items.register( "theobromine",
             () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),180.17,"C7H8N4O2",0,4,"\nDesc: ",""));
     public static final RegistryObject<Item> CAFFEINE = Items.register( "caffeine",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),194.19,"C8H10N4O2",0,4,"\nDesc: ",""));
+            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),194.19,"C8H10N4O2",0,4,"\nDesc: ","S2"));
 
     //Fluorides
     public static final RegistryObject<Item> NITROGEN_TRIFLUORIDE = Items.register( "nitrogen_trifluoride",
