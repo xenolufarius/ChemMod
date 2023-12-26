@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shapeless",
+
+  "ingredients": [
+    {
+      "item": "chemmod:magnesium"
+    },
+    {
+      "item": "chemmod:sulfuric_acid_dil"
+    }
+  ],
+  "result": {
+    "item": "chemmod:magnesium_sulfate",
+    "count": 1
+  }
+
+}

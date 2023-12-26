@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shapeless",
+
+  "ingredients": [
+    {
+      "item": "chemmod:tin"
+    },
+    {
+      "item": "chemmod:hydrochloric_acid_dil"
+    },
+    {
+      "item": "chemmod:hydrochloric_acid_dil"
+    }
+  ],
+  "result": {
+    "item": "chemmod:tin_ii_chloride",
+    "count": 1
+  }
+
+}

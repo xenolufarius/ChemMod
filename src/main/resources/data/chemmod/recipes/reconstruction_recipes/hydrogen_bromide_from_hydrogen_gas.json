@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shapeless",
+
+  "ingredients": [
+    {
+      "item": "chemmod:hydrogen_gas"
+    },
+    {
+      "item": "chemmod:bromine_gas"
+    }
+  ],
+  "result": {
+    "item": "chemmod:hydrogen_bromide",
+    "count": 2
+  }
+
+}

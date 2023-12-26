@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shapeless",
+
+  "ingredients": [
+    {
+      "item": "chemmod:sodium_hydroxide"
+    },
+    {
+      "item": "chemmod:nitric_acid_dil"
+    }
+  ],
+  "result": {
+    "item": "chemmod:sodium_nitrate",
+    "count": 1
+  }
+
+}

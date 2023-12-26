@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shapeless",
+
+  "ingredients": [
+    {
+      "item": "chemmod:tin"
+    },
+    {
+      "item": "chemmod:iodine_gas"
+    }
+  ],
+  "result": {
+    "item": "chemmod:tin_iv_iodide",
+    "count": 1
+  }
+
+}

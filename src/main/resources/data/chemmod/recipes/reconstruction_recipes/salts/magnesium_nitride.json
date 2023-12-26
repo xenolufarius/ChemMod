@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shapeless",
+
+  "ingredients": [
+    {
+      "item": "chemmod:magnesium"
+    },
+    {
+      "item": "chemmod:magnesium"
+    },
+    {
+      "item": "chemmod:magnesium"
+    },
+    {
+      "item": "chemmod:nitrogen_gas"
+    }
+  ],
+  "result": {
+    "item": "chemmod:magnesium_nitride",
+    "count": 1
+  }
+
+}

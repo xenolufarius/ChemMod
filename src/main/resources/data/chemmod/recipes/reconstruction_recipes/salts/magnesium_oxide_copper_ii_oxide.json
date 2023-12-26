@@ -1,0 +1,26 @@
+{
+  "type": "minecraft:crafting_shapeless",
+
+  "ingredients": [
+    {
+      "item": "chemmod:magnesium"
+    },
+    {
+      "item": "chemmod:magnesium"
+    },
+    {
+      "item": "chemmod:magnesium"
+    },
+    {
+      "item": "chemmod:copper_ii_oxide"
+    },
+    {
+      "item": "chemmod:copper_ii_oxide"
+    }
+  ],
+  "result": {
+    "item": "chemmod:magnesium_oxide",
+    "count": 3
+  }
+
+}

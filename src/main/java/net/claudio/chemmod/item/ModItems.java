@@ -1556,6 +1556,8 @@ public class ModItems {
             () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),94.19,"C2H6S2",0,4,"\nDesc: Its IUPAC name is Ethane-1,2-dithiol.",""));
     public static final RegistryObject<Item> _1_2_DICHLOROETHANE = Items.register( "1_2_dichloroethane",
             () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),98.95,"C2H4Cl2",0,4,"\nDesc: ",""));
+    public static final RegistryObject<Item> BROMINE_WATER = Items.register( "bromine_water",
+            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),159.80,"Br2",0,4,"\nDesc: ",""));
 
     //Drugs
     public static final RegistryObject<Item> THEOBROMINE = Items.register( "theobromine",
@@ -1568,6 +1570,7 @@ public class ModItems {
     //Amides
     public static final RegistryObject<Item> SODIUM_AMIDE = Items.register( "sodium_amide",
             () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),39.01,"NaNH2",0,4,"\nDesc: ",""));
+
 
 
 

@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shapeless",
+
+  "ingredients": [
+    {
+      "item": "chemmod:sodium_sulfide"
+    },
+    {
+      "item": "chemmod:bromine_gas"
+    }
+  ],
+  "result": {
+    "item": "chemmod:sodium_bromide",
+    "count": 2
+  }
+
+}

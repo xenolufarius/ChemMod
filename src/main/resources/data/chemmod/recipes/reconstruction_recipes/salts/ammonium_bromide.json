@@ -1,0 +1,38 @@
+{
+  "type": "minecraft:crafting_shapeless",
+
+  "ingredients": [
+    {
+      "item": "chemmod:bromine_gas"
+    },
+    {
+      "item": "chemmod:bromine_gas"
+    },
+    {
+      "item": "chemmod:bromine_gas"
+    },
+    {
+      "item": "chemmod:ammonia"
+    },
+    {
+      "item": "chemmod:ammonia"
+    },
+    {
+      "item": "chemmod:ammonia"
+    },
+    {
+      "item": "chemmod:ammonia"
+    },
+    {
+      "item": "chemmod:ammonia"
+    },
+    {
+      "item": "chemmod:ammonia"
+    }
+  ],
+  "result": {
+    "item": "chemmod:ammonium_bromide",
+    "count": 6
+  }
+
+}
