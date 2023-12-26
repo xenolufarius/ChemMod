@@ -173,7 +173,7 @@ public class ChemicalItem  extends Item {
     public void appendHoverText(ItemStack stack, @Nullable Level level, List<Component> components, TooltipFlag flag) {
 
         SDSInfo = "";
-        String[] SDSfragments = getcSDS().split(" & ");
+        String[] SDSfragments = getcSDS().split(",");
         for(String sds : SDSfragments)
         {
             //TOXIC

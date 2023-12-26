@@ -1456,9 +1456,9 @@ public class ModItems {
     //Frog Secretions vvv
     //Dermorphin is stronger than morphine. Drug tag needed
     public static final RegistryObject<Item> DERMORPHIN = Items.register( "dermorphin",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),802.89,"C40H50N8O10",0,4,"\nDesc: A natural opioid secreted by certain frogs.","Sm"));
+            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),802.89,"C40H50N8O10",0,4,"\nDesc: A natural opioid secreted by certain frogs.","SM"));
     public static final RegistryObject<Item> DELTORPHIN = Items.register( "deltorphin",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),955.15,"C44H62N10S10S2",0,4,"\nDesc: A natural opioid secreted by certain frogs.","Sm"));
+            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),955.15,"C44H62N10S10S2",0,4,"\nDesc: A natural opioid secreted by certain frogs.","SM"));
     //^^^
     //Mushrooms vvv
     public static final RegistryObject<Item> CHITIN = Items.register( "chitin",
@@ -1477,16 +1477,16 @@ public class ModItems {
     public static final RegistryObject<Item> POLYVINYL_ALCOHOL = Items.register( "polyvinyl_alcohol",
             () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),44.06,"(C2H4O)n",0,4,"\nDesc: Also known as PVOH. This polymer has a wide range of uses.",""));
     public static final RegistryObject<Item> ETHENOL = Items.register( "ethenol",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),44.06,"C2H4O",0,1,"\nDesc: Also known as vinyl chloride. Despite being the monomer of PVOH, it is too unstable and is not its precursor.",""));
+            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),44.06,"C2H4O",0,1,"\nDesc: Also known as vinyl alcohol. Despite being the monomer of PVOH, it is too unstable and is not its precursor.","SA"));
 
     public static final RegistryObject<Item> SODIUM_TETRABORATE = Items.register( "sodium_tetraborate",
             () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),201.16,"Na2B4O7",0,4,"\nDesc: Also known as borax. It has many uses such as in glass making, as a pesticide, in skins tanning, etc...","H"));
     //^^^
     //Alcohols
     public static final RegistryObject<Item> PROPANOL = Items.register( "propanol",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),60.10,"C3H8O",0,4,"\nDesc: Produced naturally during fermentation. It is used as a solvent in pharmaceuticals.","F,H"));
+            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),60.10,"C3H8O",0,4,"\nDesc: Produced naturally during fermentation. It is used as a solvent in pharmaceuticals.","F,H,SA"));
     public static final RegistryObject<Item> METHANOL = Items.register( "methanol",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),32.04,"CH3OH",0,4,"\nDesc: ",""));
+            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),32.04,"CH3OH",0,4,"\nDesc: ","SA"));
 
     public static final RegistryObject<Item> POLYETHYLENE_TEREPHTHALATE = Items.register( "polyethylene_terephthalate",
             () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),192.18,"(C10H8O4)n",0,4,"\nDesc: Also known as polyester PET. A polyester polymer with a wide range of manufacturing uses.",""));
@@ -1505,15 +1505,15 @@ public class ModItems {
 
     //Sugars:
     public static final RegistryObject<Item> SUCROSE = Items.register( "sucrose",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),342.30,"C12H22O11",0,4,"\nDesc: Also known as table sugar, it is produced naturally in plants.",""));
+            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),342.30,"C12H22O11",0,4,"\nDesc: Also known as table sugar, it is produced naturally in plants.","SSp1"));
     public static final RegistryObject<Item> GLUCOSE = Items.register( "glucose",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),180.16,"C6H12O6",0,4,"\nDesc: The most important source of energy in all organisms.",""));
+            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),180.16,"C6H12O6",0,4,"\nDesc: The most important source of energy in all organisms.","SSp1"));
     public static final RegistryObject<Item> FRUCTOSE = Items.register( "fructose",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),180.16,"C6H12O6",0,4,"\nDesc: Also known as fruit sugar. It is an important sweetener added to most foods. It is 1.7 times sweeter than sucrose.",""));
+            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),180.16,"C6H12O6",0,4,"\nDesc: Also known as fruit sugar. It is an important sweetener added to most foods. It is 1.7 times sweeter than sucrose.","SSp2"));
     public static final RegistryObject<Item> LACTOSE = Items.register( "lactose",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),342.30,"C12H22O11",0,4,"\nDesc: Also known as milk sugar. It is added to baby formula.",""));
+            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),342.30,"C12H22O11",0,4,"\nDesc: Also known as milk sugar. It is added to baby formula.","SSp1"));
     public static final RegistryObject<Item> GALACTOSE = Items.register( "galactose",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),180.16,"C6H12O6",0,4,"\nDesc: Also known as brain sugar. It is as sweet as glucose.",""));
+            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),180.16,"C6H12O6",0,4,"\nDesc: Also known as brain sugar. It is as sweet as glucose.","SSp1"));
 
     //Sugars^^^^^
     //candle Wax vvv and other alkanes
@@ -1571,7 +1571,7 @@ public class ModItems {
     public static final RegistryObject<Item> THEOBROMINE = Items.register( "theobromine",
             () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),180.17,"C7H8N4O2",0,4,"\nDesc: ",""));
     public static final RegistryObject<Item> CAFFEINE = Items.register( "caffeine",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),194.19,"C8H10N4O2",0,4,"\nDesc: ","S2"));
+            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),194.19,"C8H10N4O2",0,4,"\nDesc: ","SSp3"));
 
     //Fluorides
     public static final RegistryObject<Item> NITROGEN_TRIFLUORIDE = Items.register( "nitrogen_trifluoride",

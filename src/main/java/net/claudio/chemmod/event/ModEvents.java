@@ -595,7 +595,7 @@ public class ModEvents {
                 if(true)
                 {
                     //Splits SDS into fragments and puts them into an array.
-                    String[] SDSfragments = chemicalItem.getcSDS().split(" & ");
+                    String[] SDSfragments = chemicalItem.getcSDS().split(",");
 
                     //Might change to switch
                     //Might not. Don't know if this will handle multiple possible at once
@@ -639,6 +639,16 @@ public class ModEvents {
 
 
                      */
+                    //S1:explosive
+                    //S2:nausea
+                    //SA:nausea that lasts longer for alcohol
+                    //S3:pyrophoric
+                    //S4:shock sensitive
+                    //SSp1:speed boost small
+                    //SSp2:speed boost medium
+                    //SSp3:speed boost large
+                    //SM:medicine
+                    //SG:growth stim for plants
                     //This works :)
                     for(String sds : SDSfragments)
                     {
@@ -650,10 +660,34 @@ public class ModEvents {
                             player.hurt(DamageSource.explosion(new Explosion(player.level, player, player.getX(), player.getY(), player.getZ(),3.0f)), 20);
 
                         }
-                        //SPECIAL CASE Hyper
+                        //SPECIAL CASE speed boost 1
                         //Grants speed boost. Rn for 3 seconds. I suspect 20 ticks = 1 s, so 60 = 3
+                        if (sds.equals("SSp1")) {
+                            player.addEffect(new MobEffectInstance(MobEffects.MOVEMENT_SPEED,100,1));
+                        }
+                        //SPECIAL CASE speed boost 2
+                        //Grants speed boost. Rn for 3 seconds. I suspect 20 ticks = 1 s, so 60 = 3
+                        if (sds.equals("SSp2")) {
+                            player.addEffect(new MobEffectInstance(MobEffects.MOVEMENT_SPEED,200,3));
+                        }
+                        //SPECIAL CASE speed boost 3
+                        //Grants speed boost. Rn for 3 seconds. I suspect 20 ticks = 1 s, so 60 = 3
+                        if (sds.equals("SSp3")) {
+                            player.addEffect(new MobEffectInstance(MobEffects.MOVEMENT_SPEED,600,10));
+                        }
+                        //SPECIAL CASE nausea
+                        //Gives nausea debuff
                         if (sds.equals("S2")) {
-                            player.addEffect(new MobEffectInstance(MobEffects.MOVEMENT_SPEED,200,5));
+                            player.addEffect(new MobEffectInstance(MobEffects.CONFUSION,200,2));
+                        }
+                        //SPECIAL CASE nausea but for alcohol
+                        //Gives nausea debuff
+                        if (sds.equals("SA")) {
+                            player.addEffect(new MobEffectInstance(MobEffects.CONFUSION,600,2));
+                        }
+                        //SPECIAL CASE medicine
+                        if (sds.equals("SM")) {
+                            player.addEffect(new MobEffectInstance(MobEffects.REGENERATION, 60, 3));
                         }
                         //TOXIC
                         //Kills player
