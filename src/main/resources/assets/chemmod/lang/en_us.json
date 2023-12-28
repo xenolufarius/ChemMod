@@ -29,6 +29,8 @@
 
   "block.chemmod.deconstructor_block": "Deconstructor",
   "block.chemmod.radicalizer": "Radicalizer",
+  "block.chemmod.reconstructor_block": "Reconstructor",
+  "block.chemmod.radicalizer_block": "Radicalizer",
   "block.chemmod.alchemy_table": "Novice Alchemy Table",
   "block.chemmod.alchemy_table_2": "Apprentice Alchemy Table",
   "block.chemmod.alchemy_table_3": "Master Alchemy Table",
@@ -862,6 +864,7 @@
   "item.chemmod.glycogen": "Glycogen",
   "item.chemmod.lazurite": "Lazurite",
   "item.chemmod.hematite": "Hematite",
+  "item.chemmod.kaolinite": "Kaolinite",
   "item.chemmod.pyrite": "Pyrite",
   "item.chemmod.olivine": "Olivine",
   "item.chemmod.polyvinyl_alcohol": "Polyvinyl Alcohol",
@@ -890,6 +893,14 @@
   "item.chemmod.sodium_hydrosulfide": "Sodium Hydrosulfide",
   "item.chemmod.edt": "EDT",
   "item.chemmod.1_2_dichloroethane": "1,2-Dichloroethane",
+  "item.chemmod.sulfur_trioxide": "Sulfur Trioxide",
+  "item.chemmod.methanol": "Methanol",
+  "item.chemmod.hydrogen_bromide": "Hydrogen Bromide",
+  "item.chemmod.dms": "DMS",
+  "item.chemmod.bromine_water": "Bromine Water",
+  "item.chemmod.caffeine": "Caffeine",
+  "item.chemmod.nitrogen_trifluoride": "Nitrogen Trifluoride",
+  "item.chemmod.sodium_amide": "Sodium Amide",
 
 
 
@@ -898,6 +909,7 @@
   "item.chemmod.hydrochloric_acid_dil": "Hydrochloric Acid",
   "item.chemmod.sulfuric_acid_dil": "Sulfuric Acid",
   "item.chemmod.nitric_acid_dil": "Nitric Acid",
+  "item.chemmod.vinegar": "Vinegar",
 
 
 

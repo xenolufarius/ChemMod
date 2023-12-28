@@ -11,7 +11,7 @@ import net.minecraft.world.entity.player.Inventory;
 
 public class DeconstructorBlockScreen extends AbstractContainerScreen<DeconstructorBlockMenu> {
     private static final ResourceLocation TEXTURE =
-            new ResourceLocation(ChemMod.MOD_ID,"textures/gui/deconstructor_prototype2_gui.png");
+            new ResourceLocation(ChemMod.MOD_ID,"textures/gui/deconstructor_prototype_gui4.png");
 
     public DeconstructorBlockScreen(DeconstructorBlockMenu menu, Inventory inventory, Component component) {
         super(menu, inventory, component);
