@@ -178,39 +178,66 @@ public class ChemicalItem  extends Item {
         {
             //TOXIC
             if (sds.equals("T")) {
-                SDSInfo = SDSInfo + ", " + "Toxic";
+                if (SDSInfo.equals(""))
+                    SDSInfo = "Toxic";
+                else
+                    SDSInfo = SDSInfo + ", " + "Toxic";
             }
             //CORROSIVE
             if (sds.equals("C")) {
-                SDSInfo = SDSInfo + ", " + "Corrosive";
+                if (SDSInfo.equals(""))
+                    SDSInfo = "Corrosive";
+                else
+                    SDSInfo = SDSInfo + ", " + "Corrosive";
             }
             //HEALTH HAZARD
             if (sds.equals("H")) {
-                SDSInfo = SDSInfo + ", " + "Health Hazard";
+                if (SDSInfo.equals(""))
+                    SDSInfo = "Health Hazard";
+                else
+                    SDSInfo = SDSInfo + ", " + "Health Hazard";
             }
             //EXCLAMATION MARK
             if (sds.equals("I")) {
-                SDSInfo = SDSInfo + ", " + "Irritant";
+                if (SDSInfo.equals(""))
+                    SDSInfo = "Irritant";
+                else
+                    SDSInfo = SDSInfo + ", " + "Irritant";
             }
             //GAS CYLINDER
             if (sds.equals("G")) {
-                SDSInfo = SDSInfo + ", " + "Gas Under Pressure";
+                if (SDSInfo.equals(""))
+                    SDSInfo = "Gas Under Pressure";
+                else
+                    SDSInfo = SDSInfo + ", " + "Gas Under Pressure";
             }
             //EXPLODING BOMB
             if (sds.equals("E")) {
-                SDSInfo = SDSInfo + ", " + "Explosive";
+                if (SDSInfo.equals(""))
+                    SDSInfo = "Explosive";
+                else
+                    SDSInfo = SDSInfo + ", " + "Explosive";
             }
             //FLAMMABLE
             if (sds.equals("F")) {
-                SDSInfo = SDSInfo + ", " + "Flammable";
+                if (SDSInfo.equals(""))
+                    SDSInfo = "Flammable";
+                else
+                    SDSInfo = SDSInfo + ", " + "Flammable";
             }
             //OXIDIZER
             if (sds.equals("O")) {
-                SDSInfo = SDSInfo + ", " + "Oxidizer";
+                if (SDSInfo.equals(""))
+                    SDSInfo = "Oxidizer";
+                else
+                    SDSInfo = SDSInfo + ", " + "Oxidizer";
             }
             //HARMFUL TO ENVIRONMENT
             if (sds.equals("A")) {
-                SDSInfo = SDSInfo + ", " + "Harmful To Environment";
+                if (SDSInfo.equals(""))
+                    SDSInfo = "Harmful To Environment";
+                else
+                    SDSInfo = SDSInfo + ", " + "Harmful To Environment";
             }
         }
 
@@ -226,7 +253,10 @@ public class ChemicalItem  extends Item {
         } else if (Screen.hasControlDown()) {
             //\n is freaking out for some reason
             //Good enough for now
-            components.add(Component.literal("Hazards: Handle With Caution" + SDSInfo).withStyle(ChatFormatting.YELLOW));
+            if(SDSInfo.equals(""))
+                components.add(Component.literal("Hazards: None").withStyle(ChatFormatting.YELLOW));
+            else
+                components.add(Component.literal("Hazards: " + SDSInfo).withStyle(ChatFormatting.YELLOW));
         } else
         {
             components.add(Component.literal("Press SHIFT for more info").withStyle(ChatFormatting.DARK_GREEN));

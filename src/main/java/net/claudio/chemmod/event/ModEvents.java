@@ -78,6 +78,7 @@ public class ModEvents {
 
          */
 
+
         if(event.getType() == ModVillagers.CHEMIST.get())
         {
             Int2ObjectMap<List<VillagerTrades.ItemListing>> trades = event.getTrades();
@@ -142,6 +143,7 @@ public class ModEvents {
                     new ItemStack(ModItems.URANIUM.get(), 4),
                     nether_star, 20, 40, 0.02F));
         }
+
 
         if(event.getType() == ModVillagers.ALCHEMIST.get())
         {
