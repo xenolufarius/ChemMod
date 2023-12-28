@@ -1,0 +1,19 @@
+{
+  "type": "chemmod:deconstructor",
+
+  "ingredients": [
+    {
+      "item": "chemmod:nitrogen_trifluoride"
+    }
+  ],
+  "output":[ {
+    "item": "chemmod:nitrogen",
+    "count": 1
+  },
+    {
+      "item": "chemmod:fluorine",
+      "count": 3
+    }
+  ]
+
+}

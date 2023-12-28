@@ -1,0 +1,19 @@
+{
+  "type": "chemmod:deconstructor",
+
+  "ingredients": [
+    {
+      "item": "chemmod:copper_ii_carbonate_hydroxide"
+    }
+  ],
+  "output":[ {
+    "item": "chemmod:copper",
+    "count": 2
+  },
+    {
+      "item": "chemmod:oxygen",
+      "count": 5
+    }
+  ]
+
+}

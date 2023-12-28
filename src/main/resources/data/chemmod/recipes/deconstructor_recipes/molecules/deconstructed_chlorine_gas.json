@@ -1,0 +1,16 @@
+{
+  "type": "chemmod:deconstructor",
+
+  "ingredients": [
+    {
+      "item": "chemmod:chlorine_gas"
+    }
+  ],
+  "output":[
+    {
+      "item": "chemmod:chlorine",
+      "count": 2
+    }
+  ]
+
+}

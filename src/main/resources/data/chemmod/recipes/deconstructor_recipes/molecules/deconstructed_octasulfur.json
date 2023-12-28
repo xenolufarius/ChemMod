@@ -1,0 +1,16 @@
+{
+  "type": "chemmod:deconstructor",
+
+  "ingredients": [
+    {
+      "item": "chemmod:octasulfur"
+    }
+  ],
+  "output":[
+    {
+      "item": "chemmod:sulfur",
+      "count": 8
+    }
+  ]
+
+}

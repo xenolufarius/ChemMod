@@ -1,0 +1,19 @@
+{
+  "type": "chemmod:deconstructor",
+
+  "ingredients": [
+    {
+      "item": "chemmod:hydrogen_bromine"
+    }
+  ],
+  "output":[ {
+    "item": "chemmod:bromine",
+    "count": 1
+  },
+    {
+      "item": "chemmod:hydrogen",
+      "count": 1
+    }
+  ]
+
+}

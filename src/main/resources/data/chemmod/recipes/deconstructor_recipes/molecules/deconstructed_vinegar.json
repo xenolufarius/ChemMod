@@ -1,0 +1,19 @@
+{
+  "type": "chemmod:deconstructor",
+
+  "ingredients": [
+    {
+      "item": "chemmod:vinegar"
+    }
+  ],
+  "output":[ {
+    "item": "chemmod:carbon",
+    "count": 2
+  },
+    {
+      "item": "chemmod:oxygen",
+      "count": 2
+    }
+  ]
+
+}

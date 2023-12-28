@@ -1,0 +1,16 @@
+{
+  "type": "chemmod:deconstructor",
+
+  "ingredients": [
+    {
+      "item": "chemmod:oxygen_gas"
+    }
+  ],
+  "output":[
+    {
+      "item": "chemmod:oxygen",
+      "count": 2
+    }
+  ]
+
+}

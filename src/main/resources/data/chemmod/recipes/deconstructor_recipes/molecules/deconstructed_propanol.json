@@ -1,0 +1,19 @@
+{
+  "type": "chemmod:deconstructor",
+
+  "ingredients": [
+    {
+      "item": "chemmod:propanol"
+    }
+  ],
+  "output":[ {
+    "item": "chemmod:carbon",
+    "count": 3
+  },
+    {
+      "item": "chemmod:oxygen",
+      "count": 1
+    }
+  ]
+
+}

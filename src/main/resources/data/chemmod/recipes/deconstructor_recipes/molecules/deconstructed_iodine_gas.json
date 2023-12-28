@@ -1,0 +1,16 @@
+{
+  "type": "chemmod:deconstructor",
+
+  "ingredients": [
+    {
+      "item": "chemmod:iodine_gas"
+    }
+  ],
+  "output":[
+    {
+      "item": "chemmod:iodine",
+      "count": 2
+    }
+  ]
+
+}

@@ -1,0 +1,16 @@
+{
+  "type": "chemmod:deconstructor",
+
+  "ingredients": [
+    {
+      "item": "chemmod:bromine_gas"
+    }
+  ],
+  "output":[
+    {
+      "item": "chemmod:bromine",
+      "count": 2
+    }
+  ]
+
+}
