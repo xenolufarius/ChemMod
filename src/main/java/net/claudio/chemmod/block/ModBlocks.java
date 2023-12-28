@@ -1,10 +1,7 @@
 package net.claudio.chemmod.block;
 
 import net.claudio.chemmod.ChemMod;
-import net.claudio.chemmod.block.custom.DeconstructorBlock;
-import net.claudio.chemmod.block.custom.JumpyBlock;
-import net.claudio.chemmod.block.custom.LavaLampBlock;
-import net.claudio.chemmod.block.custom.ReconstructorBlock;
+import net.claudio.chemmod.block.custom.*;
 import net.claudio.chemmod.item.ModCreativeModeTab;
 import net.claudio.chemmod.item.ModItems;
 import net.minecraft.world.item.BlockItem;
@@ -43,7 +40,7 @@ public class ModBlocks {
     public static final RegistryObject<Block> DECONSTRUCTOR_BLOCK = registerBlock("deconstructor_block",
             () -> new DeconstructorBlock(BlockBehaviour.Properties.of(Material.METAL).strength(2f).noOcclusion()), ModCreativeModeTab.BLOCKS_TAB);
     public static final RegistryObject<Block> RADICALIZER_BLOCK = registerBlock("radicalizer_block",
-            () -> new DeconstructorBlock(BlockBehaviour.Properties.of(Material.METAL).strength(2f).noOcclusion()), ModCreativeModeTab.BLOCKS_TAB);
+            () -> new RadicalizerBlock(BlockBehaviour.Properties.of(Material.METAL).strength(2f).noOcclusion()), ModCreativeModeTab.BLOCKS_TAB);
 
     public static final RegistryObject<Block> RECONSTRUCTOR_BLOCK = registerBlock("reconstructor_block",
             () -> new ReconstructorBlock(BlockBehaviour.Properties.of(Material.METAL).strength(2f).noOcclusion()), ModCreativeModeTab.BLOCKS_TAB);

@@ -1,0 +1,32 @@
+{
+  "type": "minecraft:crafting_shapeless",
+
+  "ingredients": [
+    {
+      "item": "chemmod:sulfur_dioxide"
+    },
+    {
+      "item": "chemmod:sulfur_dioxide"
+    },
+    {
+      "item": "chemmod:nitrogen_dioxide"
+    },
+    {
+      "item": "chemmod:nitrogen_dioxide"
+    },
+    {
+      "item": "chemmod:oxygen_gas"
+    },
+    {
+      "item": "chemmod:water"
+    },
+    {
+      "item": "chemmod:water"
+    }
+  ],
+  "result": {
+    "item": "chemmod:sulfuric_acid_dil",
+    "count": 2
+  }
+
+}

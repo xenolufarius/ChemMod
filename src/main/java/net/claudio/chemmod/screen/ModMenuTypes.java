@@ -16,6 +16,8 @@ public class ModMenuTypes {
 
     public static final RegistryObject<MenuType<DeconstructorBlockMenu>> DECONSTRUCTOR_BLOCK_MENU =
             registerMenuType(DeconstructorBlockMenu::new, "deconstructor_block_menu");
+    public static final RegistryObject<MenuType<RadicalizerBlockMenu>> RADICALIZER_BLOCK_MENU =
+            registerMenuType(RadicalizerBlockMenu::new, "radicalizer_block_menu");
 
     public static final RegistryObject<MenuType<ReconstructorBlockMenu>> RECONSTRUCTOR_BLOCK_MENU =
             registerMenuType(ReconstructorBlockMenu::new, "reconstructor_block_menu");

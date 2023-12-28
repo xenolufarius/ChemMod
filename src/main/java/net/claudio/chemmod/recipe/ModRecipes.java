@@ -13,6 +13,8 @@ public class ModRecipes {
 
     public static final RegistryObject<RecipeSerializer<DeconstructorBlockRecipe>> DECONSTRUCTOR_SERIALIZER =
             SERIALIZERS.register("deconstructor", () -> DeconstructorBlockRecipe.Serializer.INSTANCE);
+    public static final RegistryObject<RecipeSerializer<RadicalizerBlockRecipe>> RADICALIZER_SERIALIZER =
+            SERIALIZERS.register("radicalizer", () -> RadicalizerBlockRecipe.Serializer.INSTANCE);
     public static final RegistryObject<RecipeSerializer<ReconstructorBlockRecipe>> RECONSTRUCTOR_SERIALIZER =
             SERIALIZERS.register("reconstructor", () -> ReconstructorBlockRecipe.Serializer.INSTANCE);
 
