@@ -1,0 +1,19 @@
+{
+  "type": "chemmod:deconstructor",
+
+  "ingredients": [
+    {
+      "item": "chemmod:bromoethane"
+    }
+  ],
+  "output":[ {
+    "item": "chemmod:carbon",
+    "count": 2
+  },
+    {
+      "item": "chemmod:bromine",
+      "count": 1
+    }
+  ]
+
+}

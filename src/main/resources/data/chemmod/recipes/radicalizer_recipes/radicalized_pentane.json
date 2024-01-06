@@ -1,0 +1,19 @@
+{
+  "type": "chemmod:radicalizer",
+
+  "ingredients": [
+    {
+      "item": "chemmod:pentane"
+    },
+    {
+      "item": "chemmod:bromine_gas"
+    }
+  ],
+  "output":[ {
+    "item": "chemmod:1_bromopentane",
+    "count": 1,
+    "chance": 100
+  }
+  ]
+
+}

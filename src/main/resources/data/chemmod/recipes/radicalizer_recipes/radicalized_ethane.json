@@ -3,15 +3,16 @@
 
   "ingredients": [
     {
-      "item": "chemmod:methane"
+      "item": "chemmod:ethane"
     },
     {
       "item": "chemmod:bromine_gas"
     }
   ],
   "output":[ {
-    "item": "chemmod:propanol",
-    "count": 1
+    "item": "chemmod:bromoethane",
+    "count": 1,
+    "chance": 100
   }
   ]
 

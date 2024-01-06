@@ -904,6 +904,17 @@
 
 
 
+  "item.chemmod.bromomethane": "Bromomethane",
+  "item.chemmod.bromoethane": "Bromoethane",
+  "item.chemmod.1_bromopropane": "1-Bromopropane",
+  "item.chemmod.1_bromobutane": "1-Bromobutane",
+  "item.chemmod.1_bromopentane": "1-Bromopentane",
+  "item.chemmod.1_bromohexane": "1-Bromohexane",
+  "item.chemmod.1_bromodocosane": "1-Bromodocosane",
+  "item.chemmod.1_bromooctadecane": "1-Bromooctadecane",
+
+
+
 
   "item.chemmod.carbonic_acid_dil": "Carbonic Acid",
   "item.chemmod.hydrochloric_acid_dil": "Hydrochloric Acid",

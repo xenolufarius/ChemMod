@@ -163,6 +163,7 @@ public class RadicalizerBlockEntity extends BlockEntity implements MenuProvider 
             recipe.ifPresent(radicalizerBlockRecipe -> {
                 ItemStack input1 = radicalizerBlockRecipe.getIngredients().get(0).getItems()[0];
                 ItemStack input2 = radicalizerBlockRecipe.getIngredients().get(1).getItems()[0];
+                ItemStack inputss = radicalizerBlockRecipe.getIngredients().get(0).getItems()[0];
 
                 /*
                 if(inputs[0] == pEntity.itemHandler.getStackInSlot(0) && inputs[1] == pEntity.itemHandler.getStackInSlot(1))
@@ -170,29 +171,29 @@ public class RadicalizerBlockEntity extends BlockEntity implements MenuProvider 
 
                 }
                 */
-                //TODO: SOLVE MULTIPLE INPUTS ISSUE
-                if (input1 == pEntity.itemHandler.getStackInSlot(0) || input2 == pEntity.itemHandler.getStackInSlot(1)) {
+                //TODO: SOLVE MULTIPLE INPUTS ISSUE. Working now
+                if (input1.getItem() == pEntity.itemHandler.getStackInSlot(0).getItem() && input2.getItem() == pEntity.itemHandler.getStackInSlot(1).getItem()){
 
 
-                NonNullList<ItemStack> outputs = radicalizerBlockRecipe.getOutput();
-                if (pEntity.itemHandler.getStackInSlot(2).getMaxStackSize() + 1 > pEntity.itemHandler.getStackInSlot(2).getCount() + outputs.get(0).getCount()) {
-                    //Comment for slot 0
-                    pEntity.itemHandler.extractItem(0, 1, false);
-                    pEntity.itemHandler.extractItem(1, 1, false);
-                    for (ItemStack output : outputs) {
-                        if (output.getItem() == outputs.get(0).getItem()) {
-                            if (pEntity.itemHandler.getStackInSlot(2).getItem() == output.getItem() || pEntity.itemHandler.getStackInSlot(2).isEmpty()) {
-                                if (pEntity.itemHandler.getStackInSlot(2).isEmpty()) {
-                                    pEntity.itemHandler.setStackInSlot(2, output.copy());
-                                    //vvv Need to make sure it doesn't go past max stack size
-                                } else if (pEntity.itemHandler.getStackInSlot(2).getItem() == output.getItem() && pEntity.itemHandler.getStackInSlot(2).getMaxStackSize() + 1 > pEntity.itemHandler.getStackInSlot(2).getCount() + output.getCount()) {
-                                    pEntity.itemHandler.getStackInSlot(2).grow(output.getCount());
+                    NonNullList<ItemStack> outputs = radicalizerBlockRecipe.getOutput();
+                    if (pEntity.itemHandler.getStackInSlot(2).getMaxStackSize() + 1 > pEntity.itemHandler.getStackInSlot(2).getCount() + outputs.get(0).getCount()) {
+                        //Comment for slot 0
+                        pEntity.itemHandler.extractItem(0, 1, false);
+                        pEntity.itemHandler.extractItem(1, 1, false);
+                        for (ItemStack output : outputs) {
+                            if (output.getItem() == outputs.get(0).getItem()) {
+                                if (pEntity.itemHandler.getStackInSlot(2).getItem() == output.getItem() || pEntity.itemHandler.getStackInSlot(2).isEmpty()) {
+                                    if (pEntity.itemHandler.getStackInSlot(2).isEmpty()) {
+                                        pEntity.itemHandler.setStackInSlot(2, output.copy());
+                                        //vvv Need to make sure it doesn't go past max stack size
+                                    } else if (pEntity.itemHandler.getStackInSlot(2).getItem() == output.getItem() && pEntity.itemHandler.getStackInSlot(2).getMaxStackSize() + 1 > pEntity.itemHandler.getStackInSlot(2).getCount() + output.getCount()) {
+                                        pEntity.itemHandler.getStackInSlot(2).grow(output.getCount());
+                                    }
                                 }
                             }
                         }
-                    }
-                } else pEntity.resetProgress();
-            }
+                    } else pEntity.resetProgress();
+                }
             });
 
             pEntity.resetProgress();

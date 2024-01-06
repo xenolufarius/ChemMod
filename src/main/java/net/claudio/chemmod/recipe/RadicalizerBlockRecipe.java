@@ -114,6 +114,7 @@ public class RadicalizerBlockRecipe implements Recipe<SimpleContainer> {
             }
 
             return new RadicalizerBlockRecipe(pRecipeId, outputs, inputs);
+
         }
 
         @Override

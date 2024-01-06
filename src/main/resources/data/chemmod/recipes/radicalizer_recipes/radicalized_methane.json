@@ -1,0 +1,19 @@
+{
+  "type": "chemmod:radicalizer",
+
+  "ingredients": [
+    {
+      "item": "chemmod:methane"
+    },
+    {
+      "item": "chemmod:bromine_gas"
+    }
+  ],
+  "output":[ {
+    "item": "chemmod:bromomethane",
+    "count": 1,
+    "chance": 100
+  }
+  ]
+
+}

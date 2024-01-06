@@ -1,0 +1,19 @@
+{
+  "type": "chemmod:radicalizer",
+
+  "ingredients": [
+    {
+      "item": "chemmod:butane"
+    },
+    {
+      "item": "chemmod:bromine_gas"
+    }
+  ],
+  "output":[ {
+    "item": "chemmod:1_bromobutane",
+    "count": 1,
+    "chance": 100
+  }
+  ]
+
+}

@@ -1582,6 +1582,27 @@ public class ModItems {
             () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),39.01,"NaNH2",0,4,"\nDesc: ",""));
 
 
+    //Organic Molecules (Non-pure alkanes)
+    //Brominated Alkanes
+    public static final RegistryObject<Item> BROMOMETHANE = Items.register( "bromomethane",
+            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),94.94,"CH3Br",0,4,"\nDesc: ",""));
+    public static final RegistryObject<Item> BROMOETHANE = Items.register( "bromoethane",
+            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),108.97,"C2H5Br",0,4,"\nDesc: ",""));
+    public static final RegistryObject<Item> _1_BROMOPROPANE = Items.register( "1_bromopropane",
+            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),122.99,"C3H7Br",0,4,"\nDesc: ",""));
+    public static final RegistryObject<Item> _2_BROMOPROPANE = Items.register( "2_bromopropane",
+            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),122.99,"C3H7Br",0,4,"\nDesc: ",""));
+    public static final RegistryObject<Item> _1_BROMOBUTANE = Items.register( "1_bromobutane",
+            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),137.02,"C4H9Br",0,4,"\nDesc: ",""));
+    public static final RegistryObject<Item> _1_BROMOPENTANE = Items.register( "1_bromopentane",
+            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),151.05,"C5H11Br",0,4,"\nDesc: ",""));
+    public static final RegistryObject<Item> _1_BROMOHEXANE = Items.register( "1_bromohexane",
+            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),165.07,"C6H13Br",0,4,"\nDesc: ",""));
+    public static final RegistryObject<Item> _1_BROMODOCOSANE = Items.register( "1_bromodocosane",
+            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),390.54,"C22H45Br",0,4,"\nDesc: ",""));
+    public static final RegistryObject<Item> _1_BROMOOCTADECANE = Items.register( "1_bromooctadecane",
+            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),334.43,"C18H38Br",0,4,"\nDesc: ",""));
+
 
 
 
