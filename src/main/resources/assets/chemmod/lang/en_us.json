@@ -31,6 +31,7 @@
   "block.chemmod.radicalizer": "Radicalizer",
   "block.chemmod.reconstructor_block": "Reconstructor",
   "block.chemmod.radicalizer_block": "Radicalizer",
+  "block.chemmod.lab_table_block": "Lab Table",
   "block.chemmod.alchemy_table": "Novice Alchemy Table",
   "block.chemmod.alchemy_table_2": "Apprentice Alchemy Table",
   "block.chemmod.alchemy_table_3": "Master Alchemy Table",

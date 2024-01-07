@@ -41,6 +41,8 @@ public class ModBlocks {
             () -> new DeconstructorBlock(BlockBehaviour.Properties.of(Material.METAL).strength(2f).noOcclusion()), ModCreativeModeTab.BLOCKS_TAB);
     public static final RegistryObject<Block> RADICALIZER_BLOCK = registerBlock("radicalizer_block",
             () -> new RadicalizerBlock(BlockBehaviour.Properties.of(Material.METAL).strength(2f).noOcclusion()), ModCreativeModeTab.BLOCKS_TAB);
+    public static final RegistryObject<Block> LAB_TABLE_BLOCK = registerBlock("lab_table_block",
+            () -> new LabTableBlock(BlockBehaviour.Properties.of(Material.METAL).strength(2f).noOcclusion()), ModCreativeModeTab.BLOCKS_TAB);
 
     public static final RegistryObject<Block> RECONSTRUCTOR_BLOCK = registerBlock("reconstructor_block",
             () -> new ReconstructorBlock(BlockBehaviour.Properties.of(Material.METAL).strength(2f).noOcclusion()), ModCreativeModeTab.BLOCKS_TAB);

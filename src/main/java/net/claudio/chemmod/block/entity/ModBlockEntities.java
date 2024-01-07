@@ -2,6 +2,7 @@ package net.claudio.chemmod.block.entity;
 
 import net.claudio.chemmod.ChemMod;
 import net.claudio.chemmod.block.ModBlocks;
+import net.claudio.chemmod.screen.LabTableBlockScreen;
 import net.minecraft.world.level.block.entity.BlockEntityType;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
@@ -20,6 +21,10 @@ public class ModBlockEntities {
             BLOCK_ENTITIES.register("radicalizer_block", () ->
                     BlockEntityType.Builder.of(RadicalizerBlockEntity::new,
                             ModBlocks.RADICALIZER_BLOCK.get()).build(null));
+    public static final RegistryObject<BlockEntityType<LabTableBlockEntity>> LAB_TABLE_BLOCK =
+            BLOCK_ENTITIES.register("lab_table_block", () ->
+                    BlockEntityType.Builder.of(LabTableBlockEntity::new,
+                            ModBlocks.LAB_TABLE_BLOCK.get()).build(null));
 
     public static final RegistryObject<BlockEntityType<ReconstructorBlockEntity>> RECONSTRUCTOR_BLOCK =
             BLOCK_ENTITIES.register("reconstructor_block", () ->

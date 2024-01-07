@@ -9,6 +9,7 @@ import net.claudio.chemmod.networking.ModMessages;
 import net.claudio.chemmod.painting.ModPaintings;
 import net.claudio.chemmod.recipe.ModRecipes;
 import net.claudio.chemmod.screen.DeconstructorBlockScreen;
+import net.claudio.chemmod.screen.LabTableBlockScreen;
 import net.claudio.chemmod.screen.ModMenuTypes;
 import net.claudio.chemmod.screen.RadicalizerBlockScreen;
 import net.claudio.chemmod.villager.ModVillagers;
@@ -65,9 +66,9 @@ public class ChemMod
         @SubscribeEvent
         public static void onClientSetup(FMLClientSetupEvent event)
         {
-
             MenuScreens.register(ModMenuTypes.DECONSTRUCTOR_BLOCK_MENU.get(), DeconstructorBlockScreen::new);
             MenuScreens.register(ModMenuTypes.RADICALIZER_BLOCK_MENU.get(), RadicalizerBlockScreen::new);
+            MenuScreens.register(ModMenuTypes.LAB_TABLE_BLOCK_MENU.get(), LabTableBlockScreen::new);
 
         }
     }
