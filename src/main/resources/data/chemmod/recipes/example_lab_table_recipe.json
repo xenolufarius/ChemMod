@@ -1,0 +1,22 @@
+{
+  "type": "chemmod:lab_table",
+
+  "ingredients": [
+    {
+      "item": "chemmod:propane",
+      "count": 0,
+      "comment": "I'm using count as a way to store where in gui it will be, and as a way to retrieve it later"
+    },
+    {
+      "item": "chemmod:bromine_gas",
+      "count": 1
+    }
+  ],
+  "output":[ {
+    "item": "chemmod:1_bromopropane",
+    "count": 1,
+    "chance": 100
+  }
+  ]
+
+}

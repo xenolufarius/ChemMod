@@ -38,7 +38,7 @@ public class DeconstructorBlockMenu extends AbstractContainerMenu {
         this.blockEntity.getCapability(CapabilityItemHandler.ITEM_HANDLER_CAPABILITY).ifPresent(handler -> {
 
             this.addSlot(new SlotItemHandler(handler, 0, 80, 15));
-            this.addSlot(new SlotItemHandler(handler, 1, 400, 15));
+            this.addSlot(new SlotItemHandler(handler, 1, 200, 15));
             this.addSlot(new SlotItemHandler(handler, 2, 80, 60));
             this.addSlot(new SlotItemHandler(handler, 3, 60, 60));
         });

@@ -213,6 +213,7 @@ public class RadicalizerBlockEntity extends BlockEntity implements MenuProvider 
 
         return recipe.isPresent() &&
                 //canInsertAmountIntoOutputSlot(inventory) &&
+                rightIngredientsPresent(inventory, recipe.get().getIngredients()) &&
                 canInsertItemIntoOutputSlot(inventory, recipe.get().getOutput());
     }
 
@@ -224,6 +225,21 @@ public class RadicalizerBlockEntity extends BlockEntity implements MenuProvider 
         //Practice
         //Need to figure out how to do multiple outputs
         // return (inventory.getItem(2).getItem() == stack.getItem() || inventory.getItem(2).isEmpty()) && (inventory.getItem(3).getItem() == stack.getItem() || inventory.getItem(3).isEmpty()) ;
+    }
+    private static boolean rightIngredientsPresent(SimpleContainer inventory, NonNullList<Ingredient> stack) {
+        int check = 0;
+        for(int i = 0; i < stack.size(); i++)
+        {
+            //adjust this for loop for the number of outputs. For radicalizer: size = 3, but 2 of those are ingredients so -1
+            for(int s = 0; s < inventory.getContainerSize()-1; s++)
+            {
+                if(inventory.getItem(s).getItem() == stack.get(i).getItems()[0].getItem())
+                {
+                    check++;
+                }
+            }
+        }
+        return check == stack.size();
     }
 
     private static int getFreeOutputSlot(ItemStackHandler itemHandler) {

@@ -209,6 +209,7 @@ public class DeconstructorBlockEntity extends BlockEntity implements MenuProvide
 
         return recipe.isPresent() &&
                 //canInsertAmountIntoOutputSlot(inventory) &&
+                rightIngredientsPresent(inventory, recipe.get().getIngredients()) &&
                 canInsertItemIntoOutputSlot(inventory, recipe.get().getOutput());
     }
 
@@ -220,6 +221,21 @@ public class DeconstructorBlockEntity extends BlockEntity implements MenuProvide
         //Practice
         //Need to figure out how to do multiple outputs
         // return (inventory.getItem(2).getItem() == stack.getItem() || inventory.getItem(2).isEmpty()) && (inventory.getItem(3).getItem() == stack.getItem() || inventory.getItem(3).isEmpty()) ;
+    }
+    private static boolean rightIngredientsPresent(SimpleContainer inventory, NonNullList<Ingredient> stack) {
+        int check = 0;
+        for(int i = 0; i < stack.size(); i++)
+        {
+            //adjust this for loop for the number of outputs. For deconstructor: size = 4, but only 1 of those is an ingredient so -3
+            for(int s = 0; s < inventory.getContainerSize()-3; s++)
+            {
+                if(inventory.getItem(s).getItem() == stack.get(i).getItems()[0].getItem())
+                {
+                    check++;
+                }
+            }
+        }
+        return check == stack.size();
     }
 
     private static int getFreeOutputSlot(ItemStackHandler itemHandler) {

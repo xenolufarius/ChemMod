@@ -17,6 +17,7 @@ import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.inventory.AbstractContainerMenu;
 import net.minecraft.world.inventory.ContainerData;
 import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.crafting.Ingredient;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.entity.BlockEntity;
 import net.minecraft.world.level.block.state.BlockState;
@@ -164,16 +165,22 @@ public class LabTableBlockEntity extends BlockEntity implements MenuProvider {
             recipe.ifPresent(labtableBlockRecipe -> {
                 ItemStack input1 = labtableBlockRecipe.getIngredients().get(0).getItems()[0];
                 ItemStack input2 = labtableBlockRecipe.getIngredients().get(1).getItems()[0];
+                int slots = labtableBlockRecipe.getIngredients().size();
 
                 //TODO: SOLVE MULTIPLE INPUTS ISSUE. Working now
-                if (input1.getItem() == pEntity.itemHandler.getStackInSlot(0).getItem() && input2.getItem() == pEntity.itemHandler.getStackInSlot(1).getItem()){
-
 
                     NonNullList<ItemStack> outputs = labtableBlockRecipe.getOutput();
                     if (pEntity.itemHandler.getStackInSlot(13).getMaxStackSize() + 1 > pEntity.itemHandler.getStackInSlot(13).getCount() + outputs.get(0).getCount()) {
                         //Comment for slot 0
-                        pEntity.itemHandler.extractItem(0, 1, false);
-                        pEntity.itemHandler.extractItem(1, 1, false);
+                        for(int d = 0; d < slots; d++)
+                        {
+                            if(d == 0) {
+                                pEntity.itemHandler.extractItem(d, 1, false);
+                            }
+                            if(d > 0) {
+                                pEntity.itemHandler.extractItem(d, 1, false);
+                            }
+                        }
                         for (ItemStack output : outputs) {
                             if (output.getItem() == outputs.get(0).getItem()) {
                                 if (pEntity.itemHandler.getStackInSlot(13).getItem() == output.getItem() || pEntity.itemHandler.getStackInSlot(13).isEmpty()) {
@@ -187,7 +194,6 @@ public class LabTableBlockEntity extends BlockEntity implements MenuProvider {
                             }
                         }
                     } else pEntity.resetProgress();
-                }else pEntity.resetProgress();
             });
 
             pEntity.resetProgress();
@@ -208,6 +214,7 @@ public class LabTableBlockEntity extends BlockEntity implements MenuProvider {
 
         return recipe.isPresent() &&
                 //canInsertAmountIntoOutputSlot(inventory) &&
+                rightIngredientsPresent(inventory, recipe.get().getIngredients()) &&
                 canInsertItemIntoOutputSlot(inventory, recipe.get().getOutput());
     }
 
@@ -219,6 +226,60 @@ public class LabTableBlockEntity extends BlockEntity implements MenuProvider {
         //Practice
         //Need to figure out how to do multiple outputs
         // return (inventory.getItem(2).getItem() == stack.getItem() || inventory.getItem(2).isEmpty()) && (inventory.getItem(3).getItem() == stack.getItem() || inventory.getItem(3).isEmpty()) ;
+    }
+    private static boolean rightIngredientsPresent(SimpleContainer inventory, NonNullList<Ingredient> stack) {
+        int check = 0;
+        for(int i = 0; i < stack.size(); i++)
+        {
+            //adjust this for loop for the number of outputs. For lab table: size = 14, but the last slot is an output so -1
+            for(int s = 0; s < inventory.getContainerSize()-1; s++)
+            {
+
+                if(stack.get(i).getItems()[0].getCount() == 0)
+                {
+                    if(inventory.getItem(s).getItem() == stack.get(i).getItems()[0].getItem())
+                    {
+                        check++;
+                    }
+                }
+                if(stack.get(i).getItems()[0].getCount() == 1)
+                {
+                    //TODO: RESOLVE CHECKING STEPS
+                    if(inventory.getItem(s).getItem() == stack.get(i).getItems()[0].getItem()
+                         //   && (s == 1 || s == 2 || s == 3 || s == 4)
+                    )
+                    {
+                        check++;
+                    }
+                }
+                if(stack.get(i).getItems()[0].getCount() == 2)
+                {
+                    if(inventory.getItem(s).getItem() == stack.get(i).getItems()[0].getItem() && s <= 8 && s >= 5)
+                    {
+                        check++;
+                    }
+                }
+                if(stack.get(i).getItems()[0].getCount() == 3)
+                {
+                    if(inventory.getItem(s).getItem() == stack.get(i).getItems()[0].getItem() && s <= 12 && s >= 9)
+                    {
+                        check++;
+                    }
+                }
+
+
+
+                /*
+                if(inventory.getItem(s).getItem() == stack.get(i).getItems()[0].getItem())
+                {
+                    check++;
+                }
+                 */
+
+
+            }
+        }
+        return check == stack.size();
     }
 
     private static int getFreeOutputSlot(ItemStackHandler itemHandler) {
