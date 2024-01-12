@@ -1,0 +1,19 @@
+{
+  "type": "chemmod:deconstructor",
+
+  "ingredients": [
+    {
+      "item": "chemmod:2_bromopropane"
+    }
+  ],
+  "output":[ {
+    "item": "chemmod:carbon",
+    "count": 3
+  },
+    {
+      "item": "chemmod:bromine",
+      "count": 1
+    }
+  ]
+
+}

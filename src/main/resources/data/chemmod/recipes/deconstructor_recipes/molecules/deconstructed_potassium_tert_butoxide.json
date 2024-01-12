@@ -3,15 +3,15 @@
 
   "ingredients": [
     {
-      "item": "chemmod:bromopropane"
+      "item": "chemmod:potassium_tert_butoxide"
     }
   ],
   "output":[ {
-    "item": "chemmod:carbon",
-    "count": 3
+    "item": "chemmod:potassium",
+    "count": 1
   },
     {
-      "item": "chemmod:bromine",
+      "item": "chemmod:oxygen",
       "count": 1
     }
   ]

@@ -1,0 +1,19 @@
+{
+  "type": "chemmod:deconstructor",
+
+  "ingredients": [
+    {
+      "item": "chemmod:tert_butyl_alcohol"
+    }
+  ],
+  "output":[ {
+    "item": "chemmod:carbon",
+    "count": 4
+  },
+    {
+      "item": "chemmod:oxygen",
+      "count": 1
+    }
+  ]
+
+}

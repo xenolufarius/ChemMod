@@ -902,6 +902,14 @@
   "item.chemmod.caffeine": "Caffeine",
   "item.chemmod.nitrogen_trifluoride": "Nitrogen Trifluoride",
   "item.chemmod.sodium_amide": "Sodium Amide",
+  "item.chemmod.ethanol": "Ethanol",
+
+
+  "item.chemmod.potassium_tert_butoxide": "Potassium tert-Butoxide",
+  "item.chemmod.tert_butyl_alcohol": "tert-Butyl Alcohol",
+  "item.chemmod.sodium_ethoxide": "Sodium Ethoxide",
+  "item.chemmod.sodium_borohydride": "Sodium Borohydride",
+  "item.chemmod.borane_tetrahydrofuran": "Borane-tetrahydrofuran",
 
 
 

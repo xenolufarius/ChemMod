@@ -1,0 +1,19 @@
+{
+  "type": "chemmod:deconstructor",
+
+  "ingredients": [
+    {
+      "item": "chemmod:2_bromopentane"
+    }
+  ],
+  "output":[ {
+    "item": "chemmod:carbon",
+    "count": 5
+  },
+    {
+      "item": "chemmod:bromine",
+      "count": 1
+    }
+  ]
+
+}

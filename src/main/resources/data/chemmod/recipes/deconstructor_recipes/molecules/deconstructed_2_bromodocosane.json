@@ -1,0 +1,19 @@
+{
+  "type": "chemmod:deconstructor",
+
+  "ingredients": [
+    {
+      "item": "chemmod:2_bromodocosane"
+    }
+  ],
+  "output":[ {
+    "item": "chemmod:carbon",
+    "count": 22
+  },
+    {
+      "item": "chemmod:bromine",
+      "count": 1
+    }
+  ]
+
+}

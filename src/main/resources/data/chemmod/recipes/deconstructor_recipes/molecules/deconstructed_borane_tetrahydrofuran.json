@@ -1,0 +1,19 @@
+{
+  "type": "chemmod:deconstructor",
+
+  "ingredients": [
+    {
+      "item": "chemmod:borane_tetrahydrofuran"
+    }
+  ],
+  "output":[ {
+    "item": "chemmod:boron",
+    "count": 1
+  },
+    {
+      "item": "chemmod:oxygen",
+      "count": 1
+    }
+  ]
+
+}
