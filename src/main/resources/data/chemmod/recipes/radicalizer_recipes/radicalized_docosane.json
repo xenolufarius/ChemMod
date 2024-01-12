@@ -10,7 +10,7 @@
     }
   ],
   "output":[ {
-    "item": "chemmod:1_bromodocosane",
+    "item": "chemmod:2_bromodocosane",
     "count": 1,
     "chance": 100
   }

@@ -10,7 +10,7 @@
     }
   ],
   "output":[ {
-    "item": "chemmod:1_bromopropane",
+    "item": "chemmod:2_bromopropane",
     "count": 1,
     "chance": 100
   }

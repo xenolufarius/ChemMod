@@ -1594,19 +1594,29 @@ public class ModItems {
             () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),122.99,"C3H7Br",0,4,"\nDesc: ",""));
     public static final RegistryObject<Item> _1_BROMOBUTANE = Items.register( "1_bromobutane",
             () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),137.02,"C4H9Br",0,4,"\nDesc: ",""));
+    public static final RegistryObject<Item> _2_BROMOBUTANE = Items.register( "2_bromobutane",
+            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),137.02,"C4H9Br",0,4,"\nDesc: ",""));
     public static final RegistryObject<Item> _1_BROMOPENTANE = Items.register( "1_bromopentane",
+            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),151.05,"C5H11Br",0,4,"\nDesc: ",""));
+    public static final RegistryObject<Item> _2_BROMOPENTANE = Items.register( "2_bromopentane",
             () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),151.05,"C5H11Br",0,4,"\nDesc: ",""));
     public static final RegistryObject<Item> _1_BROMOHEXANE = Items.register( "1_bromohexane",
             () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),165.07,"C6H13Br",0,4,"\nDesc: ",""));
+    public static final RegistryObject<Item> _2_BROMOHEXANE = Items.register( "2_bromohexane",
+            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),165.07,"C6H13Br",0,4,"\nDesc: ",""));
     public static final RegistryObject<Item> _1_BROMODOCOSANE = Items.register( "1_bromodocosane",
             () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),390.54,"C22H45Br",0,4,"\nDesc: ",""));
+    public static final RegistryObject<Item> _2_BROMODOCOSANE = Items.register( "2_bromodocosane",
+            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),390.54,"C22H45Br",0,4,"\nDesc: ",""));
     public static final RegistryObject<Item> _1_BROMOOCTADECANE = Items.register( "1_bromooctadecane",
+            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),334.43,"C18H38Br",0,4,"\nDesc: ",""));
+    public static final RegistryObject<Item> _2_BROMOOCTADECANE = Items.register( "2_bromooctadecane",
             () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),334.43,"C18H38Br",0,4,"\nDesc: ",""));
 
 
 
     public static final RegistryObject<Item> EMPTY = Items.register( "empty",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\nDesc: Filler",""));
+            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,0,"\nDesc: Filler",""));
 
     public static void register(IEventBus eventBus) {
         Items.register(eventBus);

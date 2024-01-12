@@ -908,11 +908,17 @@
   "item.chemmod.bromomethane": "Bromomethane",
   "item.chemmod.bromoethane": "Bromoethane",
   "item.chemmod.1_bromopropane": "1-Bromopropane",
+  "item.chemmod.2_bromopropane": "2-Bromopropane",
   "item.chemmod.1_bromobutane": "1-Bromobutane",
+  "item.chemmod.2_bromobutane": "2-Bromobutane",
   "item.chemmod.1_bromopentane": "1-Bromopentane",
+  "item.chemmod.2_bromopentane": "2-Bromopentane",
   "item.chemmod.1_bromohexane": "1-Bromohexane",
+  "item.chemmod.2_bromohexane": "2-Bromohexane",
   "item.chemmod.1_bromodocosane": "1-Bromodocosane",
+  "item.chemmod.2_bromodocosane": "2-Bromodocosane",
   "item.chemmod.1_bromooctadecane": "1-Bromooctadecane",
+  "item.chemmod.2_bromooctadecane": "2-Bromooctadecane",
 
 
 

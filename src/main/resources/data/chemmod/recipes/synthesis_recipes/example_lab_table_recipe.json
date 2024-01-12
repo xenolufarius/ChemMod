@@ -6,7 +6,8 @@
       "item": "chemmod:propane",
       "count": 2,
       "comment": "I'm using count as a way to store where in gui it will be, and as a way to retrieve it later",
-      "comment2": "That won't work. I can't store store info using count."
+      "comment2": "That won't work. I can't store store info using count.",
+      "comment3": "Now recipes will include empty items to indicate an empty space in between items, such as in between steps"
     },
     {
       "item": "chemmod:empty"

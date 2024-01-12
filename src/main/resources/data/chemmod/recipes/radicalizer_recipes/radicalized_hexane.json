@@ -10,7 +10,7 @@
     }
   ],
   "output":[ {
-    "item": "chemmod:1_bromohexane",
+    "item": "chemmod:2_bromohexane",
     "count": 1,
     "chance": 100
   }
