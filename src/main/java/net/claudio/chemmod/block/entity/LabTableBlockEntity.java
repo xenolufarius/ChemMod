@@ -229,41 +229,57 @@ public class LabTableBlockEntity extends BlockEntity implements MenuProvider {
     }
     private static boolean rightIngredientsPresent(SimpleContainer inventory, NonNullList<Ingredient> stack) {
         int check = 0;
+        //I switched them so that I could break whenever the right ingredient is found
+        //that way the same ingredient accidentally placed into 2 slots isn't counted twice, hopefully
         for(int i = 0; i < stack.size(); i++)
         {
             //adjust this for loop for the number of outputs. For lab table: size = 14, but the last slot is an output so -1
             for(int s = 0; s < inventory.getContainerSize()-1; s++)
             {
-
+                /*
                 if(stack.get(i).getItems()[0].getCount() == 0)
                 {
                     if(inventory.getItem(s).getItem() == stack.get(i).getItems()[0].getItem())
                     {
                         check++;
+                        s=0;
+                        i++;
                     }
                 }
-                if(stack.get(i).getItems()[0].getCount() == 1)
+
+                 */
+                if(stack.get(i).getItems()[0].getCount() == 2
+                //        && s < 5 && s > 0
+                )
                 {
-                    //TODO: RESOLVE CHECKING STEPS
-                    if(inventory.getItem(s).getItem() == stack.get(i).getItems()[0].getItem()
+                    //TODO: RESOLVE CHECKING STEPS. getCount() doesn't work like I thought it does. It is returning the instances of the items, not a variable named count
+                    if(inventory.getItem(s).getItem() == stack.get(i).getItems()[0].getItem() && s < 2
                          //   && (s == 1 || s == 2 || s == 3 || s == 4)
                     )
                     {
                         check++;
+                        //s=0; i++;
+                        break;
                     }
                 }
-                if(stack.get(i).getItems()[0].getCount() == 2)
+                if(stack.get(i).getItems()[0].getCount() == 3
+                       // && s <= 4 && s >= 1
+                )
                 {
-                    if(inventory.getItem(s).getItem() == stack.get(i).getItems()[0].getItem() && s <= 8 && s >= 5)
+                    if(inventory.getItem(s).getItem() == stack.get(i).getItems()[0].getItem())
                     {
                         check++;
+                        //s=0; i++;
+                        break;
                     }
                 }
-                if(stack.get(i).getItems()[0].getCount() == 3)
+                if(stack.get(i).getItems()[0].getCount() == 3 && s <= 12 && s >= 9)
                 {
-                    if(inventory.getItem(s).getItem() == stack.get(i).getItems()[0].getItem() && s <= 12 && s >= 9)
+                    if(inventory.getItem(s).getItem() == stack.get(i).getItems()[0].getItem())
                     {
                         check++;
+                        s=0; i++;
+                        break;
                     }
                 }
 

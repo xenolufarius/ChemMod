@@ -4,12 +4,13 @@
   "ingredients": [
     {
       "item": "chemmod:propane",
-      "count": 0,
-      "comment": "I'm using count as a way to store where in gui it will be, and as a way to retrieve it later"
+      "count": 2,
+      "comment": "I'm using count as a way to store where in gui it will be, and as a way to retrieve it later",
+      "comment2": "That won't work. I can't store store info using count."
     },
     {
       "item": "chemmod:bromine_gas",
-      "count": 1
+      "count": 3
     }
   ],
   "output":[ {
