@@ -1,5 +1,6 @@
 package net.claudio.chemmod.block.entity;
 
+import net.claudio.chemmod.item.ModItems;
 import net.claudio.chemmod.recipe.LabTableBlockRecipe;
 import net.claudio.chemmod.recipe.RadicalizerBlockRecipe;
 import net.claudio.chemmod.screen.LabTableBlockMenu;
@@ -16,6 +17,7 @@ import net.minecraft.world.entity.player.Inventory;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.inventory.AbstractContainerMenu;
 import net.minecraft.world.inventory.ContainerData;
+import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.crafting.Ingredient;
 import net.minecraft.world.level.Level;
@@ -233,66 +235,23 @@ public class LabTableBlockEntity extends BlockEntity implements MenuProvider {
         //that way the same ingredient accidentally placed into 2 slots isn't counted twice, hopefully
         for(int i = 0; i < stack.size(); i++)
         {
+            ItemStack empty = new ItemStack(ModItems.EMPTY.get(), 1);
             //adjust this for loop for the number of outputs. For lab table: size = 14, but the last slot is an output so -1
             for(int s = 0; s < inventory.getContainerSize()-1; s++)
             {
-                /*
-                if(stack.get(i).getItems()[0].getCount() == 0)
-                {
-                    if(inventory.getItem(s).getItem() == stack.get(i).getItems()[0].getItem())
-                    {
-                        check++;
-                        s=0;
-                        i++;
-                    }
-                }
-
-                 */
-                if(stack.get(i).getItems()[0].getCount() == 2
-                //        && s < 5 && s > 0
+                //TODO: RESOLVE CHECKING STEPS. getCount() doesn't work like I thought it does. It is returning the instances of the items, not a variable named count
+                //TODO: DONE. I'VE CREATED A FILLER ITEM CALLED EMPTY THAT IS USED TO FILL THE SPACES IN THE RECIPE FOR SLOTS NOT USED
+                //The recipe checks slot by slot to see if the right ingredient is in place, but makes sure that if an empty space is next,
+                //that there is no item in that slot too.
+                //Only downside is that the ingredients must be in the right order to be recognized, but that isn't the end of the world
+                if(inventory.getItem(i).getItem() == stack.get(i).getItems()[0].getItem() || (stack.get(i).getItems()[0].getItem() == empty.getItem() && inventory.getItem(i).isEmpty())
+                    //   && (s == 1 || s == 2 || s == 3 || s == 4)
                 )
-                {
-                    //TODO: RESOLVE CHECKING STEPS. getCount() doesn't work like I thought it does. It is returning the instances of the items, not a variable named count
-                    if(inventory.getItem(s).getItem() == stack.get(i).getItems()[0].getItem() && s < 2
-                         //   && (s == 1 || s == 2 || s == 3 || s == 4)
-                    )
-                    {
-                        check++;
-                        //s=0; i++;
-                        break;
-                    }
-                }
-                if(stack.get(i).getItems()[0].getCount() == 3
-                       // && s <= 4 && s >= 1
-                )
-                {
-                    if(inventory.getItem(s).getItem() == stack.get(i).getItems()[0].getItem())
-                    {
-                        check++;
-                        //s=0; i++;
-                        break;
-                    }
-                }
-                if(stack.get(i).getItems()[0].getCount() == 3 && s <= 12 && s >= 9)
-                {
-                    if(inventory.getItem(s).getItem() == stack.get(i).getItems()[0].getItem())
-                    {
-                        check++;
-                        s=0; i++;
-                        break;
-                    }
-                }
-
-
-
-                /*
-                if(inventory.getItem(s).getItem() == stack.get(i).getItems()[0].getItem())
                 {
                     check++;
+                    //s=0; i++;
+                    break;
                 }
-                 */
-
-
             }
         }
         return check == stack.size();

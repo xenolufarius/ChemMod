@@ -9,6 +9,18 @@
       "comment2": "That won't work. I can't store store info using count."
     },
     {
+      "item": "chemmod:empty"
+    },
+    {
+      "item": "chemmod:empty"
+    },
+    {
+      "item": "chemmod:empty"
+    },
+    {
+      "item": "chemmod:empty"
+    },
+    {
       "item": "chemmod:bromine_gas",
       "count": 3
     }

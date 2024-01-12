@@ -1605,6 +1605,8 @@ public class ModItems {
 
 
 
+    public static final RegistryObject<Item> EMPTY = Items.register( "empty",
+            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,4,"\nDesc: Filler",""));
 
     public static void register(IEventBus eventBus) {
         Items.register(eventBus);
