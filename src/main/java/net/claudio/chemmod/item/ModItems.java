@@ -28,6 +28,8 @@ public class ModItems {
 
     public static final RegistryObject<Item> CHEMICAL = Items.register( "chemical",
             () -> new Item(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB)));
+    public static final RegistryObject<Item> HOT_PLATE = Items.register( "hot_plate",
+            () -> new Item(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB)));
     public static final RegistryObject<Item> CHEMICAL2 = Items.register( "chemical2",
                 () -> new Item(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB)));
     public static final RegistryObject<Item> DECONSTRUCTOR = Items.register( "deconstructor",
@@ -1545,6 +1547,8 @@ public class ModItems {
             () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),36.46,"HCl",0,4,"\nDesc: ",""));
     public static final RegistryObject<Item> SULFURIC_ACID_DIL = Items.register( "sulfuric_acid_dil",
             () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),98.08,"H2SO4",0,4,"\nDesc: ",""));
+    public static final RegistryObject<Item> SULFURIC_ACID_CONC = Items.register( "sulfuric_acid_conc",
+            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),98.08,"H2SO4",0,4,"\nDesc: ",""));
     public static final RegistryObject<Item> NITRIC_ACID_DIL = Items.register( "nitric_acid_dil",
             () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),63.01,"HNO3",0,4,"\nDesc: ",""));
     public static final RegistryObject<Item> VINEGAR = Items.register( "vinegar",
@@ -1576,8 +1580,6 @@ public class ModItems {
             () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),71.00,"NF3",0,4,"\nDesc: ",""));
 
     //Amides
-    public static final RegistryObject<Item> SODIUM_AMIDE = Items.register( "sodium_amide",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),39.01,"NaNH2",0,4,"\nDesc: ",""));
 
 
     //Organic Molecules (Non-pure alkanes)
@@ -1624,6 +1626,7 @@ public class ModItems {
             () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),80.91,"HBr",0,4,"\nDesc: ",""));
     //TODO: ROOR will be any peroxide salt, which will suck. So I'll start with only using H2O2 and maybe Na,K,Li all of which are up there already
     //TODO: Acid Catalyzed Hydration will use dil. sulfuric acid
+    //TODO: All H3O+ will be with dil. sulfuric acid to start...
     //TODO: Mercuric Acetate (Hg(OAc)2) is higher up in the Mercury ii salts
     //TODO: Water is already up there duh
     public static final RegistryObject<Item> SODIUM_BOROHYDRIDE = Items.register( "sodium_borohydride",
@@ -1633,11 +1636,34 @@ public class ModItems {
     //TODO: NaOH is already up there
     //TODO: H2 is already up there, as well as Pt, Pd, and Ni, duh
     //TODO: Br2 is already up there
-    //TODO: Add O3
+    public static final RegistryObject<Item> OZONE = Items.register( "ozone",
+            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),48.00,"03",0,4,"\nDesc: ",""));
     public static final RegistryObject<Item> DMS = Items.register( "dms",
             () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),126.13,"C2H6O4S",0,4,"\nDesc: Its IUPAC name is Dimethyl Sulfate.",""));
-
-
+    public static final RegistryObject<Item> SODIUM_AMIDE = Items.register( "sodium_amide",
+            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),39.01,"NaNH2",0,4,"\nDesc: ",""));
+    public static final RegistryObject<Item> LINDLARS_CATALYST = Items.register( "lindlars_catalyst",
+            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"PdCaCO3",0,4,"\nDesc: ",""));
+    public static final RegistryObject<Item> SODIUM_HYDRIDE = Items.register( "sodium_hydride",
+            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),24.00,"NaH",0,4,"\nDesc: ",""));
+    public static final RegistryObject<Item> LITHIUM_ALUMINUM_HYDRIDE = Items.register( "lithium_aluminum_hydride",
+            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),37.95,"LiAlH4",0,4,"\nDesc: ",""));
+    //TODO: Mg is already up there, duh
+    //TODO: Diethyl Ether will be used as Ether for Grignard
+    public static final RegistryObject<Item> DIETHYL_ETHER = Items.register( "diethyl_ether",
+            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),74.12,"C4H10O",0,4,"\nDesc: ",""));
+    public static final RegistryObject<Item> PHOSPHORUS_TRIBROMIDE = Items.register( "phosphorus_tribromide",
+            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),270.69,"PBr3",0,4,"\nDesc: ",""));
+    public static final RegistryObject<Item> THIONYL_CHLORIDE = Items.register( "thionyl_chloride",
+            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),118.97,"SOCl2",0,4,"\nDesc: ",""));
+    public static final RegistryObject<Item> PYRIDINE = Items.register( "pyridine",
+            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),79.10,"C5H5N",0,4,"\nDesc: ",""));
+    //TODO: Sodium Dichromate is one of the salts, so already up there
+    public static final RegistryObject<Item> PCC = Items.register( "pcc",
+            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),215.56,"C5H6ClCrNO3",0,4,"\nDesc: Its IUPAC name is Pyridinium chlorochromate.",""));
+    public static final RegistryObject<Item> DICHLOROMETHANE = Items.register( "dichloromethane",
+            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),84.93,"CH2Cl2",0,4,"\nDesc: ",""));
+    //TODO: THIS CONCLUDES THE REAGENTS FOR OCHEM 1
 
 
 

@@ -1,0 +1,19 @@
+{
+  "type": "chemmod:deconstructor",
+
+  "ingredients": [
+    {
+      "item": "chemmod:pyridine"
+    }
+  ],
+  "output":[ {
+    "item": "chemmod:carbon",
+    "count": 5
+  },
+    {
+      "item": "chemmod:nitrogen",
+      "count": 1
+    }
+  ]
+
+}

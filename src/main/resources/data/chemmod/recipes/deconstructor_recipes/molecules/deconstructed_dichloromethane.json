@@ -1,0 +1,19 @@
+{
+  "type": "chemmod:deconstructor",
+
+  "ingredients": [
+    {
+      "item": "chemmod:dichloromethane"
+    }
+  ],
+  "output":[ {
+    "item": "chemmod:carbon",
+    "count": 2
+  },
+    {
+      "item": "chemmod:chlorine",
+      "count": 2
+    }
+  ]
+
+}

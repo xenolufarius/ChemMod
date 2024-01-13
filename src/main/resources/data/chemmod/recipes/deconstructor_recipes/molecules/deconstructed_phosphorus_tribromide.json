@@ -1,0 +1,19 @@
+{
+  "type": "chemmod:deconstructor",
+
+  "ingredients": [
+    {
+      "item": "chemmod:phosphorus_tribromide"
+    }
+  ],
+  "output":[ {
+    "item": "chemmod:phosphorus",
+    "count": 1
+  },
+    {
+      "item": "chemmod:bromine",
+      "count": 3
+    }
+  ]
+
+}

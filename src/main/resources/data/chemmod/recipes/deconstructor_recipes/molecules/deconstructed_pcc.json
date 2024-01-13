@@ -1,0 +1,19 @@
+{
+  "type": "chemmod:deconstructor",
+
+  "ingredients": [
+    {
+      "item": "chemmod:pcc"
+    }
+  ],
+  "output":[ {
+    "item": "chemmod:chromium",
+    "count": 1
+  },
+    {
+      "item": "chemmod:chlorine",
+      "count": 1
+    }
+  ]
+
+}

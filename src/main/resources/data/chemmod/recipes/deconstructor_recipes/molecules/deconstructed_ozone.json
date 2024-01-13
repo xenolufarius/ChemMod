@@ -1,0 +1,15 @@
+{
+  "type": "chemmod:deconstructor",
+
+  "ingredients": [
+    {
+      "item": "chemmod:ozone"
+    }
+  ],
+  "output":[ {
+    "item": "chemmod:oxygen",
+    "count": 3
+  }
+  ]
+
+}

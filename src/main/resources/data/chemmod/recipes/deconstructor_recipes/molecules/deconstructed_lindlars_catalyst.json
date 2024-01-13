@@ -1,0 +1,19 @@
+{
+  "type": "chemmod:deconstructor",
+
+  "ingredients": [
+    {
+      "item": "chemmod:lindlars_catalyst"
+    }
+  ],
+  "output":[ {
+    "item": "chemmod:palladium",
+    "count": 1
+  },
+    {
+      "item": "chemmod:calcium",
+      "count": 1
+    }
+  ]
+
+}

@@ -910,7 +910,18 @@
   "item.chemmod.sodium_ethoxide": "Sodium Ethoxide",
   "item.chemmod.sodium_borohydride": "Sodium Borohydride",
   "item.chemmod.borane_tetrahydrofuran": "Borane-tetrahydrofuran",
+  "item.chemmod.ozone": "Ozone",
+  "item.chemmod.lindlars_catalyst": "Lindlar's Catalyst",
+  "item.chemmod.sodium_hydride": "Sodium Hydride",
+  "item.chemmod.lithium_aluminum_hydride": "Lithium Aluminum Hydride",
+  "item.chemmod.diethyl_ether": "Diethyl Ether",
+  "item.chemmod.phosphorus_tribromide": "Phosphorus Tribromide",
+  "item.chemmod.thionyl_chloride": "Thionyl Chloride",
+  "item.chemmod.pyridine": "Pyridine",
+  "item.chemmod.pcc": "PCC",
+  "item.chemmod.dichloromethane": "Dichloromethane",
 
+  "item.chemmod.hot_plate": "Hot Plate",
 
 
   "item.chemmod.bromomethane": "Bromomethane",
@@ -933,7 +944,8 @@
 
   "item.chemmod.carbonic_acid_dil": "Carbonic Acid",
   "item.chemmod.hydrochloric_acid_dil": "Hydrochloric Acid",
-  "item.chemmod.sulfuric_acid_dil": "Sulfuric Acid",
+  "item.chemmod.sulfuric_acid_dil": "Dilute Sulfuric Acid",
+  "item.chemmod.sulfuric_acid_conc": "Concentrated Sulfuric Acid",
   "item.chemmod.nitric_acid_dil": "Nitric Acid",
   "item.chemmod.vinegar": "Vinegar",
 

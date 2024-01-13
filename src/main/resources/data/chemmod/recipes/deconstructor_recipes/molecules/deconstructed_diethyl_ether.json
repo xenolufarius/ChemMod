@@ -1,0 +1,19 @@
+{
+  "type": "chemmod:deconstructor",
+
+  "ingredients": [
+    {
+      "item": "chemmod:diethyl_ether"
+    }
+  ],
+  "output":[ {
+    "item": "chemmod:carbon",
+    "count": 4
+  },
+    {
+      "item": "chemmod:oxygen",
+      "count": 1
+    }
+  ]
+
+}

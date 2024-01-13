@@ -1,0 +1,19 @@
+{
+  "type": "chemmod:deconstructor",
+
+  "ingredients": [
+    {
+      "item": "chemmod:thionyl_chloride"
+    }
+  ],
+  "output":[ {
+    "item": "chemmod:sulfur",
+    "count": 1
+  },
+    {
+      "item": "chemmod:chlorine",
+      "count": 2
+    }
+  ]
+
+}

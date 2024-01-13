@@ -1,0 +1,19 @@
+{
+  "type": "chemmod:deconstructor",
+
+  "ingredients": [
+    {
+      "item": "chemmod:hot_plate"
+    }
+  ],
+  "output":[ {
+    "item": "chemmod:iron",
+    "count": 27
+  },
+    {
+      "item": "chemmod:silicon_dioxide",
+      "count": 4
+    }
+  ]
+
+}
