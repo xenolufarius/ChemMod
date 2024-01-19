@@ -26,7 +26,7 @@ public class DeconstructorBlockMenu extends AbstractContainerMenu {
     public DeconstructorBlockMenu(int id, Inventory inv, BlockEntity entity, ContainerData data) {
         super(ModMenuTypes.DECONSTRUCTOR_BLOCK_MENU.get(), id);
         //?? Maybe need to adjust? 3
-        checkContainerSize(inv, 4);
+        checkContainerSize(inv, 7);
         blockEntity = (DeconstructorBlockEntity) entity;
         this.level = inv.player.level;
         this.data = data;
@@ -37,10 +37,14 @@ public class DeconstructorBlockMenu extends AbstractContainerMenu {
         //position 1 is not used. it is merely there to allow for shift right clicking
         this.blockEntity.getCapability(CapabilityItemHandler.ITEM_HANDLER_CAPABILITY).ifPresent(handler -> {
 
-            this.addSlot(new SlotItemHandler(handler, 0, 80, 15));
+            this.addSlot(new SlotItemHandler(handler, 0, 62, 15));
             this.addSlot(new SlotItemHandler(handler, 1, 200, 15));
-            this.addSlot(new SlotItemHandler(handler, 2, 80, 60));
-            this.addSlot(new SlotItemHandler(handler, 3, 60, 60));
+            this.addSlot(new SlotItemHandler(handler, 2, 62, 60));
+            this.addSlot(new SlotItemHandler(handler, 3, 80, 60));
+            this.addSlot(new SlotItemHandler(handler, 4, 98, 60));
+            this.addSlot(new SlotItemHandler(handler, 5, 128, 41));
+            this.addSlot(new SlotItemHandler(handler, 6, 128, 23));
+
         });
 
         addDataSlots(data);
@@ -74,7 +78,7 @@ public class DeconstructorBlockMenu extends AbstractContainerMenu {
     private static final int TE_INVENTORY_FIRST_SLOT_INDEX = VANILLA_FIRST_SLOT_INDEX + VANILLA_SLOT_COUNT;
 
     // THIS YOU HAVE TO DEFINE!
-    private static final int TE_INVENTORY_SLOT_COUNT = 4;  // must be the number of slots you have!
+    private static final int TE_INVENTORY_SLOT_COUNT = 7;  // must be the number of slots you have!
 
     @Override
     public ItemStack quickMoveStack(Player playerIn, int index) {

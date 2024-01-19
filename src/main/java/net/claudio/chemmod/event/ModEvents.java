@@ -77,74 +77,6 @@ public class ModEvents {
         }
 
          */
-
-
-        if(event.getType() == ModVillagers.CHEMIST.get())
-        {
-            Int2ObjectMap<List<VillagerTrades.ItemListing>> trades = event.getTrades();
-
-            /*
-            public static final Map<VillagerProfession, Int2ObjectMap<VillagerTrades.ItemListing[]>> TRADES = Util.make(Maps.newHashMap(), (p_35633_) -> {
-                        p_35633_.put(VillagerProfession.FARMER,
-                                toIntMap(ImmutableMap.of(1, new VillagerTrades.ItemListing[]{new VillagerTrades.EmeraldForItems(Items.WHEAT, 20, 16, 2),
-                                                new VillagerTrades.EmeraldForItems(Items.POTATO, 26, 16, 2),
-                                                new VillagerTrades.EmeraldForItems(Items.CARROT, 22, 16, 2),
-                                                new VillagerTrades.EmeraldForItems(Items.BEETROOT, 15, 16, 2),
-                                                new VillagerTrades.ItemsForEmeralds(Items.BREAD, 1, 6, 16, 1)},
-                                        2, new VillagerTrades.ItemListing[]{new VillagerTrades.EmeraldForItems(Blocks.PUMPKIN, 6, 12, 10), new VillagerTrades.ItemsForEmeralds(Items.PUMPKIN_PIE, 1, 4, 5), new VillagerTrades.ItemsForEmeralds(Items.APPLE, 1, 4, 16, 5)}, 3, new VillagerTrades.ItemListing[]{new VillagerTrades.ItemsForEmeralds(Items.COOKIE, 3, 18, 10), new VillagerTrades.EmeraldForItems(Blocks.MELON, 4, 12, 20)}, 4, new VillagerTrades.ItemListing[]{new VillagerTrades.ItemsForEmeralds(Blocks.CAKE, 1, 1, 12, 15), new VillagerTrades.SuspiciousStewForEmerald(MobEffects.NIGHT_VISION, 100, 15), new VillagerTrades.SuspiciousStewForEmerald(MobEffects.JUMP, 160, 15), new VillagerTrades.SuspiciousStewForEmerald(MobEffects.WEAKNESS, 140, 15), new VillagerTrades.SuspiciousStewForEmerald(MobEffects.BLINDNESS, 120, 15), new VillagerTrades.SuspiciousStewForEmerald(MobEffects.POISON, 280, 15), new VillagerTrades.SuspiciousStewForEmerald(MobEffects.SATURATION, 7, 15)}, 5, new VillagerTrades.ItemListing[]{new VillagerTrades.ItemsForEmeralds(Items.GOLDEN_CARROT, 3, 3, 30), new VillagerTrades.ItemsForEmeralds(Items.GLISTERING_MELON_SLICE, 4, 3, 30)})));
-                    }
-             */
-                //For Result Items
-            ItemStack deconstructor_block = new ItemStack(ModBlocks.DECONSTRUCTOR_BLOCK.get(), 1);
-            ItemStack hydrogen_gas = new ItemStack(ModItems.HYDROGEN.get(), 2);
-            ItemStack oxygen_gas = new ItemStack(ModItems.OXYGEN.get(), 1);
-            ItemStack uranium = new ItemStack(ModItems.URANIUM.get(), 1);
-            ItemStack nether_star = new ItemStack(Items.NETHER_STAR.asItem(), 1);
-
-            int villagerlevel = 1;
-
-            //TODO: Refine this trading list.
-            //Novice
-            //I guess can only have 2 trades at this level at a given time? Can I adjust this?
-            //Don't know but adding numbers = higher level of villager
-            trades.get(villagerlevel).add((trader, rand) -> new MerchantOffer(
-                    new ItemStack(Items.EMERALD, 1),
-                    hydrogen_gas, 3, 2, 0.02F));
-
-            trades.get(villagerlevel).add((trader, rand) -> new MerchantOffer(
-                    new ItemStack(Items.EMERALD, 2),
-                    oxygen_gas, 3, 2, 0.02F));
-
-            //Apprentice
-            trades.get(villagerlevel+1).add((trader, rand) -> new MerchantOffer(
-                    //Currency, Cost, stack = Result
-                    new ItemStack(ModItems.WATER.get(), 6),
-                    deconstructor_block, 2, 20, 0.02F));
-                                    //Max Uses,EXP for Villager,Multiplier for Price
-            trades.get(villagerlevel+1).add((trader, rand) -> new MerchantOffer(
-                    new ItemStack(ModItems.CARBON_DIOXIDE.get(), 2),
-                    oxygen_gas, 8, 8, 0.02F));
-            //Journeyman
-            trades.get(villagerlevel+2).add((trader, rand) -> new MerchantOffer(
-                    new ItemStack(ModItems.CARBON_DIOXIDE.get(), 4),
-                    uranium, 16, 30, 0.02F));
-            //Expert
-            trades.get(villagerlevel+3).add((trader, rand) -> new MerchantOffer(
-                    new ItemStack(ModItems.CARBON_DIOXIDE.get(), 4),
-                    uranium, 20, 40, 0.02F));
-            trades.get(villagerlevel+3).add((trader, rand) -> new MerchantOffer(
-                    new ItemStack(ModItems.CARBON_DIOXIDE.get(), 4),
-                    uranium, 20, 40, 0.02F));
-            //Master
-            trades.get(villagerlevel+4).add((trader, rand) -> new MerchantOffer(
-                    new ItemStack(ModItems.URANIUM.get(), 4),
-                    nether_star, 20, 40, 0.02F));
-            trades.get(villagerlevel+4).add((trader, rand) -> new MerchantOffer(
-                    new ItemStack(ModItems.URANIUM.get(), 4),
-                    nether_star, 20, 40, 0.02F));
-        }
-
-
         if(event.getType() == ModVillagers.ALCHEMIST.get())
         {
             Int2ObjectMap<List<VillagerTrades.ItemListing>> trades = event.getTrades();
@@ -340,6 +272,72 @@ public class ModEvents {
                     radicalizer_block, 1, 40, 0.02F));
         }
 
+        if(event.getType() == ModVillagers.ORGANIC_CHEMIST.get())
+        {
+            Int2ObjectMap<List<VillagerTrades.ItemListing>> trades = event.getTrades();
+
+            //For Result Items
+
+            ItemStack sodium_ethoxide = new ItemStack(ModItems.SODIUM_ETHOXIDE.get(), 5);
+            ItemStack lab_table = new ItemStack(ModBlocks.LAB_TABLE_BLOCK.get(), 1);
+            ItemStack potassium_tert_butoxide = new ItemStack(ModItems.POTASSIUM_TERT_BUTOXIDE.get(),3);
+            ItemStack tert_butyl_alcohol = new ItemStack(ModItems.TERT_BUTYL_ALCOHOL.get(),3);
+            ItemStack hydrogen_bromide = new ItemStack(ModItems.HYDROGEN_BROMIDE.get(),5);
+            ItemStack hydrogen_peroxide = new ItemStack(ModItems.HYDROGEN_PEROXIDE.get(),5);
+            ItemStack aluminum = new ItemStack(ModItems.ALUMINUM.get(),10);
+            ItemStack bromine = new ItemStack(ModItems.BROMINE_GAS.get(),5);
+            ItemStack gold = new ItemStack(ModItems.GOLD.get(),9);
+            ItemStack radicalizer_block = new ItemStack(ModBlocks.RADICALIZER_BLOCK.get(),1);
+            int villagerlevel = 1;
+
+            //TODO: Refine this trading list.
+            //TODO: Fix diatoms! Since I'm going to do realistic synthesis from now on, I want it to be correct.
+            //Novice ~12xp
+            //I guess can only have 2 trades at this level at a given time? Can I adjust this?
+            //Don't know but adding numbers = higher level of villager
+            trades.get(villagerlevel).add((trader, rand) -> new MerchantOffer(
+                    new ItemStack(ModItems.BROMOMETHANE.get(), 1),
+                    sodium_ethoxide, 6, 1, 0.02F));
+
+            trades.get(villagerlevel).add((trader, rand) -> new MerchantOffer(
+                    new ItemStack(ModItems.BROMOETHANE.get(), 1),
+                    lab_table, 1, 6, 0.02F));
+
+            //Apprentice ~64xp
+            trades.get(villagerlevel+1).add((trader, rand) -> new MerchantOffer(
+                    //Currency, Cost, stack = Result
+                    new ItemStack(ModItems.ETHENE.get(), 1),
+                    potassium_tert_butoxide, 8, 4, 0.02F));
+            //Max Uses,EXP for Villager,Multiplier for Price
+            trades.get(villagerlevel+1).add((trader, rand) -> new MerchantOffer(
+                    new ItemStack(ModItems.PROPENE.get(), 1),
+                    tert_butyl_alcohol, 8, 4, 0.02F));
+
+            //Journeyman ~80xp
+            trades.get(villagerlevel+2).add((trader, rand) -> new MerchantOffer(
+                    new ItemStack(ModItems._1_BUTENE.get(), 1),
+                    hydrogen_bromide, 12, 3, 0.02F));
+            trades.get(villagerlevel+2).add((trader, rand) -> new MerchantOffer(
+                    new ItemStack(ModItems._2_BUTENE.get(), 1),
+                    hydrogen_peroxide, 9, 6, 0.02F));
+
+            //Expert ~100xp
+            trades.get(villagerlevel+3).add((trader, rand) -> new MerchantOffer(
+                    new ItemStack(ModItems._1_BROMOPROPANE.get(), 1),
+                    aluminum, 5, 12, 0.02F));
+            trades.get(villagerlevel+3).add((trader, rand) -> new MerchantOffer(
+                    new ItemStack(ModItems.ALUMINUM_CHLORIDE.get(), 1),
+                    bromine, 7, 8, 0.02F));
+
+            //Master
+            trades.get(villagerlevel+4).add((trader, rand) -> new MerchantOffer(
+                    new ItemStack(ModItems.LEAD.get(), 9),
+                    gold, 10, 10, 0.02F));
+            trades.get(villagerlevel+4).add((trader, rand) -> new MerchantOffer(
+                    new ItemStack(ModItems.ALUMINUM_BROMIDE.get(), 10),
+                    radicalizer_block, 1, 40, 0.02F));
+        }
+
     }
 
 
@@ -471,6 +469,9 @@ public class ModEvents {
         return largestRAD;
     }
 
+    //TODO: ADD A METHOD THAT DESTROYS FLAMMABLE CHEMS IF PLAYER ON FIRE
+
+
     //detecting stability of items in player inventory.
     //Just copied over rad code. Need to adjust.
     //TickEvent.PlayerTickEvent event
@@ -574,6 +575,7 @@ public class ModEvents {
     //Okay now I need a method to detect if a radioactive item is on the ground nearby the player
     //Maybe can't do a range just yet.
 
+    //TODO: FIX DETECTION ON GROUND
     public static int radioactiveItemDetectedOnGround(Player player)
     {
 
@@ -665,17 +667,17 @@ public class ModEvents {
                         //SPECIAL CASE speed boost 1
                         //Grants speed boost. Rn for 3 seconds. I suspect 20 ticks = 1 s, so 60 = 3
                         if (sds.equals("SSp1")) {
-                            player.addEffect(new MobEffectInstance(MobEffects.MOVEMENT_SPEED,100,1));
+                            player.addEffect(new MobEffectInstance(MobEffects.MOVEMENT_SPEED,100,0));
                         }
                         //SPECIAL CASE speed boost 2
                         //Grants speed boost. Rn for 3 seconds. I suspect 20 ticks = 1 s, so 60 = 3
                         if (sds.equals("SSp2")) {
-                            player.addEffect(new MobEffectInstance(MobEffects.MOVEMENT_SPEED,200,3));
+                            player.addEffect(new MobEffectInstance(MobEffects.MOVEMENT_SPEED,200,1));
                         }
                         //SPECIAL CASE speed boost 3
                         //Grants speed boost. Rn for 3 seconds. I suspect 20 ticks = 1 s, so 60 = 3
                         if (sds.equals("SSp3")) {
-                            player.addEffect(new MobEffectInstance(MobEffects.MOVEMENT_SPEED,600,10));
+                            player.addEffect(new MobEffectInstance(MobEffects.MOVEMENT_SPEED,600,2));
                         }
                         //SPECIAL CASE nausea
                         //Gives nausea debuff

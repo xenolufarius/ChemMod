@@ -11,7 +11,7 @@ import net.minecraft.world.entity.player.Inventory;
 
 public class DeconstructorBlockScreen extends AbstractContainerScreen<DeconstructorBlockMenu> {
     private static final ResourceLocation TEXTURE =
-            new ResourceLocation(ChemMod.MOD_ID,"textures/gui/deconstructor_prototype_gui4.png");
+            new ResourceLocation(ChemMod.MOD_ID,"textures/gui/deconstructor_prototype_gui6.png");
 
     public DeconstructorBlockScreen(DeconstructorBlockMenu menu, Inventory inventory, Component component) {
         super(menu, inventory, component);
@@ -38,7 +38,7 @@ public class DeconstructorBlockScreen extends AbstractContainerScreen<Deconstruc
     //
     private void renderProgressArrow(PoseStack pPoseStack, int x, int y) {
         if(menu.isCrafting()) {
-            blit(pPoseStack, x + 99, y + 33, 176, 0, 8, menu.getScaledProgress());
+            blit(pPoseStack, x + 54, y + 33, 176, 0, 8, menu.getScaledProgress());
         }
     }
 

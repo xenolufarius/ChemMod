@@ -41,12 +41,20 @@ public class ModVillagers {
     public static final RegistryObject<PoiType> ALCHEMY_TABLE_POI3 = POI_TYPES.register("alchemy_table_poi3",
             () -> new PoiType(ImmutableSet.copyOf(ModBlocks.ALCHEMY_TABLE_3.get().getStateDefinition().getPossibleStates()),
                     1, 1));
+    public static final RegistryObject<PoiType> RADICALIZER_POI = POI_TYPES.register("radicalizer_poi",
+            () -> new PoiType(ImmutableSet.copyOf(ModBlocks.RADICALIZER_BLOCK.get().getStateDefinition().getPossibleStates()),
+                    1, 1));
+    public static final RegistryObject<PoiType> LAB_TABLE_POI = POI_TYPES.register("lab_table_poi",
+            () -> new PoiType(ImmutableSet.copyOf(ModBlocks.LAB_TABLE_BLOCK.get().getStateDefinition().getPossibleStates()),
+                    1, 1));
 
     //VILLAGER PROFESSIONS
+    /*
     public static final RegistryObject<VillagerProfession> CHEMIST = VILLAGER_PROFESSIONS.register("chemist",
             () -> new VillagerProfession("chemist", x -> x.get() == EMERALD_BLOCK_POI.get(),
                     x -> x.get() == EMERALD_BLOCK_POI.get(), ImmutableSet.of(), ImmutableSet.of(),
                     SoundEvents.VILLAGER_WORK_CLERIC));
+     */
     public static final RegistryObject<VillagerProfession> ALCHEMIST = VILLAGER_PROFESSIONS.register("alchemist",
             () -> new VillagerProfession("alchemist", x -> x.get() == ALCHEMY_TABLE_POI.get(),
                     x -> x.get() == ALCHEMY_TABLE_POI.get(), ImmutableSet.of(), ImmutableSet.of(),
@@ -58,6 +66,14 @@ public class ModVillagers {
     public static final RegistryObject<VillagerProfession> ALCHEMIST_3 = VILLAGER_PROFESSIONS.register("alchemist_3",
             () -> new VillagerProfession("alchemist3", x -> x.get() == ALCHEMY_TABLE_POI3.get(),
                     x -> x.get() == ALCHEMY_TABLE_POI3.get(), ImmutableSet.of(), ImmutableSet.of(),
+                    SoundEvents.VILLAGER_WORK_CLERIC));
+    public static final RegistryObject<VillagerProfession> ORGANIC_CHEMIST = VILLAGER_PROFESSIONS.register("organic_chemist",
+            () -> new VillagerProfession("organicchemist", x -> x.get() == RADICALIZER_POI.get(),
+                    x -> x.get() == RADICALIZER_POI.get(), ImmutableSet.of(), ImmutableSet.of(),
+                    SoundEvents.VILLAGER_WORK_CLERIC));
+    public static final RegistryObject<VillagerProfession> ORGANIC_CHEMIST_2 = VILLAGER_PROFESSIONS.register("organic_chemist_2",
+            () -> new VillagerProfession("organicchemist2", x -> x.get() == LAB_TABLE_POI.get(),
+                    x -> x.get() == LAB_TABLE_POI.get(), ImmutableSet.of(), ImmutableSet.of(),
                     SoundEvents.VILLAGER_WORK_CLERIC));
 
     public static void registerPOIs()

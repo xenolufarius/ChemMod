@@ -9,6 +9,10 @@
   "output": [{
     "item": "chemmod:cellulose",
     "count": 1
-  }
+  },
+    {
+      "item": "chemmod:fructose",
+      "count": 1
+    }
 ]
 }

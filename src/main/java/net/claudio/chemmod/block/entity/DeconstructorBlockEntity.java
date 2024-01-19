@@ -31,7 +31,7 @@ import java.util.Optional;
 
 public class DeconstructorBlockEntity extends BlockEntity implements MenuProvider {
 
-    private final ItemStackHandler itemHandler = new ItemStackHandler(4) {
+    private final ItemStackHandler itemHandler = new ItemStackHandler(7) {
         @Override
         protected void onContentsChanged(int slot) {
             setChanged();
@@ -177,13 +177,48 @@ public class DeconstructorBlockEntity extends BlockEntity implements MenuProvide
                                         pEntity.itemHandler.getStackInSlot(2).grow(output.getCount());
                                     }
                                 }
-                            } else if (output.getItem() == outputs.get(1).getItem() && outputs.size() == 2) {
+                            } else if (output.getItem() == outputs.get(1).getItem() && outputs.size() >= 2) {
                                 if (pEntity.itemHandler.getStackInSlot(3).getItem() == output.getItem() || pEntity.itemHandler.getStackInSlot(3).isEmpty()) {
                                     if (pEntity.itemHandler.getStackInSlot(3).isEmpty()) {
                                         pEntity.itemHandler.setStackInSlot(3, output.copy());
                                         //vvv Need to make sure it doesn't go past max stack size
                                     } else if (pEntity.itemHandler.getStackInSlot(3).getItem() == output.getItem() && pEntity.itemHandler.getStackInSlot(3).getMaxStackSize()+1 > pEntity.itemHandler.getStackInSlot(3).getCount() + output.getCount()) {
                                         pEntity.itemHandler.getStackInSlot(3).grow(output.getCount());
+                                    }
+                                }
+                            } else if (output.getItem() == outputs.get(2).getItem() && outputs.size() >= 3) {
+                                if (pEntity.itemHandler.getStackInSlot(4).getItem() == output.getItem() || pEntity.itemHandler.getStackInSlot(4).isEmpty()) {
+                                    if (pEntity.itemHandler.getStackInSlot(4).isEmpty()) {
+                                        pEntity.itemHandler.setStackInSlot(4, output.copy());
+                                        //vvv Need to make sure it doesn't go past max stack size
+                                    } else if (pEntity.itemHandler.getStackInSlot(4).getItem() == output.getItem() && pEntity.itemHandler.getStackInSlot(4).getMaxStackSize()+1 > pEntity.itemHandler.getStackInSlot(4).getCount() + output.getCount()) {
+                                        pEntity.itemHandler.getStackInSlot(4).grow(output.getCount());
+                                    }
+                                }
+                            }
+                            //Trace Items
+                            else if (output.getItem() == outputs.get(3).getItem() && outputs.size() >= 4) {
+                                int x = (int) (Math.random()*1000);
+                                if(x % 10 == 0) {
+                                    if (pEntity.itemHandler.getStackInSlot(5).getItem() == output.getItem() || pEntity.itemHandler.getStackInSlot(5).isEmpty()) {
+                                        if (pEntity.itemHandler.getStackInSlot(5).isEmpty()) {
+                                            pEntity.itemHandler.setStackInSlot(5, output.copy());
+                                            //vvv Need to make sure it doesn't go past max stack size
+                                        } else if (pEntity.itemHandler.getStackInSlot(5).getItem() == output.getItem() && pEntity.itemHandler.getStackInSlot(5).getMaxStackSize() + 1 > pEntity.itemHandler.getStackInSlot(5).getCount() + output.getCount()) {
+                                            pEntity.itemHandler.getStackInSlot(5).grow(output.getCount());
+                                        }
+                                    }
+                                }
+                            } else if (output.getItem() == outputs.get(4).getItem() && outputs.size() >= 5) {
+                                int x = (int) (Math.random()*1000);
+                                if(x % 10 == 0) {
+                                    if (pEntity.itemHandler.getStackInSlot(6).getItem() == output.getItem() || pEntity.itemHandler.getStackInSlot(6).isEmpty()) {
+                                        if (pEntity.itemHandler.getStackInSlot(6).isEmpty()) {
+                                            pEntity.itemHandler.setStackInSlot(6, output.copy());
+                                            //vvv Need to make sure it doesn't go past max stack size
+                                        } else if (pEntity.itemHandler.getStackInSlot(6).getItem() == output.getItem() && pEntity.itemHandler.getStackInSlot(6).getMaxStackSize() + 1 > pEntity.itemHandler.getStackInSlot(6).getCount() + output.getCount()) {
+                                            pEntity.itemHandler.getStackInSlot(6).grow(output.getCount());
+                                        }
                                     }
                                 }
                             }
@@ -226,8 +261,8 @@ public class DeconstructorBlockEntity extends BlockEntity implements MenuProvide
         int check = 0;
         for(int i = 0; i < stack.size(); i++)
         {
-            //adjust this for loop for the number of outputs. For deconstructor: size = 4, but only 1 of those is an ingredient so -3
-            for(int s = 0; s < inventory.getContainerSize()-3; s++)
+            //adjust this for loop for the number of outputs. For deconstructor: size = 7, but only 1 of those is an ingredient so -6
+            for(int s = 0; s < inventory.getContainerSize()-6; s++)
             {
                 if(inventory.getItem(s).getItem() == stack.get(i).getItems()[0].getItem())
                 {

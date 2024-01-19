@@ -966,6 +966,8 @@
   "entity.minecraft.villager.chemmod.chemist": "Chemist",
   "entity.minecraft.villager.chemmod.alchemist": "Alchemist Instructor",
   "entity.minecraft.villager.chemmod.alchemist_2": "Alchemist Professor",
-  "entity.minecraft.villager.chemmod.alchemist_3": "Alchemist Grandmaster"
+  "entity.minecraft.villager.chemmod.alchemist_3": "Alchemist Grandmaster",
+  "entity.minecraft.villager.chemmod.organic_chemist": "Organic Chemistry Assistant",
+  "entity.minecraft.villager.chemmod.organic_chemist_2": "Organic Chemist"
 
 }

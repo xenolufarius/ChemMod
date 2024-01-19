@@ -1581,6 +1581,7 @@ public class ModItems {
 
     //Amides
 
+    //TODO: ADD TRINITROTOLUENE
 
     //Organic Molecules (Non-pure alkanes)
     //Brominated Alkanes
@@ -1612,6 +1613,17 @@ public class ModItems {
             () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),334.43,"C18H38Br",0,4,"\nDesc: ",""));
     public static final RegistryObject<Item> _2_BROMOOCTADECANE = Items.register( "2_bromooctadecane",
             () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),334.43,"C18H38Br",0,4,"\nDesc: ",""));
+
+    //Alkenes
+    //TODO: ADD BASIC STUFF FOR THESE (LANG, MODEL, DECON)
+    public static final RegistryObject<Item> ETHENE = Items.register( "ethene",
+            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),28.05,"C2H4",0,4,"\nDesc: ",""));
+    public static final RegistryObject<Item> PROPENE = Items.register( "propene",
+            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),42.08,"C3H6",0,4,"\nDesc: ",""));
+    public static final RegistryObject<Item> _1_BUTENE = Items.register( "1_butene",
+            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),56.11,"C4H8",0,4,"\nDesc: ",""));
+    public static final RegistryObject<Item> _2_BUTENE = Items.register( "2_butene",
+            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),56.11,"C4H8",0,4,"\nDesc: ",""));
 
 
     //OChem reagents
