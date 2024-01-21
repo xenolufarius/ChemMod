@@ -166,6 +166,7 @@ public class ChemicalItem  extends Item {
     //FOOD = String that will be put through an even to handle custom eating properties
     public String getcSDS(){return cSDS;}
 
+
     String SDSInfo = "";
 
     //Maybe make custom registry for food properties? Apply properties to items.

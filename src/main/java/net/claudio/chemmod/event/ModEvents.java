@@ -15,6 +15,7 @@ import net.claudio.chemmod.villager.ModVillagers;
 import net.minecraft.ChatFormatting;
 import net.minecraft.Util;
 import net.minecraft.client.renderer.entity.ItemEntityRenderer;
+import net.minecraft.core.BlockPos;
 import net.minecraft.network.chat.Component;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.server.level.ServerPlayer;
@@ -24,6 +25,7 @@ import net.minecraft.world.damagesource.DamageSource;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.entity.Entity;
+import net.minecraft.world.entity.ai.util.LandRandomPos;
 import net.minecraft.world.entity.item.ItemEntity;
 import net.minecraft.world.entity.npc.VillagerProfession;
 import net.minecraft.world.entity.npc.VillagerTrades;
@@ -36,8 +38,10 @@ import net.minecraft.world.item.PotionItem;
 import net.minecraft.world.item.alchemy.Potion;
 import net.minecraft.world.item.trading.MerchantOffer;
 import net.minecraft.world.level.ExplosionDamageCalculator;
+import net.minecraft.world.level.WorldGenLevel;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.phys.AABB;
+import net.minecraft.world.phys.Vec3;
 import net.minecraftforge.common.capabilities.RegisterCapabilitiesEvent;
 import net.minecraftforge.common.crafting.conditions.ItemExistsCondition;
 import net.minecraftforge.common.extensions.IForgeItemStack;
@@ -440,6 +444,10 @@ public class ModEvents {
                 if (event.player.tickCount % 200 == 0) {
                     itemStabilityDetectedInInventory(event.player);
                 }
+                //TODO: This is where flammability cod is ran
+                if (event.player.tickCount % 20 == 0) {
+                    flammableItemDetectedInInventory(event.player);
+                }
             });
         }
     }
@@ -470,7 +478,48 @@ public class ModEvents {
     }
 
     //TODO: ADD A METHOD THAT DESTROYS FLAMMABLE CHEMS IF PLAYER ON FIRE
+    public static void flammableItemDetectedInInventory(Player player) {
+        for (ItemStack stack : player.inventoryMenu.getItems()) {
 
+            int slot = 0;
+            for(ItemStack stack1 : player.getInventory().items)
+            {
+                if (!stack.equals(stack1))
+                {
+                    slot++;
+
+                }
+                if(stack.equals(stack1))
+                {
+                    break;
+                }
+            }
+
+            if (!stack.isEmpty() && stack.getItem().getClass() == ChemicalItem.class) {
+                ChemicalItem chemicalItem = (ChemicalItem) stack.getItem();
+                String[] SDSfragments = chemicalItem.getcSDS().split(",");
+
+                for (String sds : SDSfragments) {
+                    if (sds.equals("F") && player.isOnFire()) {
+                        int count = stack.getCount();
+                        if(count > 2)
+                        {
+                            stack = new ItemStack(chemicalItem, count - 1);
+                            player.getInventory().items.set(slot,stack);
+                        }
+                        if (count <= 2)
+                        {
+                            stack = new ItemStack((Item)null);
+                            player.getInventory().items.set(slot,stack);
+                        }
+                    }
+                }
+
+
+            }
+
+        }
+    }
 
     //detecting stability of items in player inventory.
     //Just copied over rad code. Need to adjust.
@@ -578,6 +627,7 @@ public class ModEvents {
     //TODO: FIX DETECTION ON GROUND
     public static int radioactiveItemDetectedOnGround(Player player)
     {
+        BlockPos pos = player.getOnPos();
 
         return 0;
     }

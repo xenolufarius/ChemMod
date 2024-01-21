@@ -9,6 +9,20 @@
   "output": [{
     "item": "chemmod:silicon_dioxide",
     "count": 2
-  }
+  },
+    {
+      "item": "chemmod:empty"
+    },
+    {
+      "item": "chemmod:empty"
+    },
+    {
+      "item": "chemmod:calcium_carbonate",
+      "count": 1
+    },
+    {
+      "item": "chemmod:calcium_sulfate",
+      "count": 1
+    }
 ]
 }

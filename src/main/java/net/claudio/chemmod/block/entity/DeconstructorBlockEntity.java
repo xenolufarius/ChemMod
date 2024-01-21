@@ -1,5 +1,6 @@
 package net.claudio.chemmod.block.entity;
 
+import net.claudio.chemmod.item.ModItems;
 import net.claudio.chemmod.recipe.DeconstructorBlockRecipe;
 import net.claudio.chemmod.screen.DeconstructorBlockMenu;
 import net.minecraft.core.BlockPos;
@@ -177,6 +178,7 @@ public class DeconstructorBlockEntity extends BlockEntity implements MenuProvide
                 ) {
                     //Comment for slot 0
                     pEntity.itemHandler.extractItem(0, 1, false);
+                    ItemStack empty = new ItemStack(ModItems.EMPTY.get(), 1);
                     for (ItemStack output : outputs) {
                             if (output.getItem() == outputs.get(0).getItem()) {
                                 if (pEntity.itemHandler.getStackInSlot(2).getItem() == output.getItem() || pEntity.itemHandler.getStackInSlot(2).isEmpty()) {
@@ -187,7 +189,7 @@ public class DeconstructorBlockEntity extends BlockEntity implements MenuProvide
                                         pEntity.itemHandler.getStackInSlot(2).grow(output.getCount());
                                     }
                                 }
-                            } else if (output.getItem() == outputs.get(1).getItem() && outputs.size() >= 2) {
+                            } else if (output.getItem() == outputs.get(1).getItem() && outputs.size() >= 2 && output.getItem() != empty.getItem()) {
                                 if (pEntity.itemHandler.getStackInSlot(3).getItem() == output.getItem() || pEntity.itemHandler.getStackInSlot(3).isEmpty()) {
                                     if (pEntity.itemHandler.getStackInSlot(3).isEmpty()) {
                                         pEntity.itemHandler.setStackInSlot(3, output.copy());
@@ -196,7 +198,7 @@ public class DeconstructorBlockEntity extends BlockEntity implements MenuProvide
                                         pEntity.itemHandler.getStackInSlot(3).grow(output.getCount());
                                     }
                                 }
-                            } else if (output.getItem() == outputs.get(2).getItem() && outputs.size() >= 3) {
+                            } else if (output.getItem() == outputs.get(2).getItem() && outputs.size() >= 3 && output.getItem() != empty.getItem()) {
                                 if (pEntity.itemHandler.getStackInSlot(4).getItem() == output.getItem() || pEntity.itemHandler.getStackInSlot(4).isEmpty()) {
                                     if (pEntity.itemHandler.getStackInSlot(4).isEmpty()) {
                                         pEntity.itemHandler.setStackInSlot(4, output.copy());
@@ -271,10 +273,11 @@ public class DeconstructorBlockEntity extends BlockEntity implements MenuProvide
         int check = 0;
         for(int i = 0; i < stack.size(); i++)
         {
+            ItemStack empty = new ItemStack(ModItems.EMPTY.get(), 1);
             //adjust this for loop for the number of outputs. For deconstructor: size = 7, but only 1 of those is an ingredient so -6
             for(int s = 0; s < inventory.getContainerSize()-6; s++)
             {
-                if(inventory.getItem(s).getItem() == stack.get(i).getItems()[0].getItem())
+                if(inventory.getItem(s).getItem() == stack.get(i).getItems()[0].getItem() || (stack.get(i).getItems()[0].getItem() == empty.getItem() && inventory.getItem(i).isEmpty()))
                 {
                     check++;
                 }
