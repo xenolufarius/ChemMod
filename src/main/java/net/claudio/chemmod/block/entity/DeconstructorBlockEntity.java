@@ -164,7 +164,17 @@ public class DeconstructorBlockEntity extends BlockEntity implements MenuProvide
                 NonNullList<Ingredient> inputs = deconstructorBlockRecipe.getIngredients();
 
                 NonNullList<ItemStack> outputs = deconstructorBlockRecipe.getOutput();
-                if(pEntity.itemHandler.getStackInSlot(2).getMaxStackSize()+1 > pEntity.itemHandler.getStackInSlot(2).getCount() + outputs.get(0).getCount() || (outputs.size()>1 && pEntity.itemHandler.getStackInSlot(3).getMaxStackSize() > pEntity.itemHandler.getStackInSlot(3).getCount() + outputs.get(1).getCount())) {
+                //This if statement checks every slot to see if an output can be placed into its slot or if the slot is empty.
+                if(pEntity.itemHandler.getStackInSlot(2).getMaxStackSize()+1 > pEntity.itemHandler.getStackInSlot(2).getCount() + outputs.get(0).getCount() &&
+                        (outputs.size() < 2 || (outputs.size()>1 && pEntity.itemHandler.getStackInSlot(3).getMaxStackSize() > pEntity.itemHandler.getStackInSlot(3).getCount() + outputs.get(1).getCount() &&
+                                (pEntity.itemHandler.getStackInSlot(3).getItem().equals(outputs.get(1).getItem()) || pEntity.itemHandler.getStackInSlot(3).isEmpty())))&&
+                        (outputs.size() < 3 || (outputs.size()>2 && pEntity.itemHandler.getStackInSlot(4).getMaxStackSize() > pEntity.itemHandler.getStackInSlot(4).getCount() + outputs.get(2).getCount() &&
+                                (pEntity.itemHandler.getStackInSlot(4).getItem().equals(outputs.get(2).getItem()) || pEntity.itemHandler.getStackInSlot(4).isEmpty())))&&
+                        (outputs.size() < 4 || (outputs.size()>3 && pEntity.itemHandler.getStackInSlot(5).getMaxStackSize() > pEntity.itemHandler.getStackInSlot(5).getCount() + outputs.get(3).getCount() &&
+                                (pEntity.itemHandler.getStackInSlot(5).getItem().equals(outputs.get(3).getItem()) || pEntity.itemHandler.getStackInSlot(5).isEmpty())))&&
+                        (outputs.size() < 5 || (outputs.size()>4 && pEntity.itemHandler.getStackInSlot(6).getMaxStackSize() > pEntity.itemHandler.getStackInSlot(6).getCount() + outputs.get(4).getCount() &&
+                                (pEntity.itemHandler.getStackInSlot(6).getItem().equals(outputs.get(4).getItem()) || pEntity.itemHandler.getStackInSlot(6).isEmpty())))
+                ) {
                     //Comment for slot 0
                     pEntity.itemHandler.extractItem(0, 1, false);
                     for (ItemStack output : outputs) {
