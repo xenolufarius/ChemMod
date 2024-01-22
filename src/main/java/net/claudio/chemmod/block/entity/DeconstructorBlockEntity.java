@@ -15,6 +15,7 @@ import net.minecraft.world.entity.player.Inventory;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.inventory.AbstractContainerMenu;
 import net.minecraft.world.inventory.ContainerData;
+import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.crafting.Ingredient;
 import net.minecraft.world.level.Level;
@@ -144,6 +145,13 @@ public class DeconstructorBlockEntity extends BlockEntity implements MenuProvide
             pEntity.resetProgress();
             setChanged(level, pos, state);
         }
+        //will potentially move the 2nd slot into the first once depleted
+        if (pEntity.itemHandler.getStackInSlot(0).isEmpty() && !pEntity.itemHandler.getStackInSlot(1).isEmpty())
+        {
+            pEntity.itemHandler.setStackInSlot(0,pEntity.itemHandler.getStackInSlot(1));
+            int backup = pEntity.itemHandler.getStackInSlot(1).getCount();
+            pEntity.itemHandler.extractItem(1, backup,false);
+        }
     }
 
     private void resetProgress() {
@@ -160,6 +168,13 @@ public class DeconstructorBlockEntity extends BlockEntity implements MenuProvide
         Optional<DeconstructorBlockRecipe> recipe = level.getRecipeManager()
                 .getRecipeFor(DeconstructorBlockRecipe.Type.INSTANCE, inventory, level);
 
+        //potentially useless if statement
+        if (pEntity.itemHandler.getStackInSlot(0).isEmpty() && !pEntity.itemHandler.getStackInSlot(1).isEmpty())
+        {
+            pEntity.itemHandler.setStackInSlot(0,pEntity.itemHandler.getStackInSlot(1));
+            int backup = pEntity.itemHandler.getStackInSlot(1).getCount();
+            pEntity.itemHandler.extractItem(1, backup,false);
+        }
         if (hasRecipe(pEntity)) {
             recipe.ifPresent(deconstructorBlockRecipe -> {
                 NonNullList<Ingredient> inputs = deconstructorBlockRecipe.getIngredients();
