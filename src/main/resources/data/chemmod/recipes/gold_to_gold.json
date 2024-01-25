@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+
+  "ingredients": [
+    {
+      "item": "chemmod:gold"
+    }
+  ],
+  "result": {
+    "item": "minecraft:gold_nugget",
+    "count": 1
+  }
+
+}

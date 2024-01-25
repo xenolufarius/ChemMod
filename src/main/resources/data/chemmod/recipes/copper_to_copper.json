@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+
+  "ingredients": [
+    {
+      "item": "chemmod:copper"
+    }
+  ],
+  "result": {
+    "item": "chemmod:copper_nugget",
+    "count": 1
+  }
+
+}

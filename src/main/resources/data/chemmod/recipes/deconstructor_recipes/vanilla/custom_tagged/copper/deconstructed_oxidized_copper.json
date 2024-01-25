@@ -8,8 +8,12 @@
   ],
   "output": [{
     "item": "chemmod:copper",
-    "count": 18
+    "count": 64
   },
+    {
+      "item": "chemmod:copper",
+      "count": 17
+    },
     {
       "item": "chemmod:copper_ii_carbonate_hydroxide",
       "count": 6

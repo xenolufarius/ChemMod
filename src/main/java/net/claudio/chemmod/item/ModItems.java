@@ -30,6 +30,8 @@ public class ModItems {
             () -> new Item(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB)));
     public static final RegistryObject<Item> HOT_PLATE = Items.register( "hot_plate",
             () -> new Item(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB)));
+    public static final RegistryObject<Item> COPPER_NUGGET = Items.register( "copper_nugget",
+            () -> new Item(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB)));
     public static final RegistryObject<Item> CHEMICAL2 = Items.register( "chemical2",
                 () -> new Item(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB)));
     public static final RegistryObject<Item> DECONSTRUCTOR = Items.register( "deconstructor",

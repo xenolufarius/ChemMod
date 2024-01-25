@@ -3,12 +3,13 @@
 
   "ingredients": [
     {
-      "item": "minecraft:cut_copper_slab"
+      "item": "chemmod:copper_nugget"
     }
   ],
-  "output": [{
+  "output":[ {
     "item": "chemmod:copper",
-    "count": 10
+    "count": 1
   }
-]
+  ]
+
 }
