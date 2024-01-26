@@ -11,12 +11,32 @@
   "message.chemmod.mw3": ":)",
   "message.chemmod.mw4": "It's not so bad",
   "message.chemmod.mw5": "I am feeling optimistic",
+  "message.chemmod.mw6": "I'm alright",
+  "message.chemmod.mw7": "Can't complain",
+  "message.chemmod.mw8": "Doing what I know",
+  "message.chemmod.mw9": "At least I'm not irradiated",
+  "message.chemmod.mw10": "Zero rads. Good.",
+
 
   "message.chemmod.muw1": "Something's wrong",
   "message.chemmod.muw2": ":/",
   "message.chemmod.muw3": "Eh",
   "message.chemmod.muw4": "I don't feel so good",
   "message.chemmod.muw5": "Hmm maybe that wasn't such a good idea",
+  "message.chemmod.muw6": "Oh no",
+  "message.chemmod.muw7": "It'll go away... I hope",
+  "message.chemmod.muw8": "I need to take a moment",
+  "message.chemmod.muw9": "Oof",
+  "message.chemmod.muw10": "Would milk even help?",
+
+  "message.chemmod.miw1": ":(",
+  "message.chemmod.miw2": "I need medical attention, now",
+  "message.chemmod.miw3": "My time, I suppose",
+  "message.chemmod.miw4": "How much time do I even have?",
+  "message.chemmod.miw5": "I should've been more careful",
+
+
+
 
 
 
@@ -922,6 +942,7 @@
   "item.chemmod.dichloromethane": "Dichloromethane",
 
   "item.chemmod.hot_plate": "Hot Plate",
+  "item.chemmod.copper_nugget": "Copper Nugget",
 
 
   "item.chemmod.bromomethane": "Bromomethane",

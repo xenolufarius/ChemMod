@@ -22,12 +22,26 @@ public class RadiationC2SPacket {
     public static final String MESSAGE_WELL_3 = "message.chemmod.mw3";
     public static final String MESSAGE_WELL_4 = "message.chemmod.mw4";
     public static final String MESSAGE_WELL_5 = "message.chemmod.mw5";
+    public static final String MESSAGE_WELL_6 = "message.chemmod.mw6";
+    public static final String MESSAGE_WELL_7 = "message.chemmod.mw7";
+    public static final String MESSAGE_WELL_8 = "message.chemmod.mw8";
+    public static final String MESSAGE_WELL_9 = "message.chemmod.mw9";
+    public static final String MESSAGE_WELL_10 = "message.chemmod.mw10";
     public static final String MESSAGE_UNWELL_1 = "message.chemmod.muw1";
     public static final String MESSAGE_UNWELL_2 = "message.chemmod.muw2";
     public static final String MESSAGE_UNWELL_3 = "message.chemmod.muw3";
     public static final String MESSAGE_UNWELL_4 = "message.chemmod.muw4";
-
     public static final String MESSAGE_UNWELL_5 = "message.chemmod.muw5";
+    public static final String MESSAGE_UNWELL_6 = "message.chemmod.muw6";
+    public static final String MESSAGE_UNWELL_7 = "message.chemmod.muw7";
+    public static final String MESSAGE_UNWELL_8 = "message.chemmod.muw8";
+    public static final String MESSAGE_UNWELL_9 = "message.chemmod.muw9";
+    public static final String MESSAGE_UNWELL_10 = "message.chemmod.muw10";
+    public static final String MESSAGE_IRRADIATED_1 = "message.chemmod.miw1";
+    public static final String MESSAGE_IRRADIATED_2 = "message.chemmod.miw2";
+    public static final String MESSAGE_IRRADIATED_3 = "message.chemmod.miw3";
+    public static final String MESSAGE_IRRADIATED_4 = "message.chemmod.miw4";
+    public static final String MESSAGE_IRRADIATED_5 = "message.chemmod.miw5";
 
 
     public RadiationC2SPacket() {
@@ -61,7 +75,7 @@ public class RadiationC2SPacket {
             {
                 int min = 1;
                 int max = 5;
-                int ran = random.nextInt(max - min + 1) + min;
+                int ran = (int) (Math.random() *10) + 1 ;
 
                 switch (ran)
                 {
@@ -80,6 +94,21 @@ public class RadiationC2SPacket {
                     case 5:
                         player.sendSystemMessage(Component.translatable(MESSAGE_WELL_5).withStyle(ChatFormatting.YELLOW));
                         break;
+                    case 6:
+                        player.sendSystemMessage(Component.translatable(MESSAGE_WELL_6).withStyle(ChatFormatting.YELLOW));
+                        break;
+                    case 7:
+                        player.sendSystemMessage(Component.translatable(MESSAGE_WELL_7).withStyle(ChatFormatting.YELLOW));
+                        break;
+                    case 8:
+                        player.sendSystemMessage(Component.translatable(MESSAGE_WELL_8).withStyle(ChatFormatting.YELLOW));
+                        break;
+                    case 9:
+                        player.sendSystemMessage(Component.translatable(MESSAGE_WELL_9).withStyle(ChatFormatting.YELLOW));
+                        break;
+                    case 10:
+                        player.sendSystemMessage(Component.translatable(MESSAGE_WELL_10).withStyle(ChatFormatting.YELLOW));
+                        break;
                     default:
                         player.sendSystemMessage(Component.literal("Hey").withStyle(ChatFormatting.YELLOW));
                 }
@@ -89,7 +118,7 @@ public class RadiationC2SPacket {
             {
                 int min = 1;
                 int max = 5;
-                int ran = random.nextInt(max - min + 1) + min;
+                int ran = (int) (Math.random() *10) + 1 ;
 
                 switch (ran)
                 {
@@ -108,13 +137,48 @@ public class RadiationC2SPacket {
                     case 5:
                         player.sendSystemMessage(Component.translatable(MESSAGE_UNWELL_5).withStyle(ChatFormatting.GREEN));
                         break;
+                    case 6:
+                        player.sendSystemMessage(Component.translatable(MESSAGE_UNWELL_6).withStyle(ChatFormatting.GREEN));
+                        break;
+                    case 7:
+                        player.sendSystemMessage(Component.translatable(MESSAGE_UNWELL_7).withStyle(ChatFormatting.GREEN));
+                        break;
+                    case 8:
+                        player.sendSystemMessage(Component.translatable(MESSAGE_UNWELL_8).withStyle(ChatFormatting.GREEN));
+                        break;
+                    case 9:
+                        player.sendSystemMessage(Component.translatable(MESSAGE_UNWELL_9).withStyle(ChatFormatting.GREEN));
+                        break;
+                    case 10:
+                        player.sendSystemMessage(Component.translatable(MESSAGE_UNWELL_10).withStyle(ChatFormatting.GREEN));
+                        break;
                     default:
                         player.sendSystemMessage(Component.literal("Ugh").withStyle(ChatFormatting.GREEN));
                 }
             }
             else if (ClientRadiationData.getPlayerRads() == 10)
             {
-                player.sendSystemMessage(Component.literal("Oh no").withStyle(ChatFormatting.DARK_RED));
+                int ran = (int) ((Math.random() *10) + 1)/2 ;
+                switch (ran)
+                {
+                    case 1:
+                        player.sendSystemMessage(Component.translatable(MESSAGE_IRRADIATED_1).withStyle(ChatFormatting.DARK_RED));
+                        break;
+                    case 2:
+                        player.sendSystemMessage(Component.translatable(MESSAGE_IRRADIATED_2).withStyle(ChatFormatting.DARK_RED));
+                        break;
+                    case 3:
+                        player.sendSystemMessage(Component.translatable(MESSAGE_IRRADIATED_3).withStyle(ChatFormatting.DARK_RED));
+                        break;
+                    case 4:
+                        player.sendSystemMessage(Component.translatable(MESSAGE_IRRADIATED_4).withStyle(ChatFormatting.DARK_RED));
+                        break;
+                    case 5:
+                        player.sendSystemMessage(Component.translatable(MESSAGE_IRRADIATED_5).withStyle(ChatFormatting.DARK_RED));
+                        break;
+                    default:
+                        player.sendSystemMessage(Component.literal("Oh no").withStyle(ChatFormatting.DARK_RED));
+                }
             }
             //Can change depending on how much radiation has been absorbed
         });
