@@ -6,6 +6,7 @@
             "chemmod:alchemy_table_poi2",
             "chemmod:alchemy_table_poi3",
             "chemmod:radicalizer_poi",
-            "chemmod:lab_table_poi"
+            "chemmod:lab_table_poi",
+            "chemmod:storage_locker_poi"
           ]
 }

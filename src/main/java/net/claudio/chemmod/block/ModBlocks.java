@@ -57,6 +57,8 @@ public class ModBlocks {
     //tier 3. same ingredients as tier 2, but added elemental mercury. final tutorial. Gives access to salts/elements not available to players via vanilla
     public static final RegistryObject<Block> ALCHEMY_TABLE_3 = registerBlock("alchemy_table_3",
             () -> new Block(BlockBehaviour.Properties.of(Material.WOOD).strength(1f)), ModCreativeModeTab.BLOCKS_TAB);
+    public static final RegistryObject<Block> STORAGE_LOCKER = registerBlock("storage_locker",
+            () -> new Block(BlockBehaviour.Properties.of(Material.METAL).strength(1f)), ModCreativeModeTab.BLOCKS_TAB);
 
 
 

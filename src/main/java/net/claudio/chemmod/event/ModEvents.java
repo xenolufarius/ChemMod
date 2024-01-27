@@ -5,6 +5,7 @@ import com.google.common.collect.Maps;
 import it.unimi.dsi.fastutil.ints.Int2ObjectMap;
 import net.claudio.chemmod.ChemMod;
 import net.claudio.chemmod.block.ModBlocks;
+import net.claudio.chemmod.item.ModCreativeModeTab;
 import net.claudio.chemmod.item.ModItems;
 import net.claudio.chemmod.item.custom.ChemicalItem;
 import net.claudio.chemmod.networking.ModMessages;
@@ -31,6 +32,7 @@ import net.minecraft.world.entity.npc.VillagerProfession;
 import net.minecraft.world.entity.npc.VillagerTrades;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.projectile.ItemSupplier;
+import net.minecraft.world.food.FoodProperties;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Items;
@@ -58,6 +60,7 @@ import net.minecraftforge.fml.LogicalSide;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraft.world.level.Explosion;
+import net.minecraftforge.registries.RegistryObject;
 
 import java.util.List;
 import java.util.Map;
@@ -340,6 +343,683 @@ public class ModEvents {
             trades.get(villagerlevel+4).add((trader, rand) -> new MerchantOffer(
                     new ItemStack(ModItems.ALUMINUM_BROMIDE.get(), 10),
                     radicalizer_block, 1, 40, 0.02F));
+        }
+        if(event.getType() == ModVillagers.SALT_TRADER.get())
+        {
+            Int2ObjectMap<List<VillagerTrades.ItemListing>> trades = event.getTrades();
+
+            //For Result Items
+
+            ItemStack sodium_chloride = new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 1);
+            ItemStack sodium_oxide = new ItemStack(ModItems.SODIUM_OXIDE.get(), 1);
+            ItemStack sodium_fluoride = new ItemStack(ModItems.SODIUM_FLUORIDE.get(), 1);
+            ItemStack sodium_sulfide = new ItemStack(ModItems.SODIUM_SULFIDE.get(), 1);
+            ItemStack sodium_nitride = new ItemStack(ModItems.SODIUM_NITRIDE.get(), 1);
+            ItemStack sodium_bromide = new ItemStack(ModItems.SODIUM_BROMIDE.get(), 1);
+            ItemStack sodium_iodide = new ItemStack(ModItems.SODIUM_IODIDE.get(), 1);
+            ItemStack sodium_arsenate = new ItemStack(ModItems.SODIUM_ARSENATE.get(), 1);
+            ItemStack sodium_arsenite = new ItemStack(ModItems.SODIUM_ARSENITE.get(), 1);
+            ItemStack sodium_phosphate = new ItemStack(ModItems.SODIUM_PHOSPHATE.get(), 1);
+            ItemStack sodium_dihydrogen_phosphate = new ItemStack(ModItems.SODIUM_DIHYDROGEN_PHOSPHATE.get(), 1);
+            ItemStack sodium_sulfate = new ItemStack(ModItems.SODIUM_SULFATE.get(), 1);
+            ItemStack sodium_hydrogen_sulfate = new ItemStack(ModItems.SODIUM_HYDROGEN_SULFATE.get(), 1);
+            ItemStack sodium_thiosulfate = new ItemStack(ModItems.SODIUM_THIOSULFATE.get(), 1);
+            ItemStack sodium_sulfite = new ItemStack(ModItems.SODIUM_SULFITE.get(), 1);
+            ItemStack sodium_nitrate = new ItemStack(ModItems.SODIUM_NITRATE.get(), 1);
+            ItemStack sodium_nitrite = new ItemStack(ModItems.SODIUM_NITRITE.get(), 1);
+            ItemStack sodium_perchlorate = new ItemStack(ModItems.SODIUM_PERCHLORATE.get(), 1);
+            ItemStack sodium_chlorate = new ItemStack(ModItems.SODIUM_CHLORATE.get(), 1);
+            ItemStack sodium_chlorite = new ItemStack(ModItems.SODIUM_CHLORITE.get(), 1);
+            ItemStack sodium_hypochlorite = new ItemStack(ModItems.SODIUM_HYPOCHLORITE.get(), 1);
+            ItemStack sodium_iodate = new ItemStack(ModItems.SODIUM_IODATE.get(), 1);
+            ItemStack sodium_bromate = new ItemStack(ModItems.SODIUM_BROMATE.get(), 1);
+            ItemStack sodium_carbonate = new ItemStack(ModItems.SODIUM_CARBONATE.get(), 1);
+            ItemStack sodium_bicarbonate = new ItemStack(ModItems.SODIUM_BICARBONATE.get(), 1);
+            ItemStack sodium_chromate = new ItemStack(ModItems.SODIUM_CHROMATE.get(), 1);
+            ItemStack sodium_dichromate = new ItemStack(ModItems.SODIUM_DICHROMATE.get(), 1);
+            ItemStack sodium_acetate = new ItemStack(ModItems.SODIUM_ACETATE.get(), 1);
+            ItemStack sodium_formate = new ItemStack(ModItems.SODIUM_FORMATE.get(), 1);
+            ItemStack sodium_cyanide = new ItemStack(ModItems.SODIUM_CYANIDE.get(), 1);
+            ItemStack sodium_cyanate = new ItemStack(ModItems.SODIUM_CYANATE.get(), 1);
+            ItemStack sodium_thiocyanate = new ItemStack(ModItems.SODIUM_THIOCYANATE.get(), 1);
+            ItemStack sodium_peroxide = new ItemStack(ModItems.SODIUM_PEROXIDE.get(), 1);
+            ItemStack sodium_oxalate = new ItemStack(ModItems.SODIUM_OXALATE.get(), 1);
+            ItemStack sodium_hydroxide = new ItemStack(ModItems.SODIUM_HYDROXIDE.get(), 1);
+            ItemStack sodium_permanganate = new ItemStack(ModItems.SODIUM_PERMANGANATE.get(), 1);
+            ItemStack lithium_oxide = new ItemStack(ModItems.LITHIUM_OXIDE.get(), 1);
+            ItemStack lithium_fluoride = new ItemStack(ModItems.LITHIUM_FLUORIDE.get(), 1);
+            ItemStack lithium_sulfide = new ItemStack(ModItems.LITHIUM_SULFIDE.get(), 1);
+            ItemStack lithium_chloride= new ItemStack(ModItems.LITHIUM_CHLORIDE.get(), 1);
+            ItemStack lithium_nitride = new ItemStack(ModItems.LITHIUM_NITRIDE.get(), 1);
+            ItemStack lithium_bromide = new ItemStack(ModItems.LITHIUM_BROMIDE.get(), 1);
+            ItemStack lithium_iodide = new ItemStack(ModItems.LITHIUM_IODIDE.get(), 1);
+            ItemStack lithium_arsenate = new ItemStack(ModItems.LITHIUM_ARSENATE.get(), 1);
+            ItemStack lithium_phosphate = new ItemStack(ModItems.LITHIUM_PHOSPHATE.get(), 1);
+            ItemStack lithium_sulfate = new ItemStack(ModItems.LITHIUM_SULFATE.get(), 1);
+            ItemStack lithium_hydrogen_sulfate = new ItemStack(ModItems.LITHIUM_HYDROGEN_SULFATE.get(), 1);
+            ItemStack lithium_thiosulfate = new ItemStack(ModItems.LITHIUM_THIOSULFATE.get(), 1);
+            ItemStack lithium_sulfite = new ItemStack(ModItems.LITHIUM_SULFITE.get(), 1);
+            ItemStack lithium_nitrate = new ItemStack(ModItems.LITHIUM_NITRATE.get(), 1);
+            ItemStack lithium_nitrite = new ItemStack(ModItems.LITHIUM_NITRITE.get(), 1);
+            ItemStack lithium_perchlorate = new ItemStack(ModItems.LITHIUM_PERCHLORATE.get(), 1);
+            ItemStack lithium_chlorate = new ItemStack(ModItems.LITHIUM_CHLORATE.get(), 1);
+            ItemStack lithium_chlorite = new ItemStack(ModItems.LITHIUM_CHLORITE.get(), 1);
+            ItemStack lithium_hypochlorite = new ItemStack(ModItems.LITHIUM_HYPOCHLORITE.get(), 1);
+            ItemStack lithium_iodate = new ItemStack(ModItems.LITHIUM_IODATE.get(), 1);
+            ItemStack lithium_carbonate = new ItemStack(ModItems.LITHIUM_CARBONATE.get(), 1);
+            ItemStack lithium_bicarbonate = new ItemStack(ModItems.LITHIUM_BICARBONATE.get(), 1);
+            ItemStack lithium_chromate = new ItemStack(ModItems.LITHIUM_CHROMATE.get(), 1);
+            ItemStack lithium_dichromate = new ItemStack(ModItems.LITHIUM_DICHROMATE.get(), 1);
+            ItemStack lithium_acetate = new ItemStack(ModItems.LITHIUM_ACETATE.get(), 1);
+            ItemStack lithium_cyanide = new ItemStack(ModItems.LITHIUM_CYANIDE.get(), 1);
+            ItemStack lithium_thiocyanate = new ItemStack(ModItems.LITHIUM_THIOCYANATE.get(), 1);
+            ItemStack lithium_peroxide = new ItemStack(ModItems.LITHIUM_PEROXIDE.get(), 1);
+            ItemStack lithium_oxalate = new ItemStack(ModItems.LITHIUM_OXALATE.get(), 1);
+            ItemStack lithium_hydroxide = new ItemStack(ModItems.LITHIUM_HYDROXIDE.get(), 1);
+            ItemStack beryllium_oxide = new ItemStack(ModItems.BERYLLIUM_OXIDE.get(), 1);
+            ItemStack beryllium_fluoride = new ItemStack(ModItems.BERYLLIUM_FLUORIDE.get(), 1);
+            ItemStack beryllium_sulfide = new ItemStack(ModItems.BERYLLIUM_SULFIDE.get(), 1);
+            ItemStack beryllium_chloride= new ItemStack(ModItems.BERYLLIUM_CHLORIDE.get(), 1);
+            ItemStack beryllium_nitride = new ItemStack(ModItems.BERYLLIUM_NITRIDE.get(), 1);
+            ItemStack beryllium_bromide = new ItemStack(ModItems.BERYLLIUM_BROMIDE.get(), 1);
+            ItemStack beryllium_iodide = new ItemStack(ModItems.BERYLLIUM_IODIDE.get(), 1);
+            ItemStack beryllium_sulfate = new ItemStack(ModItems.BERYLLIUM_SULFATE.get(), 1);
+            ItemStack beryllium_nitrate = new ItemStack(ModItems.BERYLLIUM_NITRATE.get(), 1);
+            ItemStack beryllium_perchlorate = new ItemStack(ModItems.BERYLLIUM_PERCHLORATE.get(), 1);
+            ItemStack beryllium_iodate = new ItemStack(ModItems.BERYLLIUM_IODATE.get(), 1);
+            ItemStack beryllium_carbonate = new ItemStack(ModItems.BERYLLIUM_CARBONATE.get(), 1);
+            ItemStack beryllium_chromate = new ItemStack(ModItems.BERYLLIUM_CHROMATE.get(), 1);
+            ItemStack beryllium_cyanide = new ItemStack(ModItems.BERYLLIUM_CYANIDE.get(), 1);
+            ItemStack beryllium_thiocyanate = new ItemStack(ModItems.BERYLLIUM_THIOCYANATE.get(), 1);
+            ItemStack beryllium_oxalate = new ItemStack(ModItems.BERYLLIUM_OXALATE.get(), 1);
+            ItemStack beryllium_hydroxide = new ItemStack(ModItems.BERYLLIUM_HYDROXIDE.get(), 1);
+            ItemStack calcium_oxide = new ItemStack(ModItems.CALCIUM_OXIDE.get(), 1);
+            ItemStack calcium_fluoride = new ItemStack(ModItems.CALCIUM_FLUORIDE.get(), 1);
+            ItemStack calcium_sulfide = new ItemStack(ModItems.CALCIUM_SULFIDE.get(), 1);
+            ItemStack calcium_chloride= new ItemStack(ModItems.CALCIUM_CHLORIDE.get(), 1);
+            ItemStack calcium_nitride = new ItemStack(ModItems.CALCIUM_NITRIDE.get(), 1);
+            ItemStack calcium_bromide = new ItemStack(ModItems.CALCIUM_BROMIDE.get(), 1);
+            ItemStack calcium_iodide = new ItemStack(ModItems.CALCIUM_IODIDE.get(), 1);
+            ItemStack calcium_arsenate = new ItemStack(ModItems.CALCIUM_ARSENATE.get(), 1);
+            ItemStack calcium_arsenite = new ItemStack(ModItems.CALCIUM_ARSENITE.get(), 1);
+            ItemStack calcium_phosphate = new ItemStack(ModItems.CALCIUM_PHOSPHATE.get(), 1);
+            ItemStack calcium_dihydrogen_phosphate = new ItemStack(ModItems.CALCIUM_DIHYDROGEN_PHOSPHATE.get(), 1);
+            ItemStack calcium_sulfate = new ItemStack(ModItems.CALCIUM_SULFATE.get(), 1);
+            ItemStack calcium_hydrogen_sulfate = new ItemStack(ModItems.CALCIUM_HYDROGEN_SULFATE.get(), 1);
+            ItemStack calcium_thiosulfate = new ItemStack(ModItems.CALCIUM_THIOSULFATE.get(), 1);
+            ItemStack calcium_sulfite = new ItemStack(ModItems.CALCIUM_SULFITE.get(), 1);
+            ItemStack calcium_nitrate = new ItemStack(ModItems.CALCIUM_NITRATE.get(), 1);
+            ItemStack calcium_nitrite = new ItemStack(ModItems.CALCIUM_NITRITE.get(), 1);
+            ItemStack calcium_perchlorate = new ItemStack(ModItems.CALCIUM_PERCHLORATE.get(), 1);
+            ItemStack calcium_chlorate = new ItemStack(ModItems.CALCIUM_CHLORATE.get(), 1);
+            ItemStack calcium_chlorite = new ItemStack(ModItems.CALCIUM_CHLORITE.get(), 1);
+            ItemStack calcium_hypochlorite = new ItemStack(ModItems.CALCIUM_HYPOCHLORITE.get(), 1);
+            ItemStack calcium_iodate = new ItemStack(ModItems.CALCIUM_IODATE.get(), 1);
+            ItemStack calcium_bromate = new ItemStack(ModItems.CALCIUM_BROMATE.get(), 1);
+            ItemStack calcium_carbonate = new ItemStack(ModItems.CALCIUM_CARBONATE.get(), 1);
+            ItemStack calcium_bicarbonate = new ItemStack(ModItems.CALCIUM_BICARBONATE.get(), 1);
+            ItemStack calcium_chromate = new ItemStack(ModItems.CALCIUM_CHROMATE.get(), 1);
+            ItemStack calcium_dichromate = new ItemStack(ModItems.CALCIUM_DICHROMATE.get(), 1);
+            ItemStack calcium_acetate = new ItemStack(ModItems.CALCIUM_ACETATE.get(), 1);
+            ItemStack calcium_formate = new ItemStack(ModItems.CALCIUM_FORMATE.get(), 1);
+            ItemStack calcium_cyanide = new ItemStack(ModItems.CALCIUM_CYANIDE.get(), 1);
+            ItemStack calcium_cyanate = new ItemStack(ModItems.CALCIUM_CYANATE.get(), 1);
+            ItemStack calcium_thiocyanate = new ItemStack(ModItems.CALCIUM_THIOCYANATE.get(), 1);
+            ItemStack calcium_peroxide = new ItemStack(ModItems.CALCIUM_PEROXIDE.get(), 1);
+            ItemStack calcium_oxalate = new ItemStack(ModItems.CALCIUM_OXALATE.get(), 1);
+            ItemStack calcium_hydroxide = new ItemStack(ModItems.CALCIUM_HYDROXIDE.get(), 1);
+            ItemStack calcium_permanganate = new ItemStack(ModItems.CALCIUM_PERMANGANATE.get(), 1);
+            ItemStack potassium_oxide = new ItemStack(ModItems.POTASSIUM_OXIDE.get(), 1);
+            ItemStack potassium_fluoride = new ItemStack(ModItems.POTASSIUM_FLUORIDE.get(), 1);
+            ItemStack potassium_sulfide = new ItemStack(ModItems.POTASSIUM_SULFIDE.get(), 1);
+            ItemStack potassium_chloride= new ItemStack(ModItems.POTASSIUM_CHLORIDE.get(), 1);
+            ItemStack potassium_nitride = new ItemStack(ModItems.POTASSIUM_NITRIDE.get(), 1);
+            ItemStack potassium_bromide = new ItemStack(ModItems.POTASSIUM_BROMIDE.get(), 1);
+            ItemStack potassium_iodide = new ItemStack(ModItems.POTASSIUM_IODIDE.get(), 1);
+            ItemStack potassium_arsenate = new ItemStack(ModItems.POTASSIUM_ARSENATE.get(), 1);
+            ItemStack potassium_arsenite = new ItemStack(ModItems.POTASSIUM_ARSENITE.get(), 1);
+            ItemStack potassium_phosphate = new ItemStack(ModItems.POTASSIUM_PHOSPHATE.get(), 1);
+            ItemStack potassium_dihydrogen_phosphate = new ItemStack(ModItems.POTASSIUM_DIHYDROGEN_PHOSPHATE.get(), 1);
+            ItemStack potassium_sulfate = new ItemStack(ModItems.POTASSIUM_SULFATE.get(), 1);
+            ItemStack potassium_hydrogen_sulfate = new ItemStack(ModItems.POTASSIUM_HYDROGEN_SULFATE.get(), 1);
+            ItemStack potassium_thiosulfate = new ItemStack(ModItems.POTASSIUM_THIOSULFATE.get(), 1);
+            ItemStack potassium_sulfite = new ItemStack(ModItems.POTASSIUM_SULFITE.get(), 1);
+            ItemStack potassium_nitrate = new ItemStack(ModItems.POTASSIUM_NITRATE.get(), 1);
+            ItemStack potassium_nitrite = new ItemStack(ModItems.POTASSIUM_NITRITE.get(), 1);
+            ItemStack potassium_perchlorate = new ItemStack(ModItems.POTASSIUM_PERCHLORATE.get(), 1);
+            ItemStack potassium_chlorate = new ItemStack(ModItems.POTASSIUM_CHLORATE.get(), 1);
+            ItemStack potassium_chlorite = new ItemStack(ModItems.POTASSIUM_CHLORITE.get(), 1);
+            ItemStack potassium_hypochlorite = new ItemStack(ModItems.POTASSIUM_HYPOCHLORITE.get(), 1);
+            ItemStack potassium_iodate = new ItemStack(ModItems.POTASSIUM_IODATE.get(), 1);
+            ItemStack potassium_bromate = new ItemStack(ModItems.POTASSIUM_BROMATE.get(), 1);
+            ItemStack potassium_carbonate = new ItemStack(ModItems.POTASSIUM_CARBONATE.get(), 1);
+            ItemStack potassium_bicarbonate = new ItemStack(ModItems.POTASSIUM_BICARBONATE.get(), 1);
+            ItemStack potassium_chromate = new ItemStack(ModItems.POTASSIUM_CHROMATE.get(), 1);
+            ItemStack potassium_dichromate = new ItemStack(ModItems.POTASSIUM_DICHROMATE.get(), 1);
+            ItemStack potassium_acetate = new ItemStack(ModItems.POTASSIUM_ACETATE.get(), 1);
+            ItemStack potassium_formate = new ItemStack(ModItems.POTASSIUM_FORMATE.get(), 1);
+            ItemStack potassium_cyanide = new ItemStack(ModItems.POTASSIUM_CYANIDE.get(), 1);
+            ItemStack potassium_cyanate = new ItemStack(ModItems.POTASSIUM_CYANATE.get(), 1);
+            ItemStack potassium_thiocyanate = new ItemStack(ModItems.POTASSIUM_THIOCYANATE.get(), 1);
+            ItemStack potassium_peroxide = new ItemStack(ModItems.POTASSIUM_PEROXIDE.get(), 1);
+            ItemStack potassium_oxalate = new ItemStack(ModItems.POTASSIUM_OXALATE.get(), 1);
+            ItemStack potassium_hydroxide = new ItemStack(ModItems.POTASSIUM_HYDROXIDE.get(), 1);
+            ItemStack potassium_permanganate = new ItemStack(ModItems.POTASSIUM_PERMANGANATE.get(), 1);
+            ItemStack aluminum_oxide = new ItemStack(ModItems.ALUMINUM_OXIDE.get(), 1);
+            ItemStack aluminum_fluoride = new ItemStack(ModItems.ALUMINUM_FLUORIDE.get(), 1);
+            ItemStack aluminum_sulfide = new ItemStack(ModItems.ALUMINUM_SULFIDE.get(), 1);
+            ItemStack aluminum_chloride= new ItemStack(ModItems.ALUMINUM_CHLORIDE.get(), 1);
+            ItemStack aluminum_nitride = new ItemStack(ModItems.ALUMINUM_NITRIDE.get(), 1);
+            ItemStack aluminum_bromide = new ItemStack(ModItems.ALUMINUM_BROMIDE.get(), 1);
+            ItemStack aluminum_iodide = new ItemStack(ModItems.ALUMINUM_IODIDE.get(), 1);
+            ItemStack aluminum_arsenate = new ItemStack(ModItems.ALUMINUM_ARSENATE.get(), 1);
+            ItemStack aluminum_phosphate = new ItemStack(ModItems.ALUMINUM_PHOSPHATE.get(), 1);
+            ItemStack aluminum_dihydrogen_phosphate = new ItemStack(ModItems.ALUMINUM_DIHYDROGEN_PHOSPHATE.get(), 1);
+            ItemStack aluminum_sulfate = new ItemStack(ModItems.ALUMINUM_SULFATE.get(), 1);
+            ItemStack aluminum_thiosulfate = new ItemStack(ModItems.ALUMINUM_THIOSULFATE.get(), 1);
+            ItemStack aluminum_nitrate = new ItemStack(ModItems.ALUMINUM_NITRATE.get(), 1);
+            ItemStack aluminum_perchlorate = new ItemStack(ModItems.ALUMINUM_PERCHLORATE.get(), 1);
+            ItemStack aluminum_chlorate = new ItemStack(ModItems.ALUMINUM_CHLORATE.get(), 1);
+            ItemStack aluminum_bromate = new ItemStack(ModItems.ALUMINUM_BROMATE.get(), 1);
+            ItemStack aluminum_carbonate = new ItemStack(ModItems.ALUMINUM_CARBONATE.get(), 1);
+            ItemStack aluminum_bicarbonate = new ItemStack(ModItems.ALUMINUM_BICARBONATE.get(), 1);
+            ItemStack aluminum_acetate = new ItemStack(ModItems.ALUMINUM_ACETATE.get(), 1);
+            ItemStack aluminum_formate = new ItemStack(ModItems.ALUMINUM_FORMATE.get(), 1);
+            ItemStack aluminum_cyanide = new ItemStack(ModItems.ALUMINUM_CYANIDE.get(), 1);
+            ItemStack aluminum_oxalate = new ItemStack(ModItems.ALUMINUM_OXALATE.get(), 1);
+            ItemStack aluminum_hydroxide = new ItemStack(ModItems.ALUMINUM_HYDROXIDE.get(), 1);
+            ItemStack ammonium_fluoride = new ItemStack(ModItems.AMMONIUM_FLUORIDE.get(), 1);
+            ItemStack ammonium_sulfide = new ItemStack(ModItems.AMMONIUM_SULFIDE.get(), 1);
+            ItemStack ammonium_chloride= new ItemStack(ModItems.AMMONIUM_CHLORIDE.get(), 1);
+            ItemStack ammonium_bromide = new ItemStack(ModItems.AMMONIUM_BROMIDE.get(), 1);
+            ItemStack ammonium_iodide = new ItemStack(ModItems.AMMONIUM_IODIDE.get(), 1);
+            ItemStack ammonium_arsenate = new ItemStack(ModItems.AMMONIUM_ARSENATE.get(), 1);
+            ItemStack ammonium_phosphate = new ItemStack(ModItems.AMMONIUM_PHOSPHATE.get(), 1);
+            ItemStack ammonium_dihydrogen_phosphate = new ItemStack(ModItems.AMMONIUM_DIHYDROGEN_PHOSPHATE.get(), 1);
+            ItemStack ammonium_sulfate = new ItemStack(ModItems.AMMONIUM_SULFATE.get(), 1);
+            ItemStack ammonium_hydrogen_sulfate = new ItemStack(ModItems.AMMONIUM_HYDROGEN_SULFATE.get(), 1);
+            ItemStack ammonium_thiosulfate = new ItemStack(ModItems.AMMONIUM_THIOSULFATE.get(), 1);
+            ItemStack ammonium_sulfite = new ItemStack(ModItems.AMMONIUM_SULFITE.get(), 1);
+            ItemStack ammonium_nitrate = new ItemStack(ModItems.AMMONIUM_NITRATE.get(), 1);
+            ItemStack ammonium_nitrite = new ItemStack(ModItems.AMMONIUM_NITRITE.get(), 1);
+            ItemStack ammonium_perchlorate = new ItemStack(ModItems.AMMONIUM_PERCHLORATE.get(), 1);
+            ItemStack ammonium_chlorate = new ItemStack(ModItems.AMMONIUM_CHLORATE.get(), 1);
+            ItemStack ammonium_iodate = new ItemStack(ModItems.AMMONIUM_IODATE.get(), 1);
+            ItemStack ammonium_carbonate = new ItemStack(ModItems.AMMONIUM_CARBONATE.get(), 1);
+            ItemStack ammonium_bicarbonate = new ItemStack(ModItems.AMMONIUM_BICARBONATE.get(), 1);
+            ItemStack ammonium_chromate = new ItemStack(ModItems.AMMONIUM_CHROMATE.get(), 1);
+            ItemStack ammonium_dichromate = new ItemStack(ModItems.AMMONIUM_DICHROMATE.get(), 1);
+            ItemStack ammonium_acetate = new ItemStack(ModItems.AMMONIUM_ACETATE.get(), 1);
+            ItemStack ammonium_formate = new ItemStack(ModItems.AMMONIUM_FORMATE.get(), 1);
+            ItemStack ammonium_cyanide = new ItemStack(ModItems.AMMONIUM_CYANIDE.get(), 1);
+            ItemStack ammonium_cyanate = new ItemStack(ModItems.AMMONIUM_CYANATE.get(), 1);
+            ItemStack ammonium_thiocyanate = new ItemStack(ModItems.AMMONIUM_THIOCYANATE.get(), 1);
+            ItemStack ammonium_oxalate = new ItemStack(ModItems.AMMONIUM_OXALATE.get(), 1);
+            ItemStack ammonium_permanganate = new ItemStack(ModItems.AMMONIUM_PERMANGANATE.get(), 1);
+            ItemStack barium_oxide = new ItemStack(ModItems.BARIUM_OXIDE.get(), 1);
+            ItemStack barium_fluoride = new ItemStack(ModItems.BARIUM_FLUORIDE.get(), 1);
+            ItemStack barium_sulfide = new ItemStack(ModItems.BARIUM_SULFIDE.get(), 1);
+            ItemStack barium_chloride= new ItemStack(ModItems.BARIUM_CHLORIDE.get(), 1);
+            ItemStack barium_nitride = new ItemStack(ModItems.BARIUM_NITRIDE.get(), 1);
+            ItemStack barium_bromide = new ItemStack(ModItems.BARIUM_BROMIDE.get(), 1);
+            ItemStack barium_iodide = new ItemStack(ModItems.BARIUM_IODIDE.get(), 1);
+            ItemStack barium_arsenate = new ItemStack(ModItems.BARIUM_ARSENATE.get(), 1);
+            ItemStack barium_phosphate = new ItemStack(ModItems.BARIUM_PHOSPHATE.get(), 1);
+            ItemStack barium_dihydrogen_phosphate = new ItemStack(ModItems.BARIUM_DIHYDROGEN_PHOSPHATE.get(), 1);
+            ItemStack barium_sulfate = new ItemStack(ModItems.BARIUM_SULFATE.get(), 1);
+            ItemStack barium_sulfite = new ItemStack(ModItems.BARIUM_SULFITE.get(), 1);
+            ItemStack barium_nitrate = new ItemStack(ModItems.BARIUM_NITRATE.get(), 1);
+            ItemStack barium_nitrite = new ItemStack(ModItems.BARIUM_NITRITE.get(), 1);
+            ItemStack barium_perchlorate = new ItemStack(ModItems.BARIUM_PERCHLORATE.get(), 1);
+            ItemStack barium_chlorate = new ItemStack(ModItems.BARIUM_CHLORATE.get(), 1);
+            ItemStack barium_hypochlorite = new ItemStack(ModItems.BARIUM_HYPOCHLORITE.get(), 1);
+            ItemStack barium_iodate = new ItemStack(ModItems.BARIUM_IODATE.get(), 1);
+            ItemStack barium_bromate = new ItemStack(ModItems.BARIUM_BROMATE.get(), 1);
+            ItemStack barium_carbonate = new ItemStack(ModItems.BARIUM_CARBONATE.get(), 1);
+            ItemStack barium_chromate = new ItemStack(ModItems.BARIUM_CHROMATE.get(), 1);
+            ItemStack barium_acetate = new ItemStack(ModItems.BARIUM_ACETATE.get(), 1);
+            ItemStack barium_cyanide = new ItemStack(ModItems.BARIUM_CYANIDE.get(), 1);
+            ItemStack barium_thiocyanate = new ItemStack(ModItems.BARIUM_THIOCYANATE.get(), 1);
+            ItemStack barium_peroxide = new ItemStack(ModItems.BARIUM_PEROXIDE.get(), 1);
+            ItemStack barium_oxalate = new ItemStack(ModItems.BARIUM_OXALATE.get(), 1);
+            ItemStack barium_hydroxide = new ItemStack(ModItems.BARIUM_HYDROXIDE.get(), 1);
+            ItemStack barium_permanganate = new ItemStack(ModItems.BARIUM_PERMANGANATE.get(), 1);
+            ItemStack chromium_ii_oxide = new ItemStack(ModItems.CHROMIUM_II_OXIDE.get(), 1);
+            ItemStack chromium_ii_fluoride = new ItemStack(ModItems.CHROMIUM_II_FLUORIDE.get(), 1);
+            ItemStack chromium_ii_sulfide = new ItemStack(ModItems.CHROMIUM_II_SULFIDE.get(), 1);
+            ItemStack chromium_ii_chloride= new ItemStack(ModItems.CHROMIUM_II_CHLORIDE.get(), 1);
+            ItemStack chromium_ii_bromide = new ItemStack(ModItems.CHROMIUM_II_BROMIDE.get(), 1);
+            ItemStack chromium_ii_iodide = new ItemStack(ModItems.CHROMIUM_II_IODIDE.get(), 1);
+            ItemStack chromium_ii_chromate = new ItemStack(ModItems.CHROMIUM_II_CHROMATE.get(), 1);
+            ItemStack chromium_ii_acetate = new ItemStack(ModItems.CHROMIUM_II_ACETATE.get(), 1);
+            ItemStack chromium_ii_oxalate = new ItemStack(ModItems.CHROMIUM_II_OXALATE.get(), 1);
+            ItemStack chromium_iii_oxide = new ItemStack(ModItems.CHROMIUM_III_OXIDE.get(), 1);
+            ItemStack chromium_iii_fluoride = new ItemStack(ModItems.CHROMIUM_III_FLUORIDE.get(), 1);
+            ItemStack chromium_iii_sulfide = new ItemStack(ModItems.CHROMIUM_III_SULFIDE.get(), 1);
+            ItemStack chromium_iii_chloride= new ItemStack(ModItems.CHROMIUM_III_CHLORIDE.get(), 1);
+            ItemStack chromium_iii_nitride = new ItemStack(ModItems.CHROMIUM_III_NITRIDE.get(), 1);
+            ItemStack chromium_iii_bromide = new ItemStack(ModItems.CHROMIUM_III_BROMIDE.get(), 1);
+            ItemStack chromium_iii_iodide = new ItemStack(ModItems.CHROMIUM_III_IODIDE.get(), 1);
+            ItemStack chromium_iii_phosphate = new ItemStack(ModItems.CHROMIUM_III_PHOSPHATE.get(), 1);
+            ItemStack chromium_iii_sulfate = new ItemStack(ModItems.CHROMIUM_III_SULFATE.get(), 1);
+            ItemStack chromium_iii_nitrate = new ItemStack(ModItems.CHROMIUM_III_NITRATE.get(), 1);
+            ItemStack chromium_iii_perchlorate = new ItemStack(ModItems.CHROMIUM_III_PERCHLORATE.get(), 1);
+            ItemStack chromium_iii_chromate = new ItemStack(ModItems.CHROMIUM_III_CHROMATE.get(), 1);
+            ItemStack chromium_iii_oxalate = new ItemStack(ModItems.CHROMIUM_III_OXALATE.get(), 1);
+            ItemStack chromium_iii_hydroxide = new ItemStack(ModItems.CHROMIUM_III_HYDROXIDE.get(), 1);
+            ItemStack copper_i_oxide = new ItemStack(ModItems.COPPER_I_OXIDE.get(), 1);
+            ItemStack copper_i_fluoride = new ItemStack(ModItems.COPPER_I_FLUORIDE.get(), 1);
+            ItemStack copper_i_sulfide = new ItemStack(ModItems.COPPER_I_SULFIDE.get(), 1);
+            ItemStack copper_i_chloride= new ItemStack(ModItems.COPPER_I_CHLORIDE.get(), 1);
+            ItemStack copper_i_bromide = new ItemStack(ModItems.COPPER_I_BROMIDE.get(), 1);
+            ItemStack copper_i_iodide = new ItemStack(ModItems.COPPER_I_IODIDE.get(), 1);
+            ItemStack copper_i_sulfate = new ItemStack(ModItems.COPPER_I_SULFATE.get(), 1);
+            ItemStack copper_i_cyanide = new ItemStack(ModItems.COPPER_I_CYANIDE.get(), 1);
+            ItemStack copper_i_thiocyanate = new ItemStack(ModItems.COPPER_I_THIOCYANATE.get(), 1);
+            ItemStack copper_i_hydroxide = new ItemStack(ModItems.COPPER_I_HYDROXIDE.get(), 1);
+            ItemStack copper_ii_oxide = new ItemStack(ModItems.COPPER_II_OXIDE.get(), 1);
+            ItemStack copper_ii_fluoride = new ItemStack(ModItems.COPPER_II_FLUORIDE.get(), 1);
+            ItemStack copper_ii_sulfide = new ItemStack(ModItems.COPPER_II_SULFIDE.get(), 1);
+            ItemStack copper_ii_chloride= new ItemStack(ModItems.COPPER_II_CHLORIDE.get(), 1);
+            ItemStack copper_ii_bromide = new ItemStack(ModItems.COPPER_II_BROMIDE.get(), 1);
+            ItemStack copper_ii_arsenate = new ItemStack(ModItems.COPPER_II_ARSENATE.get(), 1);
+            ItemStack copper_ii_phosphate = new ItemStack(ModItems.COPPER_II_PHOSPHATE.get(), 1);
+            ItemStack copper_ii_sulfate = new ItemStack(ModItems.COPPER_II_SULFATE.get(), 1);
+            ItemStack copper_ii_nitrate = new ItemStack(ModItems.COPPER_II_NITRATE.get(), 1);
+            ItemStack copper_ii_perchlorate = new ItemStack(ModItems.COPPER_II_PERCHLORATE.get(), 1);
+            ItemStack copper_ii_chlorate = new ItemStack(ModItems.COPPER_II_CHLORATE.get(), 1);
+            ItemStack copper_ii_carbonate = new ItemStack(ModItems.COPPER_II_CARBONATE.get(), 1);
+            ItemStack copper_ii_chromate = new ItemStack(ModItems.COPPER_II_CHROMATE.get(), 1);
+            ItemStack copper_ii_acetate = new ItemStack(ModItems.COPPER_II_ACETATE.get(), 1);
+            ItemStack copper_ii_formate = new ItemStack(ModItems.COPPER_II_FORMATE.get(), 1);
+            ItemStack copper_ii_thiocyanate = new ItemStack(ModItems.COPPER_II_THIOCYANATE.get(), 1);
+            ItemStack copper_ii_peroxide = new ItemStack(ModItems.COPPER_II_PEROXIDE.get(), 1);
+            ItemStack copper_ii_oxalate = new ItemStack(ModItems.COPPER_II_OXALATE.get(), 1);
+            ItemStack copper_ii_hydroxide = new ItemStack(ModItems.COPPER_II_HYDROXIDE.get(), 1);
+            ItemStack iron_ii_oxide = new ItemStack(ModItems.IRON_II_OXIDE.get(), 1);
+            ItemStack iron_ii_fluoride = new ItemStack(ModItems.IRON_II_FLUORIDE.get(), 1);
+            ItemStack iron_ii_sulfide = new ItemStack(ModItems.IRON_II_SULFIDE.get(), 1);
+            ItemStack iron_ii_chloride= new ItemStack(ModItems.IRON_II_CHLORIDE.get(), 1);
+            ItemStack iron_ii_bromide = new ItemStack(ModItems.IRON_II_BROMIDE.get(), 1);
+            ItemStack iron_ii_iodide = new ItemStack(ModItems.IRON_II_IODIDE.get(), 1);
+            ItemStack iron_ii_arsenate = new ItemStack(ModItems.IRON_II_ARSENATE.get(), 1);
+            ItemStack iron_ii_phosphate = new ItemStack(ModItems.IRON_II_PHOSPHATE.get(), 1);
+            ItemStack iron_ii_sulfate = new ItemStack(ModItems.IRON_II_SULFATE.get(), 1);
+            ItemStack iron_ii_nitrate = new ItemStack(ModItems.IRON_II_NITRATE.get(), 1);
+            ItemStack iron_ii_perchlorate = new ItemStack(ModItems.IRON_II_PERCHLORATE.get(), 1);
+            ItemStack iron_ii_carbonate = new ItemStack(ModItems.IRON_II_CARBONATE.get(), 1);
+            ItemStack iron_ii_acetate = new ItemStack(ModItems.IRON_II_ACETATE.get(), 1);
+            ItemStack iron_ii_thiocyanate = new ItemStack(ModItems.IRON_II_THIOCYANATE.get(), 1);
+            ItemStack iron_ii_oxalate = new ItemStack(ModItems.IRON_II_OXALATE.get(), 1);
+            ItemStack iron_ii_hydroxide = new ItemStack(ModItems.IRON_II_HYDROXIDE.get(), 1);
+            ItemStack iron_iii_oxide = new ItemStack(ModItems.IRON_III_OXIDE.get(), 1);
+            ItemStack iron_iii_fluoride = new ItemStack(ModItems.IRON_III_FLUORIDE.get(), 1);
+            ItemStack iron_iii_chloride= new ItemStack(ModItems.IRON_III_CHLORIDE.get(), 1);
+            ItemStack iron_iii_bromide = new ItemStack(ModItems.IRON_III_BROMIDE.get(), 1);
+            ItemStack iron_iii_iodide = new ItemStack(ModItems.IRON_III_IODIDE.get(), 1);
+            ItemStack iron_iii_arsenate = new ItemStack(ModItems.IRON_III_ARSENATE.get(), 1);
+            ItemStack iron_iii_phosphate = new ItemStack(ModItems.IRON_III_PHOSPHATE.get(), 1);
+            ItemStack iron_iii_sulfate = new ItemStack(ModItems.IRON_III_SULFATE.get(), 1);
+            ItemStack iron_iii_nitrate = new ItemStack(ModItems.IRON_III_NITRATE.get(), 1);
+            ItemStack iron_iii_oxalate = new ItemStack(ModItems.IRON_III_OXALATE.get(), 1);
+            ItemStack lead_ii_oxide = new ItemStack(ModItems.LEAD_II_OXIDE.get(), 1);
+            ItemStack lead_ii_fluoride = new ItemStack(ModItems.LEAD_II_FLUORIDE.get(), 1);
+            ItemStack lead_ii_sulfide = new ItemStack(ModItems.LEAD_II_SULFIDE.get(), 1);
+            ItemStack lead_ii_chloride= new ItemStack(ModItems.LEAD_II_CHLORIDE.get(), 1);
+            ItemStack lead_ii_bromide = new ItemStack(ModItems.LEAD_II_BROMIDE.get(), 1);
+            ItemStack lead_ii_iodide = new ItemStack(ModItems.LEAD_II_IODIDE.get(), 1);
+            ItemStack lead_ii_arsenite = new ItemStack(ModItems.LEAD_II_ARSENITE.get(), 1);
+            ItemStack lead_ii_phosphate = new ItemStack(ModItems.LEAD_II_PHOSPHATE.get(), 1);
+            ItemStack lead_ii_sulfate = new ItemStack(ModItems.LEAD_II_SULFATE.get(), 1);
+            ItemStack lead_ii_thiosulfate = new ItemStack(ModItems.LEAD_II_THIOSULFATE.get(), 1);
+            ItemStack lead_ii_nitrate = new ItemStack(ModItems.LEAD_II_NITRATE.get(), 1);
+            ItemStack lead_ii_perchlorate = new ItemStack(ModItems.LEAD_II_PERCHLORATE.get(), 1);
+            ItemStack lead_ii_iodate = new ItemStack(ModItems.LEAD_II_IODATE.get(), 1);
+            ItemStack lead_ii_carbonate = new ItemStack(ModItems.LEAD_II_CARBONATE.get(), 1);
+            ItemStack lead_ii_chromate = new ItemStack(ModItems.LEAD_II_CHROMATE.get(), 1);
+            ItemStack lead_ii_acetate = new ItemStack(ModItems.LEAD_II_ACETATE.get(), 1);
+            ItemStack lead_ii_cyanide = new ItemStack(ModItems.LEAD_II_CYANIDE.get(), 1);
+            ItemStack lead_ii_thiocyanate = new ItemStack(ModItems.LEAD_II_THIOCYANATE.get(), 1);
+            ItemStack lead_ii_hydroxide = new ItemStack(ModItems.LEAD_II_HYDROXIDE.get(), 1);
+            ItemStack magnesium_oxide = new ItemStack(ModItems.MAGNESIUM_OXIDE.get(), 1);
+            ItemStack magnesium_fluoride = new ItemStack(ModItems.MAGNESIUM_FLUORIDE.get(), 1);
+            ItemStack magnesium_sulfide = new ItemStack(ModItems.MAGNESIUM_SULFIDE.get(), 1);
+            ItemStack magnesium_chloride= new ItemStack(ModItems.MAGNESIUM_CHLORIDE.get(), 1);
+            ItemStack magnesium_nitride = new ItemStack(ModItems.MAGNESIUM_NITRIDE.get(), 1);
+            ItemStack magnesium_bromide = new ItemStack(ModItems.MAGNESIUM_BROMIDE.get(), 1);
+            ItemStack magnesium_iodide = new ItemStack(ModItems.MAGNESIUM_IODIDE.get(), 1);
+            ItemStack magnesium_arsenate = new ItemStack(ModItems.MAGNESIUM_ARSENATE.get(), 1);
+            ItemStack magnesium_dihydrogen_phosphate = new ItemStack(ModItems.MAGNESIUM_DIHYDROGEN_PHOSPHATE.get(), 1);
+            ItemStack magnesium_sulfate = new ItemStack(ModItems.MAGNESIUM_SULFATE.get(), 1);
+            ItemStack magnesium_thiosulfate = new ItemStack(ModItems.MAGNESIUM_THIOSULFATE.get(), 1);
+            ItemStack magnesium_nitrate = new ItemStack(ModItems.MAGNESIUM_NITRATE.get(), 1);
+            ItemStack magnesium_perchlorate = new ItemStack(ModItems.MAGNESIUM_PERCHLORATE.get(), 1);
+            ItemStack magnesium_chlorate = new ItemStack(ModItems.MAGNESIUM_CHLORATE.get(), 1);
+            ItemStack magnesium_carbonate = new ItemStack(ModItems.MAGNESIUM_CARBONATE.get(), 1);
+            ItemStack magnesium_chromate = new ItemStack(ModItems.MAGNESIUM_CHROMATE.get(), 1);
+            ItemStack magnesium_acetate = new ItemStack(ModItems.MAGNESIUM_ACETATE.get(), 1);
+            ItemStack magnesium_formate = new ItemStack(ModItems.MAGNESIUM_FORMATE.get(), 1);
+            ItemStack magnesium_peroxide = new ItemStack(ModItems.MAGNESIUM_PEROXIDE.get(), 1);
+            ItemStack magnesium_oxalate = new ItemStack(ModItems.MAGNESIUM_OXALATE.get(), 1);
+            ItemStack magnesium_hydroxide = new ItemStack(ModItems.MAGNESIUM_HYDROXIDE.get(), 1);
+            ItemStack magnesium_permanganate = new ItemStack(ModItems.MAGNESIUM_PERMANGANATE.get(), 1);
+            ItemStack manganese_ii_oxide = new ItemStack(ModItems.MANGANESE_II_OXIDE.get(), 1);
+            ItemStack manganese_ii_fluoride = new ItemStack(ModItems.MANGANESE_II_FLUORIDE.get(), 1);
+            ItemStack manganese_ii_sulfide = new ItemStack(ModItems.MANGANESE_II_SULFIDE.get(), 1);
+            ItemStack manganese_ii_chloride= new ItemStack(ModItems.MANGANESE_II_CHLORIDE.get(), 1);
+            ItemStack manganese_ii_bromide = new ItemStack(ModItems.MANGANESE_II_BROMIDE.get(), 1);
+            ItemStack manganese_ii_iodide = new ItemStack(ModItems.MANGANESE_II_IODIDE.get(), 1);
+            ItemStack manganese_ii_phosphate = new ItemStack(ModItems.MANGANESE_II_PHOSPHATE.get(), 1);
+            ItemStack manganese_ii_sulfate = new ItemStack(ModItems.MANGANESE_II_SULFATE.get(), 1);
+            ItemStack manganese_ii_nitrate = new ItemStack(ModItems.MANGANESE_II_NITRATE.get(), 1);
+            ItemStack manganese_ii_chlorate = new ItemStack(ModItems.MANGANESE_II_CHLORATE.get(), 1);
+            ItemStack manganese_ii_carbonate = new ItemStack(ModItems.MANGANESE_II_CARBONATE.get(), 1);
+            ItemStack manganese_ii_acetate = new ItemStack(ModItems.MANGANESE_II_ACETATE.get(), 1);
+            ItemStack manganese_ii_oxalate = new ItemStack(ModItems.MANGANESE_II_OXALATE.get(), 1);
+            ItemStack manganese_ii_hydroxide = new ItemStack(ModItems.MANGANESE_II_HYDROXIDE.get(), 1);
+            ItemStack manganese_iii_oxide = new ItemStack(ModItems.MANGANESE_III_OXIDE.get(), 1);
+            ItemStack manganese_iii_fluoride = new ItemStack(ModItems.MANGANESE_III_FLUORIDE.get(), 1);
+            ItemStack manganese_iii_phosphate = new ItemStack(ModItems.MANGANESE_III_PHOSPHATE.get(), 1);
+            ItemStack manganese_iii_sulfate = new ItemStack(ModItems.MANGANESE_III_SULFATE.get(), 1);
+            ItemStack manganese_iii_acetate = new ItemStack(ModItems.MANGANESE_III_ACETATE.get(), 1);
+            ItemStack mercury_i_oxide = new ItemStack(ModItems.MERCURY_I_OXIDE.get(), 1);
+            ItemStack mercury_i_fluoride = new ItemStack(ModItems.MERCURY_I_FLUORIDE.get(), 1);
+            ItemStack mercury_i_chloride= new ItemStack(ModItems.MERCURY_I_CHLORIDE.get(), 1);
+            ItemStack mercury_i_bromide = new ItemStack(ModItems.MERCURY_I_BROMIDE.get(), 1);
+            ItemStack mercury_i_iodide = new ItemStack(ModItems.MERCURY_I_IODIDE.get(), 1);
+            ItemStack mercury_i_sulfate = new ItemStack(ModItems.MERCURY_I_SULFATE.get(), 1);
+            ItemStack mercury_i_nitrate = new ItemStack(ModItems.MERCURY_I_NITRATE.get(), 1);
+            ItemStack mercury_ii_oxide = new ItemStack(ModItems.MERCURY_II_OXIDE.get(), 1);
+            ItemStack mercury_ii_fluoride = new ItemStack(ModItems.MERCURY_II_FLUORIDE.get(), 1);
+            ItemStack mercury_ii_sulfide = new ItemStack(ModItems.MERCURY_II_SULFIDE.get(), 1);
+            ItemStack mercury_ii_chloride= new ItemStack(ModItems.MERCURY_II_CHLORIDE.get(), 1);
+            ItemStack mercury_ii_bromide = new ItemStack(ModItems.MERCURY_II_BROMIDE.get(), 1);
+            ItemStack mercury_ii_iodide = new ItemStack(ModItems.MERCURY_II_IODIDE.get(), 1);
+            ItemStack mercury_ii_sulfate = new ItemStack(ModItems.MERCURY_II_SULFATE.get(), 1);
+            ItemStack mercury_ii_nitrate = new ItemStack(ModItems.MERCURY_II_NITRATE.get(), 1);
+            ItemStack mercury_ii_acetate = new ItemStack(ModItems.MERCURY_II_ACETATE.get(), 1);
+            ItemStack mercury_ii_cyanide = new ItemStack(ModItems.MERCURY_II_CYANIDE.get(), 1);
+            ItemStack mercury_ii_thiocyanate = new ItemStack(ModItems.MERCURY_II_THIOCYANATE.get(), 1);
+            ItemStack mercury_ii_hydroxide = new ItemStack(ModItems.MERCURY_II_HYDROXIDE.get(), 1);
+            ItemStack nitronium_fluoride = new ItemStack(ModItems.NITRONIUM_FLUORIDE.get(), 1);
+            ItemStack nitronium_chloride= new ItemStack(ModItems.NITRONIUM_CHLORIDE.get(), 1);
+            ItemStack nitronium_perchlorate = new ItemStack(ModItems.NITRONIUM_PERCHLORATE.get(), 1);
+            ItemStack silver_oxide = new ItemStack(ModItems.SILVER_OXIDE.get(), 1);
+            ItemStack silver_fluoride = new ItemStack(ModItems.SILVER_FLUORIDE.get(), 1);
+            ItemStack silver_sulfide = new ItemStack(ModItems.SILVER_SULFIDE.get(), 1);
+            ItemStack silver_chloride= new ItemStack(ModItems.SILVER_CHLORIDE.get(), 1);
+            ItemStack silver_nitride = new ItemStack(ModItems.SILVER_NITRIDE.get(), 1);
+            ItemStack silver_bromide = new ItemStack(ModItems.SILVER_BROMIDE.get(), 1);
+            ItemStack silver_iodide = new ItemStack(ModItems.SILVER_IODIDE.get(), 1);
+            ItemStack silver_arsenate = new ItemStack(ModItems.SILVER_ARSENATE.get(), 1);
+            ItemStack silver_arsenite = new ItemStack(ModItems.SILVER_ARSENITE.get(), 1);
+            ItemStack silver_phosphate = new ItemStack(ModItems.SILVER_PHOSPHATE.get(), 1);
+            ItemStack silver_sulfate = new ItemStack(ModItems.SILVER_SULFATE.get(), 1);
+            ItemStack silver_nitrate = new ItemStack(ModItems.SILVER_NITRATE.get(), 1);
+            ItemStack silver_nitrite = new ItemStack(ModItems.SILVER_NITRITE.get(), 1);
+            ItemStack silver_perchlorate = new ItemStack(ModItems.SILVER_PERCHLORATE.get(), 1);
+            ItemStack silver_chlorate = new ItemStack(ModItems.SILVER_CHLORATE.get(), 1);
+            ItemStack silver_chlorite = new ItemStack(ModItems.SILVER_CHLORITE  .get(), 1);
+            ItemStack silver_hypochlorite = new ItemStack(ModItems.SILVER_HYPOCHLORITE.get(), 1);
+            ItemStack silver_iodate = new ItemStack(ModItems.SILVER_IODATE.get(), 1);
+            ItemStack silver_bromate = new ItemStack(ModItems.SILVER_BROMATE.get(), 1);
+            ItemStack silver_carbonate = new ItemStack(ModItems.SILVER_CARBONATE.get(), 1);
+            ItemStack silver_chromate = new ItemStack(ModItems.SILVER_CHROMATE.get(), 1);
+            ItemStack silver_dichromate = new ItemStack(ModItems.SILVER_DICHROMATE.get(), 1);
+            ItemStack silver_acetate = new ItemStack(ModItems.SILVER_ACETATE.get(), 1);
+            ItemStack silver_cyanide = new ItemStack(ModItems.SILVER_CYANIDE.get(), 1);
+            ItemStack silver_thiocyanate = new ItemStack(ModItems.SILVER_THIOCYANATE.get(), 1);
+            ItemStack silver_oxalate = new ItemStack(ModItems.SILVER_OXALATE.get(), 1);
+            ItemStack silver_hydroxide = new ItemStack(ModItems.SILVER_HYDROXIDE.get(), 1);
+            ItemStack silver_permanganate = new ItemStack(ModItems.SILVER_PERMANGANATE.get(), 1);
+            ItemStack strontium_oxide = new ItemStack(ModItems.STRONTIUM_OXIDE.get(), 1);
+            ItemStack strontium_fluoride = new ItemStack(ModItems.STRONTIUM_FLUORIDE.get(), 1);
+            ItemStack strontium_sulfide = new ItemStack(ModItems.STRONTIUM_SULFIDE.get(), 1);
+            ItemStack strontium_chloride= new ItemStack(ModItems.STRONTIUM_CHLORIDE.get(), 1);
+            ItemStack strontium_nitride = new ItemStack(ModItems.STRONTIUM_NITRIDE.get(), 1);
+            ItemStack strontium_bromide = new ItemStack(ModItems.STRONTIUM_BROMIDE.get(), 1);
+            ItemStack strontium_iodide = new ItemStack(ModItems.STRONTIUM_IODIDE.get(), 1);
+            ItemStack strontium_sulfate = new ItemStack(ModItems.STRONTIUM_SULFATE.get(), 1);
+            ItemStack strontium_nitrate = new ItemStack(ModItems.STRONTIUM_NITRATE.get(), 1);
+            ItemStack strontium_perchlorate = new ItemStack(ModItems.STRONTIUM_PERCHLORATE.get(), 1);
+            ItemStack strontium_chlorate = new ItemStack(ModItems.STRONTIUM_CHLORATE.get(), 1);
+            ItemStack strontium_bromate = new ItemStack(ModItems.STRONTIUM_BROMATE.get(), 1);
+            ItemStack strontium_carbonate = new ItemStack(ModItems.STRONTIUM_CARBONATE.get(), 1);
+            ItemStack strontium_chromate = new ItemStack(ModItems.STRONTIUM_CHROMATE.get(), 1);
+            ItemStack strontium_acetate = new ItemStack(ModItems.STRONTIUM_ACETATE.get(), 1);
+            ItemStack strontium_formate = new ItemStack(ModItems.STRONTIUM_FORMATE.get(), 1);
+            ItemStack strontium_peroxide = new ItemStack(ModItems.STRONTIUM_PEROXIDE.get(), 1);
+            ItemStack strontium_oxalate = new ItemStack(ModItems.STRONTIUM_OXALATE.get(), 1);
+            ItemStack strontium_hydroxide = new ItemStack(ModItems.STRONTIUM_HYDROXIDE.get(), 1);
+            ItemStack tin_ii_oxide = new ItemStack(ModItems.TIN_II_OXIDE.get(), 1);
+            ItemStack tin_ii_fluoride = new ItemStack(ModItems.TIN_II_FLUORIDE.get(), 1);
+            ItemStack tin_ii_sulfide = new ItemStack(ModItems.TIN_II_SULFIDE.get(), 1);
+            ItemStack tin_ii_chloride= new ItemStack(ModItems.TIN_II_CHLORIDE.get(), 1);
+            ItemStack tin_ii_bromide = new ItemStack(ModItems.TIN_II_BROMIDE.get(), 1);
+            ItemStack tin_ii_iodide = new ItemStack(ModItems.TIN_II_IODIDE.get(), 1);
+            ItemStack tin_ii_sulfate = new ItemStack(ModItems.TIN_II_SULFATE.get(), 1);
+            ItemStack tin_ii_acetate = new ItemStack(ModItems.TIN_II_ACETATE.get(), 1);
+            ItemStack tin_ii_oxalate = new ItemStack(ModItems.TIN_II_OXALATE.get(), 1);
+            ItemStack tin_ii_hydroxide = new ItemStack(ModItems.TIN_II_HYDROXIDE.get(), 1);
+            ItemStack tin_iv_oxide = new ItemStack(ModItems.TIN_IV_OXIDE.get(), 1);
+            ItemStack tin_iv_fluoride = new ItemStack(ModItems.TIN_IV_FLUORIDE.get(), 1);
+            ItemStack tin_iv_sulfide = new ItemStack(ModItems.TIN_IV_SULFIDE.get(), 1);
+            ItemStack tin_iv_chloride= new ItemStack(ModItems.TIN_IV_CHLORIDE.get(), 1);
+            ItemStack tin_iv_bromide = new ItemStack(ModItems.TIN_IV_BROMIDE.get(), 1);
+            ItemStack tin_iv_iodide = new ItemStack(ModItems.TIN_IV_IODIDE.get(), 1);
+            ItemStack tin_iv_arsenate = new ItemStack(ModItems.TIN_IV_ARSENATE.get(), 1);
+            ItemStack tin_iv_nitrate = new ItemStack(ModItems.TIN_IV_NITRATE.get(), 1);
+            ItemStack tin_iv_hydroxide = new ItemStack(ModItems.TIN_IV_HYDROXIDE.get(), 1);
+            ItemStack zinc_oxide = new ItemStack(ModItems.ZINC_OXIDE.get(), 1);
+            ItemStack zinc_fluoride = new ItemStack(ModItems.ZINC_FLUORIDE.get(), 1);
+            ItemStack zinc_sulfide = new ItemStack(ModItems.ZINC_SULFIDE.get(), 1);
+            ItemStack zinc_chloride= new ItemStack(ModItems.ZINC_CHLORIDE.get(), 1);
+            ItemStack zinc_nitride = new ItemStack(ModItems.ZINC_NITRIDE.get(), 1);
+            ItemStack zinc_bromide = new ItemStack(ModItems.ZINC_BROMIDE.get(), 1);
+            ItemStack zinc_iodide = new ItemStack(ModItems.ZINC_IODIDE.get(), 1);
+            ItemStack zinc_arsenate = new ItemStack(ModItems.ZINC_ARSENATE.get(), 1);
+            ItemStack zinc_arsenite = new ItemStack(ModItems.ZINC_ARSENITE.get(), 1);
+            ItemStack zinc_phosphate = new ItemStack(ModItems.ZINC_PHOSPHATE.get(), 1);
+            ItemStack zinc_dihydrogen_phosphate = new ItemStack(ModItems.ZINC_DIHYDROGEN_PHOSPHATE.get(), 1);
+            ItemStack zinc_sulfate = new ItemStack(ModItems.ZINC_SULFATE.get(), 1);
+            ItemStack zinc_sulfite = new ItemStack(ModItems.ZINC_SULFITE.get(), 1);
+            ItemStack zinc_nitrate = new ItemStack(ModItems.ZINC_NITRATE.get(), 1);
+            ItemStack zinc_perchlorate = new ItemStack(ModItems.ZINC_PERCHLORATE.get(), 1);
+            ItemStack zinc_chlorate = new ItemStack(ModItems.ZINC_CHLORATE.get(), 1);
+            ItemStack zinc_bromate = new ItemStack(ModItems.ZINC_BROMATE.get(), 1);
+            ItemStack zinc_carbonate = new ItemStack(ModItems.ZINC_CARBONATE.get(), 1);
+            ItemStack zinc_chromate = new ItemStack(ModItems.ZINC_CHROMATE.get(), 1);
+            ItemStack zinc_dichromate = new ItemStack(ModItems.ZINC_DICHROMATE.get(), 1);
+            ItemStack zinc_acetate = new ItemStack(ModItems.ZINC_ACETATE.get(), 1);
+            ItemStack zinc_formate = new ItemStack(ModItems.ZINC_FORMATE.get(), 1);
+            ItemStack zinc_cyanide = new ItemStack(ModItems.ZINC_CYANIDE.get(), 1);
+            ItemStack zinc_thiocyanate = new ItemStack(ModItems.ZINC_THIOCYANATE.get(), 1);
+            ItemStack zinc_peroxide = new ItemStack(ModItems.ZINC_PEROXIDE.get(), 1);
+            ItemStack zinc_hydroxide = new ItemStack(ModItems.ZINC_HYDROXIDE.get(), 1);
+            ItemStack zinc_permanganate = new ItemStack(ModItems.ZINC_PERMANGANATE.get(), 1);
+            ItemStack caesium_oxide = new ItemStack(ModItems.CAESIUM_OXIDE.get(), 1);
+            ItemStack caesium_fluoride = new ItemStack(ModItems.CAESIUM_FLUORIDE.get(), 1);
+            ItemStack caesium_sulfide = new ItemStack(ModItems.CAESIUM_SULFIDE.get(), 1);
+            ItemStack caesium_chloride= new ItemStack(ModItems.CAESIUM_CHLORIDE.get(), 1);
+            ItemStack caesium_bromide = new ItemStack(ModItems.CAESIUM_BROMIDE.get(), 1);
+            ItemStack caesium_iodide = new ItemStack(ModItems.CAESIUM_IODIDE.get(), 1);
+            ItemStack caesium_arsenate = new ItemStack(ModItems.CAESIUM_ARSENATE.get(), 1);
+            ItemStack caesium_sulfate = new ItemStack(ModItems.CAESIUM_SULFATE.get(), 1);
+            ItemStack caesium_nitrate = new ItemStack(ModItems.CAESIUM_NITRATE.get(), 1);
+            ItemStack caesium_perchlorate = new ItemStack(ModItems.CAESIUM_PERCHLORATE.get(), 1);
+            ItemStack caesium_carbonate = new ItemStack(ModItems.CAESIUM_CARBONATE.get(), 1);
+            ItemStack caesium_bicarbonate = new ItemStack(ModItems.CAESIUM_BICARBONATE.get(), 1);
+            ItemStack caesium_chromate = new ItemStack(ModItems.CAESIUM_CHROMATE.get(), 1);
+            ItemStack caesium_acetate = new ItemStack(ModItems.CAESIUM_ACETATE.get(), 1);
+            ItemStack caesium_formate = new ItemStack(ModItems.CAESIUM_FORMATE.get(), 1);
+            ItemStack caesium_cyanide = new ItemStack(ModItems.CAESIUM_CYANIDE.get(), 1);
+            ItemStack caesium_hydroxide = new ItemStack(ModItems.CAESIUM_HYDROXIDE.get(), 1);
+            ItemStack rubidium_oxide = new ItemStack(ModItems.RUBIDIUM_OXIDE.get(), 1);
+            ItemStack rubidium_fluoride = new ItemStack(ModItems.RUBIDIUM_FLUORIDE.get(), 1);
+            ItemStack rubidium_sulfide = new ItemStack(ModItems.RUBIDIUM_SULFIDE.get(), 1);
+            ItemStack rubidium_chloride= new ItemStack(ModItems.RUBIDIUM_CHLORIDE.get(), 1);
+            ItemStack rubidium_bromide = new ItemStack(ModItems.RUBIDIUM_BROMIDE.get(), 1);
+            ItemStack rubidium_iodide = new ItemStack(ModItems.RUBIDIUM_IODIDE.get(), 1);
+            ItemStack rubidium_sulfate = new ItemStack(ModItems.RUBIDIUM_SULFATE.get(), 1);
+            ItemStack rubidium_perchlorate = new ItemStack(ModItems.RUBIDIUM_PERCHLORATE.get(), 1);
+            ItemStack rubidium_carbonate = new ItemStack(ModItems.RUBIDIUM_CARBONATE.get(), 1);
+            ItemStack rubidium_acetate = new ItemStack(ModItems.RUBIDIUM_ACETATE.get(), 1);
+            ItemStack rubidium_cyanide = new ItemStack(ModItems.RUBIDIUM_CYANIDE.get(), 1);
+            ItemStack rubidium_hydroxide = new ItemStack(ModItems.RUBIDIUM_HYDROXIDE.get(), 1);
+            ItemStack rubidium_permanganate = new ItemStack(ModItems.RUBIDIUM_PERMANGANATE.get(), 1);
+
+            int villagerlevel = 1;
+
+            //TODO: Add every salt lol
+            //todo: Add every salt for each trade level
+            //What should be currency?
+
+            //Novice ~12xp
+            //I guess can only have 2 trades at this level at a given time? Can I adjust this?
+            //Don't know but adding numbers = higher level of villager
+            trades.get(villagerlevel).add((trader, rand) -> new MerchantOffer(
+                    new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                    sodium_oxide, 64, 1, 0.02F));
+            trades.get(villagerlevel).add((trader, rand) -> new MerchantOffer(
+                    new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                    sodium_fluoride, 64, 1, 0.02F));
+            trades.get(villagerlevel).add((trader, rand) -> new MerchantOffer(
+                    new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                    sodium_sulfide, 64, 1, 0.02F));
+            trades.get(villagerlevel).add((trader, rand) -> new MerchantOffer(
+                    new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                    sodium_nitride, 64, 1, 0.02F));
+            trades.get(villagerlevel).add((trader, rand) -> new MerchantOffer(
+                    new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                    sodium_bromide, 64, 1, 0.02F));
+            trades.get(villagerlevel).add((trader, rand) -> new MerchantOffer(
+                    new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                    sodium_iodide, 64, 1, 0.02F));
+            trades.get(villagerlevel).add((trader, rand) -> new MerchantOffer(
+                    new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                    sodium_arsenate, 64, 1, 0.02F));
+            trades.get(villagerlevel).add((trader, rand) -> new MerchantOffer(
+                    new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                    sodium_arsenite, 64, 1, 0.02F));
+            trades.get(villagerlevel).add((trader, rand) -> new MerchantOffer(
+                    new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                    sodium_phosphate, 64, 1, 0.02F));
+            trades.get(villagerlevel).add((trader, rand) -> new MerchantOffer(
+                    new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                    sodium_dihydrogen_phosphate, 64, 1, 0.02F));
+            trades.get(villagerlevel).add((trader, rand) -> new MerchantOffer(
+                    new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                    sodium_sulfate, 64, 1, 0.02F));
+            trades.get(villagerlevel).add((trader, rand) -> new MerchantOffer(
+                    new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                    sodium_hydrogen_sulfate, 64, 1, 0.02F));
+            trades.get(villagerlevel).add((trader, rand) -> new MerchantOffer(
+                    new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                    sodium_thiosulfate, 64, 1, 0.02F));
+            trades.get(villagerlevel).add((trader, rand) -> new MerchantOffer(
+                    new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                    sodium_sulfite, 64, 1, 0.02F));
+            trades.get(villagerlevel).add((trader, rand) -> new MerchantOffer(
+                    new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                    sodium_nitrate, 64, 1, 0.02F));
+            trades.get(villagerlevel).add((trader, rand) -> new MerchantOffer(
+                    new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                    sodium_nitrite, 64, 1, 0.02F));
+            trades.get(villagerlevel).add((trader, rand) -> new MerchantOffer(
+                    new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                    sodium_perchlorate, 64, 1, 0.02F));
+            trades.get(villagerlevel).add((trader, rand) -> new MerchantOffer(
+                    new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                    sodium_chlorate, 64, 1, 0.02F));
+            trades.get(villagerlevel).add((trader, rand) -> new MerchantOffer(
+                    new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                    sodium_chlorite, 64, 1, 0.02F));
+            trades.get(villagerlevel).add((trader, rand) -> new MerchantOffer(
+                    new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                    sodium_hypochlorite, 64, 1, 0.02F));
+            trades.get(villagerlevel).add((trader, rand) -> new MerchantOffer(
+                    new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                    sodium_iodate, 64, 1, 0.02F));
+            trades.get(villagerlevel).add((trader, rand) -> new MerchantOffer(
+                    new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                    sodium_bromate, 64, 1, 0.02F));
+            trades.get(villagerlevel).add((trader, rand) -> new MerchantOffer(
+                    new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                    sodium_carbonate, 64, 1, 0.02F));
+            trades.get(villagerlevel).add((trader, rand) -> new MerchantOffer(
+                    new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                    sodium_bicarbonate, 64, 1, 0.02F));
+            trades.get(villagerlevel).add((trader, rand) -> new MerchantOffer(
+                    new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                    sodium_chromate, 64, 1, 0.02F));
+            trades.get(villagerlevel).add((trader, rand) -> new MerchantOffer(
+                    new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                    sodium_dichromate, 64, 1, 0.02F));
+            trades.get(villagerlevel).add((trader, rand) -> new MerchantOffer(
+                    new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                    sodium_acetate, 64, 1, 0.02F));
+            trades.get(villagerlevel).add((trader, rand) -> new MerchantOffer(
+                    new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                    sodium_formate, 64, 1, 0.02F));
+            trades.get(villagerlevel).add((trader, rand) -> new MerchantOffer(
+                    new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                    sodium_cyanide, 64, 1, 0.02F));
+            trades.get(villagerlevel).add((trader, rand) -> new MerchantOffer(
+                    new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                    sodium_cyanate, 64, 1, 0.02F));
+            trades.get(villagerlevel).add((trader, rand) -> new MerchantOffer(
+                    new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                    sodium_thiocyanate, 64, 1, 0.02F));
+            trades.get(villagerlevel).add((trader, rand) -> new MerchantOffer(
+                    new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                    sodium_peroxide, 64, 1, 0.02F));
+            trades.get(villagerlevel).add((trader, rand) -> new MerchantOffer(
+                    new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                    sodium_oxalate, 64, 1, 0.02F));
+            trades.get(villagerlevel).add((trader, rand) -> new MerchantOffer(
+                    new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                    sodium_hydroxide, 64, 1, 0.02F));
+            trades.get(villagerlevel).add((trader, rand) -> new MerchantOffer(
+                    new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                    sodium_permanganate, 64, 1, 0.02F));
+
+
+            //Apprentice ~64xp
+            trades.get(villagerlevel+1).add((trader, rand) -> new MerchantOffer(
+                    //Currency, Cost, stack = Result
+                    new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                    sodium_chloride, 64, 1, 0.02F));
+            //Max Uses,EXP for Villager,Multiplier for Price
+            trades.get(villagerlevel+1).add((trader, rand) -> new MerchantOffer(
+                    new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                    sodium_chloride, 64, 1, 0.02F));
+
+            //Journeyman ~80xp
+            trades.get(villagerlevel+2).add((trader, rand) -> new MerchantOffer(
+                    new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                    sodium_chloride, 64, 1, 0.02F));
+            trades.get(villagerlevel+2).add((trader, rand) -> new MerchantOffer(
+                    new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                    sodium_chloride, 64, 1, 0.02F));
+
+            //Expert ~100xp
+            trades.get(villagerlevel+3).add((trader, rand) -> new MerchantOffer(
+                    new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                    sodium_chloride, 64, 1, 0.02F));
+            trades.get(villagerlevel+3).add((trader, rand) -> new MerchantOffer(
+                    new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                    sodium_chloride, 64, 1, 0.02F));
+
+            //Master
+            trades.get(villagerlevel+4).add((trader, rand) -> new MerchantOffer(
+                    new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                    sodium_chloride, 64, 1, 0.02F));
+            trades.get(villagerlevel+4).add((trader, rand) -> new MerchantOffer(
+                    new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                    sodium_chloride, 64, 1, 0.02F));
+            trades.get(villagerlevel+4).add((trader, rand) -> new MerchantOffer(
+                    new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                    sodium_chloride, 64, 1, 0.02F));
         }
 
     }

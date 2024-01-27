@@ -55,6 +55,7 @@
   "block.chemmod.alchemy_table": "Novice Alchemy Table",
   "block.chemmod.alchemy_table_2": "Apprentice Alchemy Table",
   "block.chemmod.alchemy_table_3": "Master Alchemy Table",
+  "block.chemmod.storage_locker": "Storage Locker",
 
 
 
@@ -989,6 +990,7 @@
   "entity.minecraft.villager.chemmod.alchemist_2": "Alchemist Professor",
   "entity.minecraft.villager.chemmod.alchemist_3": "Alchemist Grandmaster",
   "entity.minecraft.villager.chemmod.organic_chemist": "Organic Chemistry Assistant",
-  "entity.minecraft.villager.chemmod.organic_chemist_2": "Organic Chemist"
+  "entity.minecraft.villager.chemmod.organic_chemist_2": "Organic Chemist",
+  "entity.minecraft.villager.chemmod.salt_trader": "Salt Trader"
 
 }

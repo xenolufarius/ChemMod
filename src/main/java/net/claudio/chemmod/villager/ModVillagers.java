@@ -47,6 +47,9 @@ public class ModVillagers {
     public static final RegistryObject<PoiType> LAB_TABLE_POI = POI_TYPES.register("lab_table_poi",
             () -> new PoiType(ImmutableSet.copyOf(ModBlocks.LAB_TABLE_BLOCK.get().getStateDefinition().getPossibleStates()),
                     1, 1));
+    public static final RegistryObject<PoiType> STORAGE_LOCKER_POI = POI_TYPES.register("storage_locker_poi",
+            () -> new PoiType(ImmutableSet.copyOf(ModBlocks.STORAGE_LOCKER.get().getStateDefinition().getPossibleStates()),
+                    1, 1));
 
     //VILLAGER PROFESSIONS
     /*
@@ -74,6 +77,10 @@ public class ModVillagers {
     public static final RegistryObject<VillagerProfession> ORGANIC_CHEMIST_2 = VILLAGER_PROFESSIONS.register("organic_chemist_2",
             () -> new VillagerProfession("organicchemist2", x -> x.get() == LAB_TABLE_POI.get(),
                     x -> x.get() == LAB_TABLE_POI.get(), ImmutableSet.of(), ImmutableSet.of(),
+                    SoundEvents.VILLAGER_WORK_CLERIC));
+    public static final RegistryObject<VillagerProfession> SALT_TRADER = VILLAGER_PROFESSIONS.register("salt_trader",
+            () -> new VillagerProfession("salttrader", x -> x.get() == STORAGE_LOCKER_POI.get(),
+                    x -> x.get() == STORAGE_LOCKER_POI.get(), ImmutableSet.of(), ImmutableSet.of(),
                     SoundEvents.VILLAGER_WORK_CLERIC));
 
     public static void registerPOIs()
