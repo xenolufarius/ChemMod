@@ -874,152 +874,1569 @@ public class ModEvents {
             //todo: Add every salt for each trade level
             //What should be currency?
 
-            //Novice ~12xp
-            //I guess can only have 2 trades at this level at a given time? Can I adjust this?
-            //Don't know but adding numbers = higher level of villager
-            trades.get(villagerlevel).add((trader, rand) -> new MerchantOffer(
+            for(int i = 0; i < 5; i++) {
+                //Novice ~12xp
+                //I guess can only have 2 trades at this level at a given time? Can I adjust this?
+                //Don't know but adding numbers = higher level of villager
+                trades.get(villagerlevel+i).add((trader, rand) -> new MerchantOffer(
+                        new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                        sodium_oxide, 64, 1, 0.02F));
+                trades.get(villagerlevel+i).add((trader, rand) -> new MerchantOffer(
+                        new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                        sodium_fluoride, 64, 1, 0.02F));
+                trades.get(villagerlevel+i).add((trader, rand) -> new MerchantOffer(
+                        new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                        sodium_sulfide, 64, 1, 0.02F));
+            /* Comment in case sodium chloride no longer is the currency
+            trades.get(villagerlevel+i).add((trader, rand) -> new MerchantOffer(
                     new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
-                    sodium_oxide, 64, 1, 0.02F));
-            trades.get(villagerlevel).add((trader, rand) -> new MerchantOffer(
-                    new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
-                    sodium_fluoride, 64, 1, 0.02F));
-            trades.get(villagerlevel).add((trader, rand) -> new MerchantOffer(
-                    new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
-                    sodium_sulfide, 64, 1, 0.02F));
-            trades.get(villagerlevel).add((trader, rand) -> new MerchantOffer(
-                    new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
-                    sodium_nitride, 64, 1, 0.02F));
-            trades.get(villagerlevel).add((trader, rand) -> new MerchantOffer(
-                    new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
-                    sodium_bromide, 64, 1, 0.02F));
-            trades.get(villagerlevel).add((trader, rand) -> new MerchantOffer(
-                    new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
-                    sodium_iodide, 64, 1, 0.02F));
-            trades.get(villagerlevel).add((trader, rand) -> new MerchantOffer(
-                    new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
-                    sodium_arsenate, 64, 1, 0.02F));
-            trades.get(villagerlevel).add((trader, rand) -> new MerchantOffer(
-                    new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
-                    sodium_arsenite, 64, 1, 0.02F));
-            trades.get(villagerlevel).add((trader, rand) -> new MerchantOffer(
-                    new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
-                    sodium_phosphate, 64, 1, 0.02F));
-            trades.get(villagerlevel).add((trader, rand) -> new MerchantOffer(
-                    new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
-                    sodium_dihydrogen_phosphate, 64, 1, 0.02F));
-            trades.get(villagerlevel).add((trader, rand) -> new MerchantOffer(
-                    new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
-                    sodium_sulfate, 64, 1, 0.02F));
-            trades.get(villagerlevel).add((trader, rand) -> new MerchantOffer(
-                    new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
-                    sodium_hydrogen_sulfate, 64, 1, 0.02F));
-            trades.get(villagerlevel).add((trader, rand) -> new MerchantOffer(
-                    new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
-                    sodium_thiosulfate, 64, 1, 0.02F));
-            trades.get(villagerlevel).add((trader, rand) -> new MerchantOffer(
-                    new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
-                    sodium_sulfite, 64, 1, 0.02F));
-            trades.get(villagerlevel).add((trader, rand) -> new MerchantOffer(
-                    new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
-                    sodium_nitrate, 64, 1, 0.02F));
-            trades.get(villagerlevel).add((trader, rand) -> new MerchantOffer(
-                    new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
-                    sodium_nitrite, 64, 1, 0.02F));
-            trades.get(villagerlevel).add((trader, rand) -> new MerchantOffer(
-                    new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
-                    sodium_perchlorate, 64, 1, 0.02F));
-            trades.get(villagerlevel).add((trader, rand) -> new MerchantOffer(
-                    new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
-                    sodium_chlorate, 64, 1, 0.02F));
-            trades.get(villagerlevel).add((trader, rand) -> new MerchantOffer(
-                    new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
-                    sodium_chlorite, 64, 1, 0.02F));
-            trades.get(villagerlevel).add((trader, rand) -> new MerchantOffer(
-                    new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
-                    sodium_hypochlorite, 64, 1, 0.02F));
-            trades.get(villagerlevel).add((trader, rand) -> new MerchantOffer(
-                    new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
-                    sodium_iodate, 64, 1, 0.02F));
-            trades.get(villagerlevel).add((trader, rand) -> new MerchantOffer(
-                    new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
-                    sodium_bromate, 64, 1, 0.02F));
-            trades.get(villagerlevel).add((trader, rand) -> new MerchantOffer(
-                    new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
-                    sodium_carbonate, 64, 1, 0.02F));
-            trades.get(villagerlevel).add((trader, rand) -> new MerchantOffer(
-                    new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
-                    sodium_bicarbonate, 64, 1, 0.02F));
-            trades.get(villagerlevel).add((trader, rand) -> new MerchantOffer(
-                    new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
-                    sodium_chromate, 64, 1, 0.02F));
-            trades.get(villagerlevel).add((trader, rand) -> new MerchantOffer(
-                    new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
-                    sodium_dichromate, 64, 1, 0.02F));
-            trades.get(villagerlevel).add((trader, rand) -> new MerchantOffer(
-                    new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
-                    sodium_acetate, 64, 1, 0.02F));
-            trades.get(villagerlevel).add((trader, rand) -> new MerchantOffer(
-                    new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
-                    sodium_formate, 64, 1, 0.02F));
-            trades.get(villagerlevel).add((trader, rand) -> new MerchantOffer(
-                    new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
-                    sodium_cyanide, 64, 1, 0.02F));
-            trades.get(villagerlevel).add((trader, rand) -> new MerchantOffer(
-                    new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
-                    sodium_cyanate, 64, 1, 0.02F));
-            trades.get(villagerlevel).add((trader, rand) -> new MerchantOffer(
-                    new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
-                    sodium_thiocyanate, 64, 1, 0.02F));
-            trades.get(villagerlevel).add((trader, rand) -> new MerchantOffer(
-                    new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
-                    sodium_peroxide, 64, 1, 0.02F));
-            trades.get(villagerlevel).add((trader, rand) -> new MerchantOffer(
-                    new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
-                    sodium_oxalate, 64, 1, 0.02F));
-            trades.get(villagerlevel).add((trader, rand) -> new MerchantOffer(
-                    new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
-                    sodium_hydroxide, 64, 1, 0.02F));
-            trades.get(villagerlevel).add((trader, rand) -> new MerchantOffer(
-                    new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
-                    sodium_permanganate, 64, 1, 0.02F));
+                    sodium_chloride, 64, 1, 0.02F));
+             */
+                trades.get(villagerlevel+i).add((trader, rand) -> new MerchantOffer(
+                        new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                        sodium_nitride, 64, 1, 0.02F));
+                trades.get(villagerlevel+i).add((trader, rand) -> new MerchantOffer(
+                        new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                        sodium_bromide, 64, 1, 0.02F));
+                trades.get(villagerlevel+i).add((trader, rand) -> new MerchantOffer(
+                        new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                        sodium_iodide, 64, 1, 0.02F));
+                trades.get(villagerlevel+i).add((trader, rand) -> new MerchantOffer(
+                        new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                        sodium_arsenate, 64, 1, 0.02F));
+                trades.get(villagerlevel+i).add((trader, rand) -> new MerchantOffer(
+                        new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                        sodium_arsenite, 64, 1, 0.02F));
+                trades.get(villagerlevel+i).add((trader, rand) -> new MerchantOffer(
+                        new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                        sodium_phosphate, 64, 1, 0.02F));
+                trades.get(villagerlevel+i).add((trader, rand) -> new MerchantOffer(
+                        new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                        sodium_dihydrogen_phosphate, 64, 1, 0.02F));
+                trades.get(villagerlevel+i).add((trader, rand) -> new MerchantOffer(
+                        new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                        sodium_sulfate, 64, 1, 0.02F));
+                trades.get(villagerlevel+i).add((trader, rand) -> new MerchantOffer(
+                        new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                        sodium_hydrogen_sulfate, 64, 1, 0.02F));
+                trades.get(villagerlevel+i).add((trader, rand) -> new MerchantOffer(
+                        new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                        sodium_thiosulfate, 64, 1, 0.02F));
+                trades.get(villagerlevel+i).add((trader, rand) -> new MerchantOffer(
+                        new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                        sodium_sulfite, 64, 1, 0.02F));
+                trades.get(villagerlevel+i).add((trader, rand) -> new MerchantOffer(
+                        new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                        sodium_nitrate, 64, 1, 0.02F));
+                trades.get(villagerlevel+i).add((trader, rand) -> new MerchantOffer(
+                        new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                        sodium_nitrite, 64, 1, 0.02F));
+                trades.get(villagerlevel+i).add((trader, rand) -> new MerchantOffer(
+                        new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                        sodium_perchlorate, 64, 1, 0.02F));
+                trades.get(villagerlevel+i).add((trader, rand) -> new MerchantOffer(
+                        new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                        sodium_chlorate, 64, 1, 0.02F));
+                trades.get(villagerlevel+i).add((trader, rand) -> new MerchantOffer(
+                        new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                        sodium_chlorite, 64, 1, 0.02F));
+                trades.get(villagerlevel+i).add((trader, rand) -> new MerchantOffer(
+                        new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                        sodium_hypochlorite, 64, 1, 0.02F));
+                trades.get(villagerlevel+i).add((trader, rand) -> new MerchantOffer(
+                        new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                        sodium_iodate, 64, 1, 0.02F));
+                trades.get(villagerlevel+i).add((trader, rand) -> new MerchantOffer(
+                        new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                        sodium_bromate, 64, 1, 0.02F));
+                trades.get(villagerlevel+i).add((trader, rand) -> new MerchantOffer(
+                        new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                        sodium_carbonate, 64, 1, 0.02F));
+                trades.get(villagerlevel+i).add((trader, rand) -> new MerchantOffer(
+                        new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                        sodium_bicarbonate, 64, 1, 0.02F));
+                trades.get(villagerlevel+i).add((trader, rand) -> new MerchantOffer(
+                        new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                        sodium_chromate, 64, 1, 0.02F));
+                trades.get(villagerlevel+i).add((trader, rand) -> new MerchantOffer(
+                        new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                        sodium_dichromate, 64, 1, 0.02F));
+                trades.get(villagerlevel+i).add((trader, rand) -> new MerchantOffer(
+                        new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                        sodium_acetate, 64, 1, 0.02F));
+                trades.get(villagerlevel+i).add((trader, rand) -> new MerchantOffer(
+                        new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                        sodium_formate, 64, 1, 0.02F));
+                trades.get(villagerlevel+i).add((trader, rand) -> new MerchantOffer(
+                        new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                        sodium_cyanide, 64, 1, 0.02F));
+                trades.get(villagerlevel+i).add((trader, rand) -> new MerchantOffer(
+                        new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                        sodium_cyanate, 64, 1, 0.02F));
+                trades.get(villagerlevel+i).add((trader, rand) -> new MerchantOffer(
+                        new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                        sodium_thiocyanate, 64, 1, 0.02F));
+                trades.get(villagerlevel+i).add((trader, rand) -> new MerchantOffer(
+                        new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                        sodium_peroxide, 64, 1, 0.02F));
+                trades.get(villagerlevel+i).add((trader, rand) -> new MerchantOffer(
+                        new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                        sodium_oxalate, 64, 1, 0.02F));
+                trades.get(villagerlevel+i).add((trader, rand) -> new MerchantOffer(
+                        new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                        sodium_hydroxide, 64, 1, 0.02F));
+                trades.get(villagerlevel+i).add((trader, rand) -> new MerchantOffer(
+                        new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                        sodium_permanganate, 64, 1, 0.02F));
+                trades.get(villagerlevel+i).add((trader, rand) -> new MerchantOffer(
+                        new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                        lithium_oxide, 64, 1, 0.02F));
+                trades.get(villagerlevel+i).add((trader, rand) -> new MerchantOffer(
+                        new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                        lithium_fluoride, 64, 1, 0.02F));
+                trades.get(villagerlevel+i).add((trader, rand) -> new MerchantOffer(
+                        new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                        lithium_sulfide, 64, 1, 0.02F));
+                trades.get(villagerlevel+i).add((trader, rand) -> new MerchantOffer(
+                        new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                        lithium_chloride, 64, 1, 0.02F));
+                trades.get(villagerlevel+i).add((trader, rand) -> new MerchantOffer(
+                        new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                        lithium_nitride, 64, 1, 0.02F));
+                trades.get(villagerlevel+i).add((trader, rand) -> new MerchantOffer(
+                        new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                        lithium_bromide, 64, 1, 0.02F));
+                trades.get(villagerlevel+i).add((trader, rand) -> new MerchantOffer(
+                        new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                        lithium_iodide, 64, 1, 0.02F));
+                trades.get(villagerlevel+i).add((trader, rand) -> new MerchantOffer(
+                        new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                        lithium_arsenate, 64, 1, 0.02F));
+                trades.get(villagerlevel+i).add((trader, rand) -> new MerchantOffer(
+                        new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                        lithium_phosphate, 64, 1, 0.02F));
+                trades.get(villagerlevel+i).add((trader, rand) -> new MerchantOffer(
+                        new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                        lithium_sulfate, 64, 1, 0.02F));
+                trades.get(villagerlevel+i).add((trader, rand) -> new MerchantOffer(
+                        new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                        lithium_hydrogen_sulfate, 64, 1, 0.02F));
+                trades.get(villagerlevel+i).add((trader, rand) -> new MerchantOffer(
+                        new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                        lithium_thiosulfate, 64, 1, 0.02F));
+                trades.get(villagerlevel+i).add((trader, rand) -> new MerchantOffer(
+                        new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                        lithium_sulfite, 64, 1, 0.02F));
+                trades.get(villagerlevel+i).add((trader, rand) -> new MerchantOffer(
+                        new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                        lithium_nitrate, 64, 1, 0.02F));
+                trades.get(villagerlevel+i).add((trader, rand) -> new MerchantOffer(
+                        new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                        lithium_nitrite, 64, 1, 0.02F));
+                trades.get(villagerlevel+i).add((trader, rand) -> new MerchantOffer(
+                        new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                        lithium_perchlorate, 64, 1, 0.02F));
+                trades.get(villagerlevel+i).add((trader, rand) -> new MerchantOffer(
+                        new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                        lithium_chlorate, 64, 1, 0.02F));
+                trades.get(villagerlevel+i).add((trader, rand) -> new MerchantOffer(
+                        new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                        lithium_chlorite, 64, 1, 0.02F));
+                trades.get(villagerlevel+i).add((trader, rand) -> new MerchantOffer(
+                        new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                        lithium_hypochlorite, 64, 1, 0.02F));
+                trades.get(villagerlevel+i).add((trader, rand) -> new MerchantOffer(
+                        new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                        lithium_iodate, 64, 1, 0.02F));
+                trades.get(villagerlevel+i).add((trader, rand) -> new MerchantOffer(
+                        new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                        lithium_carbonate, 64, 1, 0.02F));
+                trades.get(villagerlevel+i).add((trader, rand) -> new MerchantOffer(
+                        new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                        lithium_bicarbonate, 64, 1, 0.02F));
+                trades.get(villagerlevel+i).add((trader, rand) -> new MerchantOffer(
+                        new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                        lithium_chromate, 64, 1, 0.02F));
+                trades.get(villagerlevel+i).add((trader, rand) -> new MerchantOffer(
+                        new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                        lithium_dichromate, 64, 1, 0.02F));
+                trades.get(villagerlevel+i).add((trader, rand) -> new MerchantOffer(
+                        new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                        lithium_acetate, 64, 1, 0.02F));
+                trades.get(villagerlevel+i).add((trader, rand) -> new MerchantOffer(
+                        new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                        lithium_cyanide, 64, 1, 0.02F));
+                trades.get(villagerlevel+i).add((trader, rand) -> new MerchantOffer(
+                        new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                        lithium_thiocyanate, 64, 1, 0.02F));
+                trades.get(villagerlevel+i).add((trader, rand) -> new MerchantOffer(
+                        new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                        lithium_peroxide, 64, 1, 0.02F));
+                trades.get(villagerlevel+i).add((trader, rand) -> new MerchantOffer(
+                        new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                        lithium_oxalate, 64, 1, 0.02F));
+                trades.get(villagerlevel+i).add((trader, rand) -> new MerchantOffer(
+                        new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                        lithium_hydroxide, 64, 1, 0.02F));
+                trades.get(villagerlevel+i).add((trader, rand) -> new MerchantOffer(
+                        new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                        beryllium_oxide, 64, 1, 0.02F));
+                trades.get(villagerlevel+i).add((trader, rand) -> new MerchantOffer(
+                        new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                        beryllium_fluoride, 64, 1, 0.02F));
+                trades.get(villagerlevel+i).add((trader, rand) -> new MerchantOffer(
+                        new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                        beryllium_sulfide, 64, 1, 0.02F));
+                trades.get(villagerlevel+i).add((trader, rand) -> new MerchantOffer(
+                        new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                        beryllium_chloride, 64, 1, 0.02F));
+                trades.get(villagerlevel+i).add((trader, rand) -> new MerchantOffer(
+                        new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                        beryllium_nitride, 64, 1, 0.02F));
+                trades.get(villagerlevel+i).add((trader, rand) -> new MerchantOffer(
+                        new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                        beryllium_bromide, 64, 1, 0.02F));
+                trades.get(villagerlevel+i).add((trader, rand) -> new MerchantOffer(
+                        new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                        beryllium_iodide, 64, 1, 0.02F));
+                trades.get(villagerlevel+i).add((trader, rand) -> new MerchantOffer(
+                        new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                        beryllium_sulfate, 64, 1, 0.02F));
+                trades.get(villagerlevel+i).add((trader, rand) -> new MerchantOffer(
+                        new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                        beryllium_nitrate, 64, 1, 0.02F));
+                trades.get(villagerlevel+i).add((trader, rand) -> new MerchantOffer(
+                        new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                        beryllium_perchlorate, 64, 1, 0.02F));
+                trades.get(villagerlevel+i).add((trader, rand) -> new MerchantOffer(
+                        new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                        beryllium_iodate, 64, 1, 0.02F));
+                trades.get(villagerlevel+i).add((trader, rand) -> new MerchantOffer(
+                        new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                        beryllium_carbonate, 64, 1, 0.02F));
+                trades.get(villagerlevel+i).add((trader, rand) -> new MerchantOffer(
+                        new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                        beryllium_chromate, 64, 1, 0.02F));
+                trades.get(villagerlevel+i).add((trader, rand) -> new MerchantOffer(
+                        new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                        beryllium_cyanide, 64, 1, 0.02F));
+                trades.get(villagerlevel+i).add((trader, rand) -> new MerchantOffer(
+                        new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                        beryllium_thiocyanate, 64, 1, 0.02F));
+                trades.get(villagerlevel+i).add((trader, rand) -> new MerchantOffer(
+                        new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                        beryllium_oxalate, 64, 1, 0.02F));
+                trades.get(villagerlevel+i).add((trader, rand) -> new MerchantOffer(
+                        new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                        beryllium_hydroxide, 64, 1, 0.02F));
+                trades.get(villagerlevel+i).add((trader, rand) -> new MerchantOffer(
+                        new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                        calcium_oxide, 64, 1, 0.02F));
+                trades.get(villagerlevel+i).add((trader, rand) -> new MerchantOffer(
+                        new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                        calcium_fluoride, 64, 1, 0.02F));
+                trades.get(villagerlevel+i).add((trader, rand) -> new MerchantOffer(
+                        new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                        calcium_sulfide, 64, 1, 0.02F));
+                trades.get(villagerlevel+i).add((trader, rand) -> new MerchantOffer(
+                        new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                        calcium_chloride, 64, 1, 0.02F));
+                trades.get(villagerlevel+i).add((trader, rand) -> new MerchantOffer(
+                        new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                        calcium_nitride, 64, 1, 0.02F));
+                trades.get(villagerlevel+i).add((trader, rand) -> new MerchantOffer(
+                        new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                        calcium_bromide, 64, 1, 0.02F));
+                trades.get(villagerlevel+i).add((trader, rand) -> new MerchantOffer(
+                        new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                        calcium_iodide, 64, 1, 0.02F));
+                trades.get(villagerlevel+i).add((trader, rand) -> new MerchantOffer(
+                        new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                        calcium_arsenate, 64, 1, 0.02F));
+                trades.get(villagerlevel+i).add((trader, rand) -> new MerchantOffer(
+                        new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                        calcium_arsenite, 64, 1, 0.02F));
+                trades.get(villagerlevel+i).add((trader, rand) -> new MerchantOffer(
+                        new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                        calcium_phosphate, 64, 1, 0.02F));
+                trades.get(villagerlevel+i).add((trader, rand) -> new MerchantOffer(
+                        new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                        calcium_dihydrogen_phosphate, 64, 1, 0.02F));
+                trades.get(villagerlevel+i).add((trader, rand) -> new MerchantOffer(
+                        new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                        calcium_sulfate, 64, 1, 0.02F));
+                trades.get(villagerlevel+i).add((trader, rand) -> new MerchantOffer(
+                        new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                        calcium_hydrogen_sulfate, 64, 1, 0.02F));
+                trades.get(villagerlevel+i).add((trader, rand) -> new MerchantOffer(
+                        new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                        calcium_thiosulfate, 64, 1, 0.02F));
+                trades.get(villagerlevel+i).add((trader, rand) -> new MerchantOffer(
+                        new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                        calcium_sulfite, 64, 1, 0.02F));
+                trades.get(villagerlevel+i).add((trader, rand) -> new MerchantOffer(
+                        new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                        calcium_nitrate, 64, 1, 0.02F));
+                trades.get(villagerlevel+i).add((trader, rand) -> new MerchantOffer(
+                        new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                        calcium_nitrite, 64, 1, 0.02F));
+                trades.get(villagerlevel+i).add((trader, rand) -> new MerchantOffer(
+                        new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                        calcium_perchlorate, 64, 1, 0.02F));
+                trades.get(villagerlevel+i).add((trader, rand) -> new MerchantOffer(
+                        new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                        calcium_chlorate, 64, 1, 0.02F));
+                trades.get(villagerlevel+i).add((trader, rand) -> new MerchantOffer(
+                        new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                        calcium_chlorite, 64, 1, 0.02F));
+                trades.get(villagerlevel+i).add((trader, rand) -> new MerchantOffer(
+                        new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                        calcium_hypochlorite, 64, 1, 0.02F));
+                trades.get(villagerlevel+i).add((trader, rand) -> new MerchantOffer(
+                        new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                        calcium_iodate, 64, 1, 0.02F));
+                trades.get(villagerlevel+i).add((trader, rand) -> new MerchantOffer(
+                        new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                        calcium_bromate, 64, 1, 0.02F));
+                trades.get(villagerlevel+i).add((trader, rand) -> new MerchantOffer(
+                        new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                        calcium_carbonate, 64, 1, 0.02F));
+                trades.get(villagerlevel+i).add((trader, rand) -> new MerchantOffer(
+                        new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                        calcium_bicarbonate, 64, 1, 0.02F));
+                trades.get(villagerlevel+i).add((trader, rand) -> new MerchantOffer(
+                        new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                        calcium_chromate, 64, 1, 0.02F));
+                trades.get(villagerlevel+i).add((trader, rand) -> new MerchantOffer(
+                        new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                        calcium_dichromate, 64, 1, 0.02F));
+                trades.get(villagerlevel+i).add((trader, rand) -> new MerchantOffer(
+                        new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                        calcium_acetate, 64, 1, 0.02F));
+                trades.get(villagerlevel+i).add((trader, rand) -> new MerchantOffer(
+                        new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                        calcium_formate, 64, 1, 0.02F));
+                trades.get(villagerlevel+i).add((trader, rand) -> new MerchantOffer(
+                        new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                        calcium_cyanide, 64, 1, 0.02F));
+                trades.get(villagerlevel+i).add((trader, rand) -> new MerchantOffer(
+                        new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                        calcium_cyanate, 64, 1, 0.02F));
+                trades.get(villagerlevel+i).add((trader, rand) -> new MerchantOffer(
+                        new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                        calcium_thiocyanate, 64, 1, 0.02F));
+                trades.get(villagerlevel+i).add((trader, rand) -> new MerchantOffer(
+                        new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                        calcium_peroxide, 64, 1, 0.02F));
+                trades.get(villagerlevel+i).add((trader, rand) -> new MerchantOffer(
+                        new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                        calcium_oxalate, 64, 1, 0.02F));
+                trades.get(villagerlevel+i).add((trader, rand) -> new MerchantOffer(
+                        new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                        calcium_hydroxide, 64, 1, 0.02F));
+                trades.get(villagerlevel+i).add((trader, rand) -> new MerchantOffer(
+                        new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                        calcium_permanganate, 64, 1, 0.02F));
+                trades.get(villagerlevel+i).add((trader, rand) -> new MerchantOffer(
+                        new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                        potassium_oxide, 64, 1, 0.02F));
+                trades.get(villagerlevel+i).add((trader, rand) -> new MerchantOffer(
+                        new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                        potassium_fluoride, 64, 1, 0.02F));
+                trades.get(villagerlevel+i).add((trader, rand) -> new MerchantOffer(
+                        new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                        potassium_sulfide, 64, 1, 0.02F));
+                trades.get(villagerlevel+i).add((trader, rand) -> new MerchantOffer(
+                        new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                        potassium_chloride, 64, 1, 0.02F));
+                trades.get(villagerlevel+i).add((trader, rand) -> new MerchantOffer(
+                        new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                        potassium_nitride, 64, 1, 0.02F));
+                trades.get(villagerlevel+i).add((trader, rand) -> new MerchantOffer(
+                        new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                        potassium_bromide, 64, 1, 0.02F));
+                trades.get(villagerlevel+i).add((trader, rand) -> new MerchantOffer(
+                        new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                        potassium_iodide, 64, 1, 0.02F));
+                trades.get(villagerlevel+i).add((trader, rand) -> new MerchantOffer(
+                        new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                        potassium_arsenate, 64, 1, 0.02F));
+                trades.get(villagerlevel+i).add((trader, rand) -> new MerchantOffer(
+                        new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                        potassium_arsenite, 64, 1, 0.02F));
+                trades.get(villagerlevel+i).add((trader, rand) -> new MerchantOffer(
+                        new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                        potassium_phosphate, 64, 1, 0.02F));
+                trades.get(villagerlevel+i).add((trader, rand) -> new MerchantOffer(
+                        new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                        potassium_dihydrogen_phosphate, 64, 1, 0.02F));
+                trades.get(villagerlevel+i).add((trader, rand) -> new MerchantOffer(
+                        new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                        potassium_sulfate, 64, 1, 0.02F));
+                trades.get(villagerlevel+i).add((trader, rand) -> new MerchantOffer(
+                        new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                        potassium_hydrogen_sulfate, 64, 1, 0.02F));
+                trades.get(villagerlevel+i).add((trader, rand) -> new MerchantOffer(
+                        new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                        potassium_thiosulfate, 64, 1, 0.02F));
+                trades.get(villagerlevel+i).add((trader, rand) -> new MerchantOffer(
+                        new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                        potassium_sulfite, 64, 1, 0.02F));
+                trades.get(villagerlevel+i).add((trader, rand) -> new MerchantOffer(
+                        new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                        potassium_nitrate, 64, 1, 0.02F));
+                trades.get(villagerlevel+i).add((trader, rand) -> new MerchantOffer(
+                        new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                        potassium_nitrite, 64, 1, 0.02F));
+                trades.get(villagerlevel+i).add((trader, rand) -> new MerchantOffer(
+                        new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                        potassium_perchlorate, 64, 1, 0.02F));
+                trades.get(villagerlevel+i).add((trader, rand) -> new MerchantOffer(
+                        new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                        potassium_chlorate, 64, 1, 0.02F));
+                trades.get(villagerlevel+i).add((trader, rand) -> new MerchantOffer(
+                        new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                        potassium_chlorite, 64, 1, 0.02F));
+                trades.get(villagerlevel+i).add((trader, rand) -> new MerchantOffer(
+                        new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                        potassium_hypochlorite, 64, 1, 0.02F));
+                trades.get(villagerlevel+i).add((trader, rand) -> new MerchantOffer(
+                        new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                        potassium_iodate, 64, 1, 0.02F));
+                trades.get(villagerlevel+i).add((trader, rand) -> new MerchantOffer(
+                        new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                        potassium_bromate, 64, 1, 0.02F));
+                trades.get(villagerlevel+i).add((trader, rand) -> new MerchantOffer(
+                        new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                        potassium_carbonate, 64, 1, 0.02F));
+                trades.get(villagerlevel+i).add((trader, rand) -> new MerchantOffer(
+                        new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                        potassium_bicarbonate, 64, 1, 0.02F));
+                trades.get(villagerlevel+i).add((trader, rand) -> new MerchantOffer(
+                        new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                        potassium_chromate, 64, 1, 0.02F));
+                trades.get(villagerlevel+i).add((trader, rand) -> new MerchantOffer(
+                        new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                        potassium_dichromate, 64, 1, 0.02F));
+                trades.get(villagerlevel+i).add((trader, rand) -> new MerchantOffer(
+                        new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                        potassium_acetate, 64, 1, 0.02F));
+                trades.get(villagerlevel+i).add((trader, rand) -> new MerchantOffer(
+                        new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                        potassium_formate, 64, 1, 0.02F));
+                trades.get(villagerlevel+i).add((trader, rand) -> new MerchantOffer(
+                        new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                        potassium_cyanide, 64, 1, 0.02F));
+                trades.get(villagerlevel+i).add((trader, rand) -> new MerchantOffer(
+                        new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                        potassium_cyanate, 64, 1, 0.02F));
+                trades.get(villagerlevel+i).add((trader, rand) -> new MerchantOffer(
+                        new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                        potassium_thiocyanate, 64, 1, 0.02F));
+                trades.get(villagerlevel+i).add((trader, rand) -> new MerchantOffer(
+                        new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                        potassium_peroxide, 64, 1, 0.02F));
+                trades.get(villagerlevel+i).add((trader, rand) -> new MerchantOffer(
+                        new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                        potassium_oxalate, 64, 1, 0.02F));
+                trades.get(villagerlevel+i).add((trader, rand) -> new MerchantOffer(
+                        new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                        potassium_hydroxide, 64, 1, 0.02F));
+                trades.get(villagerlevel+i).add((trader, rand) -> new MerchantOffer(
+                        new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                        potassium_permanganate, 64, 1, 0.02F));
+                trades.get(villagerlevel+i).add((trader, rand) -> new MerchantOffer(
+                        new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                        aluminum_oxide, 64, 1, 0.02F));
+                trades.get(villagerlevel+i).add((trader, rand) -> new MerchantOffer(
+                        new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                        aluminum_fluoride, 64, 1, 0.02F));
+                trades.get(villagerlevel+i).add((trader, rand) -> new MerchantOffer(
+                        new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                        aluminum_sulfide, 64, 1, 0.02F));
+                trades.get(villagerlevel+i).add((trader, rand) -> new MerchantOffer(
+                        new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                        aluminum_chloride, 64, 1, 0.02F));
+                trades.get(villagerlevel+i).add((trader, rand) -> new MerchantOffer(
+                        new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                        aluminum_nitride, 64, 1, 0.02F));
+                trades.get(villagerlevel+i).add((trader, rand) -> new MerchantOffer(
+                        new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                        aluminum_bromide, 64, 1, 0.02F));
+                trades.get(villagerlevel+i).add((trader, rand) -> new MerchantOffer(
+                        new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                        aluminum_iodide, 64, 1, 0.02F));
+                trades.get(villagerlevel+i).add((trader, rand) -> new MerchantOffer(
+                        new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                        aluminum_arsenate, 64, 1, 0.02F));
+                trades.get(villagerlevel+i).add((trader, rand) -> new MerchantOffer(
+                        new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                        aluminum_phosphate, 64, 1, 0.02F));
+                trades.get(villagerlevel+i).add((trader, rand) -> new MerchantOffer(
+                        new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                        aluminum_dihydrogen_phosphate, 64, 1, 0.02F));
+                trades.get(villagerlevel+i).add((trader, rand) -> new MerchantOffer(
+                        new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                        aluminum_sulfate, 64, 1, 0.02F));
+                trades.get(villagerlevel+i).add((trader, rand) -> new MerchantOffer(
+                        new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                        aluminum_thiosulfate, 64, 1, 0.02F));
+                trades.get(villagerlevel+i).add((trader, rand) -> new MerchantOffer(
+                        new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                        aluminum_nitrate, 64, 1, 0.02F));
+                trades.get(villagerlevel+i).add((trader, rand) -> new MerchantOffer(
+                        new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                        aluminum_perchlorate, 64, 1, 0.02F));
+                trades.get(villagerlevel+i).add((trader, rand) -> new MerchantOffer(
+                        new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                        aluminum_chlorate, 64, 1, 0.02F));
+                trades.get(villagerlevel+i).add((trader, rand) -> new MerchantOffer(
+                        new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                        aluminum_bromate, 64, 1, 0.02F));
+                trades.get(villagerlevel+i).add((trader, rand) -> new MerchantOffer(
+                        new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                        aluminum_carbonate, 64, 1, 0.02F));
+                trades.get(villagerlevel+i).add((trader, rand) -> new MerchantOffer(
+                        new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                        aluminum_bicarbonate, 64, 1, 0.02F));
+                trades.get(villagerlevel+i).add((trader, rand) -> new MerchantOffer(
+                        new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                        aluminum_acetate, 64, 1, 0.02F));
+                trades.get(villagerlevel+i).add((trader, rand) -> new MerchantOffer(
+                        new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                        aluminum_formate, 64, 1, 0.02F));
+                trades.get(villagerlevel+i).add((trader, rand) -> new MerchantOffer(
+                        new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                        aluminum_cyanide, 64, 1, 0.02F));
+                trades.get(villagerlevel+i).add((trader, rand) -> new MerchantOffer(
+                        new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                        aluminum_oxalate, 64, 1, 0.02F));
+                trades.get(villagerlevel+i).add((trader, rand) -> new MerchantOffer(
+                        new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                        aluminum_hydroxide, 64, 1, 0.02F));
+                trades.get(villagerlevel+i).add((trader, rand) -> new MerchantOffer(
+                        new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                        ammonium_fluoride, 64, 1, 0.02F));
+                trades.get(villagerlevel+i).add((trader, rand) -> new MerchantOffer(
+                        new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                        ammonium_sulfide, 64, 1, 0.02F));
+                trades.get(villagerlevel+i).add((trader, rand) -> new MerchantOffer(
+                        new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                        ammonium_chloride, 64, 1, 0.02F));
+                trades.get(villagerlevel+i).add((trader, rand) -> new MerchantOffer(
+                        new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                        ammonium_bromide, 64, 1, 0.02F));
+                trades.get(villagerlevel+i).add((trader, rand) -> new MerchantOffer(
+                        new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                        ammonium_iodide, 64, 1, 0.02F));
+                trades.get(villagerlevel+i).add((trader, rand) -> new MerchantOffer(
+                        new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                        ammonium_arsenate, 64, 1, 0.02F));
+                trades.get(villagerlevel+i).add((trader, rand) -> new MerchantOffer(
+                        new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                        ammonium_phosphate, 64, 1, 0.02F));
+                trades.get(villagerlevel+i).add((trader, rand) -> new MerchantOffer(
+                        new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                        ammonium_dihydrogen_phosphate, 64, 1, 0.02F));
+                trades.get(villagerlevel+i).add((trader, rand) -> new MerchantOffer(
+                        new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                        ammonium_sulfate, 64, 1, 0.02F));
+                trades.get(villagerlevel+i).add((trader, rand) -> new MerchantOffer(
+                        new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                        ammonium_hydrogen_sulfate, 64, 1, 0.02F));
+                trades.get(villagerlevel+i).add((trader, rand) -> new MerchantOffer(
+                        new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                        ammonium_thiosulfate, 64, 1, 0.02F));
+                trades.get(villagerlevel+i).add((trader, rand) -> new MerchantOffer(
+                        new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                        ammonium_sulfite, 64, 1, 0.02F));
+                trades.get(villagerlevel+i).add((trader, rand) -> new MerchantOffer(
+                        new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                        ammonium_nitrate, 64, 1, 0.02F));
+                trades.get(villagerlevel+i).add((trader, rand) -> new MerchantOffer(
+                        new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                        ammonium_nitrite, 64, 1, 0.02F));
+                trades.get(villagerlevel+i).add((trader, rand) -> new MerchantOffer(
+                        new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                        ammonium_perchlorate, 64, 1, 0.02F));
+                trades.get(villagerlevel+i).add((trader, rand) -> new MerchantOffer(
+                        new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                        ammonium_chlorate, 64, 1, 0.02F));
+                trades.get(villagerlevel+i).add((trader, rand) -> new MerchantOffer(
+                        new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                        ammonium_iodate, 64, 1, 0.02F));
+                trades.get(villagerlevel+i).add((trader, rand) -> new MerchantOffer(
+                        new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                        ammonium_carbonate, 64, 1, 0.02F));
+                trades.get(villagerlevel+i).add((trader, rand) -> new MerchantOffer(
+                        new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                        ammonium_bicarbonate, 64, 1, 0.02F));
+                trades.get(villagerlevel+i).add((trader, rand) -> new MerchantOffer(
+                        new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                        ammonium_chromate, 64, 1, 0.02F));
+                trades.get(villagerlevel+i).add((trader, rand) -> new MerchantOffer(
+                        new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                        ammonium_dichromate, 64, 1, 0.02F));
+                trades.get(villagerlevel+i).add((trader, rand) -> new MerchantOffer(
+                        new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                        ammonium_acetate, 64, 1, 0.02F));
+                trades.get(villagerlevel+i).add((trader, rand) -> new MerchantOffer(
+                        new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                        ammonium_formate, 64, 1, 0.02F));
+                trades.get(villagerlevel+i).add((trader, rand) -> new MerchantOffer(
+                        new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                        ammonium_cyanide, 64, 1, 0.02F));
+                trades.get(villagerlevel+i).add((trader, rand) -> new MerchantOffer(
+                        new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                        ammonium_cyanate, 64, 1, 0.02F));
+                trades.get(villagerlevel+i).add((trader, rand) -> new MerchantOffer(
+                        new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                        ammonium_thiocyanate, 64, 1, 0.02F));
+                trades.get(villagerlevel+i).add((trader, rand) -> new MerchantOffer(
+                        new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                        ammonium_oxalate, 64, 1, 0.02F));
+                trades.get(villagerlevel+i).add((trader, rand) -> new MerchantOffer(
+                        new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                        ammonium_permanganate, 64, 1, 0.02F));
+                trades.get(villagerlevel+i).add((trader, rand) -> new MerchantOffer(
+                        new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                        barium_oxide, 64, 1, 0.02F));
+                trades.get(villagerlevel+i).add((trader, rand) -> new MerchantOffer(
+                        new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                        barium_fluoride, 64, 1, 0.02F));
+                trades.get(villagerlevel+i).add((trader, rand) -> new MerchantOffer(
+                        new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                        barium_sulfide, 64, 1, 0.02F));
+                trades.get(villagerlevel+i).add((trader, rand) -> new MerchantOffer(
+                        new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                        barium_chloride, 64, 1, 0.02F));
+                trades.get(villagerlevel+i).add((trader, rand) -> new MerchantOffer(
+                        new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                        barium_nitride, 64, 1, 0.02F));
+                trades.get(villagerlevel+i).add((trader, rand) -> new MerchantOffer(
+                        new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                        barium_bromide, 64, 1, 0.02F));
+                trades.get(villagerlevel+i).add((trader, rand) -> new MerchantOffer(
+                        new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                        barium_iodide, 64, 1, 0.02F));
+                trades.get(villagerlevel+i).add((trader, rand) -> new MerchantOffer(
+                        new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                        barium_arsenate, 64, 1, 0.02F));
+                trades.get(villagerlevel+i).add((trader, rand) -> new MerchantOffer(
+                        new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                        barium_phosphate, 64, 1, 0.02F));
+                trades.get(villagerlevel+i).add((trader, rand) -> new MerchantOffer(
+                        new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                        barium_dihydrogen_phosphate, 64, 1, 0.02F));
+                trades.get(villagerlevel+i).add((trader, rand) -> new MerchantOffer(
+                        new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                        barium_sulfate, 64, 1, 0.02F));
+                trades.get(villagerlevel+i).add((trader, rand) -> new MerchantOffer(
+                        new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                        barium_sulfite, 64, 1, 0.02F));
+                trades.get(villagerlevel+i).add((trader, rand) -> new MerchantOffer(
+                        new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                        barium_nitrate, 64, 1, 0.02F));
+                trades.get(villagerlevel+i).add((trader, rand) -> new MerchantOffer(
+                        new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                        barium_nitrite, 64, 1, 0.02F));
+                trades.get(villagerlevel+i).add((trader, rand) -> new MerchantOffer(
+                        new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                        barium_perchlorate, 64, 1, 0.02F));
+                trades.get(villagerlevel+i).add((trader, rand) -> new MerchantOffer(
+                        new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                        barium_chlorate, 64, 1, 0.02F));
+                trades.get(villagerlevel+i).add((trader, rand) -> new MerchantOffer(
+                        new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                        barium_hypochlorite, 64, 1, 0.02F));
+                trades.get(villagerlevel+i).add((trader, rand) -> new MerchantOffer(
+                        new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                        barium_iodate, 64, 1, 0.02F));
+                trades.get(villagerlevel+i).add((trader, rand) -> new MerchantOffer(
+                        new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                        barium_bromate, 64, 1, 0.02F));
+                trades.get(villagerlevel+i).add((trader, rand) -> new MerchantOffer(
+                        new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                        barium_carbonate, 64, 1, 0.02F));
+                trades.get(villagerlevel+i).add((trader, rand) -> new MerchantOffer(
+                        new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                        barium_chromate, 64, 1, 0.02F));
+                trades.get(villagerlevel+i).add((trader, rand) -> new MerchantOffer(
+                        new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                        barium_acetate, 64, 1, 0.02F));
+                trades.get(villagerlevel+i).add((trader, rand) -> new MerchantOffer(
+                        new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                        barium_cyanide, 64, 1, 0.02F));
+                trades.get(villagerlevel+i).add((trader, rand) -> new MerchantOffer(
+                        new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                        barium_thiocyanate, 64, 1, 0.02F));
+                trades.get(villagerlevel+i).add((trader, rand) -> new MerchantOffer(
+                        new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                        barium_peroxide, 64, 1, 0.02F));
+                trades.get(villagerlevel+i).add((trader, rand) -> new MerchantOffer(
+                        new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                        barium_oxalate, 64, 1, 0.02F));
+                trades.get(villagerlevel+i).add((trader, rand) -> new MerchantOffer(
+                        new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                        barium_hydroxide, 64, 1, 0.02F));
+                trades.get(villagerlevel+i).add((trader, rand) -> new MerchantOffer(
+                        new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                        barium_permanganate, 64, 1, 0.02F));
+                trades.get(villagerlevel+i).add((trader, rand) -> new MerchantOffer(
+                        new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                        chromium_ii_oxide, 64, 1, 0.02F));
+                trades.get(villagerlevel+i).add((trader, rand) -> new MerchantOffer(
+                        new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                        chromium_ii_fluoride, 64, 1, 0.02F));
+                trades.get(villagerlevel+i).add((trader, rand) -> new MerchantOffer(
+                        new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                        chromium_ii_sulfide, 64, 1, 0.02F));
+                trades.get(villagerlevel+i).add((trader, rand) -> new MerchantOffer(
+                        new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                        chromium_ii_chloride, 64, 1, 0.02F));
+                trades.get(villagerlevel+i).add((trader, rand) -> new MerchantOffer(
+                        new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                        chromium_ii_bromide, 64, 1, 0.02F));
+                trades.get(villagerlevel+i).add((trader, rand) -> new MerchantOffer(
+                        new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                        chromium_ii_iodide, 64, 1, 0.02F));
+                trades.get(villagerlevel+i).add((trader, rand) -> new MerchantOffer(
+                        new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                        chromium_ii_chromate, 64, 1, 0.02F));
+                trades.get(villagerlevel+i).add((trader, rand) -> new MerchantOffer(
+                        new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                        chromium_ii_acetate, 64, 1, 0.02F));
+                trades.get(villagerlevel+i).add((trader, rand) -> new MerchantOffer(
+                        new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                        chromium_ii_oxalate, 64, 1, 0.02F));
+                trades.get(villagerlevel+i).add((trader, rand) -> new MerchantOffer(
+                        new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                        chromium_iii_oxide, 64, 1, 0.02F));
+                trades.get(villagerlevel+i).add((trader, rand) -> new MerchantOffer(
+                        new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                        chromium_iii_fluoride, 64, 1, 0.02F));
+                trades.get(villagerlevel+i).add((trader, rand) -> new MerchantOffer(
+                        new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                        chromium_iii_sulfide, 64, 1, 0.02F));
+                trades.get(villagerlevel+i).add((trader, rand) -> new MerchantOffer(
+                        new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                        chromium_iii_chloride, 64, 1, 0.02F));
+                trades.get(villagerlevel+i).add((trader, rand) -> new MerchantOffer(
+                        new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                        chromium_iii_nitride, 64, 1, 0.02F));
+                trades.get(villagerlevel+i).add((trader, rand) -> new MerchantOffer(
+                        new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                        chromium_iii_bromide, 64, 1, 0.02F));
+                trades.get(villagerlevel+i).add((trader, rand) -> new MerchantOffer(
+                        new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                        chromium_iii_iodide, 64, 1, 0.02F));
+                trades.get(villagerlevel+i).add((trader, rand) -> new MerchantOffer(
+                        new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                        chromium_iii_phosphate, 64, 1, 0.02F));
+                trades.get(villagerlevel+i).add((trader, rand) -> new MerchantOffer(
+                        new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                        chromium_iii_sulfate, 64, 1, 0.02F));
+                trades.get(villagerlevel+i).add((trader, rand) -> new MerchantOffer(
+                        new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                        chromium_iii_nitrate, 64, 1, 0.02F));
+                trades.get(villagerlevel+i).add((trader, rand) -> new MerchantOffer(
+                        new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                        chromium_iii_perchlorate, 64, 1, 0.02F));
+                trades.get(villagerlevel+i).add((trader, rand) -> new MerchantOffer(
+                        new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                        chromium_iii_chromate, 64, 1, 0.02F));
+                trades.get(villagerlevel+i).add((trader, rand) -> new MerchantOffer(
+                        new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                        chromium_iii_oxalate, 64, 1, 0.02F));
+                trades.get(villagerlevel+i).add((trader, rand) -> new MerchantOffer(
+                        new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                        chromium_iii_hydroxide, 64, 1, 0.02F));
+                trades.get(villagerlevel+i).add((trader, rand) -> new MerchantOffer(
+                        new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                        copper_i_oxide, 64, 1, 0.02F));
+                trades.get(villagerlevel+i).add((trader, rand) -> new MerchantOffer(
+                        new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                        copper_i_fluoride, 64, 1, 0.02F));
+                trades.get(villagerlevel+i).add((trader, rand) -> new MerchantOffer(
+                        new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                        copper_i_sulfide, 64, 1, 0.02F));
+                trades.get(villagerlevel+i).add((trader, rand) -> new MerchantOffer(
+                        new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                        copper_i_chloride, 64, 1, 0.02F));
+                trades.get(villagerlevel+i).add((trader, rand) -> new MerchantOffer(
+                        new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                        copper_i_bromide, 64, 1, 0.02F));
+                trades.get(villagerlevel+i).add((trader, rand) -> new MerchantOffer(
+                        new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                        copper_i_iodide, 64, 1, 0.02F));
+                trades.get(villagerlevel+i).add((trader, rand) -> new MerchantOffer(
+                        new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                        copper_i_sulfate, 64, 1, 0.02F));
+                trades.get(villagerlevel+i).add((trader, rand) -> new MerchantOffer(
+                        new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                        copper_i_cyanide, 64, 1, 0.02F));
+                trades.get(villagerlevel+i).add((trader, rand) -> new MerchantOffer(
+                        new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                        copper_i_thiocyanate, 64, 1, 0.02F));
+                trades.get(villagerlevel+i).add((trader, rand) -> new MerchantOffer(
+                        new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                        copper_i_hydroxide, 64, 1, 0.02F));
+                trades.get(villagerlevel+i).add((trader, rand) -> new MerchantOffer(
+                        new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                        copper_ii_oxide, 64, 1, 0.02F));
+                trades.get(villagerlevel+i).add((trader, rand) -> new MerchantOffer(
+                        new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                        copper_ii_fluoride, 64, 1, 0.02F));
+                trades.get(villagerlevel+i).add((trader, rand) -> new MerchantOffer(
+                        new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                        copper_ii_sulfide, 64, 1, 0.02F));
+                trades.get(villagerlevel+i).add((trader, rand) -> new MerchantOffer(
+                        new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                        copper_ii_chloride, 64, 1, 0.02F));
+                trades.get(villagerlevel+i).add((trader, rand) -> new MerchantOffer(
+                        new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                        copper_ii_bromide, 64, 1, 0.02F));
+                trades.get(villagerlevel+i).add((trader, rand) -> new MerchantOffer(
+                        new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                        copper_ii_arsenate, 64, 1, 0.02F));
+                trades.get(villagerlevel+i).add((trader, rand) -> new MerchantOffer(
+                        new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                        copper_ii_phosphate, 64, 1, 0.02F));
+                trades.get(villagerlevel+i).add((trader, rand) -> new MerchantOffer(
+                        new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                        copper_ii_sulfate, 64, 1, 0.02F));
+                trades.get(villagerlevel+i).add((trader, rand) -> new MerchantOffer(
+                        new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                        copper_ii_nitrate, 64, 1, 0.02F));
+                trades.get(villagerlevel+i).add((trader, rand) -> new MerchantOffer(
+                        new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                        copper_ii_perchlorate, 64, 1, 0.02F));
+                trades.get(villagerlevel+i).add((trader, rand) -> new MerchantOffer(
+                        new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                        copper_ii_chlorate, 64, 1, 0.02F));
+                trades.get(villagerlevel+i).add((trader, rand) -> new MerchantOffer(
+                        new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                        copper_ii_carbonate, 64, 1, 0.02F));
+                trades.get(villagerlevel+i).add((trader, rand) -> new MerchantOffer(
+                        new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                        copper_ii_chromate, 64, 1, 0.02F));
+                trades.get(villagerlevel+i).add((trader, rand) -> new MerchantOffer(
+                        new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                        copper_ii_acetate, 64, 1, 0.02F));
+                trades.get(villagerlevel+i).add((trader, rand) -> new MerchantOffer(
+                        new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                        copper_ii_formate, 64, 1, 0.02F));
+                trades.get(villagerlevel+i).add((trader, rand) -> new MerchantOffer(
+                        new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                        copper_ii_thiocyanate, 64, 1, 0.02F));
+                trades.get(villagerlevel+i).add((trader, rand) -> new MerchantOffer(
+                        new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                        copper_ii_peroxide, 64, 1, 0.02F));
+                trades.get(villagerlevel+i).add((trader, rand) -> new MerchantOffer(
+                        new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                        copper_ii_oxalate, 64, 1, 0.02F));
+                trades.get(villagerlevel+i).add((trader, rand) -> new MerchantOffer(
+                        new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                        copper_ii_hydroxide, 64, 1, 0.02F));
+                trades.get(villagerlevel+i).add((trader, rand) -> new MerchantOffer(
+                        new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                        iron_ii_oxide, 64, 1, 0.02F));
+                trades.get(villagerlevel+i).add((trader, rand) -> new MerchantOffer(
+                        new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                        iron_ii_fluoride, 64, 1, 0.02F));
+                trades.get(villagerlevel+i).add((trader, rand) -> new MerchantOffer(
+                        new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                        iron_ii_sulfide, 64, 1, 0.02F));
+                trades.get(villagerlevel+i).add((trader, rand) -> new MerchantOffer(
+                        new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                        iron_ii_chloride, 64, 1, 0.02F));
+                trades.get(villagerlevel+i).add((trader, rand) -> new MerchantOffer(
+                        new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                        iron_ii_bromide, 64, 1, 0.02F));
+                trades.get(villagerlevel+i).add((trader, rand) -> new MerchantOffer(
+                        new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                        iron_ii_iodide, 64, 1, 0.02F));
+                trades.get(villagerlevel+i).add((trader, rand) -> new MerchantOffer(
+                        new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                        iron_ii_arsenate, 64, 1, 0.02F));
+                trades.get(villagerlevel+i).add((trader, rand) -> new MerchantOffer(
+                        new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                        iron_ii_phosphate, 64, 1, 0.02F));
+                trades.get(villagerlevel+i).add((trader, rand) -> new MerchantOffer(
+                        new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                        iron_ii_sulfate, 64, 1, 0.02F));
+                trades.get(villagerlevel+i).add((trader, rand) -> new MerchantOffer(
+                        new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                        iron_ii_nitrate, 64, 1, 0.02F));
+                trades.get(villagerlevel+i).add((trader, rand) -> new MerchantOffer(
+                        new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                        iron_ii_perchlorate, 64, 1, 0.02F));
+                trades.get(villagerlevel+i).add((trader, rand) -> new MerchantOffer(
+                        new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                        iron_ii_carbonate, 64, 1, 0.02F));
+                trades.get(villagerlevel+i).add((trader, rand) -> new MerchantOffer(
+                        new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                        iron_ii_acetate, 64, 1, 0.02F));
+                trades.get(villagerlevel+i).add((trader, rand) -> new MerchantOffer(
+                        new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                        iron_ii_thiocyanate, 64, 1, 0.02F));
+                trades.get(villagerlevel+i).add((trader, rand) -> new MerchantOffer(
+                        new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                        iron_ii_oxalate, 64, 1, 0.02F));
+                trades.get(villagerlevel+i).add((trader, rand) -> new MerchantOffer(
+                        new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                        iron_ii_hydroxide, 64, 1, 0.02F));
+                trades.get(villagerlevel+i).add((trader, rand) -> new MerchantOffer(
+                        new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                        iron_iii_oxide, 64, 1, 0.02F));
+                trades.get(villagerlevel+i).add((trader, rand) -> new MerchantOffer(
+                        new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                        iron_iii_fluoride, 64, 1, 0.02F));
+                trades.get(villagerlevel+i).add((trader, rand) -> new MerchantOffer(
+                        new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                        iron_iii_chloride, 64, 1, 0.02F));
+                trades.get(villagerlevel+i).add((trader, rand) -> new MerchantOffer(
+                        new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                        iron_iii_bromide, 64, 1, 0.02F));
+                trades.get(villagerlevel+i).add((trader, rand) -> new MerchantOffer(
+                        new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                        iron_iii_iodide, 64, 1, 0.02F));
+                trades.get(villagerlevel+i).add((trader, rand) -> new MerchantOffer(
+                        new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                        iron_iii_arsenate, 64, 1, 0.02F));
+                trades.get(villagerlevel+i).add((trader, rand) -> new MerchantOffer(
+                        new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                        iron_iii_phosphate, 64, 1, 0.02F));
+                trades.get(villagerlevel+i).add((trader, rand) -> new MerchantOffer(
+                        new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                        iron_iii_sulfate, 64, 1, 0.02F));
+                trades.get(villagerlevel+i).add((trader, rand) -> new MerchantOffer(
+                        new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                        iron_iii_nitrate, 64, 1, 0.02F));
+                trades.get(villagerlevel+i).add((trader, rand) -> new MerchantOffer(
+                        new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                        iron_iii_oxalate, 64, 1, 0.02F));
+                trades.get(villagerlevel+i).add((trader, rand) -> new MerchantOffer(
+                        new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                        lead_ii_oxide, 64, 1, 0.02F));
+                trades.get(villagerlevel+i).add((trader, rand) -> new MerchantOffer(
+                        new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                        lead_ii_fluoride, 64, 1, 0.02F));
+                trades.get(villagerlevel+i).add((trader, rand) -> new MerchantOffer(
+                        new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                        lead_ii_sulfide, 64, 1, 0.02F));
+                trades.get(villagerlevel+i).add((trader, rand) -> new MerchantOffer(
+                        new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                        lead_ii_chloride, 64, 1, 0.02F));
+                trades.get(villagerlevel+i).add((trader, rand) -> new MerchantOffer(
+                        new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                        lead_ii_bromide, 64, 1, 0.02F));
+                trades.get(villagerlevel+i).add((trader, rand) -> new MerchantOffer(
+                        new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                        lead_ii_iodide, 64, 1, 0.02F));
+                trades.get(villagerlevel+i).add((trader, rand) -> new MerchantOffer(
+                        new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                        lead_ii_arsenite, 64, 1, 0.02F));
+                trades.get(villagerlevel+i).add((trader, rand) -> new MerchantOffer(
+                        new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                        lead_ii_phosphate, 64, 1, 0.02F));
+                trades.get(villagerlevel+i).add((trader, rand) -> new MerchantOffer(
+                        new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                        lead_ii_sulfate, 64, 1, 0.02F));
+                trades.get(villagerlevel+i).add((trader, rand) -> new MerchantOffer(
+                        new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                        lead_ii_thiosulfate, 64, 1, 0.02F));
+                trades.get(villagerlevel+i).add((trader, rand) -> new MerchantOffer(
+                        new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                        lead_ii_nitrate, 64, 1, 0.02F));
+                trades.get(villagerlevel+i).add((trader, rand) -> new MerchantOffer(
+                        new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                        lead_ii_perchlorate, 64, 1, 0.02F));
+                trades.get(villagerlevel+i).add((trader, rand) -> new MerchantOffer(
+                        new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                        lead_ii_iodate, 64, 1, 0.02F));
+                trades.get(villagerlevel+i).add((trader, rand) -> new MerchantOffer(
+                        new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                        lead_ii_carbonate, 64, 1, 0.02F));
+                trades.get(villagerlevel+i).add((trader, rand) -> new MerchantOffer(
+                        new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                        lead_ii_chromate, 64, 1, 0.02F));
+                trades.get(villagerlevel+i).add((trader, rand) -> new MerchantOffer(
+                        new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                        lead_ii_acetate, 64, 1, 0.02F));
+                trades.get(villagerlevel+i).add((trader, rand) -> new MerchantOffer(
+                        new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                        lead_ii_cyanide, 64, 1, 0.02F));
+                trades.get(villagerlevel+i).add((trader, rand) -> new MerchantOffer(
+                        new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                        lead_ii_thiocyanate, 64, 1, 0.02F));
+                trades.get(villagerlevel+i).add((trader, rand) -> new MerchantOffer(
+                        new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                        lead_ii_hydroxide, 64, 1, 0.02F));
+                trades.get(villagerlevel+i).add((trader, rand) -> new MerchantOffer(
+                        new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                        magnesium_oxide, 64, 1, 0.02F));
+                trades.get(villagerlevel+i).add((trader, rand) -> new MerchantOffer(
+                        new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                        magnesium_fluoride, 64, 1, 0.02F));
+                trades.get(villagerlevel+i).add((trader, rand) -> new MerchantOffer(
+                        new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                        magnesium_sulfide, 64, 1, 0.02F));
+                trades.get(villagerlevel+i).add((trader, rand) -> new MerchantOffer(
+                        new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                        magnesium_chloride, 64, 1, 0.02F));
+                trades.get(villagerlevel+i).add((trader, rand) -> new MerchantOffer(
+                        new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                        magnesium_nitride, 64, 1, 0.02F));
+                trades.get(villagerlevel+i).add((trader, rand) -> new MerchantOffer(
+                        new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                        magnesium_bromide, 64, 1, 0.02F));
+                trades.get(villagerlevel+i).add((trader, rand) -> new MerchantOffer(
+                        new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                        magnesium_iodide, 64, 1, 0.02F));
+                trades.get(villagerlevel+i).add((trader, rand) -> new MerchantOffer(
+                        new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                        magnesium_arsenate, 64, 1, 0.02F));
+                trades.get(villagerlevel+i).add((trader, rand) -> new MerchantOffer(
+                        new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                        magnesium_dihydrogen_phosphate, 64, 1, 0.02F));
+                trades.get(villagerlevel+i).add((trader, rand) -> new MerchantOffer(
+                        new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                        magnesium_sulfate, 64, 1, 0.02F));
+                trades.get(villagerlevel+i).add((trader, rand) -> new MerchantOffer(
+                        new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                        magnesium_thiosulfate, 64, 1, 0.02F));
+                trades.get(villagerlevel+i).add((trader, rand) -> new MerchantOffer(
+                        new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                        magnesium_nitrate, 64, 1, 0.02F));
+                trades.get(villagerlevel+i).add((trader, rand) -> new MerchantOffer(
+                        new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                        magnesium_perchlorate, 64, 1, 0.02F));
+                trades.get(villagerlevel+i).add((trader, rand) -> new MerchantOffer(
+                        new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                        magnesium_chlorate, 64, 1, 0.02F));
+                trades.get(villagerlevel+i).add((trader, rand) -> new MerchantOffer(
+                        new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                        magnesium_carbonate, 64, 1, 0.02F));
+                trades.get(villagerlevel+i).add((trader, rand) -> new MerchantOffer(
+                        new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                        magnesium_chromate, 64, 1, 0.02F));
+                trades.get(villagerlevel+i).add((trader, rand) -> new MerchantOffer(
+                        new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                        magnesium_acetate, 64, 1, 0.02F));
+                trades.get(villagerlevel+i).add((trader, rand) -> new MerchantOffer(
+                        new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                        magnesium_formate, 64, 1, 0.02F));
+                trades.get(villagerlevel+i).add((trader, rand) -> new MerchantOffer(
+                        new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                        magnesium_peroxide, 64, 1, 0.02F));
+                trades.get(villagerlevel+i).add((trader, rand) -> new MerchantOffer(
+                        new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                        magnesium_oxalate, 64, 1, 0.02F));
+                trades.get(villagerlevel+i).add((trader, rand) -> new MerchantOffer(
+                        new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                        magnesium_hydroxide, 64, 1, 0.02F));
+                trades.get(villagerlevel+i).add((trader, rand) -> new MerchantOffer(
+                        new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                        magnesium_permanganate, 64, 1, 0.02F));
+                trades.get(villagerlevel+i).add((trader, rand) -> new MerchantOffer(
+                        new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                        manganese_ii_oxide, 64, 1, 0.02F));
+                trades.get(villagerlevel+i).add((trader, rand) -> new MerchantOffer(
+                        new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                        manganese_ii_fluoride, 64, 1, 0.02F));
+                trades.get(villagerlevel+i).add((trader, rand) -> new MerchantOffer(
+                        new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                        manganese_ii_sulfide, 64, 1, 0.02F));
+                trades.get(villagerlevel+i).add((trader, rand) -> new MerchantOffer(
+                        new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                        manganese_ii_chloride, 64, 1, 0.02F));
+                trades.get(villagerlevel+i).add((trader, rand) -> new MerchantOffer(
+                        new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                        manganese_ii_bromide, 64, 1, 0.02F));
+                trades.get(villagerlevel+i).add((trader, rand) -> new MerchantOffer(
+                        new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                        manganese_ii_iodide, 64, 1, 0.02F));
+                trades.get(villagerlevel+i).add((trader, rand) -> new MerchantOffer(
+                        new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                        manganese_ii_phosphate, 64, 1, 0.02F));
+                trades.get(villagerlevel+i).add((trader, rand) -> new MerchantOffer(
+                        new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                        manganese_ii_sulfate, 64, 1, 0.02F));
+                trades.get(villagerlevel+i).add((trader, rand) -> new MerchantOffer(
+                        new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                        manganese_ii_nitrate, 64, 1, 0.02F));
+                trades.get(villagerlevel+i).add((trader, rand) -> new MerchantOffer(
+                        new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                        manganese_ii_chlorate, 64, 1, 0.02F));
+                trades.get(villagerlevel+i).add((trader, rand) -> new MerchantOffer(
+                        new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                        manganese_ii_carbonate, 64, 1, 0.02F));
+                trades.get(villagerlevel+i).add((trader, rand) -> new MerchantOffer(
+                        new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                        manganese_ii_acetate, 64, 1, 0.02F));
+                trades.get(villagerlevel+i).add((trader, rand) -> new MerchantOffer(
+                        new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                        manganese_ii_oxalate, 64, 1, 0.02F));
+                trades.get(villagerlevel+i).add((trader, rand) -> new MerchantOffer(
+                        new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                        manganese_ii_hydroxide, 64, 1, 0.02F));
+                trades.get(villagerlevel+i).add((trader, rand) -> new MerchantOffer(
+                        new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                        manganese_iii_oxide, 64, 1, 0.02F));
+                trades.get(villagerlevel+i).add((trader, rand) -> new MerchantOffer(
+                        new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                        manganese_iii_fluoride, 64, 1, 0.02F));
+                trades.get(villagerlevel+i).add((trader, rand) -> new MerchantOffer(
+                        new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                        manganese_iii_phosphate, 64, 1, 0.02F));
+                trades.get(villagerlevel+i).add((trader, rand) -> new MerchantOffer(
+                        new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                        manganese_iii_sulfate, 64, 1, 0.02F));
+                trades.get(villagerlevel+i).add((trader, rand) -> new MerchantOffer(
+                        new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                        manganese_iii_acetate, 64, 1, 0.02F));
+                trades.get(villagerlevel+i).add((trader, rand) -> new MerchantOffer(
+                        new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                        mercury_i_oxide, 64, 1, 0.02F));
+                trades.get(villagerlevel+i).add((trader, rand) -> new MerchantOffer(
+                        new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                        mercury_i_fluoride, 64, 1, 0.02F));
+                trades.get(villagerlevel+i).add((trader, rand) -> new MerchantOffer(
+                        new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                        mercury_i_chloride, 64, 1, 0.02F));
+                trades.get(villagerlevel+i).add((trader, rand) -> new MerchantOffer(
+                        new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                        mercury_i_bromide, 64, 1, 0.02F));
+                trades.get(villagerlevel+i).add((trader, rand) -> new MerchantOffer(
+                        new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                        mercury_i_iodide, 64, 1, 0.02F));
+                trades.get(villagerlevel+i).add((trader, rand) -> new MerchantOffer(
+                        new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                        mercury_i_sulfate, 64, 1, 0.02F));
+                trades.get(villagerlevel+i).add((trader, rand) -> new MerchantOffer(
+                        new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                        mercury_i_nitrate, 64, 1, 0.02F));
+                trades.get(villagerlevel+i).add((trader, rand) -> new MerchantOffer(
+                        new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                        mercury_ii_oxide, 64, 1, 0.02F));
+                trades.get(villagerlevel+i).add((trader, rand) -> new MerchantOffer(
+                        new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                        mercury_ii_fluoride, 64, 1, 0.02F));
+                trades.get(villagerlevel+i).add((trader, rand) -> new MerchantOffer(
+                        new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                        mercury_ii_sulfide, 64, 1, 0.02F));
+                trades.get(villagerlevel+i).add((trader, rand) -> new MerchantOffer(
+                        new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                        mercury_ii_chloride, 64, 1, 0.02F));
+                trades.get(villagerlevel+i).add((trader, rand) -> new MerchantOffer(
+                        new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                        mercury_ii_bromide, 64, 1, 0.02F));
+                trades.get(villagerlevel+i).add((trader, rand) -> new MerchantOffer(
+                        new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                        mercury_ii_iodide, 64, 1, 0.02F));
+                trades.get(villagerlevel+i).add((trader, rand) -> new MerchantOffer(
+                        new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                        mercury_ii_sulfate, 64, 1, 0.02F));
+                trades.get(villagerlevel+i).add((trader, rand) -> new MerchantOffer(
+                        new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                        mercury_ii_nitrate, 64, 1, 0.02F));
+                trades.get(villagerlevel+i).add((trader, rand) -> new MerchantOffer(
+                        new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                        mercury_ii_acetate, 64, 1, 0.02F));
+                trades.get(villagerlevel+i).add((trader, rand) -> new MerchantOffer(
+                        new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                        mercury_ii_cyanide, 64, 1, 0.02F));
+                trades.get(villagerlevel+i).add((trader, rand) -> new MerchantOffer(
+                        new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                        mercury_ii_thiocyanate, 64, 1, 0.02F));
+                trades.get(villagerlevel+i).add((trader, rand) -> new MerchantOffer(
+                        new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                        mercury_ii_hydroxide, 64, 1, 0.02F));
+                trades.get(villagerlevel+i).add((trader, rand) -> new MerchantOffer(
+                        new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                        nitronium_fluoride, 64, 1, 0.02F));
+                trades.get(villagerlevel+i).add((trader, rand) -> new MerchantOffer(
+                        new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                        nitronium_chloride, 64, 1, 0.02F));
+                trades.get(villagerlevel+i).add((trader, rand) -> new MerchantOffer(
+                        new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                        nitronium_perchlorate, 64, 1, 0.02F));
+                trades.get(villagerlevel+i).add((trader, rand) -> new MerchantOffer(
+                        new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                        silver_oxide, 64, 1, 0.02F));
+                trades.get(villagerlevel+i).add((trader, rand) -> new MerchantOffer(
+                        new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                        silver_fluoride, 64, 1, 0.02F));
+                trades.get(villagerlevel+i).add((trader, rand) -> new MerchantOffer(
+                        new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                        silver_sulfide, 64, 1, 0.02F));
+                trades.get(villagerlevel+i).add((trader, rand) -> new MerchantOffer(
+                        new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                        silver_chloride, 64, 1, 0.02F));
+                trades.get(villagerlevel+i).add((trader, rand) -> new MerchantOffer(
+                        new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                        silver_nitride, 64, 1, 0.02F));
+                trades.get(villagerlevel+i).add((trader, rand) -> new MerchantOffer(
+                        new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                        silver_bromide, 64, 1, 0.02F));
+                trades.get(villagerlevel+i).add((trader, rand) -> new MerchantOffer(
+                        new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                        silver_iodide, 64, 1, 0.02F));
+                trades.get(villagerlevel+i).add((trader, rand) -> new MerchantOffer(
+                        new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                        silver_arsenate, 64, 1, 0.02F));
+                trades.get(villagerlevel+i).add((trader, rand) -> new MerchantOffer(
+                        new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                        silver_arsenite, 64, 1, 0.02F));
+                trades.get(villagerlevel+i).add((trader, rand) -> new MerchantOffer(
+                        new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                        silver_phosphate, 64, 1, 0.02F));
+                trades.get(villagerlevel+i).add((trader, rand) -> new MerchantOffer(
+                        new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                        silver_sulfate, 64, 1, 0.02F));
+                trades.get(villagerlevel+i).add((trader, rand) -> new MerchantOffer(
+                        new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                        silver_nitrate, 64, 1, 0.02F));
+                trades.get(villagerlevel+i).add((trader, rand) -> new MerchantOffer(
+                        new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                        silver_nitrite, 64, 1, 0.02F));
+                trades.get(villagerlevel+i).add((trader, rand) -> new MerchantOffer(
+                        new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                        silver_perchlorate, 64, 1, 0.02F));
+                trades.get(villagerlevel+i).add((trader, rand) -> new MerchantOffer(
+                        new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                        silver_chlorate, 64, 1, 0.02F));
+                trades.get(villagerlevel+i).add((trader, rand) -> new MerchantOffer(
+                        new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                        silver_chlorite, 64, 1, 0.02F));
+                trades.get(villagerlevel+i).add((trader, rand) -> new MerchantOffer(
+                        new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                        silver_hypochlorite, 64, 1, 0.02F));
+                trades.get(villagerlevel+i).add((trader, rand) -> new MerchantOffer(
+                        new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                        silver_iodate, 64, 1, 0.02F));
+                trades.get(villagerlevel+i).add((trader, rand) -> new MerchantOffer(
+                        new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                        silver_bromate, 64, 1, 0.02F));
+                trades.get(villagerlevel+i).add((trader, rand) -> new MerchantOffer(
+                        new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                        silver_carbonate, 64, 1, 0.02F));
+                trades.get(villagerlevel+i).add((trader, rand) -> new MerchantOffer(
+                        new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                        silver_chromate, 64, 1, 0.02F));
+                trades.get(villagerlevel+i).add((trader, rand) -> new MerchantOffer(
+                        new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                        silver_dichromate, 64, 1, 0.02F));
+                trades.get(villagerlevel+i).add((trader, rand) -> new MerchantOffer(
+                        new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                        silver_acetate, 64, 1, 0.02F));
+                trades.get(villagerlevel+i).add((trader, rand) -> new MerchantOffer(
+                        new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                        silver_cyanide, 64, 1, 0.02F));
+                trades.get(villagerlevel+i).add((trader, rand) -> new MerchantOffer(
+                        new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                        silver_thiocyanate, 64, 1, 0.02F));
+                trades.get(villagerlevel+i).add((trader, rand) -> new MerchantOffer(
+                        new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                        silver_oxalate, 64, 1, 0.02F));
+                trades.get(villagerlevel+i).add((trader, rand) -> new MerchantOffer(
+                        new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                        silver_hydroxide, 64, 1, 0.02F));
+                trades.get(villagerlevel+i).add((trader, rand) -> new MerchantOffer(
+                        new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                        silver_permanganate, 64, 1, 0.02F));
+                trades.get(villagerlevel+i).add((trader, rand) -> new MerchantOffer(
+                        new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                        strontium_oxide, 64, 1, 0.02F));
+                trades.get(villagerlevel+i).add((trader, rand) -> new MerchantOffer(
+                        new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                        strontium_fluoride, 64, 1, 0.02F));
+                trades.get(villagerlevel+i).add((trader, rand) -> new MerchantOffer(
+                        new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                        strontium_sulfide, 64, 1, 0.02F));
+                trades.get(villagerlevel+i).add((trader, rand) -> new MerchantOffer(
+                        new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                        strontium_chloride, 64, 1, 0.02F));
+                trades.get(villagerlevel+i).add((trader, rand) -> new MerchantOffer(
+                        new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                        strontium_nitride, 64, 1, 0.02F));
+                trades.get(villagerlevel+i).add((trader, rand) -> new MerchantOffer(
+                        new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                        strontium_bromide, 64, 1, 0.02F));
+                trades.get(villagerlevel+i).add((trader, rand) -> new MerchantOffer(
+                        new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                        strontium_iodide, 64, 1, 0.02F));
+                trades.get(villagerlevel+i).add((trader, rand) -> new MerchantOffer(
+                        new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                        strontium_sulfate, 64, 1, 0.02F));
+                trades.get(villagerlevel+i).add((trader, rand) -> new MerchantOffer(
+                        new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                        strontium_nitrate, 64, 1, 0.02F));
+                trades.get(villagerlevel+i).add((trader, rand) -> new MerchantOffer(
+                        new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                        strontium_perchlorate, 64, 1, 0.02F));
+                trades.get(villagerlevel+i).add((trader, rand) -> new MerchantOffer(
+                        new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                        strontium_chlorate, 64, 1, 0.02F));
+                trades.get(villagerlevel+i).add((trader, rand) -> new MerchantOffer(
+                        new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                        strontium_bromate, 64, 1, 0.02F));
+                trades.get(villagerlevel+i).add((trader, rand) -> new MerchantOffer(
+                        new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                        strontium_carbonate, 64, 1, 0.02F));
+                trades.get(villagerlevel+i).add((trader, rand) -> new MerchantOffer(
+                        new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                        strontium_chromate, 64, 1, 0.02F));
+                trades.get(villagerlevel+i).add((trader, rand) -> new MerchantOffer(
+                        new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                        strontium_acetate, 64, 1, 0.02F));
+                trades.get(villagerlevel+i).add((trader, rand) -> new MerchantOffer(
+                        new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                        strontium_formate, 64, 1, 0.02F));
+                trades.get(villagerlevel+i).add((trader, rand) -> new MerchantOffer(
+                        new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                        strontium_peroxide, 64, 1, 0.02F));
+                trades.get(villagerlevel+i).add((trader, rand) -> new MerchantOffer(
+                        new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                        strontium_oxalate, 64, 1, 0.02F));
+                trades.get(villagerlevel+i).add((trader, rand) -> new MerchantOffer(
+                        new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                        strontium_hydroxide, 64, 1, 0.02F));
+                trades.get(villagerlevel+i).add((trader, rand) -> new MerchantOffer(
+                        new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                        tin_ii_oxide, 64, 1, 0.02F));
+                trades.get(villagerlevel+i).add((trader, rand) -> new MerchantOffer(
+                        new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                        tin_ii_fluoride, 64, 1, 0.02F));
+                trades.get(villagerlevel+i).add((trader, rand) -> new MerchantOffer(
+                        new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                        tin_ii_sulfide, 64, 1, 0.02F));
+                trades.get(villagerlevel+i).add((trader, rand) -> new MerchantOffer(
+                        new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                        tin_ii_chloride, 64, 1, 0.02F));
+                trades.get(villagerlevel+i).add((trader, rand) -> new MerchantOffer(
+                        new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                        tin_ii_bromide, 64, 1, 0.02F));
+                trades.get(villagerlevel+i).add((trader, rand) -> new MerchantOffer(
+                        new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                        tin_ii_iodide, 64, 1, 0.02F));
+                trades.get(villagerlevel+i).add((trader, rand) -> new MerchantOffer(
+                        new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                        tin_ii_sulfate, 64, 1, 0.02F));
+                trades.get(villagerlevel+i).add((trader, rand) -> new MerchantOffer(
+                        new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                        tin_ii_acetate, 64, 1, 0.02F));
+                trades.get(villagerlevel+i).add((trader, rand) -> new MerchantOffer(
+                        new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                        tin_ii_oxalate, 64, 1, 0.02F));
+                trades.get(villagerlevel+i).add((trader, rand) -> new MerchantOffer(
+                        new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                        tin_ii_hydroxide, 64, 1, 0.02F));
+                trades.get(villagerlevel+i).add((trader, rand) -> new MerchantOffer(
+                        new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                        tin_iv_oxide, 64, 1, 0.02F));
+                trades.get(villagerlevel+i).add((trader, rand) -> new MerchantOffer(
+                        new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                        tin_iv_fluoride, 64, 1, 0.02F));
+                trades.get(villagerlevel+i).add((trader, rand) -> new MerchantOffer(
+                        new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                        tin_iv_sulfide, 64, 1, 0.02F));
+                trades.get(villagerlevel+i).add((trader, rand) -> new MerchantOffer(
+                        new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                        tin_iv_chloride, 64, 1, 0.02F));
+                trades.get(villagerlevel+i).add((trader, rand) -> new MerchantOffer(
+                        new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                        tin_iv_bromide, 64, 1, 0.02F));
+                trades.get(villagerlevel+i).add((trader, rand) -> new MerchantOffer(
+                        new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                        tin_iv_iodide, 64, 1, 0.02F));
+                trades.get(villagerlevel+i).add((trader, rand) -> new MerchantOffer(
+                        new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                        tin_iv_arsenate, 64, 1, 0.02F));
+                trades.get(villagerlevel+i).add((trader, rand) -> new MerchantOffer(
+                        new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                        tin_iv_nitrate, 64, 1, 0.02F));
+                trades.get(villagerlevel+i).add((trader, rand) -> new MerchantOffer(
+                        new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                        tin_iv_hydroxide, 64, 1, 0.02F));
+                trades.get(villagerlevel+i).add((trader, rand) -> new MerchantOffer(
+                        new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                        zinc_oxide, 64, 1, 0.02F));
+                trades.get(villagerlevel+i).add((trader, rand) -> new MerchantOffer(
+                        new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                        zinc_fluoride, 64, 1, 0.02F));
+                trades.get(villagerlevel+i).add((trader, rand) -> new MerchantOffer(
+                        new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                        zinc_sulfide, 64, 1, 0.02F));
+                trades.get(villagerlevel+i).add((trader, rand) -> new MerchantOffer(
+                        new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                        zinc_chloride, 64, 1, 0.02F));
+                trades.get(villagerlevel+i).add((trader, rand) -> new MerchantOffer(
+                        new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                        zinc_nitride, 64, 1, 0.02F));
+                trades.get(villagerlevel+i).add((trader, rand) -> new MerchantOffer(
+                        new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                        zinc_bromide, 64, 1, 0.02F));
+                trades.get(villagerlevel+i).add((trader, rand) -> new MerchantOffer(
+                        new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                        zinc_iodide, 64, 1, 0.02F));
+                trades.get(villagerlevel+i).add((trader, rand) -> new MerchantOffer(
+                        new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                        zinc_arsenate, 64, 1, 0.02F));
+                trades.get(villagerlevel+i).add((trader, rand) -> new MerchantOffer(
+                        new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                        zinc_arsenite, 64, 1, 0.02F));
+                trades.get(villagerlevel+i).add((trader, rand) -> new MerchantOffer(
+                        new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                        zinc_phosphate, 64, 1, 0.02F));
+                trades.get(villagerlevel+i).add((trader, rand) -> new MerchantOffer(
+                        new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                        zinc_dihydrogen_phosphate, 64, 1, 0.02F));
+                trades.get(villagerlevel+i).add((trader, rand) -> new MerchantOffer(
+                        new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                        zinc_sulfate, 64, 1, 0.02F));
+                trades.get(villagerlevel+i).add((trader, rand) -> new MerchantOffer(
+                        new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                        zinc_sulfite, 64, 1, 0.02F));
+                trades.get(villagerlevel+i).add((trader, rand) -> new MerchantOffer(
+                        new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                        zinc_nitrate, 64, 1, 0.02F));
+                trades.get(villagerlevel+i).add((trader, rand) -> new MerchantOffer(
+                        new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                        zinc_perchlorate, 64, 1, 0.02F));
+                trades.get(villagerlevel+i).add((trader, rand) -> new MerchantOffer(
+                        new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                        zinc_chlorate, 64, 1, 0.02F));
+                trades.get(villagerlevel+i).add((trader, rand) -> new MerchantOffer(
+                        new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                        zinc_bromate, 64, 1, 0.02F));
+                trades.get(villagerlevel+i).add((trader, rand) -> new MerchantOffer(
+                        new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                        zinc_carbonate, 64, 1, 0.02F));
+                trades.get(villagerlevel+i).add((trader, rand) -> new MerchantOffer(
+                        new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                        zinc_chromate, 64, 1, 0.02F));
+                trades.get(villagerlevel+i).add((trader, rand) -> new MerchantOffer(
+                        new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                        zinc_dichromate, 64, 1, 0.02F));
+                trades.get(villagerlevel+i).add((trader, rand) -> new MerchantOffer(
+                        new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                        zinc_acetate, 64, 1, 0.02F));
+                trades.get(villagerlevel+i).add((trader, rand) -> new MerchantOffer(
+                        new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                        zinc_formate, 64, 1, 0.02F));
+                trades.get(villagerlevel+i).add((trader, rand) -> new MerchantOffer(
+                        new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                        zinc_cyanide, 64, 1, 0.02F));
+                trades.get(villagerlevel+i).add((trader, rand) -> new MerchantOffer(
+                        new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                        zinc_thiocyanate, 64, 1, 0.02F));
+                trades.get(villagerlevel+i).add((trader, rand) -> new MerchantOffer(
+                        new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                        zinc_peroxide, 64, 1, 0.02F));
+                trades.get(villagerlevel+i).add((trader, rand) -> new MerchantOffer(
+                        new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                        zinc_hydroxide, 64, 1, 0.02F));
+                trades.get(villagerlevel+i).add((trader, rand) -> new MerchantOffer(
+                        new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                        zinc_permanganate, 64, 1, 0.02F));
+                trades.get(villagerlevel+i).add((trader, rand) -> new MerchantOffer(
+                        new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                        caesium_oxide, 64, 1, 0.02F));
+                trades.get(villagerlevel+i).add((trader, rand) -> new MerchantOffer(
+                        new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                        caesium_fluoride, 64, 1, 0.02F));
+                trades.get(villagerlevel+i).add((trader, rand) -> new MerchantOffer(
+                        new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                        caesium_sulfide, 64, 1, 0.02F));
+                trades.get(villagerlevel+i).add((trader, rand) -> new MerchantOffer(
+                        new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                        caesium_chloride, 64, 1, 0.02F));
+                trades.get(villagerlevel+i).add((trader, rand) -> new MerchantOffer(
+                        new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                        caesium_bromide, 64, 1, 0.02F));
+                trades.get(villagerlevel+i).add((trader, rand) -> new MerchantOffer(
+                        new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                        caesium_iodide, 64, 1, 0.02F));
+                trades.get(villagerlevel+i).add((trader, rand) -> new MerchantOffer(
+                        new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                        caesium_arsenate, 64, 1, 0.02F));
+                trades.get(villagerlevel+i).add((trader, rand) -> new MerchantOffer(
+                        new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                        caesium_sulfate, 64, 1, 0.02F));
+                trades.get(villagerlevel+i).add((trader, rand) -> new MerchantOffer(
+                        new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                        caesium_nitrate, 64, 1, 0.02F));
+                trades.get(villagerlevel+i).add((trader, rand) -> new MerchantOffer(
+                        new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                        caesium_perchlorate, 64, 1, 0.02F));
+                trades.get(villagerlevel+i).add((trader, rand) -> new MerchantOffer(
+                        new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                        caesium_carbonate, 64, 1, 0.02F));
+                trades.get(villagerlevel+i).add((trader, rand) -> new MerchantOffer(
+                        new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                        caesium_bicarbonate, 64, 1, 0.02F));
+                trades.get(villagerlevel+i).add((trader, rand) -> new MerchantOffer(
+                        new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                        caesium_chromate, 64, 1, 0.02F));
+                trades.get(villagerlevel+i).add((trader, rand) -> new MerchantOffer(
+                        new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                        caesium_acetate, 64, 1, 0.02F));
+                trades.get(villagerlevel+i).add((trader, rand) -> new MerchantOffer(
+                        new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                        caesium_formate, 64, 1, 0.02F));
+                trades.get(villagerlevel+i).add((trader, rand) -> new MerchantOffer(
+                        new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                        caesium_cyanide, 64, 1, 0.02F));
+                trades.get(villagerlevel+i).add((trader, rand) -> new MerchantOffer(
+                        new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                        caesium_hydroxide, 64, 1, 0.02F));
+                trades.get(villagerlevel+i).add((trader, rand) -> new MerchantOffer(
+                        new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                        rubidium_oxide, 64, 1, 0.02F));
+                trades.get(villagerlevel+i).add((trader, rand) -> new MerchantOffer(
+                        new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                        rubidium_fluoride, 64, 1, 0.02F));
+                trades.get(villagerlevel+i).add((trader, rand) -> new MerchantOffer(
+                        new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                        rubidium_sulfide, 64, 1, 0.02F));
+                trades.get(villagerlevel+i).add((trader, rand) -> new MerchantOffer(
+                        new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                        rubidium_chloride, 64, 1, 0.02F));
+                trades.get(villagerlevel+i).add((trader, rand) -> new MerchantOffer(
+                        new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                        rubidium_bromide, 64, 1, 0.02F));
+                trades.get(villagerlevel+i).add((trader, rand) -> new MerchantOffer(
+                        new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                        rubidium_iodide, 64, 1, 0.02F));
+                trades.get(villagerlevel+i).add((trader, rand) -> new MerchantOffer(
+                        new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                        rubidium_sulfate, 64, 1, 0.02F));
+                trades.get(villagerlevel+i).add((trader, rand) -> new MerchantOffer(
+                        new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                        rubidium_perchlorate, 64, 1, 0.02F));
+                trades.get(villagerlevel+i).add((trader, rand) -> new MerchantOffer(
+                        new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                        rubidium_carbonate, 64, 1, 0.02F));
+                trades.get(villagerlevel+i).add((trader, rand) -> new MerchantOffer(
+                        new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                        rubidium_acetate, 64, 1, 0.02F));
+                trades.get(villagerlevel+i).add((trader, rand) -> new MerchantOffer(
+                        new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                        rubidium_cyanide, 64, 1, 0.02F));
+                trades.get(villagerlevel+i).add((trader, rand) -> new MerchantOffer(
+                        new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                        rubidium_hydroxide, 64, 1, 0.02F));
+                trades.get(villagerlevel+i).add((trader, rand) -> new MerchantOffer(
+                        new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
+                        rubidium_permanganate, 64, 1, 0.02F));
 
 
-            //Apprentice ~64xp
-            trades.get(villagerlevel+1).add((trader, rand) -> new MerchantOffer(
-                    //Currency, Cost, stack = Result
-                    new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
-                    sodium_chloride, 64, 1, 0.02F));
-            //Max Uses,EXP for Villager,Multiplier for Price
-            trades.get(villagerlevel+1).add((trader, rand) -> new MerchantOffer(
-                    new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
-                    sodium_chloride, 64, 1, 0.02F));
+            }
 
-            //Journeyman ~80xp
-            trades.get(villagerlevel+2).add((trader, rand) -> new MerchantOffer(
-                    new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
-                    sodium_chloride, 64, 1, 0.02F));
-            trades.get(villagerlevel+2).add((trader, rand) -> new MerchantOffer(
-                    new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
-                    sodium_chloride, 64, 1, 0.02F));
 
-            //Expert ~100xp
-            trades.get(villagerlevel+3).add((trader, rand) -> new MerchantOffer(
-                    new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
-                    sodium_chloride, 64, 1, 0.02F));
-            trades.get(villagerlevel+3).add((trader, rand) -> new MerchantOffer(
-                    new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
-                    sodium_chloride, 64, 1, 0.02F));
 
-            //Master
-            trades.get(villagerlevel+4).add((trader, rand) -> new MerchantOffer(
-                    new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
-                    sodium_chloride, 64, 1, 0.02F));
-            trades.get(villagerlevel+4).add((trader, rand) -> new MerchantOffer(
-                    new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
-                    sodium_chloride, 64, 1, 0.02F));
-            trades.get(villagerlevel+4).add((trader, rand) -> new MerchantOffer(
-                    new ItemStack(ModItems.SODIUM_CHLORIDE.get(), 2),
-                    sodium_chloride, 64, 1, 0.02F));
         }
 
     }
