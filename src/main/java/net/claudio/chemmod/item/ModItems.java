@@ -5,6 +5,7 @@ import net.claudio.chemmod.effect.ModEffects;
 
 import net.claudio.chemmod.item.custom.ChemicalItem;
 import net.claudio.chemmod.item.custom.DeconstructorItem;
+import net.claudio.chemmod.item.custom.SolutionItem;
 import net.minecraft.server.commands.KillCommand;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.effect.MobEffects;
@@ -19,6 +20,7 @@ import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
+import org.apache.commons.lang3.ObjectUtils;
 
 import java.util.function.Supplier;
 
@@ -1686,6 +1688,11 @@ public class ModItems {
 
     public static final RegistryObject<Item> EMPTY = Items.register( "empty",
             () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,0,"\nDesc: Filler",""));
+
+    public static final RegistryObject<Item> BEAKER = Items.register( "beaker",
+            () -> new SolutionItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()), 0.00, (ChemicalItem) EMPTY.get(),
+                    0.0, (ChemicalItem) EMPTY.get(), 1.0, (ChemicalItem) EMPTY.get(), 0.0, (ChemicalItem) EMPTY.get(), 0.0, (ChemicalItem) EMPTY.get(), 0.0, (ChemicalItem) EMPTY.get(), 0.0, 4, "\nDesc: A solution of ",""));
+
 
     public static void register(IEventBus eventBus) {
         Items.register(eventBus);

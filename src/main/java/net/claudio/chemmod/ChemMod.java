@@ -12,6 +12,7 @@ import net.claudio.chemmod.screen.DeconstructorBlockScreen;
 import net.claudio.chemmod.screen.LabTableBlockScreen;
 import net.claudio.chemmod.screen.ModMenuTypes;
 import net.claudio.chemmod.screen.RadicalizerBlockScreen;
+import net.claudio.chemmod.screen.ReconstructorBlockScreen;
 import net.claudio.chemmod.villager.ModVillagers;
 import net.minecraft.client.gui.screens.MenuScreens;
 import net.minecraftforge.common.MinecraftForge;
@@ -69,6 +70,7 @@ public class ChemMod
             MenuScreens.register(ModMenuTypes.DECONSTRUCTOR_BLOCK_MENU.get(), DeconstructorBlockScreen::new);
             MenuScreens.register(ModMenuTypes.RADICALIZER_BLOCK_MENU.get(), RadicalizerBlockScreen::new);
             MenuScreens.register(ModMenuTypes.LAB_TABLE_BLOCK_MENU.get(), LabTableBlockScreen::new);
+            MenuScreens.register(ModMenuTypes.RECONSTRUCTOR_BLOCK_MENU.get(), ReconstructorBlockScreen::new);
 
         }
     }

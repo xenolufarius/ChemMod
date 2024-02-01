@@ -26,7 +26,7 @@ public class ReconstructorBlockMenu extends AbstractContainerMenu {
     public ReconstructorBlockMenu(int id, Inventory inv, BlockEntity entity, ContainerData data) {
         super(ModMenuTypes.RECONSTRUCTOR_BLOCK_MENU.get(), id);
         //?? Maybe need to adjust? 3
-        checkContainerSize(inv, 26);
+        checkContainerSize(inv, 3);
         blockEntity = (ReconstructorBlockEntity) entity;
         this.level = inv.player.level;
         this.data = data;
@@ -38,34 +38,6 @@ public class ReconstructorBlockMenu extends AbstractContainerMenu {
             this.addSlot(new SlotItemHandler(handler, 0, 12, 10));
             this.addSlot(new SlotItemHandler(handler, 1, 32, 10));
             this.addSlot(new SlotItemHandler(handler, 2, 52, 10));
-            this.addSlot(new SlotItemHandler(handler, 3, 72, 10));
-            this.addSlot(new SlotItemHandler(handler, 4, 92, 10));
-
-            this.addSlot(new SlotItemHandler(handler, 5, 12, 25));
-            this.addSlot(new SlotItemHandler(handler, 6, 32, 25));
-            this.addSlot(new SlotItemHandler(handler, 7, 52, 25));
-            this.addSlot(new SlotItemHandler(handler, 8, 72, 25));
-            this.addSlot(new SlotItemHandler(handler, 9, 92, 25));
-
-            this.addSlot(new SlotItemHandler(handler, 10, 12, 40));
-            this.addSlot(new SlotItemHandler(handler, 11, 32, 40));
-            this.addSlot(new SlotItemHandler(handler, 12, 52, 40));
-            this.addSlot(new SlotItemHandler(handler, 13, 72, 40));
-            this.addSlot(new SlotItemHandler(handler, 14, 92, 40));
-
-            this.addSlot(new SlotItemHandler(handler, 15, 12, 55));
-            this.addSlot(new SlotItemHandler(handler, 16, 32, 55));
-            this.addSlot(new SlotItemHandler(handler, 17, 52, 55));
-            this.addSlot(new SlotItemHandler(handler, 18, 72, 55));
-            this.addSlot(new SlotItemHandler(handler, 19, 92, 55));
-
-            this.addSlot(new SlotItemHandler(handler, 20, 12, 70));
-            this.addSlot(new SlotItemHandler(handler, 21, 32, 70));
-            this.addSlot(new SlotItemHandler(handler, 22, 52, 70));
-            this.addSlot(new SlotItemHandler(handler, 23, 72, 70));
-            this.addSlot(new SlotItemHandler(handler, 24, 92, 70));
-
-            this.addSlot(new SlotItemHandler(handler, 25, 112, 40));
         });
 
         addDataSlots(data);
@@ -99,7 +71,7 @@ public class ReconstructorBlockMenu extends AbstractContainerMenu {
     private static final int TE_INVENTORY_FIRST_SLOT_INDEX = VANILLA_FIRST_SLOT_INDEX + VANILLA_SLOT_COUNT;
 
     // THIS YOU HAVE TO DEFINE!
-    private static final int TE_INVENTORY_SLOT_COUNT = 26;  // must be the number of slots you have!
+    private static final int TE_INVENTORY_SLOT_COUNT = 3;  // must be the number of slots you have!
 
     @Override
     public ItemStack quickMoveStack(Player playerIn, int index) {

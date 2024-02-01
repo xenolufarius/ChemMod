@@ -17,10 +17,11 @@ import javax.annotation.Nullable;
 public class ReconstructorBlockRecipe implements Recipe<SimpleContainer> {
 
     private final ResourceLocation id;
-    private final ItemStack output;
+    private final NonNullList<ItemStack> output;
+
     private final NonNullList<Ingredient> recipeItems;
 
-    public ReconstructorBlockRecipe(ResourceLocation id, ItemStack output,
+    public ReconstructorBlockRecipe(ResourceLocation id, NonNullList<ItemStack> output,
                                      NonNullList<Ingredient> recipeItems)
     {
         this.id = id;
@@ -50,7 +51,7 @@ public class ReconstructorBlockRecipe implements Recipe<SimpleContainer> {
 
     @Override
     public ItemStack assemble(SimpleContainer pContainer) {
-        return output;
+        return output.get(0).copy();
     }
 
     @Override
@@ -60,8 +61,9 @@ public class ReconstructorBlockRecipe implements Recipe<SimpleContainer> {
 
     @Override
     public ItemStack getResultItem() {
-        return output.copy();
+        return output.get(0).copy();
     }
+    public NonNullList<ItemStack> getOutput() { return output;}
 
     @Override
     public ResourceLocation getId() {
@@ -82,29 +84,37 @@ public class ReconstructorBlockRecipe implements Recipe<SimpleContainer> {
     {
         private Type() { }
         public static final Type INSTANCE = new Type();
-        public static final String ID = "redonstructor";
+        public static final String ID = "reconstructor";
     }
 
     public static class Serializer implements RecipeSerializer<ReconstructorBlockRecipe>
     {
         public static final Serializer INSTANCE = new Serializer();
         public static final ResourceLocation ID =
-                new ResourceLocation(ChemMod.MOD_ID, "redonstructor");
+                new ResourceLocation(ChemMod.MOD_ID, "reconstructor");
 
 
         //might be where I get the multiple outputs
         @Override
         public ReconstructorBlockRecipe fromJson(ResourceLocation pRecipeId, JsonObject pSerializedRecipe) {
-            ItemStack output = ShapedRecipe.itemStackFromJson(GsonHelper.getAsJsonObject(pSerializedRecipe, "output"));
+            // Deserialize the outputs from JSON
+            NonNullList<ItemStack> outputs = NonNullList.create();
+            JsonArray outputsArray = GsonHelper.getAsJsonArray(pSerializedRecipe, "output");
 
+            for (int i = 0; i < outputsArray.size(); i++) {
+                outputs.add(ShapedRecipe.itemStackFromJson(outputsArray.get(i).getAsJsonObject()));
+            }
+
+            // Deserialize the inputs from JSON
             JsonArray ingredients = GsonHelper.getAsJsonArray(pSerializedRecipe, "ingredients");
-            NonNullList<Ingredient> inputs = NonNullList.withSize(1, Ingredient.EMPTY);
+            NonNullList<Ingredient> inputs = NonNullList.withSize(ingredients.size(), Ingredient.EMPTY);
 
             for (int i = 0; i < inputs.size(); i++) {
                 inputs.set(i, Ingredient.fromJson(ingredients.get(i)));
             }
 
-            return new ReconstructorBlockRecipe(pRecipeId, output, inputs);
+            return new ReconstructorBlockRecipe(pRecipeId, outputs, inputs);
+
         }
 
         @Override
@@ -115,10 +125,16 @@ public class ReconstructorBlockRecipe implements Recipe<SimpleContainer> {
                 inputs.set(i, Ingredient.fromNetwork(buf));
             }
 
-            ItemStack output = buf.readItem();
-            return new ReconstructorBlockRecipe(id, output, inputs);
+            NonNullList<ItemStack> outputs = NonNullList.create();
+            int numOutputs = buf.readInt();
+
+            for (int i = 0; i < numOutputs; i++) {
+                outputs.add(buf.readItem());
+            }
+
+            return new ReconstructorBlockRecipe(id, outputs, inputs);
         }
-        //Episode 23 ~10 min in
+
         @Override
         public void toNetwork(FriendlyByteBuf buf, ReconstructorBlockRecipe recipe) {
             buf.writeInt(recipe.getIngredients().size());
@@ -126,7 +142,12 @@ public class ReconstructorBlockRecipe implements Recipe<SimpleContainer> {
             for (Ingredient ing : recipe.getIngredients()) {
                 ing.toNetwork(buf);
             }
-            buf.writeItemStack(recipe.getResultItem(), false);
+
+            buf.writeInt(recipe.getOutput().size());
+
+            for (ItemStack output : recipe.getOutput()) {
+                buf.writeItem(output);
+            }
         }
 
 
