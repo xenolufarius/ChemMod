@@ -35,6 +35,8 @@ public class ChemMod
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
 
         ModItems.register((modEventBus));
+
+
         ModBlocks.register(modEventBus);
         ModEffects.register(modEventBus);
 
@@ -51,6 +53,8 @@ public class ChemMod
 
 
         MinecraftForge.EVENT_BUS.register(this);
+
+        //ModItems.registerCHEM();
     }
     private void commonSetup(final FMLCommonSetupEvent event)
     {

@@ -181,9 +181,16 @@ public class ReconstructorBlockEntity extends BlockEntity implements MenuProvide
                 }
                 */
                 //TODO: SOLVE MULTIPLE INPUTS ISSUE. Working now
+                SolutionItem beaker = null;
+                /**/
+                if (input1.getItem().equals(ModItems.BEAKER.get()))
+                    beaker = (SolutionItem) input1.getItem();
+                /**/
+                ChemicalItem inputChemical = null;
 
-                SolutionItem beaker = (SolutionItem) input1.getItem();
-                ChemicalItem inputChemical = (ChemicalItem) input2.getItem();
+                if (input2.getItem().getClass().equals(ChemicalItem.class))
+                    inputChemical = (ChemicalItem) input2.getItem();
+                /*
                 if ((!beaker.getcCHEM1().equals(ModItems.EMPTY.get()) && !beaker.getcCHEM1().equals(inputChemical))&&
                         (!beaker.getcCHEM2().equals(ModItems.EMPTY.get()) && !beaker.getcCHEM2().equals(inputChemical))&&
                         (!beaker.getcCHEM3().equals(ModItems.EMPTY.get()) && !beaker.getcCHEM3().equals(inputChemical))&&
@@ -191,12 +198,19 @@ public class ReconstructorBlockEntity extends BlockEntity implements MenuProvide
                         (!beaker.getcCHEM5().equals(ModItems.EMPTY.get()) && !beaker.getcCHEM5().equals(inputChemical))&&
                         (!beaker.getcCHEM6().equals(ModItems.EMPTY.get()) && !beaker.getcCHEM6().equals(inputChemical)))
                     pEntity.resetProgress();
+
+                 */
+                if (beaker != null && inputChemical != null) {
                     pEntity.itemHandler.extractItem(0, 1, false);
                     pEntity.itemHandler.extractItem(1, 1, false);
 
 
+                    pEntity.itemHandler.setStackInSlot(2, beaker.addChemicalToBeaker(input1, inputChemical));
+
+                }
 
 
+                    /*
                     if ((input1.getItem().equals(ModItems.BEAKER.get())))
                     {
                         if (beaker.getcCHEM1().equals(ModItems.EMPTY.get()) || beaker.getcCHEM1().equals(inputChemical)){
@@ -236,7 +250,7 @@ public class ReconstructorBlockEntity extends BlockEntity implements MenuProvide
                     ,beaker.getcCHEM4(),beaker.getcMCHEM4(),beaker.getcCHEM5(),beaker.getcMCHEM5(),beaker.getcCHEM6(),beaker.getcMCHEM6()
                     ,beaker.getcSTAB(),beaker.getcDESC(),beaker.getcSDS())
                     */
-                    ));
+//                    ));
 
             });
 

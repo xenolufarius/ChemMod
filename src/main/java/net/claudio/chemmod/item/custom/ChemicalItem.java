@@ -123,26 +123,11 @@ public class ChemicalItem  extends Item {
     private String cCF;
     private int cRAD;
 
-    //Exclusive for solutionsvvvvv
-    private double cVOL;
-    private ChemicalItem cCHEM1;
-    private double cMCHEM1;
-    private ChemicalItem cCHEM2;
-    private double cMCHEM2;
-    private ChemicalItem cCHEM3;
-    private double cMCHEM3;
-    private ChemicalItem cCHEM4;
-    private double cMCHEM4;
-    private ChemicalItem cCHEM5;
-    private double cMCHEM5;
-    private ChemicalItem cCHEM6;
-    private double cMCHEM6;
-
-    //^^^^^^^^^^^^^^^^^^^^^^^^^^^^
     private int cSTAB;
     private String cDESC;
     private String cSDS;
-    public ChemicalItem(Properties properties, double AMU, String CF, int RAD, int STAB, String DESC, String SDS) {
+    private  int cSOL;
+    public ChemicalItem(Properties properties, double AMU, String CF, int RAD, int STAB, String DESC, String SDS, int SOL){
         super(properties);
 
         this.cAMU = AMU;
@@ -151,31 +136,9 @@ public class ChemicalItem  extends Item {
         this.cSTAB = STAB;
         this.cDESC = DESC;
         this.cSDS = SDS;
+        this.cSOL = SOL;
     }
-    //possible constructor for solutions vvvvvv
-    public ChemicalItem(Properties properties, double VOL, ChemicalItem CHEM1, double MCHEM1, ChemicalItem CHEM2, double MCHEM2,
-                        ChemicalItem CHEM3, double MCHEM3, ChemicalItem CHEM4, double MCHEM4, ChemicalItem CHEM5, double MCHEM5,
-                        ChemicalItem CHEM6, double MCHEM6, int STAB, String DESC, String SDS) {
-        super(properties);
 
-        this.cVOL = VOL;
-        this.cCHEM1 = CHEM1;
-        this.cMCHEM1 = MCHEM1;
-        this.cCHEM2 = CHEM2;
-        this.cMCHEM2 = MCHEM2;
-        this.cCHEM3 = CHEM3;
-        this.cMCHEM3 = MCHEM3;
-        this.cCHEM4 = CHEM4;
-        this.cMCHEM4 = MCHEM4;
-        this.cCHEM5 = CHEM5;
-        this.cMCHEM5 = MCHEM5;
-        this.cCHEM6 = CHEM6;
-        this.cMCHEM6 = MCHEM6;
-
-        this.cSTAB = STAB;
-        this.cDESC = DESC;
-        this.cSDS = SDS;
-    }
     //I have to fix the set methods
     //Make the rest of the elements into this type
     //Get rid of / maybe add diatoms, like H2 gas
@@ -208,6 +171,8 @@ public class ChemicalItem  extends Item {
     //FOOD = String that will be put through an even to handle custom eating properties
     public String getcSDS(){return cSDS;}
 
+    //SOl = Solubility for beakers and solutions
+    public int getcSOL(){return cSOL;}
 
 
     String SDSInfo = "";
@@ -286,7 +251,7 @@ public class ChemicalItem  extends Item {
         }
 
 
-        if(Screen.hasShiftDown() && cAMU > 0 )
+        if(Screen.hasShiftDown())
         {
             components.add(Component.literal("AMU: " + getcAMU() +
                     "\nChemical Formula: " + getcCF()   +
@@ -295,36 +260,7 @@ public class ChemicalItem  extends Item {
                     getcDESC()).withStyle(ChatFormatting.AQUA));
 
         }
-        else if (Screen.hasShiftDown() && !(cAMU > 0) )
-        {
-            String contents = "";
-            if (!getcCHEM1().equals(ModItems.EMPTY))
-                contents = contents + getcCHEM1().getName();
-            if (!getcCHEM2().equals(ModItems.EMPTY) && contents.equals(""))
-                contents = contents + getcCHEM2().getName();
-            else
-                contents = contents + ", " + getcCHEM2().getName();
 
-
-            String molarContent = "\n";
-            if (!getcCHEM1().equals(ModItems.EMPTY))
-                molarContent = molarContent + getcCHEM1().getcCF() + ": " + getcMCHEM1();
-            if (!getcCHEM2().equals(ModItems.EMPTY) && molarContent.equals("\n"))
-                molarContent = molarContent + getcCHEM2().getcCF() + ": " + getcMCHEM2();
-            else
-                molarContent = molarContent + "\n" + getcCHEM2().getcCF() + ": " + getcMCHEM2();
-
-            components.add(Component.literal("Contents: " +
-                    //getName(new ItemStack(getcCHEM1())).getString() +
-                    //getcCHEM1().getName() +
-                    contents +
-                    "\nNumber of Moles:" +
-                    molarContent +
-                    //getcMCHEM1()  +
-                    "\nStability: " + getcSTAB() +
-                    getcDESC() + contents).withStyle(ChatFormatting.AQUA));
-
-        }
         else if (Screen.hasControlDown()) {
             //\n is freaking out for some reason
             //Good enough for now
@@ -345,7 +281,7 @@ public class ChemicalItem  extends Item {
 
     public String getName()
     {
-        String rawName = getName(new ItemStack(getcCHEM1())).getString();
+        String rawName = getName(new ItemStack(this)).getString();
         //String[] choppedID = rawName.split(".");
         String lowcaseName = rawName.replaceAll("item.chemmod.","");
         String[] choppedName = lowcaseName.split("_");
@@ -364,108 +300,5 @@ public class ChemicalItem  extends Item {
         }
         return cookedName;
     }
-    public double getcVOL() {
-        return cVOL;
-    }
 
-    public void setcVOL(double cVOL) {
-        this.cVOL = cVOL;
-    }
-
-    public ChemicalItem getcCHEM1() {
-        return cCHEM1;
-    }
-
-    public void setcCHEM1(ChemicalItem cCHEM1) {
-        this.cCHEM1 = cCHEM1;
-    }
-
-    public double getcMCHEM1() {
-        return cMCHEM1;
-    }
-
-    public void setcMCHEM1(double cMCHEM1) {
-        this.cMCHEM1 = cMCHEM1;
-    }
-
-    public ChemicalItem getcCHEM2() {
-        return cCHEM2;
-    }
-
-    public void setcCHEM2(ChemicalItem cCHEM2) {
-        this.cCHEM2 = cCHEM2;
-    }
-
-    public double getcMCHEM2() {
-        return cMCHEM2;
-    }
-
-    public void setcMCHEM2(double cMCHEM2) {
-        this.cMCHEM2 = cMCHEM2;
-    }
-
-    public ChemicalItem getcCHEM3() {
-        return cCHEM3;
-    }
-
-    public void setcCHEM3(ChemicalItem cCHEM3) {
-        this.cCHEM3 = cCHEM3;
-    }
-
-    public double getcMCHEM3() {
-        return cMCHEM3;
-    }
-
-    public void setcMCHEM3(double cMCHEM3) {
-        this.cMCHEM3 = cMCHEM3;
-    }
-
-
-    public ChemicalItem getcCHEM4() {
-        return cCHEM4;
-    }
-
-    public void setcCHEM4(ChemicalItem cCHEM4) {
-        this.cCHEM4 = cCHEM4;
-    }
-
-    public double getcMCHEM4() {
-        return cMCHEM4;
-    }
-
-    public void setcMCHEM4(double cMCHEM4) {
-        this.cMCHEM4 = cMCHEM4;
-    }
-
-    public ChemicalItem getcCHEM5() {
-        return cCHEM5;
-    }
-
-    public void setcCHEM5(ChemicalItem cCHEM5) {
-        this.cCHEM5 = cCHEM5;
-    }
-
-    public double getcMCHEM5() {
-        return cMCHEM5;
-    }
-
-    public void setcMCHEM5(double cMCHEM5) {
-        this.cMCHEM5 = cMCHEM5;
-    }
-
-    public ChemicalItem getcCHEM6() {
-        return cCHEM6;
-    }
-
-    public void setcCHEM6(ChemicalItem cCHEM6) {
-        this.cCHEM6 = cCHEM6;
-    }
-
-    public double getcMCHEM6() {
-        return cMCHEM6;
-    }
-
-    public void setcMCHEM6(double cMCHEM6) {
-        this.cMCHEM6 = cMCHEM6;
-    }
 }

@@ -5,6 +5,7 @@
   "key.category.chemmod.chem": "Status Key",
   "key.chemmod.status": "Check Status",
 
+  "_comment": "Rad status section",
 
   "message.chemmod.mw1": "I am well",
   "message.chemmod.mw2": "Despite it all, I'm doing okay",
@@ -39,6 +40,7 @@
 
 
 
+  "_comment": "Pre-Alpha stuff section",
 
   "item.chemmod.deconstructor": "Deconstructor",
 
@@ -46,6 +48,8 @@
   "block.chemmod.lab2_block": "Laboratory 2",
   "block.chemmod.jumpy_block": "Jumpy Block",
   "block.chemmod.lava_lamp": "Lava Lamp",
+
+  "_comment": "Stations/POI section",
 
   "block.chemmod.deconstructor_block": "Deconstructor",
   "block.chemmod.radicalizer": "Radicalizer",
@@ -60,6 +64,7 @@
 
 
 
+  "_comment": "Element Block section",
 
   "block.chemmod.lithium_block": "Lithium Block",
   "block.chemmod.beryllium_block": "Beryllium Block",
@@ -161,6 +166,7 @@
 
 
 
+  "_comment": "Elemental section",
 
   "item.chemmod.hydrogen": "Hydrogen",
   "item.chemmod.hydrogen_gas": "Hydrogen Gas",
@@ -291,6 +297,7 @@
   "item.chemmod.oganesson": "Oganesson",
 
 
+  "_comment": "Salts section",
 
   "item.chemmod.sodium_oxide": "Sodium Oxide",
   "item.chemmod.sodium_fluoride": "Sodium Fluoride",
@@ -843,6 +850,7 @@
 
 
 
+  "_comment": "Molecules section",
 
   "item.chemmod.water": "Water",
   "item.chemmod.carbon_dioxide": "Carbon Dioxide",
@@ -925,6 +933,7 @@
   "item.chemmod.sodium_amide": "Sodium Amide",
   "item.chemmod.ethanol": "Ethanol",
 
+  "_comment": "O-chem 1 Reactants section",
 
   "item.chemmod.potassium_tert_butoxide": "Potassium tert-Butoxide",
   "item.chemmod.tert_butyl_alcohol": "tert-Butyl Alcohol",
@@ -942,9 +951,12 @@
   "item.chemmod.pcc": "PCC",
   "item.chemmod.dichloromethane": "Dichloromethane",
 
+  "_comment": "Misc section",
+
   "item.chemmod.hot_plate": "Hot Plate",
   "item.chemmod.copper_nugget": "Copper Nugget",
 
+  "_comment": "Brominated Alkanes section",
 
   "item.chemmod.bromomethane": "Bromomethane",
   "item.chemmod.bromoethane": "Bromoethane",
@@ -963,6 +975,7 @@
 
 
 
+  "_comment": "Acids section",
 
   "item.chemmod.carbonic_acid_dil": "Carbonic Acid",
   "item.chemmod.hydrochloric_acid_dil": "Hydrochloric Acid",
@@ -972,6 +985,7 @@
   "item.chemmod.vinegar": "Vinegar",
 
 
+  "item.chemmod.beaker": "Beaker",
 
 
 
@@ -979,11 +993,12 @@
 
 
 
-
+  "_comment": "Tabs section",
   "itemGroup.chemtab": "Chemical Tab",
   "itemGroup.salttab": "Salts Tab",
   "itemGroup.blockstab": "Blocks Tab",
 
+  "_comment": "Villager Professions section",
 
   "entity.minecraft.villager.chemmod.chemist": "Chemist",
   "entity.minecraft.villager.chemmod.alchemist": "Alchemist Instructor",

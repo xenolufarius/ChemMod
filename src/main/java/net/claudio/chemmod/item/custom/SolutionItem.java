@@ -2,20 +2,29 @@ package net.claudio.chemmod.item.custom;
 
 
 
+import net.claudio.chemmod.ChemMod;
 import net.claudio.chemmod.item.ModItems;
 import net.minecraft.ChatFormatting;
 import net.minecraft.client.gui.screens.Screen;
+import net.minecraft.nbt.CompoundTag;
+import net.minecraft.nbt.NbtIo;
 import net.minecraft.network.chat.Component;
+import net.minecraft.world.InteractionHand;
+import net.minecraft.world.InteractionResultHolder;
+import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.TooltipFlag;
 import net.minecraft.world.level.Level;
+import net.minecraftforge.registries.ForgeRegistries;
+import net.minecraftforge.registries.RegistryObject;
 import org.jetbrains.annotations.Nullable;
 
 import java.util.List;
 
 
 public class SolutionItem extends Item {
+    public static final String ITEM_CHEMMOD = "item.chemmod.";
 
     //Temp variables that can be called upon for desc.
     //Actual values are added in via next method
@@ -44,6 +53,7 @@ public class SolutionItem extends Item {
     private String cDESC;
     private String cSDS;
     //possible constructor for solutions vvvvvv
+    /*
     public SolutionItem(Properties properties, double VOL, ChemicalItem CHEM1, double MCHEM1, ChemicalItem CHEM2, double MCHEM2,
                         ChemicalItem CHEM3, double MCHEM3, ChemicalItem CHEM4, double MCHEM4, ChemicalItem CHEM5, double MCHEM5,
                         ChemicalItem CHEM6, double MCHEM6, int STAB, String DESC, String SDS) {
@@ -67,13 +77,288 @@ public class SolutionItem extends Item {
         this.cDESC = DESC;
         this.cSDS = SDS;
     }
-    //I have to fix the set methods
-    //Make the rest of the elements into this type
-    //Get rid of / maybe add diatoms, like H2 gas
-    //^^^^^Would the simply H be useful? I guess protons for later on. Could be useful.
-    //But would any other one?
-    // OH wait!! I guess I might need to add ions and stuff
-    //Nahh
+
+
+     */
+
+    public SolutionItem(Properties properties){
+        super(properties);
+    }
+
+    private static final String VOL = "Volume";
+    private static final String CHEM1NAME = "Chemical1Name";
+    private static final String CHEM1MOLE = "Chemical1MoleAmount";
+    private static final String CHEM2NAME = "Chemical2Name";
+    private static final String CHEM2MOLE = "Chemical2MoleAmount";
+    private static final String CHEM3NAME = "Chemical3Name";
+    private static final String CHEM3MOLE = "Chemical3MoleAmount";
+    private static final String CHEM4NAME = "Chemical4Name";
+    private static final String CHEM4MOLE = "Chemical4MoleAmount";
+    private static final String CHEM5NAME = "Chemical5Name";
+    private static final String CHEM5MOLE = "Chemical5MoleAmount";
+    private static final String CHEM6NAME = "Chemical6Name";
+    private static final String CHEM6MOLE = "Chemical7MoleAmount";
+    private static final String TEMPCHEM = "TemporaryChem";
+
+    public ItemStack createNewBeaker() {
+        ItemStack replacement = new ItemStack(this);
+        // Add any additional data or properties to the new beaker item
+        // For example, copy the NBT data or other properties you need
+        // ...
+        CompoundTag nbt = new CompoundTag();
+
+        //Half a liter of water
+        nbt.putDouble("SoluteMoles",27.7469);
+        nbt.putDouble(CHEM1MOLE,0.0);
+        nbt.putDouble(CHEM2MOLE,0.0);
+        nbt.putDouble(CHEM3MOLE,0.0);
+        nbt.putDouble(CHEM4MOLE,0.0);
+        nbt.putDouble(CHEM5MOLE,0.0);
+        nbt.putDouble(CHEM6MOLE,0.0);
+        nbt.putString(CHEM1NAME,"N/A");
+        nbt.putString(CHEM2NAME,"N/A");
+        nbt.putString(CHEM3NAME,"N/A");
+        nbt.putString(CHEM4NAME,"N/A");
+        nbt.putString(CHEM5NAME,"N/A");
+        nbt.putString(CHEM6NAME,"N/A");
+        nbt.putString(TEMPCHEM,"Empty");
+
+
+
+        replacement.setTag(nbt);
+
+        return replacement;
+    }
+
+    //todo: works so far. optimistic. need to expand it now
+    //Changed from void to have it return the new beaker to wherever it was
+    public ItemStack addChemicalToBeaker(ItemStack beaker, ChemicalItem chemical)
+    {
+        CompoundTag nbt = beaker.getTag();
+        if(nbt == null)
+        {
+            beaker = createNewBeaker();
+            nbt = beaker.getTag();
+            //nbt = new CompoundTag();
+        }
+        String chem1 = nbt.getString(CHEM1NAME);
+        String chem2 = nbt.getString(CHEM2NAME);
+        String chem3 = nbt.getString(CHEM3NAME);
+        String chem4 = nbt.getString(CHEM4NAME);
+        String chem5 = nbt.getString(CHEM5NAME);
+        String chem6 = nbt.getString(CHEM6NAME);
+
+        if("Water".equals(chemical.getName()))
+        {
+            Double currentMole = nbt.getDouble("SoluteMoles");
+            Double newMole = currentMole + 1.0;
+            nbt.putDouble("SoluteMoles", newMole);
+        }
+        if(chem1.equals(chemical.getName()))
+        {
+            Double currentMole = nbt.getDouble(CHEM1MOLE);
+            Double newMole = currentMole + 1.0;
+            nbt.putDouble(CHEM1MOLE, newMole);
+        }
+        else if(chem1.isBlank() || chem1.equals("N/A")) {
+            nbt.putString(CHEM1NAME, chemical.getName());
+            Double currentMole = nbt.getDouble(CHEM1MOLE);
+            Double newMole = currentMole + 1.0;
+            nbt.putDouble(CHEM1MOLE, newMole);
+        }
+        else {
+            if(chem2.equals(chemical.getName()))
+            {
+                Double currentMole = nbt.getDouble(CHEM2MOLE);
+                Double newMole = currentMole + 1.0;
+                nbt.putDouble(CHEM2MOLE, newMole);
+            }
+            else if(chem2.isBlank() || chem2.equals("N/A")) {
+                nbt.putString(CHEM2NAME, chemical.getName());
+                Double currentMole = nbt.getDouble(CHEM2MOLE);
+                Double newMole = currentMole + 1.0;
+                nbt.putDouble(CHEM2MOLE, newMole);
+            }
+            else {
+                if(chem3.equals(chemical.getName()))
+                {
+                    Double currentMole = nbt.getDouble(CHEM3MOLE);
+                    Double newMole = currentMole + 1.0;
+                    nbt.putDouble(CHEM3MOLE, newMole);
+                }
+                else if(chem3.isBlank() || chem3.equals("N/A")) {
+                    nbt.putString(CHEM3NAME, chemical.getName());
+                    Double currentMole = nbt.getDouble(CHEM3MOLE);
+                    Double newMole = currentMole + 1.0;
+                    nbt.putDouble(CHEM3MOLE, newMole);
+                }
+                else {
+                    if(chem4.equals(chemical.getName()))
+                    {
+                        Double currentMole = nbt.getDouble(CHEM4MOLE);
+                        Double newMole = currentMole + 1.0;
+                        nbt.putDouble(CHEM4MOLE, newMole);
+                    }
+                    else if(chem4.isBlank() || chem4.equals("N/A")) {
+                        nbt.putString(CHEM4NAME, chemical.getName());
+                        Double currentMole = nbt.getDouble(CHEM4MOLE);
+                        Double newMole = currentMole + 1.0;
+                        nbt.putDouble(CHEM4MOLE, newMole);
+                    }
+                    else {
+                        if(chem5.equals(chemical.getName()))
+                        {
+                            Double currentMole = nbt.getDouble(CHEM5MOLE);
+                            Double newMole = currentMole + 1.0;
+                            nbt.putDouble(CHEM5MOLE, newMole);
+                        }
+                        else if(chem5.isBlank() || chem5.equals("N/A")) {
+                            nbt.putString(CHEM5NAME, chemical.getName());
+                            Double currentMole = nbt.getDouble(CHEM5MOLE);
+                            Double newMole = currentMole + 1.0;
+                            nbt.putDouble(CHEM5MOLE, newMole);
+                        }else {
+                            if(chem6.equals(chemical.getName()))
+                            {
+                                Double currentMole = nbt.getDouble(CHEM6MOLE);
+                                Double newMole = currentMole + 1.0;
+                                nbt.putDouble(CHEM6MOLE, newMole);
+                            }
+                            else if(chem6.isBlank() || chem6.equals("N/A")) {
+                                nbt.putString(CHEM6NAME, chemical.getName());
+                                Double currentMole = nbt.getDouble(CHEM6MOLE);
+                                Double newMole = currentMole + 1.0;
+                                nbt.putDouble(CHEM6MOLE, newMole);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+
+        ItemStack newBeaker = beaker.copy();
+
+
+        newBeaker.setTag(nbt);
+
+        //testing getChemical method
+        //ItemStack newBeaker = new ItemStack(getChemical(chemical.getName()));
+        return newBeaker;
+    }
+
+    public ItemStack removeChemicalFromBeaker(ItemStack beaker)
+    {
+        CompoundTag nbt = beaker.getTag();
+        if(nbt == null)
+        {
+            nbt = new CompoundTag();
+        }
+        String chem1 = nbt.getString(CHEM1NAME);
+        String chem2 = nbt.getString(CHEM2NAME);
+        String chem3 = nbt.getString(CHEM3NAME);
+        String chem4 = nbt.getString(CHEM4NAME);
+        String chem5 = nbt.getString(CHEM5NAME);
+        String chem6 = nbt.getString(CHEM6NAME);
+
+        ChemicalItem che = getChemical(chem1);
+        if(getChemical(chem1).getcSOL() == 2)
+        {
+            Double currentMole = nbt.getDouble(CHEM1MOLE);
+            Double newMole = Math.max(0,currentMole - 1.0);
+            nbt.putDouble(CHEM1MOLE, newMole);
+            if(nbt.getDouble(CHEM1MOLE) == 0)
+            {
+                nbt.putString(CHEM1NAME, "N/A");
+            }
+            nbt.putString(TEMPCHEM, chem1);
+        }
+        else {
+            if (getChemical(chem2).getcSOL() == 2) {
+                Double currentMole = nbt.getDouble(CHEM2MOLE);
+                Double newMole = Math.max(0, currentMole - 1.0);
+                nbt.putDouble(CHEM2MOLE, newMole);
+                if (nbt.getDouble(CHEM2MOLE) == 0) {
+                    nbt.putString(CHEM2NAME, "N/A");
+                }
+                nbt.putString(TEMPCHEM, chem2);
+            }
+            else {
+                if (getChemical(chem3).getcSOL() == 2) {
+                    Double currentMole = nbt.getDouble(CHEM3MOLE);
+                    Double newMole = Math.max(0, currentMole - 1.0);
+                    nbt.putDouble(CHEM3MOLE, newMole);
+                    if (nbt.getDouble(CHEM3MOLE) == 0) {
+                        nbt.putString(CHEM3NAME, "N/A");
+                    }
+                    nbt.putString(TEMPCHEM, chem3);
+                }
+                else {
+                    if (getChemical(chem4).getcSOL() == 2) {
+                        Double currentMole = nbt.getDouble(CHEM4MOLE);
+                        Double newMole = Math.max(0, currentMole - 1.0);
+                        nbt.putDouble(CHEM4MOLE, newMole);
+                        if (nbt.getDouble(CHEM4MOLE) == 0) {
+                            nbt.putString(CHEM4NAME, "N/A");
+                        }
+                        nbt.putString(TEMPCHEM, chem4);
+                    }
+                    else {
+                        if (getChemical(chem5).getcSOL() == 2) {
+                            Double currentMole = nbt.getDouble(CHEM5MOLE);
+                            Double newMole = Math.max(0, currentMole - 1.0);
+                            nbt.putDouble(CHEM5MOLE, newMole);
+                            if (nbt.getDouble(CHEM5MOLE) == 0) {
+                                nbt.putString(CHEM5NAME, "N/A");
+                            }
+                            nbt.putString(TEMPCHEM, chem5);
+                        }
+                        else {
+                            if (getChemical(chem6).getcSOL() == 2) {
+                                Double currentMole = nbt.getDouble(CHEM6MOLE);
+                                Double newMole = Math.max(0, currentMole - 1.0);
+                                nbt.putDouble(CHEM6MOLE, newMole);
+                                if (nbt.getDouble(CHEM6MOLE) == 0) {
+                                    nbt.putString(CHEM6NAME, "N/A");
+                                }
+                                nbt.putString(TEMPCHEM, chem6);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+
+
+
+
+        ItemStack newBeaker = beaker.copy();
+
+        beaker = createNewBeaker();
+        newBeaker.setTag(nbt);
+
+        return newBeaker;
+    }
+
+    public ItemStack getChemicalFromBeaker(ItemStack beaker)
+    {
+        CompoundTag nbt = beaker.getTag();
+        if(nbt == null)
+        {
+            nbt = new CompoundTag();
+        }
+        String temp = nbt.getString(TEMPCHEM);
+
+        ChemicalItem che = getChemical(temp);
+        ItemStack chemical = new ItemStack(che);
+
+        nbt.putString(TEMPCHEM, "Empty");
+        beaker.setTag(nbt);
+
+
+        return chemical;
+    }
 
     //STAB = Stability Index. Essentially reactivity. Number can be used to pass a check to see if it reacts with other possible chemicals??
     //OR, can be used as a sort of timer to determine decomposition. Same concept, but applied differently.
@@ -85,163 +370,119 @@ public class SolutionItem extends Item {
     //FOOD = String that will be put through an even to handle custom eating properties
     public String getcSDS(){return cSDS;}
 
-
-
-    String SDSInfo = "";
-
-    //Maybe make custom registry for food properties? Apply properties to items.
     @Override
     public void appendHoverText(ItemStack stack, @Nullable Level level, List<Component> components, TooltipFlag flag) {
-
-        SDSInfo = "";
-        String[] SDSfragments = getcSDS().split(",");
-        for(String sds : SDSfragments)
-        {
-            //TOXIC
-            if (sds.equals("T")) {
-                if (SDSInfo.equals(""))
-                    SDSInfo = "Toxic";
-                else
-                    SDSInfo = SDSInfo + ", " + "Toxic";
-            }
-            //CORROSIVE
-            if (sds.equals("C")) {
-                if (SDSInfo.equals(""))
-                    SDSInfo = "Corrosive";
-                else
-                    SDSInfo = SDSInfo + ", " + "Corrosive";
-            }
-            //HEALTH HAZARD
-            if (sds.equals("H")) {
-                if (SDSInfo.equals(""))
-                    SDSInfo = "Health Hazard";
-                else
-                    SDSInfo = SDSInfo + ", " + "Health Hazard";
-            }
-            //EXCLAMATION MARK
-            if (sds.equals("I")) {
-                if (SDSInfo.equals(""))
-                    SDSInfo = "Irritant";
-                else
-                    SDSInfo = SDSInfo + ", " + "Irritant";
-            }
-            //GAS CYLINDER
-            if (sds.equals("G")) {
-                if (SDSInfo.equals(""))
-                    SDSInfo = "Gas Under Pressure";
-                else
-                    SDSInfo = SDSInfo + ", " + "Gas Under Pressure";
-            }
-            //EXPLODING BOMB
-            if (sds.equals("E")) {
-                if (SDSInfo.equals(""))
-                    SDSInfo = "Explosive";
-                else
-                    SDSInfo = SDSInfo + ", " + "Explosive";
-            }
-            //FLAMMABLE
-            if (sds.equals("F")) {
-                if (SDSInfo.equals(""))
-                    SDSInfo = "Flammable";
-                else
-                    SDSInfo = SDSInfo + ", " + "Flammable";
-            }
-            //OXIDIZER
-            if (sds.equals("O")) {
-                if (SDSInfo.equals(""))
-                    SDSInfo = "Oxidizer";
-                else
-                    SDSInfo = SDSInfo + ", " + "Oxidizer";
-            }
-            //HARMFUL TO ENVIRONMENT
-            if (sds.equals("A")) {
-                if (SDSInfo.equals(""))
-                    SDSInfo = "Harmful To Environment";
-                else
-                    SDSInfo = SDSInfo + ", " + "Harmful To Environment";
-            }
-        }
-
-
-
         if (Screen.hasShiftDown())
         {
-            String contents = "";
-            if (!getcCHEM1().equals(ModItems.EMPTY.get()))
-                contents = contents + getcCHEM1().getName();
-            if (!getcCHEM2().equals(ModItems.EMPTY.get()) && contents.equals(""))
-                contents = contents + getcCHEM2().getName();
-            else if (!getcCHEM2().equals(ModItems.EMPTY.get()))
-                contents = contents + ", " + getcCHEM2().getName();
-            if (!getcCHEM3().equals(ModItems.EMPTY.get()) && contents.equals(""))
-                contents = contents + getcCHEM3().getName();
-            else if (!getcCHEM3().equals(ModItems.EMPTY.get()))
-                contents = contents + ", " + getcCHEM3().getName();
-            if (!getcCHEM4().equals(ModItems.EMPTY.get()) && contents.equals(""))
-                contents = contents + getcCHEM4().getName();
-            else if (!getcCHEM4().equals(ModItems.EMPTY.get()))
-                contents = contents + ", " + getcCHEM4().getName();
-            if (!getcCHEM5().equals(ModItems.EMPTY.get()) && contents.equals(""))
-                contents = contents + getcCHEM5().getName();
-            else if (!getcCHEM5().equals(ModItems.EMPTY.get()))
-                contents = contents + ", " + getcCHEM5().getName();
-            if (!getcCHEM6().equals(ModItems.EMPTY.get()) && contents.equals(""))
-                contents = contents + getcCHEM6().getName();
-            else if (!getcCHEM6().equals(ModItems.EMPTY.get()))
-                contents = contents + ", " + getcCHEM6().getName();
+            CompoundTag nbt = stack.getTag();
+            if (nbt == null)
+                stack = createNewBeaker();
+            nbt = stack.getTag();
+            if(nbt != null) {
 
+                String contents = "";
 
-            String molarContent = "\n";
-            if (!getcCHEM1().equals(ModItems.EMPTY.get()))
-                molarContent = molarContent + getcCHEM1().getcCF() + ": " + getcMCHEM1();
-            if (!getcCHEM2().equals(ModItems.EMPTY.get()) && molarContent.equals("\n"))
-                molarContent = molarContent + getcCHEM2().getcCF() + ": " + getcMCHEM2();
-            else if (!getcCHEM2().equals(ModItems.EMPTY.get()))
-                molarContent = molarContent + "\n" + getcCHEM2().getcCF() + ": " + getcMCHEM2();
-            if (!getcCHEM3().equals(ModItems.EMPTY.get()) && molarContent.equals("\n"))
-                molarContent = molarContent + getcCHEM3().getcCF() + ": " + getcMCHEM3();
-            else if (!getcCHEM3().equals(ModItems.EMPTY.get()))
-                molarContent = molarContent + "\n" + getcCHEM3().getcCF() + ": " + getcMCHEM3();
-            if (!getcCHEM4().equals(ModItems.EMPTY.get()) && molarContent.equals("\n"))
-                molarContent = molarContent + getcCHEM4().getcCF() + ": " + getcMCHEM4();
-            else if (!getcCHEM4().equals(ModItems.EMPTY.get()))
-                molarContent = molarContent + "\n" + getcCHEM4().getcCF() + ": " + getcMCHEM4();
-            if (!getcCHEM5().equals(ModItems.EMPTY.get()) && molarContent.equals("\n"))
-                molarContent = molarContent + getcCHEM5().getcCF() + ": " + getcMCHEM5();
-            else if (!getcCHEM5().equals(ModItems.EMPTY.get()))
-                molarContent = molarContent + "\n" + getcCHEM5().getcCF() + ": " + getcMCHEM5();
-            if (!getcCHEM6().equals(ModItems.EMPTY.get()) && molarContent.equals("\n"))
-                molarContent = molarContent + getcCHEM6().getcCF() + ": " + getcMCHEM6();
-            else if (!getcCHEM6().equals(ModItems.EMPTY.get()))
-                molarContent = molarContent + "\n" + getcCHEM6().getcCF() + ": " + getcMCHEM6();
+                contents = nbt.getString(CHEM1NAME) + ", " + nbt.getString(CHEM2NAME) +
+                        ", " + nbt.getString(CHEM3NAME) +
+                        ", " + nbt.getString(CHEM4NAME) +
+                        ", " + nbt.getString(CHEM5NAME) +
+                        ", " + nbt.getString(CHEM6NAME);
+                String[] contentParts = contents.split(", ");
+                contents = "";
+                for(int x = 0; x<contentParts.length; x++)
+                {
+                    if(!contentParts[x].equals("N/A"))
+                    {
+                         contents = contents + contentParts[x] + ", ";
 
-            components.add(Component.literal("Contents: " +
-                    //getName(new ItemStack(getcCHEM1())).getString() +
-                    //getcCHEM1().getName() +
-                    contents +
-                    "\nNumber of Moles:" +
-                    molarContent +
-                    //getcMCHEM1()  +
-                    "\nStability: " + getcSTAB() +
-                    getcDESC() + contents).withStyle(ChatFormatting.AQUA));
+                    }
+                }
+                if (contents.length() > 2)
+                {
+                    contents = contents.substring(0,contents.length()-2);
+                }
+                String soluteContent = "Water: " + nbt.getDouble("SoluteMoles") + "\n";
+                String molarContent = nbt.getString(CHEM1NAME) + ": " + nbt.getDouble(CHEM1MOLE) + "mol\n" +
+                        nbt.getString(CHEM2NAME) + ": " + nbt.getDouble(CHEM2MOLE) + "mol\n" +
+                        nbt.getString(CHEM3NAME) + ": " + nbt.getDouble(CHEM3MOLE) + "mol\n" +
+                        nbt.getString(CHEM4NAME) + ": " + nbt.getDouble(CHEM4MOLE) + "mol\n" +
+                        nbt.getString(CHEM5NAME) + ": " + nbt.getDouble(CHEM5MOLE) + "mol\n" +
+                        nbt.getString(CHEM6NAME) + ": " + nbt.getDouble(CHEM6MOLE) + "mol";
 
-        }
-        else if (Screen.hasControlDown()) {
-            //\n is freaking out for some reason
-            //Good enough for now
-            if(SDSInfo.equals(""))
-                components.add(Component.literal("Hazards: None").withStyle(ChatFormatting.YELLOW));
-            else
-                components.add(Component.literal("Hazards: " + SDSInfo).withStyle(ChatFormatting.YELLOW));
+                //use split
+                molarContent.replaceAll(": 0.0", "");
+                molarContent.replaceAll("N/A", "");
+                components.add(Component.literal("Contents: " +
+                        //getName(new ItemStack(getcCHEM1())).getString() +
+                        //getcCHEM1().getName() +
+                        contents +
+                        "\nNumber of Moles:\n" +
+                        soluteContent +
+                        //molarContent
+                        molarContent
+                                //+
+                        //getcMCHEM1()  +
+                        //"\nStability: " + getcSTAB() +
+                        //getcDESC() + contents
+                ).withStyle(ChatFormatting.AQUA));
+            }
         }
         else
         {
-            components.add(Component.literal("Press SHIFT for more info").withStyle(ChatFormatting.DARK_GREEN));
+            components.add(Component.literal("Right Click to add something!\nPress SHIFT to see contents.").withStyle(ChatFormatting.DARK_GREEN));
         }
-
-        super.appendHoverText(stack, level, components, flag);
     }
 
+
+    @Override
+    public InteractionResultHolder<ItemStack> use(Level level, Player player, InteractionHand hand) {
+        if(!level.isClientSide() && hand == InteractionHand.MAIN_HAND && !player.isCrouching())
+        {
+            if(player.getOffhandItem().getItem().getClass().equals(ChemicalItem.class)) {
+                ChemicalItem OffHand = (ChemicalItem) player.getOffhandItem().getItem();
+                SolutionItem MainHand = (SolutionItem) player.getMainHandItem().getItem();
+                player.setItemInHand(InteractionHand.MAIN_HAND, MainHand.addChemicalToBeaker(player.getMainHandItem(), OffHand));
+                //player.setItemInHand(InteractionHand.MAIN_HAND, MainHand.removeChemicalFromBeaker(player.getMainHandItem()));
+                if(player.getOffhandItem().getCount()>1) {
+                    player.getOffhandItem().setCount(player.getOffhandItem().getCount() - 1);
+                    player.setItemInHand(InteractionHand.OFF_HAND, player.getOffhandItem());
+                }
+                else {
+                    player.setItemInHand(InteractionHand.OFF_HAND, ItemStack.EMPTY);
+                }
+            }
+        }
+
+        else if(!level.isClientSide() && hand == InteractionHand.MAIN_HAND && player.isCrouching())
+        {
+                ChemicalItem OffHand = (ChemicalItem) player.getOffhandItem().getItem();
+                SolutionItem MainHand = (SolutionItem) player.getMainHandItem().getItem();
+                //player.setItemInHand(InteractionHand.MAIN_HAND, MainHand.addChemicalToBeaker(player.getMainHandItem(), OffHand));
+                player.setItemInHand(InteractionHand.MAIN_HAND, MainHand.removeChemicalFromBeaker(player.getMainHandItem()));
+                ItemStack temp = MainHand.getChemicalFromBeaker(player.getMainHandItem());
+                if(player.getOffhandItem().isEmpty()) {
+                    player.setItemInHand(InteractionHand.OFF_HAND, MainHand.getChemicalFromBeaker(player.getMainHandItem()));
+                }
+                else if(player.getOffhandItem().getItem().equals(temp.getItem()))
+                {
+                    if(player.getOffhandItem().getCount()<64) {
+                        player.getOffhandItem().setCount(player.getOffhandItem().getCount() + 1);
+                        player.setItemInHand(InteractionHand.OFF_HAND, player.getOffhandItem());
+                    }
+                    else
+                    {
+                        player.drop(temp, true, false);
+                    }
+                }
+                else
+                {
+                    //MainHand.getChemicalFromBeaker(player.getMainHandItem()).
+                    player.drop(temp, true, false);
+                }
+        }
+
+        return super.use(level, player, hand);
+    }
     //Solutions getters and setters
 
     public String getName()
@@ -265,109 +506,39 @@ public class SolutionItem extends Item {
         }
         return cookedName;
     }
-    public double getcVOL() {
-        return cVOL;
+
+    public ChemicalItem getChemical(String name)
+    {
+        /*
+        String[] choppedName = name.split(" ");
+        for (int n = 0; n < choppedName.length; n++)
+        {
+
+            //to lower case
+            String letter = choppedName[n].substring(0,1);
+            String rest = choppedName[n].substring(1);
+            letter = letter.toLowerCase();
+            choppedName[n] = letter + rest;
+        }
+        String ogName = "item.chemmod.";
+
+        for (int l = 0; l < choppedName.length; l++)
+        {
+
+            if (l!=choppedName.length-1)
+                ogName = ogName + choppedName[l] + "_";
+            else
+                ogName = ogName + choppedName[l];
+        }
+
+         */
+        ChemicalItem chemicalItem = (ChemicalItem) ModItems.getByName(name).get().asItem();
+        return chemicalItem;
     }
 
-    public void setcVOL(double cVOL) {
-        this.cVOL = cVOL;
-    }
 
     public ChemicalItem getcCHEM1() {
         return cCHEM1;
-    }
-
-    public void setcCHEM1(ChemicalItem cCHEM1) {
-        this.cCHEM1 = cCHEM1;
-    }
-
-    public double getcMCHEM1() {
-        return cMCHEM1;
-    }
-
-    public void setcMCHEM1(double cMCHEM1) {
-        this.cMCHEM1 = cMCHEM1;
-    }
-
-    public ChemicalItem getcCHEM2() {
-        return cCHEM2;
-    }
-
-    public void setcCHEM2(ChemicalItem cCHEM2) {
-        this.cCHEM2 = cCHEM2;
-    }
-
-    public double getcMCHEM2() {
-        return cMCHEM2;
-    }
-
-    public void setcMCHEM2(double cMCHEM2) {
-        this.cMCHEM2 = cMCHEM2;
-    }
-
-    public ChemicalItem getcCHEM3() {
-        return cCHEM3;
-    }
-
-    public void setcCHEM3(ChemicalItem cCHEM3) {
-        this.cCHEM3 = cCHEM3;
-    }
-
-    public double getcMCHEM3() {
-        return cMCHEM3;
-    }
-
-    public void setcMCHEM3(double cMCHEM3) {
-        this.cMCHEM3 = cMCHEM3;
-    }
-
-
-    public ChemicalItem getcCHEM4() {
-        return cCHEM4;
-    }
-
-    public void setcCHEM4(ChemicalItem cCHEM4) {
-        this.cCHEM4 = cCHEM4;
-    }
-
-    public double getcMCHEM4() {
-        return cMCHEM4;
-    }
-
-    public void setcMCHEM4(double cMCHEM4) {
-        this.cMCHEM4 = cMCHEM4;
-    }
-
-    public ChemicalItem getcCHEM5() {
-        return cCHEM5;
-    }
-
-    public void setcCHEM5(ChemicalItem cCHEM5) {
-        this.cCHEM5 = cCHEM5;
-    }
-
-    public double getcMCHEM5() {
-        return cMCHEM5;
-    }
-
-    public void setcMCHEM5(double cMCHEM5) {
-        this.cMCHEM5 = cMCHEM5;
-    }
-
-    public ChemicalItem getcCHEM6() {
-        return cCHEM6;
-    }
-
-    public void setcCHEM6(ChemicalItem cCHEM6) {
-        this.cCHEM6 = cCHEM6;
-    }
-
-    public double getcMCHEM6() {
-        return cMCHEM6;
-    }
-
-    public void setcMCHEM6(double cMCHEM6) {
-        this.cMCHEM6 = cMCHEM6;
     }
 
 }
