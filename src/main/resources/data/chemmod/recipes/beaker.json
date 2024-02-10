@@ -1,17 +1,17 @@
 {
-  "type": "minecraft:crafting_shapeless",
-
-  "ingredients": [
-    {
-      "item": "chemmod:chemical2"
-    },
-    {
-      "item": "chemmod:chemical2"
-    }
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "# #",
+    "# #",
+    "###"
   ],
+  "key": {
+    "#": {
+      "item": "minecraft:glass"
+    }
+  },
   "result": {
-    "item": "chemmod:beaker",
-    "count": 1
+    "item": "chemmod:beaker"
   }
 
 }

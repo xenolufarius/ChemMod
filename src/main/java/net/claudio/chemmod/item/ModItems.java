@@ -337,13 +337,13 @@ public class ModItems {
     //list out cations: Li, Be, Na, Mg, K, Ca, Rb, Sr, Cs, Ba, Fr, Ra, NH4
     //sodium salts
     public static final RegistryObject<Item> SODIUM_OXIDE = Items.register( "sodium_oxide",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.SALT_TAB).food(new FoodProperties.Builder().nutrition(0).build()),61.98,"Na2O",0,4,"\nDesc: A widely used compound, which finds use in the production of ceramics and glasses.","C,S1", 1));
+            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.SALT_TAB).food(new FoodProperties.Builder().nutrition(0).build()),61.98,"Na2O",0,4,"\nDesc: A widely used compound, which finds use in the production of ceramics and glasses.","C,S1", 3));
     public static final RegistryObject<Item> SODIUM_FLUORIDE = Items.register( "sodium_fluoride",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.SALT_TAB).food(new FoodProperties.Builder().nutrition(0).build()),41.99,"NaF",0,4,"\nDesc: Sodium Fluoride has medicinal uses, used as an active ingredient in toothpastes to prevent decay.","T,I,H", 1));
+            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.SALT_TAB).food(new FoodProperties.Builder().nutrition(0).build()),41.99,"NaF",0,4,"\nDesc: Sodium Fluoride has medicinal uses, used as an active ingredient in toothpastes to prevent decay.","T,I,H", 0));
     public static final RegistryObject<Item> SODIUM_SULFIDE = Items.register( "sodium_sulfide",
             () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.SALT_TAB).food(new FoodProperties.Builder().nutrition(0).build()),78.05,"Na2S",0,4,"\nDesc: This compound finds its use in the paper and pulp production industries.","C,T,I,A", 1));
     public static final RegistryObject<Item> SODIUM_CHLORIDE = Items.register( "sodium_chloride",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.SALT_TAB).food(new FoodProperties.Builder().nutrition(0).build()),58.44,"NaCl",0,4,"\nDesc: This compound is widely used, most known for its culinary use as table salt.","", 1));
+            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.SALT_TAB).food(new FoodProperties.Builder().nutrition(0).build()),58.44,"NaCl",0,4,"\nDesc: This compound is widely used, most known for its culinary use as table salt.","", 2));
     public static final RegistryObject<Item> SODIUM_NITRIDE = Items.register( "sodium_nitride",
             () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.SALT_TAB).food(new FoodProperties.Builder().nutrition(0).build()),82.98,"Na3N",0,0,"\nDesc: Unfortunately, Sodium Nitride is too unstable to be used for much.","", 1));
     public static final RegistryObject<Item> SODIUM_BROMIDE = Items.register( "sodium_bromide",
@@ -1708,7 +1708,9 @@ public class ModItems {
 
 
     public static final RegistryObject<Item> EMPTY = Items.register( "empty",
-            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,0,"\nDesc: Filler","", 1));
+            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,0,"\nDess: Placeholder item. If you are reading this (not in creative), let me know. Something must be wrong.","", 1));
+    public static final RegistryObject<Item> ONE_LITRE = Items.register( "one_litre",
+            () -> new ChemicalItem(new Item.Properties().tab(ModCreativeModeTab.CHEM_TAB).food(new FoodProperties.Builder().nutrition(0).build()),0,"",0,0,"\nDesc: Placeholder item. If you are reading this (not in creative), let me know. Something must be wrong.","", 1));
 
 
 
