@@ -159,97 +159,83 @@ public class SolutionItem extends Item {
             Double currentMole = nbt.getDouble(SOLVENTMOLE);
             Double newMole = currentMole + 1.0;
             nbt.putDouble(SOLVENTMOLE, newMole);
-            if(solv .equals("N/A"))
+            if(solv.equals("N/A"))
             {
                 nbt.putString(SOLVENTNAME, "Water");
             }
 
         }
-        if("One Litre".equals(chemical.getName()))
+        else if (getChemical(chemical.getName()).asItem().equals(ModItems.ONE_LITRE.get().asItem()))
         {
             Double currentMole = nbt.getDouble(SOLVENTMOLE);
             Double newMole = currentMole + 55.4939;
             nbt.putDouble(SOLVENTMOLE, newMole);
-            if(solv .equals("N/A"))
+            if(solv.equals("N/A"))
             {
                 nbt.putString(SOLVENTNAME, "Water");
             }
         }
-        if(chem1.equals(chemical.getName()))
-        {
-            Double currentMole = nbt.getDouble(CHEM1MOLE);
-            Double newMole = currentMole + 1.0;
-            nbt.putDouble(CHEM1MOLE, newMole);
-        }
-        else if(chem1.isBlank() || chem1.equals("N/A") && !("One Litre".equals(chemical.getName())) && !chem1.equals(solv)) {
-            nbt.putString(CHEM1NAME, chemical.getName());
-            Double currentMole = nbt.getDouble(CHEM1MOLE);
-            Double newMole = currentMole + 1.0;
-            nbt.putDouble(CHEM1MOLE, newMole);
-        }
         else {
-            if(chem2.equals(chemical.getName()))
-            {
-                Double currentMole = nbt.getDouble(CHEM2MOLE);
+            if (chem1.equals(chemical.getName())) {
+                Double currentMole = nbt.getDouble(CHEM1MOLE);
                 Double newMole = currentMole + 1.0;
-                nbt.putDouble(CHEM2MOLE, newMole);
-            }
-            else if(chem2.isBlank() || chem2.equals("N/A")) {
-                nbt.putString(CHEM2NAME, chemical.getName());
-                Double currentMole = nbt.getDouble(CHEM2MOLE);
+                nbt.putDouble(CHEM1MOLE, newMole);
+            } else if ((chem1.isBlank() || chem1.equals("N/A")) && !("One Litre".equals(chemical.getName())) && !chem1.equals(solv)) {
+                nbt.putString(CHEM1NAME, chemical.getName());
+                Double currentMole = nbt.getDouble(CHEM1MOLE);
                 Double newMole = currentMole + 1.0;
-                nbt.putDouble(CHEM2MOLE, newMole);
-            }
-            else {
-                if(chem3.equals(chemical.getName()))
-                {
-                    Double currentMole = nbt.getDouble(CHEM3MOLE);
+                nbt.putDouble(CHEM1MOLE, newMole);
+            } else {
+                if (chem2.equals(chemical.getName())) {
+                    Double currentMole = nbt.getDouble(CHEM2MOLE);
                     Double newMole = currentMole + 1.0;
-                    nbt.putDouble(CHEM3MOLE, newMole);
-                }
-                else if(chem3.isBlank() || chem3.equals("N/A")) {
-                    nbt.putString(CHEM3NAME, chemical.getName());
-                    Double currentMole = nbt.getDouble(CHEM3MOLE);
+                    nbt.putDouble(CHEM2MOLE, newMole);
+                } else if (chem2.isBlank() || chem2.equals("N/A")) {
+                    nbt.putString(CHEM2NAME, chemical.getName());
+                    Double currentMole = nbt.getDouble(CHEM2MOLE);
                     Double newMole = currentMole + 1.0;
-                    nbt.putDouble(CHEM3MOLE, newMole);
-                }
-                else {
-                    if(chem4.equals(chemical.getName()))
-                    {
-                        Double currentMole = nbt.getDouble(CHEM4MOLE);
+                    nbt.putDouble(CHEM2MOLE, newMole);
+                } else {
+                    if (chem3.equals(chemical.getName())) {
+                        Double currentMole = nbt.getDouble(CHEM3MOLE);
                         Double newMole = currentMole + 1.0;
-                        nbt.putDouble(CHEM4MOLE, newMole);
-                    }
-                    else if(chem4.isBlank() || chem4.equals("N/A")) {
-                        nbt.putString(CHEM4NAME, chemical.getName());
-                        Double currentMole = nbt.getDouble(CHEM4MOLE);
+                        nbt.putDouble(CHEM3MOLE, newMole);
+                    } else if (chem3.isBlank() || chem3.equals("N/A")) {
+                        nbt.putString(CHEM3NAME, chemical.getName());
+                        Double currentMole = nbt.getDouble(CHEM3MOLE);
                         Double newMole = currentMole + 1.0;
-                        nbt.putDouble(CHEM4MOLE, newMole);
-                    }
-                    else {
-                        if(chem5.equals(chemical.getName()))
-                        {
-                            Double currentMole = nbt.getDouble(CHEM5MOLE);
+                        nbt.putDouble(CHEM3MOLE, newMole);
+                    } else {
+                        if (chem4.equals(chemical.getName())) {
+                            Double currentMole = nbt.getDouble(CHEM4MOLE);
                             Double newMole = currentMole + 1.0;
-                            nbt.putDouble(CHEM5MOLE, newMole);
-                        }
-                        else if(chem5.isBlank() || chem5.equals("N/A")) {
-                            nbt.putString(CHEM5NAME, chemical.getName());
-                            Double currentMole = nbt.getDouble(CHEM5MOLE);
+                            nbt.putDouble(CHEM4MOLE, newMole);
+                        } else if (chem4.isBlank() || chem4.equals("N/A")) {
+                            nbt.putString(CHEM4NAME, chemical.getName());
+                            Double currentMole = nbt.getDouble(CHEM4MOLE);
                             Double newMole = currentMole + 1.0;
-                            nbt.putDouble(CHEM5MOLE, newMole);
-                        }else {
-                            if(chem6.equals(chemical.getName()))
-                            {
-                                Double currentMole = nbt.getDouble(CHEM6MOLE);
+                            nbt.putDouble(CHEM4MOLE, newMole);
+                        } else {
+                            if (chem5.equals(chemical.getName())) {
+                                Double currentMole = nbt.getDouble(CHEM5MOLE);
                                 Double newMole = currentMole + 1.0;
-                                nbt.putDouble(CHEM6MOLE, newMole);
-                            }
-                            else if(chem6.isBlank() || chem6.equals("N/A")) {
-                                nbt.putString(CHEM6NAME, chemical.getName());
-                                Double currentMole = nbt.getDouble(CHEM6MOLE);
+                                nbt.putDouble(CHEM5MOLE, newMole);
+                            } else if (chem5.isBlank() || chem5.equals("N/A")) {
+                                nbt.putString(CHEM5NAME, chemical.getName());
+                                Double currentMole = nbt.getDouble(CHEM5MOLE);
                                 Double newMole = currentMole + 1.0;
-                                nbt.putDouble(CHEM6MOLE, newMole);
+                                nbt.putDouble(CHEM5MOLE, newMole);
+                            } else {
+                                if (chem6.equals(chemical.getName())) {
+                                    Double currentMole = nbt.getDouble(CHEM6MOLE);
+                                    Double newMole = currentMole + 1.0;
+                                    nbt.putDouble(CHEM6MOLE, newMole);
+                                } else if (chem6.isBlank() || chem6.equals("N/A")) {
+                                    nbt.putString(CHEM6NAME, chemical.getName());
+                                    Double currentMole = nbt.getDouble(CHEM6MOLE);
+                                    Double newMole = currentMole + 1.0;
+                                    nbt.putDouble(CHEM6MOLE, newMole);
+                                }
                             }
                         }
                     }
@@ -303,6 +289,7 @@ public class SolutionItem extends Item {
             if(nbt.getDouble(CHEM1MOLE) == 0)
             {
                 nbt.putString(CHEM1NAME, "N/A");
+                sortChemicals(beaker);
             }
             nbt.putString(TEMPCHEM, chem1);
         }
@@ -313,6 +300,7 @@ public class SolutionItem extends Item {
                 nbt.putDouble(CHEM2MOLE, newMole);
                 if (nbt.getDouble(CHEM2MOLE) == 0) {
                     nbt.putString(CHEM2NAME, "N/A");
+                    sortChemicals(beaker);
                 }
                 nbt.putString(TEMPCHEM, chem2);
             }
@@ -323,6 +311,7 @@ public class SolutionItem extends Item {
                     nbt.putDouble(CHEM3MOLE, newMole);
                     if (nbt.getDouble(CHEM3MOLE) == 0) {
                         nbt.putString(CHEM3NAME, "N/A");
+                        sortChemicals(beaker);
                     }
                     nbt.putString(TEMPCHEM, chem3);
                 }
@@ -333,6 +322,7 @@ public class SolutionItem extends Item {
                         nbt.putDouble(CHEM4MOLE, newMole);
                         if (nbt.getDouble(CHEM4MOLE) == 0) {
                             nbt.putString(CHEM4NAME, "N/A");
+                            sortChemicals(beaker);
                         }
                         nbt.putString(TEMPCHEM, chem4);
                     }
@@ -343,6 +333,7 @@ public class SolutionItem extends Item {
                             nbt.putDouble(CHEM5MOLE, newMole);
                             if (nbt.getDouble(CHEM5MOLE) == 0) {
                                 nbt.putString(CHEM5NAME, "N/A");
+                                sortChemicals(beaker);
                             }
                             nbt.putString(TEMPCHEM, chem5);
                         }
@@ -353,6 +344,7 @@ public class SolutionItem extends Item {
                                 nbt.putDouble(CHEM6MOLE, newMole);
                                 if (nbt.getDouble(CHEM6MOLE) == 0) {
                                     nbt.putString(CHEM6NAME, "N/A");
+                                    sortChemicals(beaker);
                                 }
                                 nbt.putString(TEMPCHEM, chem6);
                             }
@@ -374,6 +366,153 @@ public class SolutionItem extends Item {
         return newBeaker;
     }
 
+    public ItemStack sortChemicals(ItemStack beaker)
+    {
+        CompoundTag nbt = beaker.getTag();
+        if(nbt == null)
+        {
+            nbt = new CompoundTag();
+        }
+
+        String chem1 = nbt.getString(CHEM1NAME);
+        String chem2 = nbt.getString(CHEM2NAME);
+        String chem3 = nbt.getString(CHEM3NAME);
+        String chem4 = nbt.getString(CHEM4NAME);
+        String chem5 = nbt.getString(CHEM5NAME);
+        String chem6 = nbt.getString(CHEM6NAME);
+        int pos1 = 1;
+        int pos2 = 2;
+        int pos3 = 3;
+        int pos4 = 4;
+        int pos5 = 5;
+        int pos6 = 6;
+
+        if(chem1.equals("N/A"))
+            pos1 = 0;
+        if(chem2.equals("N/A"))
+            pos2 = 0;
+        if(chem3.equals("N/A"))
+            pos3 = 0;
+        if(chem4.equals("N/A"))
+            pos4 = 0;
+        if(chem5.equals("N/A"))
+            pos5 = 0;
+        if(chem6.equals("N/A"))
+            pos6 = 0;
+        int[] positions = {pos1,pos2,pos3,pos4,pos5,pos6};
+
+        for(int x = pos2; x > 1; x--)
+        {
+            if (positions[x-2] == 0)
+            {
+                pos2 = x - 1;
+                break;
+            }
+        }
+        for(int x = pos3; x > 1; x--)
+        {
+            if (positions[x-2] == 0)
+            {
+                pos3 = x - 1;
+            }
+        }
+        for(int x = pos4; x > 1; x--)
+        {
+            if (positions[x-2] == 0)
+            {
+                pos4 = x - 1;
+            }
+        }
+        for(int x = pos5; x > 1; x--)
+        {
+            if (positions[x-2] == 0)
+            {
+                pos5 = x - 1;
+            }
+        }
+        for(int x = pos6; x > 1; x--)
+        {
+            if (positions[x-2] == 0)
+            {
+                pos6 = x - 1;
+            }
+        }
+        if (pos1 != 0)
+        {
+
+        }
+        else
+        {
+            if (pos2 != 0)
+            {
+                nbt.putString(CHEM1NAME, chem2);
+                nbt.putString(CHEM2NAME, "N/A");
+            }
+            else
+            {
+                switch (pos3){
+                    case 1: nbt.putString(CHEM1NAME, chem3);
+                        nbt.putString(CHEM3NAME, "N/A");
+                        break;
+                    case 2:nbt.putString(CHEM2NAME, chem3);
+                        nbt.putString(CHEM3NAME, "N/A");
+                        break;
+                    case 3:
+                        break;
+                }
+                switch (pos4){
+                    case 1: nbt.putString(CHEM1NAME, chem4);
+                        nbt.putString(CHEM4NAME, "N/A");
+                        break;
+                    case 2:nbt.putString(CHEM2NAME, chem4);
+                        nbt.putString(CHEM4NAME, "N/A");
+                        break;
+                    case 3:nbt.putString(CHEM3NAME, chem4);
+                        nbt.putString(CHEM4NAME, "N/A");
+                        break;
+                    case 4:
+                        break;
+                }
+                switch (pos5){
+                    case 1: nbt.putString(CHEM1NAME, chem5);
+                        nbt.putString(CHEM5NAME, "N/A");
+                        break;
+                    case 2:nbt.putString(CHEM2NAME, chem5);
+                        nbt.putString(CHEM5NAME, "N/A");
+                        break;
+                    case 3:nbt.putString(CHEM3NAME, chem5);
+                        nbt.putString(CHEM5NAME, "N/A");
+                        break;
+                    case 4:nbt.putString(CHEM4NAME, chem5);
+                        nbt.putString(CHEM5NAME, "N/A");
+                        break;
+                    case 5:
+                        break;
+                }
+                switch (pos6){
+                    case 1: nbt.putString(CHEM1NAME, chem6);
+                        nbt.putString(CHEM6NAME, "N/A");
+                        break;
+                    case 2:nbt.putString(CHEM2NAME, chem6);
+                        nbt.putString(CHEM6NAME, "N/A");
+                        break;
+                    case 3:nbt.putString(CHEM3NAME, chem6);
+                        nbt.putString(CHEM6NAME, "N/A");
+                        break;
+                    case 4:nbt.putString(CHEM4NAME, chem6);
+                        nbt.putString(CHEM6NAME, "N/A");
+                        break;
+                    case 5:nbt.putString(CHEM5NAME, chem6);
+                        nbt.putString(CHEM6NAME, "N/A");
+                        break;
+                    case 6:
+                        break;
+                }
+            }
+        }
+
+        return beaker;
+    }
     public ItemStack getChemicalFromBeaker(ItemStack beaker)
     {
         CompoundTag nbt = beaker.getTag();
@@ -425,11 +564,19 @@ public class SolutionItem extends Item {
                     case "Ammonia" -> 11;
                     default -> 1;
                 };
-                contents = nbt.getString(CHEM1NAME) + ", " + nbt.getString(CHEM2NAME) +
-                        ", " + nbt.getString(CHEM3NAME) +
-                        ", " + nbt.getString(CHEM4NAME) +
-                        ", " + nbt.getString(CHEM5NAME) +
-                        ", " + nbt.getString(CHEM6NAME);
+                String chem1name = nbt.getString(CHEM1NAME);
+                String chem2name = nbt.getString(CHEM2NAME);
+                String chem3name = nbt.getString(CHEM3NAME);
+                String chem4name = nbt.getString(CHEM4NAME);
+                String chem5name = nbt.getString(CHEM5NAME);
+                String chem6name = nbt.getString(CHEM6NAME);
+
+
+                contents = chem1name + ", " + chem2name +
+                        ", " + chem3name +
+                        ", " + chem4name +
+                        ", " + chem5name +
+                        ", " + chem6name;
                 String[] contentParts = contents.split(", ");
                 contents = "";
                 for(int x = 0; x<contentParts.length; x++)
@@ -451,66 +598,99 @@ public class SolutionItem extends Item {
                 String chem5State = "";
                 String chem6State = "";
 
-                if(!nbt.getString(CHEM1NAME).equals("N/A"))
+                if(!chem1name.equals("N/A"))
                 {
-                    if(getChemical(nbt.getString(CHEM1NAME)).getcSOL() > solventPotency)
-                        chem1State = "(s)";
+                    if(getChemical(chem1name).getcSOL() > solventPotency)
+                        chem1State = " (s)";
                     else
-                        chem1State = "(aq)";
+                        chem1State = " (aq)";
                 }
-                if(!nbt.getString(CHEM2NAME).equals("N/A"))
+                if(!chem2name.equals("N/A"))
                 {
-                    if(getChemical(nbt.getString(CHEM2NAME)).getcSOL() > solventPotency)
-                        chem2State = "(s)";
+                    if(getChemical(chem2name).getcSOL() > solventPotency)
+                        chem2State = " (s)";
                     else
-                        chem2State = "(aq)";
+                        chem2State = " (aq)";
                 }
-                if(!nbt.getString(CHEM3NAME).equals("N/A"))
+                if(!chem3name.equals("N/A"))
                 {
-                    if(getChemical(nbt.getString(CHEM3NAME)).getcSOL() > solventPotency)
-                        chem3State = "(s)";
+                    if(getChemical(chem3name).getcSOL() > solventPotency)
+                        chem3State = " (s)";
                     else
-                        chem3State = "(aq)";
+                        chem3State = " (aq)";
                 }
-                if(!nbt.getString(CHEM4NAME).equals("N/A"))
+                if(!chem4name.equals("N/A"))
                 {
-                    if(getChemical(nbt.getString(CHEM4NAME)).getcSOL() > solventPotency)
-                        chem4State = "(s)";
+                    if(getChemical(chem4name).getcSOL() > solventPotency)
+                        chem4State = " (s)";
                     else
-                        chem4State = "(aq)";
+                        chem4State = " (aq)";
                 }
-                if(!nbt.getString(CHEM5NAME).equals("N/A"))
+                if(!chem5name.equals("N/A"))
                 {
-                    if(getChemical(nbt.getString(CHEM5NAME)).getcSOL() > solventPotency)
-                        chem5State = "(s)";
+                    if(getChemical(chem5name).getcSOL() > solventPotency)
+                        chem5State = " (s)";
                     else
-                        chem5State = "(aq)";
+                        chem5State = " (aq)";
                 }
-                if(!nbt.getString(CHEM6NAME).equals("N/A"))
+                if(!chem6name.equals("N/A"))
                 {
-                    if(getChemical(nbt.getString(CHEM6NAME)).getcSOL() > solventPotency)
-                        chem6State = "(s)";
+                    if(getChemical(chem6name).getcSOL() > solventPotency)
+                        chem6State = " (s)";
                     else
-                        chem6State = "(aq)";
+                        chem6State = " (aq)";
                 }
 
 
-                String soluteContent = "Solvent: " + nbt.getDouble(SOLVENTMOLE) + "\n";
-                String molarContent = nbt.getString(CHEM1NAME) + chem1State + ": " + nbt.getDouble(CHEM1MOLE) + "mol\n" +
-                        nbt.getString(CHEM2NAME) + chem2State + ": " + nbt.getDouble(CHEM2MOLE) + "mol\n" +
-                        nbt.getString(CHEM3NAME) + chem3State + ": " + nbt.getDouble(CHEM3MOLE) + "mol\n" +
-                        nbt.getString(CHEM4NAME) + chem4State + ": " + nbt.getDouble(CHEM4MOLE) + "mol\n" +
-                        nbt.getString(CHEM5NAME) + chem5State + ": " + nbt.getDouble(CHEM5MOLE) + "mol\n" +
-                        nbt.getString(CHEM6NAME) + chem6State + ": " + nbt.getDouble(CHEM6MOLE) + "mol";
+                String chem1molarcontent = "";
+                String chem2molarcontent = "";
+                String chem3molarcontent = "";
+                String chem4molarcontent = "";
+                String chem5molarcontent = "";
+                String chem6molarcontent = "";
+                if (!chem1name.equals("N/A"))
+                {
+                    chem1molarcontent = chem1name + chem1State + ": " + nbt.getDouble(CHEM1MOLE) + "mol\n";
+                }
+                if (!chem2name.equals("N/A"))
+                {
+                    chem2molarcontent = chem2name + chem2State + ": " + nbt.getDouble(CHEM2MOLE) + "mol\n";
+                }
+                if (!chem3name.equals("N/A"))
+                {
+                    chem3molarcontent = chem3name + chem3State + ": " + nbt.getDouble(CHEM3MOLE) + "mol\n";
+                }
+                if (!chem4name.equals("N/A"))
+                {
+                    chem4molarcontent = chem4name + chem4State + ": " + nbt.getDouble(CHEM4MOLE) + "mol\n";
+                }
+                if (!chem5name.equals("N/A"))
+                {
+                    chem5molarcontent = chem5name + chem5State + ": " + nbt.getDouble(CHEM5MOLE) + "mol\n";
+                }
+                if (!chem6name.equals("N/A"))
+                {
+                    chem6molarcontent = chem6name + chem6State + ": " + nbt.getDouble(CHEM6MOLE) + "mol";
+                }
 
-                //use split
-                molarContent.replaceAll(": 0.0", "");
-                molarContent.replaceAll("N/A", "");
+                String soluteContent = "Solvent: \n" + nbt.getString(SOLVENTNAME) + ": " + nbt.getDouble(SOLVENTMOLE) + "\n";
+                String molarContent = chem1molarcontent +
+                        chem2molarcontent +
+                        chem3molarcontent +
+                        chem4molarcontent +
+                        chem5molarcontent +
+                        chem6molarcontent;
+
+
+
+
+
+
+
                 components.add(Component.literal("Contents: " +
                         //getName(new ItemStack(getcCHEM1())).getString() +
                         //getcCHEM1().getName() +
-                        contents +
-                        "\nNumber of Moles:\n" +
+                        contents + "\n" +
                         soluteContent +
                         //molarContent
                         molarContent

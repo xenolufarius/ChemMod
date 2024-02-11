@@ -8,6 +8,7 @@ import net.claudio.chemmod.block.ModBlocks;
 import net.claudio.chemmod.item.ModCreativeModeTab;
 import net.claudio.chemmod.item.ModItems;
 import net.claudio.chemmod.item.custom.ChemicalItem;
+import net.claudio.chemmod.item.custom.SolutionItem;
 import net.claudio.chemmod.networking.ModMessages;
 import net.claudio.chemmod.networking.packet.RadiationS2CPacket;
 import net.claudio.chemmod.radiation.PlayerRadiation;
@@ -17,6 +18,7 @@ import net.minecraft.ChatFormatting;
 import net.minecraft.Util;
 import net.minecraft.client.renderer.entity.ItemEntityRenderer;
 import net.minecraft.core.BlockPos;
+import net.minecraft.nbt.CompoundTag;
 import net.minecraft.network.chat.Component;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.server.level.ServerPlayer;
@@ -2504,6 +2506,10 @@ public class ModEvents {
             });
             //PotionBrewing.bootStrap().addMix(Potions.WEAKNESS, Items.REDSTONE, Potions.LONG_WEAKNESS);;
 
+            if (event.player.tickCount % 2 == 0)
+            {
+                findBeakers(event.player);
+            }
         }
     }
 
@@ -2576,7 +2582,7 @@ public class ModEvents {
         return largestRAD;
     }
 
-    //TODO: ADD A METHOD THAT DESTROYS FLAMMABLE CHEMS IF PLAYER ON FIRE
+    //TODO: ADD A METHOD THAT DESTROYS FLAMMABLE CHEMS IF PLAYER ON FIRE done
     public static void flammableItemDetectedInInventory(Player player) {
         for (ItemStack stack : player.inventoryMenu.getItems()) {
 
@@ -2723,13 +2729,105 @@ public class ModEvents {
     //Okay now I need a method to detect if a radioactive item is on the ground nearby the player
     //Maybe can't do a range just yet.
 
-    //TODO: FIX DETECTION ON GROUND
+    //TODO: FIX DETECTION ON GROUND still impossible
     public static int radioactiveItemDetectedOnGround(Player player)
     {
         BlockPos pos = player.getOnPos();
 
         return 0;
     }
+
+    //todo: freaks out with inventory sizes vvvvvv
+    public static void findBeakers(Player player)
+    {
+        for(ItemStack stack : player.inventoryMenu.getItems())
+        {
+            int slot = 0;
+            for(ItemStack stack1 : player.getInventory().items)
+            {
+                if (!stack.equals(stack1))
+                {
+                    slot++;
+
+                }
+                if(stack.equals(stack1))
+                {
+                    break;
+                }
+            }
+            //If needed
+            //ForgeRegistries.ITEMS.getKey(stack.getItem()).getNamespace().equals("chemmod")
+            if(stack.getItem().equals(ModItems.BEAKER.get().asItem()))
+            {
+                stack = rxns(stack, player);
+                player.getInventory().items.set(slot,stack);
+            }
+        }
+    }
+
+
+
+    //vvv The logic for reactions in solution
+    public static ItemStack rxns(ItemStack beaker, Player player)
+    {
+        CompoundTag nbt = beaker.getTag();
+        if(nbt == null)
+        {
+            SolutionItem be = (SolutionItem) beaker.getItem();
+            beaker = be.createNewBeaker();
+            nbt = beaker.getTag();
+        }
+
+        String chem1 = nbt.getString("Chemical1Name");
+        String chem2 = nbt.getString("Chemical2Name");
+        String chem3 = nbt.getString("Chemical3Name");
+        String chem4 = nbt.getString("Chemical4Name");
+        String chem5 = nbt.getString("Chemical5Name");
+        String chem6 = nbt.getString("Chemical6Name");
+        String solv = nbt.getString("SolventName");
+        Double chem1m = nbt.getDouble("Chemical1MoleAmount");
+        Double chem2m = nbt.getDouble("Chemical2MoleAmount");
+        Double chem3m = nbt.getDouble("Chemical3MoleAmount");
+        Double chem4m = nbt.getDouble("Chemical4MoleAmount");
+        Double chem5m = nbt.getDouble("Chemical5MoleAmount");
+        Double chem6m = nbt.getDouble("Chemical6MoleAmount");
+        Double solvm = nbt.getDouble("SolventMoleAmount");
+
+        String[] chems = {chem1,chem2,chem3,chem4,chem5,chem6};
+
+
+        if (solv.equals("Water"))
+        {
+            if(anyChemEquals(chems, "Sodium"))
+            {
+                explosiveRXN(player);
+                return ItemStack.EMPTY;
+            }
+        }
+
+        beaker.setTag(nbt);
+        return beaker;
+    }
+    public static void explosiveRXN(Player player)
+    {
+        player.level.explode(player, DamageSource.badRespawnPointExplosion(), (ExplosionDamageCalculator)null, player.getX(), player.getY(), player.getZ(), 3.0f,false, Explosion.BlockInteraction.DESTROY);
+        player.hurt(DamageSource.explosion(new Explosion(player.level, player, player.getX(), player.getY(), player.getZ(),3.0f)), 20);
+    }
+    public static void destroyBeaker(Player player, ItemStack beaker)
+    {
+
+    }
+    public static boolean anyChemEquals(String [] chems, String target)
+    {
+        for (int x = 0; x < chems.length; x++)
+        {
+            if (chems[x].equals(target))
+                return true;
+        }
+        return false;
+    }
+
+    //^^^ Reaction Logic
 
 
 
