@@ -18,11 +18,13 @@ import net.minecraft.ChatFormatting;
 import net.minecraft.Util;
 import net.minecraft.client.renderer.entity.ItemEntityRenderer;
 import net.minecraft.core.BlockPos;
+import net.minecraft.core.NonNullList;
 import net.minecraft.nbt.CompoundTag;
 import net.minecraft.network.chat.Component;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.server.packs.resources.ResourceManager;
+import net.minecraft.world.InteractionHand;
 import net.minecraft.world.damagesource.BadRespawnPointDamage;
 import net.minecraft.world.damagesource.DamageSource;
 import net.minecraft.world.effect.MobEffectInstance;
@@ -2742,25 +2744,45 @@ public class ModEvents {
     {
         for(ItemStack stack : player.inventoryMenu.getItems())
         {
-            int slot = 0;
-            for(ItemStack stack1 : player.getInventory().items)
-            {
-                if (!stack.equals(stack1))
-                {
-                    slot++;
 
-                }
-                if(stack.equals(stack1))
-                {
-                    break;
-                }
-            }
-            //If needed
-            //ForgeRegistries.ITEMS.getKey(stack.getItem()).getNamespace().equals("chemmod")
-            if(stack.getItem().equals(ModItems.BEAKER.get().asItem()))
+            if(stack.equals(player.getOffhandItem()) && stack.getItem().getClass().equals(SolutionItem.class))
             {
-                stack = rxns(stack, player);
-                player.getInventory().items.set(slot,stack);
+                ItemStack stack2 = stack;
+                stack2 = rxns(stack, player);
+                player.setItemInHand(InteractionHand.OFF_HAND, stack2);
+            }
+            else {
+                int slot = 0;
+                ItemStack badStack = stack;
+                for (ItemStack stack1 : player.getInventory().items) {
+                    if (!stack.equals(stack1)) {
+                        slot++;
+
+                    }
+                    if (stack.equals(stack1)) {
+                        break;
+                    }
+                    if(!stack.equals(stack1) && slot == 36)
+                    {
+                        badStack = stack1;
+                    }
+                }
+
+
+                if (stack.getItem().getClass().equals(SolutionItem.class) && badStack.equals(stack)) {
+                    ItemStack stack2 = stack;
+                    stack2 = rxns(stack, player);
+                /*
+                if (x < 36)
+                    player.getInventory().items.set(x,stack);
+                if (x >= 36 && x != 40)
+                    player.getInventory().armor.set(x-36,stack);
+                else
+                    player.getInventory().offhand.set(0,stack);
+                 */
+                    //player.inventoryMenu.setItem(x, player.inventoryMenu.getStateId(), stack2);
+                    player.getInventory().items.set(slot, stack);
+                }
             }
         }
     }

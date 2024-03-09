@@ -1,7 +1,20 @@
 {
   "variants": {
-    "": { "model": "chemmod:block/deconstructor_block"}
-
+    "": { "model": "chemmod:block/deconstructor_block"},
+    "lit=true": { "model": "chemmod:block/deconstructor_block"},
+    "lit=false": { "model": "chemmod:block/deconstructor_block"},
+    "facing=east": {
+      "model": "minecraft:block/deconstructor_block",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "minecraft:block/deconstructor_block",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "minecraft:block/deconstructor_block",
+      "y": 270
+    }
   }
 
 

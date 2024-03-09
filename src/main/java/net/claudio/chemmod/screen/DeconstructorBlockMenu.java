@@ -10,6 +10,7 @@ import net.minecraft.world.inventory.*;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.entity.BlockEntity;
+import net.minecraftforge.common.capabilities.ForgeCapabilities;
 import net.minecraftforge.items.CapabilityItemHandler;
 import net.minecraftforge.items.SlotItemHandler;
 
@@ -35,7 +36,7 @@ public class DeconstructorBlockMenu extends AbstractContainerMenu {
         addPlayerHotbar(inv);
 
         //position 1 is not used. it is merely there to allow for shift right clicking
-        this.blockEntity.getCapability(CapabilityItemHandler.ITEM_HANDLER_CAPABILITY).ifPresent(handler -> {
+        this.blockEntity.getCapability(ForgeCapabilities.ITEM_HANDLER).ifPresent(handler -> {
 
             this.addSlot(new SlotItemHandler(handler, 0, 62, 15));
             this.addSlot(new SlotItemHandler(handler, 1, 44, 15));

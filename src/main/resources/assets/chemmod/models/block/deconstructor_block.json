@@ -1,7 +1,13 @@
 {
-  "parent": "block/cube_all",
+  "parent": "block/orientable",
   "textures": {
-    "all": "chemmod:block/deconstructor_block"
+    "particle": "chemmod:block/deconstructor_block/deconstructor_reconstructor_side",
+    "down": "chemmod:block/deconstructor_block/deconstructor_reconstructor_side",
+    "up": "chemmod:block/deconstructor_block/deconstructor_reconstructor_top",
+    "north": "chemmod:block/deconstructor_block/deconstructor_front",
+    "east": "chemmod:block/deconstructor_block/deconstructor_reconstructor_side",
+    "south": "chemmod:block/deconstructor_block/deconstructor_reconstructor_side",
+    "west": "chemmod:block/deconstructor_block/deconstructor_reconstructor_side"
 
   }
 
