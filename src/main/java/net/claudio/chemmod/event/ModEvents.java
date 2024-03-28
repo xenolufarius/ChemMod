@@ -2635,99 +2635,126 @@ public class ModEvents {
     {
         for(ItemStack stack : player.inventoryMenu.getItems())
         {
-            int slot = 0;
-            for(ItemStack stack1 : player.getInventory().items)
+            if(stack.equals(player.getOffhandItem()) && stack.getItem().getClass().equals(ChemicalItem.class))
             {
-                if (!stack.equals(stack1))
-                {
-                    slot++;
-
-                }
-                if(stack.equals(stack1))
-                {
-                    break;
-                }
+                ItemStack stack2 = stack;
+                stack2 = stabLogic(stack);
+                player.setItemInHand(InteractionHand.OFF_HAND, stack2);
             }
-            if(!stack.isEmpty() && stack.getItem().getClass() == ChemicalItem.class)
+            else
             {
-                ChemicalItem chemicalItem = (ChemicalItem) stack.getItem();
-                //potential if statement:
-                if(chemicalItem.getcSTAB()<3)
-                {
-                    //do something
-                    //maybe nested if for each , 1,2,0.
-                    if(chemicalItem.getcSTAB() == 0)
-                    {
-                        stack = new ItemStack((Item)null);
-                        player.getInventory().items.set(slot,stack);
-
-                        //Need to send this back to Player inventory
+              int slot = 0;
+              ItemStack badStack = stack;
+              for (ItemStack stack1 : player.getInventory().items) {
+                    if (!stack.equals(stack1)) {
+                        slot++;
+                  }
+                    else if (stack.equals(stack1)) {
+                       break;
                     }
-                    if(chemicalItem.getcSTAB() == 1 || chemicalItem.getcSTAB() == 2)
+                    if(!stack.equals(stack1) && slot == 36)
                     {
-                        //Craft the item into oxidized version / polyatoms from monoatoms
-                        //Need to send this back to Player
-                        if(chemicalItem.equals(ModItems.HYDROGEN.get()))
-                        {
-                            int count = stack.getCount();
-                            stack = new ItemStack(ModItems.HYDROGEN_GAS.get().asItem(), count/2);
-                        }
-                        if(chemicalItem.equals(ModItems.NITROGEN.get()))
-                        {
-                            int count = stack.getCount();
-                            stack = new ItemStack(ModItems.NITROGEN_GAS.get().asItem(), count/2);
-                        }
-                        if(chemicalItem.equals(ModItems.OXYGEN.get()))
-                        {
-                            int count = stack.getCount();
-                            stack = new ItemStack(ModItems.OXYGEN_GAS.get().asItem(), count/2);
-                        }
-                        if(chemicalItem.equals(ModItems.FLUORINE.get()))
-                        {
-                            int count = stack.getCount();
-                            stack = new ItemStack(ModItems.FLUORINE_GAS.get().asItem(), count/2);
-                        }
-                        if(chemicalItem.equals(ModItems.PHOSPHORUS.get()))
-                        {
-                            int count = stack.getCount();
-                            stack = new ItemStack(ModItems.WHITE_PHOSPHORUS.get().asItem(), count/4);
-                        }
-                        if(chemicalItem.equals(ModItems.SULFUR.get()))
-                        {
-                            int count = stack.getCount();
-                            stack = new ItemStack(ModItems.OCTASULFUR.get().asItem(), count/8);
-                        }
-                        if(chemicalItem.equals(ModItems.CHLORINE.get()))
-                        {
-                            int count = stack.getCount();
-                            stack = new ItemStack(ModItems.CHLORINE_GAS.get().asItem(), count/2);
-                        }
-                        if(chemicalItem.equals(ModItems.BROMINE.get()))
-                        {
-                            int count = stack.getCount();
-                            stack = new ItemStack(ModItems.BROMINE_GAS.get().asItem(), count/2);
-                        }
-                        if(chemicalItem.equals(ModItems.IODINE.get()))
-                        {
-                            int count = stack.getCount();
-                            stack = new ItemStack(ModItems.IODINE_GAS.get().asItem(), count/2);
-                        }
+                     badStack = stack1;
+                 }
+              }
 
-                        //oxides
-                        if(chemicalItem.equals(ModItems.RUBIDIUM.get()))
-                        {
-                            int count = stack.getCount();
-                            stack = new ItemStack(ModItems.RUBIDIUM_OXIDE.get().asItem(), count);
-                        }
-
-                        player.getInventory().items.set(slot,stack);
-                    }
-                }
+              if (stack.getItem().getClass().equals(ChemicalItem.class) && badStack.equals(stack)) {
+                  ItemStack stack2 = stack;
+                  stack2 = stabLogic(stack);
+                  player.getInventory().items.set(slot, stack2);
             }
+        }
+            //Run logic on Item
+            stack = stabLogic(stack);
+
 
         }
     }
 
+    public static ItemStack stabLogic(ItemStack itemStack)
+    {
+        ItemStack newStack = new ItemStack(ModItems.EMPTY.get());
+
+        if(!itemStack.isEmpty() && itemStack.getItem().getClass() == ChemicalItem.class)
+        {
+            ChemicalItem chemicalItem = (ChemicalItem) itemStack.getItem();
+            //potential if statement:
+            if(chemicalItem.getcSTAB()<3)
+            {
+                //do something
+                //maybe nested if for each , 1,2,0.
+                if(chemicalItem.getcSTAB() == 0)
+                {
+                    itemStack = new ItemStack((Item)null);
+
+                    //Need to send this back to Player inventory
+                }
+                if(chemicalItem.getcSTAB() == 1 || chemicalItem.getcSTAB() == 2)
+                {
+                    //Craft the item into oxidized version / polyatoms from monoatoms
+                    //Need to send this back to Player
+                    if(chemicalItem.equals(ModItems.HYDROGEN.get()))
+                    {
+                        int count = itemStack.getCount();
+                        itemStack = new ItemStack(ModItems.HYDROGEN_GAS.get().asItem(), count/2);
+                    }
+                    if(chemicalItem.equals(ModItems.NITROGEN.get()))
+                    {
+                        int count = itemStack.getCount();
+                        itemStack = new ItemStack(ModItems.NITROGEN_GAS.get().asItem(), count/2);
+                    }
+                    if(chemicalItem.equals(ModItems.OXYGEN.get()))
+                    {
+                        int count = itemStack.getCount();
+                        itemStack = new ItemStack(ModItems.OXYGEN_GAS.get().asItem(), count/2);
+                    }
+                    if(chemicalItem.equals(ModItems.FLUORINE.get()))
+                    {
+                        int count = itemStack.getCount();
+                        itemStack = new ItemStack(ModItems.FLUORINE_GAS.get().asItem(), count/2);
+                    }
+                    if(chemicalItem.equals(ModItems.PHOSPHORUS.get()))
+                    {
+                        int count = itemStack.getCount();
+                        itemStack = new ItemStack(ModItems.WHITE_PHOSPHORUS.get().asItem(), count/4);
+                    }
+                    if(chemicalItem.equals(ModItems.SULFUR.get()))
+                    {
+                        int count = itemStack.getCount();
+                        itemStack = new ItemStack(ModItems.OCTASULFUR.get().asItem(), count/8);
+                    }
+                    if(chemicalItem.equals(ModItems.CHLORINE.get()))
+                    {
+                        int count = itemStack.getCount();
+                        itemStack = new ItemStack(ModItems.CHLORINE_GAS.get().asItem(), count/2);
+                    }
+                    if(chemicalItem.equals(ModItems.BROMINE.get()))
+                    {
+                        int count = itemStack.getCount();
+                        itemStack = new ItemStack(ModItems.BROMINE_GAS.get().asItem(), count/2);
+                    }
+                    if(chemicalItem.equals(ModItems.IODINE.get()))
+                    {
+                        int count = itemStack.getCount();
+                        itemStack = new ItemStack(ModItems.IODINE_GAS.get().asItem(), count/2);
+                    }
+
+                    //oxides
+                    if(chemicalItem.equals(ModItems.RUBIDIUM.get()))
+                    {
+                        int count = itemStack.getCount();
+                        itemStack = new ItemStack(ModItems.RUBIDIUM_OXIDE.get().asItem(), count);
+                    }
+
+
+                }
+            }
+        }
+
+        newStack = itemStack;
+
+        return newStack;
+    }
     //Okay now I need a method to detect if a radioactive item is on the ground nearby the player
     //Maybe can't do a range just yet.
 
@@ -2739,7 +2766,7 @@ public class ModEvents {
         return 0;
     }
 
-    //todo: freaks out with inventory sizes vvvvvv
+    //todo: freaks out with inventory sizes vvvvvv FIXED
     public static void findBeakers(Player player)
     {
         for(ItemStack stack : player.inventoryMenu.getItems())
@@ -2757,9 +2784,8 @@ public class ModEvents {
                 for (ItemStack stack1 : player.getInventory().items) {
                     if (!stack.equals(stack1)) {
                         slot++;
-
                     }
-                    if (stack.equals(stack1)) {
+                    else if (stack.equals(stack1)) {
                         break;
                     }
                     if(!stack.equals(stack1) && slot == 36)
@@ -2781,7 +2807,7 @@ public class ModEvents {
                     player.getInventory().offhand.set(0,stack);
                  */
                     //player.inventoryMenu.setItem(x, player.inventoryMenu.getStateId(), stack2);
-                    player.getInventory().items.set(slot, stack);
+                    player.getInventory().items.set(slot, stack2);
                 }
             }
         }
@@ -2814,17 +2840,30 @@ public class ModEvents {
         Double chem5m = nbt.getDouble("Chemical5MoleAmount");
         Double chem6m = nbt.getDouble("Chemical6MoleAmount");
         Double solvm = nbt.getDouble("SolventMoleAmount");
-
+        ChemicalItem empty = (ChemicalItem) new ItemStack(ModItems.EMPTY.get()).getItem();
         String[] chems = {chem1,chem2,chem3,chem4,chem5,chem6};
+        ChemicalItem[] chemicals = {empty,empty,empty,empty,empty,empty};
+        Double[] moles = {0.0,0.0,0.0,0.0,0.0,0.0};
 
+        String[] chemString = {"Chemical1Name","Chemical2Name","Chemical3Name","Chemical4Name","Chemical5Name","Chemical6Name"};
+        String[] moleString = {"Chemical1MoleAmount","Chemical2MoleAmount","Chemical3MoleAmount","Chemical4MoleAmount","Chemical5MoleAmount","Chemical6MoleAmount"};
 
         if (solv.equals("Water"))
         {
-            if(anyChemEquals(chems, "Sodium"))
+            //Explosive rxns
+            if(anyChemEquals(chems, "Sodium") ||
+                    anyChemEquals(chems, "Potassium") ||
+                    anyChemEquals(chems, "Caesium") ||
+                    anyChemEquals(chems, "Rubidium") )
             {
                 explosiveRXN(player);
                 return ItemStack.EMPTY;
             }
+            //Gaseous Products
+            chemicals = populateCHEMArray(beaker,chemicals);
+            moles = populateMOLEArray(beaker, moles);
+            beaker = gasProduct(chemicals,player,beaker,moles,moleString,chemString);
+
         }
 
         beaker.setTag(nbt);
@@ -2834,6 +2873,92 @@ public class ModEvents {
     {
         player.level.explode(player, DamageSource.badRespawnPointExplosion(), (ExplosionDamageCalculator)null, player.getX(), player.getY(), player.getZ(), 3.0f,false, Explosion.BlockInteraction.DESTROY);
         player.hurt(DamageSource.explosion(new Explosion(player.level, player, player.getX(), player.getY(), player.getZ(),3.0f)), 20);
+    }
+    public static ItemStack gasProduct(ChemicalItem[] chemicalItems, Player player, ItemStack beaker, Double[] moles, String [] moleString, String[] chemString)
+    {
+        ChemicalItem temp = (ChemicalItem) new ItemStack(ModItems.EMPTY.get()).getItem();
+
+        CompoundTag nbt = beaker.getTag();
+        if(nbt == null)
+        {
+            SolutionItem be = (SolutionItem) beaker.getItem();
+            beaker = be.createNewBeaker();
+            nbt = beaker.getTag();
+        }
+
+        for(int x = 0; x < chemicalItems.length; x++)
+        {
+            temp = chemicalItems[x];
+            int count = 0;
+            Double floored = Math.floor(moles[x]);
+            count = floored.intValue();
+            if(temp.getcSLG().equals("g"))
+            {
+                ItemStack dropped = new ItemStack(temp,count);
+                player.drop(dropped,  true, false);
+
+                nbt.putDouble(moleString[x],0.0);
+                nbt.putString(chemString[x],"N/A");
+            }
+        }
+
+        beaker.setTag(nbt);
+        return beaker;
+
+    }
+    public static ChemicalItem[] populateCHEMArray(ItemStack beaker, ChemicalItem[] chemicalItems)
+    {
+        CompoundTag nbt = beaker.getTag();
+        if(nbt == null)
+        {
+            SolutionItem be = (SolutionItem) beaker.getItem();
+            beaker = be.createNewBeaker();
+            nbt = beaker.getTag();
+        }
+
+        SolutionItem bea = (SolutionItem) beaker.getItem();
+
+        String chem1 = nbt.getString("Chemical1Name");
+        String chem2 = nbt.getString("Chemical2Name");
+        String chem3 = nbt.getString("Chemical3Name");
+        String chem4 = nbt.getString("Chemical4Name");
+        String chem5 = nbt.getString("Chemical5Name");
+        String chem6 = nbt.getString("Chemical6Name");
+        String[] chems = {chem1,chem2,chem3,chem4,chem5,chem6};
+
+        for(int x = 0; x < chems.length; x++)
+        {
+            if(!chems[x].equals("N/A")) {
+                chemicalItems[x] = bea.getChemical(chems[x]);
+            }
+        }
+        return chemicalItems;
+    }
+    public static Double[] populateMOLEArray(ItemStack beaker, Double[] moles)
+    {
+        CompoundTag nbt = beaker.getTag();
+        if(nbt == null)
+        {
+            SolutionItem be = (SolutionItem) beaker.getItem();
+            beaker = be.createNewBeaker();
+            nbt = beaker.getTag();
+        }
+
+        //SolutionItem bea = (SolutionItem) beaker.getItem();
+
+        Double chem1m = nbt.getDouble("Chemical1MoleAmount");
+        Double chem2m = nbt.getDouble("Chemical2MoleAmount");
+        Double chem3m = nbt.getDouble("Chemical3MoleAmount");
+        Double chem4m = nbt.getDouble("Chemical4MoleAmount");
+        Double chem5m = nbt.getDouble("Chemical5MoleAmount");
+        Double chem6m = nbt.getDouble("Chemical6MoleAmount");
+        Double[] molesssss = {chem1m,chem2m,chem3m,chem4m,chem5m,chem6m};
+
+        for(int x = 0; x < molesssss.length; x++)
+        {
+            moles[x] = molesssss[x];
+        }
+        return moles;
     }
     public static void destroyBeaker(Player player, ItemStack beaker)
     {

@@ -127,7 +127,8 @@ public class ChemicalItem  extends Item {
     private String cDESC;
     private String cSDS;
     private  int cSOL;
-    public ChemicalItem(Properties properties, double AMU, String CF, int RAD, int STAB, String DESC, String SDS, int SOL){
+    private String cSLG;
+    public ChemicalItem(Properties properties, double AMU, String CF, int RAD, int STAB, String DESC, String SDS, int SOL, String SLG){
         super(properties);
 
         this.cAMU = AMU;
@@ -137,6 +138,7 @@ public class ChemicalItem  extends Item {
         this.cDESC = DESC;
         this.cSDS = SDS;
         this.cSOL = SOL;
+        this.cSLG = SLG;
     }
 
     //I have to fix the set methods
@@ -173,6 +175,9 @@ public class ChemicalItem  extends Item {
 
     //SOl = Solubility for beakers and solutions
     public int getcSOL(){return cSOL;}
+    //SLG = The State of Matter at STP while not in solution
+    public String getcSLG(){return cSLG;}
+
 
 
     String SDSInfo = "";
@@ -257,6 +262,7 @@ public class ChemicalItem  extends Item {
                     "\nChemical Formula: " + getcCF()   +
                     "\nRadioactivity: " + getcRAD() +
                     "\nStability: " + getcSTAB() +
+                    "\nState: " + getcSLG() +
                     getcDESC()).withStyle(ChatFormatting.AQUA));
 
         }

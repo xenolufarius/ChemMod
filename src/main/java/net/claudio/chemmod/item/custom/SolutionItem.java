@@ -601,42 +601,42 @@ public class SolutionItem extends Item {
                 if(!chem1name.equals("N/A"))
                 {
                     if(getChemical(chem1name).getcSOL() > solventPotency)
-                        chem1State = " (s)";
+                        chem1State = " (" + getChemical(chem1name).getcSLG() + ")";
                     else
                         chem1State = " (aq)";
                 }
                 if(!chem2name.equals("N/A"))
                 {
                     if(getChemical(chem2name).getcSOL() > solventPotency)
-                        chem2State = " (s)";
+                        chem2State = " (" + getChemical(chem2name).getcSLG() + ")";
                     else
                         chem2State = " (aq)";
                 }
                 if(!chem3name.equals("N/A"))
                 {
                     if(getChemical(chem3name).getcSOL() > solventPotency)
-                        chem3State = " (s)";
+                        chem3State = " (" + getChemical(chem3name).getcSLG() + ")";
                     else
                         chem3State = " (aq)";
                 }
                 if(!chem4name.equals("N/A"))
                 {
                     if(getChemical(chem4name).getcSOL() > solventPotency)
-                        chem4State = " (s)";
+                        chem4State = " (" + getChemical(chem4name).getcSLG() + ")";
                     else
                         chem4State = " (aq)";
                 }
                 if(!chem5name.equals("N/A"))
                 {
                     if(getChemical(chem5name).getcSOL() > solventPotency)
-                        chem5State = " (s)";
+                        chem5State = " (" + getChemical(chem5name).getcSLG() + ")";
                     else
                         chem5State = " (aq)";
                 }
                 if(!chem6name.equals("N/A"))
                 {
                     if(getChemical(chem6name).getcSOL() > solventPotency)
-                        chem6State = " (s)";
+                        chem6State = " (" + getChemical(chem6name).getcSLG() + ")";
                     else
                         chem6State = " (aq)";
                 }
